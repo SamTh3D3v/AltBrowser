@@ -12,7 +12,6 @@ defaultSpec
 			#getMenuSelector:.				#getMenu:.
 			#hResizing:. 						#spaceFill.
 			#vResizing:. 						#spaceFill.
-			#eventHandler:.					{	#EventHandler. #on:send:to:. #keyStroke.	#keyStroke:fromMorph:. #model	}.
 			#dropItemSelector:.				#dropItem:on:.
 			#dragItemSelector:.				#dragItem:.
 			#wantsDropSelector:.				#wantsDropItem:.}
