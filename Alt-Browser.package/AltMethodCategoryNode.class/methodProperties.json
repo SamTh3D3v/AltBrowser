@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"aMethodRecategorized:" : "ThierryGoubier 4/15/2013 16:57",
 		"accept:notifying:" : "ThierryGoubier 9/22/2012 11:58",
 		"childNodeClassFromItem:" : "ThierryGoubier 11/21/2012 13:44",
 		"childrenItems" : "ThierryGoubier 7/27/2012 16:25",
 		"contentsOrganization" : "ThierryGoubier 9/3/2012 17:39",
-		"dropItem:" : "ThierryGoubier 11/21/2012 13:44",
+		"dropItem:" : "ThierryGoubier 4/15/2013 10:59",
 		"findAllMethodParents:forClass:" : "ThierryGoubier 8/29/2012 11:21",
 		"findMethod:in:" : "ThierryGoubier 9/23/2012 17:09",
 		"findMethodCategory:in:" : "ThierryGoubier 9/6/2012 22:36",

@@ -19,4 +19,8 @@ registerOnSystemAnnouncements
 		on: ClassReorganized send: #aClassReorganized: to: self;
 		on: ClassCommented send: #aClassCommented: to: self;
 		on: ClassRenamed send: #aClassRenamed: to: self;
-		on: ClassRepackaged send: #aClassRepackaged: to: self
+		on: ClassRepackaged send: #aClassRepackaged: to: self.
+	RPackage organizer announcer unsubscribe: self.
+	RPackage organizer announcer weak
+		on: RPackageUnregistered send: #aRPackageUnregistered: to: self;
+		on: RPackageCreated send: #aRPackageCreated: to: self.

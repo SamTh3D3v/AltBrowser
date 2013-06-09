@@ -1,6 +1,6 @@
 drag and drop
 dropItem: anItem
-	"Only valid for an ABMethodCategoryNode or an ABMethodNode."
+	"Only valid for an AltMethodCategoryNode or an AltMethodNode."
 
 	((anItem isKindOf: AltMethodCategoryNode) or: [ anItem isKindOf: AltMethodNode ])
 		ifFalse: [ ^ self ].
