@@ -1,3 +1,5 @@
 as yet unclassified
 asString
-	^ 'comment' asText addAttribute: TextEmphasis italic
+	^ self item hasComment
+		ifTrue: [ 'comment' asText addAttribute: TextEmphasis italic ]
+		ifFalse: [ 'comment' ]

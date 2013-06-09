@@ -1,3 +1,0 @@
-accessing
-noChildrenMessage
-	self subclassResponsibility

@@ -1,0 +1,3 @@
+accessing
+selectedItem
+	^ treeModel selectedItem

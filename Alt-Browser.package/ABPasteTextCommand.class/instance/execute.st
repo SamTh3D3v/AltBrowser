@@ -1,3 +1,3 @@
 execution
 execute
-	target paste
+	target widget textMorph editor replace: target widget trueSelectionInterval with: Clipboard clipboardText and: [  ]

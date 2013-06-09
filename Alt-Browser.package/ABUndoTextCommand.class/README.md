@@ -1,0 +1,1 @@
+An ABUndoTextCommand calls the text editor undo command.

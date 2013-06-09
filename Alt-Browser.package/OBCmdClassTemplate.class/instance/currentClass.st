@@ -1,3 +1,0 @@
-accessing
-currentClass
-	^ target theNonMetaClass

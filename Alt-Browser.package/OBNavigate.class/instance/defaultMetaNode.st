@@ -1,3 +1,0 @@
-configuration
-defaultMetaNode
-	^self browserClass defaultMetaNode

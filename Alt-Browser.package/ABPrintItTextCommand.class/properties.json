@@ -10,5 +10,5 @@
 	"name" : "ABPrintItTextCommand",
 	"pools" : [
 		 ],
-	"super" : "ABCommand",
+	"super" : "ABDoItTextCommand",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 execution
 execute
-	target inspectIt
+	super execute inspect

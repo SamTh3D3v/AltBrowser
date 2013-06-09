@@ -1,3 +1,0 @@
-private
-templateDefinition
-	self subclassResponsibility

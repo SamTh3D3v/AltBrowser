@@ -1,3 +1,0 @@
-vetos
-veto
-	veto := true

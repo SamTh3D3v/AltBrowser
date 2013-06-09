@@ -10,5 +10,5 @@
 	"name" : "ABExploreItTextCommand",
 	"pools" : [
 		 ],
-	"super" : "ABCommand",
+	"super" : "ABDoItTextCommand",
 	"type" : "normal" }

@@ -1,3 +1,3 @@
 testing
 isActive
-	^ true
+	^ target readSelection notNil

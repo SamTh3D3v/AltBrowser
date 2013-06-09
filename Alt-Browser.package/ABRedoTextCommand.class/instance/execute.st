@@ -1,3 +1,3 @@
 execution
 execute
-	target redo
+	target widget textMorph editor redo

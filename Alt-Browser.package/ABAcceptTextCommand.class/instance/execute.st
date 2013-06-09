@@ -1,3 +1,4 @@
 execution
 execute
-	target accept
+	target widget accept.
+	requestor selectedItem item accept: target getText

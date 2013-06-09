@@ -2,13 +2,17 @@
 	"class" : {
 		"with:" : "ThierryGoubier 7/19/2012 22:36" },
 	"instance" : {
+		"accept:" : "ThierryGoubier 7/26/2012 14:15",
 		"asString" : "ThierryGoubier 7/19/2012 22:43",
 		"browseItem" : "ThierryGoubier 7/14/2012 11:19",
+		"buildTextMenu:on:with:" : "ThierryGoubier 7/25/2012 23:16",
 		"childNodeClassFromItem:" : "ThierryGoubier 7/19/2012 22:32",
 		"childNodeFromItem:" : "ThierryGoubier 7/19/2012 22:31",
 		"childrenItems" : "ThierryGoubier 7/19/2012 22:34",
+		"clipboardCommands" : "ThierryGoubier 7/25/2012 23:18",
 		"contents" : "ThierryGoubier 7/19/2012 22:32",
 		"doubleClick" : "ThierryGoubier 7/14/2012 11:19",
+		"executeCommands" : "ThierryGoubier 7/25/2012 23:18",
 		"exploreItem" : "ThierryGoubier 7/14/2012 11:19",
 		"inspectItem" : "ThierryGoubier 7/14/2012 11:20",
 		"isStyled" : "ThierryGoubier 7/19/2012 23:20",
@@ -18,5 +22,7 @@
 		"menu:shifted:" : "ThierryGoubier 7/14/2012 11:20",
 		"parentNode" : "ThierryGoubier 7/19/2012 22:36",
 		"parentNode:" : "ThierryGoubier 7/19/2012 22:36",
+		"saveCommands" : "ThierryGoubier 7/25/2012 23:19",
 		"sourceClass" : "ThierryGoubier 7/19/2012 23:20",
-		"sourceCode" : "ThierryGoubier 7/19/2012 23:19" } }
+		"sourceCode" : "ThierryGoubier 7/19/2012 23:19",
+		"undoCommands" : "ThierryGoubier 7/25/2012 23:19" } }

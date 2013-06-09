@@ -1,3 +1,0 @@
-accessing
-browser
-	^ requestor browser

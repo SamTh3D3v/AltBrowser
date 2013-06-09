@@ -1,3 +1,0 @@
-accessing
-label
-	^ 'Reset list'

@@ -1,3 +1,0 @@
-accessing
-template
-	^ theClass classCommentBlank

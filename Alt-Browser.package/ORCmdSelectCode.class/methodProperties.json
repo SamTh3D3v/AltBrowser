@@ -1,8 +1,0 @@
-{
-	"class" : {
-		"takesNodes" : "lr 12/11/2009 08:48",
-		"takesText" : "lr 12/11/2009 08:48" },
-	"instance" : {
-		"execute" : "lr 4/25/2011 11:36",
-		"selectionFor:interval:" : "lr 12/11/2009 14:21",
-		"wantsMenu" : "lr 4/25/2011 11:41" } }

@@ -1,3 +1,0 @@
-callbacks
-text: aText
-	^ false

@@ -1,3 +1,3 @@
 execution
 execute
-	target exploreIt
+	super execute explore

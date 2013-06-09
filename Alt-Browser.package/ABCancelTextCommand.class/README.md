@@ -1,0 +1,1 @@
+An ABCancelTextCommand is about cancelling the last action.
