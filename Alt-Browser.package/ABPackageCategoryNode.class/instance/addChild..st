@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 addChild: anItem
 	"Add a child, but do it according to it's position."
 

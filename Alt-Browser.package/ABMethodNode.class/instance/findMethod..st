@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 findMethod: anItem
 	^ item == anItem
 		ifTrue: [ self ]

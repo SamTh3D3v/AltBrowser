@@ -1,3 +1,3 @@
-as yet unclassified
+querying
 sourceCode
 	^ self item description

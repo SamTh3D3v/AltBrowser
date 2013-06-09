@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 findClassComment: aClass
 	^ item == aClass
 		ifTrue: [ self ]

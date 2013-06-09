@@ -1,4 +1,4 @@
-as yet unclassified
+drag and drop
 dropItem: anItem on: aTarget
 	"This is called. Yes, really."
 

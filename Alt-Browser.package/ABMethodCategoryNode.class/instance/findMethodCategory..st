@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 findMethodCategory: aMethodCategory
 	^ aMethodCategory = item
 		ifTrue: [ self ]

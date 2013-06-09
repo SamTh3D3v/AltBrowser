@@ -1,4 +1,4 @@
-as yet unclassified
+private
 childrenItems
 	"Extract from the organisation the various classes. Ok. Our upper level should try to built a hierarchy with the category name, if applicable (via various upTo: $-). This code is ready for that (introduce an additional hierarchy)."
 

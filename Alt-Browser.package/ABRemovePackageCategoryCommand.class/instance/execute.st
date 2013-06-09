@@ -1,4 +1,4 @@
-as yet unclassified
+execution
 execute
 	"Remove the package category."
 

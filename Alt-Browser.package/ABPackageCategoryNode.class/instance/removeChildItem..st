@@ -1,4 +1,8 @@
-as yet unclassified
+accessing
 removeChildItem: anItem
-	super removeChildItem: anItem.
-	item value remove: anItem item
+	"Remove a child."
+
+	| d |
+	item value remove: anItem item.
+	contents isNil ifTrue: [^nil] ifFalse: [
+		^ contents remove: anItem]

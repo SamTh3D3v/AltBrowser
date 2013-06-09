@@ -1,4 +1,4 @@
-as yet unclassified
+private
 childrenItems
 	"Extract from the organisation the various classes."
 

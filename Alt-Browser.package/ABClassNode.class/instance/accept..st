@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 accept: aText
 	^ [ 
 	UndefinedObject evaluatorClass new

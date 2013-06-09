@@ -1,4 +1,4 @@
-as yet unclassified
+private
 childNodeClassFromItem: anItem
 	((anItem isKindOf: Class) or: [ anItem isKindOf: Metaclass ])
 		ifTrue: [ ^ ABClassNode ].

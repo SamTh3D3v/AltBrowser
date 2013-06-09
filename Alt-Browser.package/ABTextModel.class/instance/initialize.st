@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 	"Initialization code for TreeModel"
 

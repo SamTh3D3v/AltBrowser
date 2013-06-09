@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 asString
 	^ self item isMeta
 		ifTrue: [ '- Class' ]

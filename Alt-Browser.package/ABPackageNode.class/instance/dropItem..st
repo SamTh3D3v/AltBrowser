@@ -1,4 +1,4 @@
-as yet unclassified
+drag and drop
 dropItem: anItem
 	"Ok. If we receive a category, then we add the category at the end of the parent node. It amounts to removing a node from the root items and adding it here."
 

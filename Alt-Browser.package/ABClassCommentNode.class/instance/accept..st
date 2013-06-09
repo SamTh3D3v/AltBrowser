@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 accept: aText
 	"This should change the class comment."
 

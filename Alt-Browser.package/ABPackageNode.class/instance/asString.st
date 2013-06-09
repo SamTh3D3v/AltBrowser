@@ -1,3 +1,3 @@
-as yet unclassified
+printing
 asString
 	^ self item packageName

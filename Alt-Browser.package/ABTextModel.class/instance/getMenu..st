@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 getMenu: aMenu
 
 	menuBlockHolder contents cull: aMenu cull: self.

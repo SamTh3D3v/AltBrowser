@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 findMethodCategory: aMethodCategory
 	"Interesting bug: class and instance side may have the exact same method category."
 	

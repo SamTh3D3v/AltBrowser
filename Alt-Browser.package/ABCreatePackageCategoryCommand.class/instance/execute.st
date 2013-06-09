@@ -1,4 +1,4 @@
-as yet unclassified
+execution
 execute
 	"Ask for a category name and create it."
 

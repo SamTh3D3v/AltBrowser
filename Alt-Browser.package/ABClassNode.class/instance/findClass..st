@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 findClass: aClass
 	^ self item == aClass
 		ifTrue: [ self ]

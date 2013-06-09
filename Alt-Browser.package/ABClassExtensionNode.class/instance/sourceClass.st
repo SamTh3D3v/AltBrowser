@@ -1,3 +1,3 @@
-as yet unclassified
+querying
 sourceClass
 	^ self item

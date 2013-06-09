@@ -1,4 +1,4 @@
-as yet unclassified
+private
 childrenItems
 	^ self item isMeta
 		ifFalse: [ 

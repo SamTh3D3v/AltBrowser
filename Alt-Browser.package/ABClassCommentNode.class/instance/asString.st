@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 asString
 	^ self item hasComment
 		ifTrue: [ 'comment' asText addAttribute: TextEmphasis italic ]
