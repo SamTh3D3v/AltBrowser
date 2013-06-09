@@ -30,4 +30,6 @@ initializePresenter
 	self class announcer weak on: AltRootsReset send: #reset to: self.
 	self class announcer weak on: AltNodeRebuilt send: #rebuiltNode: to: self.
 	self class announcer weak on: AltNodeRemoved send: #removeNode: to: self.
-	self class announcer weak on: AltNodeAdded send: #addNode: to: self
+	self class announcer weak on: AltNodeAdded send: #addNode: to: self.
+	
+	SystemAnnouncer uniqueInstance weak on: MethodModified send: #aMethodUpdated: to: self.
