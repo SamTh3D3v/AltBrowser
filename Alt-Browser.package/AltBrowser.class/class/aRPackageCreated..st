@@ -1,20 +1,17 @@
 updating
-aMCWorkingCopyCreated: anEvent
-	"Only case where we don't use a #findXXX: on the root items."
-
-	"Done for the RPackage change. Need to test."
-	
-	"Wrong. I am probably supposed to follow the RPackage events. But RPackage does not propagate the PackageSet creation..."
+aRPackageCreated: anEvent
+	"Do I need to track that? We are tracking the category creation event and this is redundant. And we can't afford to avoid tracking new packages as well."
 
 	| packageSet packageName cat node item |
-	packageSet := anEvent workingCopy packageSet.
+	packageSet := anEvent package.
 	packageName := packageSet packageName.
-	item := anEvent workingCopy.
+	item := anEvent package workingCopy.
 	cat := packageName copyUpTo: $-.
 	node := self rootItems detect: [ :e | (e isKindOf: AltPackageCategoryNode) and: [ e item key = cat ] ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ 
 			| packageNode |
+			node item value add: item.
 			packageNode := node addChild: item.
 			announcer announce: (AltNodeAdded node: packageNode) ]
 		ifFalse: [ 
