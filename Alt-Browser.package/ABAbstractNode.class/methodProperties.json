@@ -4,8 +4,7 @@
 	"instance" : {
 		"accept:" : "ThierryGoubier 7/26/2012 14:15",
 		"addChild:" : "ThierryGoubier 7/30/2012 17:22",
-		"addChild:beforeIndex:" : "ThierryGoubier 8/1/2012 21:31",
-		"addChildItem:" : "ThierryGoubier 8/1/2012 21:38",
+		"addChildItem:" : "ThierryGoubier 8/30/2012 00:00",
 		"addChildItem:beforeIndex:" : "ThierryGoubier 8/1/2012 21:38",
 		"asString" : "ThierryGoubier 7/19/2012 22:43",
 		"buildTextMenu:on:with:" : "ThierryGoubier 8/5/2012 23:05",
@@ -34,6 +33,7 @@
 		"item:" : "ThierryGoubier 7/19/2012 22:36",
 		"parentNode" : "ThierryGoubier 7/19/2012 22:36",
 		"parentNode:" : "ThierryGoubier 7/19/2012 22:36",
+		"printOn:" : "ThierryGoubier 8/30/2012 07:04",
 		"rebuildContents" : "ThierryGoubier 8/5/2012 08:50",
 		"removeChildItem:" : "ThierryGoubier 8/1/2012 21:24",
 		"saveCommands" : "ThierryGoubier 7/25/2012 23:19",

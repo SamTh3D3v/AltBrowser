@@ -6,7 +6,7 @@ dropItem: anItem
 		ifFalse: [ ^ self ].
 	anItem parentNode isNil
 		ifTrue: [ AltBrowser rootItems contents remove: anItem ]
-		ifFalse: [ anItem parentNode removeChild: anItem ].
+		ifFalse: [ anItem parentNode removeChildItem: anItem ].
 	AltBrowser announcer announce: (AltNodeRemoved node: anItem).
 	self parentNode addChildItem: anItem beforeIndex: (parentNode contents indexOf: self).
 	AltBrowser announcer announce: (AltNodeAdded node: anItem)
