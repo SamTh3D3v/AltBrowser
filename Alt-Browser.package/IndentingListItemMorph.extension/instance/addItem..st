@@ -4,18 +4,18 @@ addItem: aNode
 
 	"The short version is too drastic. Current version seems to work a bit better. There are too many layers of object for this to look anywhere elegant (and correct)."
 
-	"self refreshExpandedState.
-	container adjustSubmorphPositions."
+	self recursiveRefreshExpandedState.
+	container adjustSubmorphPositions.
 
 	"receiver is the target parent node morph."
 
-	"As of .37, is still buggy. Will rely on an invariant check."
+	"As of .41, is still buggy. The invariant is being checked. Chasing an incorrect case of addItem (add a method on a new protocol or to one which is closed). Apparently this may have been corrected. Not! There is a possibility which is to keep track of opened child of the parent node (destroy all children, then recreate them), but it's hard to make sense of it and it doesn't seems to be ready for a partial update."
 
-	| newMorph lc nc i j |
+	"| newMorph lc nc i j |
 	(self findItem: aNode item) ifNotNil: [ ^ self ].
 	self isExpanded
 		ifFalse: [ 
-			self changed.
+			self refreshExpandedState.
 			^ self ].
 	aNode parentNode notNil
 		ifTrue: [ 
@@ -55,4 +55,4 @@ addItem: aNode
 	self isExpanded
 		ifTrue: [ 
 			container scroller addAllMorphs: {newMorph} after: nc.
-			container adjustSubmorphPositions ]
+			container adjustSubmorphPositions ]"

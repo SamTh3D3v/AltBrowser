@@ -2,10 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addItem:" : "ThierryGoubier 9/7/2012 15:57",
+		"addItem:" : "ThierryGoubier 9/9/2012 23:17",
 		"checkInvariant" : "ThierryGoubier 9/9/2012 15:07",
+		"findExpanded" : "ThierryGoubier 9/9/2012 23:19",
 		"findItem:" : "ThierryGoubier 7/27/2012 14:35",
 		"findPreviousSibling:" : "ThierryGoubier 9/6/2012 16:23",
 		"hasContents" : "ThierryGoubier 7/27/2012 14:38",
 		"rebuildChildren" : "ThierryGoubier 8/5/2012 08:55",
+		"recursiveRefreshExpandedState" : "ThierryGoubier 9/9/2012 23:19",
 		"removeItem:" : "ThierryGoubier 9/5/2012 16:31" } }

@@ -1,0 +1,1 @@
+This command starts a move, different from a delete. It's focusing on giving the same behavior as the cut / paste of file browsers.

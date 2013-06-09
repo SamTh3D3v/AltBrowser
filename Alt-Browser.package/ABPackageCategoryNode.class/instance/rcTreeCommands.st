@@ -1,5 +1,5 @@
 commands
-clipboardTreeCommands
+rcTreeCommands
 	<treeAreaCommand>
 	^ {ABRemovePackageCategoryCommand.
 	ABCreatePackageCategoryCommand}

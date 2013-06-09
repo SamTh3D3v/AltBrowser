@@ -4,7 +4,8 @@
 		 ],
 	"classvars" : [
 		"announcer",
-		"rootItems" ],
+		"rootItems",
+		"temporary" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"treeModel",

@@ -1,0 +1,1 @@
+This command paste something which has been cut first.

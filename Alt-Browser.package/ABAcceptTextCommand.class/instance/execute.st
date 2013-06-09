@@ -2,9 +2,10 @@ execution
 execute
 	"The execute may create an object or return us one."
 
-	| result |
+	| result selection |
 	target widget accept.
-	result := requestor selectedItem item accept: target getText notifying: target widget.
-	(result isNil or: [ result == requestor selectedItem item ])
+	selection := requestor selectedItem item.
+	result := selection accept: target getText notifying: target widget.
+	(result isNil or: [ result == selection ])
 		ifTrue: [ ^ self ].
 	requestor selectPathForAbstractItem: result
