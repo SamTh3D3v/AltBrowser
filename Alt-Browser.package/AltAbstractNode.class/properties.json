@@ -1,0 +1,16 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"item",
+		"contents",
+		"parentNode" ],
+	"name" : "AltAbstractNode",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

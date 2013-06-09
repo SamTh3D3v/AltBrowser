@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ requestor selectedNode isNil or: [ requestor selectedNode item isKindOf: ABPackageCategoryNode ]
+	^ requestor selectedNode isNil or: [ requestor selectedNode item isKindOf: AltPackageCategoryNode ]

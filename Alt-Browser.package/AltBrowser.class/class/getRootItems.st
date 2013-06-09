@@ -27,5 +27,5 @@ getRootItems
 	^ o
 		collect: [ :e | 
 			e value size ~= 1
-				ifTrue: [ ABPackageCategoryNode with: e ]
-				ifFalse: [ ABPackageSetNode with: e value first ] ]
+				ifTrue: [ AltPackageCategoryNode with: e ]
+				ifFalse: [ AltPackageSetNode with: e value first ] ]

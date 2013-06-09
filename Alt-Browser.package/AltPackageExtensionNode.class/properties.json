@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltPackageExtensionNode",
+	"pools" : [
+		 ],
+	"super" : "AltPackageNode",
+	"type" : "normal" }

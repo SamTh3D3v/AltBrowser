@@ -1,0 +1,3 @@
+private
+childNodeClassFromItem: anItem
+	^ AltMethodNode

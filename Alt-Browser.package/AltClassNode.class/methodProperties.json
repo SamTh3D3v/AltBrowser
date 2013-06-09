@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accept:notifying:" : "ThierryGoubier 10/23/2012 14:05",
+		"asString" : "ThierryGoubier 9/10/2012 13:14",
+		"childNodeClassFromItem:" : "ThierryGoubier 11/21/2012 13:44",
+		"childrenItems" : "ThierryGoubier 7/16/2012 20:06",
+		"classSearchCommands" : "ThierryGoubier 10/15/2012 14:30",
+		"classSide" : "ThierryGoubier 7/16/2012 13:56",
+		"contentsOrganization" : "ThierryGoubier 9/3/2012 17:45",
+		"findAllClass:" : "ThierryGoubier 9/1/2012 18:38",
+		"findClass:" : "ThierryGoubier 9/1/2012 18:38",
+		"findMethod:in:" : "ThierryGoubier 9/23/2012 10:18",
+		"indent" : "ThierryGoubier 9/10/2012 13:16",
+		"isStyled" : "ThierryGoubier 7/19/2012 23:23",
+		"navigationCommands" : "ThierryGoubier 10/15/2012 15:11",
+		"privateClass" : "ThierryGoubier 7/17/2012 13:54",
+		"refactoringCommands" : "ThierryGoubier 10/10/2012 13:57",
+		"removeClassCommand" : "ThierryGoubier 11/16/2012 23:10",
+		"sourceCode" : "ThierryGoubier 7/16/2012 14:18",
+		"subclasses" : "ThierryGoubier 9/26/2012 11:29",
+		"superclass" : "ThierryGoubier 9/26/2012 11:30",
+		"title" : "ThierryGoubier 9/21/2012 16:18" } }

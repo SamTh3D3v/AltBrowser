@@ -10,7 +10,7 @@ aNodeAdded: anEvent
 	aNode := anEvent node.
 	(pNode := aNode parentNode) isNil
 		ifTrue: [ 
-			self assert: (aNode isKindOf: ABTreeNodeModel) not.
+			self assert: (aNode isKindOf: AltTreeNodeModel) not.
 			self changed: #rootNodes.
 			treeMorph firstNodeMorph checkInvariant ]
 		ifFalse: [ 

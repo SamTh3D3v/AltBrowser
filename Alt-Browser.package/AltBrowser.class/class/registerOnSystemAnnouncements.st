@@ -10,6 +10,7 @@ registerOnSystemAnnouncements
 		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
 		on: MCPackageModified send: #aMCWorkingCopyModified: to: self;
 		on: CategoryRemoved send: #aCategoryRemoved: to: self;
+		on: CategoryAdded send: #aCategoryAdded: to: self;
 		on: MethodAdded send: #aMethodAdded: to: self;
 		on: MethodRemoved send: #aMethodRemoved: to: self;
 		on: MethodRecategorized send: #aMethodRecategorized: to: self;

@@ -1,3 +1,3 @@
 updating
 rootNodeClassFromItem: anItem
-	^ ABTreeNodeModel
+	^ AltTreeNodeModel

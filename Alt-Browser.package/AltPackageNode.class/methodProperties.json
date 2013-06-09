@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"accept:notifying:" : "ThierryGoubier 10/17/2012 15:58",
+		"addCategoryCommand" : "ThierryGoubier 11/21/2012 20:57",
+		"asString" : "ThierryGoubier 7/15/2012 07:49",
+		"categoryCommands" : "ThierryGoubier 11/22/2012 10:14",
+		"childNodeClassFromItem:" : "ThierryGoubier 11/21/2012 13:45",
+		"childrenItems" : "ThierryGoubier 11/21/2012 13:44",
+		"dropItem:" : "ThierryGoubier 11/21/2012 13:45",
+		"findClass:" : "ThierryGoubier 9/23/2012 17:15",
+		"findClassCategory:" : "ThierryGoubier 11/21/2012 22:57",
+		"findMethod:in:" : "ThierryGoubier 9/23/2012 16:18",
+		"findPackage:" : "ThierryGoubier 8/31/2012 07:48",
+		"isStyled" : "ThierryGoubier 9/23/2012 22:16",
+		"packageName" : "ThierryGoubier 11/21/2012 22:40",
+		"sourceCode" : "ThierryGoubier 9/23/2012 22:16",
+		"title" : "ThierryGoubier 9/21/2012 16:21" } }

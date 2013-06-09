@@ -6,8 +6,8 @@ aMethodUpdated: anEvent
 	self selectedNode isNil
 		ifTrue: [ ^ self ].
 	sItem := self selectedNode item.
-	self assert: (sItem isKindOf: ABAbstractNode).
-	(sItem isKindOf: ABMethodNode)
+	self assert: (sItem isKindOf: AltAbstractNode).
+	(sItem isKindOf: AltMethodNode)
 		ifFalse: [ ^ self ].
 	(sItem sourceClass == anEvent methodClass and: [ sItem item == anEvent oldMethod selector ])
 		ifTrue: [ source contents: self selectedNode sourceCode ]
