@@ -1,3 +1,3 @@
 testing
-hasContents
+contentsNotNil
 	^ contents notNil

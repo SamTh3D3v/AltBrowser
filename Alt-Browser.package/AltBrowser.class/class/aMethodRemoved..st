@@ -4,11 +4,11 @@ aMethodRemoved: anEvent
 
 	| node r s c |
 	node := self rootItems detect: [ :e | (c := e findClass: anEvent itemClass) notNil ] ifNone: [ ^ self ].
-	c hasContents
+	c contentsNotNil
 		ifTrue: [ 
 			(r := c findMethodCategory: anEvent itemProtocol) isNil
 				ifTrue: [ ^ self ].
-			r hasContents
+			r contentsNotNil
 				ifTrue: [ 
 					r contents remove: (s := r findMethod: anEvent itemSelector).
 					self allInstances do: [ :each | each removeNode: s ] ] ]

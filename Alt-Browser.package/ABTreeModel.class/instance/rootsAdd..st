@@ -12,7 +12,7 @@ rootsAdd: aNode
 					(r := e findItem: pNode) notNil
 						ifTrue: [ 
 							| n wNode |
-							r hasContents
+							r contentsNotNil
 								ifTrue: [ 
 									wNode := r childNodeFromItem: aNode.
 									r contents add: wNode ].
