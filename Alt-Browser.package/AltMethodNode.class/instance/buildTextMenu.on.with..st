@@ -1,6 +1,6 @@
 querying
 buildTextMenu: aMenu on: aTarget with: aRequestor
-	"Ok, now, we may try this new generation of Implementors search."
+	"Ok. Two steps: first, create the menu linked with the node. second, parse the method and create menu items linked to the selected node."
 
 	| ast node |
 	super buildTextMenu: aMenu on: aTarget with: aRequestor.
@@ -8,8 +8,8 @@ buildTextMenu: aMenu on: aTarget with: aRequestor
 		addLine;
 		addLine.
 	ast := RBParser parseMethod: aTarget text asString onError: [ :msg :pos | ^ self ].
+	ast annotateInClass: self sourceClass.
 	(node := ast bestNodeFor: aTarget selectionInterval) altTextCommands
-		do: [ :c | 
-			(c on: aTarget for: aRequestor node: node)
-				addItemToMenu: aMenu;
-				select ]
+		do: [ :c | (c on: aTarget for: aRequestor node: node) addItemToMenu: aMenu ].
+	node canSelect
+		ifTrue: [ aTarget textMorph paragraph secondarySelection: node textIntervals ]

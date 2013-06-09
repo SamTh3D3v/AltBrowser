@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltImplementorsTextCommand",
+	"name" : "AltInstVarDefs",
 	"pools" : [
 		 ],
 	"super" : "AltAstNodeCommand",

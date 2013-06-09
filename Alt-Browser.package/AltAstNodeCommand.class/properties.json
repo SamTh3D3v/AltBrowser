@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltImplementorsTextCommand",
+		"astNode" ],
+	"name" : "AltAstNodeCommand",
 	"pools" : [
 		 ],
-	"super" : "AltAstNodeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }
