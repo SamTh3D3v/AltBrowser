@@ -14,6 +14,6 @@ accept: aText notifying: aController
 	res notNil
 		ifTrue: [ 
 			| r |
-			AltBrowser rootItems contents detect: [ :aRoot | (r := aRoot findClass: res) notNil ].
+			AltBrowser roots detect: [ :aRoot | (r := aRoot findClass: res) notNil ].
 			^ r ].
 	^ nil

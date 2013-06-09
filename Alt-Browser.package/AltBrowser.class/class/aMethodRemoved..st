@@ -8,7 +8,7 @@ aMethodRemoved: anEvent
 
 	| mCNodes  |
 	mCNodes := OrderedCollection new.
-	self rootItems contents
+	self roots
 		do: [ :root | 
 			| res |
 			res := root findAllClass: anEvent methodClass.

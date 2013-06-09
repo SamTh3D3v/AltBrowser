@@ -1,0 +1,1 @@
+This announcement is for resetting all roots from the AltBrowser class side.

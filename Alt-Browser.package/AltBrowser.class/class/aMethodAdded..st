@@ -3,7 +3,7 @@ aMethodAdded: anEvent
 	"Ok, a method was added. Does not mean modify. Works."
 
 	| mCNodes |
-	self rootItems contents
+	self roots
 		do: [ :root | 
 			| res |
 			res := root findAllMethodParents: anEvent selector forClass: anEvent methodClass.

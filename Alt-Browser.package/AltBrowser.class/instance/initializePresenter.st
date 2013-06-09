@@ -21,7 +21,7 @@ initializePresenter
 					self history add: sel ] ].
 	textModel menu: [ :m :t | self buildMenu: m on: t ].
 	treeModel menu: [:m :t | self buildTreeMenu: m on: t].
-	self class rootItems whenChangedSend: #reset to: self.
+	self class announcer weak on: AltRootsReset send: #reset to: self.
 	self class announcer weak on: AltNodeRebuilt send: #rebuiltNode: to: self.
 	self class announcer weak on: AltNodeRemoved send: #removeNode: to: self.
 	self class announcer weak on: AltNodeAdded send: #addNode: to: self

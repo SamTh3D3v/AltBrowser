@@ -4,7 +4,7 @@ aClassRemoved: anEvent
 
 	| node r o |
 	o := OrderedCollection new.
-	node := self rootItems contents
+	node := self roots
 		do: [ :e | 
 			(r := e findAllClass: anEvent classRemoved) notNil
 				ifTrue: [ o addAll: r ] ].

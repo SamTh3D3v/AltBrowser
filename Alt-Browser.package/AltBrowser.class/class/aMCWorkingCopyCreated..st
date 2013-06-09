@@ -7,7 +7,7 @@ aMCWorkingCopyCreated: anEvent
 	| package cat node |
 	package := RPackageOrganizer default packageNamed: anEvent workingCopy packageName.
 	cat := package name copyUpTo: $-.
-	node := self rootItems contents detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat] ] ifNone: [ nil ].
+	node := self roots detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat] ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ 
 			node item value
@@ -20,5 +20,5 @@ aMCWorkingCopyCreated: anEvent
 						ifNotNil: [ announcer announce: (AltNodeAdded node: packageNode) ] ] ]
 		ifFalse: [ 
 			node := ABPackageCategoryNode with: cat -> (OrderedCollection with: package).
-			self rootItems contents add: node.
+			self roots add: node.
 			 announcer announce: (AltNodeAdded node: node)  ]

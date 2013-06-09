@@ -8,8 +8,7 @@ execute
 	aClass := SearchFacade classSearch chooseFromOwner: requestor window window.
 	aClass isNil
 		ifTrue: [ ^ self ].
-	AltBrowser rootItems contents
-		do: [ :each | 
+	AltBrowser roots do: [ :each | 
 			| res |
 			(res := each findClass: aClass) notNil
 				ifTrue: [ found := res ] ].

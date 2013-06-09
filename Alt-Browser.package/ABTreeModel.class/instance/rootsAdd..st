@@ -8,7 +8,7 @@ rootsAdd: aNode
 			self assert: (aNode isKindOf: ABTreeNodeModel) not.
 			rootsHolder
 				add: (ABTreeNodeModel with: aNode model: aNode)
-				beforeIndex: (AltBrowser rootItems contents indexOf: aNode).
+				beforeIndex: (AltBrowser roots indexOf: aNode).
 			(self widget scroller submorphs at: 1) checkInvariant ]
 		ifFalse: [ 
 			rootsHolder contents

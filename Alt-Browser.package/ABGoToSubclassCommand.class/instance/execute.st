@@ -4,7 +4,7 @@ execute
 	
 	| found aClass nPath aNode tmPath |
 	aClass := requestor selectedItem item item subclasses first.
-	AltBrowser rootItems contents
+	AltBrowser roots
 		do: [ :each | 
 			| res |
 			(res := each findClass: aClass) notNil

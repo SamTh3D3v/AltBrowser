@@ -5,8 +5,8 @@ aClassAdded: anEvent
 	| node r package cat |
 	package := RPackageOrganizer default globalPackageOf: anEvent classAdded.
 	self assert: package notNil.
-	node := self rootItems contents detect: [ :e | (r := e findPackage: package) notNil ] ifNone: [ ^ self ].
-	self rootItems contents detect: [ :e | (cat := e findClassCategory: anEvent classCategory) notNil ] ifNone: [ nil ].
+	node := self roots detect: [ :e | (r := e findPackage: package) notNil ] ifNone: [ ^ self ].
+	self roots detect: [ :e | (cat := e findClassCategory: anEvent classCategory) notNil ] ifNone: [ nil ].
 	cat notNil
 		ifTrue: [ 
 			| classNode |

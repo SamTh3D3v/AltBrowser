@@ -6,7 +6,7 @@ dropItem: anItem
 	((anItem isKindOf: ABPackageCategoryNode) or: [ anItem isKindOf: ABPackageNode ])
 		ifFalse: [ ^ self ].
 	anItem parentNode isNil
-		ifTrue: [ AltBrowser rootItems contents remove: anItem ]
+		ifTrue: [ AltBrowser roots remove: anItem ]
 		ifFalse: [ anItem parentNode removeChildItem: anItem ].
 	AltBrowser announcer announce: (AltNodeRemoved node: anItem).
 	self childrenItems isEmpty
@@ -14,6 +14,6 @@ dropItem: anItem
 		ifFalse: [ 
 			self parentNode isNil
 				ifTrue: [ 
-					AltBrowser rootItems contents add: anItem before: self. anItem parentNode: nil ]
+					AltBrowser roots add: anItem before: self. anItem parentNode: nil ]
 				ifFalse: [ self parentNode addChildItem: anItem beforeIndex: (self parentNode contents indexOf: self) ] ].
 	AltBrowser announcer announce: (AltNodeAdded node: anItem)
