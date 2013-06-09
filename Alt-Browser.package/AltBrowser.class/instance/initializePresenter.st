@@ -5,10 +5,12 @@ initializePresenter
 	treeModel roots: self getRootItems.
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
+	treeModel perInstanceKeymapOnly: true.
+	textModel perInstanceKeymapOnly: true.
 	treeModel
 		whenSelectedItemChanged: [ :sel |
-			self updateTextKeymap.
-			self updateTreeKeymap.
+			treeModel updateKeymap.
+			textModel updateKeymap.
 			sel isNil
 				ifTrue: [ 
 					textModel text: ''.
@@ -21,6 +23,10 @@ initializePresenter
 					self history add: sel ] ].
 	textModel menu: [ :m :t | self buildMenu: m on: t ].
 	treeModel menu: [:m :t | self buildTreeMenu: m on: t].
+	
+	treeModel keymapHolder: [:kmDispatcher | self updateTreeKeymap: kmDispatcher].
+	textModel keymapHolder: [:kmDispatcher | self updateTextKeymap: kmDispatcher].
+	
 	self class announcer weak on: AltRootsReset send: #reset to: self.
 	self class announcer weak on: AltNodeRebuilt send: #rebuiltNode: to: self.
 	self class announcer weak on: AltNodeRemoved send: #removeNode: to: self.

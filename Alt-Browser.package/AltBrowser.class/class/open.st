@@ -4,5 +4,5 @@ open
 
 	| n |
 	(n := AltBrowser new) openWithSpec.
-	n updateTreeKeymap.
+	n treeModel updateKeymap.
 	^ n

@@ -2,7 +2,7 @@ shortcuts
 updateTreeKeymap
 	"Update the tree keymap. Change the key dispatcher if needed. Target for now is the PluggableTreeMorph, we will have to see if this is the correct one."
 
-	| treeMorph |
+"	| treeMorph |
 	treeMorph := treeModel widget.
 	(treeMorph kmDispatcher isKindOf: AltKMDispatcher)
 		ifFalse: [ treeMorph setProperty: #kmDispatcher toValue: (AltKMDispatcher target: treeMorph) ]
@@ -11,4 +11,4 @@ updateTreeKeymap
 		ifTrue: [ self selectedItem item buildTreeShortcutsOn: treeMorph with: self ]
 		ifFalse: [ 
 			(Pragma allNamed: #treeAreaCommand from: self class to: AltBrowser)
-				do: [ :e | (self perform: e selector) do: [ :c | (c on: self treeModel for: self) buildShortcut: treeMorph ] ] ]
+				do: [ :e | (self perform: e selector) do: [ :c | (c on: self treeModel for: self) buildShortcut: treeMorph ] ] ]"
