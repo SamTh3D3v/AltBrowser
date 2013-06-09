@@ -9,7 +9,7 @@ selectPathForAbstractItem: anItem
 		whileTrue: [ 
 			nPath add: aNode.
 			aNode := aNode parentNode ].
-	self changed: #(#rootNodes #openItemPath) , nPath reverse.
+	self history pauseDuring: [ self changed: #(#rootNodes #openItemPath) , nPath reverse ].
 	treeMorph listManager setSelectedMorph: (self findMorphNodeForAbstractItem: anItem).
 	treeMorph
 		adjustSubmorphPositions;

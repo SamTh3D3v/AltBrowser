@@ -14,7 +14,8 @@
 		"history",
 		"window",
 		"treeMorph",
-		"textMorph" ],
+		"textMorph",
+		"naviOn" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],
