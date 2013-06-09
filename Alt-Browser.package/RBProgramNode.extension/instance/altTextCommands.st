@@ -1,3 +1,3 @@
-*alt-browser
+*alt-browser-rb-commands
 altTextCommands
 	^ #()

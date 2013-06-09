@@ -1,12 +1,13 @@
 updating
 aMethodRecategorized: anEvent
-	"Pass through to childrens. We may have to rebuilt if the category isn't yet into our list. Try to delegate to the list of items; if one of them rings true, then don't update; if none, then the protocol is new and we need to update the class display itself."
+	"Pass through to childrens. We may have to rebuilt if the category isn't yet into our list. Try to delegate to the list of items; and rebuilt yourself if one of the two protocol is not included."
 
 	"Would be simpler if protocol creation were announced. They are not."
 
 	anEvent methodClass == item
 		ifTrue: [ 
-			(self contents inject: false into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ])
-				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
+			self contents do: [ :each | each aMethodRecategorized: anEvent ].
+			(self contents select: [ :e | e item = anEvent oldProtocol or: [ e item = anEvent newProtocol ] ]) size < 2
+				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false
