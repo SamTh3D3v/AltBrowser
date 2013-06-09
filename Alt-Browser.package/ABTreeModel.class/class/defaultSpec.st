@@ -14,4 +14,5 @@ defaultSpec
 			#vResizing:. 						#spaceFill.
 			#dropItemSelector:.				#dropItem:on:.
 			#dragItemSelector:.				#dragItem:.
-			#wantsDropSelector:.				#wantsDropItem:.}
+			#wantsDropSelector:.				#wantsDropItem:.
+			#getHelpSelector:.				#selectedItemName:.}

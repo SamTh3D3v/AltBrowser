@@ -1,9 +1,11 @@
 private
 getRootItems
-	"This is where I should rework the organisation. Use broad package classes listed in defaultPackageCategories to reduce the number of top-level items, then sort them in alphabetical order to make sure _UnpackagedPackage at the end of the list. I'm sure using another sort criteria could be better, as the order in which the package appear in the system, but I believe RPackageOrganizer does not keep track of that, whereas Smalltalk organization does."
+	"Build the organisation out of some default classification and collect all remaining packages from the list of MCWorkingCopy in the system."
+
+	"There is still some bugs in the packages introduced with the first implementation of RPackage and they show when we build this list."
 
 	| l o |
-	l := RPackageOrganizer default packages asOrderedCollection.
+	l := (MCWorkingCopy allManagers collect: [ :e | e packageSet ]) asOrderedCollection.
 	o := OrderedCollection new.
 	self defaultPackageCategoriesNames
 		do: [ :w | 
@@ -15,18 +17,27 @@ getRootItems
 			| p w i |
 			p := l first.
 			w := p packageName copyUpTo: $-.
-			i := w -> (OrderedCollection with: p).
+			i := w -> (OrderedCollection with: p packageName -> p packages).
 			o add: i.
 			l remove: p.
 			(l select: [ :e | (e packageName copyUpTo: $-) = w ])
 				do: [ :e | 
 					l remove: e.
-					i value add: e ] ].
-	^ (SortedCollection sortBlock: [ :a :b | a asString < b asString ])
-		addAll:
-				(o
-						collect: [ :e | 
-							e value size ~= 1
-								ifTrue: [ ABPackageCategoryNode with: e ]
-								ifFalse: [ ABPackageNode with: e value first ] ]);
-		asOrderedCollection
+					i value add: e packageName -> e packages ] ].
+	^ o
+		collect: [ :e | 
+			e value size ~= 1
+				ifTrue: [ 
+					| s |
+					s := e value
+						collect: [ :f | 
+							f value size ~= 1
+								ifTrue: [ f ]
+								ifFalse: [ f value first ] ].
+					ABPackageCategoryNode with: e key -> s ]
+				ifFalse: [ 
+					| f |
+					f := e value first.
+					f value size ~= 1
+						ifTrue: [ ABPackageCategoryNode with: f ]
+						ifFalse: [ ABPackageNode with: f value first ] ] ]

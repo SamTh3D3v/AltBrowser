@@ -1,0 +1,4 @@
+commands
+clipboardCommands
+	<treeAreaCommand>
+	^ {ABRemoveClassCommand}
