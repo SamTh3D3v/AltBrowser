@@ -1,6 +1,6 @@
 initialization
 initializePresenter
-	treeModel roots: (ABPackageList rootItems collect: [ :e | ABTreeNodeModel with: e model: e ]).
+	treeModel roots: self getRootItems.
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
 	treeModel

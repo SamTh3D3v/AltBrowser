@@ -1,12 +1,19 @@
 {
 	"class" : {
+		"defaultPackageCategoriesNames" : "ThierryGoubier 7/26/2012 15:22",
 		"defaultSpec" : "ThierryGoubier 7/16/2012 22:39",
 		"example" : "ThierryGoubier 7/26/2012 10:42",
-		"title" : "ThierryGoubier 7/15/2012 22:44" },
+		"getRootItems" : "ThierryGoubier 7/26/2012 15:24",
+		"reset" : "ThierryGoubier 7/26/2012 16:30",
+		"rootItems" : "ThierryGoubier 7/26/2012 15:26",
+		"title" : "ThierryGoubier 7/15/2012 22:44",
+		"updateAll" : "ThierryGoubier 7/26/2012 16:23" },
 	"instance" : {
 		"buildMenu:on:" : "ThierryGoubier 7/25/2012 23:22",
-		"initializePresenter" : "ThierryGoubier 7/19/2012 23:22",
+		"getRootItems" : "ThierryGoubier 7/26/2012 16:24",
+		"initializePresenter" : "ThierryGoubier 7/26/2012 16:25",
 		"initializeWidgets" : "ThierryGoubier 7/17/2012 22:43",
+		"reset" : "ThierryGoubier 7/26/2012 16:25",
 		"selectedItem" : "ThierryGoubier 7/26/2012 10:45",
 		"textModel" : "ThierryGoubier 7/16/2012 00:35",
 		"treeModel" : "ThierryGoubier 7/15/2012 22:41" } }
