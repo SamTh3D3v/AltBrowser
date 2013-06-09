@@ -1,4 +1,4 @@
 commands
-clipboardCommands
+removeClassCommand
 	<treeAreaCommand>
 	^ {AltRemoveClassCommand}

@@ -2,7 +2,7 @@ querying
 buildTreeMenu: aMenu on: aTarget with: aRequestor
 	| t |
 	t := false.
-	(Pragma allNamed: #treeAreaCommand from: self class to: ABAbstractNode)
+	(self pragmas: #textAreaCommand from: self class to: ABAbstractNode)
 		do: [ :e | 
 			t
 				ifTrue: [ aMenu addLine ]

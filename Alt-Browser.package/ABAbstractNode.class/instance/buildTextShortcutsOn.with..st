@@ -2,7 +2,7 @@ querying
 buildTextShortcutsOn: aKMDispatcher with: aRequestor
 	"This is an attempt at handling shortcuts... Which works, with the help of a custom KMDispatcher."
 
-	(Pragma allNamed: #textAreaCommand from: self class to: ABAbstractNode)
+	(self pragmas: #textAreaCommand from: self class to: ABAbstractNode)
 		do: [ :e | 
 			(self perform: e selector)
 				do: [ :c | 
