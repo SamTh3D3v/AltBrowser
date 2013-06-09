@@ -1,14 +1,14 @@
 {
-	"category" : "Alt-Browser-Tests",
+	"category" : "Alt-Browser-Nodes",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"browser" ],
-	"name" : "AltBrowserTest",
+		 ],
+	"name" : "AltPackageOverrideNode",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "AltPackageExtensionNode",
 	"type" : "normal" }
