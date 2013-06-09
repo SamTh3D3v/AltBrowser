@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"label:" : "cwp 9/30/2007 20:24" },
+	"instance" : {
+		"addCommand:" : "cwp 9/30/2007 20:19",
+		"addItemToMenu:" : "lr 7/3/2009 22:27",
+		"group" : "cwp 9/30/2007 20:40",
+		"groupedCommands" : "lr 4/8/2010 11:07",
+		"initialize" : "lr 7/3/2009 22:27",
+		"isEnabled" : "cwp 9/30/2007 21:54",
+		"label" : "cwp 9/30/2007 20:16",
+		"order" : "lr 4/8/2010 11:07",
+		"populateMenu:" : "cwp 9/30/2007 21:01",
+		"setLabel:" : "lr 7/3/2009 22:27" } }

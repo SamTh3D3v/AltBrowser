@@ -1,0 +1,1 @@
+An ABClassNode represent a Class, either the normal or the class side.

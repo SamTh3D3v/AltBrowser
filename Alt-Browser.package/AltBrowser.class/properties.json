@@ -1,0 +1,16 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"treeModel",
+		"methodModel",
+		"textModel" ],
+	"name" : "AltBrowser",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }

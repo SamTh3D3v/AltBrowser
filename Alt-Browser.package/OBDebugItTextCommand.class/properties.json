@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OBDebugItTextCommand",
+	"pools" : [
+		 ],
+	"super" : "OBCommand",
+	"type" : "normal" }

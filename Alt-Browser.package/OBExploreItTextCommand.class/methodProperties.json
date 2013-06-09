@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"takesNodes" : "lr 3/6/2011 15:08",
+		"takesText" : "lr 3/6/2011 15:08" },
+	"instance" : {
+		"execute" : "lr 3/6/2011 15:13",
+		"group" : "lr 3/6/2011 15:05",
+		"isActive" : "lr 3/6/2011 15:05",
+		"keystroke" : "lr 3/6/2011 15:05",
+		"label" : "lr 3/6/2011 15:05",
+		"order" : "lr 3/6/2011 15:05" } }

@@ -1,0 +1,1 @@
+Represent a method. Should be used to get the method source, selector and whatever.
