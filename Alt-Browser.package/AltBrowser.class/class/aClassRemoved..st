@@ -4,6 +4,6 @@ aClassRemoved: anEvent
 
 	| node r |
 	node := self rootItems contents
-		detect: [ :e | (r := e findClass: anEvent removedClass) notNil ] ifNone: [^self].
+		detect: [ :e | (r := e findClass: anEvent classRemoved) notNil ] ifNone: [^self].
 	r parentNode contents remove: r.
 	announcer announce: (AltNodeRemoved node: r)

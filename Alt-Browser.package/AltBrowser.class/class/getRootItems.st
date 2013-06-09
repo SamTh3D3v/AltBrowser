@@ -1,6 +1,6 @@
 private
 getRootItems
-	"This is where I should rework the organisation. Use broad classes to reduce the number of top-level items. To be improved. Does not catch classes which have no packages."
+	"This is where I should rework the organisation. Use broad package classes listed in defaultPackageCategories to reduce the number of top-level items, then sort them in alphabetical order to make sure _UnpackagedPackage at the end of the list. I'm sure using another sort criteria could be better, as the order in which the package appear in the system, but I believe RPackageOrganizer does not keep track of that, whereas Smalltalk organization does."
 
 	| l o |
 	l := RPackageOrganizer default packages asOrderedCollection.
@@ -22,6 +22,11 @@ getRootItems
 				do: [ :e | 
 					l remove: e.
 					i value add: e ] ].
-	^ (SortedCollection sortBlock: [:a :b | a asString < b asString])
-		addAll: (o collect: [ :e | ABPackageCategoryNode with: e ]);
+	^ (SortedCollection sortBlock: [ :a :b | a asString < b asString ])
+		addAll:
+				(o
+						collect: [ :e | 
+							e value size ~= 1
+								ifTrue: [ ABPackageCategoryNode with: e ]
+								ifFalse: [ ABPackageNode with: e value first ] ]);
 		asOrderedCollection

@@ -1,7 +1,7 @@
 querying
-findPackage: aMCWorkingCopy
+findPackage: aRPackage
 	"As a package extension node inherit and is set below, then it is never reached."
 
-	^ item == aMCWorkingCopy
+	^ item == aRPackage
 		ifTrue: [ self ]
 		ifFalse: [ nil ]
