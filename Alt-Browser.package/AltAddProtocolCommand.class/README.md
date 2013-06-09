@@ -1,0 +1,1 @@
+Add a method protocol to a class. Try to propose a limited set of usefull protocols from the superclass to choose from.
