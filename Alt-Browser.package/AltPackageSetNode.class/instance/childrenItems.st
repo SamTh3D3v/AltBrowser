@@ -2,11 +2,9 @@ private
 childrenItems
 	| o |
 	o := OrderedCollection new.
-	self item packageSet packages size = 1
-		ifTrue: [ 
-			| package |
-			package := self item packageSet packages first.
+	self item packageSet packages
+		do: [ :package | 
 			o add: package.
-			o addAll: (AltClassCategoryNode orderClasses: package definedClasses asOrderedCollection) ]
-		ifFalse: [ o addAll: self item packageSet packages ].
+			package name = self item packageName
+				ifTrue: [ o addAll: (AltClassCategoryNode orderClasses: package definedClasses asOrderedCollection) ] ].
 	^ o

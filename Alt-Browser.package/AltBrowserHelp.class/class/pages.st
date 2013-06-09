@@ -1,3 +1,3 @@
 accessing
 pages
-	^ #(introduction)
+	^ #(introduction status notes)

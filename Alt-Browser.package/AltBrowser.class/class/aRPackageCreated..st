@@ -1,7 +1,5 @@
 updating
 aRPackageCreated: anEvent
-	"Tracing RPackage creation. There is probably a MCWorkingCopy containing that RPackage somewhere, search for it."
+	"Tracing RPackage creation. There should be a package set containing it."
 
-	| r |
-	self rootItems detect: [ :e | (r := e findPackageSetFor: anEvent package) notNil ] ifNone: [ ^ self ].
-	announcer announce: (AltNodeRebuilt node: r)
+	self rootItems do: [ :each | each aRPackageCreated: anEvent ]

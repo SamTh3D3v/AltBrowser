@@ -2,8 +2,12 @@
 	"class" : {
 		"with:" : "ThierryGoubier 7/19/2012 22:36" },
 	"instance" : {
+		"aClassRecategorized:" : "ThierryGoubier 4/18/2013 20:51",
 		"aClassReorganized:" : "ThierryGoubier 4/16/2013 16:06",
+		"aClassRepackaged:" : "ThierryGoubier 4/18/2013 20:51",
 		"aMethodRecategorized:" : "ThierryGoubier 4/15/2013 17:30",
+		"aRPackageCreated:" : "ThierryGoubier 4/18/2013 11:43",
+		"aRPackageUnregistered:" : "ThierryGoubier 4/18/2013 11:44",
 		"accept:notifying:" : "ThierryGoubier 9/9/2012 15:06",
 		"addChild:" : "ThierryGoubier 9/3/2012 18:18",
 		"addChildItem:" : "ThierryGoubier 8/30/2012 00:00",
@@ -25,7 +29,6 @@
 		"dropItem:" : "ThierryGoubier 9/9/2012 23:33",
 		"executeCommands" : "ThierryGoubier 10/15/2012 14:56",
 		"findAllClass:" : "ThierryGoubier 9/23/2012 10:08",
-		"findAllMethodParents:forClass:" : "ThierryGoubier 9/23/2012 10:09",
 		"findClass:" : "ThierryGoubier 9/23/2012 18:03",
 		"findClassCategory:" : "ThierryGoubier 9/23/2012 10:10",
 		"findClassComment:" : "ThierryGoubier 9/23/2012 10:11",
