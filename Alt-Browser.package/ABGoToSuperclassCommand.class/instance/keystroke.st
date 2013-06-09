@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ Character arrowLeft ctrl
+	^ $n command, $s

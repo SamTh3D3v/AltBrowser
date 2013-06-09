@@ -1,0 +1,4 @@
+commands
+searchTextCommands
+	<textAreaCommand>
+	^ {ABImplementorsTextCommand}

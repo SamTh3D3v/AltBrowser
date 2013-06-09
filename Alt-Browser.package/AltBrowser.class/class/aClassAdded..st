@@ -3,20 +3,11 @@ aClassAdded: anEvent
 	"Ok, a class was added. Find the package it belongs to (or none)."
 
 	| node r package cat |
-	package := RPackageOrganizer default globalPackageOf: anEvent classAdded.
+	package := anEvent classAdded package.
 	self assert: package notNil.
 	node := self roots detect: [ :e | (r := e findPackage: package) notNil ] ifNone: [ ^ self ].
-	self roots detect: [ :e | (cat := e findClassCategory: anEvent classCategory) notNil ] ifNone: [ nil ].
-	cat notNil
-		ifTrue: [ 
-			| classNode |
-			cat contentsNotNil
-				ifTrue: [ 
-					classNode := cat addChild: anEvent classAdded.
-					announcer announce: (AltNodeAdded node: classNode) ] ]
-		ifFalse: [ 
-			r contentsNotNil
+	r contentsNotNil
 				ifTrue: [ 
 					| classNode |
 					classNode := r addChild: anEvent classAdded.
-					announcer announce: (AltNodeAdded node: classNode) ] ]
+					announcer announce: (AltNodeAdded node: classNode) ]

@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $] ctrl
+	^ Character arrowRight command
