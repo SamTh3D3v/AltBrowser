@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 aClassRenamed: anEvent
 	"If below it's true, rebuilt itself. Return false in any case to stop the update propagation above."
 
