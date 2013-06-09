@@ -1,3 +1,3 @@
 execution
 execute
-	target widget textMorph editor undo
+	target textMorph editor undo

@@ -8,7 +8,7 @@ execute
 		ifTrue: [ 
 			| item |
 			item := ABPackageCategoryNode with: name -> OrderedCollection new.
-			requestor selectedItem notNil
-				ifTrue: [ AltBrowser roots add: item afterIndex: (AltBrowser roots indexOf: requestor selectedItem item) ]
+			requestor selectedNode notNil
+				ifTrue: [ AltBrowser roots add: item afterIndex: (AltBrowser roots indexOf: requestor selectedNode item) ]
 				ifFalse: [ AltBrowser roots add: item ].
 			AltBrowser announcer announce: (AltNodeAdded node: item) ]

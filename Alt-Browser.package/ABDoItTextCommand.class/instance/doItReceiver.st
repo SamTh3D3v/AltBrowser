@@ -1,6 +1,6 @@
 accessing
 doItReceiver
 
-	^ requestor selectedItem sourceClass
+	^ requestor selectedNode sourceClass
 		ifNil: [ nil ]
 		ifNotNil: [:class | class theNonMetaClass ]

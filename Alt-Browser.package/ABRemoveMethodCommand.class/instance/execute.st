@@ -2,4 +2,4 @@ execution
 execute
 	"As simple as that ?"
 	
-	requestor selectedItem sourceClass removeSelector: requestor selectedItem item item
+	requestor selectedNode sourceClass removeSelector: requestor selectedNode item item

@@ -6,5 +6,5 @@ execute
 	tClass := self findTargetClass.
 	self assert: tClass notNil.
 	AltBrowser roots detect: [ :each | (tClassNode := each findClass: tClass) notNil ].
-	tMethodNode := tClassNode findMethod: requestor selectedItem item item in: tClass.
+	tMethodNode := tClassNode findMethod: requestor selectedNode item item in: tClass.
 	requestor selectPathForAbstractItem: tMethodNode

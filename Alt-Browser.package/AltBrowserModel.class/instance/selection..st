@@ -5,8 +5,8 @@ selection: anItem
 	| sel |
 	anItem selectedNodePath notNil ifTrue: [sel := anItem selectedNodePath last].
 	super selection: anItem.
-	self updateTextKeymap: textMorph kmDispatcher.
-	self updateTreeKeymap: treeMorph kmDispatcher.
+	self updateTextKeymap.
+	self updateTreeKeymap.
 	self updateTitle.
 	sel isNil
 		ifTrue: [ 

@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ requestor selectedItem item subclasses notEmpty
+	^ requestor selectedNode item item subclasses notEmpty

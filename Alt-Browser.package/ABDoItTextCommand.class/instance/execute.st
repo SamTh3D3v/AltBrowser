@@ -10,9 +10,9 @@ execute
 		evaluate: (ReadStream on: target widget trueSelection)
 		in: ctxt
 		to: rcvr
-		notifying: target widget
+		notifying: target
 		ifFail: [ 
-			target widget flash.
+			target flash.
 			^ nil ]
 		logged: true	"don't set it to self.. The receiver can be destroyed as a result of evaluateSelection" ]
 		on: OutOfScopeNotification

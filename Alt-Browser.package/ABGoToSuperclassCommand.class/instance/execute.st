@@ -3,7 +3,7 @@ execute
 	"Find the superclass and jump to it."
 
 	| found aClass nPath aNode tmPath |
-	aClass := requestor selectedItem item item superclass.
+	aClass := requestor selectedNode item item superclass.
 	AltBrowser roots contents
 		do: [ :each | 
 			| res |

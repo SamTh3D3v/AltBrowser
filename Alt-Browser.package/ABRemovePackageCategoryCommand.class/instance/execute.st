@@ -3,7 +3,7 @@ execute
 	"Remove the package category."
 
 	| item |
-	item := requestor selectedItem item.
+	item := requestor selectedNode item.
 	item parentNode notNil
 		ifTrue: [ item parentNode removeChildItem: item ]
 		ifFalse: [ AltBrowser roots remove: item ].

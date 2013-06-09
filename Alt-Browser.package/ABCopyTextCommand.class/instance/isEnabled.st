@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ target widget trueSelection isEmpty not
+	^ target trueSelection isEmpty not

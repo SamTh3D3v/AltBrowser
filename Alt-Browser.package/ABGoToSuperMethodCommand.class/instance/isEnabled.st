@@ -1,7 +1,7 @@
 testing
 isEnabled
-	requestor selectedItem sourceClass
+	requestor selectedNode sourceClass
 		allSuperclassesDo: [ :each | 
-			(each includesSelector: requestor selectedItem item)
+			(each includesSelector: requestor selectedNode item item)
 				ifTrue: [ ^ true ] ].
 	^ false

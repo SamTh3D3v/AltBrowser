@@ -1,3 +1,3 @@
 execution
 execute
-	SystemNavigation default browseAllImplementorsOf: requestor selectedItem item item
+	SystemNavigation default browseAllImplementorsOf: requestor selectedNode item item

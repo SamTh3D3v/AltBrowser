@@ -3,7 +3,7 @@ execute
 	| message className classToRemove result |
 	requestor okToChange
 		ifFalse: [ ^ false ].
-	classToRemove := requestor selectedItem item item
+	classToRemove := requestor selectedNode item item
 		ifNil: [ 
 			Beeper beep.
 			^ nil ].

@@ -10,8 +10,8 @@ execute
 	requestor okToChange
 		ifFalse: [ ^ self ].
 	labels := OrderedCollection new.
-	sItem := requestor selectedItem.
-	tClass := requestor selectedItem sourceClass.
+	sItem := requestor selectedNode.
+	tClass := sItem sourceClass.
 	reject := Set new.
 	reject
 		addAll: tClass organization categories;

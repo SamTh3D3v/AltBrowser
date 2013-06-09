@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ requestor selectedItem notNil
+	^ requestor selectedNode notNil

@@ -1,3 +1,3 @@
 execution
 execute
-	requestor selectedItem item explore
+	requestor selectedNode item explore

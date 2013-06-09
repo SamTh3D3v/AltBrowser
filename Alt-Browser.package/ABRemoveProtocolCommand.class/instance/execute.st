@@ -2,6 +2,6 @@ as yet unclassified
 execute
 	| tClass tItem |
 	
-	tClass := requestor selectedItem sourceClass.
-	tItem := requestor selectedItem.
+	tClass := requestor selectedNode sourceClass.
+	tItem := requestor selectedNode.
 	tClass removeCategory: tItem item item

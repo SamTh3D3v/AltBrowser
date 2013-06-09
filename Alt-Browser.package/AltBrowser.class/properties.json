@@ -9,9 +9,7 @@
 		"temporary" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"treeModel",
-		"textModel",
-		"history" ],
+		 ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

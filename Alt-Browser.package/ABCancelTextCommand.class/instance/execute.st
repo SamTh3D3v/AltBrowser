@@ -1,3 +1,3 @@
 execution
 execute
-	target widget cancel
+	target cancel

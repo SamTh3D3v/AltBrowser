@@ -1,18 +1,20 @@
 updating
-aNodeRemoved: aNode
+aNodeRemoved: anEvent
 	"Beware : a node is not an instance of ABTreeNodeModel"
 
+	| aNode |
+	aNode := anEvent node.
 	self assert: aNode isTreeNodeModel not.
-	tree roots
+	treeMorph nodeList
 		do: [ :e | 
 			| r |
 			(r := e findItem: aNode) notNil
 				ifTrue: [ 
 					r == e
-						ifTrue: [ tree roots remove: r ifAbsent: [ nil ] ]
+						ifTrue: [ self changed: #rootNodes ]
 						ifFalse: [ 
 							| n |
 							r parentNode contents remove: r.
-							(n := (treeMorph scroller submorphs at: 1) findItem: r) notNil
-								ifTrue: [ n rebuildChildren ].
-							(treeMorph scroller submorphs at: 1) checkInvariant ] ] ]
+							(n := self findMorphNodeForItem: r) notNil
+								ifTrue: [self changed: #deselectAll. self halt. n rebuildChildren ].
+							treeMorph firstNodeMorph checkInvariant ] ] ]

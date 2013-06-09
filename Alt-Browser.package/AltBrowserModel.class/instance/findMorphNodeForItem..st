@@ -1,3 +1,3 @@
 accessing
 findMorphNodeForItem: anItem
-	^ treeMorph allNodeMorphs detect: [ :aNodeMorph | aNodeMorph complexContents item == anItem ] ifNone: [ nil ]
+	^ treeMorph allNodeMorphs detect: [ :aNodeMorph | aNodeMorph complexContents == anItem ] ifNone: [ nil ]

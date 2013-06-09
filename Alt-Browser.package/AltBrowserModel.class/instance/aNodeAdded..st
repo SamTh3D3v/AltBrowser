@@ -20,9 +20,8 @@ aNodeAdded: anEvent
 					(r := e findItem: pNode) notNil
 						ifTrue: [ 
 							| n wNode |
-							r contentsNotNil
-								ifTrue: [ wNode := r addChild: aNode ].
-							(n := treeMorph allNodeMorphs detect: [:each | each complexContents == r] ifNone: [nil]) notNil
+							r rebuildChildren.
+							(n := self findMorphNodeForItem: r) notNil
 								ifTrue: [ n rebuildChildren ].
 							treeMorph firstNodeMorph checkInvariant.
 							^ self ] ] ]
