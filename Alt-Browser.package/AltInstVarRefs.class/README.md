@@ -1,0 +1,1 @@
+Does an inst var refs on the selected variable node

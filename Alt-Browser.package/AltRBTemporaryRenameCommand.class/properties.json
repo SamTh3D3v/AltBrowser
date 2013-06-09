@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-RB-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltRBTemporaryRenameCommand",
+	"pools" : [
+		 ],
+	"super" : "AltAstNodeCommand",
+	"type" : "normal" }

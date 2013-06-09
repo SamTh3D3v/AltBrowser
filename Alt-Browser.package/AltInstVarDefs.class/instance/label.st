@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Inst var defs '
+	^ 'Stores into ' , self node name
