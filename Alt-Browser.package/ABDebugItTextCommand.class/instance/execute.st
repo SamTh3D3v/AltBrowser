@@ -1,3 +1,3 @@
 execution
 execute
-	target debugIt
+	target widget debugIt
