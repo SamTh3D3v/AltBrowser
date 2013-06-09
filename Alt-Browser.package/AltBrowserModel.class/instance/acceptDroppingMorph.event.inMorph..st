@@ -3,5 +3,6 @@ acceptDroppingMorph: aMorph event: evt inMorph: aTreeMorph
 
 	| aTarget |
 	aTarget := aTreeMorph scrollerSubMorphFromPoint: evt position.
+	self assert: (aTarget  == aTreeMorph potentialDropMorph). 
 	aTarget notNil
-		ifTrue: [ aTarget complexContents item dropItem: aMorph passenger complexContents item ]
+		ifTrue: [ aTarget complexContents item dropItem: aMorph passenger ]

@@ -22,5 +22,5 @@ aMCWorkingCopyCreated: anEvent
 			node := packageSet packages size = 1
 				ifTrue: [ ABPackageNode with: item ]
 				ifFalse: [ ABPackageCategoryNode with: item ].
-			self roots add: node.
+			self rootItems add: node.
 			announcer announce: (AltNodeAdded node: node) ]

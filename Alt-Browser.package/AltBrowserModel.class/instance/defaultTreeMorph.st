@@ -5,4 +5,5 @@ defaultTreeMorph
 		nodeStringGetter: #asText;
 		getMenuSelector: #buildTreeMenu:;
 		dragEnabled: true;
+		dropEnabled: true;
 		withHLines: false.
