@@ -1,3 +1,3 @@
-as yet unclassified
+spec
 title
 	^ 'Alt Browser'

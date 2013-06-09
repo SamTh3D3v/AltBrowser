@@ -1,18 +1,21 @@
 {
 	"class" : {
 		"aCategoryRemoved:" : "ThierryGoubier 7/27/2012 11:05",
+		"aClassRemoved:" : "ThierryGoubier 7/27/2012 11:31",
 		"aMCWorkingCopyCreated:" : "ThierryGoubier 7/26/2012 21:50",
 		"aMCWorkingCopyDeleted:" : "ThierryGoubier 7/27/2012 10:45",
+		"aMethodAdded:" : "ThierryGoubier 7/27/2012 15:33",
 		"defaultPackageCategoriesNames" : "ThierryGoubier 7/26/2012 15:22",
 		"defaultSpec" : "ThierryGoubier 7/16/2012 22:39",
 		"example" : "ThierryGoubier 7/26/2012 10:42",
 		"getRootItems" : "ThierryGoubier 7/26/2012 15:24",
-		"registerOnSystemAnnouncements" : "ThierryGoubier 7/27/2012 10:46",
+		"registerOnSystemAnnouncements" : "ThierryGoubier 7/27/2012 14:13",
 		"reset" : "ThierryGoubier 7/26/2012 16:30",
 		"rootItems" : "ThierryGoubier 7/26/2012 15:26",
 		"title" : "ThierryGoubier 7/15/2012 22:44",
 		"updateAll" : "ThierryGoubier 7/26/2012 16:23" },
 	"instance" : {
+		"addNode:" : "ThierryGoubier 7/27/2012 13:55",
 		"addPackageCategory:" : "ThierryGoubier 7/26/2012 21:19",
 		"buildMenu:on:" : "ThierryGoubier 7/25/2012 23:22",
 		"getRootItems" : "ThierryGoubier 7/26/2012 16:24",

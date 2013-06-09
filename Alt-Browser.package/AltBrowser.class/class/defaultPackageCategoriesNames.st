@@ -1,4 +1,4 @@
-as yet unclassified
+spec
 defaultPackageCategoriesNames
 	"As it says: categories for packages who don't use the - convention."
 	

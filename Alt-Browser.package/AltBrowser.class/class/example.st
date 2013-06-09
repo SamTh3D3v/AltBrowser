@@ -1,4 +1,4 @@
-as yet unclassified
+spec
 example
 	"AltBrowser example"
 	

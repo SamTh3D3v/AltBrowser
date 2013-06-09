@@ -1,3 +1,24 @@
 as yet unclassified
 rootsAdd: aNode
-	rootsHolder add: aNode
+	"Algorithm: look for the parent of the node. If this parent node is found, then add a node equivalent to the contents if they do exist."
+
+	| pNode |
+	(pNode := aNode parentNode) isNil
+		ifTrue: [ rootsHolder add: aNode ]
+		ifFalse: [ 
+			rootsHolder contents
+				do: [ :e | 
+					| r |
+					(r := e findItem: pNode) notNil
+						ifTrue: [ 
+							| n wNode |
+							self halt.
+							r hasContents
+								ifTrue: [ 
+									wNode := r childNodeFromItem: aNode.
+									r contents add: wNode ].
+							(n := (self widget scroller submorphs at: 1) findItem: r) notNil
+								ifTrue: [ 
+									n hasContents
+										ifTrue: [ n addItem: wNode ] ].
+								^ self ] ] ]
