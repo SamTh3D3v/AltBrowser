@@ -1,0 +1,3 @@
+updating
+rootNodeClassFromItem: anItem
+	^ ABTreeNodeModel

@@ -1,0 +1,22 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"announcer",
+		"debug",
+		"rootItems",
+		"temporary" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"source",
+		"tree",
+		"history",
+		"window",
+		"treeMorph",
+		"textMorph" ],
+	"name" : "AltBrowserModel",
+	"pools" : [
+		 ],
+	"super" : "MorphTreeModel",
+	"type" : "normal" }

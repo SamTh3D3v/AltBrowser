@@ -1,0 +1,3 @@
+accessing
+asText
+	^ item asText

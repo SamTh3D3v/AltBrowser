@@ -8,7 +8,6 @@ execute
 	aClass := SearchFacade classSearch chooseFromOwner: requestor window window.
 	aClass isNil
 		ifTrue: [ ^ self ].
-	[ 
 	AltBrowser roots
 		do: [ :each | 
 			| res |
@@ -16,4 +15,4 @@ execute
 				ifTrue: [ found := res ] ].
 	found isNil
 		ifTrue: [ ^ aClass explore ].
-	requestor selectPathForAbstractItem: found ] timeProfile
+	requestor selectPathForAbstractItem: found
