@@ -7,7 +7,7 @@ aMethodAdded: anEvent
 	anEvent methodClass == item
 		ifTrue: [ 
 			self contents do: [ :each | each aMethodAdded: anEvent ].
-			(self contents select: [ :e | e item = anEvent protocol ]) size < 1
+			((self contents select: [ :e | e item = anEvent protocol ]) size < 1 or: [ anEvent protocol = 'no messages' ])
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	anEvent methodClass == item class
