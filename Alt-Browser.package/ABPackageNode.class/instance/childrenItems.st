@@ -7,6 +7,6 @@ childrenItems
 	o := OrderedCollection new.
 	o add: self item.
 	c size = 1
-		ifTrue: [ c do: [ :e | (self item classesForClassTag: e) do: [ :class | o add: class ] ] ]
+		ifTrue: [ c do: [ :e | (self item classesForClassTag: e) do: [ :class | o add: (Smalltalk globals at: class) ] ] ]
 		ifFalse: [ o addAll: (c" reject: [ :e | Smalltalk organization isEmptyCategoryNamed: e ]") ].
 	^ o

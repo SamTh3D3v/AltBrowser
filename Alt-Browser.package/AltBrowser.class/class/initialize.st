@@ -1,3 +1,5 @@
 initialization
 initialize
-	self registerOnSystemAnnouncements
+	self registerOnSystemAnnouncements.
+	announcer := Announcer new.
+	rootItems := nil

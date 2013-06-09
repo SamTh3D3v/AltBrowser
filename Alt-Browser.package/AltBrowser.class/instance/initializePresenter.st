@@ -18,5 +18,4 @@ initializePresenter
 					textModel behavior: sel sourceClass.
 					textModel aboutToStyle: sel isStyled ] ].
 	textModel menu: [ :m :t | self buildMenu: m on: t ].
-	treeModel menu: [:m :t | self buildTreeMenu: m on: t].
-	self registerOnSystemAnnouncements
+	treeModel menu: [:m :t | self buildTreeMenu: m on: t]

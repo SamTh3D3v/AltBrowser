@@ -1,5 +1,5 @@
 querying
-findMethod: aClass
+findMethod: aSelector
 	"Return the node if the item matches. By default, search among the kids. Is lazy and will avoid triggering child building."
 
 	contents isNil
@@ -7,6 +7,6 @@ findMethod: aClass
 			| res |
 			contents
 				do: [ :each | 
-					(res := each findMethod: aClass) notNil
+					(res := each findMethod: aSelector) notNil
 						ifTrue: [ ^ res ] ] ].
 	^ nil

@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AltNodeRebuilt",
+	"pools" : [
+		 ],
+	"super" : "AltNodeAdded",
+	"type" : "normal" }

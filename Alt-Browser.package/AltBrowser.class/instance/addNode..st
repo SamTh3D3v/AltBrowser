@@ -1,5 +1,5 @@
 updating
-addNode: aNode
-	"A node has been added."
+addNode: aNodeAdded
+	"Announcement : A node has been added."
 
-	treeModel rootsAdd: aNode
+	treeModel rootsAdd: aNodeAdded node

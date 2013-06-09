@@ -3,10 +3,10 @@ aMethodAdded: anEvent
 	"Ok, a method was added. Does not mean modify."
 
 	| mCNodes |
-	self rootItems
+	self rootItems contents
 		do: [ :root | 
 			| res |
-			res := root findAllMethodCategory: anEvent protocol forClass: anEvent methodClass.
+			res := root findAllMethodParents: anEvent selector forClass: anEvent methodClass.
 			res notNil
 				ifTrue: [ 
 					mCNodes isNil
@@ -20,4 +20,4 @@ aMethodAdded: anEvent
 				ifTrue: [ 
 					| s |
 					s := each addChild: anEvent selector.
-					self allInstances do: [ :inst | inst addNode: s ] ] ]
+					announcer announce: (AltNodeRemoved node: s) ] ]

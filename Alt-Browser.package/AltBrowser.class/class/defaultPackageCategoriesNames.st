@@ -6,10 +6,10 @@ defaultPackageCategoriesNames
 	
 	^ #('System'
 		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping')
-		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript')
+		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits')
 		#('Development' 'AST' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion')
-		#('Networking' 'Network' 'Zodiac' 'Zink')
-		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'CodeImport' 'Gofer' 'Configuration' 'Rpackage' 'Ring' 'CI' 'GroupManager')
+		#('Networking' 'Network' 'Zodiac' 'Zink' 'Compression')
+		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager')
 		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'FixUnderscores' 'ScriptLoader20')
-		'Compression'
+		
 	)
