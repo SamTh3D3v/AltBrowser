@@ -12,7 +12,5 @@ removeItem: aNode
 					each firstChild notNil
 						ifTrue: [ each firstChild removeItem: aNode ] ] ]
 		ifFalse: [ 
-			| toDelete |
-			toDelete := OrderedCollection new.
-			found recursiveAddTo: toDelete.
-			found recursiveDelete ]
+			found recursiveDelete.
+			container adjustSubmorphPositions ]

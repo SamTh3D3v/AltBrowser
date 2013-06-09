@@ -8,4 +8,5 @@ registerOnSystemAnnouncements
 
 	SystemAnnouncer announcer weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
-		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self
+		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
+		on: CategoryRemoved send: #aCategoryRemoved: to: self

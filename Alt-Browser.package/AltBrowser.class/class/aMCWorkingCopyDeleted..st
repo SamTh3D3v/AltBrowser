@@ -6,8 +6,8 @@ aMCWorkingCopyDeleted: anEvent
 	node := self rootItems
 		detect: [ :e | (r := e item value detect: [ :p | p package == anEvent package ] ifNone: [ nil ]) notNil ].
 	node item value remove: r.
-	self allInstances do: [ :l | l removePackage: r ].
+	self allInstances do: [ :l | l removeNode: r ].
 	node item value isEmpty
 		ifTrue: [ 
 			self rootItems remove: node.
-			self allInstances do: [ :l | l removePackageCategory: node ] ]
+			self allInstances do: [ :l | l removeNode: node ] ]
