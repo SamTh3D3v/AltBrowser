@@ -6,4 +6,5 @@ accept: aText notifying: aController
 
 	| aSelector |
 	aSelector := self sourceClass compile: aText classified: self parentNode methodCategory notifying: aController.
+	self parentNode rebuildContents.
 	^ self parentNode contents detect: [ :each | each item == aSelector ]

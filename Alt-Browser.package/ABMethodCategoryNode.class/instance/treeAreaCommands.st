@@ -1,4 +1,4 @@
-as yet unclassified
+commands
 treeAreaCommands
 	<treeAreaCommand>
 	^ {ABAddProtocolCommand. ABRemoveProtocolCommand }

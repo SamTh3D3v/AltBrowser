@@ -18,4 +18,6 @@ aMethodRemoved: anEvent
 		do: [ :each | 
 			| pNode |
 			pNode := each findMethodCategory: anEvent protocol in: anEvent methodClass.
-			self aNodeToRebuilt: pNode ]
+			(anEvent protocol = #'as yet unclassified' and: [ pNode isNil ])
+				ifTrue: [ self aNodeToRebuilt: each ]
+				ifFalse: [ self aNodeToRebuilt: pNode ] ]

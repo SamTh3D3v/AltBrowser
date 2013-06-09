@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Alt2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

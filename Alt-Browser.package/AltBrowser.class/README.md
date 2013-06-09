@@ -9,3 +9,6 @@ methodModel
 
 treeModel
 	- handle navigation between packages/category/classes/protocols/methods
+
+Class side:
+	- track system announcements.
