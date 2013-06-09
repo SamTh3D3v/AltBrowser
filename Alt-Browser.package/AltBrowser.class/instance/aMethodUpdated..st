@@ -3,6 +3,7 @@ aMethodUpdated: anEvent
 	"A method has changed. Check if this is the one we are selecting; if yes, update it."
 
 	| sItem |
+	self selectedItem isNil ifTrue: [ ^self ].
 	sItem := self selectedItem item.
 	self assert: (sItem isKindOf: ABAbstractNode).
 	(sItem isKindOf: ABMethodNode)

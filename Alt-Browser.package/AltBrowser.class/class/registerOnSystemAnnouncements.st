@@ -8,6 +8,7 @@ registerOnSystemAnnouncements
 	SystemAnnouncer uniqueInstance weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
 		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
+		on: MCPackageModified send: #aMCWorkingCopyModified: to: self;
 		on: CategoryRemoved send: #aCategoryRemoved: to: self;
 		on: MethodAdded send: #aMethodAdded: to: self;
 		on: MethodRemoved send: #aMethodRemoved: to: self;
