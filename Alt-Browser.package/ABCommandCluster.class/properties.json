@@ -1,0 +1,15 @@
+{
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"commands",
+		"label" ],
+	"name" : "ABCommandCluster",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

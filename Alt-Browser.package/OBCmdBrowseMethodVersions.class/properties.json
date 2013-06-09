@@ -10,5 +10,5 @@
 	"name" : "OBCmdBrowseMethodVersions",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }

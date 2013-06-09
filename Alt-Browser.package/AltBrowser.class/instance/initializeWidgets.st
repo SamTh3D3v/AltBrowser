@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeWidgets
-	self instantiateModels: #(#treeModel #ABTreeModel #textModel #TextModel).
+	self instantiateModels: #(#treeModel #ABTreeModel #textModel #ABTextModel).
 	textModel aboutToStyle: true

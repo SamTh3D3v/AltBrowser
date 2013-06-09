@@ -3,7 +3,12 @@
 		"defaultSpec" : "ThierryGoubier 7/16/2012 22:39",
 		"title" : "ThierryGoubier 7/15/2012 22:44" },
 	"instance" : {
-		"initializePresenter" : "ThierryGoubier 7/16/2012 14:15",
-		"initializeWidgets" : "ThierryGoubier 7/16/2012 22:44",
+		"buildMenu:on:" : "ThierryGoubier 7/17/2012 23:09",
+		"clipboardCommands" : "ThierryGoubier 7/17/2012 21:39",
+		"executeCommands" : "ThierryGoubier 7/17/2012 21:39",
+		"initializePresenter" : "ThierryGoubier 7/17/2012 22:34",
+		"initializeWidgets" : "ThierryGoubier 7/17/2012 22:43",
+		"saveCommands" : "ThierryGoubier 7/17/2012 21:39",
 		"textModel" : "ThierryGoubier 7/16/2012 00:35",
-		"treeModel" : "ThierryGoubier 7/15/2012 22:41" } }
+		"treeModel" : "ThierryGoubier 7/15/2012 22:41",
+		"undoCommands" : "ThierryGoubier 7/17/2012 21:39" } }

@@ -10,5 +10,5 @@
 	"name" : "OBCmdBrowseList",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }

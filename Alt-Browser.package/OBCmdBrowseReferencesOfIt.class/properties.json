@@ -10,5 +10,5 @@
 	"name" : "OBCmdBrowseReferencesOfIt",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }

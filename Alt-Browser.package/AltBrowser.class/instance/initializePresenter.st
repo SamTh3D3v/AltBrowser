@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializePresenter
 	treeModel roots: (ABPackageList rootItems collect: [ :e | ABPackageCategoryNode with: e model: self ]).
 	treeModel childrenBlock: [ :it | it contents ].
@@ -11,4 +11,5 @@ initializePresenter
 					textModel behavior: nil ]
 				ifFalse: [ 
 					textModel text: sel sourceCode.
-					textModel behavior: sel sourceClass ] ]
+					textModel behavior: sel sourceClass ] ].
+	textModel menu: [ :m :t | self buildMenu: m on: t ]

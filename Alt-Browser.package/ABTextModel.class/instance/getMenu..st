@@ -1,0 +1,5 @@
+as yet unclassified
+getMenu: aMenu
+
+	menuBlockHolder contents cull: aMenu cull: self.
+	^ aMenu

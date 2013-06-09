@@ -10,5 +10,5 @@
 	"name" : "OBCmdCompareToCurrent",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }

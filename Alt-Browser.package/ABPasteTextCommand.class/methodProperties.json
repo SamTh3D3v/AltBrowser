@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"takesNodes" : "lr 12/10/2010 09:25",
+		"takesText" : "lr 12/10/2010 09:25" },
+	"instance" : {
+		"execute" : "lr 12/10/2010 09:14",
+		"group" : "lr 12/10/2010 09:27",
+		"icon" : "ThierryGoubier 7/17/2012 23:18",
+		"isActive" : "lr 12/10/2010 09:22",
+		"keystroke" : "lr 12/10/2010 09:14",
+		"label" : "lr 12/10/2010 09:14",
+		"order" : "lr 12/10/2010 09:29" } }

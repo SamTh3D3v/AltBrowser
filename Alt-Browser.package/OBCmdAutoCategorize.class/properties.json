@@ -11,5 +11,5 @@
 	"name" : "OBCmdAutoCategorize",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }

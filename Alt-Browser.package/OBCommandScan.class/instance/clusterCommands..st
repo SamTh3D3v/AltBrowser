@@ -2,7 +2,7 @@ user interface
 clusterCommands: aCollection 
 	| groups root name cluster |
 	groups := IdentityDictionary new.
-	root := OBCommandCluster new.
+	root := ABCommandCluster new.
 	aCollection do: 
 		[ :command | 
 		name := command cluster.

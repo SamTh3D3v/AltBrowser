@@ -10,5 +10,5 @@
 	"name" : "ORCommand",
 	"pools" : [
 		 ],
-	"super" : "OBCommand",
+	"super" : "ABCommand",
 	"type" : "normal" }
