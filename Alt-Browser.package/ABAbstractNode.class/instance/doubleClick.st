@@ -1,3 +1,0 @@
-actions
-doubleClick
-	self browseItem

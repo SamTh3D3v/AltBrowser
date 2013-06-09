@@ -2,6 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addChild:" : "ThierryGoubier 7/31/2012 14:31",
 		"asString" : "ThierryGoubier 7/14/2012 23:17",
 		"childNodeClassFromItem:" : "ThierryGoubier 7/15/2012 13:58",
-		"childrenItems" : "ThierryGoubier 7/14/2012 23:18" } }
+		"childrenItems" : "ThierryGoubier 7/14/2012 23:18",
+		"clipboardTreeCommands" : "ThierryGoubier 7/31/2012 15:54",
+		"removeChildItem:" : "ThierryGoubier 7/31/2012 14:52" } }

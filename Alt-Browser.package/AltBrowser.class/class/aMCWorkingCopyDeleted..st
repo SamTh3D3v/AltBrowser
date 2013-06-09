@@ -1,13 +1,9 @@
 updating
 aMCWorkingCopyDeleted: anEvent
-	"Ok."
+	"Ok. Now, empty package categories are not removed automagically."
 
 	| package cat node r |
 	node := self rootItems
-		detect: [ :e | (r := e item value detect: [ :p | p == anEvent workingCopy ] ifNone: [ nil ]) notNil ].
-	node item value remove: r.
-	self allInstances do: [ :l | l removeNode: (node findPackage: anEvent workingCopy) ].
-	node item value isEmpty
-		ifTrue: [ 
-			self rootItems remove: node.
-			self allInstances do: [ :l | l removeNode: node ] ]
+		detect: [ :e | (r := e findPackage: anEvent workingCopy) notNil ].
+	r parentNode removeChildItem: r.
+	self allInstances do: [ :l | l removeNode: r ]

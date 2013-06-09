@@ -1,5 +1,5 @@
 {
-	"category" : "Alt-Browser",
+	"category" : "Alt-Browser-Commands",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "ABPackageList",
+	"name" : "ABRemovePackageCategoryCommand",
 	"pools" : [
 		 ],
-	"super" : "MorphTreeModel",
+	"super" : "ABCommand",
 	"type" : "normal" }

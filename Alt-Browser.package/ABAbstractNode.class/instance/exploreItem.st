@@ -1,3 +1,0 @@
-actions
-exploreItem
-	self explore

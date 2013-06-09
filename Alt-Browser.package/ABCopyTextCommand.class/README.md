@@ -1,0 +1,1 @@
+This class does a copy on the text area.

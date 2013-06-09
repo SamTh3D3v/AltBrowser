@@ -12,6 +12,7 @@ aMethodRemoved: anEvent
 					mCNodes isNil
 						ifTrue: [ mCNodes := res ]
 						ifFalse: [ mCNodes addAll: res ] ] ].
+	mCNodes isNil ifTrue: [^ self].
 	mCNodes
 		do: [ :each | 
 			each contentsNotNil

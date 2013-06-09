@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands-MC",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ABRemovePackageCommand",
+	"pools" : [
+		 ],
+	"super" : "ABCommand",
+	"type" : "normal" }

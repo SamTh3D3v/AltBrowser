@@ -14,4 +14,5 @@ defaultSpec
 			#vResizing:. 						#spaceFill.
 			#eventHandler:.					{	#EventHandler. #on:send:to:. #keyStroke.	#keyStroke:fromMorph:. #model	}.
 			#dropItemSelector:.				#dropItem:on:.
-			#dragItemSelector:.				#dragItem:.}
+			#dragItemSelector:.				#dragItem:.
+			#wantsDropSelector:.				#wantsDropItem:.}

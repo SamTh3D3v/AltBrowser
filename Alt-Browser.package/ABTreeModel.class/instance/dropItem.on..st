@@ -1,3 +1,5 @@
 as yet unclassified
 dropItem: anItem on: aTarget
-	^nil
+	"This is called. Yes, really."
+
+	aTarget dropItem: anItem

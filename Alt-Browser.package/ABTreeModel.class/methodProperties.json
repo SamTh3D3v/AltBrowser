@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"defaultSpec" : "ThierryGoubier 7/16/2012 23:27" },
+		"defaultSpec" : "ThierryGoubier 7/31/2012 10:41" },
 	"instance" : {
-		"dragItem:" : "ThierryGoubier 7/16/2012 23:29",
-		"dropItem:on:" : "ThierryGoubier 7/16/2012 23:27",
-		"rootsAdd:" : "ThierryGoubier 7/30/2012 17:37",
-		"rootsRemove:" : "ThierryGoubier 7/27/2012 17:24" } }
+		"dragItem:" : "ThierryGoubier 7/31/2012 11:07",
+		"dropItem:on:" : "ThierryGoubier 7/31/2012 11:07",
+		"rootsAdd:" : "ThierryGoubier 7/31/2012 14:46",
+		"rootsRemove:" : "ThierryGoubier 7/31/2012 14:58",
+		"wantsDropItem:" : "ThierryGoubier 7/31/2012 10:49" } }

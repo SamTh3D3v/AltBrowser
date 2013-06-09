@@ -4,8 +4,11 @@ rootsAdd: aNode
 
 	| pNode |
 	(pNode := aNode parentNode) isNil
-		ifTrue: [ rootsHolder add: aNode ]
+		ifTrue: [ 
+			self assert: aNode isTreeNodeModel.
+			rootsHolder add: aNode ]
 		ifFalse: [ 
+			self assert: aNode isTreeNodeModel not.
 			rootsHolder contents
 				do: [ :e | 
 					| r |
@@ -18,4 +21,4 @@ rootsAdd: aNode
 								ifTrue: [ 
 									n hasContents
 										ifTrue: [ n addItem: (ABTreeNodeModel with: wNode model: wNode) ] ].
-								^ self ] ] ]
+							^ self ] ] ]

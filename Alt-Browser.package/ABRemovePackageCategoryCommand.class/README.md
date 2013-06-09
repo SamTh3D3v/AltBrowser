@@ -1,0 +1,1 @@
+This class does a remove item on the selected item (package category : anything else requires specific system commands.)

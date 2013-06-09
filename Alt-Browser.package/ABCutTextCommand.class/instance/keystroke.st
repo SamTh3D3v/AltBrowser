@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $x
+	^ $x ctrl
