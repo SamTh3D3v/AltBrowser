@@ -7,5 +7,5 @@ childrenItems
 	| o |
 	o := OrderedCollection new.
 	o add: self item.
-	o addAll: (AltClassCategoryNode orderClasses: self item definedClasses asOrderedCollection).
+	o addAll: (self class orderClasses: self item definedClasses asOrderedCollection).
 	^ o

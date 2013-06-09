@@ -1,9 +1,9 @@
 private
 childNodeClassFromItem: anItem
-	"AltClassCategoryNode is supposed not to be in use anymore."
+	"Beware of the assert condition. We should not reach it."
 	
 	((anItem isKindOf: Class) or: [ (anItem isKindOf: Metaclass) or: [ anItem isTrait ] ])
 		ifTrue: [ ^ AltClassNode ].
 	(anItem isKindOf: RPackage)
 		ifTrue: [ ^ AltPackageExtensionNode ].
-	^ AltClassCategoryNode
+	self assert: false	"We should never reach that point."

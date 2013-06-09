@@ -8,7 +8,7 @@ childrenItems
 		do: [ :package | 
 			package name = self item packageName
 				ifTrue: [ 
-					o := ({package} , (AltClassCategoryNode orderClasses: package definedClasses asOrderedCollection) , o)
+					o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o)
 						asOrderedCollection ]
 				ifFalse: [ o add: package ] ].
 	^ o
