@@ -10,4 +10,6 @@ aMethodRemoved: anEvent
 			(self contents select: [ :e | e item = anEvent protocol ]) size < 1
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
+	anEvent methodClass == item class
+		ifTrue: [ ^ self contents first aMethodRemoved: anEvent ].
 	^ false

@@ -1,0 +1,3 @@
+updating
+aMethodRemoved: anEvent
+	^ false

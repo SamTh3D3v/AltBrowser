@@ -10,4 +10,6 @@ aMethodRecategorized: anEvent
 			(self contents select: [ :e | e item = anEvent oldProtocol or: [ e item = anEvent newProtocol ] ]) size < 2
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
+	anEvent methodClass == item class
+		ifTrue: [ ^ self contents first aMethodRecategorized: anEvent ].
 	^ false

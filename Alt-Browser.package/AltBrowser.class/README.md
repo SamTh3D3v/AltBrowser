@@ -1,1 +1,1 @@
-An AltBrowserModel represent the base for a Morph-based GUI. It takes from the Jejak JViewer.
+An AltBrowser represent the base for a Morph-based GUI. It takes from the Jejak JViewer.
