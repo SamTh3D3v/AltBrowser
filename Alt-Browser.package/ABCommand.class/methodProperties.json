@@ -5,6 +5,8 @@
 		"takesText" : "cwp 10/15/2006 00:58" },
 	"instance" : {
 		"addItemToMenu:" : "ThierryGoubier 7/25/2012 23:27",
+		"addShortcutToKeymap:category:" : "ThierryGoubier 8/5/2012 18:25",
+		"buildShortcut:" : "ThierryGoubier 8/5/2012 22:27",
 		"buttonLabel" : "lr 4/25/2007 09:27",
 		"cluster" : "cwp 9/30/2007 18:59",
 		"createCluster" : "ThierryGoubier 7/17/2012 20:52",

@@ -6,7 +6,8 @@ initializePresenter
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
 	treeModel
-		whenSelectedItemChanged: [ :sel | 
+		whenSelectedItemChanged: [ :sel |
+			self updateTextKeymap.
 			sel isNil
 				ifTrue: [ 
 					textModel text: ''.

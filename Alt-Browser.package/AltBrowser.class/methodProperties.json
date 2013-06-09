@@ -29,13 +29,16 @@
 		"buildTreeMenu:on:" : "ThierryGoubier 7/31/2012 15:57",
 		"defaultCommands" : "ThierryGoubier 7/31/2012 15:57",
 		"getRootItems" : "ThierryGoubier 7/26/2012 16:24",
-		"initializePresenter" : "ThierryGoubier 7/30/2012 16:53",
+		"initializePresenter" : "ThierryGoubier 8/5/2012 17:25",
 		"initializeWidgets" : "ThierryGoubier 7/17/2012 22:43",
+		"rebuildNode:" : "ThierryGoubier 8/5/2012 09:07",
 		"registerOnSystemAnnouncements" : "ThierryGoubier 7/26/2012 16:42",
 		"removeNode:" : "ThierryGoubier 7/27/2012 21:02",
 		"reset" : "ThierryGoubier 8/1/2012 22:17",
 		"selectedItem" : "ThierryGoubier 7/26/2012 10:45",
 		"selectedItem:" : "ThierryGoubier 7/27/2012 16:38",
+		"targetShortcutMorph" : "ThierryGoubier 8/5/2012 22:58",
 		"taskbarIcon" : "ThierryGoubier 8/1/2012 21:56",
 		"textModel" : "ThierryGoubier 7/16/2012 00:35",
-		"treeModel" : "ThierryGoubier 7/15/2012 22:41" } }
+		"treeModel" : "ThierryGoubier 7/15/2012 22:41",
+		"updateTextKeymap" : "ThierryGoubier 8/5/2012 22:59" } }

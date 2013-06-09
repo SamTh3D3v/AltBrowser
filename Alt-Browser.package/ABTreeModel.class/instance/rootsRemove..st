@@ -1,4 +1,4 @@
-drag and drop
+accessing
 rootsRemove: aNode
 	"Beware : a node is not an instance of ABTreeNodeModel"
 
