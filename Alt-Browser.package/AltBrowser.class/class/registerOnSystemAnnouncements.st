@@ -4,9 +4,9 @@ registerOnSystemAnnouncements
 
 	"self registerOnSystemAnnouncements."
 
-	"SystemAnnouncer announcer unsubscribe: self"
+	"SystemAnnouncer uniqueInstance unsubscribe: self"
 
-	SystemAnnouncer announcer weak
+	SystemAnnouncer uniqueInstance weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
 		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
 		on: CategoryRemoved send: #aCategoryRemoved: to: self;

@@ -2,5 +2,5 @@ accessing
 keyString
 	| c |
 	^ (c := self keystroke) isNil
-		ifFalse: [ c asString ]
+		ifFalse: [ c asString copyWithout: Character space ]
 		ifTrue: [ nil ]
