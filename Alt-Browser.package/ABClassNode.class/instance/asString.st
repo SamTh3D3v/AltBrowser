@@ -2,4 +2,4 @@ printing
 asString
 	^ self item isMeta
 		ifTrue: [ '- Class' ]
-		ifFalse: [ self item asString ]
+		ifFalse: [ (String new: self indent withAll: Character space) , self item asString ]

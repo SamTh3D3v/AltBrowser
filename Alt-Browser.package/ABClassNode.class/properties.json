@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"indent" ],
 	"name" : "ABClassNode",
 	"pools" : [
 		 ],
