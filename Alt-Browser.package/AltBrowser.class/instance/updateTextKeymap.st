@@ -6,11 +6,10 @@ updateTextKeymap
 	keyMorph := self targetShortcutMorph.
 "	(textModel widget kmDispatcher isKindOf: AltKMDispatcher)
 		ifFalse: [ textModel widget setProperty: #kmDispatcher toValue: (AltKMDispatcher target: textModel widget) ]."
-	textModel widget kmDispatcher perInstanceOnly: true.
+	textModel widget kmDispatcher reset.
 "	(keyMorph kmDispatcher isKindOf: AltKMDispatcher)
 		ifFalse: [ keyMorph setProperty: #kmDispatcher toValue: (AltKMDispatcher target: keyMorph) ]
 		ifTrue: [ keyMorph kmDispatcher reset ]."
-	keyMorph kmDispatcher perInstanceOnly: true.
 	keyMorph kmDispatcher reset.
 	self selectedItem notNil
 		ifTrue: [ self selectedItem item buildTextShortcutsOn: keyMorph with: self ]

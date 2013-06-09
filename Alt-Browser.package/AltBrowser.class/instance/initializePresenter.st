@@ -5,8 +5,6 @@ initializePresenter
 	treeModel roots: self getRootItems.
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
-	treeModel perInstanceKeymapOnly: true.
-	textModel perInstanceKeymapOnly: true.
 	treeModel
 		whenSelectedItemChanged: [ :sel |
 			treeModel updateKeymap.
@@ -26,6 +24,8 @@ initializePresenter
 	
 	treeModel keymapHolder: [:kmDispatcher | self updateTreeKeymap: kmDispatcher].
 	textModel keymapHolder: [:kmDispatcher | self updateTextKeymap: kmDispatcher].
+	treeModel updateKeymap.
+	textModel updateKeymap.
 	
 	self class announcer weak on: AltRootsReset send: #reset to: self.
 	self class announcer weak on: AltNodeRebuilt send: #rebuiltNode: to: self.
