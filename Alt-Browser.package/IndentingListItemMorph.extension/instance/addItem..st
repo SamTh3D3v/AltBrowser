@@ -1,7 +1,6 @@
 *alt-browser
 addItem: aNode
-	"Add a submorph for that item. Sometime, the item may already be there; it depends on how
-	the code goes through this. Modified to note where the node is to be put (newItemNode)."
+	"Add a submorph for that item. Sometime, the item may already be there; it depends on how the code goes through this. Modified to note where the node is to be put (newItemNode)."
 
 	"The short version is too drastic. Current version seems to work a bit better. There are too many layers of object for this to look anywhere elegant (and correct)."
 
@@ -9,6 +8,8 @@ addItem: aNode
 	container adjustSubmorphPositions."
 
 	"receiver is the target parent node morph."
+	
+	"As of .37, is still buggy. Will rely on an invariant check."
 
 	| newMorph lc nc i j |
 	(self findItem: aNode item) ifNotNil: [ ^ self ].
