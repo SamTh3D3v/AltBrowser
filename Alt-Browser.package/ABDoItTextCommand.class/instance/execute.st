@@ -7,7 +7,7 @@ execute
 	ctxt := self doItContext.
 	result := [ 
 	rcvr class evaluatorClass new
-		evaluate: (ReadStream on: target widget trueSelection)
+		evaluate: (ReadStream on: target trueSelection)
 		in: ctxt
 		to: rcvr
 		notifying: target

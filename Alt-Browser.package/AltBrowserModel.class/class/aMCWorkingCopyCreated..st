@@ -11,7 +11,7 @@ aMCWorkingCopyCreated: anEvent
 		ifTrue: [ packageSet packages first ]
 		ifFalse: [ packageName -> packageSet packages asOrderedCollection ].
 	cat := packageName copyUpTo: $-.
-	node := self roots detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat ] ] ifNone: [ nil ].
+	node := self rootItems detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat ] ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ 
 			| packageNode |

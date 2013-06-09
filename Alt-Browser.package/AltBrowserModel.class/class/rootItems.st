@@ -1,3 +1,5 @@
 accessing
 rootItems
-	^ AltBrowser roots
+	rootItems isNil
+		ifTrue: [ rootItems := self getRootItems ].
+	^ rootItems

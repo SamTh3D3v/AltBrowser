@@ -1,3 +1,3 @@
 accessing
 announcer
-	^ AltBrowser announcer
+	^ announcer

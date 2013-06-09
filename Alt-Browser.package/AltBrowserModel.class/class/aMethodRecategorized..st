@@ -6,7 +6,7 @@ aMethodRecategorized: anEvent
 
 	| mCNodes |
 	mCNodes := OrderedCollection new.
-	self roots
+	self rootItems
 		do: [ :root | 
 			| res |
 			res := root findAllClass: anEvent methodClass.
@@ -19,4 +19,4 @@ aMethodRecategorized: anEvent
 			self aNodeToRebuilt: pNode.
 			pNode2 := each findMethodCategory: anEvent newProtocol in: anEvent methodClass.
 			pNode2 ~= pNode
-				ifTrue: [ self aNodeToRebuilt: pNode ] ]
+				ifTrue: [ self aNodeToRebuilt: pNode2 ] ]

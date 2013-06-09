@@ -6,7 +6,7 @@ fullOnMethods: aListOfCM
 	n := self open.
 	(l := aListOfCM collect: [ :each | each compiledMethod ])
 		do: [ :aCompiledMethod | 
-			self roots detect: [ :each | (s := each findMethod: aCompiledMethod selector in: aCompiledMethod methodClass) notNil ].
+			self rootItems detect: [ :each | (s := each findMethod: aCompiledMethod selector in: aCompiledMethod methodClass) notNil ].
 			aCompiledMethod == l last
 				ifTrue: [ n selectPathForAbstractItem: s ]
 				ifFalse: [ 

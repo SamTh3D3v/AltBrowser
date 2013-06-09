@@ -1,3 +1,3 @@
 tests
 testRootItems
-	self assert: (AltBrowser getRootItems notEmpty)
+	self assert: (AltBrowserModel getRootItems notEmpty)

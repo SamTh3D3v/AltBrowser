@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"accept:notifying:" : "ThierryGoubier 9/23/2012 22:18",
+		"accept:notifying:" : "ThierryGoubier 10/3/2012 16:04",
 		"asString" : "ThierryGoubier 7/15/2012 07:49",
 		"childNodeClassFromItem:" : "ThierryGoubier 8/31/2012 07:59",
 		"childrenItems" : "ThierryGoubier 9/22/2012 09:09",
-		"dropItem:" : "ThierryGoubier 9/8/2012 11:15",
+		"dropItem:" : "ThierryGoubier 10/3/2012 16:04",
 		"findClass:" : "ThierryGoubier 9/23/2012 17:15",
 		"findMethod:in:" : "ThierryGoubier 9/23/2012 16:18",
 		"findPackage:" : "ThierryGoubier 8/31/2012 07:48",

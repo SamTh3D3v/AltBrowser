@@ -1,4 +1,4 @@
-*alt-browser
+*Alt-Browser
 findExpanded
 	"Get all expanded items among children recursively."
 

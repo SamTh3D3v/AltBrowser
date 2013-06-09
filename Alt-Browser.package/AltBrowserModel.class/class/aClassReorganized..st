@@ -4,7 +4,7 @@ aClassReorganized: anEvent
 
 	| node r o |
 	o := OrderedCollection new.
-	node := self roots
+	node := self rootItems
 		do: [ :e | 
 			(r := e findAllClass: anEvent classReorganized) notNil
 				ifTrue: [ o addAll: r ] ].

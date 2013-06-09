@@ -1,3 +1,3 @@
 tests
 testSpawnRootItems
-	AltBrowser getRootItems do: [:e | e contents]
+	AltBrowserModel getRootItems do: [:e | e contents]

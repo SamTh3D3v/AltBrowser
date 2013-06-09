@@ -4,7 +4,7 @@ aMCWorkingCopyDeleted: anEvent
 
 	| aPackageSet package cat node r |
 	aPackageSet := anEvent workingCopy packageSet.
-	self roots contents
+	self rootItems contents
 		detect: [ :e | (node := e findPackage: aPackageSet packages first) notNil ]
 		ifNone: [ ^ self ].
 	aPackageSet packages size > 1

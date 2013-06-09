@@ -1,5 +1,5 @@
 execution
 execute
-	"Use the AltBrowser temporary to store the item."
+	"Use the AltBrowserModel temporary to store the item."
 
-	AltBrowser temporary: requestor selectedNode item
+	AltBrowserModel temporary: requestor selectedNode item

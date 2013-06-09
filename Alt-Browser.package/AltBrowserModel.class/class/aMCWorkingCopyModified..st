@@ -4,6 +4,6 @@ aMCWorkingCopyModified: anEvent
 
 	| packageSet node |
 	packageSet := anEvent package.
-	self roots detect: [ :e | (node := e findPackageSet: packageSet) notNil ] ifNone: [ nil ].
+	self rootItems detect: [ :e | (node := e findPackageSet: packageSet) notNil ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ self aNodeToUpdate: node ]

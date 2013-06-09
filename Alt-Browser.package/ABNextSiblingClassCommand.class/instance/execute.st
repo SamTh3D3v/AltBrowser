@@ -5,7 +5,7 @@ execute
 	siblings := aClass superclass subclasses.
 	aClassIndex := siblings indexOf: aClass.
 	nextClass := siblings at: ((aClassIndex rem: siblings size) + 1).
-	AltBrowser roots
+	AltBrowserModel rootItems
 		do: [ :each | 
 			| res |
 			(res := each findClass: nextClass) notNil

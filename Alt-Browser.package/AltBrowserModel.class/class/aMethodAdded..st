@@ -6,7 +6,7 @@ aMethodAdded: anEvent
 
 	| mCNodes |
 	mCNodes := OrderedCollection new.
-	self roots
+	self rootItems
 		do: [ :root | 
 			| res |
 			res := root findAllClass: anEvent methodClass.

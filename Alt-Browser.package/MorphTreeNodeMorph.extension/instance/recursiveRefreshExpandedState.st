@@ -1,4 +1,4 @@
-*alt-browser
+*Alt-Browser
 recursiveRefreshExpandedState
 	"Trying to do a better refreshExpandedState which remembers expanded children."
 

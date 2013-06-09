@@ -10,4 +10,12 @@ dropItem: anItem
 		ifTrue: [ 
 			| cm |
 			cm := anItem compiledMethod.
-			cm methodClass organization classify: anItem item under: self item suppressIfDefault: false ]
+			cm methodClass organization classify: anItem item under: self item suppressIfDefault: false ].
+	(anItem isKindOf: ABMethodCategoryNode)
+		ifTrue: [ 
+			| oldCategories newCategories |
+			oldCategories := self sourceClass organization categories copy.
+			newCategories := (oldCategories copyWithout: anItem item) asOrderedCollection.
+			newCategories add: anItem item after: self item.
+			SystemAnnouncer uniqueInstance suspendAllWhile: [ self sourceClass organization categories: newCategories asArray ].
+			self sourceClass organization notifyOfChangedCategoriesFrom: oldCategories to: self sourceClass organization categories ]

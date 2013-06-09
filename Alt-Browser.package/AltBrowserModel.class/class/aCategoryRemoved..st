@@ -1,9 +1,9 @@
 updating
 aCategoryRemoved: anEvent
-	"Ok, a class category was removed. Not sure this works with the RPackages anymore; probably we do have to change that."
+	"Ok, a class category was removed. What has this become with RPackage ?"
 
 	| node r |
-	node := self roots
+	node := self rootItems
 		detect: [ :e | (r := e findClassCategory: anEvent categorySelector) notNil ] ifNone: [^self].
 	r parentNode contents remove: r.
 	announcer announce: (AltNodeRemoved node: r)
