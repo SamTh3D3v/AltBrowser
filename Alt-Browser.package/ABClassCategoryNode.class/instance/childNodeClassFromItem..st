@@ -1,5 +1,5 @@
 as yet unclassified
 childNodeClassFromItem: anItem
-	(anItem isKindOf: Class)
+	(anItem isBehavior or: [ anItem isTrait ])
 		ifTrue: [ ^ ABClassNode ]
 		ifFalse: [ ^ self class ]

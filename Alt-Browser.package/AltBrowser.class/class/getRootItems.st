@@ -1,6 +1,6 @@
 private
 getRootItems
-	"This is where I should rework the organisation. Use broad classes to reduce the number of top-level items. To be improved. Does not catch classes which have no "
+	"This is where I should rework the organisation. Use broad classes to reduce the number of top-level items. To be improved. Does not catch classes which have no packages."
 
 	| l o |
 	l := MCWorkingCopy allManagers asOrderedCollection.

@@ -4,6 +4,6 @@ aMCWorkingCopyDeleted: anEvent
 
 	| package cat node r |
 	node := self rootItems
-		detect: [ :e | (r := e findPackage: anEvent workingCopy) notNil ].
+		detect: [ :e | (r := e findPackage: anEvent workingCopy) notNil ] ifNone: [^ self].
 	r parentNode removeChildItem: r.
 	self allInstances do: [ :l | l removeNode: r ]

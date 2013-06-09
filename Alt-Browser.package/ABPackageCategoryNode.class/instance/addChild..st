@@ -5,4 +5,5 @@ addChild: anItem
 	| d |
 	item value add: anItem.
 	d := self childrenItems indexOf: anItem.
-	^ contents add: (self childNodeFromItem: anItem) beforeIndex: d
+	contents isNil ifTrue: [^nil] ifFalse: [
+	^ contents add: (self childNodeFromItem: anItem) beforeIndex: d]

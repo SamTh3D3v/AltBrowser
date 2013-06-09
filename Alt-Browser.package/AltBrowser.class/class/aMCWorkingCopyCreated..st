@@ -14,7 +14,7 @@ aMCWorkingCopyCreated: anEvent
 					| packageNode |
 					node item value add: package.
 					packageNode :=  node addChild: package.
-					self allInstances do: [ :l | l addNode: packageNode ] ] ]
+					packageNode ifNotNil: [self allInstances do: [ :l | l addNode: packageNode ] ] ] ]
 		ifFalse: [ 
 			node := ABPackageCategoryNode with: cat -> (OrderedCollection with: package).
 			self rootItems add: node.
