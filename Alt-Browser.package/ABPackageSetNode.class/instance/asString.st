@@ -1,3 +1,5 @@
 printing
 asString
-	^ self item packageNameWithStar 
+	(item isKindOf: MCWorkingCopy)
+		ifTrue: [^ self item packageNameWithStar ].
+	^ item printString

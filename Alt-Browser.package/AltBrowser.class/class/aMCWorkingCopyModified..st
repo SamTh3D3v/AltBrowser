@@ -6,4 +6,4 @@ aMCWorkingCopyModified: anEvent
 	packageSet := anEvent package.
 	self roots detect: [ :e | (node := e findPackageSet: packageSet) notNil ] ifNone: [ nil ].
 	node notNil
-		ifTrue: [ self aNodeToRebuilt: node ]
+		ifTrue: [ self aNodeToUpdate: node ]

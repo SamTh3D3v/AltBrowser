@@ -6,4 +6,4 @@ updateNode: aNode
 		ifTrue: [ 
 			r := (self widget scroller submorphs at: 1) findItem: result.
 			r notNil
-				ifTrue: [ r changed ] ]
+				ifTrue: [ r contents: r complexContents asString ] ]
