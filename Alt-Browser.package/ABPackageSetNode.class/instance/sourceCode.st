@@ -1,4 +1,4 @@
-querying
+private
 sourceCode
 	"The default class scheme for a package."
 

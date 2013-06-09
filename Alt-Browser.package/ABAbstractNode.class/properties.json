@@ -12,5 +12,5 @@
 	"name" : "ABAbstractNode",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "Object",
 	"type" : "normal" }

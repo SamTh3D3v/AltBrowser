@@ -2,8 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"accept:notifying:" : "ThierryGoubier 9/23/2012 22:24",
 		"asString" : "ThierryGoubier 9/21/2012 14:58",
 		"childNodeClassFromItem:" : "ThierryGoubier 9/19/2012 22:04",
 		"childrenItems" : "ThierryGoubier 9/19/2012 22:19",
+		"findMethod:in:" : "ThierryGoubier 9/23/2012 16:20",
+		"findPackage:" : "ThierryGoubier 9/23/2012 22:59",
 		"findPackageSet:" : "ThierryGoubier 9/21/2012 10:25",
+		"isStyled" : "ThierryGoubier 9/23/2012 22:25",
+		"sourceCode" : "ThierryGoubier 9/23/2012 22:26",
 		"title" : "ThierryGoubier 9/21/2012 16:20" } }

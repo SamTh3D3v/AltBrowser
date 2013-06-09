@@ -1,6 +1,6 @@
 querying
 findMethod: aSelector in: aClass
-	"An optimisation, but it doesn't work. At the moment, too slow to be used as a method list browser."
+	"Ok. Forced version. May need to force on a case by case basis."
 
 	| res |
 	self item isMeta
@@ -10,7 +10,7 @@ findMethod: aSelector in: aClass
 					self contents
 						do: [ :each | 
 							(res := each findMethod: aSelector in: aClass) notNil
-								ifTrue: [ ^ res ] ] ] ]
+								ifTrue: [ ^ res ]] ] ]
 		ifFalse: [ 
 			aClass == item
 				ifTrue: [ 
