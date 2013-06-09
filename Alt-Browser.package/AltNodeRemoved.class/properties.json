@@ -10,5 +10,5 @@
 	"name" : "AltNodeRemoved",
 	"pools" : [
 		 ],
-	"super" : "AltNodeAdded",
+	"super" : "AltNodeAnnouncement",
 	"type" : "normal" }

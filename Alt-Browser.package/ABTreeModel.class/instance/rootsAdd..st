@@ -4,8 +4,9 @@ rootsAdd: aNode
 
 	| pNode |
 	(pNode := aNode parentNode) isNil
-		ifTrue: [ 
-			rootsHolder add: (ABTreeNodeModel with: aNode model: aNode) ]
+		ifTrue: [
+			self assert: (aNode isKindOf: ABTreeNodeModel) not.
+			rootsHolder add: (ABTreeNodeModel with: aNode model: aNode) beforeIndex: (AltBrowser rootItems contents indexOf: aNode) ]
 		ifFalse: [ 
 			rootsHolder contents
 				do: [ :e | 

@@ -1,0 +1,1 @@
+This announcement mark a node rebuilt.

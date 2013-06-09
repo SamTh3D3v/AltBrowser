@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"index" ],
-	"name" : "AltNodeAdded",
+		"node" ],
+	"name" : "AltNodeAnnouncement",
 	"pools" : [
 		 ],
-	"super" : "AltNodeAnnouncement",
+	"super" : "Announcement",
 	"type" : "normal" }

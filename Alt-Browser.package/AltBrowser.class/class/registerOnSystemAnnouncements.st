@@ -4,7 +4,7 @@ registerOnSystemAnnouncements
 
 	"self registerOnSystemAnnouncements."
 
-	"SystemAnnouncer uniqueInstance unsubscribe: self"
+	SystemAnnouncer uniqueInstance unsubscribe: self.
 
 	SystemAnnouncer uniqueInstance weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;

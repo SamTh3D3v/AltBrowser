@@ -9,6 +9,6 @@ rootsRemove: aNode
 			(r := e findItem: aNode) notNil
 				ifTrue: [ 
 					r == e
-						ifTrue: [ rootsHolder remove: r ]
-						ifFalse: [ r parentNode contents remove: r ].
-						((self widget scroller submorphs at: 1) removeItem: r) ] ]
+						ifTrue: [ rootsHolder remove: r ifAbsent: [ nil ] ]
+						ifFalse: [ r parentNode contents remove: r.
+						((self widget scroller submorphs at: 1) removeItem: r)] ] ]

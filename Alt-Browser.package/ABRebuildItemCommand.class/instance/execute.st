@@ -1,4 +1,4 @@
 execution
 execute
 	requestor selectedItem rebuildChildren.
-	AltBrowser aNodeToRebuilt: requestor selectedItem
+	AltBrowser aNodeToRebuilt: requestor selectedItem item

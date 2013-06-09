@@ -1,6 +1,7 @@
 user interface
 menuCommandOn: aBuilder 
-	<worldMenu> 
+	<worldMenu>
+	
 	(aBuilder item: #'Alt Browser')
 			parent: #Tools;
 			action: [ self open ];

@@ -24,4 +24,4 @@ getRootItems
 					i value add: e ] ].
 	^ (SortedCollection sortBlock: [:a :b | a asString < b asString])
 		addAll: (o collect: [ :e | ABPackageCategoryNode with: e ]);
-		yourself
+		asOrderedCollection

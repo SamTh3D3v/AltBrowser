@@ -4,4 +4,5 @@ release
 	
 	treeModel ifNotNil: [treeModel initialize. treeModel := nil].
 	textModel ifNotNil: [textModel initialize. textModel := nil].
+	self class announcer unsubscribe: self.
 	super release.
