@@ -1,3 +1,3 @@
 execution
 execute
-	target copySelection
+	target widget copySelection

@@ -1,3 +1,3 @@
 execution
 execute
-	target cut
+	target widget cut
