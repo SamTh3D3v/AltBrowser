@@ -1,4 +1,4 @@
-*Alt-Browser
+*alt-browser
 findItem: aNode
 	"Search for a complex contents item."
 

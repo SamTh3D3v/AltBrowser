@@ -1,4 +1,4 @@
-*Alt-Browser
+*alt-browser
 checkInvariant
 	"Check that this morph is correct regarding it's abstract contents."
 
