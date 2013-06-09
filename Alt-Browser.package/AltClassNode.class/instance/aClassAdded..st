@@ -1,0 +1,3 @@
+updating
+aClassAdded: anEvent
+	^ false

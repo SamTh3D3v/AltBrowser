@@ -4,6 +4,4 @@ aClassCommented: anEvent
 
 	"Refreshing the class node is bad, because then the comment node is recreated and the accept routine looses the focus."
 
-	| node r |
-	node := self rootItems detect: [ :e | (r := e findClass: anEvent classCommented) notNil ].
-	self aNodeToUpdate: r contents second
+	self rootItems do: [ :e | e aClassCommented: anEvent ]

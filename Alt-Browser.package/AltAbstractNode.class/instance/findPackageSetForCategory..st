@@ -7,6 +7,6 @@ findPackageSetForCategory: aCategoryName
 	| res |
 	self contents
 		do: [ :each | 
-			(res := each findPackageSetFor: aCategoryName) notNil
+			(res := each findPackageSetForCategory: aCategoryName) notNil
 				ifTrue: [ ^ res ] ].
 	^ nil

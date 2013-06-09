@@ -2,13 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
+		"aCategoryAdded:" : "ThierryGoubier 4/19/2013 22:49",
+		"aCategoryRemoved:" : "ThierryGoubier 4/19/2013 22:49",
+		"aClassAdded:" : "ThierryGoubier 4/20/2013 10:16",
+		"aClassCommented:" : "ThierryGoubier 4/20/2013 23:13",
 		"aClassReorganized:" : "ThierryGoubier 4/16/2013 16:17",
 		"aClassRepackaged:" : "ThierryGoubier 4/18/2013 12:36",
 		"aMethodAdded:" : "ThierryGoubier 4/18/2013 22:38",
 		"aMethodRecategorized:" : "ThierryGoubier 4/15/2013 22:35",
 		"aMethodRemoved:" : "ThierryGoubier 4/19/2013 07:28",
 		"aRPackageCreated:" : "ThierryGoubier 4/18/2013 11:43",
-		"aRPackageUnregistered:" : "ThierryGoubier 4/18/2013 11:43",
+		"aRPackageUnregistered:" : "ThierryGoubier 4/19/2013 22:50",
 		"addChild:" : "ThierryGoubier 8/1/2012 09:44",
 		"addChildItem:" : "ThierryGoubier 8/1/2012 10:21",
 		"addChildItem:beforeIndex:" : "ThierryGoubier 8/30/2012 06:59",

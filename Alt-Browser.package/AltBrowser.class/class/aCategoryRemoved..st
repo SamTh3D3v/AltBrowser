@@ -3,10 +3,7 @@ aCategoryRemoved: anEvent
 	"Ok, a class category was removed. What has this become with RPackage ?"
 
 	"Probably: the relevant RPackage doesn't exist anymore, so we can't look for it instance-based. We have to search for the category name instead. "
+	
+	"The RPackage has been / will be unregistered, we don't have anything to do here."
 
-	| node r |
-	node := self rootItems
-		detect: [ :e | (r := e findPackageSetForCategory: anEvent categoryName) notNil ]
-		ifNone: [ ^ self ].
-	r rebuildContents.
-	announcer announce: (AltNodeRebuilt node: r)
+	self rootItems inject: false into: [ :bool :root | (root aCategoryRemoved: anEvent) or: [ bool ] ]

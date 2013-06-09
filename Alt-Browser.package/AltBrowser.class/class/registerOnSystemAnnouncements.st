@@ -3,6 +3,8 @@ registerOnSystemAnnouncements
 	"Global registration to update the list."
 
 	"self registerOnSystemAnnouncements."
+	
+	"Not sure I need to track categories anymore."
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
 	SystemAnnouncer uniqueInstance weak
