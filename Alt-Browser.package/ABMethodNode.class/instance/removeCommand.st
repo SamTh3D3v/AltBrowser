@@ -1,0 +1,4 @@
+commands
+removeCommand
+	<treeAreaCommand>
+	^ {ABRemoveMethodCommand}

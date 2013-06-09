@@ -2,8 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"accept:" : "ThierryGoubier 7/31/2012 21:55",
-		"findMethod:" : "ThierryGoubier 7/27/2012 13:42",
+		"accept:notifying:" : "ThierryGoubier 9/7/2012 15:24",
+		"findMethod:in:" : "ThierryGoubier 9/7/2012 14:16",
 		"isStyled" : "ThierryGoubier 7/19/2012 23:22",
+		"navigationCommands" : "ThierryGoubier 9/6/2012 23:06",
+		"removeCommand" : "ThierryGoubier 9/6/2012 22:12",
 		"sourceClass" : "ThierryGoubier 7/17/2012 13:55",
 		"sourceCode" : "ThierryGoubier 7/17/2012 13:55" } }

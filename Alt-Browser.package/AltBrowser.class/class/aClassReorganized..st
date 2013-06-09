@@ -19,11 +19,11 @@ aClassReorganized: anEvent
 					(anEvent classReorganized organization categories includes: aProtocol)
 						ifFalse: [ 
 							| oldNode |
-							each removeChildItem: (oldNode := each findMethodCategory: aProtocol).
+							each removeChildItem: (oldNode := each findMethodCategory: aProtocol in: anEvent classReorganized).
 							announcer announce: (AltNodeRemoved node: oldNode) ] ].
 			anEvent classReorganized organization categories
 				do: [ :aProtocol | 
-					(each findMethodCategory: aProtocol) notNil
+					(each findMethodCategory: aProtocol in: anEvent classReorganized) notNil
 						ifFalse: [ 
 							| newNode |
 							newNode := each addChild: aProtocol.

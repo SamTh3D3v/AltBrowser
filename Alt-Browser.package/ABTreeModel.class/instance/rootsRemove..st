@@ -2,7 +2,7 @@ accessing
 rootsRemove: aNode
 	"Beware : a node is not an instance of ABTreeNodeModel"
 
-	self assert: (aNode isTreeNodeModel not).
+	self assert: aNode isTreeNodeModel not.
 	rootsHolder contents
 		do: [ :e | 
 			| r |
@@ -10,5 +10,7 @@ rootsRemove: aNode
 				ifTrue: [ 
 					r == e
 						ifTrue: [ rootsHolder remove: r ifAbsent: [ nil ] ]
-						ifFalse: [ r parentNode contents remove: r.
-						((self widget scroller submorphs at: 1) removeItem: r)] ] ]
+						ifFalse: [ 
+							r parentNode contents remove: r.
+							(self widget scroller submorphs at: 1) removeItem: r.
+							(self widget scroller submorphs at: 1) checkInvariant ] ] ]

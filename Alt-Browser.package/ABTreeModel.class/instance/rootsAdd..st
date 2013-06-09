@@ -4,9 +4,12 @@ rootsAdd: aNode
 
 	| pNode |
 	(pNode := aNode parentNode) isNil
-		ifTrue: [
+		ifTrue: [ 
 			self assert: (aNode isKindOf: ABTreeNodeModel) not.
-			rootsHolder add: (ABTreeNodeModel with: aNode model: aNode) beforeIndex: (AltBrowser rootItems contents indexOf: aNode) ]
+			rootsHolder
+				add: (ABTreeNodeModel with: aNode model: aNode)
+				beforeIndex: (AltBrowser rootItems contents indexOf: aNode).
+			(self widget scroller submorphs at: 1) checkInvariant ]
 		ifFalse: [ 
 			rootsHolder contents
 				do: [ :e | 
@@ -20,4 +23,5 @@ rootsAdd: aNode
 								ifTrue: [ 
 									n hasContents
 										ifTrue: [ n addItem: wNode ] ].
+							(self widget scroller submorphs at: 1) checkInvariant.
 							^ self ] ] ]

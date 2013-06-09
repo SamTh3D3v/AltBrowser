@@ -38,4 +38,4 @@ execute
 			((sItem item isKindOf: ABMethodCategoryNode)
 				ifTrue: [ nil ]
 				ifFalse: [ sItem item item ]).
-	requestor selectedItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName))
+	requestor selectPathForItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName in: tClass))

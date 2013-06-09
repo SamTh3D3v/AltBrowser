@@ -1,0 +1,1 @@
+This class does a navigation move to a superclass method of the same name (overridden then by the current one)

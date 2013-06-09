@@ -1,0 +1,3 @@
+execution
+execute
+	SystemNavigation default browseAllImplementorsOf: requestor selectedItem item item

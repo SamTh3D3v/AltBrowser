@@ -8,7 +8,7 @@ addItem: aNode
 	container adjustSubmorphPositions."
 
 	"receiver is the target parent node morph."
-	
+
 	"As of .37, is still buggy. Will rely on an invariant check."
 
 	| newMorph lc nc i j |
@@ -32,15 +32,19 @@ addItem: aNode
 		ifTrue: [ nc := self ]
 		ifFalse: [ 
 			nc := lc.
-			[ nc isExpanded ] whileTrue: [ nc := nc lastChild ] ].
+			[ nc firstChild notNil and: [nc isExpanded ] ] whileTrue: [ nc := nc lastChild ] ].
 	self assert: (complexContents model isKindOf: PluggableTreeMorph).
 	newMorph := container indentingItemClass basicNew
 		initWithContents: (PluggableTreeItemNode with: aNode model: complexContents model)
-		prior: nc
+		prior: nil
 		forList: container
 		indentLevel: self indentLevel + 1.
 	lc isNil
-		ifTrue: [ firstChild := newMorph ]
+		ifTrue: [ 
+			firstChild notNil
+				ifTrue: [ newMorph nextSibling: firstChild ].
+			firstChild := newMorph.
+			self assert: self nextSibling ~= newMorph ]
 		ifFalse: [ 
 			lc nextSibling == newMorph
 				ifTrue: [ self assert: newMorph nextSibling == nil ]

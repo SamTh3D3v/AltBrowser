@@ -1,5 +1,7 @@
 spec
 open
 	"AltBrowser example"
-	
-	AltBrowser new openWithSpec
+
+	| n |
+	(n := AltBrowser new) openWithSpec.
+	^ n
