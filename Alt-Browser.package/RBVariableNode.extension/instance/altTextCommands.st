@@ -1,4 +1,4 @@
-*alt-browser
+*alt-browser-rb-commands
 altTextCommands
 	"Answer commands depending on the binding "
 

@@ -4,6 +4,7 @@ aMethodRecategorized: anEvent
 
 	(anEvent newProtocol = self methodCategory or: [ anEvent oldProtocol = self methodCategory ])
 		ifTrue: [ 
-			(contents notNil and: [ (contents collect: [ :e | e item ]) includes: anEvent methodClass ])
+			(self contents inject: false into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ])
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
-			self contents do: [ :e | e aMethodRecategorized: anEvent ] ]
+			^ true ].
+	^ false

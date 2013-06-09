@@ -6,6 +6,7 @@ aMethodRecategorized: anEvent
 
 	anEvent methodClass == item
 		ifTrue: [ 
-			self contents detect: [ :each | each aMethodRecategorized: anEvent ] ifNone: [ AltBrowser aNodeToRebuilt: self ].
+			(self contents inject: false into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ])
+				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false

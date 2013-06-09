@@ -2,4 +2,4 @@ updating
 aMethodRecategorized: anEvent
 	"Pass through to childrens."
 
-	self contents do: [ :each | each aMethodRecategorized: anEvent ]
+		^ self contents inject: false into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ]
