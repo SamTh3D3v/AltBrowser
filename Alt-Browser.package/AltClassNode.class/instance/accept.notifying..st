@@ -1,6 +1,10 @@
 actions
 accept: aText notifying: aController
-	| res |
+	"The base code just evaluate the expression."
+	
+	"We will add some RB parsing to really check what is happening, and, in some cases, change the evaluation to a specific RB command (undoable)."
+	 
+	| res |	
 	res := [ 
 	UndefinedObject evaluatorClass new
 		evaluate: (ReadStream on: aText)
