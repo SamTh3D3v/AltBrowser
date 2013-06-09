@@ -6,7 +6,5 @@ childrenItems
 	c := self item classTags.
 	o := OrderedCollection new.
 	o add: self item.
-	c size = 1
-		ifTrue: [ o addAll: (ABClassCategoryNode orderClasses: (self item classesForClassTag: c first) asOrderedCollection) ]
-		ifFalse: [ o addAll: c ].
+	o addAll: (ABClassCategoryNode orderClasses: self item definedClasses asOrderedCollection).
 	^ o

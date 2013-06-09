@@ -2,7 +2,7 @@ ordering
 orderClasses: aClassList
 	"Order classes according to their superclasses."
 
-	| r addClassBlock |
+	| r addClassBlock c |
 	addClassBlock := [ :fromList :toList :aClass | 
 	(toList includes: aClass)
 		ifFalse: [ 
@@ -13,5 +13,7 @@ orderClasses: aClassList
 					toList add: aClass afterIndex: (toList indexOf: aClass superclass) ]
 				ifFalse: [ toList addFirst: aClass ] ] ].
 	r := OrderedCollection new.
-	aClassList reverseDo: [ :eachClass | addClassBlock value: aClassList value: r value: eachClass ].
+	c := SortedCollection sortBlock: [:a :b | a name > b name].
+	c addAll: aClassList.
+	c do: [ :eachClass | addClassBlock value: aClassList value: r value: eachClass ].
 	^ r
