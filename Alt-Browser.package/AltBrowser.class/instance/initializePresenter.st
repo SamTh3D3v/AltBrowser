@@ -8,6 +8,7 @@ initializePresenter
 	treeModel
 		whenSelectedItemChanged: [ :sel |
 			self updateTextKeymap.
+			self updateTreeKeymap.
 			sel isNil
 				ifTrue: [ 
 					textModel text: ''.

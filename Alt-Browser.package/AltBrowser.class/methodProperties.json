@@ -34,7 +34,7 @@
 		"getRootItems" : "ThierryGoubier 8/28/2012 13:33",
 		"history" : "ThierryGoubier 9/4/2012 15:07",
 		"initialExtent" : "ThierryGoubier 8/7/2012 20:31",
-		"initializePresenter" : "ThierryGoubier 9/4/2012 15:02",
+		"initializePresenter" : "ThierryGoubier 9/5/2012 13:03",
 		"initializeWidgets" : "ThierryGoubier 7/17/2012 22:43",
 		"rebuiltNode:" : "ThierryGoubier 8/29/2012 11:02",
 		"release" : "ThierryGoubier 9/4/2012 15:07",
@@ -47,4 +47,5 @@
 		"taskbarIcon" : "ThierryGoubier 8/1/2012 21:56",
 		"textModel" : "ThierryGoubier 7/16/2012 00:35",
 		"treeModel" : "ThierryGoubier 7/15/2012 22:41",
-		"updateTextKeymap" : "ThierryGoubier 9/4/2012 17:05" } }
+		"updateTextKeymap" : "ThierryGoubier 9/4/2012 17:05",
+		"updateTreeKeymap" : "ThierryGoubier 9/5/2012 13:04" } }

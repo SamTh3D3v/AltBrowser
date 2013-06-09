@@ -17,7 +17,7 @@ execute
 		whileTrue: [ 
 			nPath add: aNode.
 			aNode := aNode parentNode ].
-	tmPath := OrderedCollection with: (target roots detect: [ :r | r item == nPath last ]).
+	tmPath := OrderedCollection with: (target getRoots detect: [ :r | r item == nPath last ]).
 	nPath removeLast.
 	nPath reverseDo: [ :n | tmPath add: (tmPath last forceFindItem: n) ].
 	target widget selectPath: tmPath in: (target widget scroller submorphs at: 1 ifAbsent: [ ^ self ])
