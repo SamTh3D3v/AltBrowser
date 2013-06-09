@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AltSendersCommand",
+	"pools" : [
+		 ],
+	"super" : "AltCommand",
+	"type" : "normal" }

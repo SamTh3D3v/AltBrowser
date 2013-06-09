@@ -1,4 +1,4 @@
 commands
 debugTreeCommands
 	<treeAreaCommand>
-	^ {ABExploreItemCommand. ABRebuildItemCommand }
+	^ {AltExploreItemCommand. AltRebuildItemCommand }

@@ -1,5 +1,5 @@
 menus
 defaultCommands
 	<treeAreaCommand>
-	^ {ABCreatePackageCategoryCommand.
-	ABFindClassCommand}
+	^ {AltCreatePackageCategoryCommand.
+	AltFindClassCommand}

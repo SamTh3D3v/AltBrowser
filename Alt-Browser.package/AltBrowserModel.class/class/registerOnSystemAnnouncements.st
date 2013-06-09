@@ -16,4 +16,5 @@ registerOnSystemAnnouncements
 		on: ClassAdded send: #aClassAdded: to: self;
 		on: ClassRemoved send: #aClassRemoved: to: self;
 		on: ClassReorganized send: #aClassReorganized: to: self;
-		on: ClassCommented send: #aClassCommented: to: self
+		on: ClassCommented send: #aClassCommented: to: self;
+		on: ClassRenamed send: #aClassRenamed: to: self

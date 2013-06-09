@@ -1,4 +1,4 @@
 commands
 treeAreaCommands
 	<treeAreaCommand>
-	^ {ABAddProtocolCommand. ABRemoveProtocolCommand }
+	^ {AltAddProtocolCommand. AltRemoveProtocolCommand }

@@ -1,4 +1,4 @@
 commands
 searchTextCommands
 	<textAreaCommand>
-	^ {ABImplementorsTextCommand}
+	^ {AltImplementorsTextCommand}

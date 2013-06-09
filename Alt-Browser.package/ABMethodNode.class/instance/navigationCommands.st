@@ -1,7 +1,7 @@
 commands
 navigationCommands
 	<treeAreaCommand>
-	^ {ABGoToSuperMethodCommand.
-	ABImplementorsCommand.
-	ABSendersCommand.
-	ABBrowseVersionsCommand}
+	^ {AltGoToSuperMethodCommand.
+	AltImplementorsCommand.
+	AltSendersCommand.
+	AltBrowseVersionsCommand}

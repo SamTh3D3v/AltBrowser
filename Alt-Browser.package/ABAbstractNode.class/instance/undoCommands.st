@@ -1,5 +1,5 @@
 commands
 undoCommands
 	<textAreaCommand>
-	^ {ABUndoTextCommand.
-	ABRedoTextCommand}
+	^ {AltUndoTextCommand.
+	AltRedoTextCommand}

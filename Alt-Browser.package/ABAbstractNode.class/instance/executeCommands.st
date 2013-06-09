@@ -1,8 +1,8 @@
 commands
 executeCommands
 	<textAreaCommand>
-	^ {ABDoItTextCommand.
-	ABPrintItTextCommand.
-	ABInspectItTextCommand.
-	ABExploreItTextCommand.
-	ABDebugItTextCommand}
+	^ {AltDoItTextCommand.
+	AltPrintItTextCommand.
+	AltInspectItTextCommand.
+	AltExploreItTextCommand.
+	AltDebugItTextCommand}
