@@ -1,0 +1,3 @@
+execution
+execute
+	RBRefactoryChangeManager instance redoOperation

@@ -1,0 +1,1 @@
+An AltRBUndoCommand is for handling the undo facilities of RB.

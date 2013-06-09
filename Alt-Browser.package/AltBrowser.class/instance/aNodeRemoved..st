@@ -16,5 +16,7 @@ aNodeRemoved: anEvent
 							| n |
 							r parentNode contents remove: r.
 							(n := self findMorphNodeForItem: r) notNil
-								ifTrue: [self changed: #deselectAll. self halt. n rebuildChildren ].
+								ifTrue: [ 
+									self changed: #deselectAll.
+									n rebuildChildren ].
 							treeMorph firstNodeMorph checkInvariant ] ] ]

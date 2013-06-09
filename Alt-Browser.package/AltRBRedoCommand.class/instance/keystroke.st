@@ -1,0 +1,3 @@
+accessing
+keystroke
+	^ $y ctrl
