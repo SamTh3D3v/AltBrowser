@@ -2,6 +2,7 @@ accessing
 addChild: anItem
 	"Add a child, but do it according to it's position."
 
-	| d |
+	| d newItemNode |
 	d := self childrenItems indexOf: anItem.
-	^ contents add: (self childNodeFromItem: anItem) beforeIndex: d
+	contents add: (newItemNode := self childNodeFromItem: anItem) beforeIndex: d.
+	^ newItemNode

@@ -19,5 +19,5 @@ rootsAdd: aNode
 							(n := (self widget scroller submorphs at: 1) findItem: r) notNil
 								ifTrue: [ 
 									n hasContents
-										ifTrue: [ n addItem: (ABTreeNodeModel with: wNode model: wNode) ] ].
+										ifTrue: [ n addItem: wNode ] ].
 							^ self ] ] ]

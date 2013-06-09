@@ -1,9 +1,14 @@
 updating
 aClassRemoved: anEvent
-	"Ok, a class was removed. TODO: if this class has extensions, it should be removed from more than one place."
+	"Ok, a class was removed. If this class has extensions, it should be removed from more than one place."
 
-	| node r |
+	| node r o |
+	o := OrderedCollection new.
 	node := self rootItems contents
-		detect: [ :e | (r := e findClass: anEvent classRemoved) notNil ] ifNone: [^self].
-	r parentNode contents remove: r.
-	announcer announce: (AltNodeRemoved node: r)
+		do: [ :e | 
+			(r := e findAllClass: anEvent classRemoved) notNil
+				ifTrue: [ o addAll: r ] ].
+	o
+		do: [ :e | 
+			e parentNode contents remove: e.
+			announcer announce: (AltNodeRemoved node: e) ]

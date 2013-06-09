@@ -1,7 +1,7 @@
 accessing
 rebuildNode: aNode
 	| r result |
-	rootsHolder contents detect: [ :rootItem | (result := rootItem findItem: aNode) notNil ].
+	rootsHolder contents detect: [ :rootItem | (result := rootItem findItem: aNode) notNil ] ifNone: [ ^ self ].
 	result notNil
 		ifTrue: [ 
 			result rebuildContents.

@@ -24,7 +24,7 @@ execute
 			cls = Object
 				ifFalse: [ 
 					cats := cls organization categories reject: [ :cat | reject includes: cat ].
-					cats isEmpty
+					(cats isEmpty or: [ reject size > 10 ])
 						ifFalse: [ 
 							lines add: labels size.
 							labels addAll: cats asSortedCollection.
@@ -38,4 +38,5 @@ execute
 			((sItem item isKindOf: ABMethodCategoryNode)
 				ifTrue: [ nil ]
 				ifFalse: [ sItem item item ]).
+	sItem parentNode contents explore.
 	requestor selectedItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName))
