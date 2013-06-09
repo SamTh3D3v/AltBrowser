@@ -2,6 +2,13 @@ drag and drop
 dropItem: anItem
 	"Ok. If we receive a category, then we add the category at the end of the parent node. It amounts to removing a node from the root items and adding it here."
 
+	"Adding a class here will trigger the change category of class."
+
+	anItem class == AltClassNode
+		ifTrue: [ 
+			"Todo: see what is happenning."
+			anItem item category: item name.
+			^ self ].
 	((anItem isKindOf: AltPackageCategoryNode) or: [ anItem isKindOf: AltPackageNode ])
 		ifFalse: [ ^ self ].
 	anItem parentNode isNil
