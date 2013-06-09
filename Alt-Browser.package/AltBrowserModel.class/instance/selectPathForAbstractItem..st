@@ -9,7 +9,5 @@ selectPathForAbstractItem: anItem
 		whileTrue: [ 
 			nPath add: aNode.
 			aNode := aNode parentNode ].
-	tmPath := OrderedCollection with: (tree getRoots detect: [ :r | r item == nPath last ]).
-	nPath removeLast.
-	nPath reverseDo: [ :n | tmPath add: (tmPath last forceFindItem: n) ].
-	treeMorph selectPath: tmPath in: (treeMorph scroller submorphs at: 1 ifAbsent: [ ^ self ])
+	self changed: #(#rootNodes #openItemPath) , nPath reverse.
+	treeMorph adjustSubmorphPositions; scrollSelectionIntoView "TODO: move that line into MorphTreeMorph and raise an issue."

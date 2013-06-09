@@ -1,3 +1,3 @@
 execution
 execute
-	requestor selectPathForItem: requestor history previous key
+	requestor selectPathForAbstractItem: requestor history previous key item

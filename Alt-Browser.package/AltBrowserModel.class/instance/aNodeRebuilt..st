@@ -1,11 +1,12 @@
 updating
 aNodeRebuilt: aNode
+	"Similar to others. Search for the node, force a rebuild of the node."
+
 	| r result |
-	tree isNil ifTrue: [ ^ self].
-	tree roots detect: [ :rootItem | (result := rootItem findItem: aNode) notNil ] ifNone: [ ^ self ].
+	treeMorph nodeList detect: [ :rootItem | (result := rootItem findItem: aNode node) notNil ] ifNone: [ ^ self ].
 	result notNil
 		ifTrue: [ 
 			result rebuildContents.
-			r := (treeMorph scroller submorphs at: 1) findItem: result.
+			r := treeMorph allNodeMorphs detect: [ :each | each complexContents == result ] ifNone: [ nil ].
 			r notNil
 				ifTrue: [ r rebuildChildren ] ]

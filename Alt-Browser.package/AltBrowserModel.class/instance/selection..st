@@ -2,15 +2,19 @@ updating
 selection: anItem
 	"It goes directly here."
 
+	| sel |
+	anItem selectedNodePath notNil ifTrue: [sel := anItem selectedNodePath last].
+	super selection: anItem.
 	self updateTextKeymap: textMorph kmDispatcher.
 	self updateTreeKeymap: treeMorph kmDispatcher.
 	self updateTitle.
-	super selection: anItem.
-	anItem isNil
+	sel isNil
 		ifTrue: [ 
-			self source value: ''	"textModel behavior: nil.
-					textModel aboutToStyle: false" ]
-		ifFalse: [ 
-			self source contents: anItem selectedNodePath last sourceCode.	"textModel behavior: sel sourceClass.
-					textModel aboutToStyle: sel isStyled."
-			self history add: anItem selectedNodePath last]
+			textMorph classOrMetaClass: nil.
+			self source aboutToStyle: false.
+			self source contents: '' ]
+		ifFalse: [
+			textMorph classOrMetaClass: sel sourceClass.
+			self source aboutToStyle: sel isStyled.
+			self source contents: sel sourceCode.
+			self history add: sel]

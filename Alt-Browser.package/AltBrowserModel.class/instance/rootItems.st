@@ -1,3 +1,3 @@
-updating
+accessing
 rootItems
-	^ AltBrowser roots
+	^ self class rootItems

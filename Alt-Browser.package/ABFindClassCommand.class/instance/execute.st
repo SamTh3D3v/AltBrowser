@@ -5,7 +5,7 @@ execute
 	"In fact, this is costly (scan of the complete tree) even if it is fast enough, since sometimes the over package is before (Alt), sometimes it is after (Rpackage). It may be irrelevant with evolutions in RPackage."
 
 	| aClass found aNode nPath tmPath |
-	aClass := SearchFacade classSearch chooseFromOwner: requestor window window.
+	aClass := SearchFacade classSearch chooseFromOwner: target owner.
 	aClass isNil
 		ifTrue: [ ^ self ].
 	AltBrowser roots

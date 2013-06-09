@@ -2,9 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"aboutToStyle:" : "ThierryGoubier 9/27/2012 20:04",
 		"browser:" : "ThierryGoubier 9/26/2012 13:20",
+		"buildTextMenu:" : "ThierryGoubier 9/30/2012 11:45",
 		"contents:" : "ThierryGoubier 9/26/2012 13:31",
 		"readSelection" : "ThierryGoubier 9/26/2012 14:22",
 		"selectedClass" : "ThierryGoubier 9/26/2012 13:22",
-		"textMenu:" : "ThierryGoubier 9/26/2012 14:14",
+		"shoutAboutToStyle:" : "ThierryGoubier 9/27/2012 20:09",
 		"widget" : "ThierryGoubier 9/26/2012 16:52" } }

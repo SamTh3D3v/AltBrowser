@@ -4,4 +4,5 @@ removeNode: aNodeRemoved
 
 	| aNode |
 	aNode := aNodeRemoved node.
+		aNode isNil ifTrue: [^ self].
 	treeModel rootsRemove: aNode

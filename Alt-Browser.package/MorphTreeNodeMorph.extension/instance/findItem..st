@@ -1,7 +1,7 @@
-*alt-browser
+*Alt-Browser
 findItem: aNode
-	"Hierarchical search"
-	
+	"Search for a complex contents item."
+
 	| found |
 	self
 		withSiblingsDo: [ :each | 

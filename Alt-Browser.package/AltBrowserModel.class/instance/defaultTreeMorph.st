@@ -3,5 +3,5 @@ defaultTreeMorph
 	^ super defaultTreeMorph
 		doubleClickSelector: #doubleClick;
 		nodeStringGetter: #asText;
-		getMenuSelector: #menu:;
+		getMenuSelector: #buildTreeMenu:;
 		withHLines: false.

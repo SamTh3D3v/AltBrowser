@@ -4,9 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"browser" ],
+		"browser",
+		"aboutToStyle",
+		"behavior" ],
 	"name" : "AltBrowserCodeModel",
 	"pools" : [
 		 ],
