@@ -1,5 +1,5 @@
 accessing
 methodCategory
-	"Hum, not working probably."
+	"Still working in fact."
 	
 	^ parentNode item methodCategoryPrefix

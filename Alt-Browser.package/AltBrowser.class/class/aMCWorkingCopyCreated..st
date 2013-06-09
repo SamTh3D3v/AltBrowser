@@ -5,9 +5,9 @@ aMCWorkingCopyCreated: anEvent
 	"TODO: change to take in account the RPackage change."
 
 	| package cat node |
-	package := anEvent workingCopy.
-	cat := package packageName copyUpTo: $-.
-	node := self rootItems detect: [ :e | e item key = cat ] ifNone: [ nil ].
+	package := RPackageOrganizer default packageNamed: anEvent workingCopy packageName.
+	cat := package name copyUpTo: $-.
+	node := self rootItems contents detect: [ :e | e item key = cat ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ 
 			node item value
@@ -16,8 +16,9 @@ aMCWorkingCopyCreated: anEvent
 					| packageNode |
 					node item value add: package.
 					packageNode :=  node addChild: package.
-					packageNode ifNotNil: [self allInstances do: [ :l | l addNode: packageNode ] ] ] ]
+					packageNode
+						ifNotNil: [ announcer announce: (AltNodeAdded node: packageNode) ] ] ]
 		ifFalse: [ 
 			node := ABPackageCategoryNode with: cat -> (OrderedCollection with: package).
-			self rootItems add: node.
-			self allInstances do: [ :l | l addPackageCategory: node ] ]
+			self rootItems contents add: node.
+			 announcer announce: (AltNodeAdded node: node)  ]

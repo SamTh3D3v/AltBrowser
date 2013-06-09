@@ -5,10 +5,10 @@ defaultPackageCategoriesNames
 	"AltBrowser reset."
 	
 	^ #('System'
-		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping')
+		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam')
 		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits')
 		#('Development' 'AST' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion')
-		#('Networking' 'Network' 'Zodiac' 'Zink' 'Compression')
+		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
 		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager')
 		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'FixUnderscores' 'ScriptLoader20')
 		

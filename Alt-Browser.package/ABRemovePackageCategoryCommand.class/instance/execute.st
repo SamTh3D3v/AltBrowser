@@ -7,4 +7,4 @@ execute
 	item parentNode notNil
 		ifTrue: [ item parentNode removeChildItem: item ]
 		ifFalse: [ AltBrowser rootItems remove: item ].
-	AltBrowser allInstances do: [ :i | i removeNode: item ]
+	AltBrowser announcer announce: (AltNodeRemoved node: item)

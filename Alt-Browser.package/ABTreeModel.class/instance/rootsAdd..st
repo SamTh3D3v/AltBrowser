@@ -5,10 +5,8 @@ rootsAdd: aNode
 	| pNode |
 	(pNode := aNode parentNode) isNil
 		ifTrue: [ 
-			self assert: aNode isTreeNodeModel.
-			rootsHolder add: aNode ]
+			rootsHolder add: (ABTreeNodeModel with: aNode model: aNode) ]
 		ifFalse: [ 
-			self assert: aNode isTreeNodeModel not.
 			rootsHolder contents
 				do: [ :e | 
 					| r |
