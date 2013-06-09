@@ -1,3 +1,3 @@
 execution
 execute
-	target implementorsOfIt
+	target textMorph editor implementorsOf: node selector
