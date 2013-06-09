@@ -1,3 +1,3 @@
 as yet unclassified
 asString
-	^'comment'
+	^ 'comment' asText addAttribute: TextEmphasis italic

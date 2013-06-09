@@ -3,7 +3,7 @@ rootItems
 	"This is where I should rework the organisation. Use broad classes to reduce the number of top-level items. To be improved. Does not catch classes which have no "
 
 	| l o |
-	l := PackageOrganizer default packages asOrderedCollection.
+	l := MCWorkingCopy allManagers asOrderedCollection.
 	o := OrderedCollection new.
 	self defaultPackageCategoriesNames
 		do: [ :w | 

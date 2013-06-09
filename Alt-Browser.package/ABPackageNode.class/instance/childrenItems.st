@@ -3,10 +3,10 @@ childrenItems
 	"Extract from the organisation the various classes."
 
 	| c o |
-	c := Smalltalk organization categoriesMatching: self item packageName , '*'.
+	c := self item packageInfo systemCategories.
 	o := OrderedCollection new.
-	o addAll: self item extensionClasses.
+	o add: self item.
 	c size = 1
 		ifTrue: [ c do: [ :e | (Smalltalk organization classesInCategory: e) do: [ :class | o add: class ] ] ]
-		ifFalse: [ o addAll: c ].
+		ifFalse: [ o addAll: (c" reject: [ :e | Smalltalk organization isEmptyCategoryNamed: e ]") ].
 	^ o

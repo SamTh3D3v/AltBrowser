@@ -1,3 +1,3 @@
 as yet unclassified
 sourceClass
-	^ self item
+	^ self parentNode item

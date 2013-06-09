@@ -1,5 +1,5 @@
 as yet unclassified
 asString
 	^ self item isMeta
-		ifTrue: [ 'Class' ]
+		ifTrue: [ '- Class' ]
 		ifFalse: [ self item asString ]

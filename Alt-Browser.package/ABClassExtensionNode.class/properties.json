@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "ABTreeModel",
+	"name" : "ABClassExtensionNode",
 	"pools" : [
 		 ],
-	"super" : "TreeModel",
+	"super" : "ABClassNode",
 	"type" : "normal" }

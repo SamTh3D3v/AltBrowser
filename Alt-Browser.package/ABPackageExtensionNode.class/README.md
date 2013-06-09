@@ -1,0 +1,1 @@
+An ABPackageExtensionNode is for the extensions part of a package.
