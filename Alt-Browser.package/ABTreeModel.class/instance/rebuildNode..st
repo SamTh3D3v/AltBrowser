@@ -1,5 +1,10 @@
 accessing
 rebuildNode: aNode
-	| r |
-	r := ((self widget scroller submorphs at: 1) findItem: aNode).
-	r notNil ifTrue: [r rebuildChildren]
+	| r result |
+	rootsHolder contents detect: [ :rootItem | (result := rootItem findItem: aNode) notNil ].
+	result notNil
+		ifTrue: [ 
+			result rebuildContents.
+			r := (self widget scroller submorphs at: 1) findItem: result.
+			r notNil
+				ifTrue: [ r rebuildChildren ] ]

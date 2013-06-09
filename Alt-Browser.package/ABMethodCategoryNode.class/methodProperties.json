@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"accept:" : "ThierryGoubier 8/30/2012 16:33",
 		"childNodeClassFromItem:" : "ThierryGoubier 7/16/2012 00:18",
 		"childrenItems" : "ThierryGoubier 7/27/2012 16:25",
 		"findAllMethodParents:forClass:" : "ThierryGoubier 8/29/2012 11:21",
@@ -11,4 +12,4 @@
 		"privateClass" : "ThierryGoubier 7/17/2012 13:54",
 		"sourceClass" : "ThierryGoubier 7/17/2012 13:53",
 		"sourceCode" : "ThierryGoubier 7/31/2012 22:09",
-		"treeAreaCommands" : "ThierryGoubier 8/29/2012 11:04" } }
+		"treeAreaCommands" : "ThierryGoubier 8/30/2012 16:15" } }

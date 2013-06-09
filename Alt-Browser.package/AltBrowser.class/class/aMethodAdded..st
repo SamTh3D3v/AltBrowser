@@ -20,4 +20,4 @@ aMethodAdded: anEvent
 				ifTrue: [ 
 					| s |
 					s := each addChild: anEvent selector.
-					announcer announce: (AltNodeRemoved node: s) ] ]
+					announcer announce: (AltNodeAdded node: s) ] ]

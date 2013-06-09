@@ -1,6 +1,6 @@
 updating
 aClassRemoved: anEvent
-	"Ok, a class was removed."
+	"Ok, a class was removed. TODO: if this class has extensions, it should be removed from more than one place."
 
 	| node r |
 	node := self rootItems contents

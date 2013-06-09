@@ -13,4 +13,5 @@ registerOnSystemAnnouncements
 		on: MethodAdded send: #aMethodAdded: to: self;
 		on: MethodRemoved send: #aMethodRemoved: to: self;
 		on: ClassAdded send: #aClassAdded: to: self;
-		on: ClassRemoved send: #aClassRemoved: to: self
+		on: ClassRemoved send: #aClassRemoved: to: self;
+		on: ClassReorganized send: #aClassReorganized: to: self
