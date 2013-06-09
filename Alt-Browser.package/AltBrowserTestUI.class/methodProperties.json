@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"docMCPackageOwnership" : "ThierryGoubier 5/29/2013 13:35",
 		"setUp" : "ThierryGoubier 5/28/2013 16:46",
 		"tearDown" : "ThierryGoubier 5/28/2013 16:46",
-		"testMCPackageOwnership" : "ThierryGoubier 5/28/2013 16:46" } }
+		"testSearchMethod" : "ThierryGoubier 5/29/2013 17:31" } }

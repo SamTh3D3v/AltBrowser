@@ -4,7 +4,7 @@ aMethodAdded: anEvent
 
 	anEvent protocol isNil
 	ifTrue: [ ^ false ].
-	anEvent protocol asLowercase = self methodCategory
+	(anEvent protocol asLowercase beginsWith: self methodCategory)
 		ifTrue: [ 
 			(self contents inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ])
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
