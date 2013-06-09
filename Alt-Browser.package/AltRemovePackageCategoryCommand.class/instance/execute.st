@@ -6,5 +6,5 @@ execute
 	item := requestor selectedNode item.
 	item parentNode notNil
 		ifTrue: [ item parentNode removeChildItem: item ]
-		ifFalse: [ AltBrowserModel rootItems remove: item ].
-	AltBrowserModel announcer announce: (AltNodeRemoved node: item)
+		ifFalse: [ AltBrowser rootItems remove: item ].
+	AltBrowser announcer announce: (AltNodeRemoved node: item)

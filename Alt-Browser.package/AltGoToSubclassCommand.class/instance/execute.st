@@ -4,7 +4,7 @@ execute
 	
 	| found aClass |
 	aClass := requestor selectedNode item item subclasses first.
-	AltBrowserModel rootItems
+	AltBrowser rootItems
 		do: [ :each | 
 			| res |
 			(res := each findClass: aClass) notNil
