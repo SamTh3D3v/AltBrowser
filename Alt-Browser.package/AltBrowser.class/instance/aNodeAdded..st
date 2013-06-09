@@ -4,15 +4,14 @@ aNodeAdded: anEvent
 	
 	"Works, but in a better world, should be handled by an appropriate changed message."
 	
-	"The findItem: method on MorphTreeNodeMorph may miss part of the opened items; I don't know when. Will have to keep or improve the checkInvariant."
+	"Removed the invariant."
 
 	| pNode aNode |
 	aNode := anEvent node.
 	(pNode := aNode parentNode) isNil
 		ifTrue: [ 
 			self assert: (aNode isKindOf: AltTreeNodeModel) not.
-			self changed: #rootNodes.
-			treeMorph firstNodeMorph checkInvariant ]
+			self changed: #rootNodes ]
 		ifFalse: [ 
 			treeMorph nodeList
 				do: [ :e | 
@@ -23,5 +22,4 @@ aNodeAdded: anEvent
 							r rebuildChildren.
 							(n := self findMorphNodeForItem: r) notNil
 								ifTrue: [ n rebuildChildren ].
-							treeMorph firstNodeMorph checkInvariant.
 							^ self ] ] ]
