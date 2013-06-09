@@ -1,4 +1,4 @@
-accessing
+actions
 keyStroke: anEvent from: aTreeMorph
 	| c |
 	c := anEvent keyCharacter.

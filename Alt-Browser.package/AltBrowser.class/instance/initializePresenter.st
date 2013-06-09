@@ -1,6 +1,6 @@
 initialization
 initializePresenter
-	treeModel roots: (ABPackageList rootItems collect: [ :e | ABPackageCategoryNode with: e model: self ]).
+	treeModel roots: (ABPackageList rootItems collect: [ :e | ABTreeNodeModel with: e model: e ]).
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
 	treeModel
@@ -8,8 +8,10 @@ initializePresenter
 			sel isNil
 				ifTrue: [ 
 					textModel text: ''.
-					textModel behavior: nil ]
+					textModel behavior: nil.
+					textModel aboutToStyle: false ]
 				ifFalse: [ 
 					textModel text: sel sourceCode.
-					textModel behavior: sel sourceClass ] ].
+					textModel behavior: sel sourceClass.
+					textModel aboutToStyle: sel isStyled ] ].
 	textModel menu: [ :m :t | self buildMenu: m on: t ]

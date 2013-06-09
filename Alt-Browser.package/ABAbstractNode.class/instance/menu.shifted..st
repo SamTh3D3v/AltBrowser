@@ -1,4 +1,4 @@
-accessing
+actions
 menu: menu shifted: b 
 	menu
 		add: 'Expand all' translated

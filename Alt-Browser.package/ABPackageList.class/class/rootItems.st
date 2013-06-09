@@ -26,4 +26,4 @@ rootItems
 				do: [ :e | 
 					l remove: e.
 					i value add: e ] ].
-	^ o
+	^ o collect: [ :e | ABPackageCategoryNode with: e ]

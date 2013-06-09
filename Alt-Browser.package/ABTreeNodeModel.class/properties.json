@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"item",
-		"contents",
-		"parentNode" ],
-	"name" : "ABAbstractNode",
+		"contents" ],
+	"name" : "ABTreeNodeModel",
 	"pools" : [
 		 ],
-	"super" : "Model",
+	"super" : "MorphTreeNodeModel",
 	"type" : "normal" }

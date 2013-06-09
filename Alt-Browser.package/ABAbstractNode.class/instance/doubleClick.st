@@ -1,3 +1,3 @@
-accessing
+actions
 doubleClick
 	self browseItem

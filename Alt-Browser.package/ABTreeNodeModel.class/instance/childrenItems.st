@@ -1,0 +1,3 @@
+accessing
+childrenItems
+	^ item contents

@@ -1,5 +1,5 @@
 accessing
 contents
 	contents isNil
-		ifTrue: [ contents := super contents ].
+		ifTrue: [ contents := self childrenItems collect: [ :i | self childNodeFromItem: i ] ].
 	^ contents

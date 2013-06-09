@@ -1,3 +1,3 @@
-accessing
+actions
 exploreItem
 	self explore

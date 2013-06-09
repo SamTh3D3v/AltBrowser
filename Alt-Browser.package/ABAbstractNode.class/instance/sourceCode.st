@@ -1,5 +1,5 @@
-accessing
+querying
 sourceCode
-	"Should return a source code if appropriate."
+	"Should return a source code or a description if appropriate."
 	
 	^ ''
