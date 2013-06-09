@@ -8,11 +8,7 @@ getRootItems
 	self defaultPackageCategoriesNames
 		do: [ :w | 
 			| i |
-			i := w -> OrderedCollection new.
-			(l select: [ :e | e packageName size >= w size and: [ (e packageName copyFrom: 1 to: w size) = w ] ])
-				do: [ :e | 
-					l remove: e.
-					i value add: e ].
+			i := self getItemsFor: w from: l.
 			o add: i ].
 	[ l notEmpty ]
 		whileTrue: [ 
