@@ -1,4 +1,0 @@
-commands
-searchTextCommands
-	<textAreaCommand>
-	^ {AltImplementorsTextCommand}

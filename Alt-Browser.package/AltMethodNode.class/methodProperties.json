@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"accept:notifying:" : "ThierryGoubier 9/22/2012 10:06",
+		"accept:notifying:" : "ThierryGoubier 12/17/2012 23:06",
+		"buildTextMenu:on:with:" : "ThierryGoubier 12/17/2012 23:20",
 		"compiledMethod" : "ThierryGoubier 9/22/2012 09:32",
 		"findMethod:in:" : "ThierryGoubier 9/7/2012 14:16",
 		"formatCommand" : "ThierryGoubier 10/10/2012 19:29",
@@ -10,7 +11,6 @@
 		"navigationCommands" : "ThierryGoubier 10/15/2012 14:39",
 		"removeCommand" : "ThierryGoubier 10/15/2012 14:45",
 		"runTestCommand" : "ThierryGoubier 11/21/2012 10:04",
-		"searchTextCommands" : "ThierryGoubier 10/15/2012 14:38",
 		"sourceClass" : "ThierryGoubier 7/17/2012 13:55",
 		"sourceCode" : "ThierryGoubier 7/17/2012 13:55",
 		"title" : "ThierryGoubier 9/21/2012 16:13" } }
