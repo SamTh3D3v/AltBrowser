@@ -1,3 +1,3 @@
 testing
-takesText
+wantsMenu
 	^ false

@@ -9,3 +9,6 @@ updateTreeKeymap
 		ifTrue: [ treeMorph kmDispatcher reset ].
 	self selectedItem notNil
 		ifTrue: [ self selectedItem item buildTreeShortcutsOn: treeMorph with: self ]
+		ifFalse: [ 
+			(Pragma allNamed: #treeAreaCommand from: self class to: AltBrowser)
+				do: [ :e | (self perform: e selector) do: [ :c | (c on: self treeModel for: self) buildShortcut: treeMorph ] ] ]

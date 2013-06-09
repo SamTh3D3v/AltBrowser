@@ -1,4 +1,7 @@
 menu
 defaultCommands
 	<treeAreaCommand>
-	^ {ABCreatePackageCategoryCommand. ABFindClassCommand }
+	^ {ABCreatePackageCategoryCommand.
+	ABFindClassCommand.
+	ABFocusNextCommand.
+	ABFocusPreviousCommand}

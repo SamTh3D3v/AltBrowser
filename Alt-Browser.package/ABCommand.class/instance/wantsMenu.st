@@ -1,5 +1,5 @@
 testing
 wantsMenu
-	"Put this here for compatibility. Eventually this will be obsolete"
+	"true if the command wants to be in Menus."
 
 	^ true

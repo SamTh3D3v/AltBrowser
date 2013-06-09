@@ -1,5 +1,5 @@
 testing
 wantsButton
-	"Put this here for compatibility. Eventually this will be obsolete"
+	"Select for button use. Reserved for future use (a menu bar ?)."
 
 	^ false

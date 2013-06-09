@@ -1,3 +1,3 @@
 testing
-takesNodes
+isActive
 	^ true

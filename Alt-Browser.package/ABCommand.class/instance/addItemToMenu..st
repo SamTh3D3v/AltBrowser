@@ -1,6 +1,6 @@
 user interface
 addItemToMenu: aMenu
-	self isActive
+	(self isActive and: [ self wantsMenu ])
 		ifTrue: [ 
 			(aMenu add: self label target: self selector: #execute)
 				enablementSelector: #isEnabled;
