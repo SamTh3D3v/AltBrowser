@@ -1,1 +1,1 @@
-This command brings you to the first sublass of a class
+This command brings you to the first subclass of a class

@@ -12,6 +12,10 @@ addItem: aNode
 
 	| newMorph lc nc i j |
 	(self findItem: aNode item) ifNotNil: [ ^ self ].
+	self isExpanded
+		ifFalse: [ 
+			self changed.
+			^ self ].
 	aNode parentNode notNil
 		ifTrue: [ 
 			i := aNode parentNode contents indexOf: aNode.
@@ -36,15 +40,14 @@ addItem: aNode
 		indentLevel: self indentLevel + 1.
 	lc isNil
 		ifTrue: [ firstChild := newMorph ]
-		ifFalse: [
+		ifFalse: [ 
 			lc nextSibling == newMorph
-				ifTrue: [ self assert: (newMorph nextSibling == nil)]
-				ifFalse: [newMorph nextSibling: lc nextSibling.
-			lc nextSibling: newMorph] ].
-	self assert: (newMorph nextSibling ~= newMorph).
+				ifTrue: [ self assert: newMorph nextSibling == nil ]
+				ifFalse: [ 
+					newMorph nextSibling: lc nextSibling.
+					lc nextSibling: newMorph ] ].
+	self assert: newMorph nextSibling ~= newMorph.
 	self isExpanded
 		ifTrue: [ 
-			lc isNil
-				ifTrue: [ self changed ].
 			container scroller addAllMorphs: {newMorph} after: nc.
 			container adjustSubmorphPositions ]
