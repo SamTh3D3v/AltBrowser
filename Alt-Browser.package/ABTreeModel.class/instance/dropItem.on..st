@@ -2,4 +2,5 @@ drag and drop
 dropItem: anItem on: aTarget
 	"This is called. Yes, really."
 
-	aTarget dropItem: anItem
+	aTarget notNil
+		ifTrue: [ aTarget dropItem: anItem ]

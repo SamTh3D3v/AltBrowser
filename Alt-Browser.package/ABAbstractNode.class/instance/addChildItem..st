@@ -4,5 +4,5 @@ addChildItem: anItem
 
 	| d |
 	self childrenItems isEmpty ifTrue: [self contents add: anItem].
-	d := self childrenItems indexOf: anItem.
+	d := self childrenItems indexOf: anItem item.
 	^ contents add: anItem beforeIndex: d

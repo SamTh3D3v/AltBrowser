@@ -1,6 +1,5 @@
 accessing
 removeChildItem: anItem
-	"Remove a child item from the contents."
+	"Remove a child item. Some subclasses may do things with the item, or translate this into an operation."
 
-	contents notNil
-		ifTrue: [ contents remove: anItem ]
+	self contents remove: anItem

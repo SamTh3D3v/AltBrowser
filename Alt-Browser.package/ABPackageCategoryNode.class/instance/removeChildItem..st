@@ -4,5 +4,6 @@ removeChildItem: anItem
 
 	| d |
 	item value remove: anItem item.
-	contents isNil ifTrue: [^nil] ifFalse: [
-		^ contents remove: anItem]
+	contents isNil
+		ifTrue: [ ^ nil ]
+		ifFalse: [ ^ contents remove: anItem ]

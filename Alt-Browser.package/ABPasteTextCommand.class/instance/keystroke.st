@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $v
+	^ $v ctrl

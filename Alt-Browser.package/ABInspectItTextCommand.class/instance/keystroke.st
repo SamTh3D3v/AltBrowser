@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $i
+	^ $i command

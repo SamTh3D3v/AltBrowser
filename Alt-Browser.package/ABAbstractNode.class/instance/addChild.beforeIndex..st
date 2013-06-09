@@ -1,5 +1,5 @@
 accessing
-addChild: anItem at: index
+addChild: anItem beforeIndex: index
 	"Add a child, but do it according to it's position."
 
 	anItem parentNode: self.

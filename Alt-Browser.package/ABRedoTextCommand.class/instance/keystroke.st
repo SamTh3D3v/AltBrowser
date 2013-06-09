@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $Z
+	^ $j ctrl

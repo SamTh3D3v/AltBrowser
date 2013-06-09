@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $d command
+	^ $l command

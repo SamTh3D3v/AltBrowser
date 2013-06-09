@@ -8,5 +8,5 @@ dropItem: anItem
 		ifTrue: [ AltBrowser rootItems remove: anItem ]
 		ifFalse: [ anItem parentNode removeChild: anItem ].
 	AltBrowser allInstances do: [ :l | l removeNode: anItem ].
-	self parentNode addChild: anItem at: (parentNode contents indexOf: self).
+	self parentNode addChildItem: anItem beforeIndex: (parentNode contents indexOf: self).
 	AltBrowser allInstances do: [ :i | i addNode: anItem ]
