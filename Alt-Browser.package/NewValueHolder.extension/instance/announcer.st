@@ -1,3 +1,0 @@
-*Alt-Browser
-announcer
-	^ announcer
