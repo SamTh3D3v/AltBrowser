@@ -2,6 +2,8 @@ private
 getItemsFor: aCategoryDefinition from: aListOfPackages
 	"Remove elements from aListOfPackages to bring them accordingly to a CategoryDefinition. Returns the top-level object. If this definition is an array, go recursively through it."
 
+	"Reduce single element categories to that element."
+
 	aCategoryDefinition isArray
 		ifTrue: [ 
 			| i |
@@ -18,4 +20,6 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 				do: [ :e | 
 					aListOfPackages remove: e.
 					i value add: e ].
+			i value size == 1
+				ifTrue: [ ^ i value first ].
 			^ i ]

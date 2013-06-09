@@ -1,0 +1,4 @@
+commands
+runTestCommand
+	<treeAreaCommand>
+	^ {AltDebugTestCommand}
