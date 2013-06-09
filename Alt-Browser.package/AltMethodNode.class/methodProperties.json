@@ -3,8 +3,9 @@
 		 },
 	"instance" : {
 		"accept:notifying:" : "ThierryGoubier 12/17/2012 23:06",
-		"buildTextMenu:on:with:" : "ThierryGoubier 2/8/2013 08:56",
+		"buildTextMenu:on:with:" : "ThierryGoubier 4/11/2013 13:57",
 		"compiledMethod" : "ThierryGoubier 9/22/2012 09:32",
+		"debugTreeCommands" : "ThierryGoubier 4/11/2013 14:14",
 		"findMethod:in:" : "ThierryGoubier 9/7/2012 14:16",
 		"formatCommand" : "ThierryGoubier 10/10/2012 19:29",
 		"isStyled" : "ThierryGoubier 7/19/2012 23:22",

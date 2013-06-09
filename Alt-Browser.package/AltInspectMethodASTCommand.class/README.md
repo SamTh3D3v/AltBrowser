@@ -1,0 +1,1 @@
+This command is for debugging purposes, it opens an explorator on the method ast.

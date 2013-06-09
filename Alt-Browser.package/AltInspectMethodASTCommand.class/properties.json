@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltInspectMethodASTCommand",
+	"pools" : [
+		 ],
+	"super" : "AltCommand",
+	"type" : "normal" }
