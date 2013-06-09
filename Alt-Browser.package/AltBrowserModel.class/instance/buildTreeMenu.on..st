@@ -3,7 +3,7 @@ buildTreeMenu: aMenu on: aTarget
 	"Ask the selection for builidng a menu, otherwise create a default one."
 
 	self selectedNode notNil
-		ifTrue: [ self selectedNode selectedItem buildTreeMenu: aMenu on: aTarget with: self ]
+		ifTrue: [ self selectedNode item buildTreeMenu: aMenu on: aTarget with: self ]
 		ifFalse: [ 
 			| t |
 			t := false.

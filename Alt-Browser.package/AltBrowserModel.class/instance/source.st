@@ -1,5 +1,7 @@
 accessing
 source
 	^ source isNil
-		ifTrue: [ source := ValueHolder new contents: String new ]
+		ifTrue: [ 
+			source := AltBrowserCodeModel new.
+			source browser: self ]
 		ifFalse: [ source ]

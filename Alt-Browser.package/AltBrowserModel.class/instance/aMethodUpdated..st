@@ -10,4 +10,4 @@ aMethodUpdated: anEvent
 	(sItem isKindOf: ABMethodNode)
 		ifFalse: [ ^ self ].
 	(sItem sourceClass == anEvent methodClass and: [ sItem item == anEvent oldMethod selector ])
-		ifTrue: [ source value: self selectedNode sourceCode ]
+		ifTrue: [ source contents: self selectedNode sourceCode ]

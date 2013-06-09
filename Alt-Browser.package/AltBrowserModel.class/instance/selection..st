@@ -11,6 +11,6 @@ selection: anItem
 			self source value: ''	"textModel behavior: nil.
 					textModel aboutToStyle: false" ]
 		ifFalse: [ 
-			self source value: anItem sourceCode.	"textModel behavior: sel sourceClass.
+			self source contents: anItem selectedNodePath last sourceCode.	"textModel behavior: sel sourceClass.
 					textModel aboutToStyle: sel isStyled."
-			self history add: anItem ]
+			self history add: anItem selectedNodePath last]

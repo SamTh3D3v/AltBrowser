@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"browser" ],
+	"name" : "AltBrowserCodeModel",
+	"pools" : [
+		 ],
+	"super" : "CodeHolder",
+	"type" : "normal" }

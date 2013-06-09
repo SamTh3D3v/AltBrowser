@@ -1,6 +1,7 @@
 updating
 aNodeRebuilt: aNode
 	| r result |
+	tree isNil ifTrue: [ ^ self].
 	tree roots detect: [ :rootItem | (result := rootItem findItem: aNode) notNil ] ifNone: [ ^ self ].
 	result notNil
 		ifTrue: [ 

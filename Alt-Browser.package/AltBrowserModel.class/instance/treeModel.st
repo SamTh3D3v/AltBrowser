@@ -1,0 +1,5 @@
+accessing
+treeModel
+	"Temporary"
+
+	^ treeMorph

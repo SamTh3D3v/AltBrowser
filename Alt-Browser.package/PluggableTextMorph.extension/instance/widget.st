@@ -1,0 +1,3 @@
+*Alt-Browser
+widget
+	^ self
