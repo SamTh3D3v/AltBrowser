@@ -1,4 +1,6 @@
 commands
 navigationCommands
 	<treeAreaCommand>
-	^ {ABGoToSuperMethodCommand}
+	^ {ABGoToSuperMethodCommand.
+	ABImplementorsCommand.
+	ABSendersCommand}
