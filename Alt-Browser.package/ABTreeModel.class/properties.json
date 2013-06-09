@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ABTreeModel",
+	"pools" : [
+		 ],
+	"super" : "TreeModel",
+	"type" : "normal" }

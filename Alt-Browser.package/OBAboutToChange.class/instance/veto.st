@@ -1,0 +1,3 @@
+vetos
+veto
+	veto := true

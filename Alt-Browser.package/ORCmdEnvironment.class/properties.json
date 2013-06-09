@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Refactory-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SavedEnvironments" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ORCmdEnvironment",
+	"pools" : [
+		 ],
+	"super" : "ORCommand",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Alt-Browser-Standard-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"CategorizationRules",
+		"IgnoredCategories" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OBCmdAutoCategorize",
+	"pools" : [
+		 ],
+	"super" : "OBCommand",
+	"type" : "normal" }

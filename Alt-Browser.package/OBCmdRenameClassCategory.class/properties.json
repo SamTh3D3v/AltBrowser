@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Standard-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OBCmdRenameClassCategory",
+	"pools" : [
+		 ],
+	"super" : "OBCmdRenameCategory",
+	"type" : "normal" }

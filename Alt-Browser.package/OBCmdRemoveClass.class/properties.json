@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Standard-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OBCmdRemoveClass",
+	"pools" : [
+		 ],
+	"super" : "OBCommand",
+	"type" : "normal" }

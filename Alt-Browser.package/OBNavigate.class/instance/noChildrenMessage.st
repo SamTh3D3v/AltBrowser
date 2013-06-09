@@ -1,0 +1,3 @@
+accessing
+noChildrenMessage
+	self subclassResponsibility

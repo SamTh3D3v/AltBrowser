@@ -1,0 +1,19 @@
+{
+	"category" : "Alt-Browser-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"prompt",
+		"default",
+		"assisted",
+		"searchBlock",
+		"labelBlock",
+		"iconBlock" ],
+	"name" : "OBCompletionRequest",
+	"pools" : [
+		 ],
+	"super" : "OBInteractionRequest",
+	"type" : "normal" }

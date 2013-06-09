@@ -1,0 +1,3 @@
+accessing
+announcementClass
+	self subclassResponsibility

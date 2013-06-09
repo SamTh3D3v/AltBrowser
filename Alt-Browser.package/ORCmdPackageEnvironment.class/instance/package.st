@@ -1,0 +1,3 @@
+accessing
+package
+	^ target containingPackage

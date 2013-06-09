@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Refactory-Commands-Replacement",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ORCmdRemoveMethod",
+	"pools" : [
+		 ],
+	"super" : "OBCmdRemoveMethod",
+	"type" : "normal" }

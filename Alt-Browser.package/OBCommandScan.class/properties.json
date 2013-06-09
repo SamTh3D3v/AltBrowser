@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Announcements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"factories" ],
+	"name" : "OBCommandScan",
+	"pools" : [
+		 ],
+	"super" : "OBAnnouncement",
+	"type" : "normal" }

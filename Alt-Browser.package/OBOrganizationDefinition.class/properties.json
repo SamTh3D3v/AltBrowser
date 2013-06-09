@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Standard-Definitions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cwp 1/8/2005 13:31",
+	"instvars" : [
+		"organizer" ],
+	"name" : "OBOrganizationDefinition",
+	"pools" : [
+		 ],
+	"super" : "OBDefinition",
+	"type" : "normal" }

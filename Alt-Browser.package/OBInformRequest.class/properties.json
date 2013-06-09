@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"message" ],
+	"name" : "OBInformRequest",
+	"pools" : [
+		 ],
+	"super" : "OBInteractionRequest",
+	"type" : "normal" }

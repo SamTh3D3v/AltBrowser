@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"inCategory:inClass:" : "cwp 10/17/2004 23:07",
+		"selection:source:inCategory:inClass:" : "cwp 10/17/2004 23:07",
+		"selection:source:inClass:" : "cwp 10/17/2004 23:07",
+		"source:inClass:" : "cwp 10/17/2004 23:03" },
+	"instance" : {
+		"accept:notifying:" : "lr 11/25/2010 23:39",
+		"callback:" : "cwp 10/17/2004 23:36",
+		"category" : "",
+		"compileCategory" : "jk 8/22/2007 20:09",
+		"compileCategory:" : "jk 8/22/2007 20:09",
+		"compileClass" : "jk 8/22/2007 18:36",
+		"compileClass:" : "jk 8/22/2007 18:36",
+		"compileMethod:notifying:" : "lr 7/3/2009 21:49",
+		"compileNotifying:" : "lr 3/4/2009 22:16",
+		"compileText" : "jk 8/22/2007 18:37",
+		"compileText:" : "jk 8/22/2007 18:37",
+		"nodeFor:" : "cwp 10/17/2004 23:33",
+		"selectedClass" : "",
+		"selection" : "lr 3/4/2009 08:20",
+		"selector" : "lr 3/4/2009 08:17",
+		"setClass:category:source:selection:" : "ThierryGoubier 7/16/2012 16:39",
+		"text" : "lr 3/4/2009 08:18",
+		"theClass" : "" } }

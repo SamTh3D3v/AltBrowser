@@ -1,3 +1,5 @@
 as yet unclassified
 childNodeClassFromItem: anItem
-	^  ABClassNode 
+	(anItem isKindOf: Class)
+		ifTrue: [ ^ ABClassNode ]
+		ifFalse: [ ^ ABClassCategoryNode ]

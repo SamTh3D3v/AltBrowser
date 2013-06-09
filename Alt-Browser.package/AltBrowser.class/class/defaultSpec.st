@@ -1,5 +1,7 @@
 as yet unclassified
 defaultSpec
+	<spec>
+	
 	^ {#ComposableSpec.
 			#add:. {
 				{#model. #treeModel}.

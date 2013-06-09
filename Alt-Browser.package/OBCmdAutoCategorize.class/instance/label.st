@@ -1,0 +1,3 @@
+accessing
+label
+	^ 'Categorize automatically'

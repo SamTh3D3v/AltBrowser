@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Refactory-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ORCmdMatchesEnvironment",
+	"pools" : [
+		 ],
+	"super" : "ORCmdEnvironment",
+	"type" : "normal" }

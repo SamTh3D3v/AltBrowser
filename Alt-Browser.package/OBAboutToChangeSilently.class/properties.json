@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Announcements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"veto" ],
+	"name" : "OBAboutToChangeSilently",
+	"pools" : [
+		 ],
+	"super" : "OBAnnouncement",
+	"type" : "normal" }

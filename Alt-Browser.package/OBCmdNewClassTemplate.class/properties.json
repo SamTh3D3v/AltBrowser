@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Standard-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OBCmdNewClassTemplate",
+	"pools" : [
+		 ],
+	"super" : "OBCmdClassTemplate",
+	"type" : "normal" }

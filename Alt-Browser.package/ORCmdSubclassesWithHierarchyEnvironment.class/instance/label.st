@@ -1,0 +1,3 @@
+accessing
+label
+	^ 'Subclasses with'

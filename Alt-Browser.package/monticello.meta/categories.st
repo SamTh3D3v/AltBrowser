@@ -1,2 +1,11 @@
 SystemOrganization addCategory: #'Alt-Browser'!
 SystemOrganization addCategory: #'Alt-Browser-Commands'!
+SystemOrganization addCategory: #'Alt-Browser-Standard-Commands'!
+SystemOrganization addCategory: #'Alt-Browser-Refactory-Commands'!
+SystemOrganization addCategory: #'Alt-Browser-Refactory-Commands-Replacement'!
+SystemOrganization addCategory: #'Alt-Browser-Refactory-Definitions-Replacement'!
+SystemOrganization addCategory: #'Alt-Browser-Standard-Definitions'!
+SystemOrganization addCategory: #'Alt-Browser-Standard-Announcements'!
+SystemOrganization addCategory: #'Alt-Browser-Announcements'!
+SystemOrganization addCategory: #'Alt-Browser-Notifications'!
+SystemOrganization addCategory: #'Alt-Browser-Utilities'!

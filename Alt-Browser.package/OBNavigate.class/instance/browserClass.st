@@ -1,0 +1,3 @@
+accessing
+browserClass
+	self subclassResponsibility
