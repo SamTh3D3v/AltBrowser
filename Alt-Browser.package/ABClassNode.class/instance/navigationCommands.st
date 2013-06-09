@@ -1,4 +1,5 @@
 commands
 navigationCommands
 	<treeAreaCommand>
-	^ {ABGoToSuperclassCommand}
+	^ {ABGoToSuperclassCommand.
+	ABGoToSubclassCommand}

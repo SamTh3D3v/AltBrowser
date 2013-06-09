@@ -3,7 +3,7 @@ execute
 	"Reuse code from Browser>>addCategory"
 
 	"Present a choice of categories or prompt for a new category name and add it before the current selection, or at the end if no current selection"
-	
+
 	"Usability comment : far too many choices in most cases to be user-friendly."
 
 	| labels reject lines oldIndex newName tClass sItem |
@@ -38,5 +38,4 @@ execute
 			((sItem item isKindOf: ABMethodCategoryNode)
 				ifTrue: [ nil ]
 				ifFalse: [ sItem item item ]).
-	sItem parentNode contents explore.
 	requestor selectedItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName))

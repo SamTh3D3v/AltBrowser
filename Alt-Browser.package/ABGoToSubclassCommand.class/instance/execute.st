@@ -1,9 +1,9 @@
 execution
 execute
-	"Find the superclass and jump to it."
-
+	"To be done."
+	
 	| found aClass nPath aNode tmPath |
-	aClass := requestor selectedItem item item superclass.
+	aClass := requestor selectedItem item item subclasses first.
 	AltBrowser rootItems contents
 		do: [ :each | 
 			| res |
