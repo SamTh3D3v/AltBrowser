@@ -1,5 +1,7 @@
 updating
 removeNode: aNode
-	"A package category has been removed. Update the tree by applying it."
+	"A node in the tree has been removed. Update the tree by applying it."
 
+	self selectedItem item == aNode
+		ifTrue: [ self selectedItem: nil ].
 	treeModel rootsRemove: aNode

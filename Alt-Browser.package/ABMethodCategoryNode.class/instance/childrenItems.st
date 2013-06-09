@@ -1,3 +1,3 @@
 as yet unclassified
 childrenItems
-	^ (self parentNode item methodsInCategory: self item) asOrderedCollection
+	^ (self parentNode item methodsInCategory: self item) asSortedCollection
