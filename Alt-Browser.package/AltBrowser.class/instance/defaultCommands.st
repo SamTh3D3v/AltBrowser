@@ -1,4 +1,4 @@
 menu
 defaultCommands
 	<treeAreaCommand>
-	^ {ABCreatePackageCategoryCommand}
+	^ {ABCreatePackageCategoryCommand. ABFindClassCommand }

@@ -2,7 +2,7 @@
 checkInvariant
 	"Check that this morph is correct regarding it's abstract contents."
 
-	"We check that siblings are correctly aligned."
+	"We check that siblings are correctly aligned and have the right index."
 
 	self
 		withSiblingsDo: [ :each | 
