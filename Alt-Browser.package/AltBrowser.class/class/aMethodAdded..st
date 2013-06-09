@@ -1,6 +1,6 @@
 updating
 aMethodAdded: anEvent
-	"Ok, a method was added. Does not mean modify."
+	"Ok, a method was added. Does not mean modify. Works."
 
 	| mCNodes |
 	self rootItems contents
