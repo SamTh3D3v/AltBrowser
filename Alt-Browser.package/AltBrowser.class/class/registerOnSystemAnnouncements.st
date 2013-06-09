@@ -5,7 +5,6 @@ registerOnSystemAnnouncements
 	"self registerOnSystemAnnouncements."
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
-
 	SystemAnnouncer uniqueInstance weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
 		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
@@ -14,4 +13,5 @@ registerOnSystemAnnouncements
 		on: MethodRemoved send: #aMethodRemoved: to: self;
 		on: ClassAdded send: #aClassAdded: to: self;
 		on: ClassRemoved send: #aClassRemoved: to: self;
-		on: ClassReorganized send: #aClassReorganized: to: self
+		on: ClassReorganized send: #aClassReorganized: to: self;
+		on: ClassCommented send: #aClassCommented: to: self

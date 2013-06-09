@@ -1,3 +1,3 @@
 accessing
 icon
-	^ #smallCutIcon
+	^ #smallDeleteIcon

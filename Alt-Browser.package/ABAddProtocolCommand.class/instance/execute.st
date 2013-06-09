@@ -36,6 +36,6 @@ execute
 		addCategory: newName
 		before:
 			((sItem item isKindOf: ABMethodCategoryNode)
-				ifTrue: [ nil ]
-				ifFalse: [ sItem item item ]).
+				ifTrue: [ sItem item item ]
+				ifFalse: [ nil ]).
 	requestor selectPathForItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName in: tClass))

@@ -1,6 +1,6 @@
 updating
 aMethodAdded: anEvent
-	"Ok, a method was added. Does not mean modify. Works."
+	"Ok, a method was added. Things to search for: extensions! If the method is an extension, update that part as well (and at the package extension level, since it may be necessary to add the class node as well). Use the findAllMethodParents: for that."
 
 	| mCNodes |
 	self roots
@@ -14,10 +14,4 @@ aMethodAdded: anEvent
 						ifFalse: [ mCNodes addAll: res ] ] ].
 	mCNodes isNil
 		ifTrue: [ ^ self ].
-	mCNodes
-		do: [ :each | 
-			each contentsNotNil
-				ifTrue: [ 
-					| s |
-					s := each addChild: anEvent selector.
-					announcer announce: (AltNodeAdded node: s) ] ]
+	mCNodes do: [ :each | self aNodeToRebuilt: each ]

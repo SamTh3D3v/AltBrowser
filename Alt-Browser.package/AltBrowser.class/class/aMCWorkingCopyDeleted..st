@@ -1,9 +1,15 @@
 updating
 aMCWorkingCopyDeleted: anEvent
-	"Ok. Now, empty package categories are not removed automagically."
+	"Depending on the MCPackage, this may appear as a package category or as a RPackage."
 
-	| package cat node r |
-	node := self roots contents
-		detect: [ :e | (r := e findPackage: (RPackageOrganizer default packageNamed: anEvent workingCopy packageName)) notNil ] ifNone: [^ self].
-	r parentNode removeChildItem: r.
-	announcer announce: (AltNodeRemoved node: r) 
+	| aPackageSet package cat node r |
+	aPackageSet := anEvent workingCopy packageSet.
+	self roots contents
+		detect: [ :e | (node := e findPackage: aPackageSet packages first) notNil ]
+		ifNone: [ ^ self ].
+	aPackageSet packages size > 1
+		ifTrue: [ node := node parentNode ].
+	node parentNode notNil
+		ifTrue: [ node parentNode removeChildItem: node ]
+		ifFalse: [ self roots remove: node ].
+	announcer announce: (AltNodeRemoved node: r)

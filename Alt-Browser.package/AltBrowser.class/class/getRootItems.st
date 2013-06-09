@@ -5,7 +5,7 @@ getRootItems
 	"There is still some bugs in the packages introduced with the first implementation of RPackage and they show when we build this list."
 
 	| l o |
-	l := (MCWorkingCopy allManagers collect: [ :e | e packageSet ]) asOrderedCollection.
+	l := MCWorkingCopy allManagers asOrderedCollection.
 	o := OrderedCollection new.
 	self defaultPackageCategoriesNames
 		do: [ :w | 
@@ -17,27 +17,15 @@ getRootItems
 			| p w i |
 			p := l first.
 			w := p packageName copyUpTo: $-.
-			i := w -> (OrderedCollection with: p packageName -> p packages).
+			i := w -> (OrderedCollection with: p).
 			o add: i.
 			l remove: p.
 			(l select: [ :e | (e packageName copyUpTo: $-) = w ])
 				do: [ :e | 
 					l remove: e.
-					i value add: e packageName -> e packages ] ].
+					i value add: e ] ].
 	^ o
 		collect: [ :e | 
 			e value size ~= 1
-				ifTrue: [ 
-					| s |
-					s := e value
-						collect: [ :f | 
-							f value size ~= 1
-								ifTrue: [ f ]
-								ifFalse: [ f value first ] ].
-					ABPackageCategoryNode with: e key -> s ]
-				ifFalse: [ 
-					| f |
-					f := e value first.
-					f value size ~= 1
-						ifTrue: [ ABPackageCategoryNode with: f ]
-						ifFalse: [ ABPackageNode with: f value first ] ] ]
+				ifTrue: [ ABPackageCategoryNode with: e ]
+				ifFalse: [ ABPackageSetNode with: e value first ] ]

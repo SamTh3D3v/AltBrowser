@@ -1,24 +1,26 @@
 updating
 aMCWorkingCopyCreated: anEvent
 	"Only case where we don't use a #findXXX: on the root items."
-	
-	"TODO: change to take in account the RPackage change."
 
-	| package cat node |
-	package := RPackageOrganizer default packageNamed: anEvent workingCopy packageName.
-	cat := package name copyUpTo: $-.
-	node := self roots detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat] ] ifNone: [ nil ].
+	"Done for the RPackage change. Need to test."
+
+	| packageSet packageName cat node item |
+	packageSet := anEvent workingCopy packageSet.
+	packageName := packageSet packageName.
+	item := packageSet packages size = 1
+		ifTrue: [ packageSet packages first ]
+		ifFalse: [ packageName -> packageSet packages asOrderedCollection ].
+	cat := packageName copyUpTo: $-.
+	node := self roots detect: [ :e | (e isKindOf: ABPackageCategoryNode) and: [ e item key = cat ] ] ifNone: [ nil ].
 	node notNil
 		ifTrue: [ 
-			node item value
-				detect: [ :e | e == package ]
-				ifNone: [ 
-					| packageNode |
-					node item value add: package.
-					packageNode :=  node addChild: package.
-					packageNode
-						ifNotNil: [ announcer announce: (AltNodeAdded node: packageNode) ] ] ]
+			| packageNode |
+			node item value add: item.
+			packageNode := node addChild: item.
+			announcer announce: (AltNodeAdded node: packageNode) ]
 		ifFalse: [ 
-			node := ABPackageCategoryNode with: cat -> (OrderedCollection with: package).
+			node := packageSet packages size = 1
+				ifTrue: [ ABPackageNode with: item ]
+				ifFalse: [ ABPackageCategoryNode with: item ].
 			self roots add: node.
-			 announcer announce: (AltNodeAdded node: node)  ]
+			announcer announce: (AltNodeAdded node: node) ]

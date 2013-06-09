@@ -1,0 +1,1 @@
+This command jumps to the sibling class according to the inheritance: the next class which has the same superclass than the selected class.

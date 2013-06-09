@@ -1,3 +1,3 @@
 testing
 isActive
-	^ true
+	^ AltBrowser debug

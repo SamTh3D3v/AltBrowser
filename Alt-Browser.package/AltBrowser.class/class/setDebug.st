@@ -1,0 +1,3 @@
+debug
+setDebug
+	debug := true

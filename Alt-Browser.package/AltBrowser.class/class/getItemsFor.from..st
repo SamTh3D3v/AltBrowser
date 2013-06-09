@@ -17,5 +17,5 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 						and: [ (e packageName copyFrom: 1 to: aCategoryDefinition size) = aCategoryDefinition ] ])
 				do: [ :e | 
 					aListOfPackages remove: e.
-					i value add: e packageName -> e packages ].
+					i value add: e ].
 			^ i ]

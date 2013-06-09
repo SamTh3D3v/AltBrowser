@@ -4,6 +4,7 @@
 		 ],
 	"classvars" : [
 		"announcer",
+		"debug",
 		"rootItems",
 		"temporary" ],
 	"commentStamp" : "<historical>",

@@ -9,6 +9,4 @@ aClassRemoved: anEvent
 			(r := e findAllClass: anEvent classRemoved) notNil
 				ifTrue: [ o addAll: r ] ].
 	o
-		do: [ :e | 
-			e parentNode contents remove: e.
-			announcer announce: (AltNodeRemoved node: e) ]
+		do: [ :e | self aNodeToRebuilt: e parentNode ]

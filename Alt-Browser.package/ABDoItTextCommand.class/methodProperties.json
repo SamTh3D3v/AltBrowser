@@ -3,11 +3,11 @@
 		"takesNodes" : "lr 3/6/2011 14:55",
 		"takesText" : "lr 3/6/2011 14:55" },
 	"instance" : {
-		"execute" : "ThierryGoubier 7/26/2012 10:41",
-		"group" : "lr 3/6/2011 14:55",
+		"doItContext" : "ThierryGoubier 9/17/2012 11:29",
+		"doItReceiver" : "ThierryGoubier 9/17/2012 11:28",
+		"execute" : "ThierryGoubier 9/17/2012 11:31",
 		"icon" : "ThierryGoubier 7/17/2012 23:18",
 		"isActive" : "ThierryGoubier 7/25/2012 23:25",
 		"isEnabled" : "ThierryGoubier 7/26/2012 10:40",
 		"keystroke" : "ThierryGoubier 8/1/2012 16:51",
-		"label" : "lr 3/6/2011 14:55",
-		"order" : "lr 3/6/2011 14:54" } }
+		"label" : "lr 3/6/2011 14:55" } }

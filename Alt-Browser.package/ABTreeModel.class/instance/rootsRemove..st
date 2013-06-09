@@ -11,6 +11,8 @@ rootsRemove: aNode
 					r == e
 						ifTrue: [ rootsHolder remove: r ifAbsent: [ nil ] ]
 						ifFalse: [ 
+							| n |
 							r parentNode contents remove: r.
-							(self widget scroller submorphs at: 1) removeItem: r.
+							(n := (self widget scroller submorphs at: 1) findItem: r) notNil
+								ifTrue: [ n rebuildChildren ].
 							(self widget scroller submorphs at: 1) checkInvariant ] ] ]

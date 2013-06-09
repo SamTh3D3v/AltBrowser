@@ -3,4 +3,5 @@ navigationCommands
 	<treeAreaCommand>
 	^ {ABGoToSuperMethodCommand.
 	ABImplementorsCommand.
-	ABSendersCommand}
+	ABSendersCommand.
+	ABBrowseVersionsCommand}

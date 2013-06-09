@@ -1,6 +1,6 @@
 updating
 aCategoryRemoved: anEvent
-	"Ok, a class category was removed."
+	"Ok, a class category was removed. Not sure this works with the RPackages anymore; probably we do have to change that."
 
 	| node r |
 	node := self roots

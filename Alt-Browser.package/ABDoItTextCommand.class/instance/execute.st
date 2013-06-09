@@ -3,11 +3,8 @@ execute
 	"Treat the current selection as an expression; evaluate it."
 
 	| result rcvr ctxt |
-	(requestor selectedItem item respondsTo: #doItReceiver)
-		ifTrue: [ 
-			rcvr := requestor selectedItem item doItReceiver.
-			ctxt := requestor selectedItem item doItContext ]
-		ifFalse: [ rcvr := ctxt := nil ].
+	rcvr := self doItReceiver.
+	ctxt := self doItContext.
 	result := [ 
 	rcvr class evaluatorClass new
 		evaluate: (ReadStream on: target widget trueSelection)

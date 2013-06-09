@@ -1,0 +1,3 @@
+debug
+removeDebug
+	debug := false

@@ -4,7 +4,7 @@ initializePresenter
 	
 	treeModel roots: self getRootItems.
 	treeModel childrenBlock: [ :it | it contents ].
-	treeModel displayBlock: [ :it | it asString ].
+	treeModel displayBlock: [ :it | it item asText ].
 	treeModel
 		whenSelectedItemChanged: [ :sel |
 			treeModel updateKeymap.
