@@ -1,5 +1,0 @@
-commands
-addCategoryCommand
-	<treeAreaCommand>
-	
-	^ {AltAddCategoryCommand}
