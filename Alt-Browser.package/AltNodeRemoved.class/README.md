@@ -1,0 +1,1 @@
+This class mark the removal of a node.

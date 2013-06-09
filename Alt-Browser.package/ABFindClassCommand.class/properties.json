@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ABFindClassCommand",
+	"pools" : [
+		 ],
+	"super" : "ABCommand",
+	"type" : "normal" }

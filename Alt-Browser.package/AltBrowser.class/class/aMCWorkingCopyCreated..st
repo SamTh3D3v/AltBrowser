@@ -1,6 +1,8 @@
 updating
 aMCWorkingCopyCreated: anEvent
 	"Only case where we don't use a #findXXX: on the root items."
+	
+	"TODO: change to take in account the RPackage change."
 
 	| package cat node |
 	package := anEvent workingCopy.

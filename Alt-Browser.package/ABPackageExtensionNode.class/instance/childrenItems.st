@@ -1,3 +1,3 @@
 private
 childrenItems
-	^ self item packageInfo extensionClasses
+	^ self item extendedClasses

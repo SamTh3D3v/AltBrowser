@@ -1,5 +1,5 @@
 accessing
 rootItems
 	rootItems isNil
-		ifTrue: [ rootItems := self getRootItems ].
+		ifTrue: [ rootItems := NewValueHolder contents: self getRootItems ].
 	^ rootItems

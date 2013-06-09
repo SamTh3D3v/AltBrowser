@@ -1,3 +1,5 @@
 accessing
 methodCategory
-	^ parentNode item packageInfo methodCategoryPrefix
+	"Hum, not working probably."
+	
+	^ parentNode item methodCategoryPrefix

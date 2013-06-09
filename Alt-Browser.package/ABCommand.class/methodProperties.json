@@ -5,7 +5,6 @@
 		"takesText" : "cwp 10/15/2006 00:58" },
 	"instance" : {
 		"addItemToMenu:" : "ThierryGoubier 7/25/2012 23:27",
-		"addShortcutToKeymap:category:" : "ThierryGoubier 8/5/2012 18:25",
 		"buildShortcut:" : "ThierryGoubier 8/5/2012 22:27",
 		"buttonLabel" : "lr 4/25/2007 09:27",
 		"cluster" : "cwp 9/30/2007 18:59",
@@ -15,7 +14,7 @@
 		"icon" : "cwp 10/6/2006 18:45",
 		"isActive" : "cwp 10/15/2006 22:05",
 		"isEnabled" : "cwp 10/15/2006 19:31",
-		"keyString" : "ThierryGoubier 8/4/2012 16:13",
+		"keyString" : "ThierryGoubier 8/7/2012 22:49",
 		"keystroke" : "cwp 9/27/2006 22:53",
 		"label" : "cwp 9/27/2006 22:53",
 		"longDescription" : "dc 8/3/2007 12:50",

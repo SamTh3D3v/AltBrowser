@@ -6,7 +6,7 @@ aMethodAdded: anEvent
 	self rootItems
 		do: [ :root | 
 			| res |
-			res := root findAllMethodCategory: anEvent itemProtocol forClass: anEvent itemClass.
+			res := root findAllMethodCategory: anEvent protocol forClass: anEvent methodClass.
 			res notNil
 				ifTrue: [ 
 					mCNodes isNil
@@ -19,5 +19,5 @@ aMethodAdded: anEvent
 			each contentsNotNil
 				ifTrue: [ 
 					| s |
-					s := each addChild: anEvent itemSelector.
+					s := each addChild: anEvent selector.
 					self allInstances do: [ :inst | inst addNode: s ] ] ]

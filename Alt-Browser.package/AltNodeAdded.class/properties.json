@@ -3,15 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"announcer",
-		"rootItems" ],
+		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"treeModel",
-		"methodModel",
-		"textModel" ],
-	"name" : "AltBrowser",
+		"node" ],
+	"name" : "AltNodeAdded",
 	"pools" : [
 		 ],
-	"super" : "ComposableModel",
+	"super" : "Announcement",
 	"type" : "normal" }

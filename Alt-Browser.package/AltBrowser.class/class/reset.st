@@ -4,5 +4,4 @@ reset
 	
 	"AltBrowser reset"
 
-	rootItems := nil.
-	self allInstances do: [ :e | e reset ]
+	self rootItems contents: self getRootItems
