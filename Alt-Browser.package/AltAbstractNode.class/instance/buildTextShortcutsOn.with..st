@@ -7,5 +7,5 @@ buildTextShortcutsOn: aKMDispatcher with: aRequestor
 			(self perform: e selector)
 				do: [ :c | 
 					| command |
-					command := c on: aRequestor textModel for: aRequestor.
+					command := c on: aRequestor textMorph for: aRequestor.
 					command buildShortcut: aKMDispatcher ] ]

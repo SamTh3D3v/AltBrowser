@@ -7,6 +7,6 @@ buildTreeShortcutsOn: aMorph with: aRequestor
 			(self perform: e selector)
 				do: [ :c | 
 					| command |
-					command := c on: aRequestor treeModel for: aRequestor.
+					command := c on: aRequestor treeMorph for: aRequestor.
 					command isEnabled
 						ifTrue: [ command buildShortcut: aMorph ] ] ]

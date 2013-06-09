@@ -1,5 +1,0 @@
-accessing
-textModel
-	"Temporary"
-	
-	^ textMorph
