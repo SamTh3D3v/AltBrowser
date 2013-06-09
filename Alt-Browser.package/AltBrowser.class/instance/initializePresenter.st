@@ -16,7 +16,8 @@ initializePresenter
 				ifFalse: [ 
 					textModel text: sel sourceCode.
 					textModel behavior: sel sourceClass.
-					textModel aboutToStyle: sel isStyled ] ].
+					textModel aboutToStyle: sel isStyled.
+					self history add: sel ] ].
 	textModel menu: [ :m :t | self buildMenu: m on: t ].
 	treeModel menu: [:m :t | self buildTreeMenu: m on: t].
 	self class rootItems whenChangedSend: #reset to: self.

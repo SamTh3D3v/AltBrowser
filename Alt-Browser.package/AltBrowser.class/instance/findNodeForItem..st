@@ -1,7 +1,7 @@
 accessing
 findNodeForItem: anItem
 	| result |
-	treeModel rootItems detect:
+	treeModel getRoots detect:
 		[:rootItem |
 		(result := rootItem findItem: anItem) notNil ].
 	^ result

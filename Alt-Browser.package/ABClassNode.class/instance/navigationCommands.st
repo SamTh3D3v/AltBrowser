@@ -1,0 +1,4 @@
+commands
+navigationCommands
+	<treeAreaCommand>
+	^ {ABGoToSuperclassCommand}

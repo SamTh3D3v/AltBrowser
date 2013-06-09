@@ -1,4 +1,4 @@
-*alt-browser
+*Alt-Browser
 addItem: aNode
 	"Add a submorph for that item. Sometime, the item may already be there; it depends on how
 	the code goes through this. Modified to note where the node is to be put (newItemNode)."
@@ -24,12 +24,12 @@ addItem: aNode
 		ifFalse: [ lc := self lastChild ].
 	lc isNil
 		ifFalse: [ nc := lc nextSibling ].
-	self assert: (self item model isKindOf: PluggableTreeMorph ).
+	self assert: (complexContents model isKindOf: PluggableTreeMorph ).
 	newMorph := container indentingItemClass basicNew
-		initWithContents: (PluggableTreeItemNode with: aNode model: self item model)
-		prior: lc
+		initWithContents: (PluggableTreeItemNode with: aNode model: complexContents model)
+		prior: (lc isNil ifTrue: [ self ] ifFalse: [ lc ])
 		forList: container
-		indentLevel: lc indentLevel.
+		indentLevel: (lc isNil ifTrue: [ self indentLevel + 1] ifFalse: [lc indentLevel]).
 	lc isNil
 		ifTrue: [ firstChild := newMorph ]
 		ifFalse: [ lc nextSibling: newMorph ].

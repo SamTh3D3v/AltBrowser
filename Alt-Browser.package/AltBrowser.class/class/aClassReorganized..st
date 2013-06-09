@@ -12,7 +12,7 @@ aClassReorganized: anEvent
 		do: [ :e | 
 			(r := e findAllClass: anEvent classReorganized) notNil
 				ifTrue: [ o addAll: r ] ].
-	(o select: [ :c | c isKindOf: ABClassNode ])
+	(o select: [ :c | c class == ABClassNode ])
 		do: [ :each | 
 			each contentsOrganization
 				do: [ :aProtocol | 

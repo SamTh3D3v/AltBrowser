@@ -1,4 +1,4 @@
 commands
 searchTreeCommands
 	<treeAreaCommand>
-	^ {ABFindClassCommand }
+	^ {ABFindClassCommand. ABPreviousCommand. ABNextCommand }

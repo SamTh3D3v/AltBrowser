@@ -8,8 +8,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"treeModel",
-		"methodModel",
-		"textModel" ],
+		"textModel",
+		"history" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

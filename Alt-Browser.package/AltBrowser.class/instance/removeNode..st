@@ -4,6 +4,4 @@ removeNode: aNodeRemoved
 
 	| aNode |
 	aNode := aNodeRemoved node.
-	(self selectedItem notNil and: [self selectedItem item == aNode])
-		ifTrue: [ self selectedItem: nil ].
 	treeModel rootsRemove: aNode
