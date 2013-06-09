@@ -13,9 +13,7 @@ aMCWorkingCopyCreated: anEvent
 				ifNone: [ 
 					| packageNode |
 					node item value add: package.
-					packageNode := node childNodeFromItem: package.
-					node contentsNotNil
-						ifTrue: [ node contents add: packageNode ].
+					packageNode :=  node addChild: package.
 					self allInstances do: [ :l | l addNode: packageNode ] ] ]
 		ifFalse: [ 
 			node := ABPackageCategoryNode with: cat -> (OrderedCollection with: package).

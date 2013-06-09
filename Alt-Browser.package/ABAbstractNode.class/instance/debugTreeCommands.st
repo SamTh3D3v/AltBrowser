@@ -1,0 +1,4 @@
+commands
+debugTreeCommands
+	<treeAreaCommand>
+	^ {ABExploreItemCommand}

@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addChild:" : "ThierryGoubier 7/30/2012 17:36",
 		"buildTextMenu:on:with:" : "ThierryGoubier 7/25/2012 23:23",
+		"buildTreeMenu:on:with:" : "ThierryGoubier 7/30/2012 16:54",
 		"childrenItems" : "ThierryGoubier 7/19/2012 22:33",
 		"contents" : "ThierryGoubier 7/19/2012 22:26",
 		"contentsNotNil" : "ThierryGoubier 7/27/2012 21:42",

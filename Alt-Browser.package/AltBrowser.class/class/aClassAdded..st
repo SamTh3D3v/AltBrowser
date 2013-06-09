@@ -12,11 +12,11 @@ aClassAdded: anEvent
 			| classNode |
 			cat contentsNotNil
 				ifTrue: [ 
-					cat contents add: (classNode := cat childNodeFromItem: anEvent itemClass).
+					classNode := cat addChild: anEvent itemClass.
 					self allInstances do: [ :l | l addNode: classNode ] ] ]
 		ifFalse: [ 
 			r contentsNotNil
 				ifTrue: [ 
 					| classNode |
-					r contents add: (classNode := r childNodeFromItem: anEvent itemClass).
+					classNode := r addChild: anEvent itemClass.
 					self allInstances do: [ :l | l addNode: classNode ] ] ]

@@ -1,14 +1,21 @@
 updating
 aMethodRemoved: anEvent
-	"Ok, a method was removed."
+	"Ok, a method was removed. Don't forget the method may be in multiple places."
 
-	| node r s c |
-	node := self rootItems detect: [ :e | (c := e findClass: anEvent itemClass) notNil ] ifNone: [ ^ self ].
-	c contentsNotNil
-		ifTrue: [ 
-			(r := c findMethodCategory: anEvent itemProtocol) isNil
-				ifTrue: [ ^ self ].
-			r contentsNotNil
+	| mCNodes |
+	self rootItems
+		do: [ :root | 
+			| res |
+			res := root findAllMethodCategory: anEvent itemProtocol forClass: anEvent itemClass.
+			res notNil
 				ifTrue: [ 
-					r contents remove: (s := r findMethod: anEvent itemSelector).
-					self allInstances do: [ :each | each removeNode: s ] ] ]
+					mCNodes isNil
+						ifTrue: [ mCNodes := res ]
+						ifFalse: [ mCNodes addAll: res ] ] ].
+	mCNodes
+		do: [ :each | 
+			each contentsNotNil
+				ifTrue: [ 
+					| s |
+					each contents remove: (s := each findMethod: anEvent itemSelector).
+					self allInstances do: [ :i | i removeNode: s ] ] ]

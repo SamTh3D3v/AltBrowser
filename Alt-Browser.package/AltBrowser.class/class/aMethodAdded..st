@@ -2,13 +2,22 @@ updating
 aMethodAdded: anEvent
 	"Ok, a method was added. Does not mean modify."
 
-	| node r s c |
-	node := self rootItems detect: [ :e | (c := e findClass: anEvent itemClass) notNil ] ifNone: [ ^ self ].
-	c contentsNotNil
-		ifTrue: [ 
-			(r := c findMethodCategory: anEvent itemProtocol) isNil
-				ifTrue: [ ^ self ].
-			r contentsNotNil
+	| mCNodes |
+	self rootItems
+		do: [ :root | 
+			| res |
+			res := root findAllMethodCategory: anEvent itemProtocol forClass: anEvent itemClass.
+			res notNil
 				ifTrue: [ 
-					r contents add: (s := r childNodeFromItem: anEvent itemSelector).
-					self allInstances do: [ :each | each addNode: s ] ] ]
+					mCNodes isNil
+						ifTrue: [ mCNodes := res ]
+						ifFalse: [ mCNodes addAll: res ] ] ].
+	mCNodes isNil
+		ifTrue: [ ^ self ].
+	mCNodes
+		do: [ :each | 
+			each contentsNotNil
+				ifTrue: [ 
+					| s |
+					s := each addChild: anEvent itemSelector.
+					self allInstances do: [ :inst | inst addNode: s ] ] ]

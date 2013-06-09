@@ -13,9 +13,7 @@ rootsAdd: aNode
 						ifTrue: [ 
 							| n wNode |
 							r contentsNotNil
-								ifTrue: [ 
-									wNode := r childNodeFromItem: aNode.
-									r contents add: wNode ].
+								ifTrue: [ wNode := r addChild: aNode ].
 							(n := (self widget scroller submorphs at: 1) findItem: r) notNil
 								ifTrue: [ 
 									n hasContents
