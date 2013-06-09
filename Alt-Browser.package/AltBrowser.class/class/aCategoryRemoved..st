@@ -4,6 +4,6 @@ aCategoryRemoved: anEvent
 
 	| node r |
 	node := self rootItems
-		detect: [ :e | (r := e findClassCategory: anEvent categorySelector) notNil ] ifNone: [^self].
+		detect: [ :e | (r := e findClassCategory: anEvent categoryName) notNil ] ifNone: [^self].
 	r parentNode contents remove: r.
 	announcer announce: (AltNodeRemoved node: r)
