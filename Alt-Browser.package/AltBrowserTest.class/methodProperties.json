@@ -2,9 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "ThierryGoubier 5/28/2013 13:10",
-		"tearDown" : "ThierryGoubier 5/28/2013 13:11",
-		"testMCPackageOwnership" : "ThierryGoubier 5/28/2013 13:14",
 		"testRootItems" : "ThierryGoubier 10/17/2012 15:58",
 		"testSpawn2RootItems" : "ThierryGoubier 10/17/2012 15:58",
 		"testSpawn3RootItems" : "ThierryGoubier 10/17/2012 15:58",
