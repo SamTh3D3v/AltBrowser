@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aClassRecategorized:" : "ThierryGoubier 4/18/2013 12:35",
 		"aClassReorganized:" : "ThierryGoubier 4/16/2013 16:17",
 		"aClassRepackaged:" : "ThierryGoubier 4/18/2013 12:36",
+		"aMethodAdded:" : "ThierryGoubier 4/18/2013 22:38",
 		"aMethodRecategorized:" : "ThierryGoubier 4/15/2013 22:35",
+		"aMethodRemoved:" : "ThierryGoubier 4/19/2013 07:28",
 		"aRPackageCreated:" : "ThierryGoubier 4/18/2013 11:43",
 		"aRPackageUnregistered:" : "ThierryGoubier 4/18/2013 11:43",
 		"addChild:" : "ThierryGoubier 8/1/2012 09:44",

@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"aClassReorganized:" : "ThierryGoubier 4/16/2013 16:05",
+		"aMethodAdded:" : "ThierryGoubier 4/18/2013 22:39",
 		"aMethodRecategorized:" : "ThierryGoubier 4/16/2013 14:57",
+		"aMethodRemoved:" : "ThierryGoubier 4/19/2013 07:27",
 		"accept:notifying:" : "ThierryGoubier 11/26/2012 14:39",
 		"asString" : "ThierryGoubier 9/10/2012 13:14",
 		"childNodeClassFromItem:" : "ThierryGoubier 11/21/2012 13:44",
