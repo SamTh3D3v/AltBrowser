@@ -3,8 +3,12 @@ execute
 	"Reuse code from Browser>>addCategory"
 
 	"Present a choice of categories or prompt for a new category name and add it before the current selection, or at the end if no current selection"
+	
+	"Usability comment : far too many choices in most cases to be user-friendly."
+
 	| labels reject lines oldIndex newName tClass sItem |
-	requestor okToChange ifFalse: [^ self].
+	requestor okToChange
+		ifFalse: [ ^ self ].
 	labels := OrderedCollection new.
 	sItem := requestor selectedItem.
 	tClass := requestor selectedItem sourceClass.
@@ -14,23 +18,24 @@ execute
 		add: ClassOrganizer nullCategory;
 		add: ClassOrganizer default.
 	lines := OrderedCollection new.
-	tClass allSuperclasses do: [:cls | | cats |
-		cls = Object ifFalse: [
-			cats := cls organization categories reject:
-				 [:cat | reject includes: cat].
-			cats isEmpty ifFalse: [
-				lines add: labels size.
-				labels addAll: cats asSortedCollection.
-				reject addAll: cats ] ] ].
-	
+	tClass allSuperclasses
+		do: [ :cls | 
+			| cats |
+			cls = Object
+				ifFalse: [ 
+					cats := cls organization categories reject: [ :cat | reject includes: cat ].
+					cats isEmpty
+						ifFalse: [ 
+							lines add: labels size.
+							labels addAll: cats asSortedCollection.
+							reject addAll: cats ] ] ].
 	newName := UIManager default chooseOrRequestFrom: labels lines: lines title: 'Add Category'.
-	newName ifNil: [ ^self ].
+	newName ifNil: [ ^ self ].
 	newName := newName asSymbol.
-	
 	tClass
 		addCategory: newName
-		before: ((sItem item isKindOf: ABMethodCategoryNode)
-				ifTrue: [nil]
-				ifFalse: [sItem item item]).
-	
-	requestor selectedItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName)).
+		before:
+			((sItem item isKindOf: ABMethodCategoryNode)
+				ifTrue: [ nil ]
+				ifFalse: [ sItem item item ]).
+	requestor selectedItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName))
