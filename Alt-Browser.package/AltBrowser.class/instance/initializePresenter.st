@@ -1,5 +1,7 @@
 initialization
 initializePresenter
+	"The models are created, it means I can register on events."
+	
 	treeModel roots: self getRootItems.
 	treeModel childrenBlock: [ :it | it contents ].
 	treeModel displayBlock: [ :it | it asString ].
@@ -14,4 +16,5 @@ initializePresenter
 					textModel text: sel sourceCode.
 					textModel behavior: sel sourceClass.
 					textModel aboutToStyle: sel isStyled ] ].
-	textModel menu: [ :m :t | self buildMenu: m on: t ]
+	textModel menu: [ :m :t | self buildMenu: m on: t ].
+	self registerOnSystemAnnouncements
