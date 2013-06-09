@@ -6,6 +6,8 @@ dropItem: anItem
 		ifFalse: [ ^ self ].
 	anItem sourceClass == self sourceClass
 		ifFalse: [ ^ self ].
+	anItem == self
+		ifTrue: [ ^ self ].
 	(anItem isKindOf: ABMethodNode)
 		ifTrue: [ 
 			| cm |
