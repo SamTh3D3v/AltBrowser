@@ -4,7 +4,7 @@ childrenItems
 
 	"We use Smalltalk organisation for that, not Rpackage stuff, and they may diverge (they do)."
 
-	| c o r addClassBlock |
+	| c addClassBlock |
 	c := Smalltalk organization categoriesMatching: self item.
 	c size > 2
 		ifTrue: [ ^ c ]
