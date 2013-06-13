@@ -8,5 +8,5 @@ version01: spec
 			author: 'ThierryGoubier';
 			description: 'First configuration for AltBrowser'.
 		spec
-			package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.98'.
+			package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.103'.
 	]
