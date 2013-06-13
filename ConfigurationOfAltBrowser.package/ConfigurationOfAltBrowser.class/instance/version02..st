@@ -1,6 +1,6 @@
 versions
-version01: spec
-	<version: '0.1' imports: #('0.1-baseline')>
+version02: spec
+	<version: '0.2' imports: #('0.1-baseline')>
 	spec
 		for: #common
 		do: [ 
@@ -8,4 +8,4 @@ version01: spec
 				blessing: #development;
 				author: 'ThierryGoubier';
 				description: 'First configuration for AltBrowser'.
-			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.110' ]
+			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.111' ]
