@@ -10,5 +10,5 @@ baseline01: spec
 			package: 'Alt-Browser'.
 		
 		spec
-			group: 'default' with: #('AltBrowser')
+			group: 'default' with: #('Alt-Browser')
 		]
