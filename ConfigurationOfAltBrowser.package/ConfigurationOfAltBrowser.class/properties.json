@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfAltBrowser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfAltBrowser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
