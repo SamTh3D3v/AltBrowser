@@ -7,7 +7,7 @@ baseline01: spec
 		spec repository: 'http://smalltalkhub.com/mc/ThierryGoubier/AltBrowser/main/'.
 
 		spec
-			package: 'AltBrowser'.
+			package: 'Alt-Browser'.
 		
 		spec
 			group: 'default' with: #('AltBrowser')
