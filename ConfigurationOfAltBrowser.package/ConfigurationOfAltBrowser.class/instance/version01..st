@@ -8,4 +8,4 @@ version01: spec
 				blessing: #development;
 				author: 'ThierryGoubier';
 				description: 'AltBrowser for Pharo 2.0 (stable)'.
-			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.116' ]
+			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.120' ]
