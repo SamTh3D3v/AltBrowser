@@ -7,5 +7,5 @@ version02: spec
 			spec
 				blessing: #development;
 				author: 'ThierryGoubier';
-				description: 'First configuration for AltBrowser'.
-			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.111' ]
+				description: 'AltBrowser for Pharo 3.0'.
+			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.117' ]
