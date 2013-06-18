@@ -4,11 +4,11 @@ defaultPackageCategoriesNames
 
 	"AltBrowser reset."
 
-	^ #('System'
-		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'HistoryCollection' 'NewList')
-		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer')
-		#('Development' 'AST' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit')
+	^ #(#('System' 'System' 'FileSystem' 'Files' 'CommandShell' 'StartupPreferences' 'OSProcess')
+		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain')
+		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization')
+		#('Development' 'AST' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler')
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
-		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager')
-		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'FixUnderscores' 'ScriptLoader20' 'HudsonBuildTools20')
+		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer')
+		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader20' 'HudsonBuildTools20')
 	)

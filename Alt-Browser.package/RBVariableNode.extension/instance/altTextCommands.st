@@ -9,4 +9,6 @@ altTextCommands
 			AltRBInstVarRenameCommand} ].
 	self binding isTemp
 		ifTrue: [ ^ {AltRBTemporaryRenameCommand} ].
+	self binding isLiteral
+		ifTrue: [ ^ {AltBrowseTextCommand} ].
 	^ #()
