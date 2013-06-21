@@ -22,7 +22,7 @@ How to load the latest development version (on Linux) :
 	./pharo Pharo.image config http://ss3.gemstone.com/ss/MetaRepoForPharo20 ConfigurationOfOSProcess --install=stable
 	./pharo Pharo.image eval --save Gofer new url: \'filetree://`pwd`/../filetree/repository/\'\; package: \'MonticelloFileTree-Git\'\; load
 	./pharo Pharo.image eval --save \(MCWorkingCopy hasPackageNamed: \'MonticelloFileTree-Git\'\) repositoryGroup\
-		removeRepository: \( \'filetree://`pwd`/filetree/repository/\' asUrl mcRepositoryAsUser: nil withPassword: nil\)\;\
-		addRepository: \( \'gitfiletree://`pwd`/filetree/repository/\' asUrl mcRepositoryAsUser: nil withPassword: nil\)	
+		removeRepository: \( \'filetree://`pwd`/../filetree/repository/\' asUrl mcRepositoryAsUser: nil withPassword: nil\)\;\
+		addRepository: \( \'gitfiletree://`pwd`/../filetree/repository/\' asUrl mcRepositoryAsUser: nil withPassword: nil\)	
 	./pharo Pharo.image eval --save Gofer new url: \'gitfiletree://`pwd`/../AltBrowser/\'\; package: \'Alt-Browser\'\; load
 	
