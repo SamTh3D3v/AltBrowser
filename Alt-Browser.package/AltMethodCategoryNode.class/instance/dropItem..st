@@ -5,7 +5,10 @@ dropItem: anItem
 	((anItem isKindOf: AltMethodCategoryNode) or: [ anItem isKindOf: AltMethodNode ])
 		ifFalse: [ ^ self ].
 	anItem sourceClass == self sourceClass
-		ifFalse: [ ^ self ].
+		ifFalse: [ 
+			(anItem isKindOf: AltMethodNode)
+				ifTrue: [ self sourceClass compile: anItem sourceCode classified: self methodCategory notifying: nil ].
+			^ self ].
 	anItem == self
 		ifTrue: [ ^ self ].
 	(anItem isKindOf: AltMethodNode)
@@ -20,4 +23,6 @@ dropItem: anItem
 			newCategories := (oldCategories copyWithout: anItem item) asOrderedCollection.
 			newCategories add: anItem item after: self item.
 			SystemAnnouncer uniqueInstance suspendAllWhile: [ self sourceClass organization categories: newCategories asArray ].
-			self sourceClass organization notifyOfChangedCategoriesFrom: oldCategories to: self sourceClass organization categories ]
+			self sourceClass organization
+				notifyOfChangedCategoriesFrom: oldCategories
+				to: self sourceClass organization categories ]
