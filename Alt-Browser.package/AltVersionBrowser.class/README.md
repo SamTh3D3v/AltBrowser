@@ -1,0 +1,1 @@
+A subclass of VersionsBrowser to deal with method definitions instead of change records.

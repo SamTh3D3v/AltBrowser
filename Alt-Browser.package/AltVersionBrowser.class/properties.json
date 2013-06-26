@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Versions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltVersionBrowser",
+	"pools" : [
+		 ],
+	"super" : "VersionsBrowser",
+	"type" : "normal" }
