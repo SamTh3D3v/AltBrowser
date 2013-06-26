@@ -3,5 +3,8 @@
 		"browseVersionsOf:class:meta:category:selector:" : "ThierryGoubier 6/26/2013 16:08" },
 	"instance" : {
 		"buildDiffCodePane" : "ThierryGoubier 6/26/2013 15:23",
-		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 6/26/2013 16:07",
+		"changeListButtonSpecs" : "ThierryGoubier 6/26/2013 22:20",
+		"compareToCurrentVersion" : "ThierryGoubier 6/26/2013 22:03",
+		"fileInSelections" : "ThierryGoubier 6/26/2013 22:14",
+		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 6/26/2013 21:45",
 		"undiffedContents" : "ThierryGoubier 6/26/2013 15:20" } }

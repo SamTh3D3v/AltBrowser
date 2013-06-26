@@ -29,7 +29,7 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 			((((repository gitVersionsForDefinition: mcMethodDefinition in: aMCWorkingCopy packageName)
 				collect: [ :commitID | 
 					((MCFileTreeGitStReader on: repository directory fileName: aMCWorkingCopy packageName , repository packageExtension)
-						commitID: commitID) loadDefinitionFor: mcMethodDefinition ]) reject: [ :mcD | mcD isNil ])
+						commitID: commitID) loadDefinitionFor: mcMethodDefinition ]) reject: [ :mcD | mcD isNil or: [ mcD isEmpty ] ])
 				collect: [ :e | e first ])
 		do: [ :aMCMethodDefinition | 
 			(changeList includes: aMCMethodDefinition)
