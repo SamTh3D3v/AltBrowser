@@ -5,5 +5,5 @@ buildShortcut: aKMDispatcher
 	(self keystroke isNil or: [ self wantsKeyboard not or: [ self isActive not ] ])
 		ifTrue: [ ^ self ].
 	aKMDispatcher
-		on: self keystroke asKeyCombination
+		on: self keystroke asShortcut
 		do: [ self execute ]

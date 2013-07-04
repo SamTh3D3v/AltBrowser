@@ -1,3 +1,3 @@
 accessing
 taskbarIcon
-	^ Smalltalk ui icons smallSystemBrowserIcon
+	^ UITheme current smallSystemBrowserIcon

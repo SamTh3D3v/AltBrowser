@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ Character delete asKeyCombination
+	^ Character delete asShortcut
