@@ -5,7 +5,5 @@ addItemToMenu: aMenu
 			(aMenu add: self label target: self selector: #execute)
 				enablementSelector: #isEnabled;
 				icon:
-						(self icon notNil
-								ifTrue: [ UITheme current perform: self icon ]
-								ifFalse: [ nil ]);
+						(self icon ifNotNil: [ :iconSelector | Smalltalk ui icons perform: iconSelector ]);
 				keyText: self keyString ]

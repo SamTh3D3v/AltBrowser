@@ -5,7 +5,7 @@ buildTextMenu: aMenu on: aTarget with: aRequestor
 	| ast node |
 	super buildTextMenu: aMenu on: aTarget with: aRequestor.
 	ast := RBParser parseMethod: aTarget text asString onError: [ :msg :pos | ^ self ].
-	ast annotateInClass: self sourceClass.
+	ast doSemanticAnalysisIn: self sourceClass.
 	(node := ast bestNodeFor: aTarget selectionInterval) notNil
 		ifTrue: [ 
 			aMenu
