@@ -12,14 +12,15 @@ How to load the stable version (on Linux) :
 	wget -O- get.pharo.org/20+vm | bash
 	./pharo Pharo.image config http://smalltalkhub.com/mc/ThierryGoubier/AltBrowser/main/ ConfigurationOfAltBrowser --install=stable
 	
-How to load the latest development version (on Linux) :
-	
-	git clone git://github.com/ThierryGoubier/AltBrowser.git
+A Makefile entry to load the development version (requires the support of gitfiletree//) :
+
+```Makefile
+pharo/Pharo.image:
 	mkdir pharo
-	cd pharo
-	wget -O- get.pharo.org/20+vm | bash
-	./pharo Pharo.image config http://ss3.gemstone.com/ss/MetaRepoForPharo20 ConfigurationOfOSProcess --install=stable
-	./pharo Pharo.image config http://ss3.gemstone.com/ss/FileTree ConfigurationOfFileTree --install=stable
-	./pharo Pharo.image eval --save Gofer new url: \'http://smalltalkhub.com/mc/ThierryGoubier/MonticelloFileTree-Git/main\'\; package: \'MonticelloFileTree-Git\'\; load
-	./pharo Pharo.image eval --save Gofer new url: \'gitfiletree://`pwd`/../AltBrowser/\'\; package: \'Alt-Browser\'\; load
-	
+	cd pharo; wget -O- get.pharo.org/20 | bash
+	pharo -headless pharo/Pharo.image config http://ss3.gemstone.com/ss/MetaRepoForPharo20 ConfigurationOfOSProcess --install=stable
+	pharo -headless pharo/Pharo.image config http://ss3.gemstone.com/ss/FileTree ConfigurationOfFileTree --install=stable
+	pharo -headless pharo/Pharo.image config http://ss3.gemstone.com/ss/FileTree ConfigurationOfFileTree --install=stable --group=MonticelloFileTree-Git
+	pharo -headless pharo/Pharo.image eval --save Gofer new url: \'gitfiletree://`pwd`/AltBrowser/\'\; package: \'Alt-Browser\'\; load
+	pharo -headless pharo/Pharo.image eval --save Gofer new url:\'http://ss3.gemstone.com/ss/PharoInbox\'\; package: \'SLICE-Issue-11102-FileSystemError-Path--root\'\; load
+```
