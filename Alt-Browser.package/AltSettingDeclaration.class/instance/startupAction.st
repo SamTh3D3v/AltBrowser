@@ -18,7 +18,8 @@ startupAction
 				streamContents: [ :s | 
 					s << '(Smalltalk includesKey: '.
 					targetSymbol asSymbol printOn: s.
-					s << ') ifTrue: [' self targetSelector ifNotNil: [ s << '(' ].
+					s << ') ifTrue: ['.
+					self targetSelector ifNotNil: [ s << '(' ].
 					s << '(Smalltalk at: '.
 					targetSymbol asSymbol printOn: s.
 					self targetSelector
