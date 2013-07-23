@@ -1,3 +1,0 @@
-debug
-setDebug
-	debug := true

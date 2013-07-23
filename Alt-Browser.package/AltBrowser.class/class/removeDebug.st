@@ -1,3 +1,0 @@
-debug
-removeDebug
-	debug := false

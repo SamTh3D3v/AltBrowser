@@ -3,20 +3,18 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AltAnnouncer",
 		"Categories",
-		"announcer",
-		"debug",
-		"rootItems",
-		"temporary" ],
+		"Debug",
+		"RootItems",
+		"Temporary" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"source",
-		"tree",
 		"history",
 		"window",
 		"treeMorph",
-		"textMorph",
-		"naviOn" ],
+		"textMorph" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

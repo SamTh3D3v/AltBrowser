@@ -4,4 +4,4 @@ aNodeToRebuilt: r
 
 	r isNil ifTrue: [ ^ self ].
 	r rebuildContents.
-	announcer announce: (AltNodeRebuilt node: r)
+	self announcer announce: (AltNodeRebuilt node: r)
