@@ -5,7 +5,7 @@ altBrowserSettingsOn: aBuilder
 		label: 'AltBrowser' translated;
 		description: 'Alt Browser settings' translated;
 		with: [ 
-					(aBuilder setting: #debug)
+					(aBuilder nodeClass: AltSettingDeclaration name: #debug)
 						label: 'Show debug menu items' translated;
 						target: self;
 						description:

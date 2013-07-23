@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"takesNodes" : "lr 12/10/2010 09:25",
-		"takesText" : "lr 12/10/2010 09:25" },
+		"takesNodes" : "ThierryGoubier 7/22/2013 22:14:12",
+		"takesText" : "ThierryGoubier 7/22/2013 22:14:12" },
 	"instance" : {
-		"execute" : "ThierryGoubier 10/1/2012 21:55",
-		"group" : "lr 12/10/2010 10:38",
-		"icon" : "ThierryGoubier 7/17/2012 23:19",
-		"isActive" : "lr 12/10/2010 09:22",
-		"keystroke" : "ThierryGoubier 8/1/2012 16:54",
-		"label" : "lr 12/10/2010 09:20" } }
+		"execute" : "ThierryGoubier 7/22/2013 22:14:12",
+		"group" : "ThierryGoubier 7/22/2013 22:14:12",
+		"icon" : "ThierryGoubier 7/22/2013 22:14:12",
+		"isActive" : "ThierryGoubier 7/22/2013 22:14:12",
+		"keystroke" : "ThierryGoubier 7/22/2013 22:14:12",
+		"label" : "ThierryGoubier 7/22/2013 22:14:12" } }

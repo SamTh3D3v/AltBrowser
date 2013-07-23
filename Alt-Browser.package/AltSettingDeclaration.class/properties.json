@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Settings",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltSettingDeclaration",
+	"pools" : [
+		 ],
+	"super" : "SettingDeclaration",
+	"type" : "normal" }

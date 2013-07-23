@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"takesNodes" : "lr 3/6/2011 15:08",
-		"takesText" : "lr 3/6/2011 15:08" },
+		"takesNodes" : "ThierryGoubier 7/22/2013 22:14:12",
+		"takesText" : "ThierryGoubier 7/22/2013 22:14:12" },
 	"instance" : {
-		"execute" : "ThierryGoubier 7/26/2012 13:47",
-		"isActive" : "lr 3/6/2011 15:05",
-		"keystroke" : "ThierryGoubier 8/1/2012 16:52",
-		"label" : "lr 3/6/2011 15:05",
-		"order" : "lr 3/6/2011 15:05" } }
+		"execute" : "ThierryGoubier 7/22/2013 22:14:12",
+		"isActive" : "ThierryGoubier 7/22/2013 22:14:12",
+		"keystroke" : "ThierryGoubier 7/22/2013 22:14:12",
+		"label" : "ThierryGoubier 7/22/2013 22:14:12",
+		"order" : "ThierryGoubier 7/22/2013 22:14:12" } }
