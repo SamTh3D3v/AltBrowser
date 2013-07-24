@@ -1,5 +1,5 @@
 printing
 asString
 	(item isKindOf: MCWorkingCopy)
-		ifTrue: [^ self item packageNameWithStar ].
+		ifTrue: [ ^ self item packageName ].
 	^ item printString
