@@ -1,1 +1,1 @@
-Configuration for AltBrowser, an alternative, tree based, system browser used for developement and experiments on Smalltalk IDEs.
+AltBrowser: a tree-based, simple and advanced system browser for Pharo 2.0 with smart suggestions, refactoring integration and git integration.
