@@ -1,9 +1,10 @@
 printing
 asString
-	| string |
+	| string parentString |
 	string := self item packageName.
-	(string beginsWith: parentNode packageName)
-		ifTrue: [ string := string allButFirst: parentNode packageName size ].
+	parentString := parentNode packageName.
+	((string beginsWith: parentString) and: [ string ~= parentString ])
+		ifTrue: [ string := string allButFirst: parentString size ].
 	string first = $-
 		ifTrue: [ ^ string allButFirst ].
 	^ string
