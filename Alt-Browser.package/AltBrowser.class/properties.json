@@ -13,7 +13,8 @@
 		"history",
 		"window",
 		"treeMorph",
-		"textMorph" ],
+		"textMorph",
+		"environment" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],
