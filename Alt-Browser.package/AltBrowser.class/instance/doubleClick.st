@@ -1,10 +1,8 @@
 user actions
 doubleClick
-	"Double click expand or unexpand the items."
+	"Double click expand or unexpand the items, or ask the item for the relevant action. Refactor to delegate at one point, not forgetting the context."
 
-	"adjustSubmorphPositions shows that MorphTreeMorph API isn't correct."
+	"adjustSubmorphPositions shows that the MorphTreeMorph API isn't correct."
 
 	self selectedNode notNil
-		ifTrue: [ 
-			(self findMorphNodeForItem: self selectedNode) toggleExpandedState.
-			treeMorph adjustSubmorphPositions ]
+		ifTrue: [ self selectedNode doubleClickIn: self ]
