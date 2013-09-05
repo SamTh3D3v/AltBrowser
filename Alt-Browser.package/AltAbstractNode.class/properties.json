@@ -8,8 +8,7 @@
 	"instvars" : [
 		"item",
 		"contents",
-		"parentNode",
-		"environment" ],
+		"parentNode" ],
 	"name" : "AltAbstractNode",
 	"pools" : [
 		 ],

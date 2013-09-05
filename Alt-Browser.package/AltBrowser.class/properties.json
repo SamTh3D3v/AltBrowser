@@ -14,7 +14,7 @@
 		"window",
 		"treeMorph",
 		"textMorph",
-		"environment" ],
+		"rbEnvironment" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

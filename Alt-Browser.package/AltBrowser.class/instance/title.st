@@ -1,5 +1,5 @@
 accessing
 title
 	self selectedNode notNil
-		ifTrue: [ ^ 'Alt(', self environment label,'): ' , self selectedNode title ]
-		ifFalse: [ ^ 'Alt Browser (', self environment label, ')' ]
+		ifTrue: [ ^ 'Alt(', self rbEnvironment label,'): ' , self selectedNode title ]
+		ifFalse: [ ^ 'Alt Browser (', self rbEnvironment label, ')' ]

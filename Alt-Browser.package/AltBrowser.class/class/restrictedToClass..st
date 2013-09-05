@@ -5,5 +5,6 @@ restrictedToClass: aClass
 	| s a |
 	self rootItems detect: [ :each | (s := each findClass: aClass) notNil ].
 	a := self new.
-	a environment: (a environment forClasses: {aClass}).
-	a open selectPathForAbstractItem: s
+	a rbEnvironment: (a rbEnvironment forClasses: {aClass}).
+	a open.
+	a selectPathForAbstractItem: s

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"contents" ],
+		"contents",
+		"rbEnvironment" ],
 	"name" : "AltTreeNodeModel",
 	"pools" : [
 		 ],

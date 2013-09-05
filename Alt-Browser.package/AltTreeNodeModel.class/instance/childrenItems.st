@@ -1,3 +1,3 @@
 accessing
 childrenItems
-	^ item contents
+	^ item contents select: [ :e | e isInRBEnvironment: self rbEnvironment ]
