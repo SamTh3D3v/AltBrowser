@@ -1,6 +1,6 @@
 instance creation
 restrictedToClass: aClass
-	"Open on a class, and restricted to it."
+	"Open on a class, and restrict to it."
 
 	| s a |
 	self rootItems detect: [ :each | (s := each findClass: aClass) notNil ].

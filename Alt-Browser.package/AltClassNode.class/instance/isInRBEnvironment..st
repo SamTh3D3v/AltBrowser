@@ -1,3 +1,5 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesClass: self item
+	^ (self item isMeta
+		ifFalse: [ aRBEnvironment includesClass: self item class ]
+		ifTrue: [ true ]) or: [ aRBEnvironment includesClass: self item ]

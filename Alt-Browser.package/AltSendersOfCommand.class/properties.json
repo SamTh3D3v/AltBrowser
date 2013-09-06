@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltSendersCommand",
+	"name" : "AltSendersOfCommand",
 	"pools" : [
 		 ],
 	"super" : "AltCommand",

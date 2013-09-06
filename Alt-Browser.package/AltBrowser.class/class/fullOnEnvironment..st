@@ -1,5 +1,7 @@
 instance creation
-fullOnEnvironment: anEnvironment
-" I am not environment aware "
-	
-	self open
+fullOnEnvironment: aRBEnvironment
+	" I am environment aware. Just open the environment."
+
+	^ self new
+		rbEnvironment: aRBEnvironment;
+		open
