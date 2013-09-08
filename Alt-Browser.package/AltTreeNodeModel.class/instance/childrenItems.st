@@ -1,3 +1,3 @@
 accessing
 childrenItems
-	^ item contents select: [ :e | e isInRBEnvironment: self rbEnvironment ]
+	^ (item contents collect: [ :e | e asPerRBEnvironment: self rbEnvironment ]) reject: [ :e | e isNil ]
