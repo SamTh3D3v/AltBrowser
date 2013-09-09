@@ -1,9 +1,9 @@
 {
 	"category" : "Alt-Browser-Core",
 	"classinstvars" : [
-		 ],
+		"searchedTextListMaxSize" ],
 	"classvars" : [
-		 ],
+		"SearchedTextList" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"toolbar",

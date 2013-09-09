@@ -15,7 +15,9 @@
 		"treeMorph",
 		"textMorph",
 		"rbEnvironment",
-		"finder" ],
+		"finder",
+		"finderUI",
+		"toolbar" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],
