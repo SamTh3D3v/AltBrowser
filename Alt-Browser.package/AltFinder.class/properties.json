@@ -1,0 +1,18 @@
+{
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"toolbar",
+		"finder",
+		"forceSearch",
+		"searchingTextArea",
+		"useRegExCheckbox" ],
+	"name" : "AltFinder",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }
