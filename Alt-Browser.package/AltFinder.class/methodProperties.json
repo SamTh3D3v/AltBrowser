@@ -2,4 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"buildRegExChooser" : "ThierryGoubier 9/9/2013 13:32",
+		"buildSearchButton" : "ThierryGoubier 9/9/2013 13:32",
+		"buildSearchModeDropListIn:" : "ThierryGoubier 9/9/2013 13:33",
+		"buildSearchModeToolBar:" : "ThierryGoubier 9/9/2013 13:31",
+		"buildSearchingTextArea" : "ThierryGoubier 9/9/2013 13:32",
+		"delete" : "ThierryGoubier 9/9/2013 14:53",
+		"initialize" : "ThierryGoubier 9/9/2013 13:30" } }
