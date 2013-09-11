@@ -1,3 +1,3 @@
 accessing
 asText
-	^ item asText
+	^ item asTextIn: self

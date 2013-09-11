@@ -1,0 +1,3 @@
+printing
+asStringIn: anAltTreeNodeModel
+	^ '*extensions*'
