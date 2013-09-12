@@ -8,4 +8,4 @@ version01: spec
 				blessing: #development;
 				author: 'ThierryGoubier';
 				description: 'AltBrowser: a tree-based, simple and advanced system browser for Pharo 2.0 with smart suggestions, refactoring integration and git integration.'.
-			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.141' ]
+			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.164' ]

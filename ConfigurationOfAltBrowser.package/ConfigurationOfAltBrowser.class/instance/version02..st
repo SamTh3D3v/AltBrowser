@@ -7,5 +7,5 @@ version02: spec
 			spec
 				blessing: #development;
 				author: 'ThierryGoubier';
-				description: 'AltBrowser for Pharo 3.0'.
+				description: 'AltBrowser for Pharo 3.0, out of date.'.
 			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.117' ]
