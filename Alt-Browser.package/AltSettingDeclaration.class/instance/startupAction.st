@@ -2,7 +2,9 @@ accessing
 startupAction
 	"I assume here that the receiver is always a class, but I check if the class exist!"
 
-	"StartupAction is too stupid to handle that correctly; it should be a runOnce once the guard is true, but this can't be done with the current framework, since the failure would take place before we have a chance of uploading a fix. And if the settings framework was done halfway correctly, I wouldn't have to do that in the first place."
+	"Specific to this class:
+		- runOnce is left to false. Otherwise, when building a new image, the first run of loading a configuration or a slice would first run the setting, see that it isn't doable, and set has run to true so that it wouldn't be run again. Of course, this would also happen if we try to load first thing a slice correcting the bug.
+		- the startup action check if the class exist before being run. This protects agains the most obvious error which is package not yet loaded in the image."
 
 	| targetSymbol currentValue |
 	targetSymbol := self target isSymbol
