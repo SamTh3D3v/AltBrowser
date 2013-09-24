@@ -1,4 +1,4 @@
 settings
 defaultBrowser: aBoolean
-	(SystemBrowser defaultOrNil isNil and: [ aBoolean ])
-		ifTrue: [ SystemBrowser default: self ]
+	(Smalltalk tools browser isNil and: [ aBoolean ])
+		ifTrue: [ Smalltalk tools register: self as: #browser ]

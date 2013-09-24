@@ -1,3 +1,3 @@
 settings
 defaultBrowser
-	^ SystemBrowser defaultOrNil == self
+	^ Smalltalk tools browser == self

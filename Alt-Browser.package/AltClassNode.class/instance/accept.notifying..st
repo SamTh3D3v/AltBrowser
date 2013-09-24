@@ -7,14 +7,14 @@ accept: aText notifying: aController
 	| res |
 	self parseAcceptText: aText notifying: aController.
 	res := [ 
-	UndefinedObject evaluatorClass new
+	UndefinedObject compilerClass new
 		evaluate: (ReadStream on: aText)
 		in: nil
 		to: nil
 		notifying: aController
 		ifFail: [ ^ nil ]
 		logged: true ]
-		on: OutOfScopeNotification
+		on: SyntaxErrorNotification
 		do: [ :ex | ex resume: true ].
 	res notNil
 		ifTrue: [ 

@@ -3,8 +3,8 @@ icon
 	self compiledMethod isOverride
 		ifTrue: [ 
 			self compiledMethod isOverridden
-				ifTrue: [ ^ NautilusIcons iconNamed: #arrowUpAndDown ].
-			^ NautilusIcons iconNamed: #arrowUp ].
+				ifTrue: [ ^ Smalltalk ui icons arrowUpAndDownIcon ].
+			^ Smalltalk ui icons arrowUpIcon ].
 	self compiledMethod isOverridden
-		ifTrue: [ ^ NautilusIcons iconNamed: #arrowDown ].
+		ifTrue: [ ^ Smalltalk ui icons arrowDownIcon ].
 	^ nil

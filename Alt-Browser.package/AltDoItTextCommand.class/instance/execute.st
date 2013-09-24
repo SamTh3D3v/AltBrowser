@@ -6,7 +6,7 @@ execute
 	rcvr := self doItReceiver.
 	ctxt := self doItContext.
 	result := [ 
-	rcvr class evaluatorClass new
+	rcvr class compilerClass new
 		evaluate: (ReadStream on: target trueSelection)
 		in: ctxt
 		to: rcvr
@@ -15,6 +15,6 @@ execute
 			target flash.
 			^ nil ]
 		logged: true	"don't set it to self.. The receiver can be destroyed as a result of evaluateSelection" ]
-		on: OutOfScopeNotification
+		on: SyntaxErrorNotification
 		do: [ :ex | ex resume: true ].
 	^ result
