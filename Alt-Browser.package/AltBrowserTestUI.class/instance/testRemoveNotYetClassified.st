@@ -20,7 +20,7 @@ testRemoveNotYetClassified
 		scrollSelectionIntoView.
 	self assert: browser selectedItem == n complexContents.
 	n expand.
-	(Smalltalk at: #AltTestingClass) compile: 'test ^ true' classified: nil notifying: nil.
+	(Smalltalk at: #AltTestingClass) compile: 'test ^ true'.
 	(Smalltalk at: #AltTestingClass) addCategory: #test before: nil.
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | aNodeMorph complexContents item isMethodCategoryNode and: [ aNodeMorph complexContents item item = #'as yet unclassified' ] ]
