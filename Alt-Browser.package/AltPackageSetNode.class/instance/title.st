@@ -1,3 +1,5 @@
 accessing
 title
-	^ item packageNameWithStar
+	(item isKindOf: MCWorkingCopy)
+		ifTrue: [ ^ self item packageNameWithStar ].
+	^ item printString

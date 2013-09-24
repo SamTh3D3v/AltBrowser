@@ -1,21 +1,23 @@
 {
 	"category" : "Alt-Browser-Core",
 	"classinstvars" : [
-		 ],
+		"Categories" ],
 	"classvars" : [
-		"announcer",
-		"debug",
-		"rootItems",
-		"temporary" ],
+		"AltAnnouncer",
+		"Debug",
+		"RootItems",
+		"Temporary" ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"source",
-		"tree",
 		"history",
 		"window",
 		"treeMorph",
 		"textMorph",
-		"naviOn" ],
+		"rbEnvironment",
+		"finder",
+		"finderUI",
+		"toolbar" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

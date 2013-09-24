@@ -1,5 +1,5 @@
 debug
 debug
-	debug isNil
-		ifTrue: [ debug := false ].
-	^ debug
+	Debug isNil
+		ifTrue: [ Debug := false ].
+	^ Debug

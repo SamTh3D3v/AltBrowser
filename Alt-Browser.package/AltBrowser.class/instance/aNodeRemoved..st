@@ -11,12 +11,13 @@ aNodeRemoved: anEvent
 			(r := e findItem: aNode) notNil
 				ifTrue: [ 
 					r == e
-						ifTrue: [ self changed: #rootNodes ]
+						ifTrue: [ 
+							rootItems := nil.
+							self changed: #rootNodes ]
 						ifFalse: [ 
 							| n |
 							r parentNode contents remove: r.
 							(n := self findMorphNodeForItem: r) notNil
 								ifTrue: [ 
 									self changed: #deselectAll.
-									n rebuildChildren ].
-							treeMorph firstNodeMorph checkInvariant ] ] ]
+									n rebuildChildren ] ] ] ]

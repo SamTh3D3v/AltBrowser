@@ -1,6 +1,6 @@
 initialization
 initialize
-	announcer := Announcer new.
-	rootItems := nil.
+	AltAnnouncer := Announcer new.
+	RootItems := nil.
 	self registerOnSystemAnnouncements.
 	self registerInAppRegistry

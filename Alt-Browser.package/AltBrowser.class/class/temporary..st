@@ -1,3 +1,3 @@
 accessing
 temporary: aValue
-	temporary := aValue
+	Temporary := aValue

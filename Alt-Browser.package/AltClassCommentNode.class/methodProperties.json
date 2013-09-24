@@ -2,13 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aClassCommented:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"aMethodAdded:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"aMethodRecategorized:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"aMethodRemoved:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"accept:notifying:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"asString" : "ThierryGoubier 7/5/2013 13:37:22",
-		"asText" : "ThierryGoubier 7/5/2013 13:37:22",
-		"dropItem:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"findClassComment:" : "ThierryGoubier 7/5/2013 13:37:22",
-		"sourceCode" : "ThierryGoubier 7/5/2013 13:37:22" } }
+		"aClassCommented:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"aMethodAdded:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"aMethodRecategorized:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"aMethodRemoved:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"accept:notifying:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"asString" : "ThierryGoubier 9/22/2013 14:44:46",
+		"dropItem:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"findClassComment:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"icon" : "ThierryGoubier 9/22/2013 14:44:46",
+		"isInRBEnvironment:" : "ThierryGoubier 9/22/2013 14:44:46",
+		"sourceCode" : "ThierryGoubier 9/22/2013 14:44:46" } }

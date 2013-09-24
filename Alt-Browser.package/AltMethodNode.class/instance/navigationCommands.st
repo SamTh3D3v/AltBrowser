@@ -2,6 +2,6 @@ commands
 navigationCommands
 	<treeAreaCommand>
 	^ {AltGoToSuperMethodCommand.
-	AltImplementorsCommand.
-	AltSendersCommand.
+	AltImplementorsOfCommand.
+	AltSendersOfCommand.
 	AltBrowseVersionsCommand}

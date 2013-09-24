@@ -11,7 +11,7 @@ open
 		accept: #contents:
 		readSelection: nil
 		menu: #buildTextMenu:) font: StandardFonts codeFont.
-	window addMorph: treeMorph fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 0.3 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
-	window addMorph: textMorph fullFrame: (LayoutFrame fractions: (0.3 @ 0 corner: 1 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
+	window addMorph: treeMorph fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.3 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
+	window addMorph: textMorph fullFrame: (LayoutFrame fractions: (0.3 @ 0.0 corner: 1 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
 	window minimumExtent: 500 @ 500.
 	window open

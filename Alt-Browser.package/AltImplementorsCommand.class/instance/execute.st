@@ -1,3 +1,0 @@
-execution
-execute
-	SystemNavigation default browseAllImplementorsOf: requestor selectedNode item item

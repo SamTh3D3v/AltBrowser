@@ -19,7 +19,7 @@ selection: anItem
 			self source aboutToStyle: false.
 			self source contents: '' ]
 		ifFalse: [ 
-			textMorph classOrMetaClass: sel sourceClass.
+			textMorph classOrMetaClass: sel styleClass.
 			self source aboutToStyle: sel isStyled.
 			self source contents: sel sourceCode.
 			self history add: sel ]

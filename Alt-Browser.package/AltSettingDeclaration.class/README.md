@@ -1,0 +1,1 @@
+An AltSettingDeclaration is a SettingDeclaration which knows that its target may not exist when loading the image, and henceforth creates a StartupAction which check for the target existence before firing.

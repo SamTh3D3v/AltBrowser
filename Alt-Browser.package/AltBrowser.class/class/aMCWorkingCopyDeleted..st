@@ -11,6 +11,6 @@ aMCWorkingCopyDeleted: anEvent
 			(node aMCWorkingCopyDeleted: anEvent)
 				ifTrue: [ 
 					self rootItems remove: node.
-					announcer announce: (AltNodeRemoved node: node) ].
+					self announcer announce: (AltNodeRemoved node: node) ].
 			^ true ].
 	^ false

@@ -11,4 +11,4 @@ aMCWorkingCopyCreated: anEvent
 			| node |
 			node := AltPackageSetNode with: anEvent workingCopy.
 			self rootItems add: node.
-			announcer announce: (AltNodeAdded node: node) ]
+			self announcer announce: (AltNodeAdded node: node) ]

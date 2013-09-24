@@ -10,7 +10,7 @@ findMethod: aSelector in: aClass
 					self contents
 						do: [ :each | 
 							(res := each findMethod: aSelector in: aClass) notNil
-								ifTrue: [ ^ res ]] ] ]
+								ifTrue: [ ^ res ] ] ] ]
 		ifFalse: [ 
 			aClass == item
 				ifTrue: [ 
@@ -18,5 +18,7 @@ findMethod: aSelector in: aClass
 						do: [ :each | 
 							(res := each findMethod: aSelector in: aClass) notNil
 								ifTrue: [ ^ res ] ] ]
-				ifFalse: [ ^ self contents first findMethod: aSelector in: aClass ] ].
+				ifFalse: [ 
+					self contents isEmpty
+						ifFalse: [ ^ self contents first findMethod: aSelector in: aClass ] ] ].
 	^ nil
