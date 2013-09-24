@@ -1,3 +1,3 @@
 private
 childrenItems
-	^ (self parentNode item methodsInCategory: self item) asSortedCollection
+	^ (self parentNode item selectorsInProtocol: self item) asSortedCollection
