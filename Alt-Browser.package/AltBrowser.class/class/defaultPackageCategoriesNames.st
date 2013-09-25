@@ -5,10 +5,10 @@ defaultPackageCategoriesNames
 	"AltBrowser reset."
 
 	^ #(#('System' 'System' 'FileSystem' 'Files' 'CommandShell' 'StartupPreferences' 'OSProcess')
-		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain')
-		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization')
-		#('Development' 'AST' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler' 'SLICE')
+		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain' 'Keys' 'SmartSuggestions' 'Athens' 'Tabs')
+		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization' 'Slot' 'SlotTests' 'OpalCompiler' 'ClassOrganizer' )
+		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler' 'SLICE' 'DebuggerModel' )
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
-		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer')
+		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer' 'ScriptLoader30' )
 		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader20' 'HudsonBuildTools20')
 	)
