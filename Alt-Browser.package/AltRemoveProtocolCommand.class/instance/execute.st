@@ -4,4 +4,4 @@ execute
 	
 	tClass := requestor selectedNode sourceClass.
 	tItem := requestor selectedNode.
-	tClass removeCategory: tItem item item
+	tClass removeProtocol: tItem item item

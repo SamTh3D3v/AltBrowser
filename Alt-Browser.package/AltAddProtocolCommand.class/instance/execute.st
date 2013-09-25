@@ -6,7 +6,7 @@ execute
 
 	"Usability comment : far too many choices in most cases to be user-friendly."
 
-	| labels reject lines oldIndex newName tClass sItem |
+	| labels reject lines  newName tClass sItem |
 	requestor okToChange
 		ifFalse: [ ^ self ].
 	labels := OrderedCollection new.
@@ -14,7 +14,7 @@ execute
 	tClass := sItem sourceClass.
 	reject := Set new.
 	reject
-		addAll: tClass organization categories;
+		addAll: tClass organization realCategories;
 		add: ClassOrganizer nullCategory;
 		add: ClassOrganizer default.
 	lines := OrderedCollection new.
@@ -23,7 +23,7 @@ execute
 			| cats |
 			cls = Object
 				ifFalse: [ 
-					cats := cls organization categories reject: [ :cat | reject includes: cat ].
+					cats := cls organization realCategories reject: [ :cat | reject includes: cat ].
 					(cats isEmpty or: [ reject size > 10 ])
 						ifFalse: [ 
 							lines add: labels size.
@@ -38,4 +38,6 @@ execute
 			((sItem item isKindOf: AltMethodCategoryNode)
 				ifTrue: [ sItem item item ]
 				ifFalse: [ nil ]).
-	requestor selectPathForAbstractItem: (sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName in: tClass)) item
+	requestor
+		selectPathForAbstractItem:
+			(sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName in: tClass)) item

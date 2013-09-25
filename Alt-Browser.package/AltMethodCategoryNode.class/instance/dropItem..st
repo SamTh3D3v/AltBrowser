@@ -1,4 +1,4 @@
-drag and drop
+as yet unclassified
 dropItem: anItem
 	"Only valid for an AltMethodCategoryNode or an AltMethodNode."
 
@@ -19,10 +19,14 @@ dropItem: anItem
 	(anItem isKindOf: AltMethodCategoryNode)
 		ifTrue: [ 
 			| oldCategories newCategories |
-			oldCategories := self sourceClass organization categories copy.
+			oldCategories := self sourceClass organization realCategories copy.
 			newCategories := (oldCategories copyWithout: anItem item) asOrderedCollection.
 			newCategories add: anItem item after: self item.
-			SystemAnnouncer uniqueInstance suspendAllWhile: [ self sourceClass organization categories: newCategories asArray ].
+			SystemAnnouncer uniqueInstance
+				suspendAllWhile: [ 
+					self sourceClass organization
+						changeFromCategorySpecs:
+							(newCategories collect: [ :name | {name} , (self sourceClass organization listAtCategoryNamed: name) ]) ].
 			self sourceClass organization
 				notifyOfChangedCategoriesFrom: oldCategories
-				to: self sourceClass organization categories ]
+				to: self sourceClass organization realCategories ]
