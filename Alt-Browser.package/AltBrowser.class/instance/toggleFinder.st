@@ -7,6 +7,7 @@ toggleFinder
 	finder isNil
 		ifTrue: [ 
 			finder := Finder new.
+			finder environment: self rbEnvironment.
 			finder when: #updateResultDictionary send: #browseFinderResults to: self.
 			finderUI := FinderUI on: finder.
 			toolbar := window
