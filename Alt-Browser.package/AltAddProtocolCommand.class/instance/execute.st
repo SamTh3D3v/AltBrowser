@@ -6,7 +6,7 @@ execute
 
 	"Usability comment : far too many choices in most cases to be user-friendly."
 
-	| labels reject lines  newName tClass sItem |
+	| labels reject lines newName tClass sItem |
 	requestor okToChange
 		ifFalse: [ ^ self ].
 	labels := OrderedCollection new.
@@ -15,8 +15,7 @@ execute
 	reject := Set new.
 	reject
 		addAll: tClass organization realCategories;
-		add: ClassOrganizer nullCategory;
-		add: ClassOrganizer default.
+		add: Protocol nullCategory.
 	lines := OrderedCollection new.
 	tClass allSuperclasses
 		do: [ :cls | 
