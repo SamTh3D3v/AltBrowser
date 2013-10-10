@@ -6,6 +6,8 @@ itemOrganization
 
 	| result origin ending |
 	origin := item organization realCategories sorted.
+	origin isEmpty
+		ifTrue: [ ^ item protocols ].
 	result := OrderedCollection new: origin size.
 	origin := origin
 		reject: [ :p | 
