@@ -5,7 +5,7 @@ version02: spec
 		for: #common
 		do: [ 
 			spec
-				blessing: #development;
+				blessing: #stable;
 				author: 'ThierryGoubier';
-				description: 'AltBrowser for Pharo 3.0'.
-			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.117' ]
+				description: 'AltBrowser: a tree-based, simple and advanced system browser / message list / finder for Pharo 3.0 with smart suggestions, refactoring integration and git integration'.
+			spec package: 'Alt-Browser' with: 'Alt-Browser-ThierryGoubier.140' ]
