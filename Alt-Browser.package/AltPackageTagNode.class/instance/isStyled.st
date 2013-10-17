@@ -1,0 +1,3 @@
+testing
+isStyled
+	^ true

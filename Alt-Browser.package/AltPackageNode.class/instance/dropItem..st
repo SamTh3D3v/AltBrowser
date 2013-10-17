@@ -6,7 +6,7 @@ dropItem: anItem
 
 	anItem class == AltClassNode
 		ifTrue: [ 
-			"Todo: see what is happenning."
+			"This probably works."
 			anItem item category: item name.
 			^ self ].
 	((anItem isKindOf: AltPackageCategoryNode) or: [ anItem isKindOf: AltPackageNode ])
