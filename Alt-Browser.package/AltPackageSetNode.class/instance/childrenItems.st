@@ -1,14 +1,14 @@
 private
 childrenItems
-	"Ensure that the RPackage with the same name as the MCPackage is first to put the extensions in the right place."
+	"A Package set is a single RPackage instance with tags now. There are only extensions in the package itself."
 
-	| o |
+	| o aRPackage |
 	o := OrderedCollection new.
-	self item packageSet packages
-		do: [ :package | 
-			package name = self item packageName
-				ifTrue: [ 
-					o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o)
-						asOrderedCollection ]
-				ifFalse: [ o add: package ] ].
+	aRPackage := self item packageSet packages first.
+	self assert: aRPackage classTags notEmpty.	"It is an hypothesis..."
+	aRPackage classTags
+		do: [ :tag | 
+			tag name = self item packageName
+				ifTrue: [ o := ({aRPackage} , (self class orderClasses: tag classes asOrderedCollection) , o) asOrderedCollection ]
+				ifFalse: [ o add: tag ] ].
 	^ o
