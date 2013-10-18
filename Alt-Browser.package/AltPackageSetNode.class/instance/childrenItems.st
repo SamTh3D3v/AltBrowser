@@ -5,10 +5,12 @@ childrenItems
 	| o aRPackage |
 	o := OrderedCollection new.
 	aRPackage := self item packageSet packages first.
-	self assert: aRPackage classTags notEmpty.	"It is an hypothesis..."
+	aRPackage classTags isEmpty
+		ifTrue: [ ^ ({aRPackage} , (self class orderClasses: aRPackage classes asOrderedCollection) )].
+	o add: aRPackage.	"Extensions, even if empty."
 	aRPackage classTags
 		do: [ :tag | 
 			tag name = self item packageName
-				ifTrue: [ o := ({aRPackage} , (self class orderClasses: tag classes asOrderedCollection) , o) asOrderedCollection ]
+				ifTrue: [ o := ((self class orderClasses: tag classes asOrderedCollection) , o) asOrderedCollection ]
 				ifFalse: [ o add: tag ] ].
 	^ o
