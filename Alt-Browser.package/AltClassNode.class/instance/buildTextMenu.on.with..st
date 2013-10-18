@@ -13,7 +13,8 @@ buildTextMenu: aMenu on: aTarget with: aRequestor
 			self rewriteStringOfVars: inS into: s.
 			s << inS upToEnd ].
 	ast := RBParser parseExpression: rewritten onError: [ :msg :pos | ^ self ].
-	ast doSemanticAnalysisInContext: (CompilationContext default class: self item).
+	ast methodNode methodClass: self item.
+	ast doSemanticAnalysis.
 	(node := ast bestNodeFor: aTarget selectionInterval) notNil
 		ifTrue: [ 
 			aMenu

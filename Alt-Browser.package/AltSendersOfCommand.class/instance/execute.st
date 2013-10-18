@@ -2,6 +2,9 @@ execution
 execute
 	"Execute an all senders of."
 
-	(AltBrowser
-		fullOnEnvironment: (RBSelectorEnvironment referencesTo: requestor selectedNode item item in: requestor rbEnvironment))
+	| aRBEnv |
+	aRBEnv := requestor rbEnvironment isSelectorEnvironment
+		ifTrue: [ requestor rbEnvironment environment ]
+		ifFalse: [ requestor rbEnvironment ].
+	(AltBrowser fullOnEnvironment: (RBSelectorEnvironment referencesTo: requestor selectedNode item item in: aRBEnv))
 		expandAllNodes
