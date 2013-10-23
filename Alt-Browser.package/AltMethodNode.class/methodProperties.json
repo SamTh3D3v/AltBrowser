@@ -5,7 +5,6 @@
 		"accept:notifying:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"buildTextMenu:on:with:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"compiledMethod" : "ThierryGoubier 9/28/2013 00:27:15",
-		"debugTreeCommands" : "ThierryGoubier 9/28/2013 00:27:15",
 		"findMethod:in:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"formatCommand" : "ThierryGoubier 9/28/2013 00:27:15",
 		"icon" : "ThierryGoubier 9/28/2013 00:27:15",
@@ -16,4 +15,5 @@
 		"runTestCommand" : "ThierryGoubier 9/28/2013 00:27:15",
 		"sourceClass" : "ThierryGoubier 9/28/2013 00:27:15",
 		"sourceCode" : "ThierryGoubier 9/28/2013 00:27:15",
-		"title" : "ThierryGoubier 9/28/2013 00:27:15" } }
+		"title" : "ThierryGoubier 9/28/2013 00:27:15",
+		"wDebugTreeCommands" : "ThierryGoubier 10/23/2013 06:02" } }
