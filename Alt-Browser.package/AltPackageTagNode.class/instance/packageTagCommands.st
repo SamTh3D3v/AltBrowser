@@ -1,5 +1,5 @@
 commands
-categoryCommands
+packageTagCommands
 	<treeAreaCommand>
 	
 	^ {AltRenameCategoryCommand. AltAddCategoryCommand. AltRemoveCategoryCommand}
