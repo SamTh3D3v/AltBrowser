@@ -1,0 +1,4 @@
+commands
+packageSetCommands
+	<treeAreaCommand>
+	^ {AltAddCategoryCommand}

@@ -1,10 +1,10 @@
 SystemOrganization addCategory: #'Alt-Browser'!
-SystemOrganization addCategory: #'Alt-Browser-AST-Command'!
 SystemOrganization addCategory: #'Alt-Browser-Announcements'!
 SystemOrganization addCategory: #'Alt-Browser-Commands'!
+SystemOrganization addCategory: #'Alt-Browser-Commands-AST'!
+SystemOrganization addCategory: #'Alt-Browser-Commands-RB'!
 SystemOrganization addCategory: #'Alt-Browser-Core'!
 SystemOrganization addCategory: #'Alt-Browser-Nodes'!
-SystemOrganization addCategory: #'Alt-Browser-RB-Commands'!
 SystemOrganization addCategory: #'Alt-Browser-Settings'!
 SystemOrganization addCategory: #'Alt-Browser-Tests'!
 SystemOrganization addCategory: #'Alt-Browser-Versions'!

@@ -3,16 +3,17 @@ registerOnSystemAnnouncements
 	"Global registration to update the list."
 
 	"self registerOnSystemAnnouncements."
-	
-	"Not sure I need to track categories anymore."
+
+	"I do need to track system categories. RPackageTag is a bit erratic, yet."
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
 	SystemAnnouncer uniqueInstance weak
 		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
 		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
 		on: MCPackageModified send: #aMCWorkingCopyModified: to: self;
-		on: CategoryRemoved send: #aCategoryRemoved: to: self;
 		on: CategoryAdded send: #aCategoryAdded: to: self;
+		on: CategoryRemoved send: #aCategoryRemoved: to: self;
+		on: CategoryRenamed send: #aCategoryRenamed: to: self;
 		on: MethodAdded send: #aMethodAdded: to: self;
 		on: MethodRemoved send: #aMethodRemoved: to: self;
 		on: MethodRecategorized send: #aMethodRecategorized: to: self;
@@ -25,4 +26,4 @@ registerOnSystemAnnouncements
 	RPackage organizer announcer unsubscribe: self.
 	RPackage organizer announcer weak
 		on: RPackageUnregistered send: #aRPackageUnregistered: to: self;
-		on: RPackageCreated send: #aRPackageCreated: to: self.
+		on: RPackageCreated send: #aRPackageCreated: to: self

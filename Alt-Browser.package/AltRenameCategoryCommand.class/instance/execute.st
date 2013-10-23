@@ -4,7 +4,7 @@ execute
 
 	| newName item |
 	item := requestor selectedNode item item.
-	newName := UIManager default request: 'New name of the package' initialAnswer: item name title: 'Rename a package'.
+	newName := UIManager default request: 'New name of the category' initialAnswer: item name title: 'Rename a category'.
 	(newName = item name or: [ newName isNil or: [ newName isEmpty or: [ newName first = $* ] ] ])
 		ifTrue: [ ^ self ].
-	RPackage organizer renamePackage: item in: newName
+	self class environment organization renameCategory: item name toBe: newName
