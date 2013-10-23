@@ -4,11 +4,11 @@ defaultPackageCategoriesNames
 
 	"AltBrowser reset."
 
-	^ #(#('System' 'System' 'FileSystem' 'Files' 'CommandShell' 'StartupPreferences' 'OSProcess')
+	^ #(
+		#('System' 'System' 'FileSystem' 'Files' 'CommandShell' 'StartupPreferences' 'OSProcess')
 		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain' 'Keys' 'SmartSuggestions' 'Athens' 'Tabs')
-		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization' 'Slot' 'SlotTests' 'OpalCompiler' 'ClassOrganizer' )
-		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler' 'SLICE' 'DebuggerModel' )
+		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization' 'Slot' 'SlotTests' 'OpalCompiler' 'ClassOrganizer')
+		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler' 'SLICE' 'Debugger' 'ProfStef')
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
-		#('Packages' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'Configuration' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer' 'ScriptLoader30' )
-		#('2.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader20' 'HudsonBuildTools20')
-	)
+		#('Packages' 'Baseline' 'Configuration' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer')
+		#('3.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader' 'HudsonBuildTools'))
