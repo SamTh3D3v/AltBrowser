@@ -19,4 +19,5 @@ recursiveRefreshExpandedState
 	final := OrderedCollection new.
 	self addChildrenForList: container addingTo: final withExpandedNodes: currentlyExpanded.
 	toDelete do: [ :each | each delete ].
-	container scroller addAllMorphs: final after: self
+	container scroller addAllMorphs: final after: self.
+	final do: [ :e | e doLayoutIn: e layoutBounds ].
