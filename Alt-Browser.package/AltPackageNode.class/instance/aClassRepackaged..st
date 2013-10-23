@@ -1,9 +1,5 @@
 updating
 aClassRepackaged: anEvent
-	"Answer true if the category matches."
+	"In an extension, this doesn't matter, we don't have directly classes inside."
 
-	(anEvent newPackage name = item name or: [ anEvent oldPackage name = item name ])
-		ifTrue: [ 
-			AltBrowser aNodeToRebuilt: self.
-			^ true ]
-		ifFalse: [ ^ false ]
+	^ false

@@ -1,5 +1,12 @@
 updating
 aMethodAdded: anEvent
-	"Pass through to childrens."
+	"Check that we are the right protocol. Don't forget that the underlying class extension could need a rebuilt as well."
 
-	^ self contents inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ]
+	anEvent protocol isNil
+	ifTrue: [ ^ false ].
+	(anEvent protocol asLowercase beginsWith: self methodCategory)
+		ifTrue: [ 
+			(self contents inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ])
+				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
+			^ true ].
+	^ false

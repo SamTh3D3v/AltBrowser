@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesCategory: self item name
+	^ (self contents select: [ :e | e isInRBEnvironment: aRBEnvironment ]) notEmpty

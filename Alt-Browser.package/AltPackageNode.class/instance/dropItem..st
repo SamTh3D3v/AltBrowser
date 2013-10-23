@@ -1,19 +1,9 @@
 drag and drop
 dropItem: anItem
-	"Ok. If we receive a category, then we add the category at the end of the parent node. It amounts to removing a node from the root items and adding it here."
+	"Used to move methods from a package to another, or from a normal category to an extension-labeled one."
 
-	"Adding a class here will trigger the change category of class."
-
-	anItem class == AltClassNode
-		ifTrue: [ 
-			"This probably works."
-			anItem item category: item name.
-			^ self ].
-	((anItem isKindOf: AltPackageCategoryNode) or: [ anItem isKindOf: AltPackageNode ])
+	| cm |
+	(anItem isKindOf: AltMethodNode)
 		ifFalse: [ ^ self ].
-	anItem parentNode isNil
-		ifTrue: [ AltBrowser rootItems remove: anItem ]
-		ifFalse: [ anItem parentNode removeChildItem: anItem ].
-	AltBrowser announcer announce: (AltNodeRemoved node: anItem).
-	self parentNode addChildItem: anItem beforeIndex: (parentNode contents indexOf: self).
-	AltBrowser announcer announce: (AltNodeAdded node: anItem)
+	cm := anItem compiledMethod.
+	cm methodClass organization classify: anItem item under: self methodCategory suppressIfDefault: false
