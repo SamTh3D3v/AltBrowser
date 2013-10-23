@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"docMCPackageOwnership" : "ThierryGoubier 10/22/2013 14:06:32",
-		"setUp" : "ThierryGoubier 10/22/2013 14:06:32",
+		"setUp" : "ThierryGoubier 10/23/2013 14:33",
 		"tearDown" : "ThierryGoubier 10/22/2013 14:06:32",
+		"testAddRemoveSystemCategory" : "ThierryGoubier 10/23/2013 15:14",
+		"testAddSystemCategory" : "ThierryGoubier 10/23/2013 14:58",
 		"testHasPackage" : "ThierryGoubier 10/22/2013 14:06:32",
 		"testRemoveNotYetClassified" : "ThierryGoubier 10/22/2013 14:06:32",
 		"testRemoveProtocol" : "ThierryGoubier 10/22/2013 14:06:32",

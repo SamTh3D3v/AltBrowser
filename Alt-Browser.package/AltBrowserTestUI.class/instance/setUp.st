@@ -1,6 +1,6 @@
 resources
 setUp
-	PackageOrganizer default registerPackageName: 'Alt-Testing-Underway'.
+	PackageOrganizer default registerPackageNamed: 'Alt-Testing-Underway'.
 	MCWorkingCopy forPackage: (MCPackage new name: 'Alt-Testing-Underway').
 	Object
 		subclass: #AltTestingClass
