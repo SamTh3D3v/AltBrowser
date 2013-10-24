@@ -1,18 +1,20 @@
 execution
 execute
-	"Find a class, then determine the path to reach it, and open this path. Select only one node, and if there is more than one match, use the last match (multiple matches means in current RPackage an additional, incorrect, overall package which is usually before the real, most specific package)."
+	"Find a class."
 
-	"In fact, this is costly (scan of the complete tree) even if it is fast enough, since sometimes the over package is before (Alt), sometimes it is after (Rpackage). It may be irrelevant with evolutions in RPackage."
-
-	| aClass found aNode nPath tmPath |
+	| aClass found |
 	aClass := SearchFacade classSearch chooseFromOwner: target owner.
 	aClass isNil
-		ifTrue: [ ^ self ].
+		ifTrue: [ 
+			self inform: 'Class search canceled '.
+			^ self ].
 	AltBrowser rootItems
 		do: [ :each | 
 			| res |
 			(res := each findClass: aClass) notNil
 				ifTrue: [ found := res ] ].
 	found isNil
-		ifTrue: [ ^ aClass explore ].
+		ifTrue: [ 
+			self inform: 'Unable to select class ' , aClass name.
+			^ self ].
 	requestor selectPathForAbstractItem: found
