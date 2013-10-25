@@ -1,3 +1,0 @@
-printing
-asString
-	^ '*extensions*'
