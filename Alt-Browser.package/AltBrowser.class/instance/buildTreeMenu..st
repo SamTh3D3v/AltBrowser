@@ -3,7 +3,7 @@ buildTreeMenu: aMenu
 	"Ask the selection for builidng a menu, otherwise create a default one."
 
 	self selectedNode notNil
-		ifTrue: [ self selectedNode item buildTreeMenu: aMenu on: treeMorph with: self ]
+		ifTrue: [ self selectedNode item buildTreeMenu: aMenu on: self treeMorph with: self ]
 		ifFalse: [ 
 			| t |
 			t := false.
@@ -12,5 +12,5 @@ buildTreeMenu: aMenu
 					t
 						ifTrue: [ aMenu addLine ]
 						ifFalse: [ t := true ].
-					(self perform: e selector) do: [ :c | (c on: treeMorph for: self) addItemToMenu: aMenu ] ] ].
+					(self perform: e selector) do: [ :c | (c on: self treeMorph for: self) addItemToMenu: aMenu ] ] ].
 	^ aMenu

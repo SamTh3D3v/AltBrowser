@@ -1,11 +1,10 @@
 updating
 aNodeRemoved: anEvent
-	"Beware : a node is not an instance of ABTreeNodeModel"
+	"A node has been removed from the abstract tree. Rebuilt the displayed tree."
 
 	| aNode |
 	aNode := anEvent node.
-	self assert: aNode isTreeNodeModel not.
-	treeMorph nodeList
+	self treeMorph nodeList
 		do: [ :e | 
 			| r |
 			(r := e findItem: aNode) notNil
@@ -13,7 +12,7 @@ aNodeRemoved: anEvent
 					r == e
 						ifTrue: [ 
 							rootItems := nil.
-							self changed: #rootNodes ]
+							self updateList ]
 						ifFalse: [ 
 							| n |
 							r parentNode contents remove: r.

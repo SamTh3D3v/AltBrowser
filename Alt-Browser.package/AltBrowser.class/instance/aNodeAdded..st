@@ -14,7 +14,7 @@ aNodeAdded: anEvent
 			rootItems := nil.
 			self changed: #rootNodes ]
 		ifFalse: [ 
-			treeMorph nodeList
+			self treeMorph nodeList
 				do: [ :e | 
 					| r |
 					(r := e findItem: pNode) notNil
