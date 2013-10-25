@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"browseVersionsOf:class:meta:category:selector:" : "ThierryGoubier 10/24/2013 17:36:41" },
+		"browseVersionsOf:class:meta:category:selector:" : "ThierryGoubier 10/25/2013 16:59:06" },
 	"instance" : {
-		"buildDiffCodePane" : "ThierryGoubier 10/24/2013 17:36:41",
-		"changeListButtonSpecs" : "ThierryGoubier 10/24/2013 17:36:41",
-		"compareToCurrentVersion" : "ThierryGoubier 10/24/2013 17:36:41",
-		"fileInSelections" : "ThierryGoubier 10/24/2013 17:36:41",
-		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 10/24/2013 17:36:41",
-		"undiffedContents" : "ThierryGoubier 10/24/2013 17:36:41" } }
+		"buildDiffCodePane" : "ThierryGoubier 10/25/2013 16:59:06",
+		"changeListButtonSpecs" : "ThierryGoubier 10/25/2013 16:59:06",
+		"compareToCurrentVersion" : "ThierryGoubier 10/25/2013 16:59:06",
+		"fileInSelections" : "ThierryGoubier 10/25/2013 16:59:06",
+		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 10/25/2013 16:59:06",
+		"undiffedContents" : "ThierryGoubier 10/25/2013 16:59:06" } }

@@ -2,14 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"docMCPackageOwnership" : "ThierryGoubier 10/24/2013 17:36:41",
-		"setUp" : "ThierryGoubier 10/24/2013 17:36:41",
-		"tearDown" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testAddRemoveSystemCategory" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testAddSystemCategory" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testHasPackage" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testRemoveNotYetClassified" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testRemoveProtocol" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testSearchMethod" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testSelectPackage" : "ThierryGoubier 10/24/2013 17:36:41",
-		"testSelectTestClass" : "ThierryGoubier 10/24/2013 17:36:41" } }
+		"docMCPackageOwnership" : "ThierryGoubier 10/25/2013 16:59:06",
+		"setUp" : "ThierryGoubier 10/25/2013 16:59:06",
+		"tearDown" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testAddRemoveSystemCategory" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testAddSystemCategory" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testHasPackage" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testRemoveNotYetClassified" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testRemoveProtocol" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testSearchMethod" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testSelectPackage" : "ThierryGoubier 10/25/2013 16:59:06",
+		"testSelectTestClass" : "ThierryGoubier 10/25/2013 16:59:06" } }
