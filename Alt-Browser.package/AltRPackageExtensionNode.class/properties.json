@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltPackageSetNode",
+	"name" : "AltRPackageExtensionNode",
 	"pools" : [
 		 ],
 	"super" : "AltAbstractNode",
