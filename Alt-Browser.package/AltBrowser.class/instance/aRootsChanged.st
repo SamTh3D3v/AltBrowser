@@ -2,7 +2,7 @@ updating
 aRootsChanged
 	"C'est vraiment bourrin, mais ça marche, tout en perdant la selection cependant."
 
-	self changed: #deselectAll.
+	self requestView: MorphTreeChangeRequest deselectAll.
 	rootItems := nil.
-	self changed: #rootNodes.
+	self updateList.
 	history initialize

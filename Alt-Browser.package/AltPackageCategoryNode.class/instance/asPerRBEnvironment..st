@@ -4,7 +4,7 @@ asPerRBEnvironment: aRBEnvironment
 
 	| sz sc |
 	aRBEnvironment isSystem
-		ifTrue: [ ^ super asPerRBEnvironment: aRBEnvironment ].
+		ifTrue: [ ^ self ].
 	sz := (sc := self contents select: [ :e | e isInRBEnvironment: aRBEnvironment ]) size.
 	^ sz = 1
 		ifTrue: [ sc first asPerRBEnvironment: aRBEnvironment ]

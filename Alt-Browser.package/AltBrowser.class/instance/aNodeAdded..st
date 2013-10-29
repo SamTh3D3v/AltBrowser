@@ -12,7 +12,7 @@ aNodeAdded: anEvent
 		ifTrue: [ 
 			self assert: (aNode isKindOf: AltTreeNodeModel) not.
 			rootItems := nil.
-			self changed: #rootNodes ]
+			self updateList ]
 		ifFalse: [ 
 			self treeMorph nodeList
 				do: [ :e | 
