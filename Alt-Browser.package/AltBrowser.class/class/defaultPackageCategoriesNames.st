@@ -6,7 +6,7 @@ defaultPackageCategoriesNames
 
 	^ #(
 		#('System' 'System' 'FileSystem' 'Files' 'CommandShell' 'StartupPreferences' 'OSProcess')
-		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain' 'Keys' 'SmartSuggestions' 'Athens' 'Tabs')
+		#('GUI' 'Graphics' 'Morphic' 'Balloon' 'FreeType' 'Polymorph' 'Spec' 'UIManager' 'UI' 'GroupManagerUI' 'Growl' 'Keymapping' 'FamFam' 'EventModel' 'MenuRegistration' 'NewList' 'Settings' 'HelpSystem' 'KeyChain' 'Keys' 'SmartSuggestions' 'Athens' 'Tabs' 'History')
 		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization' 'Slot' 'SlotTests' 'OpalCompiler' 'ClassOrganizer')
 		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'AsmJit' 'AndreasProfiler' 'SLICE' 'Debugger' 'ProfStef')
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
