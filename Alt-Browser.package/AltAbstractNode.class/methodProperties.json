@@ -14,9 +14,9 @@
 		"asStringIn:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"asText" : "ThierryGoubier 9/28/2013 00:27:15",
 		"asTextIn:" : "ThierryGoubier 9/28/2013 00:27:15",
-		"buildTextMenu:on:with:" : "ThierryGoubier 9/28/2013 00:27:15",
+		"buildTextMenu:on:with:" : "ThierryGoubier 10/23/2013 05:59",
 		"buildTextShortcutsOn:with:" : "ThierryGoubier 9/28/2013 00:27:15",
-		"buildTreeMenu:on:with:" : "ThierryGoubier 9/28/2013 00:27:15",
+		"buildTreeMenu:on:with:" : "ThierryGoubier 10/23/2013 06:00",
 		"buildTreeShortcutsOn:with:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"childNodeClassFromItem:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"childNodeFromItem:" : "ThierryGoubier 9/28/2013 00:27:15",
@@ -25,7 +25,6 @@
 		"clipboardTreeCommands" : "ThierryGoubier 9/28/2013 00:27:15",
 		"contents" : "ThierryGoubier 9/28/2013 00:27:15",
 		"contentsNotNil" : "ThierryGoubier 9/28/2013 00:27:15",
-		"debugTreeCommands" : "ThierryGoubier 9/28/2013 00:27:15",
 		"doubleClickOn:in:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"dropItem:" : "ThierryGoubier 9/28/2013 00:27:15",
 		"executeCommands" : "ThierryGoubier 9/28/2013 00:27:15",
@@ -62,4 +61,5 @@
 		"sourceCode" : "ThierryGoubier 9/28/2013 00:27:15",
 		"styleClass" : "ThierryGoubier 9/28/2013 00:27:15",
 		"title" : "ThierryGoubier 9/28/2013 00:27:15",
-		"undoCommands" : "ThierryGoubier 9/28/2013 00:27:15" } }
+		"undoCommands" : "ThierryGoubier 9/28/2013 00:27:15",
+		"wDebugTreeCommands" : "ThierryGoubier 10/23/2013 06:05" } }
