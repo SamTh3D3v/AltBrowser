@@ -3,14 +3,17 @@ dropItem: anItem
 	"Only valid for an AltMethodCategoryNode or an AltMethodNode."
 
 	((anItem isKindOf: AltMethodCategoryNode) or: [ anItem isKindOf: AltMethodNode ])
-		ifFalse: [ ^ self ].
+		ifFalse: [ ^ nil ].
 	anItem sourceClass == self sourceClass
 		ifFalse: [ 
 			(anItem isKindOf: AltMethodNode)
-				ifTrue: [ self sourceClass compile: anItem sourceCode classified: self methodCategory notifying: nil ].
-			^ self ].
+				ifTrue: [ 
+					| selector |
+					selector := self sourceClass compile: anItem sourceCode classified: self methodCategory notifying: nil.
+					^ self findMethod: selector in: self sourceClass ].
+			^ nil ].
 	anItem == self
-		ifTrue: [ ^ self ].
+		ifTrue: [ ^ nil ].
 	(anItem isKindOf: AltMethodNode)
 		ifTrue: [ 
 			| cm |
@@ -25,4 +28,5 @@ dropItem: anItem
 			SystemAnnouncer uniqueInstance suspendAllWhile: [ self sourceClass organization categories: newCategories asArray ].
 			self sourceClass organization
 				notifyOfChangedCategoriesFrom: oldCategories
-				to: self sourceClass organization categories ]
+				to: self sourceClass organization categories ].
+	^ nil

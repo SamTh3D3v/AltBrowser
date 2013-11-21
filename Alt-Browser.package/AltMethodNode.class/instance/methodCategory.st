@@ -1,0 +1,3 @@
+accessing
+methodCategory
+	^ parentNode methodCategory

@@ -1,8 +1,8 @@
 accessing
 selectPathForAbstractItem: anItem
-	"Stronger than the item version, will force an opening of the ABTreeModelNodes."
+	"Stronger than the item version, will force an opening of the AltreeModelNodes."
 
-	| found aClass nPath tmPath aNode |
+	| nPath aNode |
 	nPath := OrderedCollection new.
 	aNode := anItem parentNode.
 	[ aNode notNil ]
