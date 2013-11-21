@@ -18,7 +18,8 @@ dropItem: anItem
 		ifTrue: [ 
 			| cm |
 			cm := anItem compiledMethod.
-			cm methodClass organization classify: anItem item under: self item suppressIfDefault: false ].
+			cm methodClass organization classify: anItem item under: self item suppressIfDefault: false.
+			^ self findMethod: cm selector in: self sourceClass ].
 	(anItem isKindOf: AltMethodCategoryNode)
 		ifTrue: [ 
 			| oldCategories newCategories |

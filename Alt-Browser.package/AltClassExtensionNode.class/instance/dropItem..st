@@ -4,6 +4,12 @@ dropItem: anItem
 
 	| cm |
 	(anItem isKindOf: AltMethodNode)
-		ifFalse: [ ^ self ].
+		ifFalse: [ ^ nil ].
 	cm := anItem compiledMethod.
-	cm methodClass organization classify: anItem item under: self methodCategory suppressIfDefault: false
+	cm methodClass organization classify: anItem item under: self methodCategory suppressIfDefault: false.
+	self contents
+		do: [ :each | 
+			| res |
+			(res := each findMethod: cm selector in: self sourceClass) notNil
+				ifTrue: [ ^ res ] ].
+	^ nil
