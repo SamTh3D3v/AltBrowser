@@ -1,3 +1,7 @@
 execution
 execute
-	(AltBrowser fullOnEnvironment: (requestor rbEnvironment implementorsOf: self node selector)) expandAllNodes
+	| aRBEnv |
+	aRBEnv := requestor rbEnvironment isSelectorEnvironment
+		ifTrue: [ requestor rbEnvironment environment ]
+		ifFalse: [ requestor rbEnvironment ].
+	(AltBrowser fullOnEnvironment: (aRBEnv implementorsOf: self node selector)) expandAllNodes

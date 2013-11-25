@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-RB-Commands",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AltRBInstVarAccessorCommand",
+	"pools" : [
+		 ],
+	"super" : "AltAstNodeCommand",
+	"type" : "normal" }

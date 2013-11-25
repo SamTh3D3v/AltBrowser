@@ -6,7 +6,8 @@ altTextCommands
 		ifTrue: [ 
 			^ {AltInstVarDefs.
 			AltInstVarRefs.
-			AltRBInstVarRenameCommand} ].
+			AltRBInstVarRenameCommand.
+			AltRBInstVarAccessorCommand} ].
 	self binding isTemp
 		ifTrue: [ ^ {AltRBTemporaryRenameCommand} ].
 	self binding isLiteral
