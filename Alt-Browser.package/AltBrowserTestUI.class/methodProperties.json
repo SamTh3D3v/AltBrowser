@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"docMCPackageOwnership" : "ThierryGoubier 10/18/2013 16:34:25",
-		"setUp" : "ThierryGoubier 10/18/2013 16:34:25",
-		"tearDown" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testHasPackage" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testRemoveNotYetClassified" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testRemoveProtocol" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testSearchMethod" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testSelectPackage" : "ThierryGoubier 10/18/2013 16:34:25",
-		"testSelectTestClass" : "ThierryGoubier 10/18/2013 16:34:25" } }
+		"docMCPackageOwnership" : "ThierryGoubier 11/26/2013 17:20:01",
+		"setUp" : "ThierryGoubier 11/26/2013 17:20:01",
+		"tearDown" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testHasPackage" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testRemoveNotYetClassified" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testRemoveProtocol" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testSearchMethod" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testSelectPackage" : "ThierryGoubier 11/26/2013 17:20:01",
+		"testSelectTestClass" : "ThierryGoubier 11/26/2013 17:20:01" } }
