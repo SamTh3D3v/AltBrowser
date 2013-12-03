@@ -1,0 +1,16 @@
+{
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"prefixes",
+		"path",
+		"entryMorph" ],
+	"name" : "AltKeyboardSearchInTree",
+	"pools" : [
+		 ],
+	"super" : "AltCommand",
+	"type" : "normal" }

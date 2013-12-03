@@ -5,6 +5,7 @@ open
 	window := self theme newWindowIn: World for: self title: self title.
 	treeMorph := self defaultTreeMorph.
 	treeMorph buildContents.
+	treeMorph on: #keyStroke send: #startSearch:for: to: self.
 	(textMorph := PluggableTextMorph
 		on: self source
 		text: #contents
