@@ -1,7 +1,9 @@
 user actions
 onKey: anEvt for: aMorph
-	"Top level filtering."
+	"On each key, track and select."
 
-	"Can I handle the special keys via Keymapping? It would be great."
-	
-	anEvt explore
+	(requestor allNodeMorphs detect: [ :each | each complexContents asText beginsWith: aMorph contents ] ifNone: [  ])
+		ifNotNil: [ :aNodeMorph | 
+			requestor
+				setSelectedMorph: aNodeMorph;
+				scrollSelectionIntoView ]

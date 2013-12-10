@@ -5,7 +5,7 @@ keyStroke: evt
 
 	| char priorEditor newSel |
 	((char := evt keyCharacter) = Character enter
-		or: [ char = Character cr or: [ char = $s and: [ evt commandKeyPressed ] ] ])
+		or: [ char = Character cr or: [ char = Character escape or: [ char = $s and: [ evt commandKeyPressed ] ] ] ])
 		ifTrue: [ 
 			evt hand releaseKeyboardFocus.
 			^ self delete ].
