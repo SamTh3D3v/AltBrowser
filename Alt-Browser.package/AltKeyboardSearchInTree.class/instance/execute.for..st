@@ -18,7 +18,9 @@ execute: anEvt for: aMorph
 		bounds: (aMorphBounds origin + (10 @ 10) corner: (aMorphBounds right - 20) @ (StandardFonts defaultFont height + 4)).
 	textMorph addDropShadow.
 	textMorph setBorderStyle: #simple.
-	textMorph bindKeyCombination: Character tab asKeyCombination toAction: [ self onCompletionKey: textMorph ].
+	textMorph
+		bindKeyCombination: Character tab asKeyCombination
+		toAction: [ :targetMorph :t2 :keyEvent | self onCompletionKey: keyEvent for: targetMorph ].
 	textMorph editor selectFrom: 2 to: textMorph paragraph text string size.
 	textMorph on: #keyStroke send: #onKey:for: to: self.
 	aMorph pasteUpMorph addMorph: textMorph.
