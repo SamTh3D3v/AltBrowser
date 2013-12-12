@@ -6,12 +6,10 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"prefixes",
-		"path",
-		"entryMorph",
+		"requestor",
 		"baseIndex" ],
 	"name" : "AltKeyboardSearchInTree",
 	"pools" : [
 		 ],
-	"super" : "AltCommand",
+	"super" : "Object",
 	"type" : "normal" }

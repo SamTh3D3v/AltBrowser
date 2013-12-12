@@ -6,7 +6,7 @@ onKey: anEvt for: aMorph
 
 	"Bad: the completion keys also end up there and, as a consequence, trigger additional searches here if we don't filter then out."
 
-	(self isCompletionKey: anEvt)
+	(self eventIsCompletion: anEvt)
 		ifTrue: [ ^ self ].
 	(self nodeDetect: [ :each | each complexContents asText beginsWith: aMorph contents ] ifNone: [  ])
 		ifNotNil: [ :aNodeMorph | 

@@ -2,18 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"entryMorph" : "ThierryGoubier 12/10/2013 22:40:12",
-		"entryMorph:" : "ThierryGoubier 12/10/2013 22:40:12",
+		"completionKeys" : "ThierryGoubier 12/12/2013 10:08",
+		"eventIsCompletion:" : "ThierryGoubier 12/12/2013 10:04",
 		"execute:for:" : "ThierryGoubier 12/10/2013 22:40:12",
-		"isCompletionKey:" : "ThierryGoubier 12/12/2013 09:46",
-		"isEnabled" : "ThierryGoubier 12/10/2013 22:40:12",
-		"label" : "ThierryGoubier 12/10/2013 22:40:12",
 		"nodeDetect:ifNone:" : "ThierryGoubier 12/12/2013 09:57",
 		"onCompletionKey:" : "ThierryGoubier 12/12/2013 09:39",
-		"onDeleteKey" : "ThierryGoubier 12/10/2013 22:40:12",
-		"onKey:for:" : "ThierryGoubier 12/12/2013 09:58",
-		"path" : "ThierryGoubier 12/10/2013 22:40:12",
-		"path:" : "ThierryGoubier 12/10/2013 22:40:12",
-		"prefixes" : "ThierryGoubier 12/10/2013 22:40:12",
-		"prefixes:" : "ThierryGoubier 12/10/2013 22:40:12",
-		"printPrefixes" : "ThierryGoubier 12/10/2013 22:40:12" } }
+		"onKey:for:" : "ThierryGoubier 12/12/2013 10:05" } }
