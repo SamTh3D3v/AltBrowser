@@ -2,17 +2,15 @@ user actions
 onCompletionKey: targetMorph
 	"Complete the best match, open the selected node."
 
-	"Should be caught by keymapping, to be able to redirect the character instead of removing it from the paragraph."
+	"Consider that, when the completion key is hit, it's the selected node that we open. If no selection, select the first node. Expand, ensure display is correct, then delete the command."
 
-	(requestor allNodeMorphs detect: [ :each | each complexContents asText beginsWith: targetMorph contents ] ifNone: [  ])
-		ifNotNil: [ :aNodeMorph | 
-			| sz |
-			aNodeMorph isExpanded
-				ifFalse: [ aNodeMorph toggleExpandedState ].
-			requestor
-				adjustSubmorphPositions;
-				setSelectedMorph: aNodeMorph;
-				scrollSelectionIntoView.
-			targetMorph contents: aNodeMorph complexContents asText.
-			sz := targetMorph contents size.
-			targetMorph editor selectFrom: sz + 1 to: sz ]
+	requestor selectedMorph
+		ifNil: [ 
+			requestor setSelectedMorph: requestor allNodeMorphs first.
+			requestor scrollSelectionIntoView ].
+	requestor selectedMorph isExpanded
+		ifFalse: [ requestor selectedMorph toggleExpandedState ].
+	requestor
+		adjustSubmorphPositions;
+		scrollSelectionIntoView.
+	targetMorph delete

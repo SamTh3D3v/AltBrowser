@@ -7,6 +7,8 @@ Target behavior:
 - On delete, if on prefix, delete prefix entirely and restart a level above.
 - On CR, close text entry and select
 
+baseIndex: first selected node when starting to type.
+
 Use a StringMorphEditor as an example, it has the logic for disappearing and is single line. StringMorphEditor is tied to a StringMorph, so I need my own subclass of TextMorph with a copy of the logic.
 
 Behavior is fairly specific to the way the tree is handled, but should show a nice blueprint about searching with on the fly search area creation.
