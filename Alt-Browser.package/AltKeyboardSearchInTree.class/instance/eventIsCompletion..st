@@ -1,3 +1,3 @@
 private
 eventIsCompletion: anEvt
-	^ self completionKeys includes: anEvt keyCharacter
+	^ self completionKeys matchesCompletely: anEvt

@@ -1,6 +1,3 @@
 private
 completionKeys
-	^ {(Character tab).
-	(Character cr).
-	(Character lf).
-	$/}
+	^ Character tab asKeyCombination | Character cr asKeyCombination | Character lf asKeyCombination | $/ asKeyCombination

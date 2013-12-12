@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"completionKeys" : "ThierryGoubier 12/12/2013 10:08",
-		"eventIsCompletion:" : "ThierryGoubier 12/12/2013 10:04",
-		"execute:for:" : "ThierryGoubier 12/12/2013 16:02",
+		"completionKeys" : "ThierryGoubier 12/12/2013 19:15",
+		"eventIsCompletion:" : "ThierryGoubier 12/12/2013 19:19",
+		"eventIsTrapped:" : "ThierryGoubier 12/12/2013 19:28",
+		"execute:for:" : "ThierryGoubier 12/12/2013 19:27",
 		"nodeDetect:ifNone:" : "ThierryGoubier 12/12/2013 09:57",
 		"onCompletionKey:for:" : "ThierryGoubier 12/12/2013 16:08",
-		"onKey:for:" : "ThierryGoubier 12/12/2013 10:05" } }
+		"onKey:for:" : "ThierryGoubier 12/12/2013 19:28",
+		"onTrappedKey:for:" : "ThierryGoubier 12/12/2013 17:19",
+		"trappedKeys" : "ThierryGoubier 12/12/2013 19:14" } }
