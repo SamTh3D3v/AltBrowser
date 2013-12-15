@@ -6,7 +6,7 @@ asStringIn: anAltTreeNodeModel
 	string := self item name asString.
 	anAltTreeNodeModel parentNode
 		ifNil: [ ^ string ].
-	parentString := anAltTreeNodeModel parentNode asString.
+	parentString := anAltTreeNodeModel parentNode item asString.
 	((string beginsWith: parentString) and: [ string ~= parentString ])
 		ifTrue: [ string := string allButFirst: parentString size ].
 	string first = $-

@@ -2,8 +2,8 @@ user interface
 defaultTreeMorph
 	^ super defaultTreeMorph
 		doubleClickSelector: #doubleClick;
-		nodeStringGetter: #asText;
+		nodeStringGetter: #asString;
 		getMenuSelector: #buildTreeMenu:;
 		dragEnabled: true;
 		dropEnabled: true;
-		withHLines: false.
+		withHLines: false

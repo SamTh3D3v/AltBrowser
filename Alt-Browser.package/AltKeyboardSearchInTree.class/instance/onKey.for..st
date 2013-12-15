@@ -8,7 +8,7 @@ onKey: anEvt for: aMorph
 
 	((self eventIsCompletion: anEvt) or: [ self eventIsTrapped: anEvt ])
 		ifTrue: [ ^ self ].
-	(self nodeDetect: [ :each | each complexContents asText beginsWith: aMorph contents ] ifNone: [  ])
+	(self nodeDetect: [ :each | each complexContents asString beginsWith: aMorph contents ] ifNone: [  ])
 		ifNotNil: [ :aNodeMorph | 
 			baseIndex := aNodeMorph index.
 			requestor
