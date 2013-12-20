@@ -6,5 +6,5 @@ findPackage: aRPackage
 	pkSet := item packageSet.
 	pks := pkSet packages.
 	pks first == aRPackage
-		ifTrue: [ ^ self ]
-		ifFalse: [ ^ nil ]
+		ifTrue: [ ^ self ].
+	^ nil

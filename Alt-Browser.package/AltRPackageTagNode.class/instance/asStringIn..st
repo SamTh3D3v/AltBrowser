@@ -3,9 +3,9 @@ asStringIn: anAltTreeNodeModel
 	"Reduce based on the parent name. The parameter shows the 'visible' hierarchy, use that to reduce the name."
 
 	| string parentString |
-	string := self item name asString.
-	anAltTreeNodeModel parentNode
-		ifNil: [ ^ string ].
+	string := self asString.
+	(parentNode isNil or: [ anAltTreeNodeModel parentNode isNil ])
+		ifTrue: [ ^ string ].
 	parentString := anAltTreeNodeModel parentNode item asString.
 	((string beginsWith: parentString) and: [ string ~= parentString ])
 		ifTrue: [ string := string allButFirst: parentString size ].
