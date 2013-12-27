@@ -1,3 +1,5 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesCategory: self item name
+	"Use the category name, not the tag name."
+
+	^ aRBEnvironment includesCategory: self item categoryName
