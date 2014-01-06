@@ -11,4 +11,4 @@ defaultPackageCategoriesNames
 		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'NB' 'AsmJit' 'AndreasProfiler' 'SLICE' 'Debugger' 'ProfStef' 'Generated')
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
 		#('Packages' 'Baseline' 'Configuration' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer' 'Komitter')
-		#('3.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader' 'HudsonBuildTools'))
+		#('3.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader' 'HudsonBuildTools' 'ReleaseTests'))
