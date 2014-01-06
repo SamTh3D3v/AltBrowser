@@ -7,12 +7,12 @@ testAddRemoveSystemCategory
 	[ 
 	Smalltalk globals organization addCategory: #'Alt-Testing-Underway-Core'.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageSetNode(Alt-Testing-Underway)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageNode(Alt-Testing-Underway)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	n expand.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(Alt-Testing-Underway-Core)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageTagNode(Core)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	browser treeMorph listManager setSelectedMorph: n.
