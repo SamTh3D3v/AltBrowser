@@ -1,4 +1,4 @@
-as yet unclassified
+drag and drop
 dropItem: anItem
 	"Only valid for an ABMethodCategoryNode. This is because the comment is at the beginning of the list of protocols, so allows for moving a protocol at the beginning of the list."
 
