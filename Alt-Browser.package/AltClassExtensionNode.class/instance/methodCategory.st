@@ -1,5 +1,5 @@
 accessing
 methodCategory
-	"Still working in fact."
+	"A class extension is below a package extension node, hence we can ask the parent for the right category prefix."
 	
 	^ parentNode item methodCategoryPrefix

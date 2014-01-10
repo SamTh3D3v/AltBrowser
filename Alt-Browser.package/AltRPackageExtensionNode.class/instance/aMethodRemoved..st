@@ -4,7 +4,7 @@ aMethodRemoved: anEvent
 
 	(anEvent protocol asLowercase beginsWith: self methodCategory)
 		ifTrue: [ 
-			(self contents inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ])
+			(self contents inject: false into: [ :bool :each | (each aMethodRemoved: anEvent) or: [ bool ] ])
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false
