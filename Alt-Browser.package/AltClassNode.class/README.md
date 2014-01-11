@@ -1,1 +1,1 @@
-An ABClassNode represent a class
+An AltClassNode represent a class, both the class side and the meta class side, even if they do display differently.
