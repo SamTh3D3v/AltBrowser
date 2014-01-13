@@ -1,8 +1,7 @@
 tests
-testRemoveNotYetClassified
+testRemoveAsYetUnclassifiedOnRemoveMethod
 	"Test if not yet classified is correctly handled."
 
-	<expectedFailure>
 	| n |
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
@@ -22,14 +21,13 @@ testRemoveNotYetClassified
 	self assert: browser selectedItem == n complexContents.
 	n expand.
 	(Smalltalk at: #AltTestingClass) compile: 'test ^ true'.
-	(Smalltalk at: #AltTestingClass) addCategory: #test before: nil.
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
 			aNodeMorph complexContents item isMethodCategoryNode
 				and: [ aNodeMorph complexContents item item = #'as yet unclassified' ] ]
 		ifNone: [  ].
 	self assert: n notNil.
-	(Smalltalk at: #AltTestingClass) organization classify: #test under: #test suppressIfDefault: false.
+	(Smalltalk at: #AltTestingClass) removeSelector: #test.
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
 			aNodeMorph complexContents item isMethodCategoryNode

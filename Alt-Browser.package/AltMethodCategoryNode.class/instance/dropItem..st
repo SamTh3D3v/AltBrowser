@@ -1,4 +1,4 @@
-as yet unclassified
+drag and drop
 dropItem: anItem
 	"Only valid for an AltMethodCategoryNode or an AltMethodNode."
 
