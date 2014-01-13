@@ -5,5 +5,5 @@ dropItem: anItem
 	anItem class == AltClassNode
 		ifTrue: [ 
 			"This probably works."
-			anItem item category: item name.
+			anItem item category: item categoryName.
 			^ self ]

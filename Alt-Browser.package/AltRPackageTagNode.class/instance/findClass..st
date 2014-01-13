@@ -1,6 +1,8 @@
 querying
 findClass: aClass
 	"Filter out: force contents building if the class belongs to this package."
+	
+	"Will that work if I'm looking for a trait class? It seems a trait class meta side has no base class."
 
 	| res |
 	(self item
