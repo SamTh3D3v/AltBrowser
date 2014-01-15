@@ -6,7 +6,7 @@ childrenItems
 	o := OrderedCollection new.
 	aRPackage := self item packageSet packages first.
 	aRPackage classTags isEmpty
-		ifTrue: [ ^ {aRPackage} , (self class orderClasses: aRPackage classes asOrderedCollection) ].
+		ifTrue: [ ^ {aRPackage} , (self class orderClasses: aRPackage definedClasses asOrderedCollection) ].
 	(aRPackage classTags sorted: [ :a :b | a name < b name ])
 		do: [ :tag | 
 			tag name = self item packageName
