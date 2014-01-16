@@ -1,6 +1,5 @@
 catalog
 catalogKeyClassesAndExample
-
 	^ '
 The core class is AltBrowser. On the class side, it maintain an abstract tree of the code base and track all code updates (class, package and method additions, changes and removal). On the instance side, it maintain a simple GUI view filtered by a RB environment, with updates triggered by the class side. The GUI is a tree pane and a code pane, nothing more.
 
