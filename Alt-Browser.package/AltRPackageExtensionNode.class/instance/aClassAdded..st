@@ -1,8 +1,8 @@
 updating
 aClassAdded: anEvent
-	"Answer true if the category matches."
+	"Check if the class is an extension class. Is it possible when adding a class?"
 
-	anEvent classAdded package name = item name
+	(self item extendsClass: anEvent classAdded)
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.
 			^ true ]

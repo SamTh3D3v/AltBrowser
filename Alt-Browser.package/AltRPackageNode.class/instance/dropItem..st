@@ -13,5 +13,5 @@ dropItem: anItem
 	cm := anItem compiledMethod.
 	cm methodClass organization
 		classify: anItem item
-		under: self item packageSet packages first methodCategoryPrefix
+		under: self rpackage methodCategoryPrefix
 		suppressIfDefault: false
