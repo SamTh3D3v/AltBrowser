@@ -1,0 +1,1 @@
+This mark that the node has seen its contents (name) changed.
