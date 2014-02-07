@@ -23,3 +23,4 @@ Gofer new
 	loadDevelopment.
 ```
 
+Requires a Mac or Linux system with git correctly installed.
