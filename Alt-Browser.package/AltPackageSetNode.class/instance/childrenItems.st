@@ -4,15 +4,12 @@ childrenItems
 
 	"Note: do all MCPackages have a RPackage of the same name?"
 
-	| o hasRPackageOfSameName |
+	| o |
 	o := OrderedCollection new.
-	hasRPackageOfSameName := false.
 	self item packageSet packages
 		do: [ :package | 
 			package name = self item packageName
 				ifTrue: [ 
-					o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o) asOrderedCollection.
-					hasRPackageOfSameName := true ]
+					o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o) asOrderedCollection ]
 				ifFalse: [ o add: package ] ].
-	self assert: hasRPackageOfSameName.
 	^ o
