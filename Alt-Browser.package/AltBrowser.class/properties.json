@@ -17,7 +17,8 @@
 		"rbEnvironment",
 		"finder",
 		"finderUI",
-		"toolbar" ],
+		"toolbar",
+		"isSelectionUpdate" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

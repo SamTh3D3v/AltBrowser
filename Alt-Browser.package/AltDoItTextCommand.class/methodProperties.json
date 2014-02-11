@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"takesNodes" : "ThierryGoubier 1/26/2014 21:40:19",
-		"takesText" : "ThierryGoubier 1/26/2014 21:40:19" },
+		"takesNodes" : "ThierryGoubier 2/5/2014 16:08:40",
+		"takesText" : "ThierryGoubier 2/5/2014 16:08:40" },
 	"instance" : {
-		"doItContext" : "ThierryGoubier 1/26/2014 21:40:19",
-		"doItReceiver" : "ThierryGoubier 1/26/2014 21:40:19",
-		"execute" : "ThierryGoubier 1/26/2014 21:40:19",
-		"icon" : "ThierryGoubier 1/26/2014 21:40:19",
-		"isActive" : "ThierryGoubier 1/26/2014 21:40:19",
-		"isEnabled" : "ThierryGoubier 1/26/2014 21:40:19",
-		"keystroke" : "ThierryGoubier 1/26/2014 21:40:19",
-		"label" : "ThierryGoubier 1/26/2014 21:40:19" } }
+		"doItContext" : "ThierryGoubier 2/5/2014 16:08:40",
+		"doItReceiver" : "ThierryGoubier 2/5/2014 16:08:40",
+		"execute" : "ThierryGoubier 2/5/2014 16:08:40",
+		"icon" : "ThierryGoubier 2/5/2014 16:08:40",
+		"isActive" : "ThierryGoubier 2/5/2014 16:08:40",
+		"isEnabled" : "ThierryGoubier 2/5/2014 16:08:40",
+		"keystroke" : "ThierryGoubier 2/5/2014 16:08:40",
+		"label" : "ThierryGoubier 2/5/2014 16:08:40" } }
