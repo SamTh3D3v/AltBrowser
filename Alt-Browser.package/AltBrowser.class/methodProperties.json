@@ -53,9 +53,9 @@
 		"temporary:" : "ThierryGoubier 2/5/2014 16:08:40" },
 	"instance" : {
 		"aMethodUpdated:" : "ThierryGoubier 2/5/2014 16:08:40",
-		"aNodeAdded:" : "ThierryGoubier 2/11/2014 21:37",
-		"aNodeRebuilt:" : "ThierryGoubier 2/11/2014 21:37",
-		"aNodeRemoved:" : "ThierryGoubier 2/5/2014 16:08:40",
+		"aNodeAdded:" : "ThierryGoubier 2/11/2014 21:48",
+		"aNodeRebuilt:" : "ThierryGoubier 2/11/2014 21:46",
+		"aNodeRemoved:" : "ThierryGoubier 2/11/2014 21:49",
 		"aNodeUpdated:" : "ThierryGoubier 2/5/2014 16:08:40",
 		"aRootsChanged" : "ThierryGoubier 2/5/2014 16:08:40",
 		"acceptDroppingMorph:event:inMorph:" : "ThierryGoubier 2/5/2014 16:08:40",
@@ -97,4 +97,5 @@
 		"updateTextKeymap" : "ThierryGoubier 2/5/2014 16:08:40",
 		"updateTitle" : "ThierryGoubier 2/5/2014 16:08:40",
 		"updateTreeKeymap" : "ThierryGoubier 2/5/2014 16:08:40",
-		"wantsDroppedMorph:event:inMorph:" : "ThierryGoubier 2/5/2014 16:08:40" } }
+		"wantsDroppedMorph:event:inMorph:" : "ThierryGoubier 2/5/2014 16:08:40",
+		"withSelectionDo:" : "ThierryGoubier 2/11/2014 21:45" } }
