@@ -5,6 +5,7 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 	"Write this code so that it is independent of the presence of MonticelloFileTree-Git; it will fail anyway and drop back on the old version browser."
 
 	| rpackage aMCWorkingCopy repository mcMethodDefinition allFileNames gitRepoClass gitReaderClass |
+	self halt.
 	(Smalltalk globals includesKey: #MCFileTreeGitRepository)
 		ifTrue: [ 
 			gitRepoClass := Smalltalk globals at: #MCFileTreeGitRepository.
@@ -27,8 +28,7 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 							{(change timeStamp).
 							(change fileName)}) ].
 	rpackage := method package.
-	aMCWorkingCopy := MCWorkingCopy allManagers
-		detect: [ :wc | (wc package packageSet packages detect: [ :rp | rp == rpackage ] ifNone: [  ]) notNil ].
+	aMCWorkingCopy := MCWorkingCopy allManagers detect: [ :wc | wc package name = rpackage name ].
 	repository := aMCWorkingCopy repositoryGroup repositories detect: [ :repo | repo isKindOf: gitRepoClass ].
 	allFileNames := repository allFileNames.
 	mcMethodDefinition := method methodReference asMCMethodDefinition.
