@@ -3,9 +3,10 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 	"Do not ask the changeset, but the repository if this is a gitfiletree:// repository."
 
 	"Write this code so that it is independent of the presence of MonticelloFileTree-Git; it will fail anyway and drop back on the old version browser."
+	
+	"Algorithm: if anything fail (no git repository for example), a NotFound error is generated. If needed, a NotFound error is raised."
 
 	| rpackage aMCWorkingCopy repository mcMethodDefinition allFileNames gitRepoClass gitReaderClass |
-	self halt.
 	(Smalltalk globals includesKey: #MCFileTreeGitRepository)
 		ifTrue: [ 
 			gitRepoClass := Smalltalk globals at: #MCFileTreeGitRepository.
