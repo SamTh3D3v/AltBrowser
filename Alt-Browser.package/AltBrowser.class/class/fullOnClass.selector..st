@@ -4,5 +4,5 @@ fullOnClass: aClass selector: aSelector
 
 	| s |
 	aSelector isNil ifTrue: [ ^ self fullOnClass: aClass]. 
-	self rootItems detect: [ :each | (s := each findMethod: aSelector in: aClass) notNil ].
+	self rootItems detect: [ :each | (s := each findMethod: aSelector in: aClass) notNil ] ifNone: [ ^ self fullOnClass: aClass ].
 	self open selectPathForAbstractItem: s

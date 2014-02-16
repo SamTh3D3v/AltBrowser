@@ -7,20 +7,22 @@ aNodeAdded: anEvent
 	"Removed the invariant."
 
 	| pNode aNode |
-	aNode := anEvent node.
-	(pNode := aNode parentNode) isNil
-		ifTrue: [ 
-			self assert: (aNode isKindOf: AltTreeNodeModel) not.
-			rootItems := nil.
-			self changed: #rootNodes ]
-		ifFalse: [ 
-			treeMorph nodeList
-				do: [ :e | 
-					| r |
-					(r := e findItem: pNode) notNil
-						ifTrue: [ 
-							| n |
-							r rebuildChildren.
-							(n := self findMorphNodeForItem: r) notNil
-								ifTrue: [ n rebuildChildren ].
-							^ self ] ] ]
+	self
+		withSelectionDo: [ 
+			aNode := anEvent node.
+			(pNode := aNode parentNode) isNil
+				ifTrue: [ 
+					self assert: (aNode isKindOf: AltTreeNodeModel) not.
+					rootItems := nil.
+					self updateList ]
+				ifFalse: [ 
+					self treeMorph nodeList
+						do: [ :e | 
+							| r |
+							(r := e findItem: pNode) notNil
+								ifTrue: [ 
+									| n |
+									r rebuildChildren.
+									(n := self findMorphNodeForItem: r) notNil
+										ifTrue: [ n rebuildChildren ].
+									^ self ] ] ] ]

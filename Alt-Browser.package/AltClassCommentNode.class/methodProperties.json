@@ -2,14 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aClassCommented:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"aMethodAdded:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"aMethodRecategorized:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"aMethodRemoved:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"accept:notifying:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"asString" : "ThierryGoubier 11/26/2013 22:15:46",
-		"dropItem:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"findClassComment:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"icon" : "ThierryGoubier 11/26/2013 22:15:46",
-		"isInRBEnvironment:" : "ThierryGoubier 11/26/2013 22:15:46",
-		"sourceCode" : "ThierryGoubier 11/26/2013 22:15:46" } }
+		"aClassCommented:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"aMethodAdded:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"aMethodRecategorized:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"aMethodRemoved:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"accept:notifying:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"asString" : "ThierryGoubier 2/11/2014 21:50:34",
+		"dropItem:" : "ThierryGoubier 2/7/2014 07:14:56",
+		"findClassComment:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"icon" : "ThierryGoubier 2/16/2014 19:42",
+		"isInRBEnvironment:" : "ThierryGoubier 2/11/2014 21:50:34",
+		"sourceCode" : "ThierryGoubier 2/11/2014 21:50:34" } }

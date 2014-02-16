@@ -1,3 +1,3 @@
 user interface
 expandAllNodes
-	treeMorph expandAll
+	self treeMorph expandAll
