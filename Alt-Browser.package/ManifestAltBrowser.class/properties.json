@@ -1,10 +1,10 @@
 {
-	"category" : "Alt-Browser-Core",
+	"category" : "Alt-Browser",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
 	"name" : "ManifestAltBrowser",

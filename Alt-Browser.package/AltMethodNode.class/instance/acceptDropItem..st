@@ -2,4 +2,4 @@ drag and drop
 acceptDropItem: anItem
 	"Only valid for an AltMethodNode."
 
-	^ anItem isKindOf: AltMethodNode
+	^ anItem isKindOf: self class

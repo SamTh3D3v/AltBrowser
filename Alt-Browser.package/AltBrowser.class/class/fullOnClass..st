@@ -3,5 +3,6 @@ fullOnClass: aClass
 	"Open on a class."
 
 	| s |
-	self rootItems detect: [ :each | (s := each findClass: aClass) notNil ].
+	(self rootItems anySatisfy: [ :each | (s := each findClass: aClass) notNil ])
+		ifFalse: [ ^ self ].
 	self open selectPathForAbstractItem: s

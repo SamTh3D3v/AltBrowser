@@ -4,4 +4,5 @@ fullOnEnvironment: aRBEnvironment
 
 	^ self new
 		rbEnvironment: aRBEnvironment;
-		open
+		open;
+		yourself

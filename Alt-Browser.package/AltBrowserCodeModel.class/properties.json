@@ -7,8 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"browser",
-		"aboutToStyle",
-		"behavior" ],
+		"aboutToStyle" ],
 	"name" : "AltBrowserCodeModel",
 	"pools" : [
 		 ],

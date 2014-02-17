@@ -1,3 +1,0 @@
-querying
-sourceClass
-	^ self item

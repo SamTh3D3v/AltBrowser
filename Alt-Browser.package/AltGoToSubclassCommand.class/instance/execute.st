@@ -9,4 +9,5 @@ execute
 			| res |
 			(res := each findClass: aClass) notNil
 				ifTrue: [ found := res ] ].
+	found isNil ifTrue: [  ^ nil ].
 	requestor selectPathForAbstractItem: found

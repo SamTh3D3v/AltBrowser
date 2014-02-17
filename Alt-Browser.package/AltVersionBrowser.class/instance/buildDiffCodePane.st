@@ -1,9 +1,9 @@
 private
 buildDiffCodePane
 	| old new |
-	listIndex = changeList size
-		ifTrue: [ old := nil ]
-		ifFalse: [ old := changeList at: listIndex + 1 ].
+	old := listIndex = changeList size
+		ifTrue: [ nil ]
+		ifFalse: [ changeList at: listIndex + 1 ].
 	new := changeList at: listIndex ifAbsent: [ nil ].
 	^ new
 		ifNil: [ self buildDiffMorphFromOldString: '' toNewString: '' contextClass: nil ]

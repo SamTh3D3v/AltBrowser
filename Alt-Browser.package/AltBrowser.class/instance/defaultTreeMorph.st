@@ -6,4 +6,5 @@ defaultTreeMorph
 		getMenuSelector: #buildTreeMenu:;
 		dragEnabled: true;
 		dropEnabled: true;
-		withHLines: false
+		withHLines: false;
+		yourself

@@ -19,5 +19,5 @@ withSelectionDo: aBlock
 						requestView:
 							(MorphTreeChangeRequest new
 								action: #setSelectedMorph:;
-								arguments: (Array with: selMorph)).
+								arguments: (Array with: selMorph); yourself).
 					isSelectionUpdate := prev ] ]

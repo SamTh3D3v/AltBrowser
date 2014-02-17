@@ -14,6 +14,6 @@ selectPathForAbstractItem: anItem
 		requestView:
 				(MorphTreeChangeRequest new
 						action: #setSelectedMorph:;
-						arguments: (Array with: (self findMorphNodeForAbstractItem: anItem)));
+						arguments: (Array with: (self findMorphNodeForAbstractItem: anItem)); yourself);
 		requestView: (MorphTreeChangeRequest new action: #adjustSubmorphPositions);
 		requestView: (MorphTreeChangeRequest new action: #scrollSelectionIntoView)

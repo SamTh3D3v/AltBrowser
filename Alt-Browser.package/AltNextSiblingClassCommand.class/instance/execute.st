@@ -10,4 +10,5 @@ execute
 			| res |
 			(res := each findClass: nextClass) notNil
 				ifTrue: [ found := res ] ].
+	found ifNil: [  ^ self ].
 	requestor selectPathForAbstractItem: found

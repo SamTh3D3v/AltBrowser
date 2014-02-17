@@ -5,5 +5,6 @@ fullOnClass: aClass selector: aSelector highlight: autoSelectString
 	| s |
 	aSelector isNil
 		ifTrue: [ ^ self fullOnClass: aClass ].
-	self rootItems detect: [ :each | (s := each findMethod: aSelector in: aClass) notNil ].
+	(self rootItems anySatisfy: [ :each | (s := each findMethod: aSelector in: aClass) notNil ])
+		ifFalse: [ ^ self fullOnClass: aClass ].
 	self open selectPathForAbstractItem: s

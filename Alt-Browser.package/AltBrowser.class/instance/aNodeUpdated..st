@@ -11,6 +11,6 @@ aNodeUpdated: anEvent
 				ifTrue: [ self updateTitle ] ].
 	r := self findMorphNodeForAbstractItem: anEvent node.
 	r notNil
-		ifTrue: [ 
-			r submorphs do: [ :e | e delete ].
-			r initRow ]
+		ifFalse: [ ^ self ].
+	r submorphs do: [ :e | e delete ].
+	r initRow

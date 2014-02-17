@@ -16,4 +16,4 @@ compareToCurrentVersion
 					| morph |
 					morph := self buildDiffMorphFromOldString: s2 toNewString: s1 contextClass: class.
 					morph openInWindowLabeled: ('Comparison from {1} to current version' translated format: {(change timeStamp)}) ] ]
-		ifFalse: [ self flash ]
+		ifFalse: [ codePane flash ]

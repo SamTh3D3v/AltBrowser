@@ -4,14 +4,12 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 
 	"Reduce single element categories to that element."
 
+	| i |
 	aCategoryDefinition isArray
 		ifTrue: [ 
-			| i |
 			i := aCategoryDefinition first -> OrderedCollection new.
-			aCategoryDefinition allButFirst do: [ :each | i value add: (self getItemsFor: each from: aListOfPackages) ].
-			^ i ]
+			aCategoryDefinition allButFirst do: [ :each | i value add: (self getItemsFor: each from: aListOfPackages) ] ]
 		ifFalse: [ 
-			| i |
 			i := aCategoryDefinition -> OrderedCollection new.
 			(aListOfPackages
 				select: [ :e | 
@@ -21,5 +19,5 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 					aListOfPackages remove: e.
 					i value add: e ].
 			i value size == 1
-				ifTrue: [ ^ i value first ].
-			^ i ]
+				ifTrue: [ ^ i value first ] ].
+		^ i

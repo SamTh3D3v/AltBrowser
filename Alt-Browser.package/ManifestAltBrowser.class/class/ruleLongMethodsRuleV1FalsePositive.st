@@ -1,0 +1,3 @@
+meta data
+ruleLongMethodsRuleV1FalsePositive
+^ #(#(#(#RGMethodDefinition #(#'AltBrowser class' #getRootItems #true)) #'2014-02-17T17:46:13.078976+01:00') #(#(#RGMethodDefinition #(#AltVersionBrowser #scanVersionsOf:class:meta:category:selector: #false)) #'2014-02-17T17:46:13.078976+01:00') #(#(#RGMethodDefinition #(#AltAddProtocolCommand #execute #false)) #'2014-02-17T17:46:13.078976+01:00') #(#(#RGMethodDefinition #(#AltSettingDeclaration #startupAction #false)) #'2014-02-17T17:46:13.078976+01:00') #(#(#RGMethodDefinition #(#AltClassNode #itemOrganization #false)) #'2014-02-17T17:46:13.078976+01:00') #(#(#RGMethodDefinition #(#AltClassNode #buildTextMenu:on:with: #false)) #'2014-02-17T18:19:53.075059+01:00') )

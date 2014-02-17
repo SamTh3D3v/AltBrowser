@@ -14,6 +14,6 @@ rewriteStringOfVars: inS into: outS
 				ifFalse: [ 
 					outS nextPut: $..
 					inS next.
-					[ inS peek = $  whileTrue: [ outS nextPut: inS next ] ] ] ].
+					[ [ inS peek = $  ] whileTrue: [ outS nextPut: inS next ] ] ] ].
 	inS next.
 	outS << '}'
