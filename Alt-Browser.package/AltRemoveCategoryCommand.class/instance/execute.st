@@ -2,7 +2,8 @@ execution
 execute
 	| name sItem |
 	sItem := requestor selectedNode item.
-	name := sItem title.
+	name := sItem asString.
+	self halt.
 	name notNil
 		ifTrue: [ 
 			Smalltalk globals organization removeCategory: name.
