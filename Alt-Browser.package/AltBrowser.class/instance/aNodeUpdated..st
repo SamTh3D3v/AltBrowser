@@ -1,6 +1,14 @@
 updating
 aNodeUpdated: anEvent
-	| r |
+	"Don't forget to update the title if appropriate."
+
+	| r sItem |
+	self selectedNode
+		ifNotNil: [ :sNode | 
+			sItem := sNode item.
+			self assert: (sItem isKindOf: AltAbstractNode).
+			anEvent node == sItem
+				ifTrue: [ self updateTitle ] ].
 	r := self findMorphNodeForAbstractItem: anEvent node.
 	r notNil
 		ifTrue: [ 

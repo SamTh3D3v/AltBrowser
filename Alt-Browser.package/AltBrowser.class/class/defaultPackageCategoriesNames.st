@@ -10,5 +10,5 @@ defaultPackageCategoriesNames
 		#('Core' 'Kernel' 'Collections' 'Text' 'Compiler' 'EmergencyEvaluator' 'Regex' 'Multilingual' 'Announcements' 'Transcript' 'Traits' 'NewClassOrganizer' 'Unicode-Initialization' 'Slot' 'SlotTests' 'OpalCompiler' 'ClassOrganizer')
 		#('Development' 'AST' 'NodeNavigation' 'Refactoring' 'Tools' 'Nautilus' 'NonInteractiveTranscript' 'SUnit' 'Tests' 'Shout' 'SmaCC' 'NECompletion' 'NOCompletion' 'Manifest' 'NativeBoost' 'NB' 'AsmJit' 'AndreasProfiler' 'SLICE' 'Debugger' 'ProfStef' 'Generated')
 		#('Networking' 'Network' 'Zodiac' 'Zinc' 'Compression')
-		#('Packages' 'Baseline' 'Configuration' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer' 'Komitter')
+		#('Packages' 'Baseline' 'Configuration' 'PackageInfo' 'Fuel' 'Monticello' 'Metacello' 'CodeImport' 'Gofer' 'RPackage' 'Ring' 'CI' 'GroupManager' 'UpdateStreamer' 'Komitter' 'Versionner' )
 		#('3.0' 'Compatibility' 'Deprecated' 'RecentSubmissions' 'ScriptLoader' 'HudsonBuildTools' 'ReleaseTests'))
