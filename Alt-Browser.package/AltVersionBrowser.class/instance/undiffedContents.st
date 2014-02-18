@@ -1,4 +1,4 @@
-private
+viewing access
 undiffedContents
 	^ listIndex = 0
 		ifTrue: [ '' ]

@@ -1,4 +1,4 @@
 commands
 packageSetCommands
 	<treeAreaCommand>
-	^ {AltAddCategoryCommand}
+	^ {AltAddSystemCategoryCommand}

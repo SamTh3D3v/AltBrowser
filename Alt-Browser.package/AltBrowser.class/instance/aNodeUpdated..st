@@ -6,7 +6,6 @@ aNodeUpdated: anEvent
 	self selectedNode
 		ifNotNil: [ :sNode | 
 			sItem := sNode item.
-			self assert: (sItem isKindOf: AltAbstractNode).
 			anEvent node == sItem
 				ifTrue: [ self updateTitle ] ].
 	r := self findMorphNodeForAbstractItem: anEvent node.

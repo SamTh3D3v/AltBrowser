@@ -1,4 +1,4 @@
-updating
+selecting
 selection: anItem
 	"It goes directly here."
 

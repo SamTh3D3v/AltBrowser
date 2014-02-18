@@ -1,4 +1,4 @@
-initialization
+class initialization
 initialize
 	AltAnnouncer := Announcer new.
 	RootItems := nil.

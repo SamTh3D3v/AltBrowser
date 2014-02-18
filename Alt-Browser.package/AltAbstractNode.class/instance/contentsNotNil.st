@@ -1,3 +1,0 @@
-testing
-contentsNotNil
-	^ contents notNil

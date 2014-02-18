@@ -1,3 +1,3 @@
-updating
+accessing
 rootNodeClassFromItem: anItem
 	^ AltTreeNodeModel

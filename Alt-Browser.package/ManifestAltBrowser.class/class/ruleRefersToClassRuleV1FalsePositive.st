@@ -1,3 +1,0 @@
-meta data
-ruleRefersToClassRuleV1FalsePositive
-^ #(#(#(#RGMethodDefinition #(#AltAbstractNode #buildTextMenu:on:with: #false)) #'2014-02-17T18:07:45.092977+01:00') #(#(#RGMethodDefinition #(#AltAbstractNode #buildTreeMenu:on:with: #false)) #'2014-02-17T18:07:45.092977+01:00') #(#(#RGMethodDefinition #(#AltAbstractNode #buildTextShortcutsOn:with: #false)) #'2014-02-17T18:07:45.092977+01:00') #(#(#RGMethodDefinition #(#AltAbstractNode #buildTreeShortcutsOn:with: #false)) #'2014-02-17T18:07:45.092977+01:00') )

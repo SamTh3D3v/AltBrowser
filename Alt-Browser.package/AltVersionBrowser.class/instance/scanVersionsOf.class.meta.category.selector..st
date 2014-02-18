@@ -1,4 +1,4 @@
-copy and paste
+init & update
 scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aSelector
 	"Do not ask the changeset, but the repository if this is a gitfiletree:// repository."
 

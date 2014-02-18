@@ -1,4 +1,4 @@
-initialize-release
+dependencies
 release
 	self class announcer unsubscribe: self.
 	SystemAnnouncer uniqueInstance unsubscribe: self.

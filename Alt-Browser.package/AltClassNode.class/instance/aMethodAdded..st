@@ -10,6 +10,4 @@ aMethodAdded: anEvent
 			((self contents select: [ :e | e item = anEvent protocol ]) size < 1 or: [ anEvent protocol = 'no messages' ])
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	anEvent methodClass == item class
-		ifTrue: [ ^ self contents first aMethodAdded: anEvent ].
-	^ false
+	^ anEvent methodClass == item class and: [ self contents first aMethodAdded: anEvent ]

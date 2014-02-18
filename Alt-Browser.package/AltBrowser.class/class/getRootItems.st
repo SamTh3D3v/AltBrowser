@@ -7,11 +7,7 @@ getRootItems
 	| l o |
 	l := MCWorkingCopy allManagers asOrderedCollection.
 	o := OrderedCollection new.
-	self defaultPackageCategoriesNames
-		do: [ :w | 
-			| i |
-			i := self getItemsFor: w from: l.
-			o add: i ].
+	o addAll: (self defaultPackageCategoriesNames collect: [ :w | self getItemsFor: w from: l ]).
 	[ l notEmpty ]
 		whileTrue: [ 
 			| p w i |
@@ -20,10 +16,7 @@ getRootItems
 			i := w -> (OrderedCollection with: p).
 			o add: i.
 			l remove: p.
-			(l select: [ :e | (e packageName copyUpTo: $-) = w ])
-				do: [ :e | 
-					l remove: e.
-					i value add: e ] ].
+			l removeAll: (i value addAll: (l select: [ :e | (e packageName copyUpTo: $-) = w ])) ].
 	^ o
 		collect: [ :e | 
 			e value size ~= 1

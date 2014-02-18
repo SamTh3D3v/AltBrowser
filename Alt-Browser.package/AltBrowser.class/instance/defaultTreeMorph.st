@@ -1,4 +1,4 @@
-user interface
+view
 defaultTreeMorph
 	^ super defaultTreeMorph
 		doubleClickSelector: #doubleClick;

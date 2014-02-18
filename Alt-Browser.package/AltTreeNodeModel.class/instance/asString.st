@@ -1,3 +1,3 @@
-accessing
+converting
 asString
 	^ item asStringIn: self

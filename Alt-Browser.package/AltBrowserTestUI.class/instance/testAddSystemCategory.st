@@ -12,7 +12,7 @@ testAddSystemCategory
 	self assert: n notNil.
 	n expand.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageTagNode(Core)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageTagNode(Alt-Testing-Underway-Core)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	browser treeMorph listManager setSelectedMorph: n.

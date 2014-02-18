@@ -1,4 +1,4 @@
-menu actions
+menu
 fileInSelections
 	"Instead of a ChangeRecord fileIn, we have a MCMethodDefinition we can install."
 

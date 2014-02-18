@@ -5,9 +5,5 @@ pragmas: aSymbol from: aClass to: aTarget
 	| pragmas |
 	pragmas := OrderedCollection new.
 	(aClass allSelectorsBelow: aTarget superclass)
-		do: [ :selector | 
-			(aClass lookupSelector: selector) pragmas
-				do: [ :pragma | 
-					pragma key == aSymbol
-						ifTrue: [ pragmas add: pragma ] ] ].
+		do: [ :selector | pragmas addAll: ((aClass lookupSelector: selector) pragmas select: [ :pragma | pragma key == aSymbol ]) ].
 	^ pragmas

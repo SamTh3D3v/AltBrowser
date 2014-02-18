@@ -8,7 +8,7 @@ dropItem: anItem
 			"This probably works."
 			anItem item category: self packageName.
 			^ self ].
-	(anItem isKindOf: AltMethodNode)
+	(anItem isMethodNode)
 		ifFalse: [ ^ self ].
 	cm := anItem compiledMethod.
 	cm methodClass organization

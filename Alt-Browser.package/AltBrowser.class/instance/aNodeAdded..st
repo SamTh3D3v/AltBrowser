@@ -12,7 +12,6 @@ aNodeAdded: anEvent
 			aNode := anEvent node.
 			(pNode := aNode parentNode) isNil
 				ifTrue: [ 
-					self assert: (aNode isKindOf: AltTreeNodeModel) not.
 					rootItems := nil.
 					self updateList ]
 				ifFalse: [ 

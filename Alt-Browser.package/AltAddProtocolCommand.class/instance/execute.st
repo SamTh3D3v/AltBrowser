@@ -31,12 +31,7 @@ execute
 	newName := UIManager default chooseOrRequestFrom: labels lines: lines title: 'Add Category'.
 	newName ifNil: [ ^ self ].
 	newName := newName asSymbol.
-	tClass
-		addCategory: newName
-		before:
-			((sItem item isKindOf: AltMethodCategoryNode)
-				ifTrue: [ sItem item item ]
-				ifFalse: [ nil ]).
+	tClass organization addCategory: newName.
 	requestor
 		selectPathForAbstractItem:
 			(sItem parentNode findItem: (sItem parentNode item findMethodCategory: newName in: tClass)) item

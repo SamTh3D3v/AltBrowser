@@ -35,6 +35,6 @@ itemOrganization
 							ending add: p.
 							true ]
 						ifFalse: [ false ] ] ].
-	origin do: [ :e | result add: e ].
+	result addAll: origin.
 	result addAll: ending.
 	^ result

@@ -1,4 +1,4 @@
-private
+items creation
 buildDiffCodePane
 	| old new |
 	old := listIndex = changeList size

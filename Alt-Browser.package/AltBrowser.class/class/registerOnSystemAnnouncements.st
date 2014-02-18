@@ -1,4 +1,4 @@
-initialization
+class initialization
 registerOnSystemAnnouncements
 	"Global registration to update the list."
 
