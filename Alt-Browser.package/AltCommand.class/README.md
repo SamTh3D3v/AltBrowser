@@ -1,4 +1,4 @@
-An ABCommand is in charge of preparing and executing commands on the Alt Browser.
+An AltCommand is in charge of preparing and executing commands on the Alt Browser.
 
 Instance Variables
 	requestor:	<Object>	The object sending the command. In my case, the AltBrowser instance.
