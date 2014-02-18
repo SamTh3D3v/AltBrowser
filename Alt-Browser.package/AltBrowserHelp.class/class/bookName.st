@@ -1,3 +1,3 @@
 accessing
 bookName
-	^ 'AltBrowser Help'
+	^ 'AltBrowser'
