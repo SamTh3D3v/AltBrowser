@@ -2,4 +2,4 @@ actions
 doubleClickOn: anAltTreeNodeModel in: anAltBrowser
 	"Action!"
 
-	AltBrowser fullOnPackage: self item in: anAltBrowser rbEnvironment
+	AltBrowser fullOnPackage: self rpackage in: anAltBrowser rbEnvironment

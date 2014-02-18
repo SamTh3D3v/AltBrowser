@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment packages includes: self rpackage
+	^ aRBEnvironment isSystem or: [ self contents anySatisfy: [ :e | e isInRBEnvironment: aRBEnvironment ] ]

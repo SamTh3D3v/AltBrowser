@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ (self contents select: [ :e | e isInRBEnvironment: aRBEnvironment ]) notEmpty
+	^ self contents anySatisfy: [ :e | e isInRBEnvironment: aRBEnvironment ]
