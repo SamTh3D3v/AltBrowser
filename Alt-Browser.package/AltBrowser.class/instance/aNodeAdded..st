@@ -6,15 +6,15 @@ aNodeAdded: anEvent
 
 	"Removed the invariant."
 
-	| pNode aNode |
+	| aNode |
 	self
 		withSelectionDo: [ 
 			aNode := anEvent node.
-			(pNode := aNode parentNode) isNil
-				ifTrue: [ 
+			aNode parentNode
+				ifNil: [ 
 					rootItems := nil.
 					self updateList ]
-				ifFalse: [ 
+				ifNotNil: [ :pNode | 
 					self treeMorph nodeList
 						do: [ :e | 
 							| r |

@@ -55,11 +55,11 @@
 		"temporary:" : "ThierryGoubier 2/14/2014 10:24:13" },
 	"instance" : {
 		"aMethodUpdated:" : "ThierryGoubier 2/18/2014 12:39",
-		"aNodeAdded:" : "ThierryGoubier 2/18/2014 12:39",
+		"aNodeAdded:" : "ThierryGoubier 2/20/2014 13:57",
 		"aNodeRebuilt:" : "ThierryGoubier 2/17/2014 18:00",
 		"aNodeRemoved:" : "ThierryGoubier 2/14/2014 10:24:13",
 		"aNodeUpdated:" : "ThierryGoubier 2/18/2014 12:39",
-		"aRootsChanged" : "ThierryGoubier 2/14/2014 10:24:13",
+		"aRootsChanged" : "ThierryGoubier 2/20/2014 13:55",
 		"acceptDroppingMorph:event:inMorph:" : "ThierryGoubier 2/14/2014 10:24:13",
 		"addModelItemsToWindowMenu:" : "ThierryGoubier 2/17/2014 17:37",
 		"browseFinderResults" : "ThierryGoubier 2/17/2014 17:52",
@@ -101,4 +101,4 @@
 		"updateTitle" : "ThierryGoubier 2/14/2014 10:24:13",
 		"updateTreeKeymap" : "ThierryGoubier 2/14/2014 10:24:13",
 		"wantsDroppedMorph:event:inMorph:" : "ThierryGoubier 2/14/2014 10:24:13",
-		"withSelectionDo:" : "ThierryGoubier 2/18/2014 10:01" } }
+		"withSelectionDo:" : "ThierryGoubier 2/20/2014 14:08" } }
