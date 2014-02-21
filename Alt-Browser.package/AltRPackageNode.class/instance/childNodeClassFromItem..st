@@ -1,6 +1,6 @@
 private
 childNodeClassFromItem: anItem
-	((anItem isKindOf: RPackage) and: [ self item packageName = anItem packageName ])
+	((anItem isKindOf: RPackage) and: [ self packageName = anItem packageName ])
 		ifTrue: [ ^ AltRPackageExtensionNode ].
 	(anItem isKindOf: RPackageTag)
 		ifTrue: [ ^ AltRPackageTagNode ].

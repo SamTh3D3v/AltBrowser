@@ -4,12 +4,12 @@ childrenItems
 
 	| o aRPackage |
 	o := OrderedCollection new.
-	aRPackage := self item packageSet packages first.
+	aRPackage := self rpackage.
 	aRPackage classTags isEmpty
 		ifTrue: [ ^ {aRPackage} , (self class orderClasses: aRPackage definedClasses asOrderedCollection) ].
 	(aRPackage classTags sorted: [ :a :b | a name < b name ])
 		do: [ :tag | 
-			tag name = self item packageName
+			tag name = self packageName
 				ifTrue: [ o := ((self class orderClasses: tag classes asOrderedCollection) , o) asOrderedCollection ]
 				ifFalse: [ o add: tag ] ].
 	o addFirst: aRPackage.	"Extensions, even if empty."

@@ -1,5 +1,5 @@
 accessing
 icon
-	^ item modified
+	^ self mcWorkingCopy modified
 		ifTrue: [ #dirtyPackageIcon ]
 		ifFalse: [ #packageIcon ]

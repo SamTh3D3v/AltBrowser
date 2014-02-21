@@ -6,7 +6,7 @@ aMethodRecategorized: anEvent
 
 	| sub rpackage |
 	sub := self contents inject: false into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ].
-	rpackage := self item packageSet packages first.
+	rpackage := self rpackage.
 	((rpackage isYourClassExtension: anEvent newProtocol) or: [ rpackage isYourClassExtension: anEvent oldProtocol ])
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.

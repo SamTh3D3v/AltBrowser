@@ -8,7 +8,7 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 	aCategoryDefinition isArray
 		ifTrue: [ 
 			i := aCategoryDefinition first -> OrderedCollection new.
-			i value addAll: (aCategoryDefinition allButFirst collect: [ :each | (self getItemsFor: each from: aListOfPackages) ] )]
+			i value addAll: (aCategoryDefinition allButFirst collect: [ :each | self getItemsFor: each from: aListOfPackages ]) ]
 		ifFalse: [ 
 			i := aCategoryDefinition -> OrderedCollection new.
 			aListOfPackages
@@ -16,9 +16,7 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 					(i value
 						addAll:
 							(aListOfPackages
-								select: [ :e | 
-									e packageName size >= aCategoryDefinition size
-										and: [ (e packageName copyFrom: 1 to: aCategoryDefinition size) = aCategoryDefinition ] ])).
+								select: [ :e | e size >= aCategoryDefinition size and: [ (e copyFrom: 1 to: aCategoryDefinition size) = aCategoryDefinition ] ])).
 			i value size == 1
 				ifTrue: [ ^ i value first ] ].
 	^ i
