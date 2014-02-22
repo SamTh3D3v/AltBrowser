@@ -5,7 +5,7 @@ aNodeRebuilt: anEvent
 	| r result |
 	self
 		withSelectionDo: [ 
-			self treeMorph nodeList detect: [ :rootItem | (result := rootItem findItem: anEvent node) notNil ] ifNone: [ ^ self ].
+			(self treeMorph nodeList anySatisfy: [ :rootItem | (result := rootItem findItem: anEvent node) notNil ]) ifFalse: [ ^ self ].
 			result notNil
 				ifTrue: [ 
 					result rebuildContents.

@@ -10,6 +10,4 @@ aMethodRemoved: anEvent
 			(item organization categories includes: anEvent protocol)
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	anEvent methodClass == item class
-		ifTrue: [ ^ self contents first aMethodRemoved: anEvent ].
-	^ false
+	^ anEvent methodClass == item class and: [ self contents first aMethodRemoved: anEvent ]

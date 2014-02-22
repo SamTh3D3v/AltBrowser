@@ -3,4 +3,5 @@ navigationCommands
 	<treeAreaCommand>
 	^ {AltGoToSuperclassCommand.
 	AltGoToSubclassCommand.
-	AltNextSiblingClassCommand}
+	AltNextSiblingClassCommand.
+	AltClassHierarchyCommand}

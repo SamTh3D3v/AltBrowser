@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ true
+	^ requestor class temporary notNil

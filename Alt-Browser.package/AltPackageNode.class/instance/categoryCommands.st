@@ -2,4 +2,4 @@ commands
 categoryCommands
 	<treeAreaCommand>
 	
-	^ {AltRenameCategoryCommand. AltAddCategoryCommand. AltRemoveCategoryCommand}
+	^ {AltRenameCategoryCommand. AltAddSystemCategoryCommand. AltRemoveCategoryCommand}

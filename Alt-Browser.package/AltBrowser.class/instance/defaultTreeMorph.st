@@ -1,4 +1,4 @@
-user interface
+view
 defaultTreeMorph
 	^ super defaultTreeMorph
 		doubleClickSelector: #doubleClick;
@@ -6,4 +6,5 @@ defaultTreeMorph
 		getMenuSelector: #buildTreeMenu:;
 		dragEnabled: true;
 		dropEnabled: true;
-		withHLines: false
+		withHLines: false;
+		yourself

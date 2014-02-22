@@ -1,4 +1,4 @@
-updating
+selecting
 selection: anItem
 	"It goes directly here."
 
@@ -11,17 +11,17 @@ selection: anItem
 		ifTrue: [ sel := anItem selectedNodePath last ].
 	super selection: anItem.
 	self isSelectionUpdate
+		ifTrue: [ ^ self ].
+	self updateTextKeymap.
+	self updateTreeKeymap.
+	self updateTitle.
+	sel isNil
+		ifTrue: [ 
+			textMorph classOrMetaClass: nil.
+			self source aboutToStyle: false.
+			self source contents: '' ]
 		ifFalse: [ 
-			self updateTextKeymap.
-			self updateTreeKeymap.
-			self updateTitle.
-			sel isNil
-				ifTrue: [ 
-					textMorph classOrMetaClass: nil.
-					self source aboutToStyle: false.
-					self source contents: '' ]
-				ifFalse: [ 
-					textMorph classOrMetaClass: sel styleClass.
-					self source aboutToStyle: sel isStyled.
-					self source contents: sel sourceCode.
-					self history add: sel ] ]
+			textMorph classOrMetaClass: sel styleClass.
+			self source aboutToStyle: sel isStyled.
+			self source contents: sel sourceCode.
+			self history add: sel ]

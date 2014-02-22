@@ -1,3 +1,3 @@
-*alt-browser-rb-commands
+*Alt-Browser-Commands-Refactoring
 altTextCommands
 	^ #()

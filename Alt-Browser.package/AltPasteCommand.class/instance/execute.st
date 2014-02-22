@@ -1,6 +1,10 @@
 execution
 execute
-	"Get the temporary from the AltBrowser and try a move (a drop, maybe ?)"
+	"Verify that we can paste there."
 
-	(requestor selectedNode item dropItem: AltBrowser temporary) isNil
-		ifFalse: [ AltBrowser temporary: nil ]
+	AltBrowser temporary
+		ifNotNil: [ :dropItem | 
+			(requestor selectedNode item acceptDropItem: dropItem)
+				ifTrue: [ 
+					requestor selectedNode item dropItem: dropItem.
+					AltBrowser temporary: nil ] ]

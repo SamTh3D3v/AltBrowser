@@ -1,10 +1,17 @@
 updating
 aMethodRecategorized: anEvent
 	"Are we concerned by that event ? Yes if we are the right class and the right method category."
+	
+	"On a recategorization which concerns us, eventually cleans the extension protocol if empty."
 
 	(anEvent methodClass == self sourceClass
-		and: [ anEvent newProtocol = self methodCategory or: [ anEvent oldProtocol = self methodCategory ] ])
+		and: [ 
+			(anEvent newProtocol asLowercase beginsWith: self methodCategory)
+				or: [ anEvent oldProtocol asLowercase beginsWith: self methodCategory ] ])
 		ifTrue: [ 
+			(anEvent methodClass organization categories
+				select: [ :e | (e name asLowercase beginsWith: self methodCategory) and: [ e isEmpty ] ])
+				do: [ :e | anEvent methodClass organization removeCategory: e name ].
 			AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ false

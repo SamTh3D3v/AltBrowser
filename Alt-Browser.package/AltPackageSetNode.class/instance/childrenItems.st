@@ -6,10 +6,9 @@ childrenItems
 
 	| o |
 	o := OrderedCollection new.
-	self item packageSet packages
+	(self item packageSet packages sorted: [ :a :b | a name < b name ])
 		do: [ :package | 
 			package name = self item packageName
-				ifTrue: [ 
-					o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o) asOrderedCollection ]
+				ifTrue: [ o := ({package} , (self class orderClasses: package definedClasses asOrderedCollection) , o) asOrderedCollection ]
 				ifFalse: [ o add: package ] ].
 	^ o

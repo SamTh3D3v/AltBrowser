@@ -17,6 +17,4 @@ aMethodRecategorized: anEvent
 					AltBrowser aNodeToRebuilt: self.
 					^ true ].
 			^ true ].
-	anEvent methodClass == item class
-		ifTrue: [ ^ self contents first aMethodRecategorized: anEvent ].
-	^ false
+	^ anEvent methodClass == item class and: [ self contents first aMethodRecategorized: anEvent ]
