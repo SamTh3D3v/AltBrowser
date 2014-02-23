@@ -14,7 +14,7 @@ aNodeRemoved: anEvent
 							r == e
 								ifTrue: [ 
 									rootItems := nil.
-									self updateList ]
+									self changed: #rootNodes ]
 								ifFalse: [ 
 									| n |
 									r parentNode contents remove: r.

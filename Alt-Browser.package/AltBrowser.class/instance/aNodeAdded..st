@@ -13,7 +13,7 @@ aNodeAdded: anEvent
 			aNode parentNode
 				ifNil: [ 
 					rootItems := nil.
-					self updateList ]
+					self changed: #rootNodes ]
 				ifNotNil: [ :pNode | 
 					self treeMorph nodeList
 						do: [ :e | 
