@@ -1,8 +1,7 @@
 accessing
 addChildItem: anItem
-	"Add a child, but do it according to it's position."
+	"In this type of node, add the item to the value."
 
-	self contents.	"Force contents creation."
 	item value add: anItem item.
 	anItem parentNode: self.
-	^ contents add: anItem
+	^ super addChildItem: anItem

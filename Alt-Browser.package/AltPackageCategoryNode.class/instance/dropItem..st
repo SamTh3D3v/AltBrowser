@@ -14,6 +14,6 @@ dropItem: anItem
 				ifTrue: [ 
 					AltBrowser rootItems add: anItem before: self.
 					anItem parentNode: nil ]
-				ifFalse: [ self parentNode addChildItem: anItem beforeIndex: (self parentNode contents indexOf: self) ] ].
+				ifFalse: [ self parentNode addChildItem: anItem ] ].
 	AltBrowser announcer announce: (AltNodeAdded node: anItem).
 	^ anItem
