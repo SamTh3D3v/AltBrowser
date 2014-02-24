@@ -1,21 +1,14 @@
 drag and drop
 dropItem: anItem
-	"Ok. If we receive a category or a package we either add it to its
-	children (if it has no children ?) or add it just before this item?"
+	"Fairly complex logic to handle between adding stuff inside or moving it around. May send two aRootNodesChange in a row. If we consider that things are ordered, then this may be simplified by just adding things inside others."
 
 	anItem parentNode isNil
-		ifTrue: [ AltBrowser rootItems remove: anItem ]
-		ifFalse: [ anItem parentNode removeRPackage: anItem item ].
-	AltBrowser announcer announce: (AltNodeRemoved node: anItem).
-	self childrenItems isEmpty
-		ifTrue: [ self addRPackage: anItem item ]
+		ifTrue: [ 
+			AltBrowser rootItems remove: anItem.
+			AltBrowser aRootNodesChange ]
 		ifFalse: [ 
-			self parentNode isNil
-				ifTrue: [ 
-					AltBrowser rootItems add: anItem before: self.
-					anItem parentNode: nil.
-					AltBrowser aNodeAdded: anItem ]
-				ifFalse: [ 
-					self parentNode addRPackage: anItem item.
-					AltBrowser aNodeToRebuilt: self parentNode ] ].
+			anItem parentNode removeRPackage: anItem item.
+			AltBrowser aNodeToRebuilt: anItem parentNode ].
+	self addRPackage: anItem item.
+	AltBrowser aNodeToRebuilt: self.
 	^ anItem
