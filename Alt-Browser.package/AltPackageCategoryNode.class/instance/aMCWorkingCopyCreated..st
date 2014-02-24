@@ -4,7 +4,7 @@ aMCWorkingCopyCreated: anEvent
 
 	(item key , '*' match: anEvent workingCopy packageName)
 		ifTrue: [ 
-			self addChild: anEvent workingCopy packageName.
+			self item value add: anEvent workingCopy packageName.
 			AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ self contents inject: false into: [ :bool :each | (each aMCWorkingCopyCreated: anEvent) or: [ bool ] ]

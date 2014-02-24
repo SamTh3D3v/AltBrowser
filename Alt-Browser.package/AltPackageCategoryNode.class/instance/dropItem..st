@@ -5,15 +5,17 @@ dropItem: anItem
 
 	anItem parentNode isNil
 		ifTrue: [ AltBrowser rootItems remove: anItem ]
-		ifFalse: [ anItem parentNode removeChildItem: anItem ].
+		ifFalse: [ anItem parentNode removeRPackage: anItem item ].
 	AltBrowser announcer announce: (AltNodeRemoved node: anItem).
 	self childrenItems isEmpty
-		ifTrue: [ self addChildItem: anItem ]
+		ifTrue: [ self addRPackage: anItem item ]
 		ifFalse: [ 
 			self parentNode isNil
 				ifTrue: [ 
 					AltBrowser rootItems add: anItem before: self.
-					anItem parentNode: nil ]
-				ifFalse: [ self parentNode addChildItem: anItem ] ].
-	AltBrowser announcer announce: (AltNodeAdded node: anItem).
+					anItem parentNode: nil.
+					AltBrowser aNodeAdded: anItem ]
+				ifFalse: [ 
+					self parentNode addRPackage: anItem item.
+					AltBrowser aNodeToRebuilt: self parentNode ] ].
 	^ anItem

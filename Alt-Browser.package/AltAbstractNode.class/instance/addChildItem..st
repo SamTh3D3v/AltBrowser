@@ -1,10 +1,10 @@
 accessing
-addChildItem: anItem
+addChildItem: aNode
 	"This implementation tries to handle contents as a cache."
 
 	| d |
-	anItem parentNode: self.
+	aNode parentNode: self.
 	self childrenItems isEmpty
-		ifTrue: [ ^ self contents add: anItem ].
-	d := self childrenItems indexOf: anItem item.
-	^ contents add: anItem beforeIndex: d
+		ifTrue: [ ^ self contents add: aNode ].
+	d := self childrenItems indexOf: aNode item.
+	^ contents add: aNode beforeIndex: d
