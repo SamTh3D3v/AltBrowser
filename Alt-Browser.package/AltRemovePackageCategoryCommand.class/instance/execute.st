@@ -6,8 +6,8 @@ execute
 	item := requestor selectedNode item.
 	item parentNode notNil
 		ifTrue: [ 
-			item parentNode removeChildItem: item.
+			item parentNode removeRPackage: item item.
 			AltBrowser aNodeToRebuilt: item parentNode ]
 		ifFalse: [ 
 			AltBrowser rootItems remove: item.
-			AltBrowser aNodeRemoved: item ]
+			AltBrowser aRootNodesChange ]

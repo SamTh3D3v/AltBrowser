@@ -7,12 +7,12 @@ testAddRemoveSystemCategory
 	[ 
 	Smalltalk globals organization addCategory: #'Alt-Testing-Underway-Core'.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageNode(Alt-Testing-Underway)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageNode(Alt-Testing-Underway)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	n expand.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageTagNode(Alt-Testing-Underway-Core)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(Alt-Testing-Underway-Core)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	browser treeMorph listManager setSelectedMorph: n.
@@ -23,7 +23,7 @@ testAddRemoveSystemCategory
 	n complexContents item item package removeClassTag: #'Alt-Testing-Underway-Core'.
 	Smalltalk globals organization removeCategory: #'Alt-Testing-Underway-Core'.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltRPackageTagNode(Alt-Testing-Underway-Core)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(Alt-Testing-Underway-Core)' ]
 		ifNone: [  ].
 	self assert: n isNil ]
 		ensure: [ Smalltalk globals organization removeCategory: #'Alt-Testing-Underway-Core' ]

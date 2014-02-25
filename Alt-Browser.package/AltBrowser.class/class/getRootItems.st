@@ -21,4 +21,4 @@ getRootItems
 		collect: [ :e | 
 			e value size ~= 1
 				ifTrue: [ AltPackageCategoryNode with: e ]
-				ifFalse: [ AltRPackageNode with: e value first ] ]
+				ifFalse: [ AltPackageNode with: e value first ] ]

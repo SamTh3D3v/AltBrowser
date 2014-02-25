@@ -1,6 +1,6 @@
 drag and drop
 dropItem: anItem
-	"Fairly complex logic to handle between adding stuff inside or moving it around. May send two aRootNodesChange in a row. If we consider that things are ordered, then this may be simplified by just adding things inside others."
+	"Simplify: as things are ordered, the only allowed move is drop inside another."
 
 	anItem parentNode isNil
 		ifTrue: [ 

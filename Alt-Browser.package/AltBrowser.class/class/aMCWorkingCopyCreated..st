@@ -9,6 +9,6 @@ aMCWorkingCopyCreated: anEvent
 	| node |
 	(self rootItems inject: false into: [ :bool :root | (root aMCWorkingCopyCreated: anEvent) or: [ bool ] ])
 		ifTrue: [ ^ self ].
-	node := AltRPackageNode with: anEvent workingCopy packageName asSymbol.
+	node := AltPackageNode with: anEvent workingCopy packageName asSymbol.
 	self rootItems add: node.
 	self announcer announce: (AltNodeAdded node: node)
