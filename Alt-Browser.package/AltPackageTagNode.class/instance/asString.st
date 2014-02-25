@@ -1,3 +1,3 @@
 printing
 asString
-	^ item categoryName
+	^ self categoryName

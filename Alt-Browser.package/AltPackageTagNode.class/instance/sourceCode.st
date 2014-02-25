@@ -6,4 +6,4 @@ sourceCode
 	instanceVariableNames: ''''
 	classVariableNames: ''''
 	poolDictionaries: ''''
-	category: ''' , self item categoryName, ''''
+	category: ''' , self categoryName , ''''

@@ -4,7 +4,5 @@ dropItem: anItem
 
 	"This probably works."
 
-	anItem class == AltClassNode
-		ifFalse: [ ^ self ].
-	anItem item category: item categoryName.
+	anItem item category: self categoryName.
 	^ self

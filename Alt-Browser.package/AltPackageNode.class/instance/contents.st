@@ -15,13 +15,16 @@ contents
 				ifFalse: [ 
 					contents := OrderedCollection
 						streamContents: [ :stream | 
+							| rootTag |
 							stream nextPut: (AltPackageExtensionNode with: self packageName parent: self).
-							(aRPackage classTags sorted: [ :a :b | a name = self packageName or: [ a name < b name ] ])
-								do: [ :tag | 
-									tag name = self packageName
-										ifTrue: [ 
-											stream
-												nextPutAll:
-													((self class orderClasses: tag classes asOrderedCollection) collect: [ :e | AltClassNode with: e parent: self ]) ]
-										ifFalse: [ stream nextPut: (AltPackageTagNode with: tag parent: self) ] ] ] ] ].
+							rootTag := aRPackage classTags detect: [ :e | e name = self packageName ] ifNone: [  ].
+							stream
+								nextPutAll:
+									(((aRPackage classTags reject: [ :a | a name = self packageName ]) sorted: [ :a :b | a name < b name ])
+										collect: [ :a | AltPackageTagNode with: a categoryName asSymbol parent: self ]).
+							rootTag
+								ifNotNil: [ 
+									stream
+										nextPutAll:
+											((self class orderClasses: rootTag classes asOrderedCollection) collect: [ :e | AltClassNode with: e parent: self ]) ] ] ] ].
 	^ contents

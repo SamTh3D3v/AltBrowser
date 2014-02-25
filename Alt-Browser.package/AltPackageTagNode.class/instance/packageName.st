@@ -1,3 +1,3 @@
 accessing
 packageName
-	^ self item packageName
+	^ self parentNode packageName
