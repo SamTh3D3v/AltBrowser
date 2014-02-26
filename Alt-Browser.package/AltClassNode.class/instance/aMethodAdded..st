@@ -4,10 +4,10 @@ aMethodAdded: anEvent
 
 	"Would be simpler if protocol creation were announced. They are not."
 
-	anEvent methodClass == item
+	anEvent methodClass == self itemClass
 		ifTrue: [ 
 			self contents do: [ :each | each aMethodAdded: anEvent ].
 			((self contents select: [ :e | e item = anEvent protocol ]) size < 1 or: [ anEvent protocol = 'no messages' ])
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	^ anEvent methodClass == item class and: [ self contents first aMethodAdded: anEvent ]
+	^ anEvent methodClass == self itemClass and: [ self contents first aMethodAdded: anEvent ]

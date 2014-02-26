@@ -1,0 +1,3 @@
+private
+privateClass
+	^ self itemClass

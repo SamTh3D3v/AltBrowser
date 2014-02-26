@@ -1,3 +1,3 @@
 accessing
 subclasses
-	^ item subclasses
+	^ self itemClass subclasses

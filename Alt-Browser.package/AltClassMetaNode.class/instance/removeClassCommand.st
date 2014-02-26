@@ -1,0 +1,4 @@
+commands
+removeClassCommand
+	<treeAreaCommand>
+	^ {}

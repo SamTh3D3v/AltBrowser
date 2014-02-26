@@ -15,13 +15,7 @@ aNodeAdded: anEvent
 					rootItems := nil.
 					self updateList ]
 				ifNotNil: [ :pNode | 
-					self treeMorph nodeList
-						do: [ :e | 
-							| r |
-							(r := e findItem: pNode) notNil
-								ifTrue: [ 
-									| n |
-									r rebuildChildren.
-									(n := self findMorphNodeForItem: r) notNil
-										ifTrue: [ n rebuildChildren ].
-									^ self ] ] ] ]
+					(self findMorphNodeForAbstractItem: pNode)
+						ifNotNil: [ :aMorph | 
+							aMorph complexContents rebuildContents.
+							aMorph rebuildChildren ] ] ]

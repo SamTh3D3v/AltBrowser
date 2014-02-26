@@ -4,10 +4,10 @@ aMethodRemoved: anEvent
 
 	"Would be simpler if protocol creation were announced. They are not."
 
-	anEvent methodClass == item
+	anEvent methodClass == self itemClass
 		ifTrue: [ 
 			self contents do: [ :each | each aMethodRemoved: anEvent ].
-			(item organization realCategories includes: anEvent protocol)
+			(self itemClass organization realCategories includes: anEvent protocol)
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	^ anEvent methodClass == item class and: [ self contents first aMethodRemoved: anEvent ]
+	^ anEvent methodClass == self itemClass and: [ self contents first aMethodRemoved: anEvent ]

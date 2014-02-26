@@ -6,4 +6,4 @@ doubleClickOn: anAltTreeNodeModel in: anAltBrowser
 	aRBEnv := anAltBrowser rbEnvironment isSelectorEnvironment
 		ifTrue: [ anAltBrowser rbEnvironment environment ]
 		ifFalse: [ anAltBrowser rbEnvironment ].
-	AltBrowser fullOnClass: self item in: aRBEnv
+	AltBrowser fullOnClass: self itemClass in: aRBEnv

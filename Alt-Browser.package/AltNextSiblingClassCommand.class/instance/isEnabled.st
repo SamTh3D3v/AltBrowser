@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ requestor selectedNode item item superclass notNil
+	^ requestor selectedNode item superclass notNil

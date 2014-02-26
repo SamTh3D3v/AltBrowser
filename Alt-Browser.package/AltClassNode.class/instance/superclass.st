@@ -1,3 +1,3 @@
 accessing
 superclass
-	^ item superclass
+	^ self itemClass superclass
