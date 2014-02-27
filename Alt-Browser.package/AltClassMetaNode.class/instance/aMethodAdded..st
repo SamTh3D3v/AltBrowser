@@ -11,4 +11,4 @@ aMethodAdded: anEvent
 				size < 1 or: [ anEvent protocol = 'no messages' ])
 				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	^ self contents first aMethodAdded: anEvent
+	^ false

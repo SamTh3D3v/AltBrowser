@@ -10,4 +10,4 @@ aMethodRemoved: anEvent
 			(self itemClass organization realCategories includes: anEvent protocol)
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	^ self contents first aMethodRemoved: anEvent
+	^ false

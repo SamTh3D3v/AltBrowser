@@ -20,4 +20,4 @@ aMethodRecategorized: anEvent
 					AltBrowser aNodeToRebuilt: self.
 					^ true ].
 			^ true ].
-	^ self contents first aMethodRecategorized: anEvent
+	^ false
