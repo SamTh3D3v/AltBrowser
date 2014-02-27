@@ -6,5 +6,5 @@ execute
 	name notNil
 		ifTrue: [ 
 			Smalltalk globals organization removeCategory: name.
-			sItem item package removeClassTag: name ].
-	requestor selectPathForAbstractItem: sItem parentNode
+			sItem rpackage removeClassTag: name ].
+	requestor selectPathForAbstractItem: sItem parent

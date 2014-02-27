@@ -4,5 +4,5 @@ accept: aText notifying: aController
 	
 	"I have a problem there: the Class comment node is recreated on update and therefore the system loses the focus."
 
-	self item comment: aText.
+	self itemClass comment: aText.
 	^ self

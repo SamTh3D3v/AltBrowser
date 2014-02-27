@@ -1,3 +1,3 @@
 instance creation
-with: anItem
-	^ self new item: anItem
+with: aCodeObject
+	^ self new code: aCodeObject

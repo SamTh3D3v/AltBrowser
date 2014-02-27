@@ -2,5 +2,5 @@ querying
 sourceCode
 	"A description of the group."
 	
-	^ 'Package group : ', item key, '
-	All packages classified under the term ', item key
+	^ 'Package group : ', code key, '
+	All packages classified under the term ', code key

@@ -1,3 +1,3 @@
 querying
 sourceCode
-	^ self item definition
+	^ self itemClass definition

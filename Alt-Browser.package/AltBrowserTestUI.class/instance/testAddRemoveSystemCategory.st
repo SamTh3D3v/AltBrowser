@@ -20,7 +20,7 @@ testAddRemoveSystemCategory
 		adjustSubmorphPositions;
 		scrollSelectionIntoView.
 	self assert: browser selectedItem == n complexContents.
-	n complexContents item item package removeClassTag: #'Alt-Testing-Underway-Core'.
+	n complexContents item rpackage removeClassTag: #'Alt-Testing-Underway-Core'.
 	Smalltalk globals organization removeCategory: #'Alt-Testing-Underway-Core'.
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(Alt-Testing-Underway-Core)' ]

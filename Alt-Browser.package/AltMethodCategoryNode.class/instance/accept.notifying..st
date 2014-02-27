@@ -6,9 +6,9 @@ accept: aText notifying: aController
 	self methodCategory = 'no messages'
 		ifTrue: [ 
 			aSelector := self sourceClass compile: aText.
-			self parentNode rebuildContents ]
+			self parent rebuildContents ]
 		ifFalse: [ 
 			aSelector := self sourceClass compile: aText classified: self methodCategory notifying: aController.
 			self rebuildContents ].
-	aMethodNode := self parentNode findMethod: aSelector in: self sourceClass.
+	aMethodNode := self parent findMethod: aSelector in: self sourceClass.
 	^ aMethodNode

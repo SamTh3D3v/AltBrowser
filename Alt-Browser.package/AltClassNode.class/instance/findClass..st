@@ -1,5 +1,5 @@
 querying
 findClass: aClass
-	^ self item == aClass
+	^ self itemClass == aClass
 		ifTrue: [ self ]
 		ifFalse: [ super findClass: aClass ]

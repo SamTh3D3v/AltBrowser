@@ -8,7 +8,7 @@ aMCWorkingCopyDeleted: anEvent
 		ifNotNil: [ :node | 
 			(node aMCWorkingCopyDeleted: anEvent)
 				ifTrue: [ 
-					self removeRPackage: node item.
+					self removeRPackage: node packageName.
 					AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false

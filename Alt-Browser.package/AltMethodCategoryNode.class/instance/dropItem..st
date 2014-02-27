@@ -1,11 +1,6 @@
 drag and drop
 dropItem: anItem
-	"Either change a method protocol or copy a method from one class to another."
+	"Either change a method protocol or copy a method from one class to another. In fact, recompiling the method whatever the context should give us the correct result."
 
-	anItem sourceClass == self sourceClass
-		ifFalse: [ self sourceClass compile: anItem sourceCode classified: self methodCategory notifying: nil ]
-		ifTrue: [ 
-			| cm |
-			cm := anItem compiledMethod.
-			cm methodClass organization classify: anItem item under: self methodCategory suppressIfDefault: false ].
+	self sourceClass compile: anItem sourceCode classified: self methodCategory notifying: nil.
 	^ self

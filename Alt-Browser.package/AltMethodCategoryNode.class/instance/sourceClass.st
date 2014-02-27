@@ -1,3 +1,3 @@
 querying
 sourceClass
-	^ self parentNode item
+	^ self parent itemClass

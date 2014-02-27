@@ -4,5 +4,5 @@ dropItem: anItem
 
 	"This probably works."
 
-	anItem item category: self categoryName.
+	anItem itemClass category: self categoryName.
 	^ self

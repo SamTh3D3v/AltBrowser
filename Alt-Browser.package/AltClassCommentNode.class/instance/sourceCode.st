@@ -1,3 +1,3 @@
 querying
 sourceCode
-	^ self item comment
+	^ self itemClass comment

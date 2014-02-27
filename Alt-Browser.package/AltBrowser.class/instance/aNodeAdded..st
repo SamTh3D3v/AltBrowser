@@ -10,7 +10,7 @@ aNodeAdded: anEvent
 	self
 		withSelectionDo: [ 
 			aNode := anEvent node.
-			aNode parentNode
+			aNode parent
 				ifNil: [ 
 					rootItems := nil.
 					self updateList ]

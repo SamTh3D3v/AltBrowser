@@ -2,14 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aClassCommented:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"aMethodAdded:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"aMethodRecategorized:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"aMethodRemoved:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"accept:notifying:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"asString" : "ThierryGoubier 2/25/2014 16:06:41",
-		"contents" : "ThierryGoubier 2/25/2014 16:06:41",
-		"findClassComment:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"icon" : "ThierryGoubier 2/25/2014 16:06:41",
-		"isInRBEnvironment:" : "ThierryGoubier 2/25/2014 16:06:41",
-		"sourceCode" : "ThierryGoubier 2/25/2014 16:06:41" } }
+		"aClassCommented:" : "ThierryGoubier 2/27/2014 11:11",
+		"aMethodAdded:" : "ThierryGoubier 2/26/2014 21:52:21",
+		"aMethodRecategorized:" : "ThierryGoubier 2/26/2014 21:52:21",
+		"aMethodRemoved:" : "ThierryGoubier 2/26/2014 21:52:21",
+		"accept:notifying:" : "ThierryGoubier 2/27/2014 09:57",
+		"asString" : "ThierryGoubier 2/26/2014 21:52:21",
+		"contents" : "ThierryGoubier 2/26/2014 21:52:21",
+		"findClassComment:" : "ThierryGoubier 2/27/2014 11:11",
+		"icon" : "ThierryGoubier 2/27/2014 09:57",
+		"isInRBEnvironment:" : "ThierryGoubier 2/26/2014 21:52:21",
+		"itemClass" : "ThierryGoubier 2/27/2014 11:11",
+		"sourceCode" : "ThierryGoubier 2/27/2014 09:58" } }

@@ -1,3 +1,3 @@
 accessing
 methodCategory
-	^ self parentNode methodCategory
+	^ self parent methodCategory

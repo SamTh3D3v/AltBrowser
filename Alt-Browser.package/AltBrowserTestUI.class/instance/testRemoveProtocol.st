@@ -22,11 +22,11 @@ testRemoveProtocol
 	n expand.
 	(Smalltalk at: #AltTestingClass) addCategory: #test before: nil.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item isMethodCategoryNode and: [ aNodeMorph complexContents item item = #test ] ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item isMethodCategoryNode and: [ aNodeMorph complexContents item methodCategory = #test ] ]
 		ifNone: [  ].
 	self assert: n notNil.
 	(Smalltalk at: #AltTestingClass) organization removeCategory: #test.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item isMethodCategoryNode and: [ aNodeMorph complexContents item item = #test ] ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item isMethodCategoryNode and: [ aNodeMorph complexContents item methodCategory = #test ] ]
 		ifNone: [  ].
 	self assert: n isNil

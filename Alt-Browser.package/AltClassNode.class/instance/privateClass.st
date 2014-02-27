@@ -1,3 +1,3 @@
 private
 privateClass
-	^ self item
+	^ self itemClass

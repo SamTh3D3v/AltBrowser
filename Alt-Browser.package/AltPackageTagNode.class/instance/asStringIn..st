@@ -4,7 +4,7 @@ asStringIn: anAltTreeNodeModel
 
 	| string parentString |
 	string := self asString.
-	(parentNode isNil or: [ anAltTreeNodeModel parentNode isNil ])
+	(parent isNil or: [ anAltTreeNodeModel parentNode isNil ])
 		ifTrue: [ ^ string ].
 	parentString := anAltTreeNodeModel parentNode item asString.
 	((string beginsWith: parentString) and: [ string ~= parentString ])

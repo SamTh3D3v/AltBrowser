@@ -7,5 +7,5 @@ execute
 	self assert: tClass notNil.
 	(AltBrowser rootItems anySatisfy: [ :each | (tClassNode := each findClass: tClass) notNil ])
 		ifFalse: [ ^ self ].
-	tMethodNode := tClassNode findMethod: requestor selectedNode item item in: tClass.
+	tMethodNode := tClassNode findMethod: requestor selectedNode item selector in: tClass.
 	requestor selectPathForAbstractItem: tMethodNode

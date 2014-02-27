@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesProtocol: item in: self sourceClass
+	^ aRBEnvironment includesProtocol: code in: self sourceClass

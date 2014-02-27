@@ -1,3 +1,3 @@
 accessing
 compiledMethod
-	^ self parentNode privateClass compiledMethodAt: self item
+	^ self parent privateClass compiledMethodAt: self selector

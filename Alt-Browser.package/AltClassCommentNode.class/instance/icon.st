@@ -1,5 +1,5 @@
 accessing
 icon
-	^ self item hasComment
+	^ self itemClass hasComment
 		ifTrue: [ nil ]
 		ifFalse: [ #uncommentedClassIcon ]

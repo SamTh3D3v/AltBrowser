@@ -5,5 +5,5 @@ accept: aText notifying: aController
 	| aSelector aMethodNode |
 	aSelector := self sourceClass compile: aText classified: self methodCategory notifying: aController.	"New node should have been added in there."
 	self rebuildContents.
-	aMethodNode := self parentNode findMethod: aSelector in: self sourceClass.
+	aMethodNode := self parent findMethod: aSelector in: self sourceClass.
 	^ aMethodNode

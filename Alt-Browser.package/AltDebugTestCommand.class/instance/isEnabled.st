@@ -1,3 +1,4 @@
 testing
 isEnabled
-	^ (requestor selectedNode sourceClass inheritsFrom: TestCase) and: [ requestor selectedNode item item beginsWith: 'test' ]
+	^ (requestor selectedNode sourceClass inheritsFrom: TestCase)
+		and: [ requestor selectedNode item selector beginsWith: 'test' ]

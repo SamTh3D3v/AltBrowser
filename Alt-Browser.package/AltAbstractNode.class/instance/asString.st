@@ -1,3 +1,3 @@
 printing
 asString
-	^ item asString
+	^ code asString

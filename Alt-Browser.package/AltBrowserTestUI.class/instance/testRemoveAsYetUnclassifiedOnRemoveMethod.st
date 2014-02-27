@@ -24,13 +24,13 @@ testRemoveAsYetUnclassifiedOnRemoveMethod
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
 			aNodeMorph complexContents item isMethodCategoryNode
-				and: [ aNodeMorph complexContents item item = #'as yet unclassified' ] ]
+				and: [ aNodeMorph complexContents item methodCategory = #'as yet unclassified' ] ]
 		ifNone: [  ].
 	self assert: n notNil.
 	(Smalltalk at: #AltTestingClass) removeSelector: #test.
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
 			aNodeMorph complexContents item isMethodCategoryNode
-				and: [ aNodeMorph complexContents item item = #'as yet unclassified' ] ]
+				and: [ aNodeMorph complexContents item methodCategory = #'as yet unclassified' ] ]
 		ifNone: [  ].
 	self assert: n isNil

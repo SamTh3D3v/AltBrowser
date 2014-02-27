@@ -2,12 +2,13 @@ updating
 aMethodRecategorized: anEvent
 	"Are we concerned by that event ? Yes if we are the right class and the right method category."
 
-	(anEvent methodClass == self sourceClass and: [ anEvent newProtocol = item or: [ anEvent oldProtocol = item ] ])
+	(anEvent methodClass == self sourceClass
+		and: [ anEvent newProtocol = self methodCategory or: [ anEvent oldProtocol = self methodCategory ] ])
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.
-			self item = 'as yet unclassified'
+			self methodCategory = 'as yet unclassified'
 				ifTrue: [ 
-					(self sourceClass organization protocolNamed: self item) isEmpty
-						ifTrue: [ self sourceClass removeProtocol: self item ] ].
+					(self sourceClass organization protocolNamed: self methodCategory) isEmpty
+						ifTrue: [ self sourceClass removeProtocol: self methodCategory ] ].
 			^ true ].
 	^ false

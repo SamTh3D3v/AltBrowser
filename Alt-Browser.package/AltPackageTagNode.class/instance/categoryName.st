@@ -1,3 +1,3 @@
 accessing
 categoryName
-	^ self item
+	^ self code

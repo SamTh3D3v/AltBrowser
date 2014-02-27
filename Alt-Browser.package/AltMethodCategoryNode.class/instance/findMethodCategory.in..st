@@ -1,5 +1,5 @@
 querying
 findMethodCategory: aMethodCategory in: aClass
-	^ (aMethodCategory = item and: [ aClass == parentNode item ])
+	^ (aMethodCategory = code and: [ aClass == parent itemClass ])
 		ifTrue: [ self ]
 		ifFalse: [ nil ]

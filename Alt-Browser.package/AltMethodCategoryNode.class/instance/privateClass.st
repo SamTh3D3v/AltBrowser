@@ -1,3 +1,3 @@
 private
 privateClass
-	^ self parentNode privateClass
+	^ self parent privateClass

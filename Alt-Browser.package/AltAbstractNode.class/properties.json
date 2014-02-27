@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"item",
 		"contents",
-		"parentNode" ],
+		"code",
+		"parent" ],
 	"name" : "AltAbstractNode",
 	"pools" : [
 		 ],

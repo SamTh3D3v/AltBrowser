@@ -4,6 +4,6 @@ contents
 
 	contents
 		ifNil: [ 
-			contents := (self class orderClasses: (self rpackage classesForClassTag: self item))
+			contents := (self class orderClasses: (self rpackage classesForClassTag: self code))
 				collect: [ :each | AltClassNode with: each parent: self ] ].
 	^ contents

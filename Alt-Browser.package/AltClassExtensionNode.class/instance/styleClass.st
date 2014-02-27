@@ -1,3 +1,3 @@
 querying
 styleClass
-	^ self item
+	^ self sourceClass

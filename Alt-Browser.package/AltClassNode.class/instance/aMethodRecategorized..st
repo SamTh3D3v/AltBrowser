@@ -7,7 +7,10 @@ aMethodRecategorized: anEvent
 	anEvent methodClass == self itemClass
 		ifTrue: [ 
 			self contents do: [ :each | each aMethodRecategorized: anEvent ].
-			(self contents select: [ :e | e item = anEvent oldProtocol or: [ e item = anEvent newProtocol ] ]) size < 2
+			(self contents
+				select: [ :e | 
+					(e isKindOf: AltMethodCategoryNode)
+						and: [ e methodCategory = anEvent oldProtocol or: [ e methodCategory = anEvent newProtocol ] ] ]) size < 2
 				ifTrue: [ 
 					AltBrowser aNodeToRebuilt: self.
 					^ true ].

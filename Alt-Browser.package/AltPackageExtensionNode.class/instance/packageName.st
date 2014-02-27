@@ -1,3 +1,3 @@
 accessing
 packageName
-	^ parentNode packageName
+	^ parent packageName

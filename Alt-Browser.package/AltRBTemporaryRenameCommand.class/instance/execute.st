@@ -7,4 +7,4 @@ execute
 		renameTemporaryFrom: (self node start to: self node stop)
 		to: newName
 		in: requestor selectedNode sourceClass
-		selector: requestor selectedNode item item) execute
+		selector: requestor selectedNode item selector) execute

@@ -6,12 +6,12 @@ dropItem: anItem
 	anItem class == AltClassNode
 		ifTrue: [ 
 			"This probably works."
-			anItem item category: self packageName.
+			anItem itemClass category: self packageName.
 			^ self ].
-	(anItem isMethodNode)
+	anItem isMethodNode
 		ifFalse: [ ^ self ].
 	cm := anItem compiledMethod.
 	cm methodClass organization
-		classify: anItem item
+		classify: anItem selector
 		under: self rpackage methodCategoryPrefix
 		suppressIfDefault: false

@@ -8,5 +8,5 @@ aMethodUpdated: anEvent
 	sItem := self selectedNode item.
 	sItem isMethodNode
 		ifFalse: [ ^ self ].
-	(sItem sourceClass == anEvent methodClass and: [ sItem item == anEvent oldMethod selector ])
+	(sItem sourceClass == anEvent methodClass and: [ sItem selector == anEvent oldMethod selector ])
 		ifTrue: [ source contents: self selectedNode sourceCode ]

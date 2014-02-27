@@ -5,7 +5,8 @@ accept: aText notifying: aController
 	"There is something about notifying here."
 
 	| aSelector |
-	aSelector := self sourceClass compile: aText classified: self parentNode methodCategory notifying: aController.
-	aSelector isNil ifTrue: [ ^ nil ].
-	self parentNode rebuildContents.
-	^ self parentNode contents detect: [ :each | each item == aSelector ]
+	aSelector := self sourceClass compile: aText classified: self parent methodCategory notifying: aController.
+	aSelector isNil
+		ifTrue: [ ^ nil ].
+	self parent rebuildContents.
+	^ self parent contents detect: [ :each | each selector == aSelector ]

@@ -4,4 +4,4 @@ dropItem: anItem
 
 	| cm |
 	cm := anItem compiledMethod.
-	cm methodClass organization classify: anItem item under: self methodCategory suppressIfDefault: false
+	cm methodClass organization classify: anItem selector under: self methodCategory suppressIfDefault: false

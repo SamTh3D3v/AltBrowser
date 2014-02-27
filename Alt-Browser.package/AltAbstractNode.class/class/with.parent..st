@@ -1,6 +1,6 @@
 instance creation
-with: anItem parent: aNode
+with: aCodeObject parent: aNode
 	^ self new
-		item: anItem;
-		parentNode: aNode;
+		code: aCodeObject;
+		parent: aNode;
 		yourself

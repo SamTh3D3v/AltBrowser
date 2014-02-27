@@ -3,7 +3,7 @@ execute
 	"To be done."
 	
 	| found aClass |
-	aClass := requestor selectedNode item item subclasses first.
+	aClass := requestor selectedNode item subclasses first.
 	AltBrowser rootItems
 		do: [ :each | 
 			| res |
