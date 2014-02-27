@@ -6,7 +6,7 @@ execute
 	systemCategory := requestor selectedNode item categoryName.
 	newName := UIManager default
 		request: 'New name of the category'
-		initialAnswer: systemCategory name
+		initialAnswer: systemCategory
 		title: 'Rename a category'.
 	(newName = systemCategory name or: [ newName isNil or: [ newName isEmpty or: [ newName first = $* ] ] ])
 		ifTrue: [ ^ self ].
