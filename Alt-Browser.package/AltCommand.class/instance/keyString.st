@@ -1,6 +1,8 @@
 accessing
 keyString
+	"Note: printing is broken on KeyCombination."
+	
 	| c |
 	^ (c := self keystroke) isNil
-		ifFalse: [ c asString copyWithout: Character space ]
+		ifFalse: [ (String streamContents: [ :stream | c printOn: stream ]) copyWithout: Character space ]
 		ifTrue: [ nil ]

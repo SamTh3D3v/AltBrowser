@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $f ctrl asShortcut
+	^ $f ctrl asKeyCombination

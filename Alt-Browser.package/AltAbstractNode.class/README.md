@@ -1,7 +1,7 @@
 This class is the abstract class of all nodes used by the AltBrowser. Those nodes are abstract and are supposed to be used inside (wrapped) an AltTreeNodeModel.
 
 It implements the following APIs and/or patterns :
-- Wrapping over an item
+- Wrapping over an abstract reference (code)
 - Tree with a parentNode
 - Children via a contents variable
 - GUI direct actions:

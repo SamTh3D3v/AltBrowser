@@ -1,3 +1,5 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesClass: self itemClass
+	"Meta nodes are in environments with classes."
+
+	^ aRBEnvironment includesClass: (Smalltalk at: code ifAbsent: [ UndefinedObject ])

@@ -15,6 +15,7 @@ toggleFinder
 					(finderUI buildSearchButton).
 					(finderUI buildRegExChooser).
 					(finderUI buildSearchModeDropListIn: window)}.
+			toolbar bindKeyCombination: Character escape asKeyCombination toAction: [ self toggleFinder ].
 			finderUI searchingTextArea contentMorph takeKeyboardFocus.
 			window paneMorphs do: [ :each | each layoutFrame topOffset: toolbar height ].
 			window addMorph: toolbar fullFrame: ((0 @ 0 corner: 1 @ 0) asLayoutFrame bottomOffset: toolbar height) ]

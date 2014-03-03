@@ -1,3 +1,3 @@
 accessing
 itemClass
-	^ "Smalltalk at: item ifAbsent: [ Object ]" code
+	^ Smalltalk at: code ifAbsent: [ Object ]

@@ -1,1 +1,1 @@
-An AltClassNode represent a class, both the class side and the meta class side, even if they do display differently.
+An AltClassNode represent a class. The meta side is handled by AltClassMetaNode.
