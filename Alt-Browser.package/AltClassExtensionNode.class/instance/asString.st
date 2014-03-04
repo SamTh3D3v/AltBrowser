@@ -1,3 +1,3 @@
 printing
 asString
-	^ self code asString
+	^ self itemClass name
