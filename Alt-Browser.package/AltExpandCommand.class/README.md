@@ -1,0 +1,1 @@
+This command is keyboard only and expands a node.

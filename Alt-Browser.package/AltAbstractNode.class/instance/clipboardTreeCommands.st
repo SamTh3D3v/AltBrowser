@@ -2,4 +2,4 @@ commands
 clipboardTreeCommands
 	<treeAreaCommand>
 	^ {AltCutCommand.
-		AltPasteCommand}
+	AltPasteCommand}

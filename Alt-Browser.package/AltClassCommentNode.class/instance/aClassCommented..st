@@ -1,6 +1,6 @@
 updating
 aClassCommented: anEvent
-	anEvent classCommented == code
+	anEvent classCommented == self itemClass
 		ifTrue: [ 
 			AltBrowser aNodeToUpdate: self.
 			^ true ].
