@@ -15,3 +15,13 @@ Gofer new
 	configurationOf: 'AltBrowser';
 	loadDevelopment.
 ```
+Requires git support and ssh access to github.
+
+and the stable version for Pharo 3.0 with:
+
+```smalltalk
+Gofer new
+	url: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo30/main';
+	configurationOf: 'AltBrowser';
+	loadStable.
+```
