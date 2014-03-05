@@ -4,7 +4,7 @@ baseline01: spec
 	spec
 		for: #common
 		do: [ 
+			self class ensureGitFileTree.
 			spec blessing: #baseline.
-			spec repository: 'gitfiletree://github.com/ThierryGoubier/AltBrowser.git?protocol=git'.
 			spec package: 'Alt-Browser'.
 			spec group: 'default' with: #('Alt-Browser') ]
