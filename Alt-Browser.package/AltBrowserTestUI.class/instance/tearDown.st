@@ -5,5 +5,5 @@ tearDown
 	browser close.
 	browser release.
 	(Smalltalk at: #AltTestingClass) removeFromSystem.
-	(MCWorkingCopy forPackage: (MCPackage new name: 'Alt-Testing-Underway')) unload.
-	Smalltalk globals organization removeCategory: 'Alt-Testing-Underway'
+	(MCWorkingCopy forPackage: (MCPackage new name: 'AltTestingUnderway')) unload.
+	Smalltalk globals organization removeCategory: 'AltTestingUnderway'

@@ -21,14 +21,12 @@ aMCWorkingCopyDeleted: anEvent
 									pNode addRPackage: nodeLeft.
 									AltBrowser aNodeToRebuilt: pNode ]
 								ifNil: [ 
-									| n |
-									AltBrowser rootItems
-										at: (AltBrowser rootItems indexOf: self)
-										put:
-											(n := nodeLeft isSymbol
+									AltBrowser
+										replaceRootItem: self
+										with:
+											(nodeLeft isSymbol
 												ifTrue: [ AltPackageNode with: nodeLeft ]
-												ifFalse: [ AltPackageCategoryNode with: nodeLeft ]).
-									AltBrowser aNodeAdded: n ] ]
+												ifFalse: [ AltPackageCategoryNode with: nodeLeft ]) ] ]
 						ifFalse: [ AltBrowser aNodeToRebuilt: self ] ].
 			^ true ].
 	^ false
