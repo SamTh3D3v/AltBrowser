@@ -10,7 +10,7 @@ aMCWorkingCopyDeleted: anEvent
 		ifNotNil: [ :node | 
 			(node aMCWorkingCopyDeleted: anEvent)
 				ifTrue: [ 
-					self rootItems remove: node.
+					self rootItems remove: node ifAbsent: [ ^ false ].
 					self announcer announce: (AltNodeRemoved node: node) ].
 			^ true ].
 	^ false
