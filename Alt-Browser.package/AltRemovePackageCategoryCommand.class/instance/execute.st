@@ -10,4 +10,5 @@ execute
 			AltBrowser aNodeToRebuilt: item parent ]
 		ifFalse: [ 
 			AltBrowser rootItems remove: item.
-			AltBrowser aRootNodesChange ]
+			AltBrowser aRootNodesChange ].
+	AltBrowser updateCategories
