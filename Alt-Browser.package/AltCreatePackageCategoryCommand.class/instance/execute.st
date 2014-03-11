@@ -14,6 +14,8 @@ execute
 				ifFalse: [ 
 					requestor selectedNode item addRPackage: name -> OrderedCollection new.
 					AltBrowser aNodeToRebuilt: requestor selectedNode item ] ]
-		ifFalse: [ AltBrowser rootItems add: item ].
-	AltBrowser announcer announce: (AltNodeAdded node: item).
+		ifFalse: [ 
+			AltBrowser rootItems add: item.
+			AltBrowser aNodeAdded: item ].
+	AltBrowser updateCategories.
 	^ item
