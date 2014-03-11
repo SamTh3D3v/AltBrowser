@@ -4,6 +4,7 @@
 		"Categories" ],
 	"classvars" : [
 		"AltAnnouncer",
+		"Categories",
 		"Debug",
 		"RootItems",
 		"Temporary" ],

@@ -7,7 +7,7 @@ getRootItems
 	| l o |
 	l := (MCWorkingCopy allManagers collect: [ :e | e packageName asSymbol ]) asOrderedCollection.
 	o := OrderedCollection new.
-	o addAll: (self defaultPackageCategoriesNames collect: [ :w | self getItemsFor: w from: l ]).
+	o addAll: (self categories collect: [ :w | self getItemsFor: w from: l ]).
 	[ l notEmpty ]
 		whileTrue: [ 
 			| p w i |

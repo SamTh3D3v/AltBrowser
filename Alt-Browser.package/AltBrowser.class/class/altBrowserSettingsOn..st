@@ -14,4 +14,8 @@ altBrowserSettingsOn: aBuilder
 					(aBuilder nodeClass: AltSettingDeclaration name: #defaultBrowser)
 						label: 'Set as default browser' translated;
 						target: self;
-						description: 'To work around a settings bug, add this setting with a correct action.' translated ]
+						description: 'To work around a settings bug, add this setting with a correct action.' translated.
+					(aBuilder nodeClass: AltSettingDeclaration name: #categoriesAsSetting)
+						label: 'Default Categories' translated;
+						target: self;
+						description: 'List the default categories tree as customized by the user.' translated ]
