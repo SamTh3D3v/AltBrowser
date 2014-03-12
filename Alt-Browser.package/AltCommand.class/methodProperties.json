@@ -1,17 +1,17 @@
 {
 	"class" : {
-		"on:for:" : "ThierryGoubier 3/11/2014 14:42:06" },
+		"on:for:" : "ThierryGoubier 3/10/2014 16:32:26" },
 	"instance" : {
-		"addItemToMenu:" : "ThierryGoubier 3/11/2014 14:42:06",
-		"buildShortcut:" : "ThierryGoubier 3/11/2014 14:42:06",
-		"execute" : "ThierryGoubier 3/11/2014 14:42:06",
-		"icon" : "ThierryGoubier 3/11/2014 14:42:06",
-		"isActive" : "ThierryGoubier 3/11/2014 14:42:06",
-		"isEnabled" : "ThierryGoubier 3/11/2014 14:42:06",
-		"keyString" : "ThierryGoubier 3/11/2014 14:42:06",
-		"keystroke" : "ThierryGoubier 3/11/2014 14:42:06",
-		"label" : "ThierryGoubier 3/11/2014 14:42:06",
-		"on:for:" : "ThierryGoubier 3/11/2014 14:42:06",
-		"setTarget:requestor:" : "ThierryGoubier 3/11/2014 14:42:06",
-		"wantsKeyboard" : "ThierryGoubier 3/11/2014 14:42:06",
-		"wantsMenu" : "ThierryGoubier 3/11/2014 14:42:06" } }
+		"addItemToMenu:" : "ThierryGoubier 3/10/2014 16:32:26",
+		"buildShortcut:" : "ThierryGoubier 3/10/2014 16:32:26",
+		"execute" : "ThierryGoubier 3/10/2014 16:32:26",
+		"icon" : "ThierryGoubier 3/10/2014 16:32:26",
+		"isActive" : "ThierryGoubier 3/10/2014 16:32:26",
+		"isEnabled" : "ThierryGoubier 3/10/2014 16:32:26",
+		"keyString" : "ThierryGoubier 3/10/2014 16:32:26",
+		"keystroke" : "ThierryGoubier 3/10/2014 16:32:26",
+		"label" : "ThierryGoubier 3/10/2014 16:32:26",
+		"on:for:" : "ThierryGoubier 3/10/2014 16:32:26",
+		"setTarget:requestor:" : "ThierryGoubier 3/10/2014 16:32:26",
+		"wantsKeyboard" : "ThierryGoubier 3/10/2014 16:32:26",
+		"wantsMenu" : "ThierryGoubier 3/10/2014 16:32:26" } }

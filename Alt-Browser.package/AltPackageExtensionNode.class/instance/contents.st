@@ -2,9 +2,9 @@ accessing
 contents
 	contents
 		ifNil: [ 
-			contents := self rpackage extendedClasses
+			contents := self rpackage extendedClasses asSet
 				collect: [ :each | 
 					each isMeta
-						ifTrue: [ AltClassMetaExtensionNode with: each theNonMetaClass name parent: self ]
+						ifTrue: [ AltClassExtensionNode with: each theNonMetaClass name parent: self ]
 						ifFalse: [ AltClassExtensionNode with: each name parent: self ] ] ].
 	^ contents
