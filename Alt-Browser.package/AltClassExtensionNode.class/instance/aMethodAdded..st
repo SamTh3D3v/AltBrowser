@@ -2,8 +2,12 @@ updating
 aMethodAdded: anEvent
 	"Are we concerned by that event ? Yes if we are the right class and the right method category."
 
-	(anEvent methodClass == self sourceClass and: [ anEvent protocol asLowercase = self methodCategory ])
+	((anEvent methodClass == self itemClass or: [ anEvent methodClass == self itemClass classSide ])
+		and: [ anEvent protocol asLowercase = self methodCategory ])
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.
-			^ true ].
+			^ true ]
+		ifFalse: [ 
+			(self contents first isKindOf: AltClassMetaExtensionNode)
+				ifTrue: [ ^ self contents first aMethodAdded: anEvent ] ].
 	^ false

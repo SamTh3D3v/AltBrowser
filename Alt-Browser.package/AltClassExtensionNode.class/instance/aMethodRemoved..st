@@ -4,10 +4,17 @@ aMethodRemoved: anEvent
 
 	"We can here ensure that empty extensions protocols are removed."
 
-	(anEvent methodClass == self sourceClass and: [ anEvent protocol asLowercase beginsWith: self methodCategory ])
+	(anEvent methodClass == self itemClass and: [ anEvent protocol asLowercase beginsWith: self methodCategory ])
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.
 			(anEvent methodClass organization extensionProtocols
 				select: [ :e | (e name asLowercase beginsWith: self methodCategory) and: [ e isEmpty ] ])
-				do: [ :e | anEvent methodClass organization removeCategory: e name ] ].
+				do: [ :e | anEvent methodClass organization removeCategory: e name ] ]
+		ifFalse: [ 
+			(self contents first isKindOf: AltClassMetaExtensionNode)
+				ifTrue: [ 
+					(self contents first aMethodRemoved: anEvent)
+						ifTrue: [ 
+							AltBrowser aNodeToRebuilt: self.
+							^ true ] ] ].
 	^ false
