@@ -199,6 +199,8 @@ Error message and password prompt
 
 <li>Performance</li>
 
+<li>RefactoringUndo</li>
+
 <li>RelatedProjects</li>
 
 <li>RoassalClassified.png</li>
@@ -2710,7 +2712,7 @@ Error message and password prompt
 <div created="20140306120518524" creator="ThierryGoubier" modified="20140307142147480" modifier="ThierryGoubier" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
-<div created="20140310134035948" current-tiddler="TreeClassification" modified="20140311162644283" modifier="ThierryGoubier" title="$:/HistoryList" type="application/json">
+<div created="20140310134035948" current-tiddler="RefactoringUndo" modified="20140311193648598" modifier="ThierryGoubier" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;
@@ -3717,6 +3719,46 @@ Error message and password prompt
     },
     {
         &quot;title&quot;: &quot;TreeClassification&quot;
+    },
+    {
+        &quot;title&quot;: &quot;TreeClassification&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 300.3999938964844,
+            &quot;left&quot;: 184,
+            &quot;width&quot;: 113,
+            &quot;right&quot;: 297,
+            &quot;bottom&quot;: 318.3999938964844,
+            &quot;height&quot;: 18
+        }
+    },
+    {
+        &quot;title&quot;: &quot;RefactoringUndo&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 320.3999938964844,
+            &quot;left&quot;: 180,
+            &quot;width&quot;: 107,
+            &quot;right&quot;: 287,
+            &quot;bottom&quot;: 338.3999938964844,
+            &quot;height&quot;: 18
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'RefactoringUndo'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;RefactoringUndo&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'RefactoringUndo'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;RefactoringUndo&quot;
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'RefactoringUndo'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;RefactoringUndo&quot;
     }
 ]</pre>
 </div>
@@ -4014,6 +4056,15 @@ Data points:
 | Time millisecondsToRun: [ 10 timesRepeat: [ Browser open ] ]. | 2853 |
 
 There is little difference between PackageTreeNautilus and Nautilus. AltBrowser has no performance tuning, no icon cache, nothing of the sort.</pre>
+</div>
+<div created="20140311172645492" creator="ThierryGoubier" modified="20140311193648593" modifier="ThierryGoubier" title="RefactoringUndo">
+<pre>AltBrowser is an attempt in learning the underlying code tools of Smalltalk/Pharo. One such thing is the Refactoring framework, abbreviated in RB.
+
+In AltBrowser, everywhere possible (see SmartSuggestions), I use RB commands instead of the normal commands. This allows the browser to benefit from the command infrastructure of RB, and in particular, the undo.
+
+For example, the class delete is a RB class delete command, which allows undo. As a consequence, there is no confirmation dialog when removing a class, since undo is possible.
+
+The RB undo is accessible via a menu command. However, the text description of the undo is often very long, which isn't convenient at all in a menu.</pre>
 </div>
 <div created="20140306191124532" creator="ThierryGoubier" modified="20140309092413154" modifier="ThierryGoubier" title="RelatedProjects">
 <pre>Many interesting projects have already been tried along those ways; it shows in the sense that Morphic has fairly good support for trees. Thanks to the pharo-dev contributors for that list!
