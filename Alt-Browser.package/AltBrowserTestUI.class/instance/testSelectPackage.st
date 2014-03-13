@@ -6,7 +6,7 @@ testSelectPackage
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
 			(aNodeMorph complexContents item isPackageSetNode or: [aNodeMorph complexContents item isPackageNode])
-				and: [ aNodeMorph complexContents item packageName = 'Alt-Testing-Underway' ] ]
+				and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
 		ifNone: [  ].
 	self assert: n notNil.
 	browser treeMorph listManager setSelectedMorph: n.

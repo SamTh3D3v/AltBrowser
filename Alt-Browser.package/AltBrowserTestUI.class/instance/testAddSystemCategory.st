@@ -3,16 +3,16 @@ testAddSystemCategory
 	"Package ready, create category and run."
 
 	| n |
-	self assert: (Smalltalk globals organization includesCategory: #'Alt-Testing-Underway-Core') not.
+	self assert: (Smalltalk globals organization includesCategory: #'TestingUnderway-Core') not.
 	[ 
-	Smalltalk globals organization addCategory: #'Alt-Testing-Underway-Core'.
+	Smalltalk globals organization addCategory: #'TestingUnderway-Core'.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageNode(Alt-Testing-Underway)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageNode(TestingUnderway)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	n expand.
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(Alt-Testing-Underway-Core)' ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item name = 'an AltPackageTagNode(TestingUnderway-Core)' ]
 		ifNone: [  ].
 	self assert: n notNil.
 	browser treeMorph listManager setSelectedMorph: n.
@@ -20,4 +20,4 @@ testAddSystemCategory
 		adjustSubmorphPositions;
 		scrollSelectionIntoView.
 	self assert: browser selectedItem == n complexContents ]
-		ensure: [ Smalltalk globals organization removeCategory: #'Alt-Testing-Underway-Core' ]
+		ensure: [ Smalltalk globals organization removeCategory: #'TestingUnderway-Core' ]

@@ -1,11 +1,11 @@
 resources
 setUp
-	PackageOrganizer default registerPackageNamed: 'AltTestingUnderway'.
-	MCWorkingCopy forPackage: (MCPackage new name: 'AltTestingUnderway').
+	PackageOrganizer default registerPackageNamed: 'TestingUnderway'.
+	MCWorkingCopy forPackage: (MCPackage new name: 'TestingUnderway').
 	Object
 		subclass: #AltTestingClass
 		instanceVariableNames: ''
 		classVariableNames: ''
 		poolDictionaries: ''
-		category: 'AltTestingUnderway'.
+		category: 'TestingUnderway'.
 	browser := AltBrowser open

@@ -7,5 +7,5 @@ testHasPackage
 			(browser treeMorph allNodeMorphs
 				detect: [ :aNodeMorph | 
 					aNodeMorph complexContents item isPackageSetNode
-						and: [ aNodeMorph complexContents item packageName = 'Alt-Testing-Underway' ] ]
+						and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
 				ifNone: [  ]) notNil

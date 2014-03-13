@@ -2,15 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"docMCPackageOwnership" : "ThierryGoubier 3/12/2014 17:21:00",
-		"setUp" : "ThierryGoubier 3/12/2014 17:21:00",
-		"tearDown" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testAddRemoveSystemCategory" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testAddSystemCategory" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testHasPackage" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testRemoveAsYetUnclassifiedOnRecategorizeMethod" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testRemoveAsYetUnclassifiedOnRemoveMethod" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testRemoveProtocol" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testSearchMethod" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testSelectPackage" : "ThierryGoubier 3/12/2014 17:21:00",
-		"testSelectTestClass" : "ThierryGoubier 3/12/2014 17:21:00" } }
+		"docMCPackageOwnership" : "ThierryGoubier 3/13/2014 07:20:03",
+		"setUp" : "ThierryGoubier 3/13/2014 14:32",
+		"tearDown" : "ThierryGoubier 3/13/2014 14:32",
+		"testAddRemoveSystemCategory" : "ThierryGoubier 3/13/2014 14:33",
+		"testAddSystemCategory" : "ThierryGoubier 3/13/2014 14:34",
+		"testHasPackage" : "ThierryGoubier 3/13/2014 14:34",
+		"testRemoveAsYetUnclassifiedOnRecategorizeMethod" : "ThierryGoubier 3/13/2014 14:34",
+		"testRemoveAsYetUnclassifiedOnRemoveMethod" : "ThierryGoubier 3/13/2014 14:34",
+		"testRemoveProtocol" : "ThierryGoubier 3/13/2014 14:35",
+		"testSearchMethod" : "ThierryGoubier 3/13/2014 07:20:03",
+		"testSelectPackage" : "ThierryGoubier 3/13/2014 14:35",
+		"testSelectTestClass" : "ThierryGoubier 3/13/2014 14:35" } }
