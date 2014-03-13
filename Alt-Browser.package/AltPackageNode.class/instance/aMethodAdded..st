@@ -2,6 +2,9 @@ updating
 aMethodAdded: anEvent
 	"Pass through to childrens."
 
-	(self rpackage definesOrExtendsClass: anEvent methodClass)
-		ifTrue: [ ^ self contents inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ] ].
+	self rpackage == anEvent rpackage
+		ifTrue: [ 
+			^ contents
+				ifNotNil: [ :c | c inject: false into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ] ]
+				ifNil: [ false ] ].
 	^ false

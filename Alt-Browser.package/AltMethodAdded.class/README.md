@@ -1,0 +1,1 @@
+an extension to MethodAdded to cache the package associated with the method for performance reasons.
