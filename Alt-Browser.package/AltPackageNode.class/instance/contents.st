@@ -10,7 +10,7 @@ contents
 				ifTrue: [ 
 					contents := {(AltPackageExtensionNode with: self packageName parent: self)}
 						,
-							((self class orderClasses: aRPackage definedClasses asOrderedCollection)
+							((self class sortClasses: aRPackage definedClasses)
 								collect: [ :e | AltClassNode with: e name parent: self ]) ]
 				ifFalse: [ 
 					contents := OrderedCollection
@@ -26,5 +26,5 @@ contents
 								ifNotNil: [ 
 									stream
 										nextPutAll:
-											((self class orderClasses: rootTag classes asOrderedCollection) collect: [ :e | AltClassNode with: e name parent: self ]) ] ] ] ].
+											((self class sortClasses: rootTag classes) collect: [ :e | AltClassNode with: e name parent: self ]) ] ] ] ].
 	^ contents

@@ -2,9 +2,9 @@ ordering
 sortClasses: aClassList
 	"Order: first the closest to object (in number of superclasses) then alphabetical then in tree mode."
 
-	| sorted currentList  remainList |
-	currentList := aClassList
-		sortBlock: [ :a :b | 
+	| sorted currentList remainList |
+	currentList := aClassList asArray
+		sort: [ :a :b | 
 			| s1 s2 |
 			s1 := a withAllSuperclasses size.
 			s2 := b withAllSuperclasses size.
