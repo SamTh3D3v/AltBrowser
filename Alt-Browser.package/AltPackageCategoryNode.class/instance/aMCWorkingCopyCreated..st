@@ -7,4 +7,4 @@ aMCWorkingCopyCreated: anEvent
 			self addRPackage: anEvent workingCopy packageName asSymbol.
 			AltBrowser aNodeToRebuilt: self.
 			^ true ].
-	^ self contents inject: false into: [ :bool :each | (each aMCWorkingCopyCreated: anEvent) or: [ bool ] ]
+	^ self contents anySatisfy: [ :each | each aMCWorkingCopyCreated: anEvent ]

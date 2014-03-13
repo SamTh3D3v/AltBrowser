@@ -1,7 +1,7 @@
 {
 	"category" : "Alt-Browser-Core",
 	"classinstvars" : [
-		"Categories" ],
+		"semaphore" ],
 	"classvars" : [
 		"AltAnnouncer",
 		"Categories",

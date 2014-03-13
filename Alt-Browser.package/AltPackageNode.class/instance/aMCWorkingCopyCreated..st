@@ -15,14 +15,6 @@ aMCWorkingCopyCreated: anEvent
 					self parent removeRPackage: self packageName.
 					self parent addRPackage: cat.
 					AltBrowser aNodeToRebuilt: self parent ]
-				ifFalse: [ 
-					AltBrowser replaceRootItem: self with: (AltPackageCategoryNode with: cat).
-					self
-						assert:
-							(AltBrowser rootItems
-								noneSatisfy: [ :each | 
-									| j |
-									j := each title charactersExactlyMatching: self packageName.
-									j > 1 and: [ (self packageName at: j) = $- and: [ each code ~= cat ] ] ]) ].
+				ifFalse: [ AltBrowser replaceRootItem: self with: (AltPackageCategoryNode with: cat) ].
 			^ true ].
 	^ false
