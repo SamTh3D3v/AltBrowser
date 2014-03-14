@@ -2,14 +2,16 @@ updating
 aMCWorkingCopyCreated: anEvent
 	"Prepare to create a category node if appropriate. We may have a few problems here of determination of the correct subset. Backoff if there is any doubt. Subset is simply up to the first -; otherwise the scheme becomes too complex, with splitting over"
 
-	| i |
-	i := anEvent workingCopy packageName charactersExactlyMatching: self packageName.
-	(i > 1
-		and: [ i < (anEvent workingCopy packageName size min: self packageName size) and: [ (self packageName at: i) = $- ] ])
+	|  pName prefix herePrefix |
+	pName := anEvent workingCopy packageName.
+	prefix := pName copyUpTo: $-.
+	herePrefix := self packageName copyUpTo: $-.
+	prefix isEmpty
+		ifTrue: [ ^ false ].
+	prefix = herePrefix
 		ifTrue: [ 
 			| cat |
-			cat := (self packageName copyFrom: 1 to: (self packageName indexOf: $-) - 1)
-				-> (OrderedCollection with: self packageName asSymbol with: anEvent workingCopy packageName asSymbol).
+			cat := prefix -> (OrderedCollection with: self packageName asSymbol with: pName asSymbol).
 			self parent notNil
 				ifTrue: [ 
 					self parent removeRPackage: self packageName.

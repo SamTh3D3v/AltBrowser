@@ -5,6 +5,7 @@ aMCWorkingCopyCreated: anEvent
 	| node |
 	(self rootItems anySatisfy: [ :root | root aMCWorkingCopyCreated: anEvent ])
 		ifTrue: [ ^ self ].
+	Transcript show: '.'.
 	node := AltPackageNode with: anEvent workingCopy packageName asSymbol.
 	self rootItems add: node.
-	self announcer announce: (AltNodeAdded node: node)
+	self aRootNodesChange
