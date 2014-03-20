@@ -1,10 +1,8 @@
 private
 getRootItems
-	"Build the organisation out of some default classification and collect all remaining packages from the list of MCWorkingCopy in the system."
+	"Build the organisation out of some classification and collect all remaining packages from the list of MCWorkingCopy in the system."
 
-	"There is still some bugs in the packages introduced with the first implementation of RPackage and they show when we build this list."
-
-	| l o |
+	| l o roots |
 	l := (MCWorkingCopy allManagers collect: [ :e | e packageName asSymbol ]) asOrderedCollection.
 	o := OrderedCollection new.
 	o addAll: (self categories collect: [ :w | self getItemsFor: w from: l ]).
@@ -17,8 +15,10 @@ getRootItems
 			o add: i.
 			l remove: p.
 			l removeAll: (i value addAll: (l select: [ :e | (e copyUpTo: $-) = w ])) ].
-	^ o
+	roots := o
 		collect: [ :e | 
 			e value size ~= 1
 				ifTrue: [ AltPackageCategoryNode with: e ]
-				ifFalse: [ AltPackageNode with: e value first ] ]
+				ifFalse: [ AltPackageNode with: e value first ] ].
+	roots add: (AltUnpackagedNode with: #_UnpackagedPackage).
+	^ roots

@@ -5,7 +5,7 @@ testRemoveAsYetUnclassifiedOnRecategorizeMethod
 	| n |
 	n := browser treeMorph allNodeMorphs
 		detect: [ :aNodeMorph | 
-			(aNodeMorph complexContents item isPackageSetNode or: [ aNodeMorph complexContents item isPackageNode ])
+			(aNodeMorph complexContents item isPackageNode)
 				and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
 		ifNone: [  ].
 	self assert: n notNil.

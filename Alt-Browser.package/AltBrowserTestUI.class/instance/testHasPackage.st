@@ -5,7 +5,5 @@ testHasPackage
 	self
 		assert:
 			(browser treeMorph allNodeMorphs
-				detect: [ :aNodeMorph | 
-					aNodeMorph complexContents item isPackageSetNode
-						and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
+				detect: [ :aNodeMorph | aNodeMorph complexContents item isPackageNode and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
 				ifNone: [  ]) notNil

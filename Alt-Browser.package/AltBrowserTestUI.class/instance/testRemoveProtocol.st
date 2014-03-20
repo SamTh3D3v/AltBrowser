@@ -4,9 +4,7 @@ testRemoveProtocol
 
 	| n |
 	n := browser treeMorph allNodeMorphs
-		detect: [ :aNodeMorph | 
-			(aNodeMorph complexContents item isPackageSetNode or: [ aNodeMorph complexContents item isPackageNode ])
-				and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
+		detect: [ :aNodeMorph | aNodeMorph complexContents item isPackageNode and: [ aNodeMorph complexContents item packageName = 'TestingUnderway' ] ]
 		ifNone: [  ].
 	self assert: n notNil.
 	n expand.
