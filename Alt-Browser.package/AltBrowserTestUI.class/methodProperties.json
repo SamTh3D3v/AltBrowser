@@ -7,6 +7,7 @@
 		"tearDown" : "ThierryGoubier 3/14/2014 10:03:15",
 		"testAddRemoveSystemCategory" : "ThierryGoubier 3/14/2014 10:03:15",
 		"testAddSystemCategory" : "ThierryGoubier 3/14/2014 10:03:15",
+		"testChangeTestClassDefinition" : "ThierryGoubier 3/20/2014 11:06",
 		"testHasPackage" : "ThierryGoubier 3/20/2014 10:04",
 		"testRemoveAsYetUnclassifiedOnRecategorizeMethod" : "ThierryGoubier 3/20/2014 10:05",
 		"testRemoveAsYetUnclassifiedOnRemoveMethod" : "ThierryGoubier 3/20/2014 10:06",
