@@ -20,5 +20,4 @@ getRootItems
 			e value size ~= 1
 				ifTrue: [ AltPackageCategoryNode with: e ]
 				ifFalse: [ AltPackageNode with: e value first ] ].
-	roots add: (AltUnpackagedNode with: #_UnpackagedPackage).
 	^ roots
