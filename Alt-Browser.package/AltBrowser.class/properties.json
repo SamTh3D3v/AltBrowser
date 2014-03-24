@@ -1,11 +1,12 @@
 {
 	"category" : "Alt-Browser-Core",
 	"classinstvars" : [
-		"semaphore" ],
+		 ],
 	"classvars" : [
 		"AltAnnouncer",
 		"Categories",
 		"Debug",
+		"Root",
 		"RootItems",
 		"Temporary" ],
 	"commentStamp" : "<historical>",

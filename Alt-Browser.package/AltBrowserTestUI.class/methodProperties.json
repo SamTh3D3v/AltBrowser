@@ -7,11 +7,11 @@
 		"tearDown" : "ThierryGoubier 3/14/2014 10:03:15",
 		"testAddRemoveSystemCategory" : "ThierryGoubier 3/14/2014 10:03:15",
 		"testAddSystemCategory" : "ThierryGoubier 3/14/2014 10:03:15",
-		"testChangeTestClassDefinition" : "ThierryGoubier 3/20/2014 11:06",
-		"testHasPackage" : "ThierryGoubier 3/20/2014 10:04",
-		"testRemoveAsYetUnclassifiedOnRecategorizeMethod" : "ThierryGoubier 3/20/2014 10:05",
-		"testRemoveAsYetUnclassifiedOnRemoveMethod" : "ThierryGoubier 3/20/2014 10:06",
-		"testRemoveProtocol" : "ThierryGoubier 3/20/2014 10:07",
+		"testChangeTestClassDefinition" : "ThierryGoubier 3/20/2014 11:13:27",
+		"testHasPackage" : "ThierryGoubier 3/20/2014 11:13:27",
+		"testRemoveAsYetUnclassifiedOnRecategorizeMethod" : "ThierryGoubier 3/20/2014 11:13:27",
+		"testRemoveAsYetUnclassifiedOnRemoveMethod" : "ThierryGoubier 3/20/2014 11:13:27",
+		"testRemoveProtocol" : "ThierryGoubier 3/20/2014 11:13:27",
 		"testSearchMethod" : "ThierryGoubier 3/14/2014 10:03:15",
-		"testSelectPackage" : "ThierryGoubier 3/20/2014 10:07",
-		"testSelectTestClass" : "ThierryGoubier 3/20/2014 10:07" } }
+		"testSelectPackage" : "ThierryGoubier 3/20/2014 11:13:27",
+		"testSelectTestClass" : "ThierryGoubier 3/20/2014 11:13:27" } }
