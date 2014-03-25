@@ -1,3 +1,3 @@
-accessing
-title
+printing
+asString
 	^ 'Not yet packaged'

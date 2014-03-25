@@ -8,7 +8,9 @@ aMethodRecategorized: anEvent
 			AltBrowser aNodeToRebuilt: self.
 			self methodCategory = 'as yet unclassified'
 				ifTrue: [ 
-					(self sourceClass organization protocolNamed: self methodCategory) isEmpty
-						ifTrue: [ self sourceClass removeProtocol: self methodCategory ] ].
+					(self sourceClass organization protocolNamed: self methodCategory)
+						ifNotNil: [ :protocol | 
+							protocol isEmpty
+								ifTrue: [ self sourceClass removeProtocol: self methodCategory ] ] ].
 			^ true ].
 	^ false

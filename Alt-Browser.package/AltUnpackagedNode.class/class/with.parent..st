@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 with: aCodeObject parent: aNode
 	^ self new
 		code: aCodeObject;
