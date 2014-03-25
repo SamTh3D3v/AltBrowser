@@ -20,4 +20,4 @@ getRootItems
 			e value size ~= 1
 				ifTrue: [ e ]
 				ifFalse: [ e value first ] ].
-	^ roots
+	^ roots , {RPackage defaultPackageName}

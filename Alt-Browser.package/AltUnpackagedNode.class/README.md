@@ -1,1 +1,1 @@
-This node represent code which isn't packaged
+This node represent code which isn't packaged. This is a singleton and map to the '_UnpackagedPackage' whose name sound a bit silly :)
