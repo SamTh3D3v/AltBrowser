@@ -9,4 +9,4 @@ aMethodAdded: anEvent
 		protocol: anEvent protocol
 		class: anEvent methodClass.
 	altEvent rpackage: (RPackageOrganizer default packageForProtocol: anEvent protocol inClass: anEvent methodClass).
-	self rootItems do: [ :root | root aMethodAdded: altEvent ]
+	self root aMethodAdded: altEvent

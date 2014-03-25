@@ -16,17 +16,11 @@ aMCWorkingCopyDeleted: anEvent
 							| nodeLeft |
 							nodeLeft := self code value first.
 							self parent
+								ifNil: [ AltBrowser aNodeToRebuilt: self ]
 								ifNotNil: [ :pNode | 
 									pNode removeRPackage: self code.
 									pNode addRPackage: nodeLeft.
-									AltBrowser aNodeToRebuilt: pNode ]
-								ifNil: [ 
-									AltBrowser
-										replaceRootItem: self
-										with:
-											(nodeLeft isSymbol
-												ifTrue: [ AltPackageNode with: nodeLeft ]
-												ifFalse: [ AltPackageCategoryNode with: nodeLeft ]) ] ]
+									AltBrowser aNodeToRebuilt: pNode ] ]
 						ifFalse: [ AltBrowser aNodeToRebuilt: self ] ].
 			^ true ].
 	^ false

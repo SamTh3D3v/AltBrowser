@@ -4,5 +4,5 @@ reset
 
 	"AltBrowser reset"
 
-	RootItems := self getRootItems.
+	Root := nil.
 	self announcer announce: AltRootsReset new

@@ -6,4 +6,4 @@ aMethodRecategorized: anEvent
 
 	"TODO: if this moves the method into the extensions of a package, it isn't seen. Maybe we need to switch the logic to the nodes of the tree and not the top level class to handle multiple targets to update."
 
-	self rootItems do: [ :root | root aMethodRecategorized: anEvent ]
+	self root aMethodRecategorized: anEvent
