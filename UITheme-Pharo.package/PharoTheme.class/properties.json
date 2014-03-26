@@ -1,0 +1,14 @@
+{
+	"category" : "UITheme-Pharo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"windowActiveDropShadowStyle" ],
+	"name" : "PharoTheme",
+	"pools" : [
+		 ],
+	"super" : "UITheme",
+	"type" : "normal" }
