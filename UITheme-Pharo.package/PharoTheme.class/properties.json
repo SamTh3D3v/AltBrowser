@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"windowActiveDropShadowStyle" ],
+		 ],
 	"name" : "PharoTheme",
 	"pools" : [
 		 ],
-	"super" : "UITheme",
+	"super" : "UIThemeWatery",
 	"type" : "normal" }
