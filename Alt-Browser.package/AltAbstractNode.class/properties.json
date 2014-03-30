@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"contents",
 		"code",
 		"parent" ],
 	"name" : "AltAbstractNode",

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltPackageCategoryNode",
+		"contents" ],
+	"name" : "AltCompositeNode",
 	"pools" : [
 		 ],
-	"super" : "AltCompositeNode",
+	"super" : "AltAbstractNode",
 	"type" : "normal" }

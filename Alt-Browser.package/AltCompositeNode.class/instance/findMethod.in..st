@@ -4,4 +4,11 @@ findMethod: aSelector in: aClass
 
 	"Make it lazy : do not trigger contents generation."
 
+	| res |
+	contents notNil
+		ifTrue: [ 
+			self contents
+				do: [ :each | 
+					(res := each findMethod: aSelector in: aClass) notNil
+						ifTrue: [ ^ res ] ] ].
 	^ nil
