@@ -1,0 +1,3 @@
+updating
+aCategoryRemoved: anEvent
+	^ false

@@ -1,0 +1,3 @@
+updating
+aCategoryAdded: anEvent
+	^ false

@@ -1,0 +1,3 @@
+updating
+aRPackageUnregistered: anEvent
+	^ false
