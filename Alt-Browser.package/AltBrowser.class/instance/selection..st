@@ -24,4 +24,5 @@ selection: anItem
 			textMorph classOrMetaClass: sel styleClass.
 			self source aboutToStyle: sel isStyled.
 			self source contents: sel sourceCode.
-			self history add: sel ]
+			self history add: sel.
+			sel item selectIn: self ]

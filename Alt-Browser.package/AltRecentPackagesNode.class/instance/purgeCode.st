@@ -5,5 +5,5 @@ purgeCode
 	[ self code size > 10 ]
 		whileTrue: [ 
 			self code first key < DateAndTime yesterday
-				ifTrue: [ self halt. self code removeFirst ]
-				ifFalse: [  ^ self ] ]
+				ifTrue: [ self code removeFirst ]
+				ifFalse: [ ^ self ] ]

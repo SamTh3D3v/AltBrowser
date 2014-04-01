@@ -1,3 +1,3 @@
 accessing
 icon
-	^ #smallOpenIcon
+	^ #groupIcon
