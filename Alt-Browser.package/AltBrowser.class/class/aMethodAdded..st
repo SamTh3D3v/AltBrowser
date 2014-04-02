@@ -14,15 +14,15 @@ aMethodAdded: anEvent
 		ifTrue: [ 
 			| cat keywords |
 			cat := anEvent methodClass theNonMetaClass name allButFirst: 'ConfigurationOf' size.
-			keywords := [ anEvent methodClass perform: anEvent selector ]
+			keywords := [ anEvent methodClass theNonMetaClass perform: anEvent selector ]
 				on: Error
 				do: [ ^ self ].	"Probably safer to do an AST parse and recover the correct node."
 			(self root findKeywordsCategory: keywords)
 				ifNotNil: [ :aPackageCategory | 
 					(self root findPackageCategory: cat asSymbol)
 						ifNotNil: [ :previous | 
-							previous contents isEmpty
-								ifFalse: [ ^ self ].
+							(previous contents isEmpty not or: [ aPackageCategory == previous ])
+								ifTrue: [ ^ self ].
 							previous parent removeRPackage: previous code.
 							self aNodeToRebuilt: previous parent ].
 					aPackageCategory addRPackage: cat asSymbol -> OrderedCollection new.
