@@ -24,8 +24,8 @@ open
 	treeMorph buildContents.
 	treeMorph on: #keyStroke send: #startSearch:for: to: AltKeyboardSearchInTree.
 	pane addMorph: group.
-	group addMorph: treeMorph fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.3 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
-	group addMorph: textMorph fullFrame: (LayoutFrame fractions: (0.3 @ 0.0 corner: 1 @ 1) offsets: (0 @ 0 corner: 0 @ 0)).
+	group addMorph: treeMorph fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.3 @ 1) offsets: (0 @ 1 corner: 0 @ -1)).
+	group addMorph: textMorph fullFrame: (LayoutFrame fractions: (0.3 @ 0.0 corner: 1 @ 1) offsets: (4 @ 0 corner: 0 @ 0)).
 	group
 		addMorph:
 			(ProportionalSplitterMorph new
