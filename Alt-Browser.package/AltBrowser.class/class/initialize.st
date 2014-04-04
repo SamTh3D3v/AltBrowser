@@ -1,7 +1,7 @@
 class initialization
 initialize
 	AltAnnouncer := Announcer new.
-	RootItems := nil.
 	Categories := nil.
+	RecentPackages := OrderedCollection new.
 	self registerOnSystemAnnouncements.
 	self registerInAppRegistry

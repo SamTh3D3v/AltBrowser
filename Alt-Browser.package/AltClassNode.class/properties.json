@@ -10,5 +10,5 @@
 	"name" : "AltClassNode",
 	"pools" : [
 		 ],
-	"super" : "AltAbstractNode",
+	"super" : "AltCompositeNode",
 	"type" : "normal" }

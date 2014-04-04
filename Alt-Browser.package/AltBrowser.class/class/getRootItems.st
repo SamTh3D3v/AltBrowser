@@ -18,6 +18,6 @@ getRootItems
 	roots := o
 		collect: [ :e | 
 			e value size ~= 1
-				ifTrue: [ AltPackageCategoryNode with: e ]
-				ifFalse: [ AltPackageNode with: e value first ] ].
-	^ roots
+				ifTrue: [ e ]
+				ifFalse: [ e value first ] ].
+	^ roots , {RPackage defaultPackageName}

@@ -1,0 +1,14 @@
+{
+	"category" : "UITheme-Pharo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "PharoTheme",
+	"pools" : [
+		 ],
+	"super" : "UIThemeWatery",
+	"type" : "normal" }

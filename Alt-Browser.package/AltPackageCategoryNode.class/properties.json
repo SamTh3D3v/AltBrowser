@@ -10,5 +10,5 @@
 	"name" : "AltPackageCategoryNode",
 	"pools" : [
 		 ],
-	"super" : "AltAbstractNode",
+	"super" : "AltCompositeNode",
 	"type" : "normal" }

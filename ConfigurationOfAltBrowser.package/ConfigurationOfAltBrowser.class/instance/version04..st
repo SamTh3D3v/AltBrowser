@@ -5,7 +5,7 @@ version04: spec
 		for: #'pharo3.x'
 		do: [ 
 			spec
-				repository: 'gitfiletree://github.com/ThierryGoubier/AltBrowser.git?protocol=git&branch=pharo3.0';
+				repository: 'gitfiletree://github.com/ThierryGoubier/AltBrowser.git?protocol=git&branch=pharo3.0-dev';
 				blessing: #development;
 				author: 'ThierryGoubier';
 				description:

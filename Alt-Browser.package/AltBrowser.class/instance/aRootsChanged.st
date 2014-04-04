@@ -5,5 +5,4 @@ aRootsChanged
 	self
 		withSelectionDo: [ 
 			rootItems := nil.
-			self updateList.
-			history initialize ]
+			self updateList ]

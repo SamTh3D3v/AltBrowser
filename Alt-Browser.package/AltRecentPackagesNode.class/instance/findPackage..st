@@ -1,0 +1,3 @@
+querying
+findPackage: ignored
+	^ nil

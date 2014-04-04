@@ -2,10 +2,7 @@ updating
 aMCWorkingCopyCreated: anEvent
 	"Feature needed: when adding a packagewith the same prefix as another, create the appropriate category."
 
-	| node |
-	(self rootItems anySatisfy: [ :root | root aMCWorkingCopyCreated: anEvent ])
+	(self root aMCWorkingCopyCreated: anEvent)
 		ifTrue: [ ^ self ].
-	Transcript show: '.'.
-	node := AltPackageNode with: anEvent workingCopy packageName asSymbol.
-	self rootItems add: node.
-	self aRootNodesChange
+	self root addRPackage: anEvent workingCopy packageName asSymbol.
+	self aNodeToRebuilt: self root
