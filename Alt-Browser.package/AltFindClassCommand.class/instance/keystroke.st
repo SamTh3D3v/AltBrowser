@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $f command, $c
+	^ $c command
