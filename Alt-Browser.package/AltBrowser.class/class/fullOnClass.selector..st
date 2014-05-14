@@ -5,9 +5,13 @@ fullOnClass: aClass selector: aSelector
 	| s a |
 	aSelector isNil
 		ifTrue: [ ^ self fullOnClass: aClass ].
-	(self rootItems anySatisfy: [ :each | (s := each findMethod: aSelector in: aClass) notNil ])
-		ifFalse: [ ^ self fullOnClass: aClass ].
+	self rootItems anySatisfy: [ :each | (s := each findMethod: aSelector in: aClass) notNil ].
 	a := self new.
-	a rbEnvironment: (RBClassEnvironment class: aClass).
+	a
+		rbEnvironment:
+			(RBClassEnvironment
+				classes:
+					{(aClass theNonMetaClass).
+					(aClass theMetaClass)}).
 	a open.
-	a selectPathForAbstractItem: s
+	s ifNotNil: [ a selectPathForAbstractItem: s ]
