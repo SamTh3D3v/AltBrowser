@@ -4,11 +4,14 @@ aMethodAdded: anEvent
 
 	"Would be simpler if protocol creation were announced. They are not."
 
-	anEvent methodClass == self itemClass
+	contents notNil
 		ifTrue: [ 
-			self contents do: [ :each | each aMethodAdded: anEvent ].
-			((self contents select: [ :e | (e isKindOf: AltMethodCategoryNode) and: [ e methodCategory = anEvent protocol ] ])
-				size < 1 or: [ anEvent protocol = 'no messages' ])
-				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
-			^ true ].
-	^ self contents first aMethodAdded: anEvent
+			anEvent methodClass == self itemClass
+				ifTrue: [ 
+					self contents do: [ :each | each aMethodAdded: anEvent ].
+					((self contents select: [ :e | (e isKindOf: AltMethodCategoryNode) and: [ e methodCategory = anEvent protocol ] ])
+						size < 1 or: [ anEvent protocol = 'no messages' ])
+						ifTrue: [ AltBrowser aNodeToRebuilt: self ].
+					^ true ].
+			^ self contents first aMethodAdded: anEvent ].
+	^ false
