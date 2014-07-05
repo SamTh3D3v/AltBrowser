@@ -1,10 +1,5 @@
 {
 	"class" : {
-		"browseVersionsOf:class:meta:category:selector:" : "ThierryGoubier 6/27/2014 13:20:57" },
+		"browseVersionsOf:class:meta:category:selector:" : "ThierryGoubier 7/4/2014 19:39" },
 	"instance" : {
-		"buildDiffCodePane" : "ThierryGoubier 6/27/2014 13:20:57",
-		"changeListButtonSpecs" : "ThierryGoubier 6/27/2014 13:20:57",
-		"compareToCurrentVersion" : "ThierryGoubier 6/27/2014 13:20:57",
-		"fileInSelections" : "ThierryGoubier 6/27/2014 13:20:57",
-		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 6/27/2014 13:20:57",
-		"undiffedContents" : "ThierryGoubier 6/27/2014 13:20:57" } }
+		"scanVersionsOf:class:meta:category:selector:" : "ThierryGoubier 7/5/2014 19:13" } }

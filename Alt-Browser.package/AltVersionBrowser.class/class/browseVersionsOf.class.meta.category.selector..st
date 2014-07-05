@@ -3,19 +3,17 @@ browseVersionsOf: method class: class meta: meta category: msgCategory selector:
 	"Common errors (Not a git repository or not yet committed) will fallback on the default, change file based versions browsing by generating NotFound errors."
 
 	^ [ 
-	self
+	self new
 		browseVersionsOf: method
 		class: class
 		meta: meta
 		category: msgCategory
-		selector: selector
-		lostMethodPointer: nil ]
+		selector: selector ]
 		on: NotFound
 		do: [ 
-			VersionsBrowser
+			NewVersionBrowser
 				browseVersionsOf: method
 				class: class
 				meta: meta
 				category: msgCategory
-				selector: selector
-				lostMethodPointer: nil ]
+				selector: selector ]
