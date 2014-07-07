@@ -2718,7 +2718,7 @@ Error message and password prompt
 <div created="20140306120518524" creator="ThierryGoubier" modified="20140307142147480" modifier="ThierryGoubier" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
-<div created="20140310134035948" current-tiddler="Screenshot.png" modified="20140327061243583" modifier="ThierryGoubier" title="$:/HistoryList" type="application/json">
+<div created="20140310134035948" current-tiddler="UserOrganized" modified="20140707074155009" modifier="ThierryGoubier" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/ControlPanel&quot;
@@ -3954,6 +3954,34 @@ Error message and password prompt
     },
     {
         &quot;title&quot;: &quot;Screenshot.png&quot;
+    },
+    {
+        &quot;title&quot;: &quot;RelatedProjects&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 445.5,
+            &quot;left&quot;: 398,
+            &quot;width&quot;: 100,
+            &quot;right&quot;: 498,
+            &quot;bottom&quot;: 466.5,
+            &quot;height&quot;: 21
+        }
+    },
+    {
+        &quot;title&quot;: &quot;UserOrganized&quot;,
+        &quot;fromPageRect&quot;: {
+            &quot;top&quot;: 405.5,
+            &quot;left&quot;: 176,
+            &quot;width&quot;: 174,
+            &quot;right&quot;: 350,
+            &quot;bottom&quot;: 426.5,
+            &quot;height&quot;: 21
+        }
+    },
+    {
+        &quot;title&quot;: &quot;Draft of 'UserOrganized'&quot;
+    },
+    {
+        &quot;title&quot;: &quot;UserOrganized&quot;
     }
 ]</pre>
 </div>
@@ -4002,7 +4030,7 @@ Error message and password prompt
 <div created="20140306114016649" creator="T" modified="20140306114019454" modifier="ThierryGoubie" title="$:/status/UserName">
 <pre>ThierryGoubier</pre>
 </div>
-<div list="AltBrowser" title="$:/StoryList">
+<div list="AltBrowser RelatedProjects UserOrganized" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20140310134035951" creator="ThierryGoubier" modified="20140310134035951" modifier="ThierryGoubier" title="$:/temp/ImportReport">
@@ -4479,7 +4507,7 @@ Now, what abound taking in account the code in the extensions? Should we write a
 Note that this browser could be improved; Ordering the classes would be great. It's the first package I open with so many extensions!
 </pre>
 </div>
-<div created="20140309092423361" creator="ThierryGoubier" modified="20140309094158163" modifier="ThierryGoubier" title="UserOrganized">
+<div created="20140309092423361" creator="ThierryGoubier" modified="20140707074155006" modifier="ThierryGoubier" title="UserOrganized">
 <pre>The AltBrowser started with a significant feature: let the user organize himself the tree of packages, the class ordering inside a package, the protocol ordering in a class.
 
 With developments in Pharo, this feature has been progressively removed. Why? Because many elements of the underlying structure are not ordering-compliant: Monticello, ProtocolOrganizer.
@@ -4498,7 +4526,7 @@ For packages:
 * Categories first
 * Packages
 
-The purpose is to set an order that we can rely on to remember where things are.</pre>
+The purpose is to set an order that we can rely on to remember where things are. User-organized structure is possible among packages and can be saved via preferences.</pre>
 </div>
 <div created="20140309091249952" creator="ThierryGoubier" modified="20140309092259645" modifier="ThierryGoubier" title="Whisker Browser">
 <pre>The Whisker Browser share some features with AltBrowser such as the context-sensitive popup menus on a heterogeneous collection of items.
