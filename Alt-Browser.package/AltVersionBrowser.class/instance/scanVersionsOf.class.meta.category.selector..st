@@ -11,58 +11,37 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 		ifTrue: [ 
 			gitRepoClass := Smalltalk globals at: #MCFileTreeGitRepository.
 			gitReaderClass := Smalltalk globals at: #MCFileTreeGitStReader ]
-		ifFalse: [ NotFound signal ].
-	selectorOfMethod := aSelector.
-	currentCompiledMethod := method.
-	classOfMethod := meta
-		ifTrue: [ aClass class ]
-		ifFalse: [ aClass ].
-	changeList := OrderedCollection new.
-	list := OrderedCollection new.
-	self addedChangeRecord
-		ifNotNil: [ :change | 
-			self
-				addItem: change
-				text:
-					('{1} (in {2})' translated
-						format:
-							{(change timeStamp).
-							(change fileName)}) ].
+		ifFalse: [ 
+			^ super
+				scanVersionsOf: method
+				class: aClass
+				meta: meta
+				category: aCategory
+				selector: aSelector ].
 	rpackage := method package.
 	aMCWorkingCopy := MCWorkingCopy allManagers detect: [ :wc | wc package name = rpackage name ].
 	repository := aMCWorkingCopy repositoryGroup repositories detect: [ :repo | repo isKindOf: gitRepoClass ].
 	allFileNames := repository allFileNames.
 	mcMethodDefinition := method methodReference asMCMethodDefinition.
-	(OrderedCollection
+	^ (OrderedCollection
 		streamContents: [ :stream | 
 			stream
-				nextPut: mcMethodDefinition;
+				nextPutAll:
+						(ChangeSet
+								scanVersionsOf: method
+								class: aClass
+								meta: meta
+								category: aCategory
+								selector: aSelector);
 				nextPutAll:
 						((((repository gitVersionsForDefinition: mcMethodDefinition in: aMCWorkingCopy packageName)
 								collect: [ :commitID | 
 									((gitReaderClass on: repository directory fileName: aMCWorkingCopy packageName , repository packageExtension)
 										commitID: commitID;
 										info: (allFileNames detect: [ :en | en commitID = commitID ]) info;
-										yourself) loadDefinitionFor: mcMethodDefinition ])
-								reject: [ :mcD | mcD isNil or: [ mcD isEmpty ] ]) collect: [ :e | e first ]) ])
-		do: [ :aMCMethodDefinition | 
-			(changeList includes: aMCMethodDefinition)
-				ifFalse: [ 
-					self
-						addItem: aMCMethodDefinition
-						text:
-							(String
-								streamContents: [ :stream | 
-									stream
-										nextPutAll: aMCMethodDefinition timeStamp;
-										nextPut: $ ;
-										nextPutAll: aMCMethodDefinition className;
-										nextPutAll:
-												(aMCMethodDefinition classIsMeta
-														ifTrue: [ ' class ' ]
-														ifFalse: [ ' ' ]);
-										nextPutAll: aMCMethodDefinition selector;
-										nextPutAll: ' {';
-										nextPutAll: aMCMethodDefinition category;
-										nextPut: $} ]) ] ].
-	listSelections := Array new: list size withAll: false
+										yourself) loadDefinitionFor: mcMethodDefinition ]) reject: [ :mcD | mcD isNil or: [ mcD isEmpty ] ])
+								collect: [ :e | e first ]) ])
+		collectWithIndex: [ :c :i | 
+			| rg |
+			rg := c asRingDefinition.
+			rg annotationNamed: #versionIndex put: i ]
