@@ -11,8 +11,13 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 		ifTrue: [ 
 			gitRepoClass := Smalltalk globals at: #MCFileTreeGitRepository.
 			gitReaderClass := Smalltalk globals at: #MCFileTreeGitStReader ]
-		ifFalse: [ NotFound signal ].
-	list := OrderedCollection new.
+		ifFalse: [ 
+			^ super
+				scanVersionsOf: method
+				class: aClass
+				meta: meta
+				category: aCategory
+				selector: aSelector ].
 	rpackage := method package.
 	aMCWorkingCopy := MCWorkingCopy allManagers detect: [ :wc | wc package name = rpackage name ].
 	repository := aMCWorkingCopy repositoryGroup repositories detect: [ :repo | repo isKindOf: gitRepoClass ].
@@ -36,4 +41,7 @@ scanVersionsOf: method class: aClass meta: meta category: aCategory selector: aS
 										info: (allFileNames detect: [ :en | en commitID = commitID ]) info;
 										yourself) loadDefinitionFor: mcMethodDefinition ]) reject: [ :mcD | mcD isNil or: [ mcD isEmpty ] ])
 								collect: [ :e | e first ]) ])
-		collectWithIndex: [ :c :i | | rg | rg := c asRingDefinition. rg annotationNamed: #versionIndex put: i ]
+		collectWithIndex: [ :c :i | 
+			| rg |
+			rg := c asRingDefinition.
+			rg annotationNamed: #versionIndex put: i ]

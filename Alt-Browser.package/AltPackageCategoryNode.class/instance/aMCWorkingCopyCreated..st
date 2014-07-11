@@ -2,7 +2,7 @@ updating
 aMCWorkingCopyCreated: anEvent
 	"Either match to itself or pass to its children."
 
-	(anEvent workingCopy packageName beginsWith: code key)
+	(anEvent workingCopy packageName beginsWith: self trimmedCategoryName)
 		ifTrue: [ 
 			self addRPackage: anEvent workingCopy packageName asSymbol.
 			AltBrowser aNodeToRebuilt: self.

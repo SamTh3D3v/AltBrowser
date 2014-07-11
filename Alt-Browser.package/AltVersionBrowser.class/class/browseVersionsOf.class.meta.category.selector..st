@@ -11,7 +11,7 @@ browseVersionsOf: method class: class meta: meta category: msgCategory selector:
 		selector: selector ]
 		on: NotFound
 		do: [ 
-			NewVersionBrowser
+			self superclass
 				browseVersionsOf: method
 				class: class
 				meta: meta
