@@ -1,6 +1,6 @@
 resources
 setUp
-	PackageOrganizer default registerPackageNamed: 'TestingUnderway'.
+	RPackageOrganizer default registerPackageNamed: 'TestingUnderway'.
 	MCWorkingCopy forPackage: (MCPackage new name: 'TestingUnderway').
 	Object
 		subclass: #AltTestingClass

@@ -1,6 +1,6 @@
 tests
 testChangeTestClassDefinition
-	"Select our test class and check that the class definition is correctly updated."
+	"Select our test class and check that the class definition is correctly updated. It is hard since we had to put a wait on the announcer to get it to work."
 
 	| n |
 	n := browser treeMorph allNodeMorphs
@@ -17,7 +17,11 @@ testChangeTestClassDefinition
 		adjustSubmorphPositions;
 		scrollSelectionIntoView.
 	self assert: browser selectedItem == n complexContents.
-	self assert: browser textMorph text = 'Object subclass: #AltTestingClass
+	self
+		assert:
+			browser textMorph text
+				=
+					'Object subclass: #AltTestingClass
 	instanceVariableNames: ''''
 	classVariableNames: ''''
 	poolDictionaries: ''''
@@ -28,11 +32,13 @@ testChangeTestClassDefinition
 		classVariableNames: ''
 		poolDictionaries: ''
 		category: 'TestingUnderway'.
-	self assert: browser textMorph text = 'Object subclass: #AltTestingClass
+	(Delay forMilliseconds: 1000) wait.
+	self
+		assert:
+			browser textMorph text
+				=
+					'Object subclass: #AltTestingClass
 	instanceVariableNames: ''aVariable''
 	classVariableNames: ''''
 	poolDictionaries: ''''
-	category: ''TestingUnderway'''.
-
-
-	
+	category: ''TestingUnderway'''

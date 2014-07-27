@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"canChangeText" : "ThierryGoubier 7/5/2014 19:16:36",
-		"drawOn:" : "ThierryGoubier 7/5/2014 19:16:36",
-		"handleKeystroke:" : "ThierryGoubier 7/5/2014 19:16:36",
-		"initialize" : "ThierryGoubier 7/5/2014 19:16:36",
-		"keyStroke:" : "ThierryGoubier 7/5/2014 19:16:36",
-		"keyboardFocusChange:" : "ThierryGoubier 7/5/2014 19:16:36" } }
+		"canChangeText" : "ThierryGoubier 7/11/2014 19:25:46",
+		"drawOn:" : "ThierryGoubier 7/11/2014 19:25:46",
+		"handleKeystroke:" : "ThierryGoubier 7/11/2014 19:25:46",
+		"initialize" : "ThierryGoubier 7/11/2014 19:25:46",
+		"keyStroke:" : "ThierryGoubier 7/11/2014 19:25:46",
+		"keyboardFocusChange:" : "ThierryGoubier 7/11/2014 19:25:46" } }
