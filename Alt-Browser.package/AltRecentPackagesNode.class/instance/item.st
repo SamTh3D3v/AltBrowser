@@ -1,3 +1,3 @@
 private
-code
+item
 	^ AltBrowser recentPackages
