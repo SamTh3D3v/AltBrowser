@@ -1,3 +1,3 @@
 accessing
 title
-	^ self sourceClass name, '>>', code
+	^ self sourceClass name, '>>', self selector

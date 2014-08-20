@@ -1,3 +1,3 @@
 printing
 asString
-	^ code asString
+	^ self item asString

@@ -1,3 +1,3 @@
 accessing
 itemClass
-	^ (Smalltalk at: code ifAbsent: [ Object ]) classSide
+	^ (Smalltalk at: self item ifAbsent: [ Object ]) classSide

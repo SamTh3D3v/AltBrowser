@@ -1,5 +1,5 @@
 querying
 findClassComment: aClass
-	^ code == aClass
+	^ self item == aClass
 		ifTrue: [ self ]
 		ifFalse: [ nil ]

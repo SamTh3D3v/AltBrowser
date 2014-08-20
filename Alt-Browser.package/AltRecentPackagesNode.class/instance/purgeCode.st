@@ -2,8 +2,8 @@ private
 purgeCode
 	"Scan code to remove all old entries."
 
-	[ self code size > 10 ]
+	[ self item size > 10 ]
 		whileTrue: [ 
-			self code first key < DateAndTime yesterday
-				ifTrue: [ self code removeFirst ]
+			self item first key < DateAndTime yesterday
+				ifTrue: [ self item removeFirst ]
 				ifFalse: [ ^ self ] ]

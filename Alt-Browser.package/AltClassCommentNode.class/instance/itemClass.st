@@ -1,3 +1,3 @@
 accessing
 itemClass
-	^ Smalltalk at: code ifAbsent: [ UndefinedObject ]
+	^ Smalltalk at: self item ifAbsent: [ UndefinedObject ]

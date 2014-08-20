@@ -1,3 +1,3 @@
 accessing
 title
-	^ code key
+	^ self categoryName

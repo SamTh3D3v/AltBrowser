@@ -4,8 +4,8 @@ aMCWorkingCopyDeleted: anEvent
 
 	| oldSize |
 	oldSize := self code size.
-	self code removeAllSuchThat: [ :el | el value = anEvent workingCopy packageName ].
+	self item removeAllSuchThat: [ :el | el value = anEvent workingCopy packageName ].
 	self purgeCode.
-	oldSize > self code size
+	oldSize > self item size
 		ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 	^ false

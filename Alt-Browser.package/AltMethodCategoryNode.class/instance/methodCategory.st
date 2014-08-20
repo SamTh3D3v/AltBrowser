@@ -1,3 +1,3 @@
 accessing
 methodCategory
-	^ code
+	^ self item

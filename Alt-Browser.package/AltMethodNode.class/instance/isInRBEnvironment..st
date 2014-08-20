@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment includesSelector: code in: self sourceClass
+	^ aRBEnvironment includesSelector: self selector in: self sourceClass

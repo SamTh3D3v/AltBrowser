@@ -11,4 +11,4 @@ rebuildContents
 	oldContents := contents copy.
 	contents := nil.
 	contents := self contents
-		collect: [ :each | oldContents detect: [ :old | old class == each class and: [ old code == each code ] ] ifNone: [ each ] ]
+		collect: [ :each | oldContents detect: [ :old | old class == each class and: [ old item == each item ] ] ifNone: [ each ] ]
