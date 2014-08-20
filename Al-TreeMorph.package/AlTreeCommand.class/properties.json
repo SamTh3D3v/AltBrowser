@@ -1,0 +1,15 @@
+{
+	"category" : "Al-TreeMorph",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"target",
+		"requestor" ],
+	"name" : "AlTreeCommand",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
