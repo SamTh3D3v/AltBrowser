@@ -4,4 +4,4 @@ baseline: spec
 	spec
 		package: 'Al-TreeMorph';
 		package: 'Alt-Browser' with: [ spec requires: 'Al-TreeMorph' ];
-		group: 'default' with: #('AltBrowser')
+		group: 'default' with: #('Alt-Browser')
