@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfAltBrowser",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfAltBrowser",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

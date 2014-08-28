@@ -2,7 +2,7 @@ updating
 aClassRecategorized: anEvent
 	"Answer true if the category matches."
 
-	(anEvent newCategory = self categoryName or: [ anEvent oldCategory = self categoryName ])
+	(anEvent newCategory = self category or: [ anEvent oldCategory = self category ])
 		ifTrue: [ 
 			AltBrowser aNodeToRebuilt: self.
 			^ true ]

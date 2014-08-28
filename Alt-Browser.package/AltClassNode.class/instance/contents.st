@@ -4,7 +4,7 @@ contents
 
 	contents
 		ifNil: [ 
-			contents := {(AltClassMetaNode with: self code parent: self).
-			(AltClassCommentNode with: self code parent: self)}
+			contents := {(AltClassMetaNode with: self item parent: self).
+			(AltClassCommentNode with: self item parent: self)}
 				, (self itemOrganization collect: [ :each | AltMethodCategoryNode with: each parent: self ]) ].
 	^ contents

@@ -1,3 +1,3 @@
 accessing
 contents
-	^ contents ifNil: [ contents := self code collect: [ :each | AltPackageLinkNode with: each value parent: self ] ]
+	^ contents ifNil: [ contents := self item collect: [ :each | AltPackageLinkNode with: each value parent: self ] ]

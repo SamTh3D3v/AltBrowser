@@ -5,7 +5,7 @@ aMethodRemoved: anEvent
 	"We can here ensure that empty extensions protocols are removed."
 
 	((anEvent methodClass == self itemClass or: [ anEvent methodClass == self itemClass classSide ])
-		and: [ anEvent protocol asLowercase beginsWith: self methodCategory ])
+		and: [ (anEvent protocol asLowercase beginsWith: self methodCategory) and: [ self contents notEmpty ] ])
 		ifTrue: [ 
 			(self contents first isKindOf: AltClassMetaExtensionNode)
 				ifTrue: [ self contents first aMethodRemoved: anEvent ].

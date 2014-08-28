@@ -1,0 +1,1 @@
+This baseline is for AltBrowser.

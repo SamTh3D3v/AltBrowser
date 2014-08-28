@@ -1,5 +1,5 @@
 querying
 findMethod: anItem in: aClass
-	^ (code == anItem and: [ self sourceClass == aClass ])
+	^ (self selector == anItem and: [ self sourceClass == aClass ])
 		ifTrue: [ self ]
 		ifFalse: [ nil ]

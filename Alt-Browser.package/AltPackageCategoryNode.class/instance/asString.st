@@ -1,3 +1,3 @@
 printing
 asString
-	^ code key
+	^ self categoryName

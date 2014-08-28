@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"code",
-		"parent" ],
+		 ],
 	"name" : "AltAbstractNode",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "AlTreeNode",
 	"type" : "normal" }

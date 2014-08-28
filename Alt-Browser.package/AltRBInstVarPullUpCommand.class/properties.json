@@ -1,15 +1,14 @@
 {
-	"category" : "Alt-Browser-Commands",
+	"category" : "Alt-Browser-Commands-Refactoring",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"target",
-		"requestor" ],
-	"name" : "AltCommand",
+		 ],
+	"name" : "AltRBInstVarPullUpCommand",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "AltAstNodeCommand",
 	"type" : "normal" }

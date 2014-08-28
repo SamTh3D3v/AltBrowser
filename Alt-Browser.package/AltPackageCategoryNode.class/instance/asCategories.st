@@ -5,7 +5,7 @@ asCategories
 	| c |
 	c := OrderedCollection
 		streamContents: [ :stream | 
-			stream nextPut: self code key.
+			stream nextPut: self categoryName.
 			self contents do: [ :each | each asCategories ifNotNil: [ :aCat | stream nextPut: aCat ] ] ].
 	^ c size = 1
 		ifTrue: [ c first ]
