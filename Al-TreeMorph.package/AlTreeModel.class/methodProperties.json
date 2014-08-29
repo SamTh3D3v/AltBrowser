@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"defaultTreeMorph" : "ThierryGoubier 8/29/2014 16:36",
+		"findMorphNodeForAbstractItem:" : "ThierryGoubier 8/29/2014 16:23",
+		"findMorphNodeForItem:" : "ThierryGoubier 8/29/2014 16:23",
+		"treeMorph" : "ThierryGoubier 8/29/2014 16:21",
+		"withSelectionDo:" : "ThierryGoubier 8/29/2014 16:36" } }
