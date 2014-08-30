@@ -23,7 +23,7 @@ aMethodAdded: anEvent
 						ifNotNil: [ :previous | 
 							(previous contents isEmpty not or: [ aPackageCategory == previous ])
 								ifTrue: [ ^ self ].
-							previous parent removeRPackage: previous code.
+							previous parent removeRPackage: previous item.
 							self aNodeToRebuilt: previous parent ].
 					aPackageCategory addRPackage: cat asSymbol -> OrderedCollection new.
 					self aNodeToRebuilt: aPackageCategory ] ]

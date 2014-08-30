@@ -2,4 +2,4 @@ testing
 isEnabled
 	"Only enabled if the category is empty."
 	
-	^ requestor selectedNode item code value isEmpty
+	^ requestor selectedNode item item value isEmpty
