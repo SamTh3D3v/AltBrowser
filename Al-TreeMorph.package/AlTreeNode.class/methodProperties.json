@@ -1,9 +1,15 @@
 {
 	"class" : {
-		"with:" : "ThierryGoubier 8/20/2014 10:44",
-		"with:parent:" : "ThierryGoubier 8/20/2014 10:45" },
+		"with:" : "ThierryGoubier 8/29/2014 16:38:01",
+		"with:parent:" : "ThierryGoubier 8/29/2014 16:38:01" },
 	"instance" : {
-		"item" : "ThierryGoubier 8/20/2014 10:46",
-		"item:" : "ThierryGoubier 8/20/2014 10:46",
-		"parent" : "ThierryGoubier 8/20/2014 10:46",
-		"parent:" : "ThierryGoubier 8/20/2014 10:46" } }
+		"contents" : "ThierryGoubier 9/3/2014 16:14",
+		"doubleClickOn:in:" : "ThierryGoubier 9/3/2014 16:20",
+		"icon" : "ThierryGoubier 9/3/2014 16:14",
+		"item" : "ThierryGoubier 8/29/2014 16:38:01",
+		"item:" : "ThierryGoubier 8/29/2014 16:38:01",
+		"parent" : "ThierryGoubier 8/29/2014 16:38:01",
+		"parent:" : "ThierryGoubier 8/29/2014 16:38:01",
+		"rebuildContents" : "ThierryGoubier 9/3/2014 16:13",
+		"selectIn:" : "ThierryGoubier 9/3/2014 16:18",
+		"title" : "ThierryGoubier 9/3/2014 16:14" } }

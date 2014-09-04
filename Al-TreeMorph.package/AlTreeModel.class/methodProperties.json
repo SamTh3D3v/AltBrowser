@@ -2,8 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"defaultTreeMorph" : "ThierryGoubier 8/29/2014 16:36",
-		"findMorphNodeForAbstractItem:" : "ThierryGoubier 8/29/2014 16:23",
-		"findMorphNodeForItem:" : "ThierryGoubier 8/29/2014 16:23",
-		"treeMorph" : "ThierryGoubier 8/29/2014 16:21",
-		"withSelectionDo:" : "ThierryGoubier 8/29/2014 16:36" } }
+		"defaultTreeMorph" : "ThierryGoubier 8/29/2014 16:38:01",
+		"findMorphNodeForAbstractItem:" : "ThierryGoubier 8/29/2014 16:38:01",
+		"findMorphNodeForItem:" : "ThierryGoubier 8/29/2014 16:38:01",
+		"isSelectionUpdate" : "ThierryGoubier 9/4/2014 13:15",
+		"rootNodeClassFromItem:" : "ThierryGoubier 9/4/2014 13:15",
+		"selectedItem" : "ThierryGoubier 9/4/2014 13:16",
+		"treeMorph" : "ThierryGoubier 8/29/2014 16:38:01",
+		"withSelectionDo:" : "ThierryGoubier 8/29/2014 16:38:01" } }
