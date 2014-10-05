@@ -3,11 +3,7 @@ aMethodAdded: anEvent
 	"Ok, a method was added. Trigger some reorganization if it is a specific method of a configuration."
 
 	| altEvent |
-	altEvent := AltMethodAdded
-		method: anEvent method
-		selector: anEvent selector
-		protocol: anEvent protocol
-		class: anEvent methodClass.
+	altEvent := AltMethodAdded method: anEvent method.
 	altEvent rpackage: (RPackageOrganizer default packageForProtocol: anEvent protocol inClass: anEvent methodClass).
 	self root aMethodAdded: altEvent.
 	(anEvent selector == #catalogKeywords and: [ anEvent methodClass name beginsWith: 'ConfigurationOf' ])
