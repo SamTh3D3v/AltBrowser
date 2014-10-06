@@ -7,7 +7,7 @@ execute: anEvt for: aMorph
 	textMorph := AltTextSearchMorph new contents: (String with: anEvt keyCharacter).
 	aMorphBounds := aMorph boundsInWorld.
 	textMorph
-		bounds: (aMorphBounds origin + (10 @ 10) corner: (aMorphBounds right - 20) @ (StandardFonts defaultFont height + 4)).
+		bounds: (aMorphBounds origin + (10 @ 10) corner: aMorphBounds corner + (-20 @ (StandardFonts defaultFont height + 4))).
 	textMorph addDropShadow.
 	textMorph setBorderStyle: #simple.
 	textMorph
