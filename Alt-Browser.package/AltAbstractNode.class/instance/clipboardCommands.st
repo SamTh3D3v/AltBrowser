@@ -1,6 +1,5 @@
-commands
+commands-text
 clipboardCommands
-	<textAreaCommand>
 	^ {AltCutTextCommand.
 	AltCopyTextCommand.
 	AltPasteTextCommand}

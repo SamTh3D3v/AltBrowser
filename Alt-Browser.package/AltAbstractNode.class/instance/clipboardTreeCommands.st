@@ -1,5 +1,4 @@
-commands
+commands-tree
 clipboardTreeCommands
-	<treeAreaCommand>
 	^ {AltCutCommand.
 	AltPasteCommand}

@@ -1,4 +1,3 @@
-commands
+commands-tree
 searchTreeCommands
-	<treeAreaCommand>
 	^ {AltFindClassCommand. AltFinderCommand. AltFinderOffCommand. AltPreviousCommand. AltNextCommand }

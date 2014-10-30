@@ -1,4 +1,5 @@
-commands
+commands-tree
 wDebugTreeCommands
-	<treeAreaCommand>
-	^ {AltExploreItemCommand. AltRebuildItemCommand. AltInspectMethodASTCommand }
+	^ {AltExploreItemCommand.
+	AltRebuildItemCommand.
+	AltInspectMethodASTCommand}

@@ -1,6 +1,5 @@
-commands
+commands-text
 executeCommands
-	<textAreaCommand>
 	^ {AltDoItTextCommand.
 	AltPrintItTextCommand.
 	AltInspectItTextCommand.

@@ -1,5 +1,5 @@
-commands
+commands-tree
 refactoringCommands
-	<treeAreaCommand>
-	
-	^ { AltRBUndoCommand. AltRBRedoCommand. AltRBClassRenameCommand }
+	^ {AltRBUndoCommand.
+	AltRBRedoCommand.
+	AltRBClassRenameCommand}

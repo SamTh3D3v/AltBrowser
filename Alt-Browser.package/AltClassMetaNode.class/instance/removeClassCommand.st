@@ -1,4 +1,4 @@
 commands
 removeClassCommand
-	<treeAreaCommand>
-	^ {}
+	"This is a way of desactivating an inherited command or command set."
+	^ #()

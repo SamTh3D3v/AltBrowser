@@ -1,6 +1,5 @@
-commands
+commands-tree
 navigationCommands
-	<treeAreaCommand>
 	^ {AltGoToSuperclassCommand.
 	AltGoToSubclassCommand.
 	AltNextSiblingClassCommand.
