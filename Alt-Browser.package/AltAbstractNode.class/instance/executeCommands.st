@@ -3,5 +3,4 @@ executeCommands
 	^ {AltDoItTextCommand.
 	AltPrintItTextCommand.
 	AltInspectItTextCommand.
-	AltExploreItTextCommand.
 	AltDebugItTextCommand}
