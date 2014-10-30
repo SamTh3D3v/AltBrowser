@@ -1,5 +1,4 @@
-commands-tree
+commands
 packageTagCommands
-	^ {AltRenameCategoryCommand.
-	AltAddSystemCategoryCommand.
-	AltRemoveCategoryCommand}
+	<treeAreaCommand>
+	^ #(#AltRenameCategoryCommand #AltAddSystemCategoryCommand #AltRemoveCategoryCommand)

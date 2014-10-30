@@ -1,3 +1,4 @@
-commands-tree
+commands
 removeCommand
-	^ {AltRemoveMethodCommand}
+	<treeAreaCommand>
+	^ #(#AltRemoveMethodCommand)

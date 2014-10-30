@@ -1,6 +1,4 @@
-commands-text
+commands
 executeCommands
-	^ {AltDoItTextCommand.
-	AltPrintItTextCommand.
-	AltInspectItTextCommand.
-	AltDebugItTextCommand}
+	<textAreaCommand>
+	^ #(#AltDoItTextCommand #AltPrintItTextCommand #AltInspectItTextCommand #AltDebugItTextCommand)

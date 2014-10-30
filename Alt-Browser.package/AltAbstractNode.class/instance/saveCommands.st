@@ -1,4 +1,4 @@
-commands-text
+commands
 saveCommands
-	^ {AltAcceptTextCommand.
-	AltCancelTextCommand}
+	<textAreaCommand>
+	^ #(#AltAcceptTextCommand #AltCancelTextCommand)

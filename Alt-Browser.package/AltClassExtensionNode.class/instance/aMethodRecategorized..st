@@ -9,7 +9,7 @@ aMethodRecategorized: anEvent
 			(anEvent newProtocol asLowercase beginsWith: self methodCategory)
 				or: [ anEvent oldProtocol asLowercase beginsWith: self methodCategory ] ])
 		ifTrue: [ 
-			(self contents first isKindOf: AltClassMetaExtensionNode)
+			(self contents notEmpty and: [ self contents first isKindOf: AltClassMetaExtensionNode])
 				ifTrue: [ self contents first aMethodRecategorized: anEvent ].
 			AltBrowser aNodeToRebuilt: self.
 			(anEvent methodClass organization extensionProtocols

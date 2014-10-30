@@ -1,14 +1,12 @@
 querying
 buildTextMenu: aMenu on: aTarget with: aRequestor
-	"Removed pragmas. Not usefull."
-	
-	"Text area commands are in the commands-text protocol"
+	"Now I have a safe way of finding pragmas."
 
 	| t |
 	t := false.
-	((self selectorsIn: 'commands-text' from: self class to: AltAbstractNode) sorted: [ :a :b | a < b ])
+	((self pragmas: #textAreaCommand from: self class to: AltAbstractNode) sorted: [ :a :b | a selector < b selector ])
 		do: [ :p | 
 			t
 				ifTrue: [ aMenu addLine ]
 				ifFalse: [ t := true ].
-			(self perform: p) do: [ :c | (c on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]
+			(self perform: p selector) do: [ :c | (c asClass on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]

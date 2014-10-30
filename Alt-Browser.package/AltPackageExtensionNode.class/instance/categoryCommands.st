@@ -1,5 +1,4 @@
-commands-tree
+commands
 categoryCommands
-	^ {AltRenameCategoryCommand.
-	AltAddSystemCategoryCommand.
-	AltRemoveCategoryCommand}
+	<treeAreaCommand>
+	^ #(#AltRenameCategoryCommand #AltAddSystemCategoryCommand #AltRemoveCategoryCommand)

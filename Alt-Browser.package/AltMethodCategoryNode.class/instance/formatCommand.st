@@ -1,3 +1,4 @@
-commands-text
+commands
 formatCommand
-	^ {AltRBFormatCommand}
+	<textAreaCommand>
+	^ #(#AltRBFormatCommand)
