@@ -1,0 +1,3 @@
+*alt-browser
+asClass
+	^ self

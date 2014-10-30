@@ -1,4 +1,4 @@
 commands
 wDebugTreeCommands
 	<treeAreaCommand>
-	^ {AltExploreItemCommand. AltRebuildItemCommand }
+	^ #(AltExploreItemCommand AltRebuildItemCommand )

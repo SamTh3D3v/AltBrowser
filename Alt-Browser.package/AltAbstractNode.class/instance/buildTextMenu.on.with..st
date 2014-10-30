@@ -9,4 +9,4 @@ buildTextMenu: aMenu on: aTarget with: aRequestor
 			t
 				ifTrue: [ aMenu addLine ]
 				ifFalse: [ t := true ].
-			(self perform: p selector) do: [ :c | (c on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]
+			(self perform: p selector) do: [ :c | (c asClass on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]
