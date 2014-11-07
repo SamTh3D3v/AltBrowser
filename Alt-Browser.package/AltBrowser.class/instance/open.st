@@ -34,4 +34,5 @@ open
 				addRightOrBottom: textMorph).
 	window minimumExtent: 500 @ 500.
 	window open.
+	treeMorph takeKeyboardFocus.
 	self registerToAnnouncements
