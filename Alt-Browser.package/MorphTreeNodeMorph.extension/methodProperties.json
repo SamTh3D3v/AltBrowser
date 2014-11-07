@@ -4,7 +4,7 @@
 	"instance" : {
 		"addChildrenForList:addingTo:withExpandedNodes:" : "ThierryGoubier 10/6/2014 16:46:40",
 		"checkInvariant" : "ThierryGoubier 10/6/2014 16:46:40",
-		"findExpanded" : "ThierryGoubier 10/6/2014 16:46:40",
+		"findExpanded" : "ThierryGoubier 11/7/2014 12:12",
 		"findItem:" : "ThierryGoubier 10/6/2014 16:46:40",
 		"rebuildChildren" : "ThierryGoubier 10/6/2014 16:46:40",
 		"recursiveRefreshExpandedState" : "ThierryGoubier 10/6/2014 16:46:40" } }
