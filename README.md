@@ -7,7 +7,7 @@ It integrates: the finder, message browser and, of course, the system browser. I
 
 [AltBrowser screenshot](https://github.com/ThierryGoubier/AltBrowser/blob/master/Documentation/Screenshot.png)
 
-In all supported Pharo versions (2 and 3), AltBrowser can be loaded that way:
+In all supported Pharo versions (2, 3 and 4), AltBrowser can be loaded that way:
 
 ```smalltalk
 Gofer new
@@ -18,7 +18,7 @@ Gofer new
 
 Requires a Mac or Linux system with git correctly installed.
 
-and the stable version for Pharo 3.0 with:
+and the stable version for Pharo (2, 3 and 4) with:
 
 ```smalltalk
 Gofer new
