@@ -1,6 +1,6 @@
 *alt-browser
 findExpanded
-	"Get all expanded items among children recursively."
+	"Get all expanded items among children recursively. Remember that we are talking about items and not MorphTreeNodeMorph instances."
 
 	| currentlyExpanded |
 	currentlyExpanded := OrderedCollection new.

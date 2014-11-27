@@ -1,4 +1,4 @@
 commands
 classSearchCommands
 	<treeAreaCommand>
-	^ #(AltClassRefsCommand)
+	^ #(#AltClassRefsCommand)

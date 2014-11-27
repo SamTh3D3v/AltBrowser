@@ -1,1 +1,1 @@
-An ABClassExtensionNode is used when browsing the extension of a package. Restrict itself to the methods of the extension of the parent package.
+This class is used when browsing the extension of a package. Restrict itself to the methods of the extension of the parent package.

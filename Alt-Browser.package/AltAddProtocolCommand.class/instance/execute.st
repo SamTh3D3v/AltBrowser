@@ -22,8 +22,8 @@ execute
 			| cats |
 			cls = Object
 				ifFalse: [ 
-					cats := cls organization realCategories reject: [ :cat | reject includes: cat ].
-					(cats isEmpty or: [ reject size > 10 ])
+					cats := cls organization realCategories reject: [ :cat | (reject includes: cat) or: [ cat beginsWith: '*' ] ].
+					(cats isEmpty or: [ labels size > 10 ])
 						ifFalse: [ 
 							lines add: labels size.
 							labels addAll: cats asSortedCollection.

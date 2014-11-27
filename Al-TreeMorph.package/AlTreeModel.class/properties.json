@@ -1,0 +1,15 @@
+{
+	"category" : "Al-TreeMorph",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"treeMorph",
+		"isSelectionUpdate" ],
+	"name" : "AlTreeModel",
+	"pools" : [
+		 ],
+	"super" : "MorphTreeModel",
+	"type" : "normal" }

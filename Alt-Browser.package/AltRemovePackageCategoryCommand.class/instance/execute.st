@@ -4,6 +4,6 @@ execute
 
 	| item |
 	item := requestor selectedNode item.
-	item parent removeRPackage: item code.
+	item parent removeRPackage: item item.
 	AltBrowser aNodeToRebuilt: item parent.
 	AltBrowser updateCategories

@@ -1,7 +1,8 @@
 updating
 aClassRenamed: anEvent
-	"If below it's true, rebuilt itself. Return false in any case to stop the update propagation above."
+	"Pass through that event."
 
-	(self contents inject: false into: [ :bool :each | (each aClassRenamed: anEvent) or: [ bool ] ])
-		ifTrue: [ AltBrowser aNodeToRebuilt: self ].
-	^ false
+	(self contents anySatisfy: [ :each | each aClassRenamed: anEvent ])
+		ifFalse: [ ^ false ].
+	AltBrowser aNodeToRebuilt: self.
+	^ true

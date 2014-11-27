@@ -2,4 +2,4 @@ updating
 aClassRenamed: anEvent
 	"Pass through that event."
 
-	^ self contents inject: false into: [ :bool :each | (each aClassRenamed: anEvent) or: [ bool ] ]
+	self contents do: [ :each | each aClassRenamed: anEvent ]
