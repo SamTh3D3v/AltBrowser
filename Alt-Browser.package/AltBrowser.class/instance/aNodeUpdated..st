@@ -7,7 +7,9 @@ aNodeUpdated: anEvent
 		ifNotNil: [ :sNode | 
 			sItem := sNode item.
 			anEvent node == sItem
-				ifTrue: [ self updateTitle ] ].
+				ifTrue: [ 
+					self updateTitle.
+					source contents: sNode sourceCode ] ].
 	r := self findMorphNodeForAbstractItem: anEvent node.
 	r notNil
 		ifFalse: [ ^ self ].
