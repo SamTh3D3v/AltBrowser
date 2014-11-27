@@ -1,6 +1,6 @@
 updating
 aNodeUpdated: anEvent
-	"Don't forget to update the title if appropriate."
+	"Don't forget to update the title and the contents if appropriate."
 
 	| r sItem |
 	self selectedNode

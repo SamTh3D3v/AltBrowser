@@ -11,5 +11,4 @@ registerToAnnouncements
 	self class announcer weak on: AltNodeAdded send: #aNodeAdded: to: self.
 	self class announcer weak on: AltNodeUpdated send: #aNodeUpdated: to: self.
 		"Track changes on the method or class definition we are editing."
-	SystemAnnouncer uniqueInstance weak on: MethodModified send: #aMethodUpdated: to: self.
-	SystemAnnouncer uniqueInstance weak on: ClassModifiedClassDefinition send: #aClassRedefined: to: self
+	SystemAnnouncer uniqueInstance weak on: MethodModified send: #aMethodUpdated: to: self
