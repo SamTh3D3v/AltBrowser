@@ -20,7 +20,8 @@
 		"finder",
 		"finderUI",
 		"toolbar",
-		"isSelectionUpdate" ],
+		"isSelectionUpdate",
+		"commentMorph" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],
