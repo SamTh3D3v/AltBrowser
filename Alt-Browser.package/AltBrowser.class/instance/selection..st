@@ -25,4 +25,5 @@ selection: anItem
 			self source aboutToStyle: sel isStyled.
 			self source contents: sel sourceCode.
 			self history add: sel.
-			sel item selectIn: self ]
+			sel item selectIn: self ].
+	self changed: #itemComment

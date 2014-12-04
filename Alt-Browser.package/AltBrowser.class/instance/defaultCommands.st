@@ -1,5 +1,4 @@
 menus
 defaultCommands
 	<treeAreaCommand>
-	^ {AltCreatePackageCategoryCommand.
-	AltFindClassCommand}
+	^ #(#AltCreatePackageCategoryCommand #AltFindClassCommand #AltCommentCommand)

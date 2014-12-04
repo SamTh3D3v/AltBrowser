@@ -1,4 +1,7 @@
 settings
 defaultBrowser: aBoolean
-	(Smalltalk tools browser isNil and: [ aBoolean ])
-		ifTrue: [ Smalltalk tools register: self as: #browser ]
+	aBoolean
+		ifTrue: [ self registerInAppRegistry ]
+		ifFalse: [ 
+			PackageTreeNautilus registerToolsOn: Smalltalk tools.
+			MessageBrowser registerToolsOn: Smalltalk tools ]

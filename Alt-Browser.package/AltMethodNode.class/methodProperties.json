@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aClassRenamed:" : "ThierryGoubier 11/27/2014 21:39",
+		"aClassRenamed:" : "ThierryGoubier 11/27/2014 22:16:36",
 		"accept:notifying:" : "ThierryGoubier 11/7/2014 12:21:07",
 		"acceptDropItem:" : "ThierryGoubier 11/7/2014 12:21:07",
 		"buildTextMenu:on:with:" : "ThierryGoubier 11/7/2014 12:21:07",
@@ -22,5 +22,6 @@
 		"selector" : "ThierryGoubier 11/7/2014 12:21:07",
 		"sourceClass" : "ThierryGoubier 11/7/2014 12:21:07",
 		"sourceCode" : "ThierryGoubier 11/7/2014 12:21:07",
+		"sourceComment" : "ThierryGoubier 11/29/2014 19:24:41",
 		"title" : "ThierryGoubier 11/7/2014 12:21:07",
 		"wDebugTreeCommands" : "ThierryGoubier 11/7/2014 12:21:07" } }
