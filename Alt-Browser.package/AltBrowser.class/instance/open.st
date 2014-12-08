@@ -40,7 +40,7 @@ open
 			(ProportionalSplitterMorph new
 				layoutFrame: (LayoutFrame fractions: (0.3 @ 0.0 corner: 0.3 @ 1) offsets: (0 @ 0 corner: 4 @ 0));
 				addLeftOrTop: treeMorph;
-				addRightOrBottom: textMorph).
+				addRightOrBottom: groupText).
 	window minimumExtent: 500 @ 500.
 	window open.
 	treeMorph takeKeyboardFocus.
