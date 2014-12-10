@@ -12,4 +12,4 @@ updateTreeKeymap
 		ifTrue: [ self selectedNode item buildTreeShortcutsOn: self treeMorph kmDispatcher with: self ]
 		ifFalse: [ 
 			(Pragma allNamed: #treeAreaCommand from: self class to: self class)
-				do: [ :e | (self perform: e selector) do: [ :c | (c on: self treeMorph for: self) buildShortcut: self treeMorph kmDispatcher ] ] ]
+				do: [ :e | (self perform: e selector) do: [ :c | (c asClass on: self treeMorph for: self) buildShortcut: self treeMorph kmDispatcher ] ] ]
