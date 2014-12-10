@@ -3,9 +3,9 @@ updateTextKeymap
 	"Update the text keymap. Reset the dispatcher and make it an AltKMDispatcher if needed."
 
 	(textMorph kmDispatcher isKindOf: AltKMDispatcher)
-		ifFalse: [ textMorph setProperty: #kmdispatcher toValue: (AltKMDispatcher target: textMorph) ].
+		ifFalse: [ textMorph setProperty: #kmDispatcher toValue: (AltKMDispatcher target: textMorph) ].
 	(textMorph textMorph kmDispatcher isKindOf: AltKMDispatcher)
-		ifFalse: [ textMorph textMorph setProperty: #kmDispatcher toValue: (AltKMDispatcher target:  textMorph textMorph)].
+		ifFalse: [ textMorph textMorph setProperty: #kmDispatcher toValue: (AltKMDispatcher target: textMorph textMorph) ].
 	{(textMorph kmDispatcher).
 	(textMorph textMorph kmDispatcher)}
 		do: [ :aKMDispatcher | 
