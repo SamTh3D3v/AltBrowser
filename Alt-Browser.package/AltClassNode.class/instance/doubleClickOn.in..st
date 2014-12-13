@@ -6,4 +6,7 @@ doubleClickOn: anAltTreeNodeModel in: anAltBrowser
 	aRBEnv := anAltBrowser rbEnvironment isSelectorEnvironment
 		ifTrue: [ anAltBrowser rbEnvironment environment ]
 		ifFalse: [ anAltBrowser rbEnvironment ].
-	AltBrowser fullOnClass: self itemClass in: aRBEnv
+	AltBrowser
+		fullOnEnvironment: (aRBEnv forClasses: {(self itemClass)})
+		select: self
+		with: anAltTreeNodeModel findExpanded
