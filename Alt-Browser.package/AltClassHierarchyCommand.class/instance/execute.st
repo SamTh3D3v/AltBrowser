@@ -1,7 +1,10 @@
 execution
 execute
-	"Strange, but convenient, to see that systemNavigation is defined for every object."
+	"Per object system navigation looks cool, but in practice it isn't that powerfull or offer any strong benefit."
 
-	| class |
-	class := requestor selectedNode item itemClass theNonMetaClass ifNil: [ ^ self ].
-	self systemNavigation browseHierarchy: class
+	| aClass |
+	aClass := requestor selectedNode item itemClass theNonMetaClass ifNil: [ ^ self ].
+	AltBrowser
+		fullOnEnvironment: (requestor rbEnvironment forClasses: {aClass} , aClass allSuperclasses , aClass allSubclasses)
+		select: requestor selectedNode item
+		with: requestor selectedNode findExpanded
