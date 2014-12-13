@@ -7,7 +7,7 @@ It integrates: the finder, message browser and, of course, the system browser. I
 
 A more detailed report / user manual of a kind is available [here](http://thierrygoubier.github.io/AltBrowser/).
 
-[AltBrowser screenshot](https://github.com/ThierryGoubier/AltBrowser/blob/master/Documentation/Screenshot.png)
+![AltBrowser screenshot](https://github.com/ThierryGoubier/AltBrowser/blob/master/Documentation/Screenshot.png)
 
 In all supported Pharo versions (2, 3 and 4), AltBrowser can be loaded that way:
 
