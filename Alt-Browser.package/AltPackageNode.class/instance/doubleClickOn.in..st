@@ -1,8 +1,8 @@
 actions
-doubleClickOn: anAltTreeNodeModel in: anAltBrowser
+doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	"Action!"
 
 	AltBrowser
 		fullOnEnvironment: (anAltBrowser rbEnvironment forPackages: {(self rpackage)})
 		select: self
-		with: anAltTreeNodeModel findExpanded
+		with: aMorphTreeNodeMorph findExpanded

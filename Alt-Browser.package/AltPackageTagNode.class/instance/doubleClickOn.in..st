@@ -1,5 +1,5 @@
 actions
-doubleClickOn: anAltTreeNodeModel in: anAltBrowser
+doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	"Action!"
 
 	"At the moment, a RPackageTag can't be used in an environment. So, when double clicking, open with a focus on the package, not the tag."
@@ -7,4 +7,4 @@ doubleClickOn: anAltTreeNodeModel in: anAltBrowser
 	AltBrowser
 		fullOnEnvironment: (anAltBrowser rbEnvironment forPackages: {(self rpackage)})
 		select: self
-		with: anAltTreeNodeModel parentNode findExpanded
+		with: aMorphTreeNodeMorph parentNode findExpanded

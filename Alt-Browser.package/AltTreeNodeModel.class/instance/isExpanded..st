@@ -4,7 +4,6 @@ isExpanded: aBoolean
 
 	"Add some handling to cope with defective deselection propagation when dis-expanding a node which has a selected child."
 
-	isExpanded := aBoolean.
 	aBoolean
 		ifFalse: [ 
 			contents := nil.
