@@ -1,5 +1,5 @@
 actions
-doubleClickOn: anAltTreeNodeModel in: anAltBrowser
+doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	"Action!"
 
 	| aRBEnv |
@@ -9,4 +9,4 @@ doubleClickOn: anAltTreeNodeModel in: anAltBrowser
 	AltBrowser
 		fullOnEnvironment: (aRBEnv forClasses: {(self itemClass)})
 		select: self
-		with: anAltTreeNodeModel findExpanded
+		with: aMorphTreeNodeMorph findExpanded
