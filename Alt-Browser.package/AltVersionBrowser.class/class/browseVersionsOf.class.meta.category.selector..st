@@ -11,9 +11,5 @@ browseVersionsOf: method class: class meta: meta category: msgCategory selector:
 		selector: selector ]
 		on: NotFound
 		do: [ 
-			self superclass
-				browseVersionsOf: method
-				class: class
-				meta: meta
-				category: msgCategory
-				selector: selector ]
+			self superclass new
+				browseVersionsOf: method ]
