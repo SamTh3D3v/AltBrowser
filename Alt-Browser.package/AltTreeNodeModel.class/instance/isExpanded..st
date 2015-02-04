@@ -10,4 +10,4 @@ isExpanded: aBoolean
 			model selectedItem
 				ifNotNil: [ :s | 
 					(s isAnAncestor: self)
-						ifTrue: [ model selection: (model treeMorph listManager newSelectionHolderWithNodePath: nil) ] ] ]
+						ifTrue: [ model selectPathForAbstractItem: item ] ] ]
