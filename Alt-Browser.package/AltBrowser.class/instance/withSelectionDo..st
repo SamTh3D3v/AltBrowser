@@ -15,10 +15,7 @@ withSelectionDo: aBlock
 					isSelectionUpdate := prev.
 					self deselectAll ]
 				ifNotNil: [ :selMorph | 
-					self
-						requestView:
-							(MorphTreeChangeRequest new
-								action: #setSelectedMorph:;
-								arguments: (Array with: selMorph);
-								yourself).
+					treeMorph
+						setSelectedMorph: selMorph;
+						scrollSelectionIntoView.
 					isSelectionUpdate := prev ] ]
