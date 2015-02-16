@@ -12,6 +12,7 @@ recursiveRefreshExpandedState
 					currentlyExpanded addAll: aNode findExpanded.
 					aNode recursiveAddTo: toDelete ] ].
 	container noteRemovalOfAll: toDelete.
+	complexContents ifNil: [ ^ self ].
 	(isExpanded and: [ complexContents hasContents ])
 		ifFalse: [ ^ self changed ].
 	(complexContents contents) isEmpty

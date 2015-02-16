@@ -11,5 +11,5 @@ aNodeRebuilt: anEvent
 				ifNotNil: [ 
 					(self findMorphNodeForAbstractItem: anEvent node)
 						ifNotNil: [ :aMorph | 
-							aMorph complexContents rebuildContents.
+							aMorph complexContents ifNotNil: [:cC | cC rebuildContents].
 							aMorph rebuildChildren ] ] ]

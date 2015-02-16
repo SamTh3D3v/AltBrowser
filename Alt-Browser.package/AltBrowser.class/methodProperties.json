@@ -70,15 +70,15 @@
 	"instance" : {
 		"aMethodUpdated:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"aNodeAdded:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"aNodeRebuilt:" : "ThierryGoubier 12/14/2014 17:01:14",
+		"aNodeRebuilt:" : "ThierryGoubier 2/16/2015 14:10",
 		"aNodeRemoved:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"aNodeUpdated:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"aRootsChanged" : "ThierryGoubier 12/14/2014 17:01:14",
 		"acceptDroppingMorph:event:inMorph:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"addModelItemsToWindowMenu:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"browseFinderResults" : "ThierryGoubier 2/6/2015 12:47:55",
+		"browseFinderResults" : "ThierryGoubier 2/6/2015 11:10",
 		"buildTextMenu:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"buildTreeMenu:" : "ThierryGoubier 2/8/2015 23:15",
+		"buildTreeMenu:" : "ThierryGoubier 2/8/2015 23:16:17",
 		"canDiscardEdits" : "ThierryGoubier 12/14/2014 17:01:14",
 		"close" : "ThierryGoubier 12/14/2014 17:01:14",
 		"defaultCommands" : "ThierryGoubier 12/14/2014 17:01:14",
@@ -89,7 +89,7 @@
 		"dragPassengerFor:inMorph:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"expandAllNodes" : "ThierryGoubier 12/14/2014 17:01:14",
 		"expandAllSuchThat:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"findMorphNodeForAbstractItem:" : "ThierryGoubier 12/14/2014 17:01:14",
+		"findMorphNodeForAbstractItem:" : "ThierryGoubier 2/16/2015 14:07",
 		"findMorphNodeForItem:" : "ThierryGoubier 12/14/2014 17:01:14",
 		"finder" : "ThierryGoubier 12/14/2014 17:01:14",
 		"hasComment" : "ThierryGoubier 12/14/2014 17:01:14",
@@ -120,4 +120,4 @@
 		"updateTitle" : "ThierryGoubier 12/14/2014 17:01:14",
 		"updateTreeKeymap" : "ThierryGoubier 12/14/2014 17:01:14",
 		"wantsDroppedMorph:event:inMorph:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"withSelectionDo:" : "ThierryGoubier 2/9/2015 22:45" } }
+		"withSelectionDo:" : "ThierryGoubier 2/9/2015 22:50:40" } }
