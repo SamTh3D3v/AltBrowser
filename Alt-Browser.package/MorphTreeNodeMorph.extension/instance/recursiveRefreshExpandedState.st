@@ -12,13 +12,14 @@ recursiveRefreshExpandedState
 					currentlyExpanded addAll: aNode findExpanded.
 					aNode recursiveAddTo: toDelete ] ].
 	container noteRemovalOfAll: toDelete.
-	complexContents ifNil: [ ^ self ].
-	(isExpanded and: [ complexContents hasContents ])
-		ifFalse: [ ^ self changed ].
-	(complexContents contents) isEmpty
-		ifTrue: [ ^ self changed ].
+	complexContents
+		ifNotNil: [ 
+			(isExpanded and: [ complexContents hasContents ])
+				ifFalse: [ ^ self changed ].
+			complexContents contents isEmpty
+				ifTrue: [ ^ self changed ] ].
 	final := OrderedCollection new.
 	self addChildrenForList: container addingTo: final withExpandedNodes: currentlyExpanded.
 	toDelete do: [ :each | each delete ].
 	container scroller addAllMorphs: final after: self.
-	final do: [ :e | e doLayoutIn: e layoutBounds ].
+	final do: [ :e | e doLayoutIn: e layoutBounds ]
