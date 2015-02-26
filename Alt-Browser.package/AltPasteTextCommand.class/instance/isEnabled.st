@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ Clipboard clipboardText notEmpty
+	^ [Clipboard clipboardText notEmpty] on: ZnInvalidUTF8 do:[false]
