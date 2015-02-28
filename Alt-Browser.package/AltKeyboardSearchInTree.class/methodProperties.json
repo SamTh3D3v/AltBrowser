@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"startSearch:for:" : "ThierryGoubier 12/14/2014 17:01:14" },
+		"startSearch:for:" : "ThierryGoubier 2/18/2015 17:13:02" },
 	"instance" : {
-		"completionKeys" : "ThierryGoubier 12/14/2014 17:01:14",
-		"eventIsCompletion:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"eventIsTrapped:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"execute:for:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"nodeDetect:ifNone:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"onCompletionKey:for:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"onKey:for:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"onTrappedKey:for:" : "ThierryGoubier 12/14/2014 17:01:14",
-		"trappedKeys" : "ThierryGoubier 12/14/2014 17:01:14" } }
+		"completionKeys" : "ThierryGoubier 2/18/2015 17:13:02",
+		"eventIsCompletion:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"eventIsTrapped:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"execute:for:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"nodeDetect:ifNone:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"onCompletionKey:for:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"onKey:for:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"onTrappedKey:for:" : "ThierryGoubier 2/18/2015 17:13:02",
+		"trappedKeys" : "ThierryGoubier 2/18/2015 17:13:02" } }
