@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfAlTreeMorph",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfAlTreeMorph",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
