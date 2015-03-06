@@ -6,4 +6,4 @@ baseline: spec
 		do: [ 
 			spec
 				package: 'Al-TreeMorph';
-				group: 'default' with: #('Alt-TreeMorph') ]
+				group: 'default' with: #('Al-TreeMorph') ]
