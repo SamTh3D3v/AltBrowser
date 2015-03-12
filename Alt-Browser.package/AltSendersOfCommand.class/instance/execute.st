@@ -7,7 +7,6 @@ execute
 		ifTrue: [ requestor rbEnvironment environment ]
 		ifFalse: [ requestor rbEnvironment ].
 	aSelector := requestor selectedNode item selector.
-	anEnvironment := requestor rbEnvironment.
 	classDict := IdentityDictionary new.
 	specialFlag := Smalltalk hasSpecialSelector: aSelector ifTrueSetByte: [ :byte | specialByte := byte ].
 	anEnvironment

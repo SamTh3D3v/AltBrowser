@@ -5,7 +5,6 @@ execute
 		ifTrue: [ requestor rbEnvironment environment ]
 		ifFalse: [ requestor rbEnvironment ].
 	aSelector := self node selector.
-	anEnvironment := requestor rbEnvironment.
 	classDict := IdentityDictionary new.
 	anEnvironment
 		classesAndMetaClassesDo: [ :class | 
