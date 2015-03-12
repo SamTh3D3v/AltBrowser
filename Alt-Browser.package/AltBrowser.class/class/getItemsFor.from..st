@@ -2,7 +2,7 @@ private
 getItemsFor: aCategoryDefinition from: aListOfPackages
 	"Remove elements from aListOfPackages to bring them accordingly to a CategoryDefinition. Returns the top-level object. If this definition is an array, go recursively through it."
 
-	"Reduce single element categories to that element."
+	"Do not reduce single element categories to that element."
 
 	| i |
 	aCategoryDefinition isArray
@@ -16,7 +16,5 @@ getItemsFor: aCategoryDefinition from: aListOfPackages
 					(i value
 						addAll:
 							(aListOfPackages
-								select: [ :e | e size >= aCategoryDefinition size and: [ (e copyFrom: 1 to: aCategoryDefinition size) = aCategoryDefinition ] ])).
-			i value size == 1
-				ifTrue: [ ^ i value first ] ].
+								select: [ :e | e size >= aCategoryDefinition size and: [ (e copyFrom: 1 to: aCategoryDefinition size) = aCategoryDefinition ] ])) ].
 	^ i
