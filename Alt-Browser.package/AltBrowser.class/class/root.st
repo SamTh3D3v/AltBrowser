@@ -1,3 +1,4 @@
 accessing
 root
-	^ Root ifNil: [ Root := AltRootNode with: #root -> self getRootItems ]
+	Root ifNil: [ self createRootItems ].
+	^ Root
