@@ -13,15 +13,13 @@ aMethodAdded: anEvent
 				on: Error
 				do: [ ^ self ].	"Probably safer to do an AST parse and recover the correct node."
 			cat := (keywords detect: [ :k | k beginsWith: 'Prefix-' ] ifNone: [  ])
-				ifNotNil: [ :k | k allButFirst: 'Prefix-' ]
+				ifNotNil: [ :k | k allButFirst: 'Prefix-' size ]
 				ifNil: [ ^ self ].
 			(self root findKeywordsCategory: keywords)
 				ifNotNil: [ :aPackageCategory | 
-					(aPackageCategory findPackageCategory: cat asSymbol)
-						ifNotNil: [ :previous | 
-							(previous contents isEmpty not or: [ aPackageCategory == previous ])
-								ifTrue: [ ^ self ].
-							previous parent removeRPackage: previous item.
-							self aNodeToRebuilt: previous parent ].
+					(aPackageCategory findPackageCategory: cat asSymbol) ifNotNil: [ ^ self ].
 					aPackageCategory addRPackage: cat asSymbol -> OrderedCollection new.
-					self aNodeToRebuilt: aPackageCategory ] ]
+					self aNodeToRebuilt: aPackageCategory ]
+				ifNil: [ 
+					self root addRPackage: cat asSymbol -> OrderedCollection new.
+					self aNodeToRebuilt: self root ] ]
