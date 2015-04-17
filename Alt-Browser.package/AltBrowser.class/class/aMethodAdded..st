@@ -17,7 +17,7 @@ aMethodAdded: anEvent
 				ifNil: [ ^ self ].
 			(self root findKeywordsCategory: keywords)
 				ifNotNil: [ :aPackageCategory | 
-					(self root findPackageCategory: cat asSymbol)
+					(aPackageCategory findPackageCategory: cat asSymbol)
 						ifNotNil: [ :previous | 
 							(previous contents isEmpty not or: [ aPackageCategory == previous ])
 								ifTrue: [ ^ self ].
