@@ -5,4 +5,5 @@ initialize
 	Root := nil.
 	RecentPackages := OrderedCollection new.
 	self registerOnSystemAnnouncements.
-	self registerInAppRegistry
+	self registerInAppRegistry.
+	self createRootItems

@@ -10,4 +10,5 @@ createRootItems
 						collect: [ :e | e first -> (e allButFirst collect: [ :f | f -> OrderedCollection new ]) asOrderedCollection ])
 						, {(RPackage defaultPackageName)}) asOrderedCollection.
 	MCWorkingCopy allManagers
-		do: [ :e | self aMCWorkingCopyCreated: (MCWorkingCopyCreated workingCopy: e package: (MCPackage named: e packageName)) ]
+		do: [ :e | self aMCWorkingCopyCreated: (MCWorkingCopyCreated workingCopy: e package: (MCPackage named: e packageName)) ].
+	self aRecentPackagesReset
