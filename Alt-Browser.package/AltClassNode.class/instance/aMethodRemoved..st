@@ -7,7 +7,7 @@ aMethodRemoved: anEvent
 	anEvent methodClass == self itemClass
 		ifTrue: [ 
 			self contents do: [ :each | each aMethodRemoved: anEvent ].
-			(self itemClass organization realCategories includes: anEvent protocol)
+			(self itemClass organization categories includes: anEvent protocol)
 				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ self contents first aMethodRemoved: anEvent

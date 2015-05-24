@@ -5,7 +5,7 @@ itemOrganization
 	"In this method, we order the protocols with simple rules: alphabetical, except extensions and initialize / instance creation and accessing in front, and private at the end. Dedicated methods provide for the list of exceptions."
 
 	| result origin ending |
-	origin := self itemClass organization realCategories sorted.
+	origin := self itemClass organization categories sorted.
 	origin isEmpty
 		ifTrue: [ ^ self itemClass protocols ].
 	result := OrderedCollection new: origin size.
