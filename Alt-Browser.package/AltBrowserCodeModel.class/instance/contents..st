@@ -1,4 +1,4 @@
-accessing
+contents
 contents: aStringOrText
-	super contents: aStringOrText.
-	self contentsChanged
+	contents := aStringOrText.
+	self changed: #contents
