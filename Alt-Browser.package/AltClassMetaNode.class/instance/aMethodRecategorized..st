@@ -14,8 +14,8 @@ aMethodRecategorized: anEvent
 				ifTrue: [ 
 					AltBrowser aNodeToRebuilt: self.
 					^ true ].
-			((self itemClass organization realCategories includes: anEvent oldProtocol)
-				and: [ self itemClass organization realCategories includes: anEvent newProtocol ])
+			((self itemClass protocols includes: anEvent oldProtocol)
+				and: [ self itemClass protocols includes: anEvent newProtocol ])
 				ifFalse: [ 
 					AltBrowser aNodeToRebuilt: self.
 					^ true ].

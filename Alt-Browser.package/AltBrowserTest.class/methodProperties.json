@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testProtocols" : "ThierryGoubier 6/12/2015 23:22",
 		"testRPackageAccess" : "ThierryGoubier 6/12/2015 19:10:34",
 		"testRPackageTagAccess" : "ThierryGoubier 6/12/2015 19:10:34",
 		"testRPackageTagName" : "ThierryGoubier 6/12/2015 19:10:34" } }
