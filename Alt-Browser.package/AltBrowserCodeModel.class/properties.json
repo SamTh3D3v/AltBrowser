@@ -7,9 +7,12 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"browser",
-		"aboutToStyle" ],
+		"aboutToStyle",
+		"currentCompiledMethod",
+		"contentsSymbol",
+		"contents" ],
 	"name" : "AltBrowserCodeModel",
 	"pools" : [
 		 ],
-	"super" : "CodeHolder",
+	"super" : "Model",
 	"type" : "normal" }
