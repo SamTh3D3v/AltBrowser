@@ -14,7 +14,7 @@ execute
 	tClass := sItem sourceClass.
 	reject := Set new.
 	reject
-		addAll: tClass organization realCategories;
+		addAll: tClass protocols;
 		add: Protocol nullCategory.
 	lines := OrderedCollection new.
 	tClass allSuperclasses
@@ -22,13 +22,16 @@ execute
 			| cats |
 			cls = Object
 				ifFalse: [ 
-					cats := cls organization realCategories reject: [ :cat | (reject includes: cat) or: [ cat beginsWith: '*' ] ].
+					cats := cls protocols reject: [ :cat | (reject includes: cat) or: [ cat beginsWith: '*' ] ].
 					(cats isEmpty or: [ labels size > 10 ])
 						ifFalse: [ 
 							lines add: labels size.
 							labels addAll: cats asSortedCollection.
 							reject addAll: cats ] ] ].
-	newName := UIManager default chooseOrRequestFrom: labels lines: lines title: 'Add Category'.
+	newName := UIManager default
+		chooseOrRequestFrom: labels
+		lines: lines
+		title: 'Add Protocol'.
 	newName ifNil: [ ^ self ].
 	newName := newName asSymbol.
 	tClass organization addCategory: newName.

@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"on:for:" : "ThierryGoubier 6/12/2015 22:16" },
+	"instance" : {
+		"addItemToMenu:" : "ThierryGoubier 6/12/2015 22:12",
+		"buildShortcut:" : "ThierryGoubier 6/12/2015 22:12",
+		"execute" : "ThierryGoubier 6/12/2015 22:10",
+		"icon" : "ThierryGoubier 6/12/2015 22:09",
+		"isActive" : "ThierryGoubier 6/12/2015 22:11",
+		"isEnabled" : "ThierryGoubier 6/12/2015 22:11",
+		"keyString" : "ThierryGoubier 6/12/2015 22:09",
+		"keystroke" : "ThierryGoubier 6/12/2015 22:09",
+		"label" : "ThierryGoubier 6/12/2015 22:09",
+		"on:for:" : "ThierryGoubier 6/12/2015 22:09",
+		"setTarget:requestor:" : "ThierryGoubier 6/12/2015 22:08",
+		"wantsMenu" : "ThierryGoubier 6/12/2015 22:11" } }

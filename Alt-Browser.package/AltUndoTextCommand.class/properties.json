@@ -10,5 +10,5 @@
 	"name" : "AltUndoTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

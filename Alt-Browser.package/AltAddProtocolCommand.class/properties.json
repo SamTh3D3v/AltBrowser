@@ -10,5 +10,5 @@
 	"name" : "AltAddProtocolCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

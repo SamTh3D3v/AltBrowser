@@ -7,7 +7,7 @@ itemOrganization
 	| result origin ending |
 	origin := self itemClass organization categories sorted.
 	origin isEmpty
-		ifTrue: [ ^ self itemClass protocols ].
+		ifTrue: [ ^ #(#'no messages') ].
 	result := OrderedCollection new: origin size.
 	origin := origin
 		reject: [ :p | 

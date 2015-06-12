@@ -10,5 +10,5 @@
 	"name" : "AltGoToSubclassCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }
