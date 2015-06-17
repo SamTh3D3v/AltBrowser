@@ -2,7 +2,7 @@ actions
 buildTreeMenu: aMenu on: aTarget with: aRequestor
 	| t |
 	t := false.
-	((self pragmas: #treeAreaCommand from: self class to: AlTreeNode) sorted: [ :a :b | a selector < b selector ])
+	((self pragmas: #treeAreaCommand from: self class to: AltAbstractNode) sorted: [ :a :b | a selector < b selector ])
 		do: [ :e | 
 			t
 				ifTrue: [ aMenu addLine ]
