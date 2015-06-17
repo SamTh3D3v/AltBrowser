@@ -6,6 +6,5 @@ baseline: spec
 		do: [ 
 			spec blessing: #baseline.
 			spec
-				package: 'Al-TreeMorph';
-				package: 'Alt-Browser' with: [ spec requires: 'Al-TreeMorph' ];
+				package: 'Alt-Browser';
 				group: 'default' with: #('Alt-Browser') ]

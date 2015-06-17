@@ -1,2 +1,0 @@
-(name 'UITheme-Pharo-ThierryGoubier.2' message 'As a subclass of UIThemeWatery' id 'd6fe2368-ddbf-4f91-b861-1a2cad642211' date '26 March 2014' time '10:45:56.562266 pm' author 'ThierryGoubier' ancestors ((name 'UITheme-Pharo-ThierryGoubier.1' message 'Trying to recover the Pharo theme.
-' id '392ee780-9a40-5549-a126-7c7679f41c82' date '26 March 2014' time '10:33:43 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())

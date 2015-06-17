@@ -1,1 +1,0 @@
-Inspect an item.
