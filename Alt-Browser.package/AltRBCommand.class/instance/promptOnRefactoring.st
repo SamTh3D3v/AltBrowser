@@ -1,0 +1,3 @@
+refactoring
+promptOnRefactoring
+	^ false

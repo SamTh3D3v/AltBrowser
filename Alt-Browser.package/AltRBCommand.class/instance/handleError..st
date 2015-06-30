@@ -1,5 +1,7 @@
-execution
+error handling
 handleError: anException
+	"I'm sure this is wrong and the error should not resume."
+
 	anException actionBlock isNil
 		ifTrue: [ self inform: anException messageText ]
 		ifFalse: [ 

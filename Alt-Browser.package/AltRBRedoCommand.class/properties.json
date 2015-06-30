@@ -10,5 +10,5 @@
 	"name" : "AltRBRedoCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltRBCommand",
 	"type" : "normal" }

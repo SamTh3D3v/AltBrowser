@@ -6,6 +6,7 @@ aMethodAdded: anEvent
 	altEvent := AltMethodAdded method: anEvent method.
 	altEvent rpackage: (RPackageOrganizer default packageForProtocol: anEvent protocol inClass: anEvent methodClass).
 	self root aMethodAdded: altEvent.
+	self announcer announce: (AltMethodSelectorUpdated new selector: anEvent selector).
 	anEvent selector == #catalogKeywords
 		ifTrue: [ 
 			| cat keywords |

@@ -1,1 +1,0 @@
-This command removes a class.

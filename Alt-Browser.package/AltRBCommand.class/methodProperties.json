@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"handleError:" : "ThierryGoubier 6/17/2015 19:28",
+		"handleFailure:" : "ThierryGoubier 6/17/2015 19:28",
+		"handleWarning:" : "ThierryGoubier 6/17/2015 19:28",
+		"internalPerformRefactoring:" : "ThierryGoubier 6/18/2015 19:03",
+		"internalPerformRefactorings:" : "ThierryGoubier 6/17/2015 19:29",
+		"performRefactoring:" : "ThierryGoubier 6/18/2015 19:02",
+		"performRefactorings:" : "ThierryGoubier 6/17/2015 19:29",
+		"promptOnRefactoring" : "ThierryGoubier 6/17/2015 19:30",
+		"refactoringOptions:" : "ThierryGoubier 6/23/2015 23:11" } }

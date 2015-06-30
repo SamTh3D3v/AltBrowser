@@ -1,14 +1,14 @@
 {
-	"category" : "Alt-Browser-Commands-AST",
+	"category" : "Alt-Browser-Announcements",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"astNode" ],
-	"name" : "AltAstNodeCommand",
+		"selector" ],
+	"name" : "AltMethodSelectorUpdated",
 	"pools" : [
 		 ],
-	"super" : "AltRBCommand",
+	"super" : "Announcement",
 	"type" : "normal" }

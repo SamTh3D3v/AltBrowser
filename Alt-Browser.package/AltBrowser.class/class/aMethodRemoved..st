@@ -6,4 +6,5 @@ aMethodRemoved: anEvent
 
 	"Bug: when removing a method, the method having already been removed from the system makes the search for the parent fail... :palm:"
 
-	self root aMethodRemoved: anEvent
+	self root aMethodRemoved: anEvent.
+	self announcer announce: (AltMethodSelectorUpdated new selector: anEvent selector)

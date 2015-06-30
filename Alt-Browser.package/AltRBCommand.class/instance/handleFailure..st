@@ -1,8 +1,8 @@
-execution
-handleError: anException
+error handling
+handleFailure: anException
 	anException actionBlock isNil
 		ifTrue: [ self inform: anException messageText ]
 		ifFalse: [ 
-			(self confirm: anException messageText)
+			(self confirm: anException messageText) 
 				ifTrue: [ anException actionBlock value ] ].
-	anException resume
+	anException return
