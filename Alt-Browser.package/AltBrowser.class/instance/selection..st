@@ -7,6 +7,7 @@ selection: anItem
 	"Can I back-select from there if I should not move the selection (unaccepted edits)?"
 
 	| sel |
+	anItem ifNil: [ ^ self ].
 	anItem selectedNodePath notNil
 		ifTrue: [ sel := anItem selectedNodePath last ].
 	super selection: anItem.
