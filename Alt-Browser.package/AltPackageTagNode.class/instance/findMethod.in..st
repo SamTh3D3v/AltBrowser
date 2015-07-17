@@ -4,10 +4,13 @@ findMethod: aSelector in: aClass
 
 	| res |
 	(self packageTag
-		hasClass:
-			(aClass isMeta
-				ifTrue: [ aClass baseClass ]
-				ifFalse: [ aClass ]))
+		ifNotNil: [ :aTag | 
+			aTag
+				hasClass:
+					(aClass isMeta
+						ifTrue: [ aClass baseClass ]
+						ifFalse: [ aClass ]) ]
+		ifNil: [ false ])
 		ifTrue: [ 
 			self contents
 				do: [ :each | 
