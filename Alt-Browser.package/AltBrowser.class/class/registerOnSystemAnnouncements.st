@@ -28,4 +28,4 @@ registerOnSystemAnnouncements
 	RPackage organizer announcer unsubscribe: self.
 	RPackage organizer announcer weak
 		on: RPackageUnregistered send: #aRPackageUnregistered: to: self;
-		on: RPackageCreated send: #aRPackageCreated: to: self
+		on: RPackageRegistered send: #aRPackageCreated: to: self
