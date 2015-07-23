@@ -3,7 +3,8 @@ execute
 	"Find a class."
 
 	| aClass found |
-	aClass := SearchFacade classSearch chooseFromOwner: target owner.
+	aClass := (SearchFacade classSearchIn: (requestor rbEnvironment classesAndTraits sorted: [ :a :b | a name < b name ]))
+		chooseFromOwner: target owner.
 	aClass isNil
 		ifTrue: [ 
 			self inform: 'Class search canceled '.
