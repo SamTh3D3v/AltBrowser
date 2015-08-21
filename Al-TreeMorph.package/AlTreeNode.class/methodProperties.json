@@ -1,16 +1,15 @@
 {
 	"class" : {
-		"with:" : "ThierryGoubier 12/14/2014 17:00:50",
-		"with:parent:" : "ThierryGoubier 12/14/2014 17:00:50" },
+		"with:" : "ThierryGoubier 1/26/2015 16:53:18",
+		"with:parent:" : "ThierryGoubier 1/26/2015 16:53:18" },
 	"instance" : {
-		"buildTreeMenu:on:with:" : "ThierryGoubier 1/23/2015 16:00",
-		"contents" : "ThierryGoubier 12/14/2014 17:00:50",
-		"doubleClickOn:in:" : "ThierryGoubier 12/14/2014 17:00:50",
-		"icon" : "ThierryGoubier 12/14/2014 17:00:50",
-		"item" : "ThierryGoubier 12/14/2014 17:00:50",
-		"item:" : "ThierryGoubier 12/14/2014 17:00:50",
-		"parent" : "ThierryGoubier 12/14/2014 17:00:50",
-		"parent:" : "ThierryGoubier 12/14/2014 17:00:50",
-		"rebuildContents" : "ThierryGoubier 12/14/2014 17:00:50",
-		"selectIn:" : "ThierryGoubier 12/14/2014 17:00:50",
-		"title" : "ThierryGoubier 12/14/2014 17:00:50" } }
+		"contents" : "ThierryGoubier 1/26/2015 16:53:18",
+		"doubleClickOn:in:" : "ThierryGoubier 1/26/2015 16:53:18",
+		"icon" : "ThierryGoubier 1/26/2015 16:53:18",
+		"item" : "ThierryGoubier 1/26/2015 16:53:18",
+		"item:" : "ThierryGoubier 1/26/2015 16:53:18",
+		"parent" : "ThierryGoubier 1/26/2015 16:53:18",
+		"parent:" : "ThierryGoubier 1/26/2015 16:53:18",
+		"rebuildContents" : "ThierryGoubier 1/26/2015 16:53:18",
+		"selectIn:" : "ThierryGoubier 1/26/2015 16:53:18",
+		"title" : "ThierryGoubier 1/26/2015 16:53:18" } }
