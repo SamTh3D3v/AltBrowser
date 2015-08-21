@@ -1,4 +1,3 @@
-commands
+tree commands
 treeAreaCommands
-	<treeAreaCommand>
 	^ #(#AltAddProtocolCommand #AltRemoveProtocolCommand)

@@ -5,6 +5,7 @@ SystemOrganization addCategory: 'Alt-Browser-Commands-AST'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Refactoring'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Text'!
 SystemOrganization addCategory: 'Alt-Browser-Core'!
+SystemOrganization addCategory: 'Alt-Browser-Environments'!
 SystemOrganization addCategory: 'Alt-Browser-Nodes'!
 SystemOrganization addCategory: 'Alt-Browser-Settings'!
 SystemOrganization addCategory: 'Alt-Browser-Tests'!

@@ -11,5 +11,9 @@ updateTreeKeymap
 	self selectedNode notNil
 		ifTrue: [ self selectedNode item buildTreeShortcutsOn: self treeMorph kmDispatcher with: self ]
 		ifFalse: [ 
-			(Pragma allNamed: #treeAreaCommand from: self class to: self class)
-				do: [ :e | (self perform: e selector) do: [ :c | (c asClass on: self treeMorph for: self) buildShortcut: self treeMorph kmDispatcher ] ] ]
+			self class protocols
+				do: [ :p | 
+					(p matchesRegex: '.*tree commands')
+						ifTrue: [ 
+							((self class selectorsInProtocol: p) sorted: [ :a :b | a < b ])
+								do: [ :e | (self perform: e) do: [ :c | (c asClass on: self treeMorph for: self) buildShortcut: self treeMorph kmDispatcher ] ] ] ] ]

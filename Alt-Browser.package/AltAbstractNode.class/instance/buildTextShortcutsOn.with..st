@@ -2,9 +2,9 @@ querying
 buildTextShortcutsOn: aKMDispatcher with: aRequestor
 	"This is an attempt at handling shortcuts... Which works, with the help of a custom KMDispatcher."
 
-	(self pragmas: #textAreaCommand from: self class to: AltAbstractNode)
+	(self selectorsIn: '.*text commands' from: self class upTo: AltAbstractNode)
 		do: [ :e | 
-			(self perform: e selector)
+			(self perform: e)
 				do: [ :c | 
 					| command |
 					command := c asClass on: aRequestor textMorph for: aRequestor.

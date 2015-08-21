@@ -1,4 +1,3 @@
-commands
+tree commands
 rpackageCommands
-	<treeAreaCommand>
 	^ #(#AltAddSystemCategoryCommand)

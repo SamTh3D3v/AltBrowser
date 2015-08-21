@@ -1,4 +1,3 @@
-commands
+tree commands
 removeClassCommand
-	<treeAreaCommand>
 	^ #(#AltRemoveClassCommand)

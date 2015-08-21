@@ -1,4 +1,3 @@
-commands
+tree commands
 rcTreeCommands
-	<treeAreaCommand>
 	^ #(#AltRemovePackageCategoryCommand #AltCreatePackageCategoryCommand)

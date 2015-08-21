@@ -1,4 +1,3 @@
-commands
+text commands
 formatCommand
-	<textAreaCommand>
 	^ #(#AltTextFormatCommand)
