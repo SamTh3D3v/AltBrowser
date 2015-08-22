@@ -10,5 +10,5 @@
 	"name" : "AltSendersOfCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

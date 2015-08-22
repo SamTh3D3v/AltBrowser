@@ -1,14 +1,15 @@
 {
-	"category" : "Alt-Browser-Commands-Refactoring",
+	"category" : "Alt-Browser-Commands",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltRBCommand",
+		"target",
+		"requestor" ],
+	"name" : "AltCommand",
 	"pools" : [
 		 ],
-	"super" : "AltCommand",
+	"super" : "Object",
 	"type" : "normal" }

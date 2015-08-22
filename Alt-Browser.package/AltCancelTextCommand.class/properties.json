@@ -10,5 +10,5 @@
 	"name" : "AltCancelTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

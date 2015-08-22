@@ -10,5 +10,5 @@
 	"name" : "AltDoItTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

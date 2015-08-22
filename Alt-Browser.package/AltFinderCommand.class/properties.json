@@ -10,5 +10,5 @@
 	"name" : "AltFinderCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

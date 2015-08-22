@@ -10,5 +10,5 @@
 	"name" : "AltRedoTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

@@ -10,5 +10,5 @@
 	"name" : "AltCopyTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

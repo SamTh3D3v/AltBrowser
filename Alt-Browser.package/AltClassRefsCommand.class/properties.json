@@ -10,5 +10,5 @@
 	"name" : "AltClassRefsCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

@@ -10,5 +10,5 @@
 	"name" : "AltTextFormatCommand",
 	"pools" : [
 		 ],
-	"super" : "AlTreeCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }
