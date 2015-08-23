@@ -1,3 +1,4 @@
-tree commands
+commands
 runTestCommand
+	<treeAreaCommand>
 	^ #(#AltDebugTestCommand)

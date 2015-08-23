@@ -1,3 +1,4 @@
-tree commands
+commands
 navigationCommands
+	<treeAreaCommand>
 	^ #(#AltGoToSuperMethodCommand #AltImplementorsOfCommand #AltSendersOfCommand #AltBrowseVersionsCommand)

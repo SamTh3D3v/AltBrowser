@@ -1,3 +1,4 @@
-tree commands
+commands
 executeTreeCommands
+	<treeAreaCommand>
 	^ #(#AltExpandCommand)

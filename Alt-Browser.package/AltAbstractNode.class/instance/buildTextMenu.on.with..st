@@ -1,12 +1,12 @@
 querying
 buildTextMenu: aMenu on: aTarget with: aRequestor
-	"Based on protocol names and not pragmas anymore."
+	"Now I have a safe way of finding pragmas."
 
 	| t |
 	t := false.
-	((self selectorsIn: '.*text commands' from: self class upTo: AltAbstractNode) sorted: [ :a :b | a < b ])
+	((self pragmas: #textAreaCommand from: self class to: AltAbstractNode) sorted: [ :a :b | a selector < b selector ])
 		do: [ :p | 
 			t
 				ifTrue: [ aMenu addLine ]
 				ifFalse: [ t := true ].
-			(self perform: p) do: [ :c | (c asClass on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]
+			(self perform: p selector) do: [ :c | (c asClass on: aTarget for: aRequestor) addItemToMenu: aMenu ] ]

@@ -2,9 +2,9 @@ querying
 buildTreeShortcutsOn: aMorph with: aRequestor
 	"This is an attempt at handling shortcuts... Which works, with the help of a custom KMDispatcher."
 
-	(self selectorsIn: '.*tree commands' from: self class upTo: AltAbstractNode)
+	(self pragmas: #treeAreaCommand from: self class to: AltAbstractNode)
 		do: [ :e | 
-			(self perform: e)
+			(self perform: e selector)
 				do: [ :c | 
 					| command |
 					command := c asClass on: aRequestor treeMorph for: aRequestor.

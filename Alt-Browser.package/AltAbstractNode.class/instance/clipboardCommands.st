@@ -1,3 +1,4 @@
-text commands
+commands
 clipboardCommands
+	<textAreaCommand>
 	^ #(#AltCutTextCommand #AltCopyTextCommand #AltPasteTextCommand #AltSelectAllTextCommand)

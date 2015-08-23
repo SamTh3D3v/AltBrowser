@@ -10,5 +10,5 @@
 	"name" : "AltNextSiblingClassCommand",
 	"pools" : [
 		 ],
-	"super" : "AltCommand",
+	"super" : "AlTreeCommand",
 	"type" : "normal" }

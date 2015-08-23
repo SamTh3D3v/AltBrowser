@@ -7,14 +7,10 @@ buildTreeMenu: aMenu
 		ifFalse: [ 
 			| t |
 			t := false.
-			self class protocols
-				do: [ :p | 
-					(p matchesRegex: '.*tree commands')
-						ifTrue: [ 
-							(self class selectorsInProtocol: p)
-								do: [ :e | 
-									t
-										ifTrue: [ aMenu addLine ]
-										ifFalse: [ t := true ].
-									(self perform: e selector) do: [ :c | (c asClass on: self treeMorph for: self) addItemToMenu: aMenu ] ] ] ] ].
+			(Pragma allNamed: #treeAreaCommand from: self class to: self class)
+				do: [ :e | 
+					t
+						ifTrue: [ aMenu addLine ]
+						ifFalse: [ t := true ].
+					(self perform: e selector) do: [ :c | (c asClass on: self treeMorph for: self) addItemToMenu: aMenu ] ] ].
 	^ aMenu
