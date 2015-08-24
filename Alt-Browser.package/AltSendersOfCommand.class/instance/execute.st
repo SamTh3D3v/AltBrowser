@@ -2,16 +2,15 @@ execution
 execute
 	"Execute an all senders of."
 
-	| aSelector anEnvironment classDict specialFlag specialByte |
+	| aSelector anEnvironment classDict |
 	anEnvironment := requestor rbEnvironment isSelectorEnvironment
 		ifTrue: [ requestor rbEnvironment environment ]
 		ifFalse: [ requestor rbEnvironment ].
 	aSelector := requestor selectedNode item selector.
 	classDict := IdentityDictionary new.
-	specialFlag := Smalltalk hasSpecialSelector: aSelector ifTrueSetByte: [ :byte | specialByte := byte ].
 	anEnvironment
 		classesAndMetaClassesDo: [ :class | 
-			((class thoroughWhichSelectorsReferTo: aSelector special: specialFlag byte: specialByte)
+			((class thoroughWhichSelectorsReferTo: aSelector)
 				select: [ :selector | anEnvironment includesSelector: selector in: class ])
 				in: [ :selectors | 
 					selectors isEmpty
