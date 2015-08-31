@@ -4,12 +4,4 @@ defaultPackageCategoriesNames
 
 	"AltBrowser initialize."
 
-	^ #(
-		#(#'Operating System' #System #FileSystem #Files #CommandShell #StartupPreferences #OSProcess #ProcessWrapper #Neo #OSWindow #XML #Jobs)
-		#(#GUI #Graphics #Morphic #Balloon #FreeType #Polymorph #Spec #UI #GroupManagerUI #Growl #Keymapping #MenuRegistration #Settings #HelpSystem #SmartSuggestions #Athens #NewValueHolder #EmbeddedFreeType #FontInfrastructure #GT #Glamour #UserManager #Chroma #'Pharo-Help' #TxText #Rubric #FontChooser)
-		#(#Core #Kernel #Collections #Text #Compiler #EmergencyEvaluator #Regex #Multilingual #Announcements #Transcript #Traits #Unicode #Slot #Opal #Reflectivity)
-		#(#Development #AST #NodeNavigation #Refactoring #Nautilus #NonInteractiveTranscript #SUnit #Tests #Shout #NECompletion #Manifest #NativeBoost #AsmJit #SLICE #Debugger #ProfStef #Generated #ShoreLine #Tool #MessageBrowserRefactoringAddition #PragmaCollector)
-		#(#Networking #Network #Zodiac #Zinc #Compression)
-		#(#Packages #Baseline #Configuration #Fuel #Monticello #Metacello #CodeImport #Gofer #RPackage #Ring #GroupManager #UpdateStreamer #Komitter #Versionner)
-		#(#'4.0' #Deprecated #RecentSubmissions #ScriptLoader #HudsonBuildTools #ReleaseTests)
-	)
+	^ #(#(#'5.0' #Deprecated #HudsonBuildTools #RecentSubmissions #ReleaseTests #ScriptLoader) #(#Core #Announcements #Collections #Compiler #EmergencyEvaluator #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Text #Traits #Transcript #Unicode) #(#Development #AST #AsmJit #Debugger #Generated #Manifest #MessageBrowserRefactoringAddition #NECompletion #NativeBoost #Nautilus #NodeNavigation #NonInteractiveTranscript #PragmaCollector #ProfStef #Refactoring #SLICE #SUnit #ShoreLine #Shout #Tests #Tool #Flashback-Decompiler #Flashback-Decompiler-Tests #IssueTracking #IssueTracking-Tests #QualityAssistant #Renraku) #(#GUI #Athens #Balloon #Chroma #EmbeddedFreeType #FontChooser #FontInfrastructure #FreeType #GT #Glamour #Graphics #Growl #HelpSystem #Keymapping #MenuRegistration #Morphic #NewValueHolder #'Pharo-Help' #Polymorph #Rubric #Settings #SmartSuggestions #Spec #TxText #UI #BlueInk) #(#Networking #Compression #Network #Zinc #Zodiac) #(#'Operating System' #CommandShell #FileSystem #Files #Jobs #Neo #OSProcess #OSWindow #ProcessWrapper #StartupPreferences #System #XML #STON) #(#Packages #Baseline #CodeImport #Configuration #Fuel #Gofer #Komitter #Metacello #Monticello #RPackage #Ring #UpdateStreamer #Versionner #CodeExport))
