@@ -7,4 +7,4 @@ doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	AltBrowser
 		fullOnEnvironment: (anAltBrowser rbEnvironment forPackages: {(self rpackage)})
 		select: self
-		with: aMorphTreeNodeMorph parentNode findExpanded
+		with: aMorphTreeNodeMorph parent findExpanded
