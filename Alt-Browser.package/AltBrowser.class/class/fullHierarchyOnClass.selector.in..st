@@ -4,11 +4,24 @@ fullHierarchyOnClass: aClass selector: aSelectorOrNil in: aRBEnvironment
 
 	| a s |
 	aSelectorOrNil
-		ifNotNil: [ self rootItems anySatisfy: [ :each | (s := each findMethod: aSelectorOrNil in: aClass) notNil ] ].
-	s ifNil: [ self rootItems anySatisfy: [ :each | (s := each findClass: aClass) notNil ] ].
+		ifNotNil:
+			[ 
+			self rootItems
+				anySatisfy:
+					[ :each | (s := each findMethod: aSelectorOrNil in: aClass) notNil ] ].
+	s
+		ifNil:
+			[ 
+			self rootItems
+				anySatisfy: [ :each | (s := each findClass: aClass) notNil ] ].
 	s ifNil: [ ^ self ].
 	a := self new.
-	a rbEnvironment: (aRBEnvironment forClasses: {aClass} , aClass allSuperclasses , aClass allSubclasses).
 	a
+		rbEnvironment:
+			(aRBEnvironment
+				forClasses:
+					{aClass} , aClass allSuperclasses , aClass allSubclasses).
+	^ a
 		open;
-		selectPathForAbstractItem: s
+		selectPathForAbstractItem: s;
+		yourself

@@ -1,5 +1,5 @@
 instance creation
-fullOnEnvironment: aRBEnvironment
+openOnEnvironment: aRBEnvironment
 	" I am environment aware. Just open the environment."
 
 	^ self new

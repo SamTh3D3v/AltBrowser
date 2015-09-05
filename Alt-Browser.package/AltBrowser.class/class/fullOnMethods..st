@@ -4,5 +4,9 @@ fullOnMethods: aListOfCM
 
 	| selectorEnvironment |
 	selectorEnvironment := RBSelectorEnvironment new.
-	aListOfCM do: [ :each | selectorEnvironment addClass: each methodClass selector: each selector ].
-	^ (self fullOnEnvironment: selectorEnvironment) expandAllNodes
+	aListOfCM
+		do:
+			[ :each | selectorEnvironment addClass: each methodClass selector: each selector ].
+	^ (self openOnEnvironment: selectorEnvironment)
+		expandAllNodes;
+		yourself

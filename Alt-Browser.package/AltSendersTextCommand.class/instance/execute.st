@@ -14,7 +14,7 @@ execute
 					selectors isEmpty
 						ifFalse: [ classDict at: class put: selectors asIdentitySet ] ] ].
 	(AltBrowser
-		fullOnEnvironment:
+		openOnEnvironment:
 			((RBSelectorEnvironment onEnvironment: anEnvironment)
 				on: classDict;
 				label: 'References to: ' , aSelector;

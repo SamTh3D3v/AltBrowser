@@ -7,11 +7,13 @@ execute
 		ifFalse: [ requestor rbEnvironment ].
 	classDict := IdentityDictionary new.
 	anEnvironment
-		classesAndMetaClassesDo: [ :class | 
-			((class includesLocalSelector: aSelector) and: [ anEnvironment includesSelector: aSelector in: class ])
+		classesAndMetaClassesDo:
+			[ :class | 
+			((class includesLocalSelector: aSelector)
+				and: [ anEnvironment includesSelector: aSelector in: class ])
 				ifTrue: [ classDict at: class put: {aSelector} ] ].
 	(AltBrowser
-		fullOnEnvironment:
+		openOnEnvironment:
 			((RBSelectorEnvironment onEnvironment: anEnvironment)
 				on: classDict;
 				label: 'Implementors of ' , aSelector;

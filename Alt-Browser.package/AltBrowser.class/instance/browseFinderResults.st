@@ -12,4 +12,4 @@ browseFinderResults
 					classes
 						keysAndValuesDo: [ :aSelector2 :classes2 | classes2 do: [ :aClass | environment addClass: aClass selector: aSelector2 ] ] ]
 				ifFalse: [ classes do: [ :aClass | environment addClass: aClass selector: aSelector ] ] ].
-	(self class fullOnEnvironment: environment) expandAllNodes
+	(self class openOnEnvironment: environment) expandAllNodes

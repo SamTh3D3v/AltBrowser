@@ -5,6 +5,6 @@ execute
 	| aClass |
 	aClass := requestor selectedNode item itemClass theNonMetaClass ifNil: [ ^ self ].
 	AltBrowser
-		fullOnEnvironment: (requestor rbEnvironment forClasses: {aClass} , aClass allSuperclasses , aClass allSubclasses)
+		openOnEnvironment: (requestor rbEnvironment forClasses: {aClass} , aClass allSuperclasses , aClass allSubclasses)
 		select: requestor selectedNode item
 		with: requestor selectedNode findExpanded
