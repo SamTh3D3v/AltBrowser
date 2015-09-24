@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Tree",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltHighlightMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

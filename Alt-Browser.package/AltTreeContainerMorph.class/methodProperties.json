@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"calculateExactVisibleRows" : "ThierryGoubier 9/23/2015 15:28",
+		"calculateMaxVisibleRows" : "ThierryGoubier 9/23/2015 15:27",
+		"calculateMinVisibleRows" : "ThierryGoubier 9/23/2015 15:27",
+		"calculateStartIndexWhenShowing:" : "ThierryGoubier 9/23/2015 15:28",
+		"calculateVisibleRows" : "ThierryGoubier 9/23/2015 15:28",
+		"canRefreshValues" : "ThierryGoubier 9/23/2015 15:17",
+		"changed" : "ThierryGoubier 9/23/2015 15:18",
+		"drawOn:" : "ThierryGoubier 9/23/2015 15:14",
+		"exposedRows" : "ThierryGoubier 9/23/2015 15:28",
+		"initialize" : "ThierryGoubier 9/23/2015 15:05",
+		"isRowIndexExceding:" : "ThierryGoubier 9/23/2015 15:17",
+		"isRowIndexFullyVisible:" : "ThierryGoubier 9/23/2015 15:18",
+		"isRowIndexVisible:" : "ThierryGoubier 9/23/2015 15:18",
+		"needsRefreshExposedRows" : "ThierryGoubier 9/23/2015 15:29",
+		"outerBounds" : "ThierryGoubier 9/23/2015 15:16",
+		"rowIndexContainingPoint:" : "ThierryGoubier 9/23/2015 15:06",
+		"setNeedsRefreshExposedRows" : "ThierryGoubier 9/23/2015 15:29",
+		"toSelectionRow:primary:" : "ThierryGoubier 9/23/2015 15:16",
+		"updateAllRows" : "ThierryGoubier 9/23/2015 15:19",
+		"updateExposedRows" : "ThierryGoubier 9/23/2015 15:26" } }

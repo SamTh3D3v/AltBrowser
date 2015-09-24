@@ -1,0 +1,25 @@
+{
+	"category" : "Alt-Browser-Tree",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"container",
+		"verticalScrollBar",
+		"backgroundColor",
+		"selectionColor",
+		"intercellSpacing",
+		"rowHeight",
+		"selectedRowIndexes",
+		"highlightedRowIndexes",
+		"	",
+		"secondarySelectionColor",
+		"showIndex",
+		"selectionStrategy" ],
+	"name" : "AltTreeMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
