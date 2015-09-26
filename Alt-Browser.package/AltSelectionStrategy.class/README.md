@@ -1,1 +1,0 @@
-Implement a selection strategy. Do not refer to the model: a selection strategy is just about allowing multiple or single selection.

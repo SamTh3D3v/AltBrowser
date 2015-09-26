@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltMultipleSelectionStrategy",
+		"parent",
+		"item",
+		"contents" ],
+	"name" : "AltTreeItemModel",
 	"pools" : [
 		 ],
-	"super" : "AltSelectionStrategy",
+	"super" : "Model",
 	"type" : "normal" }

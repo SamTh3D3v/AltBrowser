@@ -1,1 +1,0 @@
-Single select. Just toggle the index

@@ -1,0 +1,1 @@
+I'm a graph item. I represent a tree item and I know of the parent / child relationship I have. I can also filter the underlying graph according to an environment.
