@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"startSearch:for:" : "ThierryGoubier 8/31/2015 22:12:21" },
+		"startSearch:for:" : "ThierryGoubier 9/26/2015 23:37:21" },
 	"instance" : {
-		"completionKeys" : "ThierryGoubier 8/31/2015 22:12:21",
-		"eventIsCompletion:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"eventIsTrapped:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"execute:for:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"nodeDetect:ifNone:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"onCompletionKey:for:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"onKey:for:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"onTrappedKey:for:" : "ThierryGoubier 8/31/2015 22:12:21",
-		"trappedKeys" : "ThierryGoubier 8/31/2015 22:12:21" } }
+		"completionKeys" : "ThierryGoubier 9/26/2015 23:37:21",
+		"eventIsCompletion:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"eventIsTrapped:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"execute:for:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"nodeDetect:ifNone:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"onCompletionKey:for:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"onKey:for:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"onTrappedKey:for:" : "ThierryGoubier 9/26/2015 23:37:21",
+		"trappedKeys" : "ThierryGoubier 9/26/2015 23:37:21" } }

@@ -8,24 +8,24 @@ registerOnSystemAnnouncements
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
 	SystemAnnouncer uniqueInstance weak
-		on: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
-		on: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
-		on: MCPackageModified send: #aMCWorkingCopyModified: to: self;
-		on: CategoryAdded send: #aCategoryAdded: to: self;
-		on: CategoryRemoved send: #aCategoryRemoved: to: self;
-		on: CategoryRenamed send: #aCategoryRenamed: to: self;
-		on: MethodAdded send: #aMethodAdded: to: self;
-		on: MethodRemoved send: #aMethodRemoved: to: self;
-		on: MethodRecategorized send: #aMethodRecategorized: to: self;
-		on: ClassAdded send: #aClassAdded: to: self;
-		on: ClassRemoved send: #aClassRemoved: to: self;
-		on: ClassReorganized send: #aClassReorganized: to: self;
-		on: ClassCommented send: #aClassCommented: to: self;
-		on: ClassRenamed send: #aClassRenamed: to: self;
-		on: ClassRepackaged send: #aClassRepackaged: to: self;
-		on: ClassRecategorized send: #aClassRecategorized: to: self;
-		on: ClassModifiedClassDefinition send: #aClassModifiedClassDefinition: to: self.
+		when: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
+		when: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
+		when: MCPackageModified send: #aMCWorkingCopyModified: to: self;
+		when: CategoryAdded send: #aCategoryAdded: to: self;
+		when: CategoryRemoved send: #aCategoryRemoved: to: self;
+		when: CategoryRenamed send: #aCategoryRenamed: to: self;
+		when: MethodAdded send: #aMethodAdded: to: self;
+		when: MethodRemoved send: #aMethodRemoved: to: self;
+		when: MethodRecategorized send: #aMethodRecategorized: to: self;
+		when: ClassAdded send: #aClassAdded: to: self;
+		when: ClassRemoved send: #aClassRemoved: to: self;
+		when: ClassReorganized send: #aClassReorganized: to: self;
+		when: ClassCommented send: #aClassCommented: to: self;
+		when: ClassRenamed send: #aClassRenamed: to: self;
+		when: ClassRepackaged send: #aClassRepackaged: to: self;
+		when: ClassRecategorized send: #aClassRecategorized: to: self;
+		when: ClassModifiedClassDefinition send: #aClassModifiedClassDefinition: to: self.
 	RPackage organizer announcer unsubscribe: self.
 	RPackage organizer announcer weak
-		on: RPackageUnregistered send: #aRPackageUnregistered: to: self;
-		on: RPackageRegistered send: #aRPackageCreated: to: self
+		when: RPackageUnregistered send: #aRPackageUnregistered: to: self;
+		when: RPackageRegistered send: #aRPackageCreated: to: self
