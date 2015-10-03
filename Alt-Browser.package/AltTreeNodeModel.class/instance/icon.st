@@ -5,6 +5,4 @@ icon
 	| iconSelector |
 	iconSelector := self item icon.
 	iconSelector ifNil: [ ^ nil ].
-	(Smalltalk ui icons respondsTo: iconSelector)
-		ifTrue: [ ^ Smalltalk ui icons perform: iconSelector ]
-		ifFalse: [ ^ nil ]
+	^ Smalltalk ui icons iconNamed: iconSelector
