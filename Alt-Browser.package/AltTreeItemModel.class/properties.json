@@ -8,7 +8,8 @@
 	"instvars" : [
 		"parent",
 		"item",
-		"contents" ],
+		"contents",
+		"expanded" ],
 	"name" : "AltTreeItemModel",
 	"pools" : [
 		 ],

@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"item" ],
-	"name" : "AltTreeItemMorph",
+		"exposedItems",
+		"needsRefreshExposedItems" ],
+	"name" : "AltTreeViewportMorph",
 	"pools" : [
 		 ],
 	"super" : "Morph",

@@ -1,4 +1,4 @@
 initialization
 initializeContainer
-	container := AltTreeContainerMorph new.
+	container := AltTreeViewportMorph new.
 	self addMorph: container
