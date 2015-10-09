@@ -1,6 +1,5 @@
 private
 verticalScrollBarValue: aNumber
-	self hasDataSource ifFalse: [  ^ self ].
-	
+	model ifNil: [ ^ self ].
 	showIndex := self verticalScrollBarValueToRowIndex: aNumber.
 	self container changed

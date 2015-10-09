@@ -1,7 +1,6 @@
 event handling
 mouseWheel: event
-	self hasDataSource
-		ifFalse: [ ^ self ].
+	model ifNil: [ ^ self ].
 	"I tried scrolling up/down with a calculated value (check #scrollUpByPageDelta implementor)
 	 but the scrollbar proved been more intelligent than me... looks like hardcoded values 
 	 work better :/"

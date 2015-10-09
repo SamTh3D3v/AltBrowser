@@ -1,5 +1,6 @@
 private
 verticalScrollBarValueToRowIndex: aNumber
 	| startingIndex |
-	startingIndex := self dataSource numberOfRows - self container calculateMinVisibleRows + 1.
+	startingIndex := self model size
+		- self container calculateMinVisibleRows + 1.
 	^ (startingIndex * aNumber) asInteger

@@ -1,6 +1,6 @@
 private
 recalculateVerticalScrollBarVisibilityIfHidden: aBlock
-	self container calculateExactVisibleRows >= self dataSource numberOfRows
+	self container calculateExactVisibleRows >= model size
 		ifTrue: [ 
 			(self submorphs includes: self verticalScrollBar)
 				ifTrue: [ self removeMorph: self verticalScrollBar ].

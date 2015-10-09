@@ -1,4 +1,4 @@
 accessing
 numberOfRows
-	self hasDataSource ifFalse: [ ^ 0 ]. 
-	^ self dataSource numberOfRows
+	model ifNil: [ ^ 0 ].
+	^ model size

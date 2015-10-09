@@ -4,5 +4,5 @@ calculateExactVisibleRows
 
 	| visibleRows |
 	visibleRows := self height
-		/ (self owner rowHeight + self owner intercellSpacing).
+		/ (self owner rowHeight).
 	^ visibleRows

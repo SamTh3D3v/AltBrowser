@@ -1,3 +1,3 @@
 accessing-color
 backgroundColor
-	^ backgroundColor ifNil: [ self class defaultBackgroundColor ]
+	^ backgroundColor ifNil: [ Smalltalk ui theme backgroundColor ]

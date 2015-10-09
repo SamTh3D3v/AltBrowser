@@ -1,11 +1,10 @@
 private
 recalculateVerticalScrollBar
 	| interval delta pageDelta visibleRows numberOfRows |
-	self hasDataSource
-		ifFalse: [ ^ self ].
+	model ifNil: [ ^ self ].
 	self recalculateVerticalScrollBarVisibilityIfHidden: [ ^ self ].
 	visibleRows := self container calculateExactVisibleRows.
-	numberOfRows := self dataSource numberOfRows.
+	numberOfRows := model size.
 	interval := (visibleRows / numberOfRows) asFloat.
 	delta := 1 / numberOfRows.
 	pageDelta := (visibleRows - 1) floor * delta.

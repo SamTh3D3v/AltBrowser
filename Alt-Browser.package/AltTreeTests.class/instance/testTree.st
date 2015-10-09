@@ -7,6 +7,7 @@ testTree
 	self assert: (tree at: 1) item = 1.
 	self assert: (tree at: 2) parent == (tree at: 1).
 	self assert: (tree at: 3) item = 4.
+	self assert: (tree at: 2) hasContents.
 	self assert: tree size = 5.
 	self assert: (tree copyFrom: 2 to: 4) first item = 2.
 	self assert: (tree copyFrom: 2 to: 5) last item = 3.

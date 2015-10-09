@@ -5,7 +5,9 @@ click: event
 	rowIndex := self container rowIndexContainingPoint: event cursorPoint.
 	rowIndex
 		ifNotNil:
-			[ selectionStrategy selectRowIndex: rowIndex event: event ]
+			[ (self selectedRowIndexes includes: rowIndex)
+				ifTrue: [ self selectRowIndexes: #() ]
+				ifFalse: [ self selectRowIndex: rowIndex ] ]
 		ifNil: [ self selectRowIndexes: #() ].
 
 	"check for right click (menu)"

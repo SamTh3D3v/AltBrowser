@@ -10,4 +10,5 @@ item: anObject
 					(item isExpanded
 						ifTrue: [ self theme treeExpandedForm asMorph ]
 						ifFalse: [ self theme treeUnexpandedForm asMorph ]) ].
+	self computeBounds.
 	self left: self indentStep * item depth

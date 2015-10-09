@@ -5,9 +5,10 @@ initialize
 	super initialize.
 	self
 		color: Color transparent;
-		layoutPolicy: RowLayout new;
+		layoutPolicy: TableLayout new;
+		layoutInset: 1;
+		wrapCentering: #center;
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		listDirection: #leftToRight;
-		cellPositioning: #leftCenter;
-		cellInset: 4 @ 0
+		cellPositioning: #leftCenter
