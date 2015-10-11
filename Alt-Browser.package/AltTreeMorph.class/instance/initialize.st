@@ -5,7 +5,10 @@ initialize
 	selectedRowIndexes := #().
 	highlightedRowIndexes := #().
 	showIndex := 0.
-	self initializeScrollBars.
-	self initializeContainer.
-	self initializeKeyBindings.
-	self resizeAllSubviews
+	self
+		dragEnabled: true;
+		dropEnabled: true;
+		initializeScrollBars;
+		initializeContainer;
+		initializeKeyBindings;
+		resizeAllSubviews

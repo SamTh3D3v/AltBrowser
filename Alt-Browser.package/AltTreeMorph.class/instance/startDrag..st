@@ -16,7 +16,7 @@ startDrag: event
 	transferMorph
 		align: transferMorph draggedMorph bottomLeft
 		with: event position.
-	transferMorph dragTransferType: self dataSource dragTransferType.
+	transferMorph dragTransferType: self model dragTransferType.
 	[ event hand grabMorph: transferMorph ]
 		ensure:
 			[ Cursor normal show.

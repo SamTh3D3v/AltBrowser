@@ -1,7 +1,5 @@
 event handling
 doubleClick: event
-	| rowIndex |
-	rowIndex := self container rowIndexContainingPoint: event cursorPoint.
-	rowIndex
+	(self container rowIndexContainingPoint: event cursorPoint)
 		ifNotNil:
-			[ self doAnnounce: (FTStrongSelectionChanged rowIndex: rowIndex) ]
+			[ :rowIndex | (self model at: rowIndex) doubleClickIn: self ]
