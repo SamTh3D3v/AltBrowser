@@ -1,0 +1,1 @@
+I'm a "root" item model with a link to the main browser: my model.

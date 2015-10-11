@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"rbEnvironment" ],
+	"name" : "AltCodeItemModel",
+	"pools" : [
+		 ],
+	"super" : "AltTreeItemModel",
+	"type" : "normal" }
