@@ -4,4 +4,4 @@ isRowIndexFullyVisible: rowIndex
 	 not hidden part)"
 
 	^ (self isRowIndexVisible: rowIndex)
-		and: [ (self isRowIndexExceding: rowIndex) not ]
+		and: [ (self isRowIndexExceeding: rowIndex) not ]

@@ -1,7 +1,6 @@
 menu
 showMenuForPosition: aPoint
-	"TODO: completely wrong for us."
+	"Ok, menu on the model?"
 
-	| tuple |
-	tuple := self container rowAndColumnIndexContainingPoint: aPoint.
-	self showMenuForRowIndex: tuple first columnIndex: tuple second
+	self
+		showMenuForRowIndex: (self container rowIndexContainingPoint: aPoint)

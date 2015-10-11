@@ -7,8 +7,10 @@ item: anObject
 		ifTrue:
 			[ self
 				addMorph:
-					(item isExpanded
+					((item isExpanded
 						ifTrue: [ self theme treeExpandedForm asMorph ]
-						ifFalse: [ self theme treeUnexpandedForm asMorph ]) ].
+						ifFalse: [ self theme treeUnexpandedForm asMorph ])
+						on: #mouseDown send: #toggleExpanded to: item;
+						yourself) ].
 	self computeBounds.
 	self left: self indentStep * item depth

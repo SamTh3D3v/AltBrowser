@@ -1,5 +1,7 @@
 drawing
-drawOn: canvas
+drawSubmorphsOn: canvas
+	"Move the submorph handling code in its place?"
+
 	| x y cellWidth cellHeight rowsToDisplay rowSubviews selectionIndex |
 	self bounds ifNil: [ ^ self ].	"Nothing to show yet"
 	self owner ifNil: [ ^ self ].
@@ -8,6 +10,7 @@ drawOn: canvas
 	cellWidth := self width - 2.
 	cellHeight := self owner rowHeight.
 	selectionIndex := self owner selectedRowIndex.
+	"Ok, in #fullDrawOn:, we have #drawSubmorphsOn: which is called before #drawOn:... "
 
 	"For some superweird reason, calling #calculateExposedItems here
 	instead of in #changed (where it should be called) is 10x faster."
@@ -21,18 +24,11 @@ drawOn: canvas
 			rowsToDisplay
 				keysAndValuesDo:
 					[ :rowIndex :row | 
-					| visibleHeight |
-					visibleHeight := cellHeight min: self bottom - y.
 					row topLeft: (x + row left) @ y.
-					y := y + visibleHeight.
-					rowSubviews
-						add:
-							(selectionIndex = rowIndex
-								ifTrue: [ self asSelectedMorph: (row privateOwner: nil) ]
-								ifFalse: [ row ])
-					"IMPORTANT: I need to set owner to nil because otherwise it
-			will trigger an invalidation of the owner when adding morph to
-			selectionMorph, causing an infinite loop." ].
+					y := y + row height.
+					selectionIndex = rowIndex
+						ifTrue: [ row color: self owner selectionColor ].
+					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
-	super drawOn: canvas.
+	super drawSubmorphsOn: canvas.
 	needsRefreshExposedItems := false

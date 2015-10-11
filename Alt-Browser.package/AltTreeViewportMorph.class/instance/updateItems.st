@@ -16,7 +16,15 @@ updateItems
 		with: visibleItems
 		do:
 			[ :index :item | 
-			| morph |
+			| morph row |
 			morph := item asTreeItemMorph privateOwner: self.
-			exposedItems at: index put: morph ].
+			row := Morph new
+				hResizing: #rigid;
+				vResizing: #rigid;
+				color: Color transparent;
+				bounds:
+					(0 @ 0 extent: (self width max: morph right) @ morph height);
+				yourself.
+			row addMorph: morph.
+			exposedItems at: index put: row ].
 	^ true

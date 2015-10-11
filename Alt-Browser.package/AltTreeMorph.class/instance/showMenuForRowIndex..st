@@ -1,8 +1,8 @@
 menu
-showMenuForRowIndex: rowIndex columnIndex: columnIndex
+showMenuForRowIndex: rowIndex
 	| menu |
 	(rowIndex notNil and: [ (self isRowIndexSelected: rowIndex) not ])
 		ifTrue: [ self selectRowIndex: rowIndex ].
-	menu := (self model at: rowIndex) menu.
-	menu ifNil: [ ^ self ].
+	menu := UIManager default newMenuIn: self for: self model.
+	menu := (self model at: rowIndex) buildMenu: menu.
 	menu popUpInWorld: self currentWorld
