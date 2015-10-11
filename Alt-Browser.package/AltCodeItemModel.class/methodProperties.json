@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"asString" : "ThierryGoubier 10/11/2015 17:58",
+		"buildMenu:" : "ThierryGoubier 10/11/2015 19:11",
 		"buildTextMenu:on:with:" : "ThierryGoubier 10/11/2015 18:02",
 		"buildTreeMenu:on:with:" : "ThierryGoubier 10/11/2015 18:03",
 		"childNodeFromItem:" : "ThierryGoubier 10/11/2015 17:56",
@@ -13,6 +14,7 @@
 		"icon" : "ThierryGoubier 10/11/2015 17:55",
 		"isAnAncestor:" : "ThierryGoubier 10/11/2015 18:03",
 		"isStyled" : "ThierryGoubier 10/11/2015 17:56",
+		"model" : "ThierryGoubier 10/11/2015 18:28",
 		"rbEnvironment" : "ThierryGoubier 10/11/2015 17:56",
 		"rbEnvironment:" : "ThierryGoubier 10/11/2015 17:56",
 		"rebuildChildren" : "ThierryGoubier 10/11/2015 17:56",

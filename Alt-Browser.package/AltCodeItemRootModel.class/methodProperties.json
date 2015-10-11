@@ -2,5 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"anySatisfy:" : "ThierryGoubier 10/11/2015 19:13",
+		"buildMenu:" : "ThierryGoubier 10/11/2015 19:12",
+		"childNodeFromItem:" : "ThierryGoubier 10/11/2015 18:30",
+		"depth" : "ThierryGoubier 10/11/2015 19:14",
 		"model" : "ThierryGoubier 10/11/2015 18:08",
-		"model:" : "ThierryGoubier 10/11/2015 18:08" } }
+		"model:" : "ThierryGoubier 10/11/2015 18:08",
+		"size" : "ThierryGoubier 10/11/2015 19:14" } }
