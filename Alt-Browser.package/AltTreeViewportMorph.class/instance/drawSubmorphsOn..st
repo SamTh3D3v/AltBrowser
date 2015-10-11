@@ -2,18 +2,14 @@ drawing
 drawSubmorphsOn: canvas
 	"Move the submorph handling code in its place?"
 
-	| x y cellWidth cellHeight rowsToDisplay rowSubviews selectionIndex |
+	| x y rowsToDisplay rowSubviews selectionIndex |
 	self bounds ifNil: [ ^ self ].	"Nothing to show yet"
 	self owner ifNil: [ ^ self ].
-	x := self left + 2.
+	x := self left + 2 - self leftOffset.
 	y := self top.
-	cellWidth := self width - 2.
-	cellHeight := self owner rowHeight.
 	selectionIndex := self owner selectedRowIndex.
 	"Ok, in #fullDrawOn:, we have #drawSubmorphsOn: which is called before #drawOn:... "
 
-	"For some superweird reason, calling #calculateExposedItems here
-	instead of in #changed (where it should be called) is 10x faster."
 	self updateItems
 		ifTrue:
 			[ rowsToDisplay := self exposedItems.
@@ -21,10 +17,11 @@ drawSubmorphsOn: canvas
 			"Two things: this is called multiple times when displaying."
 			"Result: coordinates is done at least twice."
 			"Original code is lucky that set bounds is so destructive."
+			"I'm certainly still going through there twice. Why?"
 			rowsToDisplay
 				keysAndValuesDo:
 					[ :rowIndex :row | 
-					row topLeft: (x + row left) @ y.
+					row topLeft: x @ y.
 					y := y + row height.
 					selectionIndex = rowIndex
 						ifTrue: [ row color: self owner selectionColor ].

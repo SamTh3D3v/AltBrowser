@@ -1,8 +1,9 @@
-private
+private-scrollbars
 recalculateVerticalScrollBar
 	| interval delta pageDelta visibleRows numberOfRows |
 	model ifNil: [ ^ self ].
-	self recalculateVerticalScrollBarVisibilityIfHidden: [ ^ self ].
+	self recalculateVerticalScrollBarVisibilityIfHidden
+		ifTrue: [ ^ self ].
 	visibleRows := self container calculateExactVisibleRows.
 	numberOfRows := model size.
 	interval := (visibleRows / numberOfRows) asFloat.

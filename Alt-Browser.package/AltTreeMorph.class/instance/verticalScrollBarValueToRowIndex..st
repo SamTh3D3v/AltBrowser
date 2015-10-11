@@ -1,4 +1,4 @@
-private
+private-scrollbars
 verticalScrollBarValueToRowIndex: aNumber
 	| startingIndex |
 	startingIndex := self model size

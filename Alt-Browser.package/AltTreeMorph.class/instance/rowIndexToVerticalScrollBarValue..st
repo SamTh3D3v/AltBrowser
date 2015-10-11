@@ -1,4 +1,4 @@
-private
+private-scrollbars
 rowIndexToVerticalScrollBarValue: aNumber
 	| numberOfRows |
 	numberOfRows := self model size.

@@ -9,6 +9,7 @@
 		"model",
 		"container",
 		"verticalScrollBar",
+		"horizontalScrollBar",
 		"backgroundColor",
 		"selectionColor",
 		"rowHeight",

@@ -1,3 +1,3 @@
-private
+private-scrollbars
 verticalScrollBar
 	^ verticalScrollBar

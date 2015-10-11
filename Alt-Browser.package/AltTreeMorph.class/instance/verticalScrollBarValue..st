@@ -1,4 +1,4 @@
-private
+private-scrollbars
 verticalScrollBarValue: aNumber
 	model ifNil: [ ^ self ].
 	showIndex := self verticalScrollBarValueToRowIndex: aNumber.
