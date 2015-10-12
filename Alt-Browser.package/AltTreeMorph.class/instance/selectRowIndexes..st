@@ -9,4 +9,6 @@ selectRowIndexes: anArray
 	self refresh.
 	self
 		doAnnounce:
-			(FTSelectionChanged from: oldSelectedRowIndexes to: selectedRowIndexes)
+			(AltSelectionChanged
+				from: oldSelectedRowIndexes
+				to: selectedRowIndexes)

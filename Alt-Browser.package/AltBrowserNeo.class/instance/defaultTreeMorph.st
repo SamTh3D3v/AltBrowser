@@ -1,4 +1,5 @@
 view
 defaultTreeMorph
 	^ AltTreeMorph new
-		model: self root
+		model: self root;
+		yourself

@@ -1,5 +1,5 @@
 selecting
-selection: anItem
+selection: anAltSelectionChanged
 	"It goes directly here."
 
 	"Am I going in there too often and it confuses the navigation?"
@@ -7,24 +7,26 @@ selection: anItem
 	"Can I back-select from there if I should not move the selection (unaccepted edits)?"
 
 	| sel |
-	anItem ifNil: [ ^ self ].
-	anItem selectedNodePath notNil
-		ifTrue: [ sel := anItem selectedNodePath last ].
-	super selection: anItem.
+	anAltSelectionChanged newIndexes ifNil: [ ^ self ].
+	anAltSelectionChanged newIndexes isEmpty
+		ifTrue: [ sel := nil ]
+		ifFalse:
+			[ sel := root at: anAltSelectionChanged newIndexes first ].
 	self isSelectionUpdate
 		ifTrue: [ ^ self ].
 	self updateTextKeymap.
 	self updateTreeKeymap.
 	self updateTitle.
 	sel isNil
-		ifTrue: [ 
-			textMorph classOrMetaClass: nil.
+		ifTrue:
+			[ textMorph classOrMetaClass: nil.
 			self source aboutToStyle: false.
-			self source contents: '' ]
-		ifFalse: [ 
-			textMorph classOrMetaClass: sel styleClass.
+			self source contents: ''.
+			selection := nil ]
+		ifFalse:
+			[ textMorph classOrMetaClass: sel styleClass.
 			self source aboutToStyle: sel isStyled.
 			self source contents: sel sourceCode.
 			self history add: sel.
-			sel item selectIn: self ].
-	self changed: #itemComment
+			sel item selectIn: self.
+			selection := sel ]
