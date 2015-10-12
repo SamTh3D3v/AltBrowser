@@ -4,5 +4,4 @@ keyStrokeArrowUp: event
 	rowIndex := self selectedRowIndex.
 	rowIndex > 1
 		ifFalse: [ ^ self ].
-	self selectRowIndexes: #().
-	self selectRowIndex: rowIndex
+	self selectRowIndex: rowIndex - 1

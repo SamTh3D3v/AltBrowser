@@ -14,9 +14,9 @@
 		"selectionColor",
 		"rowHeight",
 		"selectedRowIndexes",
-		"highlightedRowIndexes",
 		"secondarySelectionColor",
-		"showIndex" ],
+		"showIndex",
+		"dropIndex" ],
 	"name" : "AltTreeMorph",
 	"pools" : [
 		 ],

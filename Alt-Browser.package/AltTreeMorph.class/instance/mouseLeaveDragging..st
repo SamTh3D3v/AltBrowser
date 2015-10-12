@@ -5,5 +5,5 @@ mouseLeaveDragging: event
 	(self dropEnabled and: [ event hand hasSubmorphs ])
 		ifFalse: [ ^ super mouseLeaveDragging: event ].	"no d&d"
 	event hand releaseMouseFocus: self.
-	self basicHighlightRowIndexes: #().
+	dropIndex := nil.
 	self refresh

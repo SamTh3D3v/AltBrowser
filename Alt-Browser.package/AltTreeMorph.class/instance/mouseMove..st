@@ -5,5 +5,7 @@ mouseMove: event
 	(self container rowIndexContainingPoint: event position)
 		ifNotNil:
 			[ :rowIndex | 
-			self basicHighlightRowIndexes: {rowIndex}.
+			((self model at: rowIndex)
+				wantsDroppedElement: event hand firstSubmorph passenger)
+				ifTrue: [ dropIndex := rowIndex ].
 			self refresh ]

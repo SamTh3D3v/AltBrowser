@@ -4,4 +4,4 @@ keyStrokeArrowDown: event
 	rowIndex := self selectedRowIndex.
 	rowIndex < self numberOfRows
 		ifFalse: [ ^ self ].
-	self selectionStrategy selectRowIndex: rowIndex + 1 event: event
+	self selectRowIndex: rowIndex + 1
