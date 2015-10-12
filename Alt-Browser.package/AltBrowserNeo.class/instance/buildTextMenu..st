@@ -1,5 +1,5 @@
 menus
 buildTextMenu: aMenu
-	self selectedNode notNil
-		ifTrue: [ self selectedNode buildTextMenu: aMenu on: textMorph with: self ].
+	self selectedItem notNil
+		ifTrue: [ self selectedItem buildTextMenu: aMenu on: textMorph with: self ].
 	^ aMenu
