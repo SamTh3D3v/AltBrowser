@@ -1,3 +1,5 @@
 accessing
 childNodeFromItem: anItem
-	^ self on: anItem
+	^ (self class on: anItem)
+		parent: self;
+		yourself
