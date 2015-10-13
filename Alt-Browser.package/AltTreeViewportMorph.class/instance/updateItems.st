@@ -40,5 +40,7 @@ updateItems
 			row addMorph: morph.
 			exposedItems at: index put: row ].
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
-	self owner recalculateHorizontalScrollBar.
+	self owner
+		recalculateHorizontalScrollBar;
+		recalculateVerticalScrollBar.
 	^ true

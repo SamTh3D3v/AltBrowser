@@ -22,7 +22,7 @@ drawSubmorphsOn: canvas
 				keysAndValuesDo:
 					[ :rowIndex :row | 
 					row topLeft: x @ y.
-					y := y + row height.
+					y := y + row height + 2.
 					selectionIndex = rowIndex
 						ifTrue: [ row color: self owner selectionColor ].
 					dropIndex = rowIndex
