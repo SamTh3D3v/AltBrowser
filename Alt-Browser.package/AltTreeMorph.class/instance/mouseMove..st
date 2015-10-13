@@ -1,13 +1,15 @@
 event handling
 mouseMove: event
+	| aMorph |
 	event isDraggingEvent
 		ifFalse: [ ^ self ].
-	event hand submorphs ifEmpty: [ ^ self ].
-	event hand firstSubmorph class == TransferMorph ifFalse: [ ^ self ].
+	aMorph := event hand submorphs first.
+	aMorph class == TransferMorph
+		ifFalse: [ ^ self ].
 	(self container rowIndexContainingPoint: event position)
 		ifNotNil:
 			[ :rowIndex | 
-			((self model at: rowIndex)
-				wantsDroppedElement: event hand firstSubmorph passenger)
-				ifTrue: [ dropIndex := rowIndex ].
+			((self model at: rowIndex) wantsDroppedElement: aMorph passenger)
+				ifTrue: [ dropIndex := rowIndex ]
+				ifFalse: [ dropIndex := nil ].
 			self refresh ]

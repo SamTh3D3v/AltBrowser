@@ -6,27 +6,24 @@ selection: anAltSelectionChanged
 
 	"Can I back-select from there if I should not move the selection (unaccepted edits)?"
 
-	| sel |
 	anAltSelectionChanged newIndexes ifNil: [ ^ self ].
 	anAltSelectionChanged newIndexes isEmpty
-		ifTrue: [ sel := nil ]
+		ifTrue: [ selection := nil ]
 		ifFalse:
-			[ sel := root at: anAltSelectionChanged newIndexes first ].
+			[ selection := root at: anAltSelectionChanged newIndexes first ].
 	self isSelectionUpdate
 		ifTrue: [ ^ self ].
 	self updateTextKeymap.
 	self updateTreeKeymap.
 	self updateTitle.
-	sel isNil
+	selection isNil
 		ifTrue:
 			[ textMorph classOrMetaClass: nil.
 			self source aboutToStyle: false.
-			self source contents: ''.
-			selection := nil ]
+			self source contents: '' ]
 		ifFalse:
-			[ textMorph classOrMetaClass: sel styleClass.
-			self source aboutToStyle: sel isStyled.
-			self source contents: sel sourceCode.
-			self history add: sel.
-			sel item selectIn: self.
-			selection := sel ]
+			[ textMorph classOrMetaClass: selection styleClass.
+			self source aboutToStyle: selection isStyled.
+			self source contents: selection sourceCode.
+			self history add: selection.
+			selection item selectIn: self ]

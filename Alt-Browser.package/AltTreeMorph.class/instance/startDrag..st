@@ -1,12 +1,15 @@
 drag and drop
 startDrag: event
+	"Remember to correctly set the mouse focus to me if I am to receive
+	the move events to myself"
+
+	"Select if not selected under that point."
+
 	| passengers transferMorph rowIndex |
 	event hand hasSubmorphs
 		ifTrue: [ ^ self ].
 	self dragEnabled
 		ifFalse: [ ^ self ].
-	"Here I ensure at least one element is selected. But I also select one element if
-	appropriate. "
 	ActiveHand anyButtonPressed
 		ifFalse: [ ^ self ].
 	rowIndex := self container rowIndexContainingPoint: event cursorPoint.
@@ -25,4 +28,5 @@ startDrag: event
 	[ event hand grabMorph: transferMorph ]
 		ensure:
 			[ Cursor normal show.
-			event hand releaseMouseFocus: self ]
+			event hand releaseMouseFocus: self ].
+	event hand newMouseFocus: self

@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"asMorph" : "ThierryGoubier 10/13/2015 08:27",
 		"asString" : "ThierryGoubier 10/11/2015 17:58",
 		"buildMenu:" : "ThierryGoubier 10/12/2015 19:12",
 		"buildTextMenu:on:with:" : "ThierryGoubier 10/11/2015 18:02",
@@ -15,6 +16,7 @@
 		"isAnAncestor:" : "ThierryGoubier 10/11/2015 18:03",
 		"isStyled" : "ThierryGoubier 10/11/2015 17:56",
 		"model" : "ThierryGoubier 10/11/2015 18:28",
+		"parentNode" : "ThierryGoubier 10/13/2015 08:21",
 		"rbEnvironment" : "ThierryGoubier 10/11/2015 17:56",
 		"rbEnvironment:" : "ThierryGoubier 10/11/2015 17:56",
 		"rebuildChildren" : "ThierryGoubier 10/11/2015 17:56",
@@ -22,4 +24,5 @@
 		"sourceClass" : "ThierryGoubier 10/11/2015 17:56",
 		"sourceCode" : "ThierryGoubier 10/11/2015 17:56",
 		"styleClass" : "ThierryGoubier 10/11/2015 17:57",
-		"title" : "ThierryGoubier 10/11/2015 17:57" } }
+		"title" : "ThierryGoubier 10/11/2015 17:57",
+		"wantsDroppedElement:" : "ThierryGoubier 10/13/2015 22:05" } }

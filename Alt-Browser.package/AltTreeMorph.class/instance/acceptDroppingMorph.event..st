@@ -4,4 +4,5 @@ acceptDroppingMorph: aMorph event: event
 		dropElements: aMorph passenger
 		index:
 			((self container rowIndexContainingPoint: event position) ifNil: [ 0 ]).
+	dropIndex := nil.
 	self refresh

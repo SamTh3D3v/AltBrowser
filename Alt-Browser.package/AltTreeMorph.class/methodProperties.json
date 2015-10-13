@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"acceptDroppingMorph:event:" : "ThierryGoubier 10/11/2015 22:40",
+		"acceptDroppingMorph:event:" : "ThierryGoubier 10/13/2015 22:41",
 		"backgroundColor" : "ThierryGoubier 10/7/2015 21:59",
 		"backgroundColor:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"basicMoveShowIndexTo:" : "ThierryGoubier 10/8/2015 06:35",
@@ -14,7 +14,7 @@
 		"dropIndex" : "ThierryGoubier 10/12/2015 06:56",
 		"ensureVisibleFirstSelection" : "ThierryGoubier 9/26/2015 23:45:00",
 		"extent:" : "ThierryGoubier 9/26/2015 23:45:00",
-		"handleMouseMove:" : "ThierryGoubier 9/26/2015 23:45:00",
+		"handleMouseMove:" : "ThierryGoubier 10/13/2015 22:32",
 		"handlesKeyboard:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"handlesMouseDown:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"handlesMouseOverDragging:" : "ThierryGoubier 9/26/2015 23:45:00",
@@ -40,7 +40,7 @@
 		"mouseDown:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"mouseEnterDragging:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"mouseLeaveDragging:" : "ThierryGoubier 10/11/2015 22:56",
-		"mouseMove:" : "ThierryGoubier 10/13/2015 05:58",
+		"mouseMove:" : "ThierryGoubier 10/13/2015 22:35",
 		"mouseWheel:" : "ThierryGoubier 10/7/2015 22:07",
 		"moveShowIndexTo:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"numberOfRows" : "ThierryGoubier 10/7/2015 22:05",
@@ -72,11 +72,11 @@
 		"showIndex:" : "ThierryGoubier 10/8/2015 06:35",
 		"showMenuForPosition:" : "ThierryGoubier 10/11/2015 09:51",
 		"showMenuForRowIndex:" : "ThierryGoubier 10/11/2015 09:52",
-		"startDrag:" : "ThierryGoubier 10/13/2015 08:05",
+		"startDrag:" : "ThierryGoubier 10/13/2015 22:17",
 		"takesKeyboardFocus" : "ThierryGoubier 9/26/2015 23:45:00",
 		"update:" : "ThierryGoubier 9/26/2015 23:45:00",
 		"verticalScrollBar" : "ThierryGoubier 10/11/2015 14:43",
 		"verticalScrollBarValue:" : "ThierryGoubier 10/11/2015 14:43",
 		"verticalScrollBarValueToRowIndex:" : "ThierryGoubier 10/11/2015 14:43",
 		"verticalScrollBarWidth" : "ThierryGoubier 10/11/2015 14:43",
-		"wantsDroppedMorph:event:" : "ThierryGoubier 10/13/2015 05:55" } }
+		"wantsDroppedMorph:event:" : "ThierryGoubier 10/13/2015 22:39" } }

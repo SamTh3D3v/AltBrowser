@@ -4,7 +4,9 @@ handleMouseMove: anEvent
 
 	anEvent wasHandled
 		ifTrue: [ ^ self ].	"not interested"
-	(anEvent anyButtonPressed and: [ anEvent hand mouseFocus == self ])
+	anEvent anyButtonPressed
+		ifFalse: [ ^ self ].
+	anEvent hand mouseFocus == self
 		ifFalse: [ ^ self ].
 	anEvent wasHandled: true.
 	self mouseMove: anEvent
