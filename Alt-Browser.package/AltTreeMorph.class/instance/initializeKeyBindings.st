@@ -16,7 +16,4 @@ initializeKeyBindings
 		toAction: [ self selectRowIndex: 1 ].
 	self
 		bindKeyCombination: Character end asKeyCombination
-		toAction: [ self selectRowIndex: self numberOfRows ].
-	self
-		bindKeyCombination: $a command mac | $a ctrl win | $a ctrl unix
-		toAction: [ self selectAllRowIndexes ]
+		toAction: [ self selectRowIndex: self numberOfRows ]

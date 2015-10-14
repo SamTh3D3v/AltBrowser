@@ -28,5 +28,4 @@ startDrag: event
 	[ event hand grabMorph: transferMorph ]
 		ensure:
 			[ Cursor normal show.
-			event hand releaseMouseFocus: self ].
-	event hand newMouseFocus: self
+			event hand releaseMouseFocus: self ]

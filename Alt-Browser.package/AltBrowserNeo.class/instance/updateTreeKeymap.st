@@ -2,6 +2,8 @@ shortcuts
 updateTreeKeymap
 	"Update the tree keymap."
 
+	"Don't forget to update the tree."
+
 	(self treeMorph kmDispatcher isKindOf: AltKMDispatcher)
 		ifFalse:
 			[ textMorph setProperty: #kmdispatcher toValue: AltKMDispatcher new ].

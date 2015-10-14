@@ -6,7 +6,7 @@ handleMouseMove: anEvent
 		ifTrue: [ ^ self ].	"not interested"
 	anEvent anyButtonPressed
 		ifFalse: [ ^ self ].
-	anEvent hand mouseFocus == self
+	anEvent isDraggingEvent
 		ifFalse: [ ^ self ].
 	anEvent wasHandled: true.
 	self mouseMove: anEvent

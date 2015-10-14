@@ -62,5 +62,8 @@ open
 				addRightOrBottom: groupText).
 	window minimumExtent: 500 @ 500.
 	window open.
+	self
+		updateTreeKeymap;
+		updateTextKeymap.
 	treeMorph takeKeyboardFocus.
 	self registerToAnnouncements

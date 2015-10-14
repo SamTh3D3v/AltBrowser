@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Commands-Navigation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltSelectPreviousItem",
+	"pools" : [
+		 ],
+	"super" : "AltCommand",
+	"type" : "normal" }
