@@ -6,7 +6,7 @@ recalculateVerticalScrollBar
 		ifTrue: [ ^ self ].
 	visibleRows := self container calculateExactVisibleRows.
 	numberOfRows := model size.
-	interval := (visibleRows / numberOfRows) asFloat.
+	interval := ((visibleRows - 1) / numberOfRows) asFloat.
 	delta := 1 / numberOfRows.
 	pageDelta := (visibleRows - 1) floor * delta.
 	self verticalScrollBar
