@@ -8,7 +8,7 @@ open
 		vResizing: #spaceFill;
 		fillStyle: Color transparent;
 		changeTableLayout;
-		cellInset: 0;
+		cellInset: 3 @ 3;
 		cellPositioning: #leftCenter;
 		yourself.	"non pane color tracking"
 	group := Morph new
@@ -43,21 +43,21 @@ open
 		addMorph: treeMorph
 		fullFrame:
 			(LayoutFrame
-				fractions: (0 @ 0.0 corner: 0.3 @ 1)
-				offsets: (0 @ 1 corner: 0 @ -1)).
+				fractions: (0.0 @ 0.0 corner: 0.3 @ 1.0)
+				offsets: (0 @ 0 corner: 0 @ 0)).
 	group
 		addMorph: groupText
 		fullFrame:
 			(LayoutFrame
 				fractions: (0.3 @ 0.0 corner: 1 @ 1)
-				offsets: (4 @ 0 corner: 0 @ 0)).
+				offsets: (0 @ 0 corner: 0 @ 0)).
 	group
 		addMorph:
 			(ProportionalSplitterMorph new
 				layoutFrame:
 					(LayoutFrame
 						fractions: (0.3 @ 0.0 corner: 0.3 @ 1)
-						offsets: (0 @ 0 corner: 4 @ 0));
+						offsets: (0 @ 0 corner: 0 @ 0));
 				addLeftOrTop: treeMorph;
 				addRightOrBottom: groupText).
 	window minimumExtent: 500 @ 500.

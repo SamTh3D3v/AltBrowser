@@ -5,5 +5,5 @@ resizeHorizontalScrollBar
 	width := self bounds width - (self borderWidth * 2)
 		- self verticalScrollBarWidth.
 	corner := self bounds bottomLeft
-		- ((0 - self borderWidth) @ (height + self borderWidth)).
+		- ((0 - self borderWidth) @ (height + self borderWidth + 2)).
 	self horizontalScrollBar bounds: (corner extent: width @ height)
