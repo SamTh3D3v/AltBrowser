@@ -1,3 +1,3 @@
 private
 setNeedsRefreshExposedItems
-	needsRefreshExposedItems := true
+	needsRefreshItems := true

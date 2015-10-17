@@ -30,4 +30,4 @@ drawSubmorphsOn: canvas
 					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.
-	needsRefreshExposedItems := false
+	needsRefreshItems := false

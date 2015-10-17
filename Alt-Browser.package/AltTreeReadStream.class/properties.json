@@ -6,14 +6,12 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"exposedItems",
-		"needsModelRefresh",
-		"leftOffset",
-		"offsetWidth",
-		"endIndex",
-		"needsRefreshItems" ],
-	"name" : "AltTreeViewportMorph",
+		"position",
+		"item",
+		"stack",
+		"collection" ],
+	"name" : "AltTreeReadStream",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "Object",
 	"type" : "normal" }
