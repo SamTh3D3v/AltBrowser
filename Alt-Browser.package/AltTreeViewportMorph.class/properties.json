@@ -7,11 +7,12 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"exposedItems",
-		"needsModelRefresh",
 		"leftOffset",
 		"offsetWidth",
 		"endIndex",
-		"needsRefreshItems" ],
+		"needsRefreshRows",
+		"needsRefreshItems",
+		"maxShowIndex" ],
 	"name" : "AltTreeViewportMorph",
 	"pools" : [
 		 ],

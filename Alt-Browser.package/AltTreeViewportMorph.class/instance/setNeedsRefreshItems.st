@@ -1,3 +1,3 @@
 private
-setNeedsRefreshExposedItems
+setNeedsRefreshItems
 	needsRefreshItems := true

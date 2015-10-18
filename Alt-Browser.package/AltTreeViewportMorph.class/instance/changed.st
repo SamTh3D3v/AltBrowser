@@ -1,5 +1,7 @@
 updating
 changed
+	"Normal display change."
+
 	self owner ifNil: [ ^ self ].
-	self setNeedsRefreshExposedItems.
+	self setNeedsRefreshRows.
 	super changed

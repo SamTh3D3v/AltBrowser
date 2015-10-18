@@ -10,7 +10,7 @@ drawSubmorphsOn: canvas
 	selectionIndex := self owner selectedRowIndex.
 	dropIndex := self owner dropIndex.
 	"Ok, in #fullDrawOn:, we have #drawSubmorphsOn: which is called before #drawOn:... "
-	self updateItems
+	self updateItemsOrRows
 		ifTrue:
 			[ rowsToDisplay := self exposedItems.
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
@@ -30,4 +30,4 @@ drawSubmorphsOn: canvas
 					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.
-	needsRefreshItems := false
+	needsRefreshRows := false

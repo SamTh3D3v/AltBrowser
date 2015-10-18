@@ -1,6 +1,8 @@
 initialization
-initialize 
+initialize
 	super initialize.
 	self eventHandler: MorphicEventHandler new.
 	self color: Color transparent.
-	needsRefreshItems := false
+	self setNeedsRefreshItems.
+	self setNeedsRefreshRows.
+	endIndex := 0

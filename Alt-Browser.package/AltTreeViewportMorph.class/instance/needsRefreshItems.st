@@ -1,3 +1,3 @@
 private
-needsRefreshExposedItems
+needsRefreshItems
 	^ needsRefreshItems

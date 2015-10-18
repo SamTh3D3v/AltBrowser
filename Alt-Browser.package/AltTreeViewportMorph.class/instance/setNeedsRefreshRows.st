@@ -1,0 +1,3 @@
+private
+setNeedsRefreshRows
+	needsRefreshRows := true

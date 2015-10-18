@@ -4,9 +4,9 @@ recalculateVerticalScrollBar
 	model ifNil: [ ^ self ].
 	self recalculateVerticalScrollBarVisibilityIfHidden
 		ifTrue: [ ^ self ].
-	visibleRows := self container calculateExactVisibleRows.
-	numberOfRows := model size.
-	interval := ((visibleRows - 1) / numberOfRows) asFloat.
+	visibleRows := self container calculateExactVisibleRows asFloat.
+	numberOfRows := model size asFloat.
+	interval := visibleRows / numberOfRows.
 	delta := 1 / numberOfRows.
 	pageDelta := (visibleRows - 1) floor * delta.
 	self verticalScrollBar

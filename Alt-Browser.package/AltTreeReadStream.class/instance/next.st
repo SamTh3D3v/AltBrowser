@@ -2,8 +2,15 @@ streaming
 next
 	"Next: on a node, it's either its first child, or its sibling."
 
-	item isNil
-		ifTrue: [ item := collection.
+	"For the very first node, take in account the hidden root case."
+
+	item
+		ifNil:
+			[ (collection at: 1) == collection
+				ifTrue: [ item := collection ]
+				ifFalse:
+					[ self stack add: (ReadStream on: collection contents).
+					item := self stack last next ].
 			position := 1.
 			^ item ].
 	item contents isEmpty

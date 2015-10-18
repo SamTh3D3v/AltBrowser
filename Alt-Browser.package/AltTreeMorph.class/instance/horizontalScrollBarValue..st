@@ -4,4 +4,4 @@ horizontalScrollBarValue: aNumber
 	self container
 		leftOffset:
 			(self container offsetWidth - self container width) * aNumber.
-	self refresh
+	self container changed

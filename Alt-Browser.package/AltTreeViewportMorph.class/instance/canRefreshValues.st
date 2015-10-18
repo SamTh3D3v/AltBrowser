@@ -1,6 +1,6 @@
 testing
 canRefreshValues
-	self needsRefreshExposedItems
+	self needsRefreshItems
 		ifFalse: [ ^ false ].
 	self owner ifNil: [ ^ false ].
 	self owner model ifNil: [ ^ false ].

@@ -4,4 +4,4 @@ refresh
 
 	self recalculateVerticalScrollBar.
 	self verticalScrollBar changed.
-	self container changed
+	self container refresh
