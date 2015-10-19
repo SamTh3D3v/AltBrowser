@@ -1,21 +1,14 @@
 updating
 aNodeAdded: anEvent
-	"Algorithm: look for the parent of the node. If this parent node is found, then add a node equivalent to the contents if they do exist."
+	"If a node is added, then what we need is to rebuild its parent."
 
-	"Works, but in a better world, should be handled by an appropriate changed message."
-
-	"Removed the invariant."
-
-	| aNode |
-	self
-		withSelectionDo: [ 
-			aNode := anEvent node.
-			aNode parent
-				ifNil: [ 
-					rootItems := nil.
-					self updateList ]
-				ifNotNil: [ :pNode | 
-					(self findMorphNodeForAbstractItem: pNode)
-						ifNotNil: [ :aMorph | 
-							aMorph complexContents rebuildContents.
-							aMorph rebuildChildren ] ] ]
+	| found |
+	(self root
+		anySatisfy:
+			[ :each | 
+			each item = anEvent node parent
+				ifTrue: [ found := each.
+					true ]
+				ifFalse: [ false ] ])
+		ifTrue: [ found rebuildContents.
+			root changed ]

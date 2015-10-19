@@ -2,6 +2,6 @@ accessing
 title
 	self selectedItem notNil
 		ifTrue:
-			[ ^ 'Alt(' , self rbEnvironment label , '): '
+			[ ^ 'Alt Neo(' , self rbEnvironment label , '): '
 				, self selectedItem title ]
-		ifFalse: [ ^ 'Alt Browser (' , self rbEnvironment label , ')' ]
+		ifFalse: [ ^ 'Alt Browser Neo (' , self rbEnvironment label , ')' ]

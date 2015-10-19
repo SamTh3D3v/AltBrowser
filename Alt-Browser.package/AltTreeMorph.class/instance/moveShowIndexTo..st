@@ -5,7 +5,7 @@ moveShowIndexTo: aNumber
 	 showing pointer should do it directly. 
 	 Use me just in case you need to force a refresh after settign the index"
 
-	self basicMoveShowIndexTo: aNumber.
+	showIndex := aNumber.
 	self verticalScrollBar
 		value: (self rowIndexToVerticalScrollBarValue: aNumber).
-	self refresh
+	self container changed

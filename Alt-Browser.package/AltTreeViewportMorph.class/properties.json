@@ -10,6 +10,7 @@
 		"leftOffset",
 		"offsetWidth",
 		"endIndex",
+		"fullyVisibleEndIndex",
 		"needsRefreshRows",
 		"needsRefreshItems",
 		"maxShowIndex" ],

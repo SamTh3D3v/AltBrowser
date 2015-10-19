@@ -6,7 +6,7 @@ selectRowIndexes: anArray
 	oldSelectedRowIndexes := selectedRowIndexes.
 	selectedRowIndexes := anArray asArray.
 	self ensureVisibleFirstSelection.
-	self refresh.
+	self container refresh.
 	self
 		doAnnounce:
 			(AltSelectionChanged

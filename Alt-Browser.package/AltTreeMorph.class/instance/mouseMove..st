@@ -14,4 +14,4 @@ mouseMove: event
 			((self model at: rowIndex) wantsDroppedElement: aMorph passenger)
 				ifTrue: [ dropIndex := rowIndex ]
 				ifFalse: [ dropIndex := nil ].
-			self refresh ]
+			self container changed ]

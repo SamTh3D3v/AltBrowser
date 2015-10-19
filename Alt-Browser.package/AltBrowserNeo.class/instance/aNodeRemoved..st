@@ -1,24 +1,14 @@
 updating
 aNodeRemoved: anEvent
-	"A node has been removed from the abstract tree. Rebuilt the displayed tree."
+	"If a node is removed, then what we need is to rebuild its parent."
 
-	| aNode |
-	self
-		withSelectionDo: [ 
-			aNode := anEvent node.
-			self treeMorph nodeList
-				do: [ :e | 
-					| r |
-					(r := e findItem: aNode) notNil
-						ifTrue: [ 
-							r == e
-								ifTrue: [ 
-									rootItems := nil.
-									self updateList ]
-								ifFalse: [ 
-									| n |
-									r parentNode contents remove: r.
-									(n := self findMorphNodeForItem: r) notNil
-										ifTrue: [ 
-											self deselectAll.
-											n rebuildChildren ] ] ] ] ]
+	| found |
+	(self root
+		anySatisfy:
+			[ :each | 
+			each item = anEvent node parent
+				ifTrue: [ found := each.
+					true ]
+				ifFalse: [ false ] ])
+		ifTrue: [ found rebuildContents.
+			root changed ]

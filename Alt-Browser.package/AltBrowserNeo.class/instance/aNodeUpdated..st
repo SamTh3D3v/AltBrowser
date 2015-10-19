@@ -3,7 +3,7 @@ aNodeUpdated: anEvent
 	"Don't forget to update the title and the contents if appropriate."
 
 	| sItem |
-	self selectedItem
+	self selectedNode
 		ifNotNil:
 			[ :sNode | 
 			sItem := sNode item.

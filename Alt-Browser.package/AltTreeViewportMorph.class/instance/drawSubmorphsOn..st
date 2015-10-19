@@ -9,24 +9,21 @@ drawSubmorphsOn: canvas
 	y := self top.
 	selectionIndex := self owner selectedRowIndex.
 	dropIndex := self owner dropIndex.
-	"Ok, in #fullDrawOn:, we have #drawSubmorphsOn: which is called before #drawOn:... "
 	self updateItemsOrRows
 		ifTrue:
 			[ rowsToDisplay := self exposedItems.
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
-			"Two things: this is called multiple times when displaying."
-			"Result: coordinates is done at least twice."
-			"Original code is lucky that set bounds is so destructive."
-			"I'm certainly still going through there twice. Why?"
 			rowsToDisplay
 				keysAndValuesDo:
 					[ :rowIndex :row | 
 					row topLeft: x @ y.
 					y := y + row height + 2.
 					selectionIndex = rowIndex
-						ifTrue: [ row color: self owner selectionColor ].
+						ifTrue: [ row color: self owner selectionColor ]
+						ifFalse: [ row color: Color transparent ].
 					dropIndex = rowIndex
-						ifTrue: [ row highlightForDrop: true ].
+						ifTrue: [ row highlightForDrop: true ]
+						ifFalse: [ row highlightForDrop: false ].
 					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.

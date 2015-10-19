@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"exampleSimpleTree" : "ThierryGoubier 10/8/2015 22:34",
-		"exampleSimpleTree2" : "ThierryGoubier 10/11/2015 17:49",
-		"testDeepEndStream" : "ThierryGoubier 10/17/2015 17:35",
-		"testItemMorph" : "ThierryGoubier 10/9/2015 06:55",
-		"testStream" : "ThierryGoubier 10/17/2015 17:30",
-		"testTree" : "ThierryGoubier 10/8/2015 07:34" } }
+		"exampleSimpleTree" : "ThierryGoubier 10/18/2015 17:40:07",
+		"exampleSimpleTree2" : "ThierryGoubier 10/18/2015 17:40:07",
+		"testDeepEndStream" : "ThierryGoubier 10/18/2015 17:40:07",
+		"testItemMorph" : "ThierryGoubier 10/18/2015 17:40:07",
+		"testStream" : "ThierryGoubier 10/18/2015 17:40:07",
+		"testTree" : "ThierryGoubier 10/18/2015 17:40:07",
+		"testTreeIndexOf" : "ThierryGoubier 10/18/2015 23:45" } }

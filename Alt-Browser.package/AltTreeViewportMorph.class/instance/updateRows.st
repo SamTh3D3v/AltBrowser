@@ -28,8 +28,10 @@ updateRows
 					row addMorph: morph ].
 			exposedItems at: index put: row.
 			y := y + row height + 2.
+			y < visibleHeight
+				ifTrue: [ fullyVisibleEndIndex := index ].
 			index := index + 1 ].
-	endIndex := index.
+	endIndex := index - 1.
 	y < visibleHeight
 		ifTrue: [ maxShowIndex := self owner showIndex ].
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
