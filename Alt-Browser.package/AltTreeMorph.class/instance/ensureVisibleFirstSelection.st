@@ -6,7 +6,8 @@ ensureVisibleFirstSelection
 	rowIndex := self selectedRowIndex.
 	(self container isRowIndexFullyVisible: rowIndex)
 		ifFalse:
-			[ rowIndex < self showIndex
+			[ self container exposedItems ifNil: [ ^ self ].
+			rowIndex < self showIndex
 				ifTrue: [ self moveShowIndexTo: rowIndex ]
 				ifFalse:
 					[ self

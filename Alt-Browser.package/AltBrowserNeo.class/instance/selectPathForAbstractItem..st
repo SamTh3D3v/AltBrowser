@@ -5,20 +5,18 @@ selectPathForAbstractItem: anItem
 	| nPath aNode |
 	nPath := OrderedCollection new.
 	aNode := anItem parent.
-	[ aNode notNil ]
+	[ aNode notNil and: [ aNode parent notNil ] ]
 		whileTrue: [ nPath add: aNode.
 			aNode := aNode parent ].
 	nPath
 		reverseDo:
 			[ :each | 
 			(self root findItem: each)
-				ifNotNil:
-					[ :anItemModel | 
-					anItemModel isExpanded
-						ifFalse: [ anItemModel toggleExpanded ] ] ].
+				ifNil: [ self halt ]
+				ifNotNil: [ :anItemModel | anItemModel isExpanded: true ] ].
 	^ (self root findItem: anItem)
 		ifNotNil:
 			[ :anItemModel | 
-			treeMorph selectRow: (self root indexOf: anItemModel).
+			treeMorph selectRowIndex: (self root indexOf: anItemModel).
 			true ]
 		ifNil: [ false ]

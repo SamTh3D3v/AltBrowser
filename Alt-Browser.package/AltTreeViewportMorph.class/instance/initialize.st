@@ -5,4 +5,5 @@ initialize
 	self color: Color transparent.
 	self setNeedsRefreshItems.
 	self setNeedsRefreshRows.
-	endIndex := 0
+	endIndex := 0.
+	fullyVisibleEndIndex := 0
