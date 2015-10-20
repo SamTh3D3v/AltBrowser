@@ -18,8 +18,6 @@ open
 		changeProportionalLayout;
 		yourself.	"non pane color tracking"
 	groupText := Morph new
-		hResizing: #spaceFill;
-		vResizing: #spaceFill;
 		fillStyle: Color transparent;
 		changeTableLayout;
 		cellInset: 0;
@@ -42,22 +40,25 @@ open
 	group
 		addMorph: treeMorph
 		fullFrame:
-			(LayoutFrame
+			(AltLayoutFrame
 				fractions: (0.0 @ 0.0 corner: 0.3 @ 1.0)
-				offsets: (0 @ 0 corner: 0 @ 0)).
+				topLeftOffsets: 1 @ 0
+				bottomRightOffsets: -1 @ 0).
 	group
 		addMorph: groupText
 		fullFrame:
-			(LayoutFrame
+			(AltLayoutFrame
 				fractions: (0.3 @ 0.0 corner: 1 @ 1)
-				offsets: (0 @ 0 corner: 0 @ 0)).
+				topLeftOffsets: 1 @ 0
+				bottomRightOffsets: -1 @ 0).
 	group
 		addMorph:
 			(ProportionalSplitterMorph new
 				layoutFrame:
-					(LayoutFrame
-						fractions: (0.3 @ 0.0 corner: 0.3 @ 1)
-						offsets: (0 @ 0 corner: 0 @ 0));
+					(AltLayoutFrame
+						fractions: (0.3 @ 0.0 corner: 0.3 @ 1.0)
+						topLeftOffsets: -1 @ 0
+						bottomRightOffsets: 1 @ 0);
 				addLeftOrTop: treeMorph;
 				addRightOrBottom: groupText).
 	window minimumExtent: 500 @ 500.

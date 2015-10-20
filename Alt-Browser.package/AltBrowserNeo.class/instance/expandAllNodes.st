@@ -1,3 +1,3 @@
 user interface
 expandAllNodes
-	self treeMorph expandAll
+	self expandAllSuchThat: [ :e | true ]

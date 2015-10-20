@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltLayoutFrame",
+	"pools" : [
+		 ],
+	"super" : "LayoutFrame",
+	"type" : "normal" }
