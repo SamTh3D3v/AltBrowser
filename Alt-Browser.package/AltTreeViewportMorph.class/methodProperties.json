@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"calculateExactVisibleRows" : "ThierryGoubier 10/18/2015 17:40:07",
-		"calculateMaxVisibleRows" : "ThierryGoubier 10/18/2015 18:36",
+		"calculateMaxVisibleRows" : "ThierryGoubier 10/21/2015 23:53",
 		"calculateMinVisibleRows" : "ThierryGoubier 10/18/2015 18:36",
 		"canRefreshValues" : "ThierryGoubier 10/18/2015 17:40:07",
 		"changed" : "ThierryGoubier 10/18/2015 17:40:07",
@@ -16,7 +16,7 @@
 		"isRowIndexVisible:" : "ThierryGoubier 10/18/2015 17:40:07",
 		"leftOffset" : "ThierryGoubier 10/18/2015 17:40:07",
 		"leftOffset:" : "ThierryGoubier 10/18/2015 17:40:07",
-		"maxShowIndex" : "ThierryGoubier 10/21/2015 07:38",
+		"maxShowIndex" : "ThierryGoubier 10/21/2015 23:23",
 		"needsRefreshItems" : "ThierryGoubier 10/18/2015 17:40:07",
 		"needsRefreshRows" : "ThierryGoubier 10/18/2015 17:40:07",
 		"offsetWidth" : "ThierryGoubier 10/18/2015 17:40:07",
@@ -25,6 +25,6 @@
 		"rowIndexContainingPoint:" : "ThierryGoubier 10/18/2015 17:40:07",
 		"setNeedsRefreshItems" : "ThierryGoubier 10/18/2015 17:40:07",
 		"setNeedsRefreshRows" : "ThierryGoubier 10/18/2015 17:40:07",
-		"updateItems" : "ThierryGoubier 10/18/2015 18:35",
+		"updateItems" : "ThierryGoubier 10/21/2015 23:12",
 		"updateItemsOrRows" : "ThierryGoubier 10/18/2015 17:40:07",
-		"updateRows" : "ThierryGoubier 10/18/2015 18:35" } }
+		"updateRows" : "ThierryGoubier 10/21/2015 23:56" } }

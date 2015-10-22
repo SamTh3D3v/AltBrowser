@@ -7,8 +7,8 @@ recalculateVerticalScrollBar
 	visibleRows := self container calculateMaxVisibleRows asFloat.
 	numberOfRows := model size asFloat.
 	interval := visibleRows / numberOfRows.
-	delta := 1 / visibleRows.
-	pageDelta := (visibleRows - 1) floor * delta.
+	delta := 1.0 / (self container maxShowIndex - 1).
+	pageDelta := visibleRows * delta.
 	self verticalScrollBar
 		scrollDelta: delta pageDelta: pageDelta;
 		interval: interval

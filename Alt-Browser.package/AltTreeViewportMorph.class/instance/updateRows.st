@@ -2,12 +2,13 @@ updating
 updateRows
 	"This is a partial update. Reuse morphs as much as possible, do not reset bounds."
 
-	| index itemsStream y visibleHeight oldExposedItems |
+	| index itemsStream y visibleHeight oldExposedItems firstRowHeight |
 	index := self owner showIndex max: 1.
 	oldExposedItems := exposedItems.
 	exposedItems := SmallDictionary new.
 	y := 0.
 	visibleHeight := self height.
+	firstRowHeight := nil.
 	itemsStream := AltTreeReadStream on: self owner model.
 	itemsStream skip: index - 1.
 	[ y < visibleHeight and: [ itemsStream atEnd not ] ]
@@ -23,16 +24,20 @@ updateRows
 						hResizing: #rigid;
 						vResizing: #rigid;
 						color: Color transparent;
-						bounds: (0 @ 0 extent: (self width - 2) @ morph bottom);
+						bounds:
+							(0 @ 0 extent: (self width - 2 max: morph right) @ morph bottom);
 						yourself.
 					row addMorph: morph ].
 			exposedItems at: index put: row.
+			firstRowHeight ifNil: [ firstRowHeight := row height ].
 			y := y + row height + 2.
-			y < visibleHeight
-				ifTrue: [ fullyVisibleEndIndex := index ].
 			index := index + 1 ].
-	endIndex := index - 1.
 	y < visibleHeight
-		ifTrue: [ maxShowIndex := self owner showIndex ].
+		ifTrue:
+			[ fullyVisibleEndIndex := index - 1.
+			visibleHeight - y < firstRowHeight
+				ifTrue: [ maxShowIndex := self owner showIndex ] ]
+		ifFalse: [ fullyVisibleEndIndex := index - 2 ].
+	endIndex := index - 1.
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
 	self owner resizeAllSubviews
