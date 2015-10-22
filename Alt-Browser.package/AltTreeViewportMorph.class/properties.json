@@ -8,12 +8,16 @@
 	"instvars" : [
 		"exposedItems",
 		"leftOffset",
+		"topOffset",
+		"bottomOffset",
+		"maxHeight",
 		"offsetWidth",
 		"endIndex",
 		"fullyVisibleEndIndex",
 		"needsRefreshRows",
 		"needsRefreshItems",
-		"maxShowIndex" ],
+		"maxShowIndex",
+		"verticalValue" ],
 	"name" : "AltTreeViewportMorph",
 	"pools" : [
 		 ],

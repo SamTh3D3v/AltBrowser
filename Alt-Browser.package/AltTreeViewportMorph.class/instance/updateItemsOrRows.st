@@ -9,12 +9,12 @@ updateItemsOrRows
 	self owner model ifNil: [ ^ false ].
 	^ self needsRefreshItems
 		ifTrue:
-			[ self updateItems.
+			[ self updateItems2.
 			needsRefreshRows := needsRefreshItems := false.
 			true ]
 		ifFalse:
 			[ self needsRefreshRows
-				ifTrue: [ self updateRows.
+				ifTrue: [ self updateItems2.
 					needsRefreshRows := false.
 					true ]
 				ifFalse: [ false ] ]

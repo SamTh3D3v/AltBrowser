@@ -6,4 +6,5 @@ initialize
 	self setNeedsRefreshItems.
 	self setNeedsRefreshRows.
 	endIndex := 0.
-	fullyVisibleEndIndex := 0
+	fullyVisibleEndIndex := 0.
+	verticalValue := 0.0

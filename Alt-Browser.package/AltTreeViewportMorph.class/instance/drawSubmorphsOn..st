@@ -11,11 +11,13 @@ drawSubmorphsOn: canvas
 	dropIndex := self owner dropIndex.
 	self updateItemsOrRows
 		ifTrue:
-			[ rowsToDisplay := self exposedItems.
+			[ rowsToDisplay := self exposedItems keys asSortedCollection.
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
 			rowsToDisplay
 				keysAndValuesDo:
-					[ :rowIndex :row | 
+					[ :rowIndex | 
+					| row |
+					row := self exposedItems at: rowIndex.
 					row topLeft: x @ y.
 					y := y + row height + 2.
 					selectionIndex = rowIndex
@@ -24,7 +26,7 @@ drawSubmorphsOn: canvas
 					dropIndex = rowIndex
 						ifTrue: [ row highlightForDrop: true ]
 						ifFalse: [ row highlightForDrop: false ].
-					rowSubviews add: row ].
+					rowSubviews add: row ].	"Beware of the ordering!"
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.
 	needsRefreshRows := false
