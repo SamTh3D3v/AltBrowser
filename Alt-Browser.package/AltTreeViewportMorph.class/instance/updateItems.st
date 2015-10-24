@@ -2,38 +2,42 @@ updating
 updateItems
 	"This is a full update from the model. Reset all cached data."
 
-	| index itemsStream y visibleHeight firstRowHeight |
-	index := self owner showIndex max: 1.
-	maxShowIndex := nil.
-	firstRowHeight := nil.
+	| index iUp iDown sz y yDown yUp visibleHeight row |
+	index := self baselineIndex.
+	y := self baseline.
 	exposedItems := SmallDictionary new.
 	offsetWidth := self width.
-	y := 0.
-	visibleHeight := self height + self owner horizontalScrollBarHeight.
-	itemsStream := AltTreeReadStream on: self owner model.
-	itemsStream skip: index - 1.
-	[ y < visibleHeight and: [ itemsStream atEnd not ] ]
+	visibleHeight := self height.
+	row := self rowMorphForItem: (self owner model at: index).
+	exposedItems at: index put: row.
+	yDown := y + (row height * (1 - verticalValue)).
+	yUp := y  - (row height * verticalValue).
+	iUp := index - 1.
+	iDown := index.
+	sz := self owner model size.
+	[ yDown < visibleHeight and: [ iDown < sz ] ]
 		whileTrue:
-			[ | morph row item |
-			item := itemsStream next.
-			morph := item asTreeItemMorph privateOwner: self.
-			offsetWidth := offsetWidth max: morph right + 2.
-			row := Morph new
-				hResizing: #rigid;
-				vResizing: #rigid;
-				color: Color transparent;
-				bounds:
-					(0 @ 0 extent: (self width - 2 max: morph right) @ morph bottom);
-				yourself.
-			row addMorph: morph.
-			exposedItems at: index put: row.
-			y := y + row height + 2.
-			firstRowHeight ifNil: [ firstRowHeight := row height ].
-			y < visibleHeight
-				ifTrue: [ fullyVisibleEndIndex := index ].
-			index := index + 1 ].
-	endIndex := index - 1.
-	(y < visibleHeight and: [ visibleHeight - y < firstRowHeight ])
-		ifTrue: [ maxShowIndex := self owner showIndex ].
+			[ iDown := iDown + 1.
+			yDown := yDown + 2.
+			row := self rowMorphForItem: (self owner model at: iDown).
+			exposedItems at: iDown put: row.
+			yDown := yDown + row height ].
+	[ yUp > 0 and: [ iUp > 0 ] ]
+		whileTrue:
+			[ yUp := yUp - 2.
+			row := self rowMorphForItem: (self owner model at: iUp).
+			exposedItems at: iUp put: row.
+			yUp := yUp - row height.
+			iUp := iUp - 1 ].
+	yUp > 0
+		ifTrue:
+			[ self verticalValue: 0.0.
+			self owner verticalScrollBar value: 0.
+			topOffset := 0.
+			bottomOffset := yDown - yUp ]
+		ifFalse: [ topOffset := yUp.
+			bottomOffset := yDown ].
+	Transcript show: 'topOffset: '.
+	topOffset logCr.
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
 	self owner resizeAllSubviews

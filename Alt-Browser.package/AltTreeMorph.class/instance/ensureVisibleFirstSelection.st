@@ -7,8 +7,4 @@ ensureVisibleFirstSelection
 	(self container isRowIndexFullyVisible: rowIndex)
 		ifFalse:
 			[ self container exposedItems ifNil: [ ^ self ].
-			rowIndex < self showIndex
-				ifTrue: [ self moveShowIndexTo: rowIndex ]
-				ifFalse:
-					[ self
-						moveShowIndexTo: rowIndex - self container calculateMinVisibleRows + 2 ] ]
+			self moveShowIndexTo: rowIndex ]

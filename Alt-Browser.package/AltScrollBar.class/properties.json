@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Tree",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltScrollBar",
+	"pools" : [
+		 ],
+	"super" : "ScrollBar",
+	"type" : "normal" }

@@ -2,7 +2,7 @@ initialization
 initializeScrollBars
 	"Add a vertical scrollbar. An horizontal one is also needed, often."
 
-	verticalScrollBar := ScrollBar new
+	verticalScrollBar := AltScrollBar new
 		model: self;
 		setValueSelector: #verticalScrollBarValue:;
 		yourself.

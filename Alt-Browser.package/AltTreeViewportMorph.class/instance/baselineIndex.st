@@ -1,5 +1,5 @@
 accessing pixel-based
 baselineIndex
-	"Our baseline (index) to start counting. Rounded or truncated?"
+	"Our baseline (index) to start counting. Ceiling to move towards the next entry."
 
-	^ (verticalValue * self owner model size) rounded
+	^ 1 + (verticalValue * (self owner model size - 1)) ceiling

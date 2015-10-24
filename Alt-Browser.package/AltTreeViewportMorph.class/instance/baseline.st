@@ -1,5 +1,5 @@
 accessing pixel-based
 baseline
-	"Our baseline to start counting."
+	"Restart the baseline at that point."
 
-	^ verticalValue * self height
+	^ (verticalValue * self height) ceiling

@@ -1,7 +1,6 @@
 accessing pixel-based
 approxAverageRowHeight
-	"based on what we are displaying now."
+	"based on what we are displaying now. Or a constant if we haven't displayed anything yet."
 
-	"topOffset should be negative."
-
-	^ self height / exposedItems size asFloat
+	exposedItems ifNil: [ ^ 20 ].
+	^ (bottomOffset - topOffset) / exposedItems size asFloat

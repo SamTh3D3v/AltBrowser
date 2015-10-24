@@ -7,4 +7,5 @@ initialize
 	self setNeedsRefreshRows.
 	endIndex := 0.
 	fullyVisibleEndIndex := 0.
-	verticalValue := 0.0
+	verticalValue := 0.0.
+	topOffset := 0.
