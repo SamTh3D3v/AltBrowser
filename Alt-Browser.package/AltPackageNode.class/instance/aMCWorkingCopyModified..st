@@ -5,7 +5,8 @@ aMCWorkingCopyModified: anEvent
 	"Note. this will be called twice on the node if the answer is true. Don't forget that if some resource release is done here."
 
 	anEvent package name = self packageName
-		ifTrue: [ 
-			AltBrowser aNodeToUpdate: self.
+		ifTrue:
+			[ AltBrowser aNodeToUpdate: self.
+			AltBrowserNeo aNodeToUpdate: self.
 			^ true ].
 	^ false

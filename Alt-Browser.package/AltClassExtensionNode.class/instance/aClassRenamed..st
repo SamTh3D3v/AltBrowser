@@ -4,5 +4,6 @@ aClassRenamed: anEvent
 		ifFalse: [ ^ false ].
 	self item: anEvent newName.
 	AltBrowser aNodeToUpdate: self.
+	AltBrowserNeo aNodeToUpdate: self.
 	self contents first aClassRenamed: anEvent.	"In case we have a meta node."
 	^ true

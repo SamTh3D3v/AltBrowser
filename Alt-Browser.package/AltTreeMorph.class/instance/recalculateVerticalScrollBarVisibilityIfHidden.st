@@ -2,7 +2,9 @@ private-scrollbars
 recalculateVerticalScrollBarVisibilityIfHidden
 	"Switch on or off the vertical scroll bar. Expect a resize of the container?"
 
-	self container exposedItems size = self model size
+	(self container exposedItems size = self model size
+		and:
+			[ self container effectiveHeight <= self container height ])
 		ifTrue:
 			[ (self submorphs includes: self verticalScrollBar)
 				ifTrue:

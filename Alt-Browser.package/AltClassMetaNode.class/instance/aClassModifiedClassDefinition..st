@@ -5,4 +5,5 @@ aClassModifiedClassDefinition: anEvent
 	anEvent newClassDefinition = self itemClass
 		ifFalse: [ ^ false ].
 	AltBrowser aNodeToUpdate: self.
+	AltBrowserNeo aNodeToUpdate: self.
 	^ true

@@ -5,5 +5,5 @@ execute
 	| item |
 	item := requestor selectedNode item.
 	item parent removeRPackage: item item.
-	AltBrowser aNodeToRebuilt: item parent.
-	AltBrowser updateCategories
+	requestor class aNodeToRebuilt: item parent.
+	requestor class updateCategories

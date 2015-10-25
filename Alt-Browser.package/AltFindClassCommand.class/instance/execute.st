@@ -9,7 +9,7 @@ execute
 		ifTrue: [ 
 			self inform: 'Class search canceled '.
 			^ self ].
-	AltBrowser rootItems
+	requestor class rootItems
 		do: [ :each | 
 			| res |
 			(res := each findClass: aClass) notNil

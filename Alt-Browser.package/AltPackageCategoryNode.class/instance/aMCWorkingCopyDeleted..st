@@ -4,11 +4,15 @@ aMCWorkingCopyDeleted: anEvent
 
 	"Note: we will have to remove from this node items only if the MCWorkingCopy was stored at that level. This is checked by the double call to aMCWorkingCopyDeleted: which will only answer true if node is the AltPackageCategoryNode for the MCWorkingCopy."
 
-	(self contents detect: [ :each | each aMCWorkingCopyDeleted: anEvent ] ifNone: [ nil ])
-		ifNotNil: [ :node | 
+	(self contents
+		detect: [ :each | each aMCWorkingCopyDeleted: anEvent ]
+		ifNone: [ nil ])
+		ifNotNil:
+			[ :node | 
 			(node aMCWorkingCopyDeleted: anEvent)
-				ifTrue: [ 
-					self removeRPackage: node packageName.
-					AltBrowser aNodeToRebuilt: self ].
+				ifTrue:
+					[ self removeRPackage: node packageName.
+					AltBrowser aNodeToRebuilt: self.
+					AltBrowserNeo aNodeToRebuilt: self ].
 			^ true ].
 	^ false

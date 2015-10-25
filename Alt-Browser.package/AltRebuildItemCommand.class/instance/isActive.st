@@ -1,3 +1,3 @@
 testing
 isActive
-	^ AltBrowser debug
+	^ requestor class debug

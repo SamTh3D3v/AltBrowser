@@ -15,7 +15,7 @@ execute
 				in: [ :selectors | 
 					selectors isEmpty
 						ifFalse: [ classDict at: class put: selectors asIdentitySet ] ] ].
-	(AltBrowser
+	(requestor class
 		openOnEnvironment:
 			((RBSelectorEnvironment onEnvironment: anEnvironment)
 				on: classDict;

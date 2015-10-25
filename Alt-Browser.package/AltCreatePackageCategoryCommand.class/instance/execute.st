@@ -5,7 +5,7 @@ execute
 	| name cat |
 	name := UIManager default request: 'New Category name?'.
 	name ifNil: [ ^ self ].
-	(AltBrowser findPackageCategory: name)
+	(requestor class findPackageCategory: name)
 		ifNotNil: [ :item | 
 			self inform: name , ' already exists'.
 			^ item ].
@@ -13,9 +13,9 @@ execute
 	requestor selectedNode notNil
 		ifTrue: [ 
 			requestor selectedNode item addRPackage: cat.
-			AltBrowser aNodeToRebuilt: requestor selectedNode item ]
+			requestor class aNodeToRebuilt: requestor selectedNode item ]
 		ifFalse: [ 
-			AltBrowser root addRPackage: cat.
-			AltBrowser aNodeToRebuilt: AltBrowser root ].
-	AltBrowser updateCategories.
-	^ AltBrowser findPackageCategory: name
+			requestor class root addRPackage: cat.
+			requestor class aNodeToRebuilt: requestor class root ].
+	requestor class updateCategories.
+	^ requestor class findPackageCategory: name

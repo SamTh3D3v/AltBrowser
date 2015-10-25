@@ -5,9 +5,11 @@ aMethodRemoved: anEvent
 	"Would be simpler if protocol creation were announced. They are not."
 
 	anEvent methodClass == self itemClass
-		ifTrue: [ 
-			self contents do: [ :each | each aMethodRemoved: anEvent ].
+		ifTrue:
+			[ self contents do: [ :each | each aMethodRemoved: anEvent ].
 			(self itemClass protocols includes: anEvent protocol)
-				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
+				ifFalse:
+					[ AltBrowser aNodeToRebuilt: self.
+					AltBrowserNeo aNodeToRebuilt: self ].
 			^ true ].
 	^ false

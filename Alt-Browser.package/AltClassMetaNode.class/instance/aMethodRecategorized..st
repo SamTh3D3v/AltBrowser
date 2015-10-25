@@ -5,19 +5,25 @@ aMethodRecategorized: anEvent
 	"Would be simpler if protocol creation were announced. They are not."
 
 	anEvent methodClass == self itemClass
-		ifTrue: [ 
-			self contents do: [ :each | each aMethodRecategorized: anEvent ].
+		ifTrue:
+			[ self contents do: [ :each | each aMethodRecategorized: anEvent ].
 			(self contents
-				select: [ :e | 
+				select:
+					[ :e | 
 					(e isKindOf: AltMethodCategoryNode)
-						and: [ e methodCategory = anEvent oldProtocol or: [ e methodCategory = anEvent newProtocol ] ] ]) size < 2
-				ifTrue: [ 
-					AltBrowser aNodeToRebuilt: self.
+						and:
+							[ e methodCategory = anEvent oldProtocol
+								or: [ e methodCategory = anEvent newProtocol ] ] ]) size < 2
+				ifTrue:
+					[ AltBrowser aNodeToRebuilt: self.
+					AltBrowserNeo aNodeToRebuilt: self.
 					^ true ].
 			((self itemClass protocols includes: anEvent oldProtocol)
-				and: [ self itemClass protocols includes: anEvent newProtocol ])
-				ifFalse: [ 
-					AltBrowser aNodeToRebuilt: self.
+				and:
+					[ self itemClass protocols includes: anEvent newProtocol ])
+				ifFalse:
+					[ AltBrowser aNodeToRebuilt: self.
+					AltBrowserNeo aNodeToRebuilt: self.
 					^ true ].
 			^ true ].
 	^ false

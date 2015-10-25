@@ -4,7 +4,10 @@ dropItem: anItem
 
 	anItem parent removeRPackage: anItem item.
 	AltBrowser aNodeToRebuilt: anItem parent.
+	AltBrowserNeo aNodeToRebuilt: anItem parent.
 	self addRPackage: anItem item.
 	AltBrowser aNodeToRebuilt: self.
+	AltBrowserNeo aNodeToRebuilt: self.
 	AltBrowser updateCategories.
+	AltBrowserNeo updateCategories.
 	^ anItem

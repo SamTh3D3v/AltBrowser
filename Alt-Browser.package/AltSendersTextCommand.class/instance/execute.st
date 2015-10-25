@@ -7,13 +7,16 @@ execute
 	aSelector := self node selector.
 	classDict := IdentityDictionary new.
 	anEnvironment
-		classesAndMetaClassesDo: [ :class | 
+		classesAndMetaClassesDo:
+			[ :class | 
 			((class thoroughWhichSelectorsReferTo: aSelector)
-				select: [ :selector | anEnvironment includesSelector: selector in: class ])
-				in: [ :selectors | 
+				select:
+					[ :selector | anEnvironment includesSelector: selector in: class ])
+				in:
+					[ :selectors | 
 					selectors isEmpty
 						ifFalse: [ classDict at: class put: selectors asIdentitySet ] ] ].
-	(AltBrowser
+	(requestor class
 		openOnEnvironment:
 			((RBSelectorEnvironment onEnvironment: anEnvironment)
 				on: classDict;
