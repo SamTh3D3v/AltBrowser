@@ -2,26 +2,20 @@ updating
 updateItems
 	"This is a full update from the model. Reset all cached data."
 
-	| index iUp iDown sz y yDown yUp visibleHeight row |
+	| index iUp iDown sz y yDown yUp visibleHeight row delta |
 	index := self baselineIndex.
+	delta := self deltaFor: index.
 	y := self baseline.
 	exposedItems := SmallDictionary new.
 	offsetWidth := self width.
 	visibleHeight := self height.
 	row := self rowMorphForItem: (self owner model at: index).
 	exposedItems at: index put: row.
-	yDown := y + (row height * (1 - verticalValue)).
-	yUp := y  - (row height * verticalValue).
+	yDown := (y + (row height * (1 - delta))) truncated.
+	yUp := (y - (row height * delta)) truncated.
 	iUp := index - 1.
 	iDown := index.
 	sz := self owner model size.
-	[ yDown < visibleHeight and: [ iDown < sz ] ]
-		whileTrue:
-			[ iDown := iDown + 1.
-			yDown := yDown + 2.
-			row := self rowMorphForItem: (self owner model at: iDown).
-			exposedItems at: iDown put: row.
-			yDown := yDown + row height ].
 	[ yUp > 0 and: [ iUp > 0 ] ]
 		whileTrue:
 			[ yUp := yUp - 2.
@@ -30,14 +24,16 @@ updateItems
 			yUp := yUp - row height.
 			iUp := iUp - 1 ].
 	yUp > 0
-		ifTrue:
-			[ self verticalValue: 0.0.
-			self owner verticalScrollBar value: 0.
-			topOffset := 0.
-			bottomOffset := yDown - yUp ]
-		ifFalse: [ topOffset := yUp.
-			bottomOffset := yDown ].
-	Transcript show: 'topOffset: '.
-	topOffset logCr.
+		ifTrue: [ yDown := yDown - yUp.
+			yUp := 0 ].	"Make sure there is no empty space on top."
+	[ yDown < visibleHeight and: [ iDown < sz ] ]
+		whileTrue:
+			[ iDown := iDown + 1.
+			yDown := yDown + 2.
+			row := self rowMorphForItem: (self owner model at: iDown).
+			exposedItems at: iDown put: row.
+			yDown := yDown + row height ].
+	topOffset := yUp.
+	bottomOffset := yDown.
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
 	self owner resizeAllSubviews

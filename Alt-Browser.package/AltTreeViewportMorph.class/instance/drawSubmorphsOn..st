@@ -5,14 +5,15 @@ drawSubmorphsOn: canvas
 	| x y rowsToDisplay rowSubviews selectionIndex dropIndex |
 	self bounds ifNil: [ ^ self ].	"Nothing to show yet"
 	self owner ifNil: [ ^ self ].
-	x := self left + 2 - self leftOffset.
-	y := self top + topOffset.
-	selectionIndex := self owner selectedRowIndex.
-	dropIndex := self owner dropIndex.
 	self updateItemsOrRows
 		ifTrue:
-			[ rowsToDisplay := self exposedItems keys asSortedCollection.
+			[ rowsToDisplay := self exposedItems keys asSortedCollection
+				asArray.
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
+			x := self left + 2 - self leftOffset.
+			y := self top + topOffset.
+			selectionIndex := self owner selectedRowIndex.
+			dropIndex := self owner dropIndex.
 			rowsToDisplay
 				do:
 					[ :rowIndex | 
