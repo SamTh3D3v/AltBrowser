@@ -1,43 +1,44 @@
 updating
 updateRows
-	"This is a partial update. Reuse morphs as much as possible, do not reset bounds."
+	"Model hasn't changed, just complement missing rows."
 
-	| index itemsStream y visibleHeight oldExposedItems firstRowHeight |
-	index := self owner showIndex max: 1.
+	| index iUp iDown y yDown yUp visibleHeight row delta oldExposedItems |
+	index := self baselineIndex.
+	delta := self deltaFor: index.
+	y := self baseline.
 	oldExposedItems := exposedItems.
 	exposedItems := SmallDictionary new.
-	y := 0.
 	visibleHeight := self height.
-	firstRowHeight := nil.
-	itemsStream := AltTreeReadStream on: self owner model.
-	itemsStream skip: index - 1.
-	[ y < visibleHeight and: [ itemsStream atEnd not ] ]
+	row := oldExposedItems
+		at: index
+		ifAbsent: [ self rowMorphForItem: (self owner model at: index) ].
+	exposedItems at: index put: row.
+	yDown := (y + (row height * (1 - delta))) truncated.
+	yUp := (y - (row height * delta)) truncated.
+	iUp := index - 1.
+	iDown := index.
+	[ yUp > 0 and: [ iUp > 0 ] ]
 		whileTrue:
-			[ | morph row item |
-			item := itemsStream next.
-			(oldExposedItems includesKey: index)
-				ifTrue: [ row := oldExposedItems at: index ]
-				ifFalse:
-					[ morph := item asTreeItemMorph privateOwner: self.
-					offsetWidth := offsetWidth max: morph right + 2.
-					row := Morph new
-						hResizing: #rigid;
-						vResizing: #rigid;
-						color: Color transparent;
-						bounds:
-							(0 @ 0 extent: (self width - 2 max: morph right) @ morph bottom);
-						yourself.
-					row addMorph: morph ].
-			exposedItems at: index put: row.
-			firstRowHeight ifNil: [ firstRowHeight := row height ].
-			y := y + row height + 2.
-			index := index + 1 ].
-	y < visibleHeight
-		ifTrue:
-			[ fullyVisibleEndIndex := index - 1.
-			visibleHeight - y < firstRowHeight
-				ifTrue: [ maxShowIndex := self owner showIndex ] ]
-		ifFalse: [ fullyVisibleEndIndex := index - 2 ].
-	endIndex := index - 1.
+			[ yUp := yUp - 2.
+			row := oldExposedItems
+				at: iUp
+				ifAbsent: [ self rowMorphForItem: (self owner model at: iUp) ].
+			exposedItems at: iUp put: row.
+			yUp := yUp - row height.
+			iUp := iUp - 1 ].
+	yUp > 0
+		ifTrue: [ yDown := yDown - yUp.
+			yUp := 0 ].	"Make sure there is no empty space on top."
+	[ yDown < visibleHeight and: [ iDown < self modelSize ] ]
+		whileTrue:
+			[ iDown := iDown + 1.
+			yDown := yDown + 2.
+			row := oldExposedItems
+				at: iDown
+				ifAbsent: [ self rowMorphForItem: (self owner model at: iDown) ].
+			exposedItems at: iDown put: row.
+			yDown := yDown + row height ].
+	topOffset := yUp.
+	bottomOffset := yDown.
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
-	self owner resizeAllSubviews
+	self owner resizeAllSubviews	"Force a recompute / display of the scrollbars."

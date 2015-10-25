@@ -4,4 +4,5 @@ refresh
 
 	self owner ifNil: [ ^ self ].
 	self setNeedsRefreshItems.
+	self clearModelCachedData.
 	super changed

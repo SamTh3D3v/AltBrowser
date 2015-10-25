@@ -2,12 +2,11 @@ updating
 updateItems
 	"This is a full update from the model. Reset all cached data."
 
-	| index iUp iDown sz y yDown yUp visibleHeight row delta |
+	| index iUp iDown y yDown yUp visibleHeight row delta |
 	index := self baselineIndex.
 	delta := self deltaFor: index.
 	y := self baseline.
 	exposedItems := SmallDictionary new.
-	offsetWidth := self width.
 	visibleHeight := self height.
 	row := self rowMorphForItem: (self owner model at: index).
 	exposedItems at: index put: row.
@@ -15,7 +14,6 @@ updateItems
 	yUp := (y - (row height * delta)) truncated.
 	iUp := index - 1.
 	iDown := index.
-	sz := self owner model size.
 	[ yUp > 0 and: [ iUp > 0 ] ]
 		whileTrue:
 			[ yUp := yUp - 2.
@@ -26,7 +24,7 @@ updateItems
 	yUp > 0
 		ifTrue: [ yDown := yDown - yUp.
 			yUp := 0 ].	"Make sure there is no empty space on top."
-	[ yDown < visibleHeight and: [ iDown < sz ] ]
+	[ yDown < visibleHeight and: [ iDown < self modelSize ] ]
 		whileTrue:
 			[ iDown := iDown + 1.
 			yDown := yDown + 2.
@@ -36,4 +34,4 @@ updateItems
 	topOffset := yUp.
 	bottomOffset := yDown.
 	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
-	self owner resizeAllSubviews
+	self owner resizeAllSubviews	"Force a recompute / display of the scrollbars."

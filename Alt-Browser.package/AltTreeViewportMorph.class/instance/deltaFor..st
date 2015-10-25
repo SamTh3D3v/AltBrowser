@@ -4,4 +4,4 @@ deltaFor: anIndex
 	verticalValue for i+1 - vecticalValue for i"
 
 	^ (verticalValue - (self verticalValueForIndex: anIndex))
-		/ (1.0 / self owner model size)
+		/ (1.0 / self modelSize)

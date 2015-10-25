@@ -8,7 +8,7 @@ drawSubmorphsOn: canvas
 	self updateItemsOrRows
 		ifTrue:
 			[ rowsToDisplay := self exposedItems keys asSortedCollection
-				asArray.
+				asArray.	"Do not rely on exposedItems ordering"
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
 			x := self left + 2 - self leftOffset.
 			y := self top + topOffset.
@@ -27,7 +27,7 @@ drawSubmorphsOn: canvas
 					dropIndex = rowIndex
 						ifTrue: [ row highlightForDrop: true ]
 						ifFalse: [ row highlightForDrop: false ].
-					rowSubviews add: row ].	"Beware of the ordering!"
+					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.
 	needsRefreshRows := false
