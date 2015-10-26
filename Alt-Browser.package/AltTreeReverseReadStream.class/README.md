@@ -1,1 +1,1 @@
-Just do the iterations in reverse
+Just do the iterations in reverse.

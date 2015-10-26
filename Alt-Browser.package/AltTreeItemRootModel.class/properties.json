@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltScrollBar",
+	"name" : "AltTreeItemRootModel",
 	"pools" : [
 		 ],
-	"super" : "ScrollBar",
+	"super" : "AltTreeItemModel",
 	"type" : "normal" }
