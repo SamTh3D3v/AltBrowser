@@ -1,3 +1,3 @@
-accessing pixel-based
+accessing
 effectiveHeight
 	^ bottomOffset - topOffset

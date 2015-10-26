@@ -14,7 +14,7 @@ updateItemsOrRows
 			true ]
 		ifFalse:
 			[ self needsRefreshRows
-				ifTrue: [ self updateItems.
+				ifTrue: [ self updateRows.
 					needsRefreshRows := false.
 					true ]
 				ifFalse: [ false ] ]

@@ -1,4 +1,4 @@
-accessing pixel-based
+private
 verticalValueForIndex: anIndex
 	"Reverse the computation. We're using ceiling, so it's not exactly -1.0..."
 

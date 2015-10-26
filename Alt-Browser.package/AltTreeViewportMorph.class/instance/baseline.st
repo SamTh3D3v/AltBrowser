@@ -1,4 +1,4 @@
-accessing pixel-based
+private
 baseline
 	"Restart the baseline at that point."
 

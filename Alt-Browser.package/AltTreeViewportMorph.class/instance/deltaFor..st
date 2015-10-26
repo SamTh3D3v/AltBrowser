@@ -1,4 +1,4 @@
-accessing pixel-based
+private
 deltaFor: anIndex
 	"Delta measure the distance to the next index...
 	verticalValue for i+1 - vecticalValue for i"
