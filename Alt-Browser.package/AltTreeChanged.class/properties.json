@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"parent",
-		"item",
-		"contents",
-		"expanded",
-		"announcer" ],
-	"name" : "AltTreeItemModel",
+		"tree" ],
+	"name" : "AltTreeChanged",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Announcement",
 	"type" : "normal" }

@@ -1,6 +1,12 @@
 accessing
 model: anAltTreeItemModel
-	model ifNotNil: [ model removeDependent: self ].
+	"Announcements based."
+
+	model ifNotNil: [ model announcer unsubscribe: self ].
 	anAltTreeItemModel
-		ifNotNil: [ anAltTreeItemModel addDependent: self ].
+		ifNotNil:
+			[ anAltTreeItemModel announcer weak
+				when: AltTreeChanged
+				send: #refresh
+				to: self ].
 	model := anAltTreeItemModel
