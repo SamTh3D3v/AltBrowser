@@ -9,3 +9,4 @@ initialize
 	fullyVisibleEndIndex := 0.
 	verticalValue := 0.0.
 	topOffset := 0.
+	offsetWidth := 0.

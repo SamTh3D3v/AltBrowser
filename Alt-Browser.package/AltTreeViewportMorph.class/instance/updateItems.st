@@ -8,6 +8,7 @@ updateItems
 	y := self baseline.
 	exposedItems := SmallDictionary new.
 	visibleHeight := self height.
+	offsetWidth := 0.
 	row := self rowMorphForItem: (self owner model at: index).
 	exposedItems at: index put: row.
 	yDown := (y + (row height * (1 - delta))) truncated.
@@ -39,5 +40,6 @@ updateItems
 			yDown := yDown + row height ].
 	topOffset := yUp.
 	bottomOffset := yDown.
-	exposedItems values do: [ :each | each right: offsetWidth - 1 ].
+	exposedItems values
+		do: [ :each | each right: self effectiveWidth - 1 ].
 	self owner resizeAllSubviews	"Force a recompute / display of the scrollbars."
