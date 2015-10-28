@@ -8,15 +8,13 @@
 		"changed" : "ThierryGoubier 10/18/2015 17:40:07",
 		"clearModelCachedData" : "ThierryGoubier 10/28/2015 18:00",
 		"clipSubmorphs" : "ThierryGoubier 10/18/2015 17:40:07",
-		"deltaFor:" : "ThierryGoubier 10/28/2015 17:47",
+		"deltaFor:" : "ThierryGoubier 10/28/2015 20:39",
 		"drawSubmorphsOn:" : "ThierryGoubier 10/25/2015 10:45",
 		"effectiveHeight" : "ThierryGoubier 10/26/2015 23:00",
 		"effectiveWidth" : "ThierryGoubier 10/28/2015 18:00",
 		"exposedItems" : "ThierryGoubier 10/18/2015 17:40:07",
 		"initialize" : "ThierryGoubier 10/28/2015 18:00",
-		"isRowIndexExceeding:" : "ThierryGoubier 10/18/2015 18:27",
-		"isRowIndexFullyVisible:" : "ThierryGoubier 10/20/2015 23:09",
-		"isRowIndexVisible:" : "ThierryGoubier 10/18/2015 17:40:07",
+		"isRowIndexFullyVisible:" : "ThierryGoubier 10/28/2015 20:45",
 		"leftOffset" : "ThierryGoubier 10/28/2015 17:55",
 		"modelSize" : "ThierryGoubier 10/25/2015 10:51",
 		"needsRefreshItems" : "ThierryGoubier 10/18/2015 17:40:07",
@@ -31,4 +29,4 @@
 		"updateItemsOrRows" : "ThierryGoubier 10/26/2015 23:16",
 		"updateRows" : "ThierryGoubier 10/27/2015 22:32",
 		"verticalValue" : "ThierryGoubier 10/28/2015 17:45",
-		"verticalValueForIndex:" : "ThierryGoubier 10/28/2015 17:36" } }
+		"verticalValueForIndex:" : "ThierryGoubier 10/28/2015 20:35" } }
