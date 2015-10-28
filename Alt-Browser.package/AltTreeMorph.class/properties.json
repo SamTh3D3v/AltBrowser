@@ -12,10 +12,7 @@
 		"horizontalScrollBar",
 		"backgroundColor",
 		"selectionColor",
-		"rowHeight",
 		"selectedRowIndexes",
-		"secondarySelectionColor",
-		"showIndex",
 		"dropIndex" ],
 	"name" : "AltTreeMorph",
 	"pools" : [
