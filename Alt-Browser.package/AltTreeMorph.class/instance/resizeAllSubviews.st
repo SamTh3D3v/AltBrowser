@@ -1,7 +1,7 @@
 private
 resizeAllSubviews
 	self resizeVerticalScrollBar.
-	self recalculateVerticalScrollBar.
 	self resizeHorizontalScrollBar.
+	self recalculateVerticalScrollBar.
 	self recalculateHorizontalScrollBar.
 	self resizeContainer

@@ -1,5 +1,5 @@
 private-scrollbars
 horizontalScrollBarHeight
-	^ self isHorizontalScrollBarVisible
+	^ self hasHorizontalScrollBar
 		ifTrue: [ self scrollBarThickness ]
 		ifFalse: [ 0 ]

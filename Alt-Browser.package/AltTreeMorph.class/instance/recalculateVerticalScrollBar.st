@@ -5,8 +5,11 @@ recalculateVerticalScrollBar
 	| interval delta pageDelta visibleRows numberOfRows |
 	model ifNil: [ ^ self ].
 	container exposedItems ifNil: [ ^ self ].
-	self recalculateVerticalScrollBarVisibilityIfHidden
-		ifTrue: [ ^ self ].
+	self hasVerticalScrollBar
+		ifTrue:
+			[ self verticalScrollBar value: 0.
+			self verticalScrollBarValue: 0.
+			^ self ].
 	visibleRows := self container exposedItems size asFloat
 		/
 			(self container effectiveHeight / self container height asFloat).

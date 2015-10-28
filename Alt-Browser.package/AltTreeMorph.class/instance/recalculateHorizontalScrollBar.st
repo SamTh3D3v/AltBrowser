@@ -2,8 +2,8 @@ private-scrollbars
 recalculateHorizontalScrollBar
 	| interval delta |
 	model ifNil: [ ^ self ].
-	self recalculateHorizontalScrollBarVisibilityIfHidden
-		ifTrue: [ ^ self ].
+	self hasHorizontalScrollBar
+		ifFalse: [ ^ self ].
 	interval := (self container width / self container effectiveWidth)
 		asFloat.
 	delta := 1.0 / (self container effectiveWidth - self container width).
