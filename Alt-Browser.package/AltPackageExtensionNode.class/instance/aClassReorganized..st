@@ -4,10 +4,7 @@ aClassReorganized: anEvent
 
 	(self contents
 		inject: false
-		into:
-			[ :bool :each | (each aClassReorganized: anEvent) or: [ bool ] ])
-		ifTrue:
-			[ AltBrowser aNodeToRebuilt: self.
-			AltBrowserNeo aNodeToRebuilt: self.
+		into: [ :bool :each | (each aClassReorganized: anEvent) or: [ bool ] ])
+		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
 			^ true ].
 	^ false

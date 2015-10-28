@@ -5,7 +5,6 @@ aMCWorkingCopyCreated: anEvent
 	(anEvent workingCopy packageName beginsWith: self trimmedCategoryName)
 		ifTrue:
 			[ self addRPackage: anEvent workingCopy packageName asSymbol.
-			AltBrowser aNodeToRebuilt: self.
 			AltBrowserNeo aNodeToRebuilt: self.
 			^ true ].
 	^ self contents

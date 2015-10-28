@@ -4,8 +4,6 @@ aClassRepackaged: anEvent
 
 	(anEvent newPackage name = self packageName
 		or: [ anEvent oldPackage name = self packageName ])
-		ifTrue:
-			[ AltBrowser aNodeToRebuilt: self.
-			AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
 			^ true ]
 		ifFalse: [ ^ false ]

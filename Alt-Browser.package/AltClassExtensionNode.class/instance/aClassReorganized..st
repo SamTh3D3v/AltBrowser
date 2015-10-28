@@ -5,8 +5,6 @@ aClassReorganized: anEvent
 	anEvent classReorganized == self itemClass
 		ifTrue: [ ^ true ].
 	anEvent classReorganized == self itemClass classSide
-		ifTrue:
-			[ AltBrowser aNodeToRebuilt: self.
-			AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
 			^ true ].
 	^ false

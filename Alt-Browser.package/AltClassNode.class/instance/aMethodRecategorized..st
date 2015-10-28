@@ -14,16 +14,11 @@ aMethodRecategorized: anEvent
 						and:
 							[ e methodCategory = anEvent oldProtocol
 								or: [ e methodCategory = anEvent newProtocol ] ] ]) size < 2
-				ifTrue:
-					[ AltBrowser aNodeToRebuilt: self.
-					AltBrowserNeo aNodeToRebuilt: self.
+				ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
 					^ true ].
 			((self itemClass protocols includes: anEvent oldProtocol)
-				and:
-					[ self itemClass protocols includes: anEvent newProtocol ])
-				ifFalse:
-					[ AltBrowser aNodeToRebuilt: self.
-					AltBrowserNeo aNodeToRebuilt: self.
+				and: [ self itemClass protocols includes: anEvent newProtocol ])
+				ifFalse: [ AltBrowserNeo aNodeToRebuilt: self.
 					^ true ].
 			^ true ].
 	^ self contents first aMethodRecategorized: anEvent

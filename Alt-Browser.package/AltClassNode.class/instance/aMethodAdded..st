@@ -15,9 +15,7 @@ aMethodAdded: anEvent
 							(e isKindOf: AltMethodCategoryNode)
 								and: [ e methodCategory = anEvent protocol ] ]) size < 1
 						or: [ anEvent protocol = 'no messages' ])
-						ifTrue:
-							[ AltBrowser aNodeToRebuilt: self.
-							AltBrowserNeo aNodeToRebuilt: self ].
+						ifTrue: [ AltBrowserNeo aNodeToRebuilt: self ].
 					^ true ].
 			^ self contents first aMethodAdded: anEvent ].
 	^ false

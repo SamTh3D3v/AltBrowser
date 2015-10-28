@@ -2,6 +2,6 @@ actions
 doubleClickIn: anAltTreeItemModel
 	"Action!"
 
-	AltBrowser
+	AltBrowserNeo
 		fullOnPackage: self rpackage
 		in: anAltTreeItemModel model rbEnvironment

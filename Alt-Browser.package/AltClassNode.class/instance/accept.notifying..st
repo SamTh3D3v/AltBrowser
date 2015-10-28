@@ -6,8 +6,7 @@ accept: aText notifying: aController
 
 	| res |
 	self parseAcceptText: aText notifying: aController.
-	res := [ 
-	UndefinedObject compilerClass new
+	res := [ UndefinedObject compilerClass new
 		evaluate: (ReadStream on: aText)
 		in: nil
 		to: nil
@@ -17,8 +16,10 @@ accept: aText notifying: aController
 		on: SyntaxErrorNotification
 		do: [ :ex | ex resume: true ].
 	res notNil
-		ifTrue: [ 
-			| r |
-			AltBrowser rootItems detect: [ :aRoot | (r := aRoot findClass: res) notNil ] ifNone: [ nil ].
+		ifTrue:
+			[ | r |
+			AltBrowserNeo rootItems
+				detect: [ :aRoot | (r := aRoot findClass: res) notNil ]
+				ifNone: [ nil ].
 			^ r ].	"Search for the produced result, a class, to select it."
 	^ nil

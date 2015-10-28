@@ -8,9 +8,14 @@ changed
 	self model selectedNode ifNil: [ ^ super changed ].
 	i := self indexOf: self model selectedNode.
 	i isZero
-		ifTrue: [ self model treeMorph selectRowIndexes: #() ]
+		ifTrue:
+			[ self model treeMorph selectRowIndexesNoUpdate: #().
+			super changed.
+			self model treeMorph ensureVisibleFirstSelection ]
 		ifFalse:
 			[ self model treeMorph selectedRowIndex = i
 				ifTrue: [ super changed ]
 				ifFalse:
-					[ self model treeMorph selectRowIndexes: (Array with: i) ] ]
+					[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
+					super changed.
+					self model treeMorph ensureVisibleFirstSelection ] ]

@@ -4,12 +4,10 @@ aMethodAdded: anEvent
 
 	((anEvent methodClass == self itemClass
 		or: [ anEvent methodClass == self itemClass classSide ])
-		and:
-			[ anEvent protocol asLowercase beginsWith: self methodCategory ])
+		and: [ anEvent protocol asLowercase beginsWith: self methodCategory ])
 		ifTrue:
 			[ (self contents first isKindOf: AltClassMetaExtensionNode)
 				ifTrue: [ self contents first aMethodAdded: anEvent ].
-			AltBrowser aNodeToRebuilt: self.
 			AltBrowserNeo aNodeToRebuilt: self.
 			^ true ].
 	^ false

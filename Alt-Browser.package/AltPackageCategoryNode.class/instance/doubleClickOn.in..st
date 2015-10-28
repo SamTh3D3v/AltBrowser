@@ -5,7 +5,7 @@ doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	| aSetOfPackages |
 	aSetOfPackages := IdentitySet new.
 	self packagesDo: [ :e | aSetOfPackages add: e ].
-	AltBrowser
+	AltBrowserNeo
 		fullOnEnvironment:
 			(anAltBrowser rbEnvironment forPackages: aSetOfPackages)
 		select: self

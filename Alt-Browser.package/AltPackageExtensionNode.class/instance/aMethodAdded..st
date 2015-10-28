@@ -8,10 +8,7 @@ aMethodAdded: anEvent
 		ifTrue:
 			[ (self contents
 				inject: false
-				into:
-					[ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ])
-				ifFalse:
-					[ AltBrowser aNodeToRebuilt: self.
-					AltBrowserNeo aNodeToRebuilt: self ].
+				into: [ :bool :each | (each aMethodAdded: anEvent) or: [ bool ] ])
+				ifFalse: [ AltBrowserNeo aNodeToRebuilt: self ].
 			^ true ].
 	^ false

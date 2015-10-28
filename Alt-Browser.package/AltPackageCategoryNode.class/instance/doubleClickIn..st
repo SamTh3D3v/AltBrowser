@@ -5,8 +5,7 @@ doubleClickIn: anAltTreeItemModel
 	| aSetOfPackages |
 	aSetOfPackages := IdentitySet new.
 	self packagesDo: [ :e | aSetOfPackages add: e ].
-	AltBrowser
-		fullOnEnvironment:
-			(anAltTreeItemModel rbEnvironment forPackages: aSetOfPackages)
+	AltBrowserNeo
+		fullOnEnvironment: (anAltTreeItemModel rbEnvironment forPackages: aSetOfPackages)
 		select: self
 		with: anAltTreeItemModel findExpanded

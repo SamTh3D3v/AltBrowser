@@ -7,13 +7,10 @@ aMethodRecategorized: anEvent
 	| sub rpackage |
 	sub := self contents
 		inject: false
-		into:
-			[ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ].
+		into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ].
 	rpackage := self rpackage.
 	((rpackage isYourClassExtension: anEvent newProtocol)
 		or: [ rpackage isYourClassExtension: anEvent oldProtocol ])
-		ifTrue:
-			[ AltBrowser aNodeToRebuilt: self.
-			AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
 			^ true ].
 	^ sub
