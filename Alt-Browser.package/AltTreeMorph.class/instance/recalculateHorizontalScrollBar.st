@@ -3,7 +3,8 @@ recalculateHorizontalScrollBar
 	| interval delta |
 	model ifNil: [ ^ self ].
 	self hasHorizontalScrollBar
-		ifFalse: [ ^ self ].
+		ifFalse: [ self horizontalScrollBar value: 0.
+			^ self ].
 	interval := (self container width / self container effectiveWidth)
 		asFloat.
 	delta := 1.0 / (self container effectiveWidth - self container width).

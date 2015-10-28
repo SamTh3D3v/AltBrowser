@@ -2,7 +2,7 @@ private
 rowMorphForItem: anItem
 	| row morph |
 	morph := anItem asTreeItemMorph privateOwner: self.
-	offsetWidth := offsetWidth max: morph right + 2.
+	maximumWidth := maximumWidth max: morph right + 2.
 	row := Morph new
 		hResizing: #rigid;
 		vResizing: #rigid;

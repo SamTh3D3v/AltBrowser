@@ -1,3 +1,4 @@
 accessing
 leftOffset
-	^ leftOffset ifNil: [ leftOffset := 0 ]
+	^ ((self effectiveWidth - self width)
+		* self owner horizontalScrollBar value) truncated

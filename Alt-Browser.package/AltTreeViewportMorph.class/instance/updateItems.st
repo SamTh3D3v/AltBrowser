@@ -8,7 +8,7 @@ updateItems
 	y := self baseline.
 	exposedItems := SmallDictionary new.
 	visibleHeight := self height.
-	offsetWidth := 0.
+	maximumWidth := 0.
 	row := self rowMorphForItem: (self owner model at: index).
 	exposedItems at: index put: row.
 	yDown := (y + (row height * (1 - delta))) truncated.

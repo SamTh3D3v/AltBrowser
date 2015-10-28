@@ -6,6 +6,5 @@ moveShowIndexTo: aNumber
 	 Use me just in case you need to force a refresh after settign the index"
 
 	self verticalScrollBar
-		value: (self rowIndexToVerticalScrollBarValue: aNumber).
-	self container verticalValue: self verticalScrollBar value.
+		value: (self container verticalValueForIndex: aNumber).
 	self container changed

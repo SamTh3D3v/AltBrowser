@@ -1,6 +1,6 @@
 accessing
 model: anAltTreeItemModel
-	"Announcements based."
+	"Announcements based. Do a reset of the positions and a refresh."
 
 	model ifNotNil: [ model announcer unsubscribe: self ].
 	anAltTreeItemModel
@@ -9,4 +9,6 @@ model: anAltTreeItemModel
 				when: AltTreeChanged
 				send: #refresh
 				to: self ].
-	model := anAltTreeItemModel
+	model := anAltTreeItemModel.
+	self resetPosition.
+	self refresh

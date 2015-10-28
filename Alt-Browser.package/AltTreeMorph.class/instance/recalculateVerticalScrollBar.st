@@ -6,9 +6,8 @@ recalculateVerticalScrollBar
 	model ifNil: [ ^ self ].
 	container exposedItems ifNil: [ ^ self ].
 	self hasVerticalScrollBar
-		ifTrue:
+		ifFalse:
 			[ self verticalScrollBar value: 0.
-			self verticalScrollBarValue: 0.
 			^ self ].
 	visibleRows := self container exposedItems size asFloat
 		/

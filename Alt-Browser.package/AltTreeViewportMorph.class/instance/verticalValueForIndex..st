@@ -1,4 +1,4 @@
-private
+accessing
 verticalValueForIndex: anIndex
 	"Reverse the computation. We're using ceiling, so it's not exactly -1.0..."
 

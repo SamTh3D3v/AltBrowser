@@ -1,3 +1,3 @@
 accessing
 verticalValue
-	^ verticalValue
+	^ self owner verticalScrollBar value
