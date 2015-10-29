@@ -13,9 +13,6 @@ changed
 			super changed.
 			self model treeMorph ensureVisibleFirstSelection ]
 		ifFalse:
-			[ self model treeMorph selectedRowIndex = i
-				ifTrue: [ super changed ]
-				ifFalse:
-					[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
-					super changed.
-					self model treeMorph ensureVisibleFirstSelection ] ]
+			[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
+			super changed.
+			self model treeMorph ensureVisibleFirstSelection ]
