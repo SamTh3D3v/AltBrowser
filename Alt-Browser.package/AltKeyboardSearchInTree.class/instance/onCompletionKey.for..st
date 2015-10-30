@@ -4,14 +4,12 @@ onCompletionKey: anEvent for: targetMorph
 
 	"Consider that, when the completion key is hit, it's the selected node that we open. If no selection, select the first node. Expand, ensure display is correct, then delete the command."
 
-	requestor selectedMorph
+	requestor selectedRowIndex
 		ifNil: [ 
-			requestor setSelectedMorph: requestor allNodeMorphs first.
-			requestor scrollSelectionIntoView ].
-	requestor selectedMorph isExpanded
-		ifFalse: [ requestor selectedMorph toggleExpandedState ].
+			requestor selectRowIndex: 1 ].
+	(requestor model at: requestor selectedRowIndex) isExpanded
+		ifFalse: [ (requestor model at: requestor selectedRowIndex) toggleExpanded ].
 	requestor
-		adjustSubmorphPositions;
-		scrollSelectionIntoView.
+		ensureVisibleFirstSelection.
 	targetMorph delete.
 	anEvent hand newKeyboardFocus: requestor

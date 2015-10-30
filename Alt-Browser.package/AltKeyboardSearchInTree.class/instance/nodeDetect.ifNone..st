@@ -4,9 +4,13 @@ nodeDetect: aBlock ifNone: aNoneBlock
 
 	| searchList |
 	searchList := baseIndex
-		ifNil: [ 
-			requestor selectedMorph
-				ifNil: [ requestor allNodeMorphs ]
-				ifNotNil: [ :sel | (requestor allNodeMorphs allButFirst: sel index) , (requestor allNodeMorphs first: sel index) ] ]
-		ifNotNil: [ :i | (requestor allNodeMorphs allButFirst: i - 1) , (requestor allNodeMorphs first: i - 1) ].
+		ifNil:
+			[ requestor selectedRowIndex
+				ifNil: [ requestor model ]
+				ifNotNil:
+					[ :sel | 
+					(requestor model allButFirst: sel)
+						, (requestor model first: sel) ] ]
+		ifNotNil:
+			[ :i | (requestor model allButFirst: i - 1) , (requestor model first: i - 1) ].
 	^ searchList detect: aBlock ifNone: aNoneBlock

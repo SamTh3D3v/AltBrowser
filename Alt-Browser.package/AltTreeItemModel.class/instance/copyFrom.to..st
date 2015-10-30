@@ -4,7 +4,7 @@ copyFrom: startIndex to: stopIndex
 
 	| found count |
 	count := 0.
-	found := OrderedCollection new.
+	found := OrderedCollection new: stopIndex - startIndex + 1.
 	self
 		anySatisfy:
 			[ :e | 

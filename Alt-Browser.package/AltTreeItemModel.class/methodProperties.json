@@ -2,6 +2,7 @@
 	"class" : {
 		"on:" : "ThierryGoubier 10/28/2015 21:03:08" },
 	"instance" : {
+		"allButFirst:" : "ThierryGoubier 10/30/2015 11:01",
 		"announcer" : "ThierryGoubier 10/28/2015 21:03:08",
 		"anySatisfy:" : "ThierryGoubier 10/28/2015 21:03:08",
 		"asMorph" : "ThierryGoubier 10/28/2015 21:03:08",
@@ -14,9 +15,10 @@
 		"childrenItems" : "ThierryGoubier 10/28/2015 21:03:08",
 		"contents" : "ThierryGoubier 10/28/2015 21:03:08",
 		"contents:" : "ThierryGoubier 10/28/2015 21:03:08",
-		"copyFrom:to:" : "ThierryGoubier 10/28/2015 21:03:08",
+		"copyFrom:to:" : "ThierryGoubier 10/30/2015 11:04",
 		"depth" : "ThierryGoubier 10/28/2015 21:03:08",
 		"doubleClickIn:" : "ThierryGoubier 10/28/2015 21:03:08",
+		"first:" : "ThierryGoubier 10/30/2015 11:03",
 		"hasContents" : "ThierryGoubier 10/28/2015 21:03:08",
 		"icon" : "ThierryGoubier 10/28/2015 21:03:08",
 		"indexOf:" : "ThierryGoubier 10/28/2015 21:03:08",
