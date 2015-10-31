@@ -11,7 +11,7 @@ testReversedStreamRoot
 	self assert: stream next item = 2.
 	self assert: stream atEnd.
 	self assert: stream next isNil.
-	(tree at: 1) isExpanded: false.
+	(tree at: 1) collapse.
 	stream := AltTreeReverseReadStream on: tree.
 	self
 		assert:

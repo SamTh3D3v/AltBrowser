@@ -15,7 +15,7 @@ testStream
 				next) item = 3.
 	self assert: stream atEnd.
 	self assert: stream next isNil.
-	(tree at: 2) isExpanded: false.
+	(tree at: 2) collapse.
 	stream := AltTreeReadStream on: tree.
 	self
 		assert:

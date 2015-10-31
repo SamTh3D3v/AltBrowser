@@ -13,6 +13,6 @@ testTree
 	self assert: (tree copyFrom: 2 to: 5) last item = 3.
 	self should: [ tree at: 0 ] raise: SubscriptOutOfBounds.
 	self should: [ tree at: tree size + 1 ] raise: SubscriptOutOfBounds.
-	(tree at: 2) isExpanded: false.
+	(tree at: 2) collapse.
 	self assert: tree size = 3.
 	self assert: (tree at: 3) item = 3

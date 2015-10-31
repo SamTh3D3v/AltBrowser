@@ -1,6 +1,6 @@
 updating
 toggleExpanded: aCodeItemModel
-	"Handle the case of the expanded/unexpanded here."
+	"Try to select a parent if selection is among the collapsed nodes."
 
 	aCodeItemModel isExpanded
 		ifTrue: [ self changed ]

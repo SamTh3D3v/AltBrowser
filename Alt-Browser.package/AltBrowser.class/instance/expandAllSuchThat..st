@@ -4,6 +4,5 @@ expandAllSuchThat: aBlock
 		anySatisfy:
 			[ :each | 
 			(aBlock value: each)
-				ifTrue: [ each isExpanded: true ].
-			false ].
-	self root changed
+				ifTrue: [ each expand ].
+			false ]
