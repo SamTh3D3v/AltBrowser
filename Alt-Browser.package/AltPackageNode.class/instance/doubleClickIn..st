@@ -2,7 +2,7 @@ actions
 doubleClickIn: anAltTreeItemModel
 	"Action!"
 
-	AltBrowserNeo
+	AltBrowser
 		fullOnEnvironment: (anAltTreeItemModel rbEnvironment forPackages: {self rpackage})
 		select: self
 		with: anAltTreeItemModel findExpanded

@@ -11,6 +11,6 @@ aMethodRecategorized: anEvent
 	rpackage := self rpackage.
 	((rpackage isYourClassExtension: anEvent newProtocol)
 		or: [ rpackage isYourClassExtension: anEvent oldProtocol ])
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ sub

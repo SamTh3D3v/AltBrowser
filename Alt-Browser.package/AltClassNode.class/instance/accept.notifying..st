@@ -18,7 +18,7 @@ accept: aText notifying: aController
 	res notNil
 		ifTrue:
 			[ | r |
-			AltBrowserNeo rootItems
+			AltBrowser rootItems
 				detect: [ :aRoot | (r := aRoot findClass: res) notNil ]
 				ifNone: [ nil ].
 			^ r ].	"Search for the produced result, a class, to select it."

@@ -5,7 +5,7 @@ aMCWorkingCopyCreated: anEvent
 	(anEvent workingCopy packageName beginsWith: self trimmedCategoryName)
 		ifTrue:
 			[ self addRPackage: anEvent workingCopy packageName asSymbol.
-			AltBrowserNeo aNodeToRebuilt: self.
+			AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ self contents
 		anySatisfy: [ :each | each aMCWorkingCopyCreated: anEvent ]

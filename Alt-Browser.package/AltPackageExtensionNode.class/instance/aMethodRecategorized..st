@@ -8,6 +8,6 @@ aMethodRecategorized: anEvent
 			[ (self contents
 				inject: false
 				into: [ :bool :each | (each aMethodRecategorized: anEvent) or: [ bool ] ])
-				ifFalse: [ AltBrowserNeo aNodeToRebuilt: self ].
+				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false

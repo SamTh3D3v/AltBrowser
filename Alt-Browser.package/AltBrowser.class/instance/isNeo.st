@@ -1,3 +1,3 @@
 testing
 isNeo
-	^ false
+	^ true

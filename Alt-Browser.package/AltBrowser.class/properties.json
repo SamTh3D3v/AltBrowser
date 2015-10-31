@@ -12,6 +12,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"source",
+		"root",
 		"history",
 		"window",
 		"treeMorph",

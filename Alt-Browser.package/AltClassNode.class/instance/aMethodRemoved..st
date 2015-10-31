@@ -8,6 +8,6 @@ aMethodRemoved: anEvent
 		ifTrue:
 			[ self contents do: [ :each | each aMethodRemoved: anEvent ].
 			(self itemClass organization categories includes: anEvent protocol)
-				ifFalse: [ AltBrowserNeo aNodeToRebuilt: self ].
+				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ self contents first aMethodRemoved: anEvent

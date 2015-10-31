@@ -5,6 +5,6 @@ aClassRenamed: anEvent
 	^ anEvent oldName == self item
 		ifTrue:
 			[ self item: anEvent newName.
-			AltBrowserNeo aNodeToUpdate: self.
+			AltBrowser aNodeToUpdate: self.
 			true ]
 		ifFalse: [ false ]

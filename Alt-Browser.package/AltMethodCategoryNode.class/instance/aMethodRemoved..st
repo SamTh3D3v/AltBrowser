@@ -7,7 +7,7 @@ aMethodRemoved: anEvent
 	(anEvent methodClass == self sourceClass
 		and: [ anEvent protocol = self methodCategory ])
 		ifTrue:
-			[ AltBrowserNeo aNodeToRebuilt: self.
+			[ AltBrowser aNodeToRebuilt: self.
 			self methodCategory = 'as yet unclassified'
 				ifTrue:
 					[ (self sourceClass organization

@@ -7,6 +7,6 @@ aMethodRemoved: anEvent
 			[ (self contents
 				inject: false
 				into: [ :bool :each | (each aMethodRemoved: anEvent) or: [ bool ] ])
-				ifTrue: [ AltBrowserNeo aNodeToRebuilt: self ].
+				ifTrue: [ AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false

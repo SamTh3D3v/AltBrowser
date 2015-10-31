@@ -1,4 +1,4 @@
 menus
 defaultCommands
 	<treeAreaCommand>
-	^ #(#AltCreatePackageCategoryCommand #AltFindClassCommand #AltCommentCommand)
+	^ #(#AltCreatePackageCategoryCommand #AltFindClassCommand #AltCommentCommand #AltSelectNextItem #AltSelectPreviousItem #AltSelectMoveDown #AltSelectMoveUp)

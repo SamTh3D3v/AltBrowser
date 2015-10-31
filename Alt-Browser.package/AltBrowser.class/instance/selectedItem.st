@@ -1,5 +1,5 @@
 accessing
 selectedItem
-	"Temporary"
+	"Return the currently selected item."
 
-	^ self selectedNode
+	^ selection ifNotNil: [ selection item ]

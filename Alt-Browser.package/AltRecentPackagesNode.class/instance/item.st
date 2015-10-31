@@ -1,3 +1,3 @@
 private
 item
-	^ AltBrowserNeo recentPackages
+	^ AltBrowser recentPackages

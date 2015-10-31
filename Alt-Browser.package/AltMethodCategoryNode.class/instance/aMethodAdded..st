@@ -4,6 +4,6 @@ aMethodAdded: anEvent
 
 	(anEvent methodClass == self sourceClass
 		and: [ anEvent protocol = self methodCategory ])
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ false

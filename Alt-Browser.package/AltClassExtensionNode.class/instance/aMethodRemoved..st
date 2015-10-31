@@ -12,7 +12,7 @@ aMethodRemoved: anEvent
 		ifTrue:
 			[ (self contents first isKindOf: AltClassMetaExtensionNode)
 				ifTrue: [ self contents first aMethodRemoved: anEvent ].
-			AltBrowserNeo aNodeToRebuilt: self.
+			AltBrowser aNodeToRebuilt: self.
 			(anEvent methodClass organization extensionProtocols
 				select:
 					[ :e | 

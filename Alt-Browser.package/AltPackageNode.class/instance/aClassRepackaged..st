@@ -8,6 +8,6 @@ aClassRepackaged: anEvent
 		into: [ :bool :each | (each aClassRepackaged: anEvent) or: [ bool ] ].
 	(anEvent oldPackage name = self packageName
 		or: [ anEvent newPackage name = self packageName ])
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ result

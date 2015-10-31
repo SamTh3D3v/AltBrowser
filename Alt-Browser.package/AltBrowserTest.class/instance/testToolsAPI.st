@@ -1,3 +1,3 @@
 tests API
 testToolsAPI
-	self assert: (Object browse close isKindOf: AltBrowserNeo)
+	self assert: (Object browse close isKindOf: AltBrowser)

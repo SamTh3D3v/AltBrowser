@@ -1,4 +1,4 @@
-An AltBrowser is a complete alternative system browser, message list and finder.
+An AltBrowserNeo is a complete alternative system browser, message list and finder.
 
 It builds a representation of  the code structure as a abstract tree, out of AltAbstractNode, in the class side. That tree is kept on the class side, and is connected to all the system announcements tracking code changes (loading, creating, compiling, etc...).
 

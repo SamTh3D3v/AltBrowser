@@ -13,7 +13,7 @@ accept: aText notifying: aController
 	res notNil
 		ifTrue:
 			[ | r |
-			AltBrowserNeo rootItems
+			AltBrowser rootItems
 				detect: [ :aRoot | (r := aRoot findClass: res) notNil ].
 			^ r ].
 	^ nil

@@ -5,6 +5,6 @@ execute
 		ifNotNil:
 			[ :node | 
 			(node isExpanded not or: [ node hasContents not ])
-				ifFalse: [ requestor selectedNode toggleExpanded ]
-				ifTrue:
-					[ target selectRowIndex: (target selectedRowIndex - 1 max: 1) ] ]
+				ifFalse: [ node toggleExpanded ]
+				ifTrue: [ target
+						selectRowIndex: (target selectedRowIndex - 1 max: 1) ] ]

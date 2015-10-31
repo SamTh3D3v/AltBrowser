@@ -8,4 +8,4 @@ setUp
 		classVariableNames: ''
 		poolDictionaries: ''
 		category: 'TestingUnderway'.
-	browser := AltBrowserNeo open
+	browser := AltBrowser open

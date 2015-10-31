@@ -5,6 +5,6 @@ aClassModifiedClassDefinition: anEvent
 	anEvent newClassDefinition = self itemClass
 		ifFalse: [ ^ false ].
 	indent := nil.
-	AltBrowserNeo aNodeToUpdate: self.
+	AltBrowser aNodeToUpdate: self.
 	self contents first aClassModifiedClassDefinition: anEvent.
 	^ true

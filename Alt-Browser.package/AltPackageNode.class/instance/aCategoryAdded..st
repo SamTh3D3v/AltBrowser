@@ -5,6 +5,6 @@ aCategoryAdded: anEvent
 	^ (RPackageOrganizer default
 		category: anEvent categoryName
 		matches: self packageName)
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			true ]
 		ifFalse: [ false ]

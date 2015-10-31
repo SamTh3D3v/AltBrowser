@@ -4,5 +4,5 @@ aClassRenamed: anEvent
 
 	(self contents anySatisfy: [ :each | each aClassRenamed: anEvent ])
 		ifFalse: [ ^ false ].
-	AltBrowserNeo aNodeToRebuilt: self.
+	AltBrowser aNodeToRebuilt: self.
 	^ true

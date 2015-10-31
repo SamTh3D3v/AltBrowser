@@ -8,6 +8,6 @@ aMethodAdded: anEvent
 		ifTrue:
 			[ (self contents first isKindOf: AltClassMetaExtensionNode)
 				ifTrue: [ self contents first aMethodAdded: anEvent ].
-			AltBrowserNeo aNodeToRebuilt: self.
+			AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ false

@@ -13,7 +13,7 @@ aMethodRecategorized: anEvent
 			[ (self contents notEmpty
 				and: [ self contents first isKindOf: AltClassMetaExtensionNode ])
 				ifTrue: [ self contents first aMethodRecategorized: anEvent ].
-			AltBrowserNeo aNodeToRebuilt: self.
+			AltBrowser aNodeToRebuilt: self.
 			(anEvent methodClass organization extensionProtocols
 				select:
 					[ :e | 

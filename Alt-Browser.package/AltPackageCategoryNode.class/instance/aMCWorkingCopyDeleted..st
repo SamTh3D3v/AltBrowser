@@ -12,6 +12,6 @@ aMCWorkingCopyDeleted: anEvent
 			(node aMCWorkingCopyDeleted: anEvent)
 				ifTrue:
 					[ self removeRPackage: node packageName.
-					AltBrowserNeo aNodeToRebuilt: self ].
+					AltBrowser aNodeToRebuilt: self ].
 			^ true ].
 	^ false

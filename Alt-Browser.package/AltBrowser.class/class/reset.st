@@ -2,7 +2,7 @@ accessing
 reset
 	"reset the rootItems. Should propagate to all instances as well."
 
-	"AltBrowser reset"
+	"AltBrowserNeo reset"
 
 	Root := nil.
 	self announcer announce: AltRootsReset new

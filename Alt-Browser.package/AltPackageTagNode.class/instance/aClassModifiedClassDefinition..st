@@ -5,5 +5,5 @@ aClassModifiedClassDefinition: anEvent
 	(self contents
 		anySatisfy: [ :each | each aClassModifiedClassDefinition: anEvent ])
 		ifFalse: [ ^ false ].
-	AltBrowserNeo aNodeToRebuilt: self.
+	AltBrowser aNodeToRebuilt: self.
 	^ true

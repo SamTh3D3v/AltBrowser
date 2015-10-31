@@ -2,6 +2,6 @@ actions
 doubleClickOn: aMorphTreeNodeMorph in: anAltBrowser
 	"Action!"
 
-	AltBrowserNeo
+	AltBrowser
 		fullOnPackage: self rpackage
 		in: anAltBrowser rbEnvironment

@@ -2,7 +2,7 @@ settings
 altBrowserSettingsOn: aBuilder
 	<systemsettings>
 	(aBuilder group: #AltBrowser)
-		label: 'AltBrowser' translated;
+		label: #AltBrowser translated;
 		description: 'Alt Browser settings' translated;
 		with: [ 
 					(aBuilder nodeClass: AltSettingDeclaration name: #debug)

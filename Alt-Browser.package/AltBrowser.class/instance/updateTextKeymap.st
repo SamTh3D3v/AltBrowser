@@ -11,5 +11,5 @@ updateTextKeymap
 		do: [ :aKMDispatcher | 
 			aKMDispatcher reset.
 			aKMDispatcher attachCategory: #MorphFocusCtrlNavigation.
-			self selectedNode notNil
-				ifTrue: [ self selectedNode item buildTextShortcutsOn: aKMDispatcher with: self ] ]
+			self selectedItem notNil
+				ifTrue: [ self selectedItem buildTextShortcutsOn: aKMDispatcher with: self ] ]

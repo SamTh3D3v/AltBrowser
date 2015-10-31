@@ -1,10 +1,5 @@
 view
 defaultTreeMorph
-	^ super defaultTreeMorph
-		doubleClickSelector: #doubleClick;
-		nodeStringGetter: #asString;
-		getMenuSelector: #buildTreeMenu:;
-		dragEnabled: true;
-		dropEnabled: true;
-		withHLines: false;
+	^ AltTreeMorph new
+		model: self root;
 		yourself

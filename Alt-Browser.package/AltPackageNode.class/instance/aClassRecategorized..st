@@ -8,6 +8,6 @@ aClassRecategorized: anEvent
 		into: [ :bool :each | (each aClassRecategorized: anEvent) or: [ bool ] ].
 	(anEvent oldCategory = self packageName
 		or: [ anEvent newCategory = self packageName ])
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			^ true ].
 	^ result

@@ -7,7 +7,7 @@ aMethodRecategorized: anEvent
 			[ anEvent newProtocol = self methodCategory
 				or: [ anEvent oldProtocol = self methodCategory ] ])
 		ifTrue:
-			[ AltBrowserNeo aNodeToRebuilt: self.
+			[ AltBrowser aNodeToRebuilt: self.
 			self methodCategory = 'as yet unclassified'
 				ifTrue:
 					[ (self sourceClass organization

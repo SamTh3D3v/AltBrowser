@@ -11,7 +11,7 @@ aClassAdded: anEvent
 				inject: false
 				into: [ :bool :each | (each aClassAdded: anEvent) or: [ bool ] ].
 			anEvent classCategory = self packageName
-				ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+				ifTrue: [ AltBrowser aNodeToRebuilt: self.
 					^ true ].
 			^ result ].
 	^ false

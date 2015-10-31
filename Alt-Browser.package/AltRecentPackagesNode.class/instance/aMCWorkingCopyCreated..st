@@ -5,5 +5,5 @@ aMCWorkingCopyCreated: anEvent
 	self purgeCode.
 	self item
 		add: DateAndTime now -> anEvent workingCopy packageName asSymbol.
-	AltBrowserNeo aNodeToRebuilt: self.
+	AltBrowser aNodeToRebuilt: self.
 	^ false

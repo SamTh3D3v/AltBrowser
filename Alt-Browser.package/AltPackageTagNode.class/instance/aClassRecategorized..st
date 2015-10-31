@@ -4,6 +4,6 @@ aClassRecategorized: anEvent
 
 	(anEvent newCategory = self category
 		or: [ anEvent oldCategory = self category ])
-		ifTrue: [ AltBrowserNeo aNodeToRebuilt: self.
+		ifTrue: [ AltBrowser aNodeToRebuilt: self.
 			^ true ]
 		ifFalse: [ ^ false ]
