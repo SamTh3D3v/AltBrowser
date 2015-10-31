@@ -22,9 +22,11 @@
 		"finderUI",
 		"toolbar",
 		"isSelectionUpdate",
-		"commentMorph" ],
+		"commentMorph",
+		"selection",
+		"rootItems" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],
-	"super" : "MorphTreeModel",
+	"super" : "Object",
 	"type" : "normal" }

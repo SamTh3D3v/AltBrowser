@@ -23,7 +23,7 @@ open
 		cellInset: 0;
 		cellPositioning: #leftCenter;
 		yourself.	"non pane color tracking"
-	window := self theme newWindowIn: World for: self title: self title.
+	window := UITheme current newWindowIn: World for: self title: self title.
 	window addMorph: pane frame: (0 @ 0 corner: 1 @ 1).
 	treeMorph := self defaultTreeMorph.
 	textMorph := self defaultTextMorph.
