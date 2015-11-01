@@ -1,5 +1,7 @@
 private
 resizeContainer
+	"Only consider the vertical scroll bar width."
+
 	| width height doubleBorder |
 	doubleBorder := self borderWidth * 2.
 	width := self bounds width - doubleBorder
