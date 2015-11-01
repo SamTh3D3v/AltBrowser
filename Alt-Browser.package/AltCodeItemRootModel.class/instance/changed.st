@@ -10,9 +10,11 @@ changed
 	i isZero
 		ifTrue:
 			[ self model treeMorph selectRowIndexesNoUpdate: #().
-			super changed.
-			self model treeMorph ensureVisibleFirstSelection ]
+			super changed ]
 		ifFalse:
-			[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
-			super changed.
-			self model treeMorph ensureVisibleFirstSelection ]
+			[ self model treeMorph isFirstSelectionVisible
+				ifTrue:
+					[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
+					super changed.
+					self model treeMorph ensureVisibleFirstSelection ]
+				ifFalse: [ super changed ] ]

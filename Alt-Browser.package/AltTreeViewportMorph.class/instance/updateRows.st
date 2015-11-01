@@ -51,5 +51,5 @@ updateRows
 	topOffset := yUp.
 	bottomOffset := yDown.
 	exposedItems values
-		do: [ :each | each right: self effectiveWidth - 1 ].
+		do: [ :each | each width: self effectiveWidth - 2 ].
 	self owner resizeAllSubviews	"Force a recompute / display of the scrollbars."
