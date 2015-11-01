@@ -1,5 +1,7 @@
 view
 defaultTextMorph
+	PluggableTextMorph stylingClass isNil
+		ifTrue: [ PluggableTextMorph stylingClass: SHTextStylerST80 ].
 	^ (PluggableTextMorph
 		on: self source
 		text: #contents
