@@ -4,7 +4,7 @@ testReverseRootStreamAtEnd
 
 	| tree stream |
 	tree := #(0 #(1 #(2 #(3 #(4 #(5 #(6))))))) asAltTreeItemRootModel.
-	stream := AltTreeReverseReadStream on: tree.
+	stream := tree asReverseReadStream.
 	self assert: tree size = 6.
 	stream skip: 1.
 	self assert: stream atEnd not.

@@ -4,7 +4,7 @@ testReversedStream
 
 	| tree stream |
 	tree := #(1 #(2 4 5) 3) asAltTreeItemModel.
-	stream := AltTreeReverseReadStream on: tree.
+	stream := tree asReverseReadStream.
 	self assert: stream next item = 3.
 	self assert: stream next parent == (tree at: 2).
 	self assert: stream next item = 4.
@@ -16,7 +16,7 @@ testReversedStream
 	self assert: stream atEnd.
 	self assert: stream next isNil.
 	(tree at: 2) collapse.
-	stream := AltTreeReverseReadStream on: tree.
+	stream := tree asReverseReadStream.
 	self
 		assert:
 			(stream

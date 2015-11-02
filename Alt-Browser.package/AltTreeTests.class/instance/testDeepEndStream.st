@@ -4,7 +4,7 @@ testDeepEndStream
 
 	| tree stream |
 	tree := #(1 2 #(2 4 #(5 6 7))) asAltTreeItemModel.
-	stream := AltTreeReadStream on: tree.
+	stream := tree asReadStream.
 	self assert: tree size = 7.
 	stream skip: 6.
 	self assert: stream next item = 7.

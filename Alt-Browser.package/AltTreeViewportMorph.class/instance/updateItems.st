@@ -14,13 +14,11 @@ updateItems
 	yDown := (y + (row height * (1 - delta))) truncated.
 	yUp := (y - (row height * delta)) truncated.
 	iUp := index - 1.
-	upStream := (AltTreeReverseReadStream on: self owner model)
-		skip: self modelSize - iUp;
-		yourself.
+	upStream := self owner model asReverseReadStream.
+	upStream skip: self modelSize - iUp.
 	iDown := index.
-	downStream := (AltTreeReadStream on: self owner model)
-		skip: iDown;
-		yourself.
+	downStream := self owner model asReadStream.
+	downStream skip: iDown.
 	[ yUp > 0 and: [ upStream atEnd not ] ]
 		whileTrue:
 			[ yUp := yUp - 2.

@@ -4,7 +4,7 @@ testStreamAtEnd
 
 	| tree stream |
 	tree := #(1 #(2 #(3 #(4 #(5 #(6)))))) asAltTreeItemModel.
-	stream := AltTreeReadStream on: tree.
+	stream := tree asReadStream.
 	self assert: tree size = 6.
 	stream skip: 1.
 	self assert: stream atEnd not.
