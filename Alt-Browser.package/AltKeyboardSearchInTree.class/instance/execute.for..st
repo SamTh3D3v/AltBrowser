@@ -4,19 +4,26 @@ execute: anEvt for: aMorph
 
 	| textMorph aMorphBounds |
 	requestor := aMorph.
-	textMorph := AltTextSearchMorph new contents: (String with: anEvt keyCharacter).
+	textMorph := AltTextSearchMorph new
+		contents: (String with: anEvt keyCharacter).
 	aMorphBounds := aMorph boundsInWorld.
 	textMorph
-		bounds: (aMorphBounds origin + (10 @ 10) corner: aMorphBounds corner + (-20 @ (StandardFonts defaultFont height + 4))).
+		bounds:
+			(aMorphBounds origin + (10 @ 10)
+				corner: aMorphBounds corner + (-20 @ (StandardFonts defaultFont height + 4))).
 	textMorph addDropShadow.
 	textMorph setBorderStyle: #simple.
 	textMorph
 		bindKeyCombination: self completionKeys
-		toAction: [ :targetMorph :targetMorph2 :keyEvent | self onCompletionKey: keyEvent for: targetMorph ].
+		toAction:
+			[ :targetMorph :targetMorph2 :keyEvent | self onCompletionKey: keyEvent for: targetMorph ].
 	textMorph
 		bindKeyCombination: self trappedKeys
-		toAction: [ :targetMorph :targetMorph2 :keyEvent | self onTrappedKey: keyEvent for: targetMorph ].
-	textMorph editor selectFrom: 2 to: textMorph paragraph text string size.
+		toAction:
+			[ :targetMorph :targetMorph2 :keyEvent | self onTrappedKey: keyEvent for: targetMorph ].
+	textMorph editor
+		selectFrom: 2
+		to: textMorph paragraph text string size.
 	textMorph on: #keyStroke send: #onKey:for: to: self.
 	aMorph pasteUpMorph addMorph: textMorph.
 	anEvt hand newKeyboardFocus: textMorph.
