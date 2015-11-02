@@ -1,3 +1,0 @@
-accessing
-styleClass
-	^ item styleClass

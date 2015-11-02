@@ -1,3 +1,0 @@
-accessing
-sourceCode
-	^ item sourceCode

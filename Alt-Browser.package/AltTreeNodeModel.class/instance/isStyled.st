@@ -1,3 +1,0 @@
-accessing
-isStyled
-	^ item isStyled

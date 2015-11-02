@@ -23,8 +23,7 @@
 		"toolbar",
 		"isSelectionUpdate",
 		"commentMorph",
-		"selection",
-		"rootItems" ],
+		"selection" ],
 	"name" : "AltBrowser",
 	"pools" : [
 		 ],

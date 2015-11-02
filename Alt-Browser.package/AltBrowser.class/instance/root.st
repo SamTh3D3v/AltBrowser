@@ -6,7 +6,7 @@ root
 
 	^ root
 		ifNil:
-			[ root := AltCodeItemRootModel new
+			[ root := (AltCodeItemRootModel on: self class root)
 				model: self;
 				rbEnvironment: self rbEnvironment;
 				yourself ]
