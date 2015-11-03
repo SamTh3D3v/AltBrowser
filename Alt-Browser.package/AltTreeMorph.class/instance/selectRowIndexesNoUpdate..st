@@ -1,3 +1,12 @@
 accessing-selection
 selectRowIndexesNoUpdate: anArray
-	selectedRowIndexes := anArray asArray
+	| oldSelectedRowIndexes |
+	oldSelectedRowIndexes := selectedRowIndexes.
+	oldSelectedRowIndexes = anArray
+		ifTrue: [ ^ self ].
+	selectedRowIndexes := anArray asArray.
+	self
+		doAnnounce:
+			(AltSelectionChanged
+				from: oldSelectedRowIndexes
+				to: selectedRowIndexes)

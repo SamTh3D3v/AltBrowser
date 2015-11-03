@@ -5,9 +5,11 @@ toggleExpanded: aCodeItemModel
 	aCodeItemModel isExpanded
 		ifTrue: [ self changed ]
 		ifFalse:
-			[ self model selectedNode ifNil: [ ^ super changed ].
+			[ self model selectedNode ifNil: [ ^ self changed ].
 			(self model selectedNode isAnAncestor: aCodeItemModel)
 				ifTrue:
-					[ self model treeMorph
-						selectRowIndexes: (Array with: (self indexOf: aCodeItemModel)) ]
+					[ | sel |
+					sel := self indexOf: aCodeItemModel.
+					self model treeMorph selectRowIndexesNoUpdate: (Array with: sel).
+					self changed ]
 				ifFalse: [ self changed ] ]
