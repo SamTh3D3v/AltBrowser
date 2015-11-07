@@ -2,21 +2,24 @@ accessing
 selectPathForAbstractItem: anItem
 	"Stronger than the item version, will force an opening of the AltTreeItemNodes."
 
-	| nPath aNode |
+	| nPath aNode anItemModel |
 	nPath := OrderedCollection new.
 	aNode := anItem parent.
-	[ aNode notNil and: [ aNode parent notNil ] ]
-		whileTrue: [ nPath add: aNode.
+	[ aNode notNil ]
+		whileTrue: [ nPath addFirst: aNode.
 			aNode := aNode parent ].
-	nPath
-		reverseDo:
-			[ :each | 
-			(self root findItem: each)
-				ifNil: [ self halt ]
-				ifNotNil: [ :anItemModel | anItemModel expand ] ].
+	anItemModel := self root.
+	nPath removeFirst.
+	[ nPath notEmpty ]
+		whileTrue:
+			[ | next |
+			next := nPath removeFirst.
+			anItemModel := anItemModel contents
+				detect: [ :i | i item == next ]
+				ifNone: [ anItemModel ].	"Do not iterate if not found: filtering."
+			anItemModel expand ].
 	^ (self root findItem: anItem)
-		ifNotNil:
-			[ :anItemModel | 
-			treeMorph selectRowIndex: (self root indexOf: anItemModel).
+		ifNotNil: [ :m | 
+			treeMorph selectRowIndex: (self root indexOf: m).
 			true ]
 		ifNil: [ false ]

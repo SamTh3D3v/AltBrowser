@@ -1,6 +1,6 @@
 testing
 isItemFullyVisible: rowIndex
-	"Answer if an item is fully visible."
+	"Left to right test: does not really answer if the item is fully visible; return true if one can gain visibility by moving the item left or right."
 
 	self exposedItems ifNil: [ ^ false ].
 	^ (self exposedItems at: rowIndex ifAbsent: [  ])
@@ -8,4 +8,7 @@ isItemFullyVisible: rowIndex
 		ifNotNil:
 			[ :aMorph | 
 			aMorph submorphs last
-				in: [ :i | i left >= self left and: [ i right <= self right ] ] ]
+				in:
+					[ :i | 
+					(i left >= self left and: [ i right <= self right ])
+						or: [ i left < self left and: [ i right > self right ] ] ] ]

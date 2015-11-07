@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"startSearch:for:" : "ThierryGoubier 11/7/2015 17:05:30" },
+	"instance" : {
+		"completionKeys" : "ThierryGoubier 11/7/2015 17:05:30",
+		"eventIsCompletion:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"eventIsTrapped:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"execute:for:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"nodeDetect:ifNone:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"onCompletionKey:for:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"onKey:for:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"onTrappedKey:for:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"trappedKeys" : "ThierryGoubier 11/7/2015 17:05:30" } }

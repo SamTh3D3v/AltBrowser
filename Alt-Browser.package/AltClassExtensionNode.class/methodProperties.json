@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"aClassCommented:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aClassRemoved:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aClassRenamed:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aClassReorganized:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aMethodAdded:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aMethodRecategorized:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"aMethodRemoved:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"accept:notifying:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"acceptDropItem:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"asString" : "ThierryGoubier 11/7/2015 17:05:30",
+		"contents" : "ThierryGoubier 11/7/2015 17:05:30",
+		"dropItem:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"findClass:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"findMethodCategory:in:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"isClassNode" : "ThierryGoubier 11/7/2015 17:05:30",
+		"isInRBEnvironment:" : "ThierryGoubier 11/7/2015 17:05:30",
+		"methodCategory" : "ThierryGoubier 11/7/2015 17:05:30",
+		"rpackage" : "ThierryGoubier 11/7/2015 17:05:30",
+		"sourceCode" : "ThierryGoubier 11/7/2015 17:05:30",
+		"styleClass" : "ThierryGoubier 11/7/2015 17:05:30" } }

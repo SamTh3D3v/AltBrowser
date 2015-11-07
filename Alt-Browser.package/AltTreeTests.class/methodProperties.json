@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"exampleRandomItems" : "ThierryGoubier 11/7/2015 17:05:30",
+		"exampleSimpleTree" : "ThierryGoubier 11/7/2015 17:05:30",
+		"exampleSimpleTree2" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testDeepEndReversedStream" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testDeepEndStream" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testItemMorph" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testReverseRootStreamAtEnd" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testReverseStreamAtEnd" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testReversedStream" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testReversedStreamRoot" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testStream" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testStreamAtEnd" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testTree" : "ThierryGoubier 11/7/2015 17:05:30",
+		"testTreeIndexOf" : "ThierryGoubier 11/7/2015 17:05:30" } }
