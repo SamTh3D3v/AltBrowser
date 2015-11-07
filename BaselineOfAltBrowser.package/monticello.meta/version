@@ -1,7 +1,0 @@
-(name 'BaselineOfAltBrowser-ThierryGoubier.7' message 'Added keywords' id '5a92c1bf-fe45-401d-ad03-9e1fc23c65a5' date '17 April 2015' time '3:01:42.886973 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.6' message 'Clean the baseline
-' id '7a339021-4c3e-5c5a-bf45-5e3d12ab76ab' date '22 October 2014' time '4:11:53 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.5' message 'Updated baseline
-' id '2556b21a-d966-5cb5-89cc-541dbc6245e3' date '22 October 2014' time '4:11:08 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.4' message 'Add a group?
-' id '8cac594d-5c38-5e8e-8007-99fad065e52c' date '20 August 2014' time '3:44:42 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.3' message 'One more.
-' id 'a1e95cf7-3615-5dda-800c-9e39615dcd20' date '20 August 2014' time '3:18:18 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.2' message 'Alt-Browser for the package name.
-' id '0c48db47-16ea-5d21-9a7a-1265508263cc' date '20 August 2014' time '3:17:58 pm' author 'ThierryGoubier' ancestors ((name 'BaselineOfAltBrowser-ThierryGoubier.1' message 'Baseline of AltBrowser
-' id 'ade750e4-17dc-53c6-be96-c51b82dcbb5f' date '20 August 2014' time '3:02:50 pm' author 'ThierryGoubier' ancestors () stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())) stepChildren ())

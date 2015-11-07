@@ -1,1 +1,1 @@
-This baseline is for AltBrowser.
+The local baseline.
