@@ -1,12 +1,16 @@
 event handling
 mouseWheel: event
-	"Hardcoded, but seems need some tuning."
+	"Soft-coded. Fast, feels ok for two-finger scrolling on keypad."
 
 	"Slow at first, then fast with some inertia would be way cool."
 
 	model ifNil: [ ^ self ].
 	event isUp
-		ifTrue: [ ^ self verticalScrollBar scrollUp: 10 ].
+		ifTrue:
+			[ ^ self verticalScrollBar
+				scrollUp: self verticalScrollBar pageDelta / self verticalScrollBar scrollDelta / 2 ].
 	event isDown
-		ifTrue: [ ^ self verticalScrollBar scrollDown: 10 ].
+		ifTrue:
+			[ ^ self verticalScrollBar
+				scrollDown: self verticalScrollBar pageDelta / self verticalScrollBar scrollDelta / 2 ].
 	super mouseWheel: event
