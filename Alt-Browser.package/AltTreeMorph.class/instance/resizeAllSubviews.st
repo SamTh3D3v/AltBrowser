@@ -4,6 +4,6 @@ resizeAllSubviews
 
 	self resizeVerticalScrollBar.
 	self resizeHorizontalScrollBar.
-	self resizeContainer.
+	self resizeViewport.
 	self recalculateVerticalScrollBar.
 	self recalculateHorizontalScrollBar

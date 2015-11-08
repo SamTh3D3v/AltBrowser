@@ -8,10 +8,10 @@ mouseMove: event
 	aMorph := event hand submorphs first.
 	aMorph class == TransferMorph
 		ifFalse: [ ^ self ].
-	(self container rowIndexContainingPoint: event position)
+	(self viewport rowIndexContainingPoint: event position)
 		ifNotNil:
 			[ :rowIndex | 
 			((self model at: rowIndex) wantsDroppedElement: aMorph passenger)
 				ifTrue: [ dropIndex := rowIndex ]
 				ifFalse: [ dropIndex := nil ].
-			self container changed ]
+			self viewport changed ]

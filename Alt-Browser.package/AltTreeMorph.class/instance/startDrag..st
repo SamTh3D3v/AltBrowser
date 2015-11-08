@@ -12,7 +12,7 @@ startDrag: event
 		ifFalse: [ ^ self ].
 	ActiveHand anyButtonPressed
 		ifFalse: [ ^ self ].
-	rowIndex := self container rowIndexContainingPoint: event cursorPoint.
+	rowIndex := self viewport rowIndexContainingPoint: event cursorPoint.
 	rowIndex
 		ifNotNil:
 			[ (self selectedRowIndexes includes: rowIndex)
@@ -26,6 +26,5 @@ startDrag: event
 		with: event position.
 	transferMorph dragTransferType: self model dragTransferType.
 	[ event hand grabMorph: transferMorph ]
-		ensure:
-			[ Cursor normal show.
+		ensure: [ Cursor normal show.
 			event hand releaseMouseFocus: self ]

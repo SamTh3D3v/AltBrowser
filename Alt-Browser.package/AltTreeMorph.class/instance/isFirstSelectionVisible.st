@@ -2,4 +2,5 @@ testing
 isFirstSelectionVisible
 	self hasSelection
 		ifFalse: [ ^ true ].
-	^ self container isRowIndexFullyVisible: self selectedRowIndex
+	^ (self viewport isRowIndexFullyVisible: self selectedRowIndex)
+		and: [ self viewport isItemFullyVisible: self selectedRowIndex ]

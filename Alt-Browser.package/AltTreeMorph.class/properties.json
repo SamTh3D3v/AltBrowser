@@ -7,13 +7,13 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"model",
-		"container",
 		"verticalScrollBar",
 		"horizontalScrollBar",
 		"backgroundColor",
 		"selectionColor",
 		"selectedRowIndexes",
-		"dropIndex" ],
+		"dropIndex",
+		"viewport" ],
 	"name" : "AltTreeMorph",
 	"pools" : [
 		 ],

@@ -5,9 +5,11 @@ recalculateHorizontalScrollBar
 	self hasHorizontalScrollBar
 		ifFalse: [ self horizontalScrollBar value: 0.
 			^ self ].
-	interval := (self container width / self container effectiveWidth)
-		asFloat.
-	delta := 1.0 / (self container effectiveWidth - self container width).
-	self horizontalScrollBar
-		interval: interval;
-		scrollDelta: delta pageDelta: 10 * delta
+	self viewport
+		in:
+			[ :v | 
+			interval := (v width / v effectiveWidth) asFloat.
+			delta := 1.0 / (v effectiveWidth - v width).
+			self horizontalScrollBar
+				interval: interval;
+				scrollDelta: delta pageDelta: 10 * delta ]

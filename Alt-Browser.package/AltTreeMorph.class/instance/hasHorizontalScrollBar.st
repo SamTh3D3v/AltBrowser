@@ -1,3 +1,3 @@
 private-scrollbars
 hasHorizontalScrollBar
-	^ self container effectiveWidth > self container width
+	^ self viewport in: [ :v | v effectiveWidth > v width ]

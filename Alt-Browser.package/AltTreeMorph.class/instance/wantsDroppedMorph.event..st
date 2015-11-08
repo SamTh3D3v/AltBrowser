@@ -10,5 +10,5 @@ wantsDroppedMorph: aMorph event: event
 			[ :m | 
 			(m
 				at:
-					((self container rowIndexContainingPoint: event position)
+					((self viewport rowIndexContainingPoint: event position)
 						ifNil: [ ^ false ])) wantsDroppedElement: aMorph passenger ]

@@ -1,6 +1,6 @@
 private
-resizeContainer
-	"Only consider the vertical scroll bar width."
+resizeViewport
+	"Take in account effective width and height of the scrollbars (0 if hidden)."
 
 	| width height doubleBorder |
 	doubleBorder := self borderWidth * 2.
@@ -8,7 +8,7 @@ resizeContainer
 		- self verticalScrollBarWidth.
 	height := self bounds height - doubleBorder
 		- self horizontalScrollBarHeight.
-	self container
+	self viewport
 		bounds:
 			(self bounds topLeft + (self borderWidth @ self borderWidth)
 				extent: width @ height)

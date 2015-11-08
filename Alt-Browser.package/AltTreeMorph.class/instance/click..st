@@ -1,8 +1,7 @@
 event handling
 click: event
 	| rowIndex |
-	"perform the click"
-	rowIndex := self container rowIndexContainingPoint: event cursorPoint.
+	rowIndex := self viewport rowIndexContainingPoint: event cursorPoint.
 	rowIndex
 		ifNotNil:
 			[ (self selectedRowIndexes includes: rowIndex)

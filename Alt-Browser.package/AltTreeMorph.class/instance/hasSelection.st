@@ -1,3 +1,3 @@
 testing
 hasSelection
-	^ self selectedRowIndexes notEmpty
+	^ self selectedRowIndexes notNil and: [self selectedRowIndexes notEmpty]
