@@ -4,6 +4,7 @@ model: anAltTreeItemModel
 
 	model ifNotNil: [ model announcer unsubscribe: self ].
 	anAltTreeItemModel
+		ifNil: [ ^ self ]
 		ifNotNil:
 			[ anAltTreeItemModel announcer weak
 				when: AltTreeChanged

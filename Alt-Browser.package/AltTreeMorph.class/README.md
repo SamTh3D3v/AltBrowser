@@ -11,3 +11,5 @@ Two types of refresh / updates:
 The viewport is in charge of effective display.
 
 We optimize accesses to the model, expecting that #at: (and #size) may be expensive.
+
+A secondary object 
