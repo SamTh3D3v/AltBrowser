@@ -1,13 +1,10 @@
 event handling
 click: event
-	| rowIndex |
-	rowIndex := self viewport rowIndexContainingPoint: event cursorPoint.
-	rowIndex
-		ifNotNil:
-			[ (self selectedRowIndexes includes: rowIndex)
-				ifTrue: [ self selectRowIndexes: #() ]
-				ifFalse: [ self selectRowIndex: rowIndex ] ]
-		ifNil: [ self selectRowIndexes: #() ].
+	| index |
+	index := self viewport rowIndexContainingPoint: event cursorPoint.
+	index
+		ifNotNil: [ self selectRowIndex: index ]
+		ifNil: [ self selectRowIndex: nil ].
 
 	"check for right click (menu)"
 	(event yellowButtonPressed

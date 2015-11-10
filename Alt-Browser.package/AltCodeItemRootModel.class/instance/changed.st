@@ -4,6 +4,7 @@ changed
 	If one of our items is selected, find if we can reselect the item."
 
 	| i |
+	size := nil.
 	self model ifNil: [ ^ self ].
 	self model selectedNode ifNil: [ ^ super changed ].
 	i := self indexOf: self model selectedNode.

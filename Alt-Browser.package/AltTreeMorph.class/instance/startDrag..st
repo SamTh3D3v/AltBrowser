@@ -1,8 +1,5 @@
 drag and drop
 startDrag: event
-	"Remember to correctly set the mouse focus to me if I am to receive
-	the move events to myself"
-
 	"Select if not selected under that point."
 
 	| passengers transferMorph rowIndex |

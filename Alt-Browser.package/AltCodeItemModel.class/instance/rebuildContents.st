@@ -3,9 +3,11 @@ rebuildContents
 	"This rebuilding, by avoiding recreation of the items, retain expand/collapse."
 
 	contents notNil
-		ifTrue: [ 
+		ifTrue:
+			[ size := nil.
 			contents := (self childrenItems
-				collect: [ :i | 
+				collect:
+					[ :i | 
 					| n |
 					n := contents detect: [ :e | e item == i ] ifNone: [ nil ].
 					n isNil

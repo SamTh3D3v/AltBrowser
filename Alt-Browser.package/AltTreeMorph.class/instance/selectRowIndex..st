@@ -1,3 +1,3 @@
 accessing-selection
 selectRowIndex: aNumber
-	self selectRowIndexes: { aNumber }
+	self model selectIndex: aNumber
