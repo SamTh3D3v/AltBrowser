@@ -1,18 +1,10 @@
 selecting
 selection: anAltSelectionChanged
-	"It goes directly here."
+	"If I reach here, selection can be updated."
 
-	"Am I going in there too often and it confuses the navigation?"
-
-	"Can I back-select from there if I should not move the selection (unaccepted edits)?"
-
-	anAltSelectionChanged newIndexes ifNil: [ ^ self ].
 	anAltSelectionChanged newIndexes isEmpty
 		ifTrue: [ selection := nil ]
-		ifFalse:
-			[ selection := root at: anAltSelectionChanged newIndexes first ].
-	self isSelectionUpdate
-		ifTrue: [ ^ self ].
+		ifFalse: [ selection := anAltSelectionChanged newItems first ].
 	self updateTextKeymap.
 	self updateTreeKeymap.
 	self updateTitle.

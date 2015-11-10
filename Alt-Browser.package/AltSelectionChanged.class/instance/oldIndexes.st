@@ -1,3 +1,3 @@
 accessing
 oldIndexes
-	^ oldIndexes
+	^ oldIndexes ifNil: [ oldIndexes := OrderedCollection new ]

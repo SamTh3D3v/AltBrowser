@@ -4,8 +4,7 @@ rebuildContents
 
 	contents notNil
 		ifTrue:
-			[ size := nil.
-			contents := (self childrenItems
+			[ contents := (self childrenItems
 				collect:
 					[ :i | 
 					| n |

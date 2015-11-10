@@ -4,11 +4,10 @@ selectIndex: anIndex
 
 	"Deselect any other item. Expect only single selection."
 
-	| oldSelected newSelected done stream e |
+	| announcement done stream e |
 	done := false.
+	announcement := AltSelectionChanged new.
 	stream := self asReadStream.
-	newSelected := #().
-	oldSelected := #().
 	[ stream atEnd or: [ done ] ]
 		whileFalse:
 			[ e := stream next.
@@ -17,13 +16,16 @@ selectIndex: anIndex
 					[ e selected: e selected not.
 					e selected
 						ifFalse:
-							[ oldSelected := Array with: anIndex.
+							[ announcement oldIndexes add: anIndex.
+							announcement oldItems add: e.
 							done := true ]
-						ifTrue: [ newSelected := Array with: anIndex ] ]
+						ifTrue:
+							[ announcement newIndexes add: anIndex.
+							announcement newItems add: e ] ]
 				ifFalse:
 					[ e selected
 						ifTrue:
 							[ e selected: false.
-							oldSelected := Array with: stream position ] ] ].
-	self announcer
-		announce: (AltSelectionChanged from: oldSelected to: newSelected)
+							announcement oldIndexes add: stream position.
+							announcement oldItems add: e ] ] ].
+	self announcer announce: announcement
