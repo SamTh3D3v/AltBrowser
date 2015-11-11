@@ -1,0 +1,3 @@
+private
+setEnsureVisibleSelection
+	ensureVisibleSelection := true

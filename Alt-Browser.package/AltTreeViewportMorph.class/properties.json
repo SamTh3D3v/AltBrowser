@@ -11,6 +11,7 @@
 		"bottomOffset",
 		"needsRefreshRows",
 		"needsRefreshItems",
+		"ensureVisibleSelection",
 		"cachedModelSize",
 		"maximumWidth" ],
 	"name" : "AltTreeViewportMorph",
