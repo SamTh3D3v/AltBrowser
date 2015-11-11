@@ -13,4 +13,4 @@ onKey: anEvt for: aMorph
 			baseIndex := requestor model indexOf: anItem.
 			requestor
 				selectRowIndex: baseIndex;
-				ensureVisibleFirstSelection ]
+				ensureVisibleSelection ]

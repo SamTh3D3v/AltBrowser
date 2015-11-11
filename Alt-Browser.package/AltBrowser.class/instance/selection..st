@@ -10,11 +10,12 @@ selection: anAltSelectionChanged
 	self updateTitle.
 	selection isNil
 		ifTrue:
-			[ textMorph classOrMetaClass: nil.
+			[ textMorph ifNotNil: [ :t | t classOrMetaClass: nil ].
 			self source aboutToStyle: false.
 			self source contents: '' ]
 		ifFalse:
-			[ textMorph classOrMetaClass: selection styleClass.
+			[ textMorph
+				ifNotNil: [ :t | t classOrMetaClass: selection styleClass ].
 			self source aboutToStyle: selection isStyled.
 			self source contents: selection sourceCode.
 			self history add: selection.

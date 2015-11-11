@@ -4,9 +4,11 @@ updateTreeKeymap
 
 	"Don't forget to update the tree."
 
+	treeMorph ifNil: [ ^ self ].
 	(self treeMorph kmDispatcher isKindOf: AltKMDispatcher)
-		ifFalse:
-			[ textMorph setProperty: #kmdispatcher toValue: AltKMDispatcher new ].
+		ifFalse: [ textMorph
+				setProperty: #kmdispatcher
+				toValue: AltKMDispatcher new ].
 	self treeMorph kmDispatcher
 		reset;
 		attachCategory: #MorphFocusNavigation;

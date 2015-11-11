@@ -23,7 +23,10 @@ open
 		cellInset: 0;
 		cellPositioning: #leftCenter;
 		yourself.	"non pane color tracking"
-	window := Smalltalk ui theme newWindowIn: World for: self title: self title.
+	window := Smalltalk ui theme
+		newWindowIn: World
+		for: self
+		title: self title.
 	window addMorph: pane frame: (0 @ 0 corner: 1 @ 1).
 	treeMorph := self defaultTreeMorph.
 	textMorph := self defaultTextMorph.
@@ -32,10 +35,6 @@ open
 		on: #keyStroke
 		send: #startSearch:for:
 		to: AltKeyboardSearchInTree.
-	self root announcer weak
-		when: AltSelectionChanged
-		send: #selection:
-		to: self.
 	pane addMorph: group.
 	group
 		addMorph: treeMorph

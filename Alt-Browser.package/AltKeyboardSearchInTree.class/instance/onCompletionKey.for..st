@@ -6,6 +6,6 @@ onCompletionKey: anEvent for: targetMorph
 
 	requestor selectedRowIndex ifNil: [ requestor selectRowIndex: 1 ].
 	(requestor model at: requestor selectedRowIndex) expand.
-	requestor ensureVisibleFirstSelection.
+	requestor ensureVisibleSelection.
 	targetMorph delete.
 	anEvent hand newKeyboardFocus: requestor

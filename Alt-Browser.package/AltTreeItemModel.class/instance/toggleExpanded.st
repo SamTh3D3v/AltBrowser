@@ -11,7 +11,6 @@ toggleExpanded
 						ifTrue: [ sItem := i.
 							true ]
 						ifFalse: [ false ] ].
-			sItem logCr.
 			sItem
 				ifNotNil:
 					[ ann := AltSelectionChanged new.
@@ -19,6 +18,6 @@ toggleExpanded
 					ann oldIndexes add: (self root indexOf: sItem).
 					ann newItems add: self.
 					ann newIndexes add: (self root indexOf: self).
-					self root announcer announce: ann ] ].
+					self root doAnnounce: ann ] ].
 	self isExpanded: self isExpanded not.
 	self changed

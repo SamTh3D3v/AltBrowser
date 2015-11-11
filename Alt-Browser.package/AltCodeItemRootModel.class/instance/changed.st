@@ -9,12 +9,18 @@ changed
 	i := self indexOf: self model selectedNode.
 	i isZero
 		ifTrue:
-			[ self model treeMorph selectRowIndexesNoUpdate: #().
+			[ self model treeMorph
+				ifNotNil: [ :t | t selectRowIndexesNoUpdate: #() ].
 			super changed ]
 		ifFalse:
-			[ self model treeMorph isFirstSelectionVisible
-				ifTrue:
-					[ self model treeMorph selectRowIndexesNoUpdate: (Array with: i).
-					super changed.
-					self model treeMorph ensureVisibleFirstSelection ]
-				ifFalse: [ super changed ] ]
+			[ self model treeMorph
+				ifNotNil:
+					[ :t | 
+					t isFirstSelectionVisible
+						ifTrue:
+							[ self model treeMorph
+								selectRowIndexesNoUpdate: (Array with: i).
+							super changed.
+							self model treeMorph ensureVisibleSelection ]
+						ifFalse: [ super changed ] ]
+				ifNil: [ super changed ] ]

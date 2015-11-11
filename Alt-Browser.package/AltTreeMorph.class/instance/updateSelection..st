@@ -1,7 +1,7 @@
 updating
 updateSelection: anAltSelectionChanged
-	anAltSelectionChanged newIndexes = selectedRowIndexes
+	anAltSelectionChanged newIndexes = self selectedRowIndexes
 		ifTrue: [ ^ self ].
 	selectedRowIndexes := anAltSelectionChanged newIndexes asArray.
-	self ensureVisibleFirstSelection.
+	self ensureVisibleSelection.
 	self viewport changed

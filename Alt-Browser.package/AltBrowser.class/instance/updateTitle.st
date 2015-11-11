@@ -1,3 +1,3 @@
 updating
 updateTitle
-	window title: self title
+	window ifNotNil: [:w | w title: self title ]

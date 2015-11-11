@@ -6,6 +6,7 @@ openOnClass: aClass
 	(self rootItems
 		anySatisfy: [ :each | (s := each findClass: aClass) notNil ])
 		ifFalse: [ ^ nil ].
-	^ self open
+	^ self new
 		selectPathForAbstractItem: s;
+		open;
 		yourself

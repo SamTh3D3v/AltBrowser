@@ -1,10 +1,11 @@
-accessing
+initialization
 model: anAltTreeItemModel
 	"Announcements based. Do a reset of the positions and a refresh."
 
+	"Need a way to fetch and position lazily the selection when starting."
+
 	model ifNotNil: [ model announcer unsubscribe: self ].
 	anAltTreeItemModel
-		ifNil: [ ^ self ]
 		ifNotNil:
 			[ anAltTreeItemModel announcer weak
 				when: AltTreeChanged send: #refresh to: self;

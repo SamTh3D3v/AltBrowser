@@ -28,4 +28,4 @@ selectIndex: anIndex
 							[ e selected: false.
 							announcement oldIndexes add: stream position.
 							announcement oldItems add: e ] ] ].
-	self announcer announce: announcement
+	self doAnnounce: announcement

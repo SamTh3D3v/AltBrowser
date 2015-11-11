@@ -1,11 +1,11 @@
 accessing-selection
 selectRowIndexes: anArray
 	| oldSelectedRowIndexes |
-	anArray = selectedRowIndexes
+	anArray = self selectedRowIndexes
 		ifTrue: [ ^ self ].
 	oldSelectedRowIndexes := selectedRowIndexes.
 	selectedRowIndexes := anArray asArray.
-	self ensureVisibleFirstSelection.
+	self ensureVisibleSelection.
 	self viewport changed.
 	self
 		doAnnounce:

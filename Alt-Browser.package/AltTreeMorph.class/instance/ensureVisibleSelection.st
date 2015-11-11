@@ -1,5 +1,5 @@
-private
-ensureVisibleFirstSelection
+accessing-selection
+ensureVisibleSelection
 	"Fairly complex. Will refactor it."
 
 	| rowIndex |

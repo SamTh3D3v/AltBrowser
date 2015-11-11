@@ -1,7 +1,7 @@
 accessing-selection
 selectRowIndexesNoUpdate: anArray
 	| oldSelectedRowIndexes |
-	oldSelectedRowIndexes := selectedRowIndexes.
+	oldSelectedRowIndexes := self selectedRowIndexes.
 	oldSelectedRowIndexes = anArray
 		ifTrue: [ ^ self ].
 	selectedRowIndexes := anArray asArray.

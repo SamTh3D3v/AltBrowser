@@ -1,12 +1,15 @@
 accessing
 root
-	"We may have to filter the roots here; by default all the roots will be shown. And it's not possible to filter them in the GUI."
-
-	"If they are filtered here, is it possible to re-add them when appropriate?"
+	"Get the root item of the tree. Is invisible in the view."
 
 	^ root
 		ifNil:
 			[ root := (AltCodeItemRootModel on: self class root)
 				model: self;
 				rbEnvironment: self rbEnvironment;
-				yourself ]
+				yourself.
+			root announcer weak
+				when: AltSelectionChanged
+				send: #selection:
+				to: self.
+			root ]
