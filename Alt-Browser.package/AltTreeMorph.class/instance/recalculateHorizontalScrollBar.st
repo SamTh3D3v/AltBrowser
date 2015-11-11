@@ -12,4 +12,4 @@ recalculateHorizontalScrollBar
 			delta := 1.0 / (v effectiveWidth - v width).
 			self horizontalScrollBar
 				interval: interval;
-				scrollDelta: delta pageDelta: 10 * delta ]
+				scrollDelta: delta pageDelta: interval ]
