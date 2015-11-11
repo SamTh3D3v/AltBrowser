@@ -26,7 +26,6 @@ updateRows
 	[ yUp > 0 and: [ upStream atEnd not ] ]
 		whileTrue:
 			[ | item |
-			yUp := yUp - 2.
 			item := upStream next.
 			row := oldExposedItems
 				at: iUp
@@ -41,7 +40,6 @@ updateRows
 		whileTrue:
 			[ | item |
 			iDown := iDown + 1.
-			yDown := yDown + 2.
 			item := downStream next.
 			row := oldExposedItems
 				at: iDown

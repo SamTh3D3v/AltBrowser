@@ -20,7 +20,7 @@ drawSubmorphsOn: canvas
 					| row |
 					row := self exposedItems at: rowIndex.
 					row topLeft: x @ y.
-					y := y + row height + 2.
+					y := y + row height.
 					selectionIndex = rowIndex
 						ifTrue: [ row color: self owner selectionColor ]
 						ifFalse: [ row color: Color transparent ].

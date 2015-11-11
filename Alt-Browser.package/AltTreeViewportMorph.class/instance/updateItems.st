@@ -21,8 +21,7 @@ updateItems
 	downStream skip: iDown.
 	[ yUp > 0 and: [ upStream atEnd not ] ]
 		whileTrue:
-			[ yUp := yUp - 2.
-			row := self rowMorphForItem: upStream next.
+			[ row := self rowMorphForItem: upStream next.
 			exposedItems at: iUp put: row.
 			yUp := yUp - row height.
 			iUp := iUp - 1 ].
@@ -32,7 +31,6 @@ updateItems
 	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
 		whileTrue:
 			[ iDown := iDown + 1.
-			yDown := yDown + 2.
 			row := self rowMorphForItem: downStream next.
 			exposedItems at: iDown put: row.
 			yDown := yDown + row height ].
