@@ -9,7 +9,10 @@ recalculateVerticalScrollBar
 			[ :v | 
 			v exposedItems ifNil: [ ^ self ].
 			self hasVerticalScrollBar
-				ifFalse: [ self verticalScrollBar value: 0.
+				ifFalse:
+					[ self verticalScrollBar
+						value: 0;
+						scrollDelta: 0 pageDelta: 0.
 					^ self ].
 			visibleRows := v exposedItems size asFloat
 				/ (v effectiveHeight / v height asFloat).
@@ -17,6 +20,12 @@ recalculateVerticalScrollBar
 			interval := visibleRows / numberOfRows.
 			delta := 1.0 / numberOfRows.
 			pageDelta := interval max: delta.
+			self verticalScrollBar value isZero
+				ifFalse:
+					[ self verticalScrollBar
+						value:
+							self verticalScrollBar value / self verticalScrollBar scrollDelta
+								* delta ].
 			self verticalScrollBar
 				scrollDelta: delta pageDelta: pageDelta;
 				interval: interval ]
