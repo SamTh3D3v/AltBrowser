@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltRandomItemExample",
+	"name" : "AltTextItemExample",
 	"pools" : [
 		 ],
 	"super" : "AltTreeItemModel",
