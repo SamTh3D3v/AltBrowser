@@ -3,6 +3,15 @@ exampleRandomItems
 	"Create a large array of elements at random."
 
 	"AltTreeTests new exampleRandomItems"
+	
+	"Notes on that one:
+	- Performance analysis on an instance of that example:
+		[ self refresh. self fullDrawOn: Display getCanvas ] timeProfile
+	- Drawing large fonts is extremely slow in LCD mode for freetype:
+		422ms, 331ms in the display, 87ms refreshing the items.
+	- Drawing in CRT mode for freetype is a lot faster, but ugly on small glyphs:
+		166ms, 110ms refreshing the items, 46ms in the display.
+	Would an optimisation on no subpixel for large fonts correct that?"
 
 	| tree morph |
 	tree := AltRandomItemExample new.
