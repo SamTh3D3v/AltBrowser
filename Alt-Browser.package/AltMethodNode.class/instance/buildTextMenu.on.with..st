@@ -4,14 +4,23 @@ buildTextMenu: aMenu on: aTarget with: aRequestor
 
 	| ast node |
 	super buildTextMenu: aMenu on: aTarget with: aRequestor.
-	ast := RBParser parseMethod: aTarget text asString onError: [ :msg :pos | ^ self ].
-	ast doSemanticAnalysisIn: self sourceClass.
+	aTarget hasUnacceptedEdits
+		ifTrue:
+			[ ast := RBParser
+				parseMethod: aTarget text asString
+				onError: [ :msg :pos | ^ self ].
+			ast doSemanticAnalysisIn: self sourceClass ]
+		ifFalse: [ ast := self compiledMethod ast ].
 	(node := ast bestNodeFor: aTarget selectionInterval) notNil
 		ifFalse: [ ^ self ].
 	aMenu
 		addLine;
 		addLine.
-	node altTextCommands do: [ :c | (c asClass on: aTarget for: aRequestor node: node) addItemToMenu: aMenu ].
+	node altTextCommands
+		do:
+			[ :c | 
+			(c asClass on: aTarget for: aRequestor node: node)
+				addItemToMenu: aMenu ].
 	node canSelect
 		ifFalse: [ ^ self ].
 	aTarget textMorph paragraph secondarySelection: node textIntervals.
