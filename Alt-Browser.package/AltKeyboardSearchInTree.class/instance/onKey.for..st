@@ -8,9 +8,14 @@ onKey: anEvt for: aMorph
 
 	((self eventIsCompletion: anEvt) or: [ self eventIsTrapped: anEvt ])
 		ifTrue: [ ^ self ].
-	(self nodeDetect: [ :each | each complexContents asString trimBoth beginsWith: aMorph contents ] ifNone: [  ])
-		ifNotNil: [ :anItem | 
+	(self
+		nodeDetect:
+			[ :each | each complexContents asString trimBoth beginsWith: aMorph contents ]
+		ifNone: [  ])
+		ifNotNil:
+			[ :anItem | 
 			baseIndex := requestor model indexOf: anItem.
-			requestor
-				selectRowIndex: baseIndex;
-				ensureVisibleSelection ]
+			requestor selectedRowIndex == baseIndex
+				ifFalse:
+					[ requestor selectRowIndex: baseIndex.
+					requestor ensureVisibleSelection ] ]
