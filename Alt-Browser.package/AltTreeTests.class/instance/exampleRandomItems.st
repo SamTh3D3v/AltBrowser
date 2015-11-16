@@ -20,9 +20,10 @@ exampleRandomItems
 		contents:
 			((1 to: 20000)
 				collect:
-					[ :e | AltRandomItemExample new item: e * (10 ** (1 to: 10) atRandom) ]).
+					[ :e | AltRandomItemExample new item: e * (100000 atRandom) ]).
 	tree expand.
 	morph := AltTreeMorph new.
 	morph model: tree.
+	morph extent: 300 @ 700.
 	morph openInWindow.
 	^ morph
