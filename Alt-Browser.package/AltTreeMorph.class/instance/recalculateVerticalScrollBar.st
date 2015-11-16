@@ -24,8 +24,8 @@ recalculateVerticalScrollBar
 				ifFalse:
 					[ self verticalScrollBar
 						value:
-							self verticalScrollBar value / delta
-								* self verticalScrollBar scrollDelta ].
+							self verticalScrollBar value / self verticalScrollBar scrollDelta
+								* delta ].
 			self verticalScrollBar
 				scrollDelta: delta pageDelta: pageDelta;
 				interval: interval ]

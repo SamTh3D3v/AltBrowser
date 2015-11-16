@@ -1,6 +1,6 @@
 execution
 execute
-	"Rename an instance variable"
+	"Create accessors for an instance variable"
 
 	(RBCreateAccessorsForVariableRefactoring
 		variable: self node name
