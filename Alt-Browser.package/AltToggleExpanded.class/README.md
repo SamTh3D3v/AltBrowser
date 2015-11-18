@@ -1,0 +1,1 @@
+I am sent when a node want to expand or collapse

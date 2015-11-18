@@ -20,7 +20,7 @@ recalculateVerticalScrollBar
 			interval := visibleRows / numberOfRows.
 			delta := 1.0 / numberOfRows.
 			pageDelta := interval max: delta.
-			self verticalScrollBar scrollDelta isZero
+			self verticalScrollBar value isZero
 				ifFalse:
 					[ self verticalScrollBar
 						value:

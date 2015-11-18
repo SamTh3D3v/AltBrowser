@@ -1,23 +1,11 @@
 user interface
 toggleExpanded
-	self isExpanded
-		ifTrue:
-			[ | sItem ann |
-			sItem := nil.
-			self
-				anySatisfy:
-					[ :i | 
-					i selected
-						ifTrue: [ sItem := i.
-							true ]
-						ifFalse: [ false ] ].
-			sItem
-				ifNotNil:
-					[ ann := AltSelectionChanged new.
-					ann oldItems add: sItem.
-					ann oldIndexes add: (self root indexOf: sItem).
-					ann newItems add: self.
-					ann newIndexes add: (self root indexOf: self).
-					self root doAnnounce: ann ] ].
+	"If one of our sub-element is selected, select myself since I will be collapsed."
+
+	self root selectedItem
+		ifNotNil:
+			[ :s | 
+			(s ~~ self and: [ self anySatisfy: [ :e | e == s ] ])
+				ifTrue: [ self root selectedItem: self ] ].
 	self isExpanded: self isExpanded not.
 	self changed

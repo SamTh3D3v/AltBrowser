@@ -2,12 +2,18 @@ updating
 changed
 	"We have to tell the parent to change. By default, at top level, trigger a refresh."
 
-	"I'm not maintaining the selection. Which I should take care of."
+	"I can update the selection."
 
 	parent
 		ifNil:
-			[ announcer
-				ifNotNil: [ :a | 
-					a announce: (AltTreeChanged on: self).
-					self updateSelection ] ]
-		ifNotNil: [ parent changed ]
+			[ selectedItem
+				ifNotNil:
+					[ :s | 
+					| i |
+					i := self indexOf: s.
+					i isZero
+						ifTrue: [ selectedItem := nil.
+							selectedIndex := 0 ]
+						ifFalse: [ selectedIndex := i ] ].
+			self doAnnounce: (AltTreeChanged on: self) ]
+		ifNotNil: [ :p | p changed ]

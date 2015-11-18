@@ -1,4 +1,4 @@
 accessing-selection
 selectedRowIndexes
 	^ selectedRowIndexes
-		ifNil: [ selectedRowIndexes := self model selectedIndex asArray ]
+		ifNil: [ selectedRowIndexes := Array with: self model selectedIndex ]

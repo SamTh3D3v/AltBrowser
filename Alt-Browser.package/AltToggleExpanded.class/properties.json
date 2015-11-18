@@ -6,15 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"parent",
-		"item",
-		"contents",
-		"expanded",
-		"announcer",
-		"selectedItem",
-		"selectedIndex" ],
-	"name" : "AltTreeItemModel",
+		"item" ],
+	"name" : "AltToggleExpanded",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Announcement",
 	"type" : "normal" }
