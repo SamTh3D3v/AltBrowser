@@ -10,13 +10,8 @@ startDrag: event
 	ActiveHand anyButtonPressed
 		ifFalse: [ ^ self ].
 	rowIndex := self viewport rowIndexContainingPoint: event cursorPoint.
-	rowIndex
-		ifNotNil:
-			[ (self selectedRowIndexes includes: rowIndex)
-				ifFalse: [ self selectRowIndex: rowIndex ] ]
-		ifNil: [ ^ self ].
-	passengers := self selectedRowIndexes
-		collect: [ :each | self model at: each ].
+	rowIndex ifNil: [ ^ self ].
+	passengers := Array with: (self model at: rowIndex).
 	transferMorph := self model transferFor: passengers from: self.
 	transferMorph
 		align: transferMorph draggedMorph bottomLeft

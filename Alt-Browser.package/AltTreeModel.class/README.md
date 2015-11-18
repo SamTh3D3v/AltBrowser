@@ -1,1 +1,0 @@
-I am a model showing the interaction between view and selection

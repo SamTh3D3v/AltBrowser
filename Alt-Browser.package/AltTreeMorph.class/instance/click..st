@@ -4,7 +4,7 @@ click: event
 	index := self viewport rowIndexContainingPoint: event cursorPoint.
 	index
 		ifNotNil: [ self selectRowIndex: index ]
-		ifNil: [ self selectRowIndex: nil ].
+		ifNil: [ self selectRowIndex: 0 ].
 
 	"check for right click (menu)"
 	(event yellowButtonPressed
