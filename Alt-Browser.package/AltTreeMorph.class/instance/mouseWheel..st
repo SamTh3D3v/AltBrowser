@@ -5,6 +5,7 @@ mouseWheel: event
 	"Slow at first, then fast with some inertia would be way cool."
 
 	model ifNil: [ ^ self ].
+	self hasVerticalScrollBar ifFalse: [ ^ self ].
 	event isUp
 		ifTrue:
 			[ ^ self verticalScrollBar

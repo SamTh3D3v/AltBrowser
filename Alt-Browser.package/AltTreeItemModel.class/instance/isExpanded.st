@@ -1,3 +1,5 @@
 testing
 isExpanded
-	^ expanded ifNil: [ expanded := false ]
+	^ parent
+		ifNil: [ true ]
+		ifNotNil: [ expanded ifNil: [ expanded := false ] ]

@@ -3,7 +3,7 @@ testDeepEndReversedStream
 	"Test the tree item implementation."
 
 	| tree stream |
-	tree := #(1 2 #(2 4 #(5 6 7))) asAltTreeItemModel.
+	tree := #(1 2 #(2 4 #(5 6 7))) asAltTree.
 	stream := tree asReverseReadStream.
 	self assert: tree size = 7.
 	stream skip: 6.

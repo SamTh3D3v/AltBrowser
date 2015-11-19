@@ -1,1 +1,0 @@
-A class to do a single, hidden root.

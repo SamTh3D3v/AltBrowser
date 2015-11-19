@@ -6,7 +6,7 @@ initialize
 	self
 		color: Color transparent;
 		layoutPolicy: TableLayout new;
-		layoutInset: 1;
+		layoutInset: 0;
 		cellInset: 4 @ 0;
 		wrapCentering: #center;
 		hResizing: #shrinkWrap;

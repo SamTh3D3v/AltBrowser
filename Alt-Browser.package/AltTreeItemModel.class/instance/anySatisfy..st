@@ -1,10 +1,9 @@
 tree accessing
 anySatisfy: aBlock
-	(aBlock value: self)
+	(parent notNil and: [ aBlock value: self ])
 		ifTrue: [ ^ true ].
 	self contents
-		do:
-			[ :each | 
+		do: [ :each | 
 			(each anySatisfy: aBlock)
 				ifTrue: [ ^ true ] ].
 	^ false

@@ -1,3 +1,3 @@
 *alt-browser
-asAltTreeItemModel
+asAltTreeItem
 	^ AltTreeItemModel on: self

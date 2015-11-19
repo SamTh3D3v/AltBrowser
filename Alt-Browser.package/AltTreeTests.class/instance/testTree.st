@@ -3,7 +3,7 @@ testTree
 	"Test the tree item implementation."
 
 	| tree |
-	tree := #(1 #(2 4 5) 3) asAltTreeItemModel.
+	tree := #(1 #(2 4 5) 3) asAltTree.
 	self assert: (tree at: 1) item = 1.
 	self assert: (tree at: 2) parent == (tree at: 1).
 	self assert: (tree at: 3) item = 4.

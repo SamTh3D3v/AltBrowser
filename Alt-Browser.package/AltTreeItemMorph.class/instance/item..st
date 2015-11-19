@@ -1,5 +1,7 @@
 accessing
 item: anObject
+	"Create the morph representing the item"
+
 	item := anObject.
 	self addMorph: item asMorph.
 	item icon ifNotNil: [ :icon | self addMorph: icon asMorph ].
@@ -20,4 +22,6 @@ item: anObject
 		ifFalse:
 			[ self addMorph: (Form extent: 10 @ 9 depth: Display depth) asMorph ].
 	self computeBounds.
+	self bottom: self bottom + 2.
+	self submorphs do: [ :e | e top: 1 ].
 	self left: self indentStep * item depth
