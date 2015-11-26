@@ -1,5 +1,6 @@
 event handling
-mouseDown: event
-	self wantsKeyboardFocus 
+mouseDown: anEvent
+	self wantsKeyboardFocus
 		ifTrue: [ self takeKeyboardFocus ].
-	event hand waitForClicksOrDrag: self event: event
+	anEvent hand newMouseFocus: self event: anEvent.
+	anEvent hand waitForClicksOrDrag: self event: anEvent

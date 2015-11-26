@@ -9,4 +9,11 @@ handleMouseMove: anEvent
 	anEvent isDraggingEvent
 		ifFalse: [ ^ self ].
 	anEvent wasHandled: true.
-	self mouseMove: anEvent
+	self mouseMove: anEvent.
+	(self handlesMouseStillDown: anEvent)
+		ifTrue:
+			[ self
+				startStepping: #handleMouseStillDown:
+				at: Time millisecondClockValue
+				arguments: {anEvent copy resetHandlerFields}
+				stepTime: self mouseStillDownStepRate ]

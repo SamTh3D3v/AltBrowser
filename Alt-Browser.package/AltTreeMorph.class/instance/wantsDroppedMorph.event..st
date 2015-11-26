@@ -4,11 +4,7 @@ wantsDroppedMorph: aMorph event: event
 
 	aMorph class == TransferMorph
 		ifFalse: [ ^ false ].
-	^ self model
-		ifNil: [ false ]
-		ifNotNil:
-			[ :m | 
-			(m
-				at:
-					((self viewport rowIndexContainingPoint: event position)
-						ifNil: [ ^ false ])) wantsDroppedElement: aMorph passenger ]
+	^ (self model
+		at:
+			((self viewport rowIndexContainingPoint: event position)
+				ifNil: [ ^ false ])) wantsDroppedElement: aMorph passenger

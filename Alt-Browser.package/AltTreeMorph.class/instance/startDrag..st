@@ -18,5 +18,5 @@ startDrag: event
 		with: event position.
 	transferMorph dragTransferType: self model dragTransferType.
 	[ event hand grabMorph: transferMorph ]
-		ensure: [ Cursor normal show.
-			event hand releaseMouseFocus: self ]
+		ensure: [ Cursor normal show ].
+	event hand newMouseFocus: self
