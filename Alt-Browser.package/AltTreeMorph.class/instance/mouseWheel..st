@@ -7,7 +7,7 @@ mouseWheel: anEvent
 	model ifNil: [ ^ self ].
 	self hasVerticalScrollBar
 		ifFalse: [ ^ self ].
-	wheelIndex := self wheelIndex + 10.
+	wheelIndex := self wheelIndex + 3.
 	self
 		startStepping: #mouseWheelStep:
 		at: Time millisecondClockValue
