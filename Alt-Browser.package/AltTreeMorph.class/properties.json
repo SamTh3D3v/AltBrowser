@@ -15,7 +15,8 @@
 		"selectedRowIndexes",
 		"dropIndex",
 		"viewport",
-		"stepIndex" ],
+		"stepIndex",
+		"wheelIndex" ],
 	"name" : "AltTreeMorph",
 	"pools" : [
 		 ],

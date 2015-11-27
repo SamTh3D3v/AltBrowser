@@ -1,6 +1,10 @@
 event handling
 mouseStillDown: anEvent
 	"Sent when we are stepping over a drag, and not moving."
+	
+	"What I would like: such a message (the stepMessage instance)
+	to carry the stepIndex value and increment it. But the step API
+	is not designed that way."
 
 	| target |
 	stepIndex := self stepIndex + 1 max: 100.
