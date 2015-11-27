@@ -1,5 +1,5 @@
 event handling
-mouseStillDown: anEvent
+mouseStillDown: anEvent count: aValue
 	"Sent when we are stepping over a drag, and not moving."
 
 	| target |
