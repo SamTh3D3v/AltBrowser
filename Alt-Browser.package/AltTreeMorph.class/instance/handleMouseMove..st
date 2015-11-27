@@ -4,6 +4,7 @@ handleMouseMove: anEvent
 
 	anEvent wasHandled
 		ifTrue: [ ^ self ].	"not interested"
+	stepIndex := 0.
 	anEvent anyButtonPressed
 		ifFalse: [ ^ self ].
 	anEvent isDraggingEvent
