@@ -1,9 +1,9 @@
 selection
-selectIndex: anIndex
+selectItem: anItem index: anIndex
 	model
 		ifNotNil:
 			[ model textMorph
 				ifNotNil: [ :t | 
 					t hasUnacceptedEdits
 						ifTrue: [ ^ self ] ] ].
-	super selectIndex: anIndex
+	super selectItem: anItem index: anIndex

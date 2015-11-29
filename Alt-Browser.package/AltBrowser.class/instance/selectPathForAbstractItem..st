@@ -20,6 +20,6 @@ selectPathForAbstractItem: anItem
 			anItemModel expand ].
 	^ (self root findItem: anItem)
 		ifNotNil: [ :m | 
-			self root selectIndex: (self root indexOf: m).
+			m select.
 			true ]
 		ifNil: [ false ]

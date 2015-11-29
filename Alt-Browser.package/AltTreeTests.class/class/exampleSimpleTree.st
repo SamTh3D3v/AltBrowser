@@ -2,8 +2,9 @@ examples
 exampleSimpleTree
 	"Create a simple instance of it and display it."
 
-	"AltTreeTests new exampleSimpleTree"
+	"AltTreeTests exampleSimpleTree"
 
+	<example>
 	| tree morph |
 	tree := #(1 #(2 4 5) 3) asAltTree.
 	morph := AltTreeMorph new.

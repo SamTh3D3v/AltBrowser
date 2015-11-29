@@ -2,7 +2,7 @@ updating
 changed
 	"We have to tell the parent to change. By default, at top level, trigger a refresh."
 
-	"I can update the selection."
+	"By default, a tree changed implies selection changes, so an AltTreeChanged may includes a selection change. My observers have to take that into account."
 
 	parent
 		ifNil:

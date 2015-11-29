@@ -2,8 +2,8 @@ examples
 exampleRandomItems
 	"Create a large array of elements at random."
 
-	"AltTreeTests new exampleRandomItems"
-	
+	"AltTreeTests exampleRandomItems"
+
 	"Notes on that one:
 	- Performance analysis on an instance of that example:
 		[ self refresh. self fullDrawOn: Display getCanvas ] timeProfile
@@ -13,6 +13,7 @@ exampleRandomItems
 		166ms, 110ms refreshing the items, 46ms in the display.
 	Would an optimisation on no subpixel for large fonts correct that?"
 
+	<example>
 	| tree morph |
 	tree := AltRandomItemExample new.
 	tree item: 0.
@@ -20,7 +21,7 @@ exampleRandomItems
 		contents:
 			((1 to: 20000)
 				collect:
-					[ :e | AltRandomItemExample new item: e * (10 ** (1 to: 10) atRandom) ]).
+					[ :e | AltRandomItemExample new parent: tree; item: e * (10 ** (1 to: 10) atRandom) ]).
 	tree expand.
 	morph := AltTreeMorph new.
 	morph model: tree.

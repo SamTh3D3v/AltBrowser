@@ -1,6 +1,7 @@
 user interface
 toggleExpanded
-	"If one of our sub-element is selected, select myself since I will be collapsed."
+	"If one of our sub-element is selected, select myself since I will be collapsed.
+	Use selectedItem direct access on root."
 
 	self root selectedItem
 		ifNotNil:

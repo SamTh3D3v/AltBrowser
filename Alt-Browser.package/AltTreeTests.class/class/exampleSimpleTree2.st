@@ -5,8 +5,9 @@ exampleSimpleTree2
 	"Triggers both horizontal and vertical scrollbar and shows
 	how it gets the horizontal scrollbar wrong."
 
-	"AltTreeTests new exampleSimpleTree2"
+	"AltTreeTests exampleSimpleTree2"
 
+	<example>
 	| tree morph |
 	tree := #(1 #(2 4 '56789012345678902367') 3) asAltTree.
 	morph := AltTreeMorph new.

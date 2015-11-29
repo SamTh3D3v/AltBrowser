@@ -4,6 +4,7 @@ browseFinderResults
 
 	| environment |
 	self assert: finder notNil.
+	finder resultDictionary ifEmpty: [ ^ self ].
 	environment := RBSelectorEnvironment onEnvironment: self rbEnvironment.
 	finder resultDictionary
 		keysAndValuesDo: [ :aSelector :classes | 
