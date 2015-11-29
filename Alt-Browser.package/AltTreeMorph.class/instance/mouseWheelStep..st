@@ -5,10 +5,6 @@ mouseWheelStep: event
 	model ifNil: [ ^ self ].
 	self hasVerticalScrollBar
 		ifFalse: [ ^ self ].
-	event isUp
-		ifTrue: [ self verticalScrollBar scrollUp: wheelIndex ].
-	event isDown
-		ifTrue: [ self verticalScrollBar scrollDown: wheelIndex ].
 	wheelSpeedTarget := self wheelSpeedTarget - 2.
 	wheelIndex := self wheelIndex
 		+
@@ -16,4 +12,8 @@ mouseWheelStep: event
 				ifTrue: [ 2 ]
 				ifFalse: [ -2 ]).
 	wheelIndex isZero
-		ifTrue: [ self stopSteppingSelector: #mouseWheelStep: ]
+		ifTrue: [ self stopSteppingSelector: #mouseWheelStep: ].
+	event isUp
+		ifTrue: [ self verticalScrollBar scrollUp: self wheelIndex ].
+	event isDown
+		ifTrue: [ self verticalScrollBar scrollDown: self wheelIndex ]
