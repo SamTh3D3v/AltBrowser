@@ -16,7 +16,8 @@
 		"dropIndex",
 		"viewport",
 		"stepIndex",
-		"wheelIndex" ],
+		"wheelIndex",
+		"wheelSpeedTarget" ],
 	"name" : "AltTreeMorph",
 	"pools" : [
 		 ],

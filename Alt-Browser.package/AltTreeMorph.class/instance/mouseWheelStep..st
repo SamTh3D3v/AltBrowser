@@ -9,6 +9,11 @@ mouseWheelStep: event
 		ifTrue: [ self verticalScrollBar scrollUp: wheelIndex ].
 	event isDown
 		ifTrue: [ self verticalScrollBar scrollDown: wheelIndex ].
-	wheelIndex := wheelIndex - 1.
+	wheelSpeedTarget := self wheelSpeedTarget - 2.
+	wheelIndex := self wheelIndex
+		+
+			(wheelSpeedTarget > self wheelIndex
+				ifTrue: [ 2 ]
+				ifFalse: [ -2 ]).
 	wheelIndex isZero
 		ifTrue: [ self stopSteppingSelector: #mouseWheelStep: ]

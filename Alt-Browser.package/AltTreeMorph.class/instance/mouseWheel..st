@@ -1,13 +1,15 @@
 event handling
 mouseWheel: anEvent
-	"Soft-coded. Fast, feels ok for two-finger scrolling on keypad."
+	"Slow at first, then fast with some inertia."
 
-	"Slow at first, then fast with some inertia would be way cool. Could be done by: start stepping on a mouse wheel first event, increase step for each mouse wheel event, let step decrease by itself until stop."
+	"Trying to improve on the formula. Acceleration should be linear (this is the increase here), then top of (0), then have a linear decrease."
+
+	"The current approach makes guesses on all counts, and has no plateau."
 
 	model ifNil: [ ^ self ].
 	self hasVerticalScrollBar
 		ifFalse: [ ^ self ].
-	wheelIndex := self wheelIndex + 3.
+	wheelSpeedTarget := self wheelSpeedTarget + 4.
 	self
 		startStepping: #mouseWheelStep:
 		at: Time millisecondClockValue
