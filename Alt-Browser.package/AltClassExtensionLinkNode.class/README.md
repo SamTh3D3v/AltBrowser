@@ -1,0 +1,1 @@
+This node is a link to the target class extension
