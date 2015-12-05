@@ -16,5 +16,4 @@ updateSelection
 				ifNotNil: [ :t | t classOrMetaClass: selection styleClass ].
 			self source aboutToStyle: selection isStyled.
 			self source contents: selection sourceCode.
-			self history add: selection.
-			selection item selectIn: self ]
+			self history add: selection ]

@@ -5,10 +5,9 @@ findMethodCategory: aMethodCategory in: aClass
 	"Make it lazy : do not trigger contents generation."
 
 	| res |
-	contents notNil
-		ifTrue: [ 
-			self contents
-				do: [ :each | 
-					(res := each findMethodCategory: aMethodCategory in: aClass) notNil
-						ifTrue: [ ^ res ] ] ].
+	self contents
+		do:
+			[ :each | 
+			(res := each findMethodCategory: aMethodCategory in: aClass) notNil
+				ifTrue: [ ^ res ] ].
 	^ nil

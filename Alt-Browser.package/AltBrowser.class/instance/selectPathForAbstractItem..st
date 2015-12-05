@@ -4,7 +4,7 @@ selectPathForAbstractItem: anItem
 
 	| nPath aNode anItemModel |
 	nPath := OrderedCollection new.
-	aNode := anItem parent.
+	aNode := anItem.
 	[ aNode notNil ]
 		whileTrue: [ nPath addFirst: aNode.
 			aNode := aNode parent ].

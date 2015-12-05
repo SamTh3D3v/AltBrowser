@@ -9,6 +9,6 @@ root
 				rbEnvironment: self rbEnvironment;
 				yourself.
 			root announcer weak
-				when: AltSelectionChanged send: #selection: to: self;
+				when: AltSelectionChanged send: #updateSelection to: self;
 				when: AltTreeChanged send: #updateSelection to: self.
 			root ]

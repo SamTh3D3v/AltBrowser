@@ -1,7 +1,9 @@
 actions
 selectIn: aBrowser
 	(aBrowser class findPackage: self rpackage)
-		ifNotNil: [ :aPackage | 
+		ifNotNil:
+			[ :aPackage | 
 			aBrowser history previous.
-			aBrowser selectPathForAbstractItem: aPackage ]
-		ifNil: [ self error: 'Incorrect link' ]
+			aBrowser selectPathForAbstractItem: aPackage.
+			^ true ]
+		ifNil: [ ^ false ]

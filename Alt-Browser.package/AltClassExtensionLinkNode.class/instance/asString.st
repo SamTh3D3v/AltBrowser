@@ -1,3 +1,3 @@
 printing
 asString
-	^ self packageName
+	^ '*' , self methodCategory

@@ -1,10 +1,15 @@
 actions
 selectIn: aBrowser
-	(aBrowser class
-		findMethodCategory: self methodCategory
-		in: self parent itemClass)
+	(aBrowser class findPackage: self rpackage)
 		ifNotNil:
-			[ :aClassExtension | 
-			aBrowser history previous.
-			aBrowser selectPathForAbstractItem: aClassExtension ]
-		ifNil: [ self error: 'Incorrect link' ]
+			[ :aPackage | 
+			(aPackage
+				findMethodCategory: self methodCategory
+				in: self parent itemClass)
+				ifNotNil:
+					[ :aClassExtension | 
+					aBrowser history hasPrevious ifTrue: [ aBrowser history previous ].
+					aBrowser selectPathForAbstractItem: aClassExtension.
+					^ true ]
+				ifNil: [ ^ false ] ]
+		ifNil: [ ^ false ]
