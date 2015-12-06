@@ -1,0 +1,18 @@
+{
+	"category" : "Alt-Browser-Animation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"startTime",
+		"endTime",
+		"startValue",
+		"endValue",
+		"tween" ],
+	"name" : "AltMotion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

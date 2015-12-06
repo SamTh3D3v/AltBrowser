@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Animation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltTweenQuadratic",
+	"pools" : [
+		 ],
+	"super" : "AltTween",
+	"type" : "normal" }
