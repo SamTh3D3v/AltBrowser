@@ -8,7 +8,8 @@ selectIn: aBrowser
 				in: self parent itemClass)
 				ifNotNil:
 					[ :aClassExtension | 
-					aBrowser history hasPrevious ifTrue: [ aBrowser history previous ].
+					aBrowser history hasPrevious
+						ifTrue: [ aBrowser history previous ].
 					aBrowser selectPathForAbstractItem: aClassExtension.
 					^ true ]
 				ifNil: [ ^ false ] ]

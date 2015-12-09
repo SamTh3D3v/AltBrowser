@@ -2,9 +2,6 @@ querying
 findMethodCategory: aCategory in: aClass
 	"As an extension, we are a protocol (or multiple ones, in fact). Return the parent node, it's safer when the class loses its last extension selector (it's a bit of a hack, really)."
 
-	(self itemClass classSide == aClass
-		and: [ self parent rpackage isYourClassExtension: aCategory ])
-		ifTrue: [ ^ super findMethodCategory: aCategory in: aClass ].
 	^ (self itemClass == aClass
 		and: [ self parent rpackage isYourClassExtension: aCategory ])
 		ifTrue:
