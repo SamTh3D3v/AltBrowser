@@ -6,9 +6,14 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltMotion",
+		"startTime",
+		"endTime",
+		"startValue",
+		"endValue",
+		"tween",
+		"action" ],
+	"name" : "AltTweenMotion",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "AltMotion",
 	"type" : "normal" }

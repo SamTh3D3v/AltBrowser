@@ -1,0 +1,3 @@
+animating
+step
+	self subclassResponsibility

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltTweenQuadratic",
+		"motions" ],
+	"name" : "AltSequenceMotion",
 	"pools" : [
 		 ],
-	"super" : "AltTween",
+	"super" : "AltMotion",
 	"type" : "normal" }

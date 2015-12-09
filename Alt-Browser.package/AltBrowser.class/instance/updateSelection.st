@@ -2,7 +2,11 @@ selecting
 updateSelection
 	"Update from the model if needed."
 
-	selection := self root selectedItem.
+	| modelSelection |
+	modelSelection := self root selectedItem.
+	modelSelection == selection
+		ifTrue: [ ^ self ]
+		ifFalse: [ selection := modelSelection ].
 	self updateTextKeymap.
 	self updateTreeKeymap.
 	self updateTitle.

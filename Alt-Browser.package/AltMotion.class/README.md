@@ -1,3 +1,1 @@
-This class register a motion and plan for it.
-
-It's derived from the tween approach of Robert Penner.
+Base class for motions. Just defines a combining interface and the next method.

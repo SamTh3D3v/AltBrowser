@@ -1,0 +1,1 @@
+One shot action in an animation. Done once per step.
