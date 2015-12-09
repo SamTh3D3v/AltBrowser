@@ -10,7 +10,10 @@ selectIn: aBrowser
 					[ :aClassExtension | 
 					aBrowser history hasPrevious
 						ifTrue: [ aBrowser history previous ].
-					aBrowser selectPathForAbstractItem: aClassExtension.
+					aBrowser openPathForAbstractItem: aClassExtension.
+					(aBrowser root findItem: aClassExtension)
+						ifNotNil:
+							[ :n | aBrowser treeMorph moveSelectionIndexTo: (aBrowser root indexOf: n) ].
 					^ true ]
 				ifNil: [ ^ false ] ]
 		ifNil: [ ^ false ]

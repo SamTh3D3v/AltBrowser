@@ -6,7 +6,7 @@ moveSelectionIndexTo: anIndex
 	iMotion := AltTweenMotion new
 		tween: AltTweenMotion easeInOutQuadratic;
 		startTime: Time millisecondClockValue;
-		endTime: Time millisecondClockValue + 1000;
+		endTime: Time millisecondClockValue + 500;
 		startValue: self verticalScrollBar value;
 		endValue: (self viewport verticalValueForIndex: anIndex);
 		action: [ :value | self verticalScrollBar setValue: value ];
