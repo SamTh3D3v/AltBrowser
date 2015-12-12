@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Animation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Log" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltLog",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

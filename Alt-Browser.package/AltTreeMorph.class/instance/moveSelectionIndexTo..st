@@ -12,7 +12,7 @@ moveSelectionIndexTo: anIndex
 		action: [ :value | self verticalScrollBar setValue: value ];
 		yourself.
 	sMotion := AltOneShotMotion new
-		action: [ self selectRowIndex: anIndex ];
+		action: [ "self selectRowIndex: anIndex" ];
 		yourself.
 	self
 		startStepping: #motionStep:

@@ -19,6 +19,7 @@ drawSubmorphsOn: canvas
 					[ :rowIndex | 
 					| row |
 					row := self exposedItems at: rowIndex.
+					row privateOwner: nil.
 					row topLeft: x @ y.
 					y := y + row height.
 					selectionIndex = rowIndex
@@ -27,6 +28,7 @@ drawSubmorphsOn: canvas
 					dropIndex = rowIndex
 						ifTrue: [ row highlightForDrop: true ]
 						ifFalse: [ row highlightForDrop: false ].
+					row privateOwner: self.
 					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.

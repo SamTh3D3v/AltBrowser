@@ -1,5 +1,7 @@
 actions
 selectIn: aBrowser
+	"Animate the link to the class extension in the package. It triggers an animation doing so."
+
 	(aBrowser class findPackage: self rpackage)
 		ifNotNil:
 			[ :aPackage | 

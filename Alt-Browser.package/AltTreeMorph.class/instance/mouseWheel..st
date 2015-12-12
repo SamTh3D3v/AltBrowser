@@ -13,7 +13,7 @@ mouseWheel: anEvent
 	self world
 		ifNotNil:
 			[ :w | 
-			(w isStepping: self selector: #mouseWheelStep)
+			(w isStepping: self selector: #mouseWheelStep:)
 				ifFalse:
 					[ self
 						startStepping: #mouseWheelStep:
