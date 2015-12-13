@@ -3,6 +3,7 @@ changed
 	"Normal display change."
 
 	self owner ifNil: [ ^ self ].
+	self owner model ifNil: [ ^ self ].
 	self updateRows.
 	self owner
 		resizeVerticalScrollBar;

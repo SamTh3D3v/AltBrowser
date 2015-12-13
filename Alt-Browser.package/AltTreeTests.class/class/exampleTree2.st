@@ -1,6 +1,6 @@
 examples
-exampleTree1
-	"AltTreeTests exampleTree1"
+exampleTree2
+	"AltTreeTests exampleTree2"
 
 	<example>
 	| tree morph |
@@ -15,8 +15,8 @@ exampleTree1
 						item: e;
 						parent: tree;
 						childrenBlock: [ :c | c subclasses sort: [ :a :b | a name < b name ] ] ]).
-	morph := AltTreeMorph new.
-	morph model: tree.
+	morph := AltTreeMorph2 new.
 	morph extent: 300 @ 700.
+	morph model: tree.
 	morph openInWindow.
 	^ morph

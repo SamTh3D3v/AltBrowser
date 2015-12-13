@@ -3,8 +3,6 @@ updateItems
 	"..."
 
 	| index iUp iDown y yDown yUp visibleHeight row delta upStream downStream |
-	self bounds ifNil: [ ^ self ].	"Nothing to show yet"
-	self owner ifNil: [ ^ self ].
 	index := self baselineIndex.
 	delta := self deltaFor: index.
 	y := self baseline.
