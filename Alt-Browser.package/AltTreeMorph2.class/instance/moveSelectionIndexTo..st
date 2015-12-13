@@ -1,4 +1,4 @@
-event handling
+accessing
 moveSelectionIndexTo: anIndex
 	"Make that a motion..."
 
@@ -18,4 +18,5 @@ moveSelectionIndexTo: anIndex
 		startStepping: #motionStep:
 		at: Time millisecondClockValue
 		arguments: (Array with: iMotion + sMotion)
-		stepTime: 1
+		stepTime: 1.
+	(AndreasSystemProfiler spyOnWorldFor: 2) inspect

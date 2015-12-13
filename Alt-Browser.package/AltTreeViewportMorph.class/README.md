@@ -6,3 +6,4 @@ I contain visible rows/items in a tree morph.
 * The item is in charge of setting up indentation and collapse/expand behavior, not me.
 * Offset information (both vertical and horizontal) is kept by the scrollbars.
 * My model has a list like interface (#at:, #size; #indexOf:) but I expect those operators to be expensive, so I use streams (and reverse streams) to iterate over the model.
+* When drawing myself, I block my submorphs from reporting damages since I move them around before drawing them.

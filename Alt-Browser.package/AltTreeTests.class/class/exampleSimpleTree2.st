@@ -9,8 +9,8 @@ exampleSimpleTree2
 
 	<example>
 	| tree morph |
-	tree := #(1 #(2 4 '56789012345678902367') 3) asAltTree.
-	morph := AltTreeMorph new.
+	tree := #(1 #(2 4 56789012345678902367) 3) asAltTree.
+	morph := AltTreeMorph2 new.
 	morph model: tree.
 	morph openInWindow.
 	^ morph

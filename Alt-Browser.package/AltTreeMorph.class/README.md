@@ -11,3 +11,5 @@ Two types of refresh / updates:
 The viewport is in charge of effective display.
 
 We optimize accesses to the model, expecting that #at: (and #size) may be expensive.
+
+The fact that row item morphs are created only during display is... a hack around the non mastery of self changed (which is sent far too many times). Now, if the response to changed is correct (even if received multiple times), then it could.

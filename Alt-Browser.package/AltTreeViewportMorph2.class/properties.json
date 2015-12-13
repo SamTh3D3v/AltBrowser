@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Tree",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AltTreeViewportMorph2",
+	"pools" : [
+		 ],
+	"super" : "AltTreeViewportMorph",
+	"type" : "normal" }
