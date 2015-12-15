@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"motion",
+		"canvas" ],
 	"name" : "AltTreeMorph2",
 	"pools" : [
 		 ],

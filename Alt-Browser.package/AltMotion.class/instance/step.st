@@ -1,3 +1,4 @@
 animating
 step
-	self subclassResponsibility
+	self value.
+	^ self check

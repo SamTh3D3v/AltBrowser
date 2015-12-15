@@ -1,6 +1,6 @@
 accessing
 changed
-	"Normal display change."
+	"Normal display change. I receive that when my bounds / my scrollbar have changed."
 
 	self owner ifNil: [ ^ self ].
 	self owner model ifNil: [ ^ self ].
