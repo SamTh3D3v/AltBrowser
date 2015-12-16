@@ -1,6 +1,10 @@
 drawing
 drawSubmorphsOn: canvas
-	"Move the submorph handling code in its place?"
+	"Check that we have updated something one way or another before aligning / reordering our items."
+
+	"We need to protect ourselves against spurious updates; a lot of Morphic
+	code call self changed like a prayer, even if apparently not needed. As in,
+	let's call changed, just, like, well, it could be needed?"
 
 	| x y rowsToDisplay rowSubviews selectionIndex dropIndex |
 	self bounds ifNil: [ ^ self ].	"Nothing to show yet"

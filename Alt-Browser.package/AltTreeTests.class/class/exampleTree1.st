@@ -2,6 +2,8 @@ examples
 exampleTree1
 	"AltTreeTests exampleTree1"
 
+	"This is exactly the same example than the FT tree one."
+
 	<example>
 	| tree morph |
 	tree := AltBlockItemExample new.

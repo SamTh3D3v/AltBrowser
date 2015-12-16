@@ -2,6 +2,10 @@ examples
 exampleTree2
 	"AltTreeTests exampleTree2"
 
+	"This one is a variant where changed is handled normally, not during drawOn: like FT does. It is slower to open, since it does at least two updates (one initial refresh and one changed). Apart from that, it is as fast as the other one."
+
+	"Animation behavior may be a bit different / broken: it is used for experiments."
+
 	<example>
 	| tree morph |
 	tree := AltBlockItemExample new.
