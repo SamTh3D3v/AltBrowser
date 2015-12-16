@@ -20,11 +20,11 @@ mouseWheel: anEvent
 				endTime: t + 100;
 				startValue: self verticalScrollBar value;
 				endValue:
-					self verticalScrollBar value
+					((self verticalScrollBar value
 						+
 							(anEvent isUp
 								ifTrue: [ d negated ]
-								ifFalse: [ d ]);
+								ifFalse: [ d ]) min: 1.0) max: 0.0);
 				action: [ :value | self verticalScrollBar setValue: value ].
 			motion := motion ifNil: [ m ] ifNotNil: [ motion mergeWith: m ].
 			(w isStepping: self selector: #mouseWheelStep:)

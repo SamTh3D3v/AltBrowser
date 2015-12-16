@@ -12,4 +12,7 @@ mergeWith: aMotion
 		ifFalse:
 			[ endTime := endTime - (aMotion endTime - aMotion startTime).
 			endValue := endValue - (aMotion endValue - aMotion startValue) ].
+	endTime - startTime = 0
+		ifTrue: [ ^ nil ].
+	endValue := (endValue min: 1.0) max: 0.0.
 	^ self
