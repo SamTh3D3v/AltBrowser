@@ -2,6 +2,6 @@ accessing
 motionStep: aMotion
 	"Activate a motion."
 
-	aMotion step
+	motion step
 		ifNil: [ self stopSteppingSelector: #motionStep:.
 			motion := nil ]
