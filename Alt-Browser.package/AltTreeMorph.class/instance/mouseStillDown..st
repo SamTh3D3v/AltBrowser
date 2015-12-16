@@ -18,7 +18,7 @@ mouseStillDown: anEvent
 					[ anEvent position y
 						>= (self bottom - 10 - self horizontalScrollBarHeight) ])
 				ifTrue: [ ^ self verticalScrollBar scrollDown: stepIndex / 40.0 ] ].
-	stepIndex > 50
+	stepIndex > 90
 		ifTrue:
 			[ target := self model
 				at:

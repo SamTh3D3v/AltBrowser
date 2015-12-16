@@ -2,4 +2,6 @@ event handling
 motionStep: aMotion
 	"Activate a motion."
 
-	aMotion step ifNil: [ self stopSteppingSelector: #motionStep: ]
+	motion step
+		ifNil: [ self stopSteppingSelector: #motionStep:.
+			motion := nil ]

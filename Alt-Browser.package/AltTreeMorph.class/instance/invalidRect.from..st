@@ -1,5 +1,5 @@
 updating
 invalidRect: aRect from: aMorph
-	"Is there to give the possibility to intercept calls."
+	"Intercept all invalidRects from submorphs while in a drawing session."
 
-	^ super invalidRect: aRect from: aMorph
+	canvas ifNil: [ ^ super invalidRect: aRect from: aMorph ]

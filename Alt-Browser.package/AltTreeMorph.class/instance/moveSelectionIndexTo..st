@@ -20,5 +20,5 @@ moveSelectionIndexTo: anIndex
 	self
 		startStepping: #motionStep:
 		at: Time millisecondClockValue
-		arguments: (Array with: iMotion + sMotion)
+		arguments: (Array with: (motion := iMotion + sMotion))
 		stepTime: 1
