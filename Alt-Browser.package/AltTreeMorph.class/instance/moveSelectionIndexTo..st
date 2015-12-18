@@ -5,7 +5,7 @@ moveSelectionIndexTo: anIndex
 	| iMotion sMotion startValue endValue estimateTime |
 	startValue := self verticalScrollBar value.
 	endValue := self viewport verticalValueForIndex: anIndex.
-	estimateTime := ((endValue - startValue) abs * 1000) rounded.
+	estimateTime := ((endValue - startValue) abs * 200) rounded.
 	iMotion := AltTweenMotion new
 		tween: AltTweenMotion easeInOutCubic;
 		startTime: Time millisecondClockValue;
