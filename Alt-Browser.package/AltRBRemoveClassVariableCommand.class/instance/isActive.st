@@ -1,3 +1,3 @@
 testing
-isNeo
+isActive
 	^ true

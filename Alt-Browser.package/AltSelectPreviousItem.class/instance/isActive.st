@@ -1,3 +1,3 @@
 testing
 isActive
-	^ requestor isNeo
+	^ true

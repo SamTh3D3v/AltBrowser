@@ -15,7 +15,8 @@ selectIn: aBrowser
 					aBrowser openPathForAbstractItem: aClassExtension.
 					(aBrowser root findItem: aClassExtension)
 						ifNotNil:
-							[ :n | aBrowser treeMorph moveSelectionIndexTo: (aBrowser root indexOf: n) ].
+							[ :n | aBrowser treeMorph moveSelectionIndexTo: (aBrowser root indexOf: n) ]
+						ifNil: [ ^ false ].
 					^ true ]
 				ifNil: [ ^ false ] ]
 		ifNil: [ ^ false ]
