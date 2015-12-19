@@ -12,7 +12,7 @@ mouseWheel: anEvent
 			[ :w | 
 			| t m d |
 			d := self viewport exposedItems size / self viewport modelSize
-				* 1.0 max: 0.05.
+				* 0.5.
 			t := Time millisecondClockValue.
 			m := AltTweenMotion new
 				tween: AltTweenMotion easeInOutCubic;
@@ -27,10 +27,10 @@ mouseWheel: anEvent
 								ifFalse: [ d ]) min: 1.0) max: 0.0);
 				action: [ :value | self verticalScrollBar setValue: value ].
 			motion := motion ifNil: [ m ] ifNotNil: [ motion mergeWith: m ].
-			(w isStepping: self selector: #mouseWheelStep:)
+			(w isStepping: self selector: #motionStep:)
 				ifFalse:
 					[ self
-						startStepping: #mouseWheelStep:
+						startStepping: #motionStep:
 						at: t
 						arguments: {anEvent copy resetHandlerFields}
 						stepTime: self mouseStillDownStepRate ] ]
