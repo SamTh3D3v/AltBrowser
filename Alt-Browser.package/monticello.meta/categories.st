@@ -12,3 +12,4 @@ SystemOrganization addCategory: 'Alt-Browser-Settings'!
 SystemOrganization addCategory: 'Alt-Browser-Tests'!
 SystemOrganization addCategory: 'Alt-Browser-Tree'!
 SystemOrganization addCategory: 'Alt-Browser-Versions'!
+SystemOrganization addCategory: 'Alt-Browser-Watchpoints'!

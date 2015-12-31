@@ -1,0 +1,1 @@
+sent when a watchpoint is removed

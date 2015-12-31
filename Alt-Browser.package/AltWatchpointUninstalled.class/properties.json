@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltWatchpointsClassNode",
+		"watchpoint" ],
+	"name" : "AltWatchpointUninstalled",
 	"pools" : [
 		 ],
-	"super" : "AltCompositeNode",
+	"super" : "Announcement",
 	"type" : "normal" }

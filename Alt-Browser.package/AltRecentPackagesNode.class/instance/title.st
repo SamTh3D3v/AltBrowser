@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Watchpoints'
+	^ 'Recent Packages'

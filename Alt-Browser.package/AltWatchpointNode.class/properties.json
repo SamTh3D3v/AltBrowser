@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltWatchpointsClassNode",
+	"name" : "AltWatchpointNode",
 	"pools" : [
 		 ],
-	"super" : "AltCompositeNode",
+	"super" : "AltAbstractNode",
 	"type" : "normal" }
