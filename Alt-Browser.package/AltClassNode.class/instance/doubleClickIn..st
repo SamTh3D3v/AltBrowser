@@ -3,7 +3,6 @@ doubleClickIn: aTreeItemModel
 	"Action!"
 
 	| aRBEnv anAltBrowser |
-	self halt.
 	anAltBrowser := aTreeItemModel model.
 	aRBEnv := anAltBrowser rbEnvironment isSelectorEnvironment
 		ifTrue: [ anAltBrowser rbEnvironment environment ]

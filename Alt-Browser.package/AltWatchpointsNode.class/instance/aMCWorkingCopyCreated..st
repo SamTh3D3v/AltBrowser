@@ -1,0 +1,3 @@
+updating
+aMCWorkingCopyCreated: anEvent
+	^ false

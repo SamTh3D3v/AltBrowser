@@ -1,0 +1,3 @@
+*alt-browser
+isGlobal
+	^ false

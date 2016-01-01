@@ -1,0 +1,3 @@
+*alt-browser
+isSpecialVariable
+	^ false

@@ -1,3 +1,3 @@
-*alt-browser-rb-commands
+*alt-browser
 altTextCommands
-	^ #()
+	^ #(AltWatchpointCommand)

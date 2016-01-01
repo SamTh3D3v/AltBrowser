@@ -1,0 +1,3 @@
+updating
+aClassReorganized: anEvent
+	^ false
