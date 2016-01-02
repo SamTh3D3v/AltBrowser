@@ -1,4 +1,6 @@
 accessing
 contents
-	^ self watchpoints
-		collect: [ :e | AltWatchpointNode with: e parent: self ]
+	^ contents
+		ifNil:
+			[ contents := self watchpoints
+				collect: [ :e | AltWatchpointNode with: e parent: self ] ]
