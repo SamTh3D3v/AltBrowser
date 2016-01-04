@@ -1,3 +1,0 @@
-updating
-aMethodRemoved: anEvent
-	^ false

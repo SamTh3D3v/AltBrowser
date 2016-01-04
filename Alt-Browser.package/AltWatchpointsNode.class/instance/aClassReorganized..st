@@ -1,3 +1,0 @@
-updating
-aClassReorganized: anEvent
-	^ false
