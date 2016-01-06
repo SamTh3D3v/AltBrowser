@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Watchpoints",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltWatchpointsEraseHistoryAll",
+	"pools" : [
+		 ],
+	"super" : "AltCommand",
+	"type" : "normal" }

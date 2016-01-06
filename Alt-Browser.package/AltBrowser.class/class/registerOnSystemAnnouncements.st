@@ -4,7 +4,7 @@ registerOnSystemAnnouncements
 
 	"self registerOnSystemAnnouncements."
 
-	"I do need to track system categories. RPackageTag is a bit erratic, yet."
+	"I do need to track system categories. RPackageTag is a bit erratic, yet. Not tracking ProtocolRemoved and ProtocolAdded."
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
 	SystemAnnouncer uniqueInstance weak
@@ -24,7 +24,8 @@ registerOnSystemAnnouncements
 		when: ClassRenamed send: #aClassRenamed: to: self;
 		when: ClassRepackaged send: #aClassRepackaged: to: self;
 		when: ClassRecategorized send: #aClassRecategorized: to: self;
-		when: ClassModifiedClassDefinition send: #aClassModifiedClassDefinition: to: self.
+		when: ClassModifiedClassDefinition send: #aClassModifiedClassDefinition: to: self;
+		when: MetalinkChanged send: #aMetalinkChanged: to: self.
 	RPackage organizer announcer unsubscribe: self.
 	RPackage organizer announcer weak
 		when: RPackageUnregistered send: #aRPackageUnregistered: to: self;

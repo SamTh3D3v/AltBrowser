@@ -1,0 +1,3 @@
+updating
+aMetalinkChanged: anEvent
+	^ false
