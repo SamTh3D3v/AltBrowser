@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltRBClassRenameCommand",
+	"name" : "AltRBRemoveClassCommand",
 	"pools" : [
 		 ],
 	"super" : "AltRBCommand",

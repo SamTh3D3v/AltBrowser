@@ -1,0 +1,1 @@
+Common code for RB commands: exception handling

@@ -1,8 +1,9 @@
 execution
 execute
-		| classToRemove |
+	| classToRemove |
 	requestor okToChange
 		ifFalse: [ ^ nil ].
 	classToRemove := requestor selectedNode item itemClass.
-	(RBRemoveClassRefactoring classNames: {(classToRemove name)}) execute.
+	self
+		execute: (RBRemoveClassRefactoring classNames: {classToRemove name}).
 	^ nil
