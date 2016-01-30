@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltRBInstVarRenameCommand",
+	"name" : "AltRBAstNodeCommand",
 	"pools" : [
 		 ],
-	"super" : "AltRBAstNodeCommand",
+	"super" : "AltAstNodeCommand",
 	"type" : "normal" }

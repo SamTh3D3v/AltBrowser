@@ -1,9 +1,17 @@
 execution
 execute: aRefactoringCommand
-	[ self applyOptionsOn: aRefactoringCommand.
+	[ [ self applyOptionsOn: aRefactoringCommand.
 	aRefactoringCommand execute ]
-		on: RBRefactoringError
+		on: RBRefactoringError , RBRefactoringFailure
 		do:
 			[ :e | 
-			(self confirm: e messageText orCancel: [ false ])
-				ifTrue: [ e actionBlock ifNotNil: [ :a | a value ] ] ]
+			e actionBlock
+				ifNil: [ self inform: e messageText ]
+				ifNotNil:
+					[ :aBlock | 
+					(self confirm: e messageText)
+						ifTrue: [ aBlock value ] ] ] ]
+		on: RBRefactoringWarning
+		do: [ :e | 
+			self inform: e messageText.
+			e resume ]

@@ -10,5 +10,5 @@
 	"name" : "AltRBInstVarPushDownCommand",
 	"pools" : [
 		 ],
-	"super" : "AltAstNodeCommand",
+	"super" : "AltRBAstNodeCommand",
 	"type" : "normal" }
