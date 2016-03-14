@@ -7,6 +7,5 @@ updateVisibleSelectionVertical
 		ifFalse: [ ^ self ].
 	rowIndex := self owner selectedRowIndex.
 	(self isRowIndexFullyVisible: rowIndex)
-		ifFalse:
-			[ self owner verticalScrollBar
+		ifFalse: [ self owner verticalScrollBar
 				value: (self verticalValueForIndex: rowIndex) ]

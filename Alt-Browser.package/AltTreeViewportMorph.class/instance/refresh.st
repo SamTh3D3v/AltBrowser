@@ -10,5 +10,5 @@ refresh
 	self setNeedsRefreshItems.
 	self clearModelCachedData.
 	self owner verticalScrollBar
-		value: self verticalValue * (oldModelSize / self modelSize).
+		value: self verticalValue * (oldModelSize / self modelSize) asFloat.
 	super changed

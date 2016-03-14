@@ -2,10 +2,8 @@ updating
 updateRows
 	"Model hasn't changed, just complement missing rows."
 
-	| index iUp iDown y yDown yUp visibleHeight row delta oldExposedItems upStream downStream |
+	| index iUp iDown yDown yUp visibleHeight row oldExposedItems upStream downStream |
 	index := self baselineIndex.
-	delta := self deltaFor: index.
-	y := self baseline.
 	oldExposedItems := exposedItems.
 	exposedItems := SmallDictionary new.
 	visibleHeight := self height.
@@ -13,8 +11,8 @@ updateRows
 		at: index
 		ifAbsent: [ self rowMorphForItem: (self owner model at: index) ].
 	exposedItems at: index put: row.
-	yDown := (y + (row height * (1 - delta))) truncated.
-	yUp := (y - (row height * delta)) truncated.
+	yUp := self getRowTop: row height.
+	yDown := yUp + row height.
 	iUp := index - 1.
 	upStream := self owner model asReverseReadStream
 		skip: self modelSize - iUp;
@@ -24,8 +22,7 @@ updateRows
 		skip: iDown;
 		yourself.
 	[ yUp > 0 and: [ upStream atEnd not ] ]
-		whileTrue:
-			[ | item |
+		whileTrue: [ | item |
 			item := upStream next.
 			row := oldExposedItems
 				at: iUp
@@ -37,8 +34,7 @@ updateRows
 		ifTrue: [ yDown := yDown - yUp.
 			yUp := 0 ].	"Make sure there is no empty space on top."
 	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
-		whileTrue:
-			[ | item |
+		whileTrue: [ | item |
 			iDown := iDown + 1.
 			item := downStream next.
 			row := oldExposedItems
