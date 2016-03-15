@@ -22,8 +22,7 @@ updateRows
 		skip: iDown;
 		yourself.
 	[ yUp > 0 and: [ upStream atEnd not ] ]
-		whileTrue:
-			[ | item |
+		whileTrue: [ | item |
 			item := upStream next.
 			row := oldExposedItems
 				at: iUp
@@ -35,8 +34,7 @@ updateRows
 		ifTrue: [ yDown := yDown - yUp.
 			yUp := 0 ].	"Make sure there is no empty space on top."
 	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
-		whileTrue:
-			[ | item |
+		whileTrue: [ | item |
 			iDown := iDown + 1.
 			item := downStream next.
 			row := oldExposedItems
@@ -47,8 +45,7 @@ updateRows
 	topOffset := yUp.
 	bottomOffset := yDown.
 	exposedItems values
-		do:
-			[ :each | 
+		do: [ :each | 
 			each privateOwner: nil.
 			each width: self effectiveWidth - 2.
 			each privateOwner: self ].

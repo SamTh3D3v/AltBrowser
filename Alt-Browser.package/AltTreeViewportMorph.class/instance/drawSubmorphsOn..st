@@ -11,16 +11,14 @@ drawSubmorphsOn: canvas
 	self owner ifNil: [ ^ self ].
 	self updateItemsOrRows
 		ifTrue:
-			[ rowsToDisplay := self exposedItems keys asSortedCollection
-				asArray.	"Do not rely on exposedItems ordering"
+			[ rowsToDisplay := self exposedItems keys asSortedCollection asArray.	"Do not rely on exposedItems ordering"
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
 			x := self left + 2 - self leftOffset.
 			y := self top + topOffset.
 			selectionIndex := self owner selectedRowIndex.
 			dropIndex := self owner dropIndex.
 			rowsToDisplay
-				do:
-					[ :rowIndex | 
+				do: [ :rowIndex | 
 					| row |
 					row := self exposedItems at: rowIndex.
 					row privateOwner: nil.
