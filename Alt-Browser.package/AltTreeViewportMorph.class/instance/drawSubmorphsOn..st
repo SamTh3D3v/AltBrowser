@@ -24,14 +24,22 @@ drawSubmorphsOn: canvas
 					row privateOwner: nil.
 					row topLeft: x @ y.
 					y := y + row height.
-					selectionIndex = rowIndex
-						ifTrue: [ row color: self owner selectionColor ]
-						ifFalse: [ row color: Color transparent ].
-					dropIndex = rowIndex
-						ifTrue: [ row highlightForDrop: true ]
-						ifFalse: [ row highlightForDrop: false ].
 					row privateOwner: self.
 					rowSubviews add: row ].
 			submorphs := rowSubviews asArray ].
 	super drawSubmorphsOn: canvas.
+	(self exposedItems at: self owner selectedRowIndex ifAbsent: [  ])
+		ifNotNil: [ :selectedRow | 
+			canvas
+				frameAndFillRectangle: selectedRow bounds
+				fillColor: (self owner selectionColor alpha: 0.3)
+				borderWidth: 1
+				borderColor: self owner selectionColor ].
+	(self exposedItems at: self owner dropIndex ifAbsent: [  ])
+		ifNotNil: [ :selectedRow | 
+			canvas
+				frameAndFillRectangle: selectedRow bounds
+				fillColor: Color transparent
+				borderWidth: 1
+				borderColor: self owner selectionColor ].
 	needsRefreshRows := false
