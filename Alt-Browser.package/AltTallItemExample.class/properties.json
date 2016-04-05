@@ -1,14 +1,14 @@
 {
-	"category" : "Alt-Browser-List",
+	"category" : "Alt-Browser-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"item" ],
-	"name" : "AltTreeItemMorph",
+		"height" ],
+	"name" : "AltTallItemExample",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "AltTreeItemModel",
 	"type" : "normal" }

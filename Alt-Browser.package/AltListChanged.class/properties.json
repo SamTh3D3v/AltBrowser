@@ -1,14 +1,14 @@
 {
-	"category" : "Alt-Browser-Tests",
+	"category" : "Alt-Browser-List",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
-	"name" : "AltTreeTests",
+		"tree" ],
+	"name" : "AltListChanged",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Announcement",
 	"type" : "normal" }

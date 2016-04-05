@@ -23,7 +23,7 @@ exampleRandomItems
 				collect:
 					[ :e | AltRandomItemExample new parent: tree; item: e * (10 ** (1 to: 10) atRandom) ]).
 	tree expand.
-	morph := AltTreeMorph new.
+	morph := AltListMorph new.
 	morph model: tree.
 	morph extent: 300 @ 1000.
 	morph openInWindow.

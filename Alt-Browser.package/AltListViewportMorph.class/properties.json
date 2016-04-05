@@ -1,5 +1,5 @@
 {
-	"category" : "Alt-Browser-Tree",
+	"category" : "Alt-Browser-List",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -14,7 +14,7 @@
 		"ensureVisibleSelection",
 		"cachedModelSize",
 		"maximumWidth" ],
-	"name" : "AltTreeViewportMorph",
+	"name" : "AltListViewportMorph",
 	"pools" : [
 		 ],
 	"super" : "Morph",

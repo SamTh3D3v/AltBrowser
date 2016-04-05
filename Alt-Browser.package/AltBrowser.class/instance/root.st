@@ -10,5 +10,5 @@ root
 				yourself.
 			root announcer weak
 				when: AltSelectionChanged send: #updateSelection to: self;
-				when: AltTreeChanged send: #updateSelection to: self.
+				when: AltListChanged send: #updateSelection to: self.
 			root ]

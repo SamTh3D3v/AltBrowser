@@ -17,7 +17,7 @@ exampleTree1
 						item: e;
 						parent: tree;
 						childrenBlock: [ :c | c subclasses sort: [ :a :b | a name < b name ] ] ]).
-	morph := AltTreeMorph new.
+	morph := AltListMorph new.
 	morph model: tree.
 	morph extent: 300 @ 700.
 	morph openInWindow.

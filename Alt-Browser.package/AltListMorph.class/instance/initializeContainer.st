@@ -1,4 +1,4 @@
 initialization
 initializeContainer
-	viewport := AltTreeViewportMorph new.
+	viewport := AltListViewportMorph new.
 	self addMorph: viewport

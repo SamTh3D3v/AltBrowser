@@ -36,9 +36,9 @@ drawSubmorphsOn: canvas
 				borderWidth: 1
 				borderColor: self owner selectionColor ].
 	(self exposedItems at: self owner dropIndex ifAbsent: [  ])
-		ifNotNil: [ :selectedRow | 
+		ifNotNil: [ :dropRow | 
 			canvas
-				frameAndFillRectangle: selectedRow bounds
+				frameAndFillRectangle: dropRow bounds
 				fillColor: Color transparent
 				borderWidth: 1
 				borderColor: self owner selectionColor ].

@@ -3,7 +3,7 @@ execute
 	"Category name checking is done here. It is extracted from Nautilus, but is it correct?"
 
 	| newName systemCategory |
-	systemCategory := requestor selectedNode item categoryName.
+	systemCategory := requestor selectedNode item packageTag categoryName.
 	newName := UIManager default
 		request: 'New name of the category'
 		initialAnswer: systemCategory

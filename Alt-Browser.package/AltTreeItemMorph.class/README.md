@@ -1,3 +1,1 @@
-I represent a tree item
-
-Do I need to know about my parent and children? Probably not, a dumb morph is probably close to being enough.
+I represent a tree item. I am able to properly build a morphic representation of the item I represent, this is all.

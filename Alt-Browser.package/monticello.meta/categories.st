@@ -7,9 +7,9 @@ SystemOrganization addCategory: 'Alt-Browser-Commands-Navigation'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Refactoring'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Text'!
 SystemOrganization addCategory: 'Alt-Browser-Core'!
+SystemOrganization addCategory: 'Alt-Browser-List'!
 SystemOrganization addCategory: 'Alt-Browser-Nodes'!
 SystemOrganization addCategory: 'Alt-Browser-Settings'!
 SystemOrganization addCategory: 'Alt-Browser-Tests'!
-SystemOrganization addCategory: 'Alt-Browser-Tree'!
 SystemOrganization addCategory: 'Alt-Browser-Versions'!
 SystemOrganization addCategory: 'Alt-Browser-Watchpoints'!

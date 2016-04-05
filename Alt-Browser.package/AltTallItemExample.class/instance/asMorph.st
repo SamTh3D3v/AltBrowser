@@ -1,10 +1,7 @@
 user interface
 asMorph
 	^ super asMorph
-		font:
-			(LogicalFont
-				familyName: 'Source Sans Pro'
-				pointSize: (10 + 50 atRandom) rounded);
+		height: self height;
 		color: (Color wheel: 12) atRandom;
 		highlightForDrop: true;
 		yourself

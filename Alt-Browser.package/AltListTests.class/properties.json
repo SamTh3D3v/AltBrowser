@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltTreeMorph2",
+	"name" : "AltListTests",
 	"pools" : [
 		 ],
-	"super" : "AltTreeMorph",
+	"super" : "TestCase",
 	"type" : "normal" }

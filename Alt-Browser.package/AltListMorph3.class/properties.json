@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltTreeViewportMorph2",
+	"name" : "AltListMorph3",
 	"pools" : [
 		 ],
-	"super" : "AltTreeViewportMorph",
+	"super" : "AltListMorph",
 	"type" : "normal" }

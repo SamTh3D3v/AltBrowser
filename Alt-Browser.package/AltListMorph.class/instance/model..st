@@ -8,7 +8,7 @@ model: anAltTreeItemModel
 	anAltTreeItemModel
 		ifNotNil:
 			[ anAltTreeItemModel announcer weak
-				when: AltTreeChanged send: #refresh to: self;
+				when: AltListChanged send: #refresh to: self;
 				when: AltSelectionChanged send: #updateSelection: to: self ].
 	model := anAltTreeItemModel.
 	self resetPosition.

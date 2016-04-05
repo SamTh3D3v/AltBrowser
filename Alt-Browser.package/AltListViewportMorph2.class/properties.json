@@ -1,14 +1,14 @@
 {
-	"category" : "Alt-Browser-Tree",
+	"category" : "Alt-Browser-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"tree" ],
-	"name" : "AltTreeChanged",
+		 ],
+	"name" : "AltListViewportMorph2",
 	"pools" : [
 		 ],
-	"super" : "Announcement",
+	"super" : "AltListViewportMorph",
 	"type" : "normal" }

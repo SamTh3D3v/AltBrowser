@@ -15,5 +15,5 @@ changed
 						ifTrue: [ selectedItem := nil.
 							selectedIndex := 0 ]
 						ifFalse: [ selectedIndex := i ] ].
-			self doAnnounce: (AltTreeChanged on: self) ]
+			self doAnnounce: (AltListChanged on: self) ]
 		ifNotNil: [ :p | p changed ]
