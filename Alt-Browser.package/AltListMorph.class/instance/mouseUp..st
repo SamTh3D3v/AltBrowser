@@ -5,7 +5,6 @@ mouseUp: event
 	index
 		ifNotNil: [ self selectRowIndex: index ]
 		ifNil: [ self selectRowIndex: 0 ].
-	event logCr.
 	"check for right click (menu)"
 	(event yellowButtonPressed
 		and: [ (self commandOrCrontrolKeyPressed: event) not ])
