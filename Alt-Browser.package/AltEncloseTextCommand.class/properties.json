@@ -7,8 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltParenthesisTextCommand",
+	"name" : "AltEncloseTextCommand",
 	"pools" : [
 		 ],
-	"super" : "AltEncloseTextCommand",
+	"super" : "AltCommand",
 	"type" : "normal" }

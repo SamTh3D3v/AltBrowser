@@ -1,0 +1,3 @@
+accessing
+openingChar
+	^ self subclassResponsability

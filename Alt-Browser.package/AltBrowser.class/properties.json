@@ -21,7 +21,6 @@
 		"finder",
 		"finderUI",
 		"toolbar",
-		"isSelectionUpdate",
 		"commentMorph",
 		"selection" ],
 	"name" : "AltBrowser",
