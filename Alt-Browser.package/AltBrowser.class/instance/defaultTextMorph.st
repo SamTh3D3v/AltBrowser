@@ -2,7 +2,7 @@ view
 defaultTextMorph
 	PluggableTextMorph stylingClass isNil
 		ifTrue: [ PluggableTextMorph stylingClass: SHTextStylerST80 ].
-	^ (PluggableTextMorph
+	^ (AltPluggableTextMorph
 		on: self source
 		text: #contents
 		accept: #contents:

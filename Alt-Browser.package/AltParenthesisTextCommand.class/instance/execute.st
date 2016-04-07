@@ -5,9 +5,7 @@ execute
 	| interval |
 	interval := target trueSelectionInterval.
 	interval size = 0
-		ifTrue: [ target textMorph editor addString: '('.
-			target textMorph editor selectAt: interval first + 1.
-			target selectionInterval: target textMorph editor selectionInterval ]
+		ifTrue: [ target textMorph simulateKeyStroke: $( ]
 		ifFalse: [ target
 				handleEdit:
 					[ target textMorph editor addString: '(' , target trueSelection , ')' ] ]
