@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ Character arrowRight command
+	^ Character arrowRight ctrl

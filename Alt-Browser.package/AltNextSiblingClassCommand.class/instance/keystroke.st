@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $n command, $d
+	^ $n ctrl, $d

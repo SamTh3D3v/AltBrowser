@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"handleError:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"handleFailure:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"handleWarning:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"internalPerformRefactoring:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"internalPerformRefactorings:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"performRefactoring:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"performRefactorings:" : "ThierryGoubier 6/30/2015 23:12:07",
-		"promptOnRefactoring" : "ThierryGoubier 6/30/2015 23:12:07",
-		"refactoringOptions:" : "ThierryGoubier 6/30/2015 23:12:07" } }
+		"handleError:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"handleFailure:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"handleWarning:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"internalPerformRefactoring:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"internalPerformRefactorings:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"performRefactoring:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"performRefactorings:" : "ThierryGoubier 10/21/2015 11:52:46",
+		"promptOnRefactoring" : "ThierryGoubier 10/21/2015 11:52:46",
+		"refactoringOptions:" : "ThierryGoubier 10/21/2015 11:52:46" } }

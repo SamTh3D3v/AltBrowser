@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $p command
+	^ $p ctrl

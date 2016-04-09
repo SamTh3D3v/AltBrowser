@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $d command shift
+	^ $d ctrl shift

@@ -1,3 +1,3 @@
 accessing
 keystroke
-	^ $c command
+	^ $c ctrl
