@@ -2,17 +2,37 @@ execution
 execute
 	"Either add the character or put parenthesis around the selection. Remove the parenthesis around the selection if they exist."
 
-	| interval text int aTextMorph |
+	"What I need in fact are the character just before the selection and just after the selection."
+
+	| interval text int aTextMorph beforeChar afterChar |
 	interval := target trueSelectionInterval.
 	aTextMorph := target textMorph.
 	text := aTextMorph text.
+	beforeChar := self
+		textMorph: aTextMorph
+		characterAt: interval first - 1.
+	afterChar := self
+		textMorph: aTextMorph
+		characterAt: interval last + 1.
 	aTextMorph
 		handleEdit: [ interval size = 0
-				ifTrue: [ aTextMorph simulateKeyStroke: self openingChar ]
+				ifTrue: [ (' 	
+' includes: afterChar)
+						ifTrue: [ aTextMorph
+								replaceSelectionWith:
+									(String
+										with: self openingChar
+										with: $ 
+										with: $ 
+										with: self closingChar).
+							aTextMorph
+								selectFrom: interval first + 2
+								to: interval first + 1 ]
+						ifFalse: [ aTextMorph simulateKeyStroke: self openingChar ] ]
 				ifFalse:
 					[ int := (interval first - 1 max: 1) to: (interval last + 1 min: text size).
-					((text at: int first) = self openingChar
-						and: [ (text at: int last) = self closingChar ])
+					(beforeChar = self openingChar
+						and: [ afterChar = self closingChar ])
 						ifTrue: [ aTextMorph selectFrom: int first to: int last.
 							aTextMorph
 								replaceSelectionWith: (text copyFrom: interval first to: interval last) ]
