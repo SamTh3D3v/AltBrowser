@@ -17,16 +17,11 @@ execute
 	aTextMorph
 		handleEdit: [ interval size = 0
 				ifTrue: [ (afterChar isNil or: [ afterChar isSeparator ])
-						ifTrue: [ aTextMorph
-								replaceSelectionWith:
-									(String
-										with: self openingChar
-										with: $ 
-										with: $ 
-										with: self closingChar).
-							aTextMorph
-								selectFrom: interval first + 2
-								to: interval first + 1 ]
+						ifTrue: [ | newPos |
+							aTextMorph replaceSelectionWith: self emptyEnclosingString.
+							newPos := interval first
+								+ (self emptyEnclosingString size / 2) truncated.
+							aTextMorph selectFrom: newPos to: newPos - 1 ]
 						ifFalse: [ aTextMorph simulateKeyStroke: self openingChar ] ]
 				ifFalse:
 					[ int := (interval first - 1 max: 1) to: (interval last + 1 min: text size).
