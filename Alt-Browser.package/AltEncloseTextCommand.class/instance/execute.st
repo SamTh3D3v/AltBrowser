@@ -16,8 +16,7 @@ execute
 		characterAt: interval last + 1.
 	aTextMorph
 		handleEdit: [ interval size = 0
-				ifTrue: [ (' 	
-' includes: afterChar)
+				ifTrue: [ (afterChar isNil or: [ afterChar isSeparator ])
 						ifTrue: [ aTextMorph
 								replaceSelectionWith:
 									(String
