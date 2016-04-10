@@ -1,4 +1,4 @@
-accessing
+private
 doItContext
 
 	^ nil

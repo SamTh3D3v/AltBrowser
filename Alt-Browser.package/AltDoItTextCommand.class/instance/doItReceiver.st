@@ -1,4 +1,4 @@
-accessing
+private
 doItReceiver
 
 	^ requestor selectedNode sourceClass
