@@ -18,7 +18,7 @@ exampleTallItems
 				collect:
 					[ :e | AltTallItemExample new parent: tree; item: e * (10 ** (1 to: 10) atRandom) ]).
 	tree expand.
-	morph := AltListMorph3 new.
+	morph := AltListMorph new.
 	morph model: tree.
 	morph extent: 300 @ 200.
 	morph openInWindow.
