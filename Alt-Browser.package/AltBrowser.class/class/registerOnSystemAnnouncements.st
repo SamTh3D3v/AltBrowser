@@ -7,7 +7,7 @@ registerOnSystemAnnouncements
 	"I do need to track system categories. RPackageTag is a bit erratic, yet. Not tracking ProtocolRemoved and ProtocolAdded."
 
 	SystemAnnouncer uniqueInstance unsubscribe: self.
-	SystemAnnouncer uniqueInstance weak
+	SystemAnnouncer uniqueInstance
 		when: MCWorkingCopyCreated send: #aMCWorkingCopyCreated: to: self;
 		when: MCWorkingCopyDeleted send: #aMCWorkingCopyDeleted: to: self;
 		when: MCPackageModified send: #aMCWorkingCopyModified: to: self;
@@ -27,6 +27,6 @@ registerOnSystemAnnouncements
 		when: ClassModifiedClassDefinition send: #aClassModifiedClassDefinition: to: self;
 		when: MetalinkChanged send: #aMetalinkChanged: to: self.
 	RPackage organizer announcer unsubscribe: self.
-	RPackage organizer announcer weak
+	RPackage organizer announcer
 		when: RPackageUnregistered send: #aRPackageUnregistered: to: self;
 		when: RPackageRegistered send: #aRPackageCreated: to: self

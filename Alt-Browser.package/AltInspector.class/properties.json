@@ -1,0 +1,16 @@
+{
+	"category" : "Alt-Browser-Inspector",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"object",
+		"treeMorph",
+		"textMorph" ],
+	"name" : "AltInspector",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
