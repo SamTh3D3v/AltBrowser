@@ -1,9 +1,9 @@
 user interface
 defaultTextMorph
 	^ (AltPluggableTextMorph
-		on: self source
-		text: #contents
-		accept: #contents:
+		on: self
+		text: nil
+		accept: nil
 		readSelection: nil
 		menu: #buildTextMenu:)
 		font: StandardFonts codeFont;

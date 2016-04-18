@@ -8,7 +8,8 @@
 	"instvars" : [
 		"object",
 		"treeMorph",
-		"textMorph" ],
+		"textMorph",
+		"window" ],
 	"name" : "AltInspector",
 	"pools" : [
 		 ],

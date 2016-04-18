@@ -1,0 +1,1 @@
+ctrl+i or inspect it command.

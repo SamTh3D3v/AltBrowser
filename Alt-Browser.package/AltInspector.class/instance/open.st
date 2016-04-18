@@ -2,7 +2,7 @@ user interface
 open
 	"Open the window, as simple as that."
 
-	| pane group groupText window |
+	| pane group |
 	pane := PanelMorph new
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
@@ -17,12 +17,6 @@ open
 		fillStyle: Color transparent;
 		changeProportionalLayout;
 		yourself.	"non pane color tracking"
-	groupText := Morph new
-		fillStyle: Color transparent;
-		changeTableLayout;
-		cellInset: 0;
-		cellPositioning: #leftCenter;
-		yourself.	"non pane color tracking"
 	window := Smalltalk ui theme
 		newWindowIn: World
 		for: self
@@ -30,7 +24,6 @@ open
 	window addMorph: pane frame: (0 @ 0 corner: 1 @ 1).
 	treeMorph := self defaultTreeMorph.
 	textMorph := self defaultTextMorph.
-	groupText addMorph: textMorph.
 	treeMorph
 		on: #keyStroke
 		send: #startSearch:for:
@@ -44,7 +37,7 @@ open
 				topLeftOffsets: 1 @ 0
 				bottomRightOffsets: -1 @ -1).
 	group
-		addMorph: groupText
+		addMorph: textMorph
 		fullFrame:
 			(AltLayoutFrame
 				fractions: (0.0 @ 0.7 corner: 1.0 @ 1.0)
@@ -53,14 +46,15 @@ open
 	group
 		addMorph:
 			(ProportionalSplitterMorph new
+				beSplitsTopAndBottom;
 				layoutFrame:
 					(AltLayoutFrame
 						fractions: (0.0 @ 0.7 corner: 1.0 @ 0.7)
 						topLeftOffsets: -1 @ -1
 						bottomRightOffsets: 1 @ 1);
 				addLeftOrTop: treeMorph;
-				addRightOrBottom: groupText).
-	window minimumExtent: 500 @ 500.
+				addRightOrBottom: textMorph).
+	window minimumExtent: 200 @ 300.
 	window open.
 	self
 		updateTreeKeymap;

@@ -1,1 +1,0 @@
-Toggle the comment pane (bottom left)

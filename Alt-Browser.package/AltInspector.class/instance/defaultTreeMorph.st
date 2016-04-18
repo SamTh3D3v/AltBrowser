@@ -1,5 +1,5 @@
 user interface
 defaultTreeMorph
 	^ AltListMorph new
-		model: self root;
+		model: self object;
 		yourself

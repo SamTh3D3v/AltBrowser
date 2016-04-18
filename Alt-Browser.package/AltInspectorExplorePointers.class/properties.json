@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"model" ],
-	"name" : "AltEyeTreeItemModel",
+		 ],
+	"name" : "AltInspectorExplorePointers",
 	"pools" : [
 		 ],
-	"super" : "AltTreeItemModel",
+	"super" : "AltCommand",
 	"type" : "normal" }

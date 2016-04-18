@@ -1,5 +1,5 @@
 {
-	"category" : "Alt-Browser-Commands",
+	"category" : "Alt-Browser-Inspector",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltCommentCommand",
+	"name" : "AltInspectorInspect",
 	"pools" : [
 		 ],
 	"super" : "AltCommand",

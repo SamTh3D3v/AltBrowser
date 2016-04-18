@@ -1,0 +1,3 @@
+accessing
+label
+	^ 'Explore pointers'

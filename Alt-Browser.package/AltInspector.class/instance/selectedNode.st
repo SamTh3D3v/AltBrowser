@@ -1,0 +1,3 @@
+selection
+selectedNode
+	^ object selectedItem
