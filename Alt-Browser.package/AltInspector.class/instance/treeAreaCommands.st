@@ -1,3 +1,4 @@
 commands
 treeAreaCommands
-	^ #(#AltSelectNextItem #AltSelectPreviousItem #AltSelectMoveDown #AltSelectMoveUp #AltInspectorInspect #AltInspectorBrowseFull)
+	<treeAreaCommands>
+	^ #(#AltSelectNextItem #AltSelectPreviousItem #AltSelectMoveDown #AltSelectMoveUp #AltInspectorInspect #AltInspectorBrowseFull #AltInspectorExplorePointers #AltInspectorBrowseHierarchy)

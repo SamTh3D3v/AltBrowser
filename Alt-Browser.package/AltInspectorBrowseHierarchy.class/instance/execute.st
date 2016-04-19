@@ -1,0 +1,3 @@
+execution
+execute
+	requestor selectedObject class browseHierarchy

@@ -1,2 +1,3 @@
 execution
 execute
+	EyePointerExplorer openOn: requestor selectedObject
