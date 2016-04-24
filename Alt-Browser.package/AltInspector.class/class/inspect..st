@@ -1,5 +1,12 @@
-as yet unclassified
+instance creation
 inspect: anObject
 	^ self new
-		object: (AltEyeTreeItemModel on: (RootEyeElement host: anObject));
+		object:
+			(AltEyeTreeItemModel new
+				contents:
+					(Array
+						with:
+							((AltEyeTreeItemModel on: (RootEyeElement host: anObject))
+								isExpanded: true));
+				yourself);
 		open

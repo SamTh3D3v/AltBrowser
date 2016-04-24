@@ -2,7 +2,6 @@
 asAltTree
 	"Hidden root."
 
-	| root |
-	root := AltTreeItemModel new.
-	root contents: (Array with: (self asAltTreeItem parent: root)).
-	^ root
+	^ AltTreeItemModel new
+		contents: (Array with: self asAltTreeItem);
+		yourself
