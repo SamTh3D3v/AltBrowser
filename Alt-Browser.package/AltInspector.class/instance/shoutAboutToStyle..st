@@ -1,0 +1,3 @@
+accessing
+shoutAboutToStyle: aMorph
+	^ true

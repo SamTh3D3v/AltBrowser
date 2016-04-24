@@ -1,0 +1,3 @@
+accessing
+aboutToStyle: aBoolean
+	^ true

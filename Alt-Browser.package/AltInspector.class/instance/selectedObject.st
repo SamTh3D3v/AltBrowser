@@ -1,3 +1,4 @@
 selection
 selectedObject
-	^ object selectedItem item value
+	^ object selectedItem
+		ifNotNil: [ :anItemModel | anItemModel item value ]

@@ -2,7 +2,7 @@ user interface
 defaultTextMorph
 	^ (AltPluggableTextMorph
 		on: self
-		text: nil
+		text: #source
 		accept: nil
 		readSelection: nil
 		menu: #buildTextMenu:)

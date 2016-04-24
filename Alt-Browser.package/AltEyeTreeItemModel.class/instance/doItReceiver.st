@@ -1,0 +1,3 @@
+accessing
+doItReceiver
+	^ item value

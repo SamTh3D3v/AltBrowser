@@ -24,6 +24,7 @@ open
 	window addMorph: pane frame: (0 @ 0 corner: 1 @ 1).
 	treeMorph := self defaultTreeMorph.
 	textMorph := self defaultTextMorph.
+	textMorph styler workspace: self.
 	treeMorph
 		on: #keyStroke
 		send: #startSearch:for:
