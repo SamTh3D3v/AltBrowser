@@ -56,8 +56,10 @@ open
 				addLeftOrTop: treeMorph;
 				addRightOrBottom: textMorph).
 	window minimumExtent: 200 @ 300.
+	window extent: 300@500.
 	window open.
 	self
 		updateTreeKeymap;
-		updateTextKeymap.
+		updateTextKeymap;
+		updateSelection.
 	treeMorph takeKeyboardFocus

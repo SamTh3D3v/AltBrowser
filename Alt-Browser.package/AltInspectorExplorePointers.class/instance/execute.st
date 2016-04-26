@@ -1,3 +1,4 @@
 execution
 execute
-	EyePointerExplorer openOn: requestor selectedObject
+	""
+	Smalltalk tools pointerExplorer openStrongOn: requestor selectedObject
