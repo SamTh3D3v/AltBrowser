@@ -8,4 +8,4 @@ mouseUp: event
 	"check for right click (menu)"
 	(event yellowButtonPressed
 		and: [ (self commandOrCrontrolKeyPressed: event) not ])
-		ifTrue: [ self showMenuForPosition: event cursorPoint ]
+		ifTrue: [ self showMenuForRowIndex: index ]

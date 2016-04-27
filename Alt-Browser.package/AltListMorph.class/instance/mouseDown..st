@@ -5,7 +5,8 @@ mouseDown: anEvent
 	anEvent hand newMouseFocus: self event: anEvent.
 	(anEvent yellowButtonPressed
 		and: [ (self commandOrCrontrolKeyPressed: anEvent) not ])
-		ifTrue: [ self showMenuForPosition: anEvent cursorPoint ]
+		ifTrue: [ self
+				showMenuForRowIndex: (self viewport rowIndexContainingPoint: anEvent cursorPoint) ]
 		ifFalse: [ anEvent hand
 				waitForClicksOrDrag: self
 				event: anEvent
