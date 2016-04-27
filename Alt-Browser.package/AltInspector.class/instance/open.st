@@ -34,14 +34,14 @@ open
 		addMorph: treeMorph
 		fullFrame:
 			(AltLayoutFrame
-				fractions: (0.0 @ 0.0 corner: 1.0 @ 0.7)
+				fractions: (0.0 @ 0.0 corner: 1.0 @ 0.8)
 				topLeftOffsets: 1 @ 0
 				bottomRightOffsets: -1 @ -1).
 	group
 		addMorph: textMorph
 		fullFrame:
 			(AltLayoutFrame
-				fractions: (0.0 @ 0.7 corner: 1.0 @ 1.0)
+				fractions: (0.0 @ 0.8 corner: 1.0 @ 1.0)
 				topLeftOffsets: 1 @ 1
 				bottomRightOffsets: -1 @ 0).
 	group
@@ -50,13 +50,12 @@ open
 				beSplitsTopAndBottom;
 				layoutFrame:
 					(AltLayoutFrame
-						fractions: (0.0 @ 0.7 corner: 1.0 @ 0.7)
+						fractions: (0.0 @ 0.8 corner: 1.0 @ 0.8)
 						topLeftOffsets: -1 @ -1
 						bottomRightOffsets: 1 @ 1);
 				addLeftOrTop: treeMorph;
 				addRightOrBottom: textMorph).
 	window minimumExtent: 200 @ 300.
-	window extent: 300@500.
 	window open.
 	self
 		updateTreeKeymap;
