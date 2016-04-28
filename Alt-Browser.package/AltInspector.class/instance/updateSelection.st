@@ -7,4 +7,9 @@ updateSelection
 	modelSelection isNil
 		ifTrue: [ textMorph ifNotNil: [ :t | t classOrMetaClass: nil ] ]
 		ifFalse: [ textMorph
-				ifNotNil: [ :t | t classOrMetaClass: self selectedObject class ] ]
+				ifNotNil: [ :t | 
+					| flag |
+					flag := t hasUnacceptedEdits.
+					t classOrMetaClass: self selectedObject class.
+					t setText: t text.
+					t hasUnacceptedEdits: flag ] ]
