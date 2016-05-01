@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"model" ],
+		"model",
+		"copy" ],
 	"name" : "AltEyeTreeItemModel",
 	"pools" : [
 		 ],

@@ -18,4 +18,4 @@ altBrowserSettingsOn: aBuilder
 					(aBuilder nodeClass: AltSettingDeclaration name: #categoriesAsSetting)
 						label: 'Default Categories' translated;
 						target: self;
-						description: 'List the default categories tree as customized by the user.' translated ]
+						description: 'List the categories tree as customized by the user.' translated ]

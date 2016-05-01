@@ -1,0 +1,3 @@
+stepping
+wantsStepsIn: aSystemWindow
+	^ true
