@@ -1,0 +1,1 @@
+Search for a symbol uses (senders)

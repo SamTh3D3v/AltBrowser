@@ -4,7 +4,7 @@ execute
 	anEnvironment := requestor rbEnvironment isSelectorEnvironment
 		ifTrue: [ requestor rbEnvironment environment ]
 		ifFalse: [ requestor rbEnvironment ].
-	aSelector := self node selector.
+	aSelector := self node value.
 	classDict := IdentityDictionary new.
 	anEnvironment
 		classesAndMetaClassesDo: [ :class | 

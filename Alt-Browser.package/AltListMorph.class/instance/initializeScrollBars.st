@@ -1,6 +1,6 @@
 initialization
 initializeScrollBars
-	"Add a vertical scrollbar. An horizontal one is also needed, often."
+	"Add both a vertical scrollbar and an horizontal scrollbar."
 
 	verticalScrollBar := ScrollBar new
 		model: self;

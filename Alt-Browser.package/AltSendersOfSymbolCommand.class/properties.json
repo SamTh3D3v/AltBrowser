@@ -7,7 +7,7 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		 ],
-	"name" : "AltReferencesOfSymbolCommand",
+	"name" : "AltSendersOfSymbolCommand",
 	"pools" : [
 		 ],
 	"super" : "AltAstNodeCommand",
