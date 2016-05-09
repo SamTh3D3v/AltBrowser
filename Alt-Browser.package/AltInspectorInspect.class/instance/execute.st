@@ -1,3 +1,3 @@
 execution
 execute
-	requestor selectedItem item value explore
+	requestor selectedItem item value inspect
