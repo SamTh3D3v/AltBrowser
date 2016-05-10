@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Inspector",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltTreeGTILabelModel",
+	"pools" : [
+		 ],
+	"super" : "AltTreeItemModel",
+	"type" : "normal" }
