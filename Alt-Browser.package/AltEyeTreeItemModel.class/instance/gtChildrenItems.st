@@ -16,4 +16,4 @@ gtChildrenItems
 				withArguments: (Array with: composite)
 				inClass: item value class ].
 	^ composite presentations
-	"		select: [ :p | p condition glamourValue: p entity ]"
+		select: [ :p | p condition glamourValue: item value ]
