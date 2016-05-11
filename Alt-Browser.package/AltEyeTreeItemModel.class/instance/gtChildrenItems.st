@@ -1,5 +1,7 @@
 accessing
 gtChildrenItems
+	"Filtering require the entity to be set in the pane of each presentation. Have to find out how."
+
 	| composite |
 	composite := GLMCompositePresentation new.
 	(((Pragma
@@ -13,5 +15,5 @@ gtChildrenItems
 				perform: e selector
 				withArguments: (Array with: composite)
 				inClass: item value class ].
-	composite presentations logCr.
 	^ composite presentations
+	"		select: [ :p | p condition glamourValue: p entity ]"
