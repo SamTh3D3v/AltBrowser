@@ -4,6 +4,7 @@ gtChildrenItems
 
 	| composite |
 	composite := GLMCompositePresentation new.
+	composite entity: item value.
 	(((Pragma
 		allNamed: GTInspector extensionsPragma
 		from: item value class

@@ -1,3 +1,6 @@
 user interface
 asMorph
-	^ GLMMorphicRenderer new render: item
+	^ (GLMMorphicRenderer new render: item)
+		extent: 300 @ 300;
+		computeBounds;
+		yourself
