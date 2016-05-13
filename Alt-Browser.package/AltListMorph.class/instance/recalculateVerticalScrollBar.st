@@ -18,7 +18,8 @@ recalculateVerticalScrollBar
 				/ (v effectiveHeight / v height asFloat).
 			numberOfRows := v modelSize asFloat.
 			interval := visibleRows / numberOfRows.
-			delta := 1.0 / numberOfRows / (v height / 24.0 / visibleRows).
+			delta := 1.0 / numberOfRows
+				/ ((v exposedItems at: v baselineIndex) height / 24.0).
 			pageDelta := interval max: delta.
 			self verticalScrollBar
 				scrollDelta: delta pageDelta: pageDelta;
