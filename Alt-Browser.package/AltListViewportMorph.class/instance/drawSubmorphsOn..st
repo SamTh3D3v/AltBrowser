@@ -6,7 +6,7 @@ drawSubmorphsOn: canvas
 	code call self changed like a prayer, even if apparently not needed. As in,
 	let's call changed, just, like, well, it could be needed?"
 
-	| x y rowsToDisplay rowSubviews selectionIndex dropIndex |
+	| x y rowsToDisplay rowSubviews |
 	self bounds ifNil: [ ^ self ].	"Nothing to show yet"
 	self owner ifNil: [ ^ self ].
 	self updateItemsOrRows
@@ -15,8 +15,6 @@ drawSubmorphsOn: canvas
 			rowSubviews := OrderedCollection new: rowsToDisplay size + 1.
 			x := self left + 2 - self leftOffset.
 			y := self top + topOffset.
-			selectionIndex := self owner selectedRowIndex.
-			dropIndex := self owner dropIndex.
 			rowsToDisplay
 				do: [ :rowIndex | 
 					| row |
@@ -42,4 +40,5 @@ drawSubmorphsOn: canvas
 				fillColor: Color transparent
 				borderWidth: 1
 				borderColor: self owner selectionColor ].
+	self owner resizeAllSubviews.	"Force a recompute / display of the scrollbars."
 	needsRefreshRows := false

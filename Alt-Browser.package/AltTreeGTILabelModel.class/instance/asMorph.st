@@ -1,3 +1,3 @@
 user interface
 asMorph
-	^ item title asStringMorph
+	^ ('GT:' , item title) asStringMorph

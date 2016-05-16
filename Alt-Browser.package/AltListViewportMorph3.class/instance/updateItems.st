@@ -1,6 +1,6 @@
-updating
+as yet unclassified
 updateItems
-	"This is a full update from the model. Reset all cached data."
+	"Found it, under certain circumstances, this code misses the fact that the bottom isn't at the bottom (depending on ligne progress). Overall, I think this is too complex and I need to make it simpler."
 
 	| index iUp iDown yDown yUp visibleHeight row upStream downStream |
 	index := self baselineIndex.
@@ -17,30 +17,22 @@ updateItems
 	iDown := index.
 	downStream := self owner model asReadStream.
 	downStream skip: iDown.
-	[ yUp > 0 and: [ upStream atEnd not ] ]
-		whileTrue: [ row := self rowMorphForItem: upStream next.
-			exposedItems at: iUp put: row.
-			yUp := yUp - row height.
-			iUp := iUp - 1 ].
-	yUp > 0
-		ifTrue: [ yDown := yDown - yUp.
-			yUp := 0 ].	"Make sure there is no empty space on top."
 	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
 		whileTrue: [ iDown := iDown + 1.
 			row := self rowMorphForItem: downStream next.
 			exposedItems at: iDown put: row.
 			yDown := yDown + row height ].
-	(downStream atEnd and: [ yDown < visibleHeight ])
-		ifTrue:
-			[ yUp := yUp + visibleHeight - yDown.	"Make sure there is no empty space past the end, if possible."
+	(downStream atEnd
+		and: [ yDown < visibleHeight and: [ upStream atEnd not ] ])
+		ifTrue: [ yUp := yUp + visibleHeight - yDown.
 			[ yUp > 0 and: [ upStream atEnd not ] ]
 				whileTrue: [ row := self rowMorphForItem: upStream next.
 					exposedItems at: iUp put: row.
 					yUp := yUp - row height.
-					iUp := iUp - 1 ].
-			yUp > 0
-				ifTrue: [ yDown := yDown - yUp.
-					yUp := 0 ] ].	"Make sure there is no empty space on top."
+					iUp := iUp - 1 ] ].
+	yUp > 0
+		ifTrue: [ yDown := yDown - yUp.
+			yUp := 0 ].	"Make sure there is no empty space on top."
 	topOffset := yUp.
 	bottomOffset := yDown.
 	exposedItems values

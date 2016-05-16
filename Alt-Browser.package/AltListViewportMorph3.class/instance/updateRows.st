@@ -1,4 +1,4 @@
-updating
+as yet unclassified
 updateRows
 	"Model hasn't changed, just complement missing rows."
 
@@ -21,18 +21,6 @@ updateRows
 	downStream := self owner model asReadStream
 		skip: iDown;
 		yourself.
-	[ yUp > 0 and: [ upStream atEnd not ] ]
-		whileTrue: [ | item |
-			item := upStream next.
-			row := oldExposedItems
-				at: iUp
-				ifAbsent: [ self rowMorphForItem: item ].
-			exposedItems at: iUp put: row.
-			yUp := yUp - row height.
-			iUp := iUp - 1 ].
-	yUp > 0
-		ifTrue: [ yDown := yDown - yUp.
-			yUp := 0 ].	"Make sure there is no empty space on top."
 	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
 		whileTrue: [ | item |
 			iDown := iDown + 1.
@@ -42,9 +30,9 @@ updateRows
 				ifAbsent: [ self rowMorphForItem: item ].
 			exposedItems at: iDown put: row.
 			yDown := yDown + row height ].
-	(downStream atEnd and: [ yDown < visibleHeight ])
-		ifTrue:
-			[ yUp := yUp + visibleHeight - yDown.	"Make sure there is no empty space past the end, if possible."
+	(downStream atEnd
+		and: [ yDown < visibleHeight and: [ upStream atEnd not ] ])
+		ifTrue: [ yUp := yUp + visibleHeight - yDown.
 			[ yUp > 0 and: [ upStream atEnd not ] ]
 				whileTrue: [ | item |
 					item := upStream next.
@@ -53,10 +41,10 @@ updateRows
 						ifAbsent: [ self rowMorphForItem: item ].
 					exposedItems at: iUp put: row.
 					yUp := yUp - row height.
-					iUp := iUp - 1 ].
-			yUp > 0
-				ifTrue: [ yDown := yDown - yUp.
-					yUp := 0 ] ].
+					iUp := iUp - 1 ] ].
+	yUp > 0
+		ifTrue: [ yDown := yDown - yUp.
+			yUp := 0 ].	"Make sure there is no empty space on top."
 	topOffset := yUp.
 	bottomOffset := yDown.
 	exposedItems values
