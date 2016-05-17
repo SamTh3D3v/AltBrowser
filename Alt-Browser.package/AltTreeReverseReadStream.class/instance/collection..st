@@ -3,10 +3,12 @@ collection: anObject
 	"If a collection is added, then prepare the stack to make sure next will work."
 
 	"Do not use super; superclass may init itself differently."
+	
+	"A better initialisation scheme can be done if we need a point and a way to iterate both up and down, as it is the case in the list."
 
 	| aParent anItem |
 	collection := anObject.
-	position := 0.
+	position := 1.
 	collection
 		anySatisfy:
 			[ :each | 

@@ -4,7 +4,7 @@ next
 
 	"For the very first node, take in account the hidden root case."
 
-	position = 0
+	position <= 1
 		ifTrue: [ ^ nil ].
 	stack isEmpty
 		ifTrue: [ position := 0.

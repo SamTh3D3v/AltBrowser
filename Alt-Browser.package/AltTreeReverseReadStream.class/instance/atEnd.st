@@ -1,3 +1,3 @@
 testing
 atEnd
-	^ self position = 0
+	^ self position <= 1

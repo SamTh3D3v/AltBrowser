@@ -8,5 +8,6 @@ testDeepEndReversedStream
 	self assert: tree size = 7.
 	stream skip: 6.
 	self assert: stream next item = 1.
+	self assert: stream position = 1.
 	self assert: stream atEnd.
 	self assert: stream next isNil
