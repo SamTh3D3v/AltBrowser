@@ -1,10 +1,10 @@
-updating
-addRowsDown: yStart with: downStream cache: oldExposedItems limit: visibleHeight
+private
+addRowsDown: yStart with: downStream cache: oldExposedItems
 	"Add rows going up, updating yUp as it goes. Force yUp at the end to be <= 0. "
 
 	| yDown |
 	yDown := yStart.
-	[ yDown < visibleHeight and: [ downStream atEnd not ] ]
+	[ yDown < self height and: [ downStream atEnd not ] ]
 		whileTrue: [ | item row |
 			item := downStream next.
 			row := oldExposedItems
