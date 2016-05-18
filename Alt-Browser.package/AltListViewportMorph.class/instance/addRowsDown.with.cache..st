@@ -1,6 +1,6 @@
 private
 addRowsDown: yStart with: downStream cache: oldExposedItems
-	"Add rows going up, updating yUp as it goes. Force yUp at the end to be <= 0. "
+	"Add rows going down, increasing yDown (initial point yStart)."
 
 	| yDown |
 	yDown := yStart.
@@ -10,6 +10,6 @@ addRowsDown: yStart with: downStream cache: oldExposedItems
 			row := oldExposedItems
 				at: downStream position
 				ifAbsent: [ self rowMorphForItem: item ].
-			exposedItems at: downStream index put: row.
+			exposedItems at: downStream position put: row.
 			yDown := yDown + row height ].
 	^ yDown

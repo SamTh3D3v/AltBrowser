@@ -18,33 +18,18 @@ updateRows: oldExposedItems
 	exposedItems at: index put: row.
 	yUp := self getRowTop: row height.
 	yDown := yUp + row height.
-	[ yUp > 0 and: [ upStream atEnd not ] ]
-		whileTrue: [ item := upStream next.
-			row := oldExposedItems
-				at: upStream position
-				ifAbsent: [ self rowMorphForItem: item ].
-			exposedItems at: upStream position put: row.
-			yUp := yUp - row height ].
+	yUp := self addRowsUp: yUp with: upStream cache: oldExposedItems.
 	yUp > 0
 		ifTrue: [ yDown := yDown - yUp.
 			yUp := 0 ].	"Make sure there is no empty space on top."
-	[ yDown < self height and: [ downStream atEnd not ] ]
-		whileTrue: [ item := downStream next.
-			row := oldExposedItems
-				at: downStream position
-				ifAbsent: [ self rowMorphForItem: item ].
-			exposedItems at: downStream position put: row.
-			yDown := yDown + row height ].
+	yDown := self
+		addRowsDown: yDown
+		with: downStream
+		cache: oldExposedItems.
 	(downStream atEnd and: [ yDown < self height ])
 		ifTrue:
-			[ yUp := yUp + self height - yDown.	"Make sure there is no empty space past the end, if possible."
-			[ yUp > 0 and: [ upStream atEnd not ] ]
-				whileTrue: [ item := upStream next.
-					row := oldExposedItems
-						at: upStream position
-						ifAbsent: [ self rowMorphForItem: item ].
-					exposedItems at: upStream position put: row.
-					yUp := yUp - row height ].
+			[ yUp := yUp + self height - yDown.
+			yUp := self addRowsUp: yUp with: upStream cache: oldExposedItems.
 			yUp > 0
 				ifTrue: [ yDown := yDown - yUp.
 					yUp := 0 ] ].

@@ -1,6 +1,6 @@
 private
 addRowsUp: yStart with: upStream cache: oldExposedItems
-	"Add rows going up, updating yUp as it goes. Force yUp at the end to be <= 0. "
+	"Add rows going up, updating yUp as it goes. "
 
 	| yUp |
 	yUp := yStart.
