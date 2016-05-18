@@ -9,6 +9,7 @@ testReversedStream
 	self assert: stream position = 5.
 	self assert: stream next parent == (tree at: 2).
 	self assert: stream next item = 4.
+	self assert: stream position = 3.
 	self
 		assert:
 			(stream
