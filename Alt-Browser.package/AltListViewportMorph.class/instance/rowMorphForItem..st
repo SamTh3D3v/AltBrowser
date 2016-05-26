@@ -1,7 +1,7 @@
 private
 rowMorphForItem: anItem
 	| morph |
-	morph := anItem asTreeItemMorph.
+	morph := anItem asListItemMorphIn: self.
 	maximumWidth := maximumWidth max: morph right + 2.
 	^ Morph new
 		hResizing: #rigid;
