@@ -2,11 +2,14 @@ execution
 execute
 	"Treat the current selection as an expression; evaluate it."
 
+	"Note: I could use the environment in the compiler creation; there is a possibility
+	for that as visible in the Behavior>>#compiler implementation."
+
 	| result rcvr ctxt |
 	rcvr := self doItReceiver.
 	ctxt := self doItContext.
 	result := [ 
-	rcvr class compilerClass new
+	rcvr class compiler
 		evaluate: (ReadStream on: target trueSelection)
 		in: ctxt
 		to: rcvr
