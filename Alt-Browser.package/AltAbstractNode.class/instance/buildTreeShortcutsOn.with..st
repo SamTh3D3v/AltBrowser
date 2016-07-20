@@ -4,7 +4,7 @@ buildTreeShortcutsOn: aMorph with: aRequestor
 
 	(self pragmas: #treeAreaCommand from: self class to: AltAbstractNode)
 		do: [ :e | 
-			(self perform: e selector)
+			(self perform: e methodSelector)
 				do: [ :c | 
 					| command |
 					command := c asClass on: aRequestor treeMorph for: aRequestor.
