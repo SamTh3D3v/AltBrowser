@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"value" ],
+	"name" : "JRecordAssignment",
+	"pools" : [
+		 ],
+	"super" : "JRecordVariable",
+	"type" : "normal" }

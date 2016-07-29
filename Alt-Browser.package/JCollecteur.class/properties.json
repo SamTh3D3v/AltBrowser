@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		"recorder" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "JCollecteur",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

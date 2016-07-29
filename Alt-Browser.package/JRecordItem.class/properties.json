@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"selector" ],
+	"name" : "JRecordItem",
+	"pools" : [
+		 ],
+	"super" : "JAbstractRecord",
+	"type" : "normal" }

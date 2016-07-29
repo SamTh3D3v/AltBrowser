@@ -8,6 +8,7 @@ SystemOrganization addCategory: 'Alt-Browser-Commands-Refactoring'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Text'!
 SystemOrganization addCategory: 'Alt-Browser-Core'!
 SystemOrganization addCategory: 'Alt-Browser-Inspector'!
+SystemOrganization addCategory: 'Alt-Browser-Jejak'!
 SystemOrganization addCategory: 'Alt-Browser-List'!
 SystemOrganization addCategory: 'Alt-Browser-Nodes'!
 SystemOrganization addCategory: 'Alt-Browser-Settings'!

@@ -1,0 +1,1 @@
+CodeTracerWriterVar is a variant of CodeTracerWriter which uses a variable instead of a literal to target the collecteur, to see if we can reduce the tracking overhead. It's apparently not the case, so it will probably go unused.

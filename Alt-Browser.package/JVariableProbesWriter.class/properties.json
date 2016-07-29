@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "JVariableProbesWriter",
+	"pools" : [
+		 ],
+	"super" : "JProbesWriter",
+	"type" : "normal" }

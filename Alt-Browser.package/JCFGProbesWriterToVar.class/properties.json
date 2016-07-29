@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ThierryGoubier 6/26/2012 10:31",
+	"instvars" : [
+		 ],
+	"name" : "JCFGProbesWriterToVar",
+	"pools" : [
+		 ],
+	"super" : "JCFGProbesWriter",
+	"type" : "normal" }

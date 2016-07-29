@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"operators" ],
+	"name" : "JCountOperator",
+	"pools" : [
+		 ],
+	"super" : "JRecordVisiteur",
+	"type" : "normal" }

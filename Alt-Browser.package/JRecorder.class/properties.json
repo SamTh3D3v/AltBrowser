@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stack" ],
+	"name" : "JRecorder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

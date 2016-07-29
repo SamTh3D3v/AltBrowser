@@ -1,0 +1,3 @@
+resources
+menuLabel
+	^'count operators'

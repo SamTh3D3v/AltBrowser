@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"process" ],
+	"name" : "JThreadedRecorder",
+	"pools" : [
+		 ],
+	"super" : "JRecorder",
+	"type" : "normal" }

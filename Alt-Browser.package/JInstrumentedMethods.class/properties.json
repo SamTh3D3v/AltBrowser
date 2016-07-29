@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"array" ],
+	"commentStamp" : "ThierryGoubier 7/18/2012 11:26",
+	"instvars" : [
+		 ],
+	"name" : "JInstrumentedMethods",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

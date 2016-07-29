@@ -1,0 +1,3 @@
+aspects
+rootNodeClassFromItem: anItem
+	^ JViewerNode

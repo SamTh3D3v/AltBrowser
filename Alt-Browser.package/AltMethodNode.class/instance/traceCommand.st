@@ -1,0 +1,4 @@
+commands
+traceCommand
+	<treeAreaCommand>
+	^ #(#JTraceCommand)

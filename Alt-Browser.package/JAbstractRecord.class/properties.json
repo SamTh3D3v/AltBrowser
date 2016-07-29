@@ -1,0 +1,15 @@
+{
+	"category" : "Alt-Browser-Jejak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"children",
+		"nodeId" ],
+	"name" : "JAbstractRecord",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

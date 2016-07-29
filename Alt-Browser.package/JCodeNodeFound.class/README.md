@@ -1,0 +1,1 @@
+CodeFoundException is used to signal, when looking for a node, that we have found it.
