@@ -16,8 +16,7 @@ execute
 		characterAt: interval last + 1.
 	aTextMorph
 		handleEdit: [ interval size = 0
-				ifTrue: [ ((afterChar isNil or: [ afterChar isSeparator ])
-						and: [ beforeChar ~= $$ ])
+				ifTrue: [ ((afterChar isNil or: [ afterChar isSeparator ]) and: [ beforeChar ~= $$ ])
 						ifTrue: [ | newPos |
 							aTextMorph replaceSelectionWith: self emptyEnclosingString.
 							newPos := interval first
@@ -30,11 +29,17 @@ execute
 						and: [ afterChar = self closingChar ])
 						ifTrue: [ aTextMorph selectFrom: int first to: int last.
 							aTextMorph
-								replaceSelectionWith: (text copyFrom: interval first to: interval last) ]
+								replaceSelectionWith:
+									((text copyFrom: interval first to: interval last)
+										copyReplaceAll: '""'
+										with: '"') ]
 						ifFalse: [ aTextMorph
 								replaceSelectionWith:
-									(String with: self openingChar) , target trueSelection
-										, (String with: self closingChar) ] ] ].
+									(String with: self openingChar)
+										,
+											((text copyFrom: interval first to: interval last)
+												copyReplaceAll: '"'
+												with: '""') , (String with: self closingChar) ] ] ].
 	(aTextMorph respondsTo: #editView)
 		ifTrue: [ aTextMorph editView
 				selectionInterval: aTextMorph editor selectionInterval ]

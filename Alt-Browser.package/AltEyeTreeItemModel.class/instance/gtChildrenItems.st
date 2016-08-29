@@ -8,12 +8,12 @@ gtChildrenItems
 	(((Pragma
 		allNamed: GTInspector extensionsPragma
 		from: item value class
-		to: Object) reject: [ :e | e selector numArgs ~= 1 ])
+		to: Object) reject: [ :e | e methodSelector numArgs ~= 1 ])
 		sorted: [ :a :b | a arguments first < b arguments first ])
 		do: [ :e | 
 			thisContext
 				object: item value
-				perform: e selector
+				perform: e methodSelector
 				withArguments: (Array with: composite)
 				inClass: item value class ].
 	^ composite presentations

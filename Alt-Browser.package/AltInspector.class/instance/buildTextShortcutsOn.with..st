@@ -4,7 +4,7 @@ buildTextShortcutsOn: aKMDispatcher with: aRequestor
 
 	(Pragma allNamed: #textAreaCommand from: self class to: self class)
 		do: [ :e | 
-			(self perform: e selector)
+			(self perform: e methodSelector)
 				do: [ :c | 
 					| command |
 					command := c asClass on: aRequestor textMorph for: aRequestor.

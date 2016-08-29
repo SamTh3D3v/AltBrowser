@@ -7,7 +7,7 @@ buildTreeShortcutsOn: aKMDispatcher for: aRequestor
 		from: item class
 		to: AbstractEyeElement)
 		do: [ :e | 
-			(item perform: e selector)
+			(item perform: e methodSelector)
 				do: [ :c | 
 					| command |
 					command := c asClass on: aRequestor treeMorph for: aRequestor.
