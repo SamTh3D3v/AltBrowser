@@ -1,3 +1,3 @@
 private
 modelSize
-	^ cachedModelSize ifNil: [ cachedModelSize := self owner model size ]
+	^ cachedModelSize ifNil: [ self owner model ifNil: [ ] ifNotNil: [ cachedModelSize := self owner model size] ]

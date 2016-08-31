@@ -1,6 +1,6 @@
 initialize-release
 registerToAnnouncements
-	"Link to the AltBrowserNeo class for most updates. But only do that once we are opened."
+	"Link to the AltBrowser class for most updates. But only do that once we are opened."
 
 	"Simple, reset everything update."
 

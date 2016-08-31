@@ -3,7 +3,7 @@ findCurrentVerticalValue
 	"Estimate what is the current vertical value given my row items."
 
 	| n |
-	n := self modelSize.
+	(n := self modelSize) ifNil: [ ^ nil ].
 	exposedItems
 		ifNotNil: [ :e | 
 			e

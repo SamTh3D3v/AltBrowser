@@ -6,8 +6,7 @@ model: anAltTreeItemModel
 
 	model ifNotNil: [ model announcer unsubscribe: self ].
 	anAltTreeItemModel
-		ifNotNil:
-			[ anAltTreeItemModel announcer weak
+		ifNotNil: [ anAltTreeItemModel announcer
 				when: AltListChanged send: #refresh to: self;
 				when: AltSelectionChanged send: #updateSelection: to: self ].
 	model := anAltTreeItemModel.
