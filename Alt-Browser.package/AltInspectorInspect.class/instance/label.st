@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Inspect'
+	^ 'Print it'
