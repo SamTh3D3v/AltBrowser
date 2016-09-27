@@ -1,4 +1,4 @@
 commands
 rpackageCommands
 	<treeAreaCommand>
-	^ #(#AltAddSystemCategoryCommand)
+	^ #(#AltAddSystemCategoryCommand #AltRenamePackageCommand #AltRemovePackageCommand)
