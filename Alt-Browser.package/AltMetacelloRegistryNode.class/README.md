@@ -1,0 +1,1 @@
+I represent the contents of the Metacello registry of projects

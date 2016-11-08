@@ -3,6 +3,7 @@ SystemOrganization addCategory: 'Alt-Browser-Animation'!
 SystemOrganization addCategory: 'Alt-Browser-Announcements'!
 SystemOrganization addCategory: 'Alt-Browser-Commands'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-AST'!
+SystemOrganization addCategory: 'Alt-Browser-Commands-Metacello'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Navigation'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Refactoring'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Text'!

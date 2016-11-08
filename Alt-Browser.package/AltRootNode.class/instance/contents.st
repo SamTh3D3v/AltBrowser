@@ -1,6 +1,8 @@
 accessing
 contents
 	^ contents
-		ifNil:
-			[ contents := {(AltRecentPackagesNode with: nil parent: self).
-			(AltWatchpointsNode with: nil parent: self)} , super contents ]
+		ifNil: [ contents := (Array
+				with: (AltRecentPackagesNode with: nil parent: self)
+				with: (AltMetacelloRegistryNode with: nil parent: self)
+				with: (AltWatchpointsNode with: nil parent: self))
+				, super contents ]

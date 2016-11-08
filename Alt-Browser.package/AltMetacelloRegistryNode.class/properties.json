@@ -1,0 +1,14 @@
+{
+	"category" : "Alt-Browser-Nodes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "AltMetacelloRegistryNode",
+	"pools" : [
+		 ],
+	"super" : "AltCompositeNode",
+	"type" : "normal" }
