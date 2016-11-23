@@ -12,6 +12,6 @@ buildTreeMenu: aMenu
 					t
 						ifTrue: [ aMenu addLine ]
 						ifFalse: [ t := true ].
-					(self perform: e selector)
+					(self perform: e methodSelector)
 						do: [ :c | (c asClass on: self treeMorph for: self) addItemToMenu: aMenu ] ] ].
 	^ aMenu

@@ -1,5 +1,5 @@
 accessing
 label
 	^ 'Save project to'
-		, requestor selectedNode item item repositoryDescriptions first
+		, requestor selectedNode item projectRegistration repositoryDescriptions first
 		contractTo: 20

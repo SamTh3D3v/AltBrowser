@@ -1,3 +1,3 @@
 private
 item
-	^ Metacello registrations
+	^ Metacello

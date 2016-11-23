@@ -1,3 +1,3 @@
 private
 projectVersionSpec
-	^ self item projectSpec version spec
+	^ self projectRegistration projectSpec version spec

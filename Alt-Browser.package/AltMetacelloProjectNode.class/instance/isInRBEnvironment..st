@@ -1,3 +1,3 @@
 querying
 isInRBEnvironment: aRBEnvironment
-	^ aRBEnvironment isSystem
+	^ self contents anySatisfy: [ :e | e isInRBEnvironment: aRBEnvironment ]

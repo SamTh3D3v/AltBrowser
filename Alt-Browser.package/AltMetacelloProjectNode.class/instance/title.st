@@ -1,3 +1,3 @@
 accessing
 title
-	^ self item printString
+	^ self item
