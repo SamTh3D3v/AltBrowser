@@ -1,14 +1,21 @@
 execution
 execute
-	"Get versions."
+	"Get versions and save them, if possible in a single commit. Need to work out that message thing."
 
-	| versions repositories |
-	self halt.
+	| versions repositories message |
 	repositories := requestor selectedNode item projectRegistration
 		projectSpec repositories list
 		collect: [ :r | r spec createRepository ].
 	versions := requestor selectedNode item contents
-		collect: [ :e | e mcWorkingCopy newVersionIn: repositories first ].
+		collect: [ :e | 
+			message
+				ifNil: [ | v |
+					v := e mcWorkingCopy newVersionIn: repositories first.
+					message := v info message.
+					v ]
+				ifNotNil: [ e mcWorkingCopy
+						newVersionWithMessage: message
+						in: repositories first ] ].
 	repositories
 		do: [ :e | 
 			(e respondsTo: #storeVersions:)
