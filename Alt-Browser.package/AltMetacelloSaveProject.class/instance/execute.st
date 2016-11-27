@@ -6,7 +6,8 @@ execute
 	repositories := requestor selectedNode item projectRegistration
 		projectSpec repositories list
 		collect: [ :r | r spec createRepository ].
-	versions := requestor selectedNode item contents
+	versions := (requestor selectedNode item contents
+		select: [ :e | e mcWorkingCopy modified ])
 		collect: [ :e | 
 			message
 				ifNil: [ | v |
