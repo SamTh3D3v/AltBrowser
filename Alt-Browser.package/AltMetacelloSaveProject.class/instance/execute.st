@@ -11,6 +11,7 @@ execute
 			message
 				ifNil: [ | v |
 					v := e mcWorkingCopy newVersionIn: repositories first.
+					v ifNil: [ ^ self ].
 					message := v info message.
 					v ]
 				ifNotNil: [ e mcWorkingCopy
