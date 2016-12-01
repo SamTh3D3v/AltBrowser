@@ -56,6 +56,7 @@ open
 				addLeftOrTop: treeMorph;
 				addRightOrBottom: textMorph).
 	window minimumExtent: 200 @ 300.
+	window announcer when: WindowClosed send: #release to: self.
 	window open.
 	self
 		updateTreeKeymap;
