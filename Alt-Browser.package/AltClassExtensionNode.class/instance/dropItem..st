@@ -4,4 +4,12 @@ dropItem: anItem
 
 	| cm |
 	cm := anItem compiledMethod.
-	cm sourceClass organization classify: anItem selector under: self methodCategory suppressIfDefault: false
+	cm methodClass = self itemClass
+		ifTrue: [ cm methodClass organization
+				classify: anItem selector
+				under: self methodCategory
+				suppressIfDefault: false ]
+		ifFalse: [ self sourceClass
+				compile: anItem sourceCode
+				classified: self methodCategory
+				notifying: nil ]
