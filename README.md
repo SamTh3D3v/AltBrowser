@@ -9,18 +9,7 @@ A more detailed report / user manual of a kind is available [here](http://thierr
 
 ![AltBrowser screenshot](https://github.com/ThierryGoubier/AltBrowser/blob/master/Documentation/Screenshot.png)
 
-In all supported Pharo versions (2, 3 and 4), AltBrowser can be loaded that way:
-
-```smalltalk
-Gofer new
-	url: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo30/main';
-	configurationOf: 'AltBrowser';
-	loadDevelopment.
-```
-
-Requires a Mac or Linux system with git correctly installed.
-
-and the stable version for Pharo (2, 3 and 4) with:
+In Pharo versions 2 and 3, AltBrowser can be loaded that way:
 
 ```smalltalk
 Gofer new
@@ -28,3 +17,13 @@ Gofer new
 	configurationOf: 'AltBrowser';
 	loadStable.
 ```
+In Pharo 5 and 6, AltBrowser should be loaded that way:
+
+```smalltalk
+Metacello new
+	baseline: 'AltBrowser';
+	repository: 'github://ThierryGoubier/AltBrowser:pharo', SystemVersion current major printString;
+	load.
+```
+
+There is no development / stable version difference; all versions are usable (as in used everyday or so to develop professional software on Pharo at the exclusion of any other IDE), but new features tend to appear on the latest Pharo version.
