@@ -17,7 +17,7 @@ Gofer new
 	configurationOf: 'AltBrowser';
 	loadStable.
 ```
-In Pharo 5 and 6, AltBrowser should be loaded that way:
+In Pharo 4, 5 and 6, AltBrowser should be loaded that way:
 
 ```smalltalk
 Metacello new
