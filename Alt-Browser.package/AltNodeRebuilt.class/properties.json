@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Announcements",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltNodeRebuilt",
-	"pools" : [
-		 ],
 	"super" : "AltNodeAnnouncement",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltNodeRebuilt",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltMessageList",
-	"pools" : [
-		 ],
 	"super" : "AltBrowser",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltMessageList",
+	"type" : "normal"
+}

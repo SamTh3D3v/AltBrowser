@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Nodes",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltUnpackagedNode",
-	"pools" : [
-		 ],
 	"super" : "AltPackageNode",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Nodes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltUnpackagedNode",
+	"type" : "normal"
+}

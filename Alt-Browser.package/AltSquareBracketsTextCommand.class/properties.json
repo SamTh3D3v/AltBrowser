@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltSquareBracketsTextCommand",
-	"pools" : [
-		 ],
 	"super" : "AltEncloseTextCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltSquareBracketsTextCommand",
+	"type" : "normal"
+}

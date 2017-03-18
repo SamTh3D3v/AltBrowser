@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Metacello",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltMetacelloLockProject",
-	"pools" : [
-		 ],
 	"super" : "AltCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Metacello",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltMetacelloLockProject",
+	"type" : "normal"
+}

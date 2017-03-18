@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Inspector",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"presentation" ],
-	"name" : "AltTreeGTIPresentationModel",
-	"pools" : [
-		 ],
 	"super" : "AltTreeItemModel",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Inspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"presentation"
+	],
+	"name" : "AltTreeGTIPresentationModel",
+	"type" : "normal"
+}

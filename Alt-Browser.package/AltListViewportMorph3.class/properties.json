@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltListViewportMorph3",
-	"pools" : [
-		 ],
 	"super" : "AltListViewportMorph",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltListViewportMorph3",
+	"type" : "normal"
+}

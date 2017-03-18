@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltExpandCommand",
-	"pools" : [
-		 ],
 	"super" : "AltCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltExpandCommand",
+	"type" : "normal"
+}

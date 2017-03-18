@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltParenthesisTextCommand",
-	"pools" : [
-		 ],
 	"super" : "AltEncloseTextCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltParenthesisTextCommand",
+	"type" : "normal"
+}

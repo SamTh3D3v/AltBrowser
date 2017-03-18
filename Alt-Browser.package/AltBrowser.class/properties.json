@@ -1,15 +1,17 @@
 {
+	"commentStamp" : "<historical>",
+	"super" : "Object",
 	"category" : "Alt-Browser-Core",
-	"classinstvars" : [
-		 ],
+	"classinstvars" : [ ],
+	"pools" : [ ],
 	"classvars" : [
 		"AltAnnouncer",
 		"Categories",
 		"Debug",
 		"RecentPackages",
 		"Root",
-		"Temporary" ],
-	"commentStamp" : "<historical>",
+		"Temporary"
+	],
 	"instvars" : [
 		"source",
 		"root",
@@ -22,9 +24,8 @@
 		"finderUI",
 		"toolbar",
 		"commentMorph",
-		"selection" ],
+		"selection"
+	],
 	"name" : "AltBrowser",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

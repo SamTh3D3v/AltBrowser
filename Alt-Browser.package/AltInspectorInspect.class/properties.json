@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Inspector",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltInspectorInspect",
-	"pools" : [
-		 ],
 	"super" : "AltCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Inspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltInspectorInspect",
+	"type" : "normal"
+}

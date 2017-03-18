@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"childrenBlock" ],
-	"name" : "AltBlockItemExample",
-	"pools" : [
-		 ],
 	"super" : "AltTreeItemModel",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"childrenBlock"
+	],
+	"name" : "AltBlockItemExample",
+	"type" : "normal"
+}

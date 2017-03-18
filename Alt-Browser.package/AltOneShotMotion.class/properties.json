@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Animation",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"action" ],
-	"name" : "AltOneShotMotion",
-	"pools" : [
-		 ],
 	"super" : "AltMotion",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Animation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"action"
+	],
+	"name" : "AltOneShotMotion",
+	"type" : "normal"
+}

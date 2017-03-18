@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Refactoring",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltRBUndoCommand",
-	"pools" : [
-		 ],
 	"super" : "AltCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Refactoring",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltRBUndoCommand",
+	"type" : "normal"
+}

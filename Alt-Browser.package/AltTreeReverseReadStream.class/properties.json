@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-List",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltTreeReverseReadStream",
-	"pools" : [
-		 ],
 	"super" : "AltTreeReadStream",
-	"type" : "normal" }
+	"category" : "Alt-Browser-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltTreeReverseReadStream",
+	"type" : "normal"
+}

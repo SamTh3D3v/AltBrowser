@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Announcements",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"rpackage" ],
-	"name" : "AltMethodAdded",
-	"pools" : [
-		 ],
 	"super" : "MethodAdded",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rpackage"
+	],
+	"name" : "AltMethodAdded",
+	"type" : "normal"
+}

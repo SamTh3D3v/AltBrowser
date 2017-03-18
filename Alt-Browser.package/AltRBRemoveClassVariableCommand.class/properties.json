@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Refactoring",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltRBRemoveClassVariableCommand",
-	"pools" : [
-		 ],
 	"super" : "AltRBAstNodeCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Refactoring",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltRBRemoveClassVariableCommand",
+	"type" : "normal"
+}

@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltTextSearchMorph",
-	"pools" : [
-		 ],
 	"super" : "TextMorph",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltTextSearchMorph",
+	"type" : "normal"
+}

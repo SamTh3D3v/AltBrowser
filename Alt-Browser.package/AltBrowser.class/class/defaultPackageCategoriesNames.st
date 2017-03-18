@@ -5,12 +5,12 @@ defaultPackageCategoriesNames
 	"AltBrowser initialize."
 
 	^ #(
-		#(#'6.0' #Deprecated #HudsonBuildTools #RecentSubmissions #ReleaseTests #ScriptLoader)
-		#(#Core #Announcements #Collections #Compiler #EmergencyEvaluator #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Text #Traits #Transcript #Unicode #Random)
-		#(#Development #AST #Debugger #Generated #Manifest #MessageBrowserRefactoringAddition #NECompletion #UnifiedFFI #Nautilus #NodeNavigation #NonInteractiveTranscript #PragmaCollector #ProfStef #Refactoring #SLICE #SUnit #ShoreLine #Shout #Tests #Tool #Flashback #IssueTracking #QualityAssistant #Renraku)
+		#(#'6.0' #Deprecated #HudsonBuildTools #RecentSubmissions #ReleaseTests #ScriptLoader #PharoBootstrap)
+		#(#Core #Announcements #Collections #Compiler #EmergencyEvaluator #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Text #Traits #Transcript #Unicode #Random #ReflectionMirrors)
+		#(#Development #AST #Debugger #Generated #Manifest #MessageBrowserRefactoringAddition #NECompletion #UnifiedFFI #Nautilus #NodeNavigation #NonInteractiveTranscript #PragmaCollector #ProfStef #Refactoring #SLICE #SUnit #ShoreLine #Shout #Tests #Tool #Flashback #IssueTracking #QualityAssistant #Renraku #ScriptingExtensions #SortFunctions #WriteBarrierTests #FuzzyMatcher #GeneralRules)
 		#(#GUI #Athens #Balloon #Chroma #EmbeddedFreeType #FontChooser #FontInfrastructure #FreeType #GT #Glamour #Graphics #Growl #Keymapping #MenuRegistration #Morphic #NewValueHolder
-				#(#Help #ContributingToTheCatalogHelp #HowToContributeHelp #'ImportingResource-Help' #'Pharo-Help' #HelpSystem #WorldMenuHelp)
-		 	#Polymorph #Rubric #Settings #SmartSuggestions #Spec #TxText #UI #BlueInk #Moose)
+				#(#Help #ContributingToTheCatalogHelp #HowToContributeHelp #'ImportingResource-Help' #'Pharo-Help' #HelpSystem #WorldMenuHelp #PharoDoc)
+		 	#Polymorph #Rubric #Settings #SmartSuggestions #Spec #TxText #UI #BlueInk #Moose #Hiedra)
 		#(#Networking #Compression #Network #Zinc #Zodiac)
 		#(#External #Alien #CommandShell #FileSystem #Files #Jobs #Neo #OSProcess #OSSubprocess #OSWindow #ProcessWrapper #StartupPreferences #System #XML #STON #FFI)
 		#(#Packages #Baseline #CodeImport #Configuration #Fuel #Gofer #Komitter #Metacello #Monticello #RPackage #Ring #UpdateStreamer #Versionner #CodeExport #Epicea #Ombu))

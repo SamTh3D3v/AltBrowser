@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Watchpoints",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltWatchpointsClassNode",
-	"pools" : [
-		 ],
 	"super" : "AltCompositeNode",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Watchpoints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltWatchpointsClassNode",
+	"type" : "normal"
+}

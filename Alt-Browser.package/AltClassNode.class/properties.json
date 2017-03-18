@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Nodes",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"indent" ],
-	"name" : "AltClassNode",
-	"pools" : [
-		 ],
 	"super" : "AltCompositeNode",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Nodes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"indent"
+	],
+	"name" : "AltClassNode",
+	"type" : "normal"
+}

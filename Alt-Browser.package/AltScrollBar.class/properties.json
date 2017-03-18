@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Tests",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltScrollBar",
-	"pools" : [
-		 ],
 	"super" : "ScrollBar",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltScrollBar",
+	"type" : "normal"
+}

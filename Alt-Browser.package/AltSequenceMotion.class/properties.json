@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Animation",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"motions" ],
-	"name" : "AltSequenceMotion",
-	"pools" : [
-		 ],
 	"super" : "AltMotion",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Animation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"motions"
+	],
+	"name" : "AltSequenceMotion",
+	"type" : "normal"
+}

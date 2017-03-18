@@ -1,17 +1,16 @@
 {
-	"category" : "Alt-Browser-List",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Alt-Browser-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"position",
 		"item",
 		"stack",
-		"collection" ],
+		"collection"
+	],
 	"name" : "AltTreeReadStream",
-	"pools" : [
-		 ],
-	"super" : "Object",
-	"type" : "normal" }
+	"type" : "normal"
+}

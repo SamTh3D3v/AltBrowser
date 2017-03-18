@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands-Text",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltDebugItTextCommand",
-	"pools" : [
-		 ],
 	"super" : "AltDoItTextCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-Text",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltDebugItTextCommand",
+	"type" : "normal"
+}

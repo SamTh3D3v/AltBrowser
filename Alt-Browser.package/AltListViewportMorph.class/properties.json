@@ -1,10 +1,10 @@
 {
-	"category" : "Alt-Browser-List",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "Morph",
+	"category" : "Alt-Browser-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"exposedItems",
 		"topOffset",
@@ -13,9 +13,8 @@
 		"needsRefreshItems",
 		"ensureVisibleSelection",
 		"cachedModelSize",
-		"maximumWidth" ],
+		"maximumWidth"
+	],
 	"name" : "AltListViewportMorph",
-	"pools" : [
-		 ],
-	"super" : "Morph",
-	"type" : "normal" }
+	"type" : "normal"
+}

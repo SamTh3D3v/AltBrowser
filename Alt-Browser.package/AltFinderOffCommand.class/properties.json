@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Commands",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltFinderOffCommand",
-	"pools" : [
-		 ],
 	"super" : "AltFinderCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltFinderOffCommand",
+	"type" : "normal"
+}

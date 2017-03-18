@@ -1,10 +1,10 @@
 {
-	"category" : "Alt-Browser-List",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "Morph",
+	"category" : "Alt-Browser-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"model",
 		"selectionModel",
@@ -17,9 +17,8 @@
 		"viewport",
 		"stepIndex",
 		"motion",
-		"canvas" ],
+		"canvas"
+	],
 	"name" : "AltListMorph",
-	"pools" : [
-		 ],
-	"super" : "Morph",
-	"type" : "normal" }
+	"type" : "normal"
+}

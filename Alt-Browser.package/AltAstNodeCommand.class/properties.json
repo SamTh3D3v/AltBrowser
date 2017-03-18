@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Commands-AST",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"astNode" ],
-	"name" : "AltAstNodeCommand",
-	"pools" : [
-		 ],
 	"super" : "AltCommand",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Commands-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"astNode"
+	],
+	"name" : "AltAstNodeCommand",
+	"type" : "normal"
+}

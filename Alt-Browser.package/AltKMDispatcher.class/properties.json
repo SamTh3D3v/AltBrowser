@@ -1,14 +1,11 @@
 {
-	"category" : "Alt-Browser-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "AltKMDispatcher",
-	"pools" : [
-		 ],
 	"super" : "KMDispatcher",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AltKMDispatcher",
+	"type" : "normal"
+}

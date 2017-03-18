@@ -1,14 +1,13 @@
 {
-	"category" : "Alt-Browser-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"model" ],
-	"name" : "AltCodeItemRootModel",
-	"pools" : [
-		 ],
 	"super" : "AltCodeItemModel",
-	"type" : "normal" }
+	"category" : "Alt-Browser-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model"
+	],
+	"name" : "AltCodeItemRootModel",
+	"type" : "normal"
+}

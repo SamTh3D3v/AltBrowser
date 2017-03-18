@@ -1,15 +1,14 @@
 {
-	"category" : "Alt-Browser-Inspector",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "AltTreeItemModel",
+	"category" : "Alt-Browser-Inspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"model",
-		"copy" ],
+		"copy"
+	],
 	"name" : "AltEyeTreeItemModel",
-	"pools" : [
-		 ],
-	"super" : "AltTreeItemModel",
-	"type" : "normal" }
+	"type" : "normal"
+}
