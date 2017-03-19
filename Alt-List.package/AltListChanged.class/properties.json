@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Announcement",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tree"
+	],
+	"name" : "AltListChanged",
+	"type" : "normal"
+}

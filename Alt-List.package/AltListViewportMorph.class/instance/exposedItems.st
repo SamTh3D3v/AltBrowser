@@ -1,0 +1,5 @@
+private
+exposedItems
+	"Answer a dictionary of rowIndex->row pairs"
+
+	^ exposedItems

@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Morph",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"exposedItems",
+		"topOffset",
+		"bottomOffset",
+		"needsRefreshRows",
+		"needsRefreshItems",
+		"ensureVisibleSelection",
+		"cachedModelSize",
+		"maximumWidth"
+	],
+	"name" : "AltListViewportMorph",
+	"type" : "normal"
+}

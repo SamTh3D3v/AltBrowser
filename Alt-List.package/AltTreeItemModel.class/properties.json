@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parent",
+		"item",
+		"contents",
+		"expanded",
+		"announcer",
+		"selectedItem",
+		"selectedIndex"
+	],
+	"name" : "AltTreeItemModel",
+	"type" : "normal"
+}

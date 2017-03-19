@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "AltMotion",
+	"category" : "Alt-List-Animation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startTime",
+		"endTime",
+		"startValue",
+		"endValue",
+		"tween",
+		"action"
+	],
+	"name" : "AltTweenMotion",
+	"type" : "normal"
+}

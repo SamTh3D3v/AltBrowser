@@ -1,0 +1,3 @@
+accessing
+effectiveHeight
+	^ bottomOffset - topOffset

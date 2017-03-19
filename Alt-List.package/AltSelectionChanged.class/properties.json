@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Announcement",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oldIndexes",
+		"newIndexes",
+		"oldItems",
+		"newItems"
+	],
+	"name" : "AltSelectionChanged",
+	"type" : "normal"
+}

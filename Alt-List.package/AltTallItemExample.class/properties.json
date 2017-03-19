@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "AltTreeItemModel",
+	"category" : "Alt-List-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"height"
+	],
+	"name" : "AltTallItemExample",
+	"type" : "normal"
+}

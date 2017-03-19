@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"item",
+		"stack",
+		"collection"
+	],
+	"name" : "AltTreeReadStream",
+	"type" : "normal"
+}

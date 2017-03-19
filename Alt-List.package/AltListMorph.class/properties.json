@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Morph",
+	"category" : "Alt-List",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"selectionModel",
+		"verticalScrollBar",
+		"horizontalScrollBar",
+		"backgroundColor",
+		"selectionColor",
+		"selectedRowIndexes",
+		"dropIndex",
+		"viewport",
+		"stepIndex",
+		"motion",
+		"canvas"
+	],
+	"name" : "AltListMorph",
+	"type" : "normal"
+}

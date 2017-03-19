@@ -1,0 +1,3 @@
+combining
++ anotherMotion
+	self subclassResponsibility

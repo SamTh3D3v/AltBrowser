@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "AltMotion",
+	"category" : "Alt-List-Animation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"action"
+	],
+	"name" : "AltOneShotMotion",
+	"type" : "normal"
+}

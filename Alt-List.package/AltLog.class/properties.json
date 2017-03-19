@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Alt-List-Animation",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Log"
+	],
+	"instvars" : [ ],
+	"name" : "AltLog",
+	"type" : "normal"
+}
