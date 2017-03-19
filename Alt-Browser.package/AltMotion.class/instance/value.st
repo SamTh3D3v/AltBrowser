@@ -1,3 +1,0 @@
-animating
-value
-	self subclassResponsibility

@@ -1,3 +1,0 @@
-selection
-selectedItem
-	^ selectedItem

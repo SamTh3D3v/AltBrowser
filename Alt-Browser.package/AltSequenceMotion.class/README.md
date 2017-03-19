@@ -1,1 +1,0 @@
-Combine motions into a sequence (once first one is done, remove it and switch to next one).

@@ -1,3 +1,0 @@
-private
-setNeedsRefreshRows
-	needsRefreshRows := true

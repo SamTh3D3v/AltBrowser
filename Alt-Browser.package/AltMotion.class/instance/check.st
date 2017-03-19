@@ -1,3 +1,0 @@
-animating
-check
-	self subclassResponsibility

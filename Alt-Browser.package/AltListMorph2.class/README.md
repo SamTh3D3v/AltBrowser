@@ -1,1 +1,0 @@
-I use a ViewportMorph2. And I trace a selection move.

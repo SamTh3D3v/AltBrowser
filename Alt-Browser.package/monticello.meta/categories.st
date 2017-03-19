@@ -1,5 +1,4 @@
 SystemOrganization addCategory: #'Alt-Browser'!
-SystemOrganization addCategory: 'Alt-Browser-Animation'!
 SystemOrganization addCategory: 'Alt-Browser-Announcements'!
 SystemOrganization addCategory: 'Alt-Browser-Commands'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-AST'!
@@ -9,7 +8,6 @@ SystemOrganization addCategory: 'Alt-Browser-Commands-Refactoring'!
 SystemOrganization addCategory: 'Alt-Browser-Commands-Text'!
 SystemOrganization addCategory: 'Alt-Browser-Core'!
 SystemOrganization addCategory: 'Alt-Browser-Inspector'!
-SystemOrganization addCategory: 'Alt-Browser-List'!
 SystemOrganization addCategory: 'Alt-Browser-Nodes'!
 SystemOrganization addCategory: 'Alt-Browser-Settings'!
 SystemOrganization addCategory: 'Alt-Browser-Tests'!

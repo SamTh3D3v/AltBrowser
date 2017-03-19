@@ -1,3 +1,0 @@
-private-scrollbars
-horizontalScrollBar
-	^ horizontalScrollBar
