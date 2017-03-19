@@ -7,4 +7,5 @@ baseline: spec
 			spec blessing: #baseline.
 			spec
 				package: 'Alt-Browser';
-				group: 'default' with: #('Alt-Browser') ]
+				package: 'Jejak';
+				group: 'default' with: #('Alt-Browser' 'Jejak') ]
