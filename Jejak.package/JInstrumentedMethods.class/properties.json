@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ThierryGoubier 7/18/2012 11:26",
+	"super" : "Object",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"array"
+	],
+	"instvars" : [ ],
+	"name" : "JInstrumentedMethods",
+	"type" : "normal"
+}

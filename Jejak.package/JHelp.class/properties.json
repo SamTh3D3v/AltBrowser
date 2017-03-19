@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CustomHelp",
+	"category" : "Jejak-Help",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JHelp",
+	"type" : "normal"
+}

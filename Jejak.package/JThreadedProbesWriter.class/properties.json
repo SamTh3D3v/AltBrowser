@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ThierryGoubier 7/18/2012 11:26",
+	"super" : "JProbesWriter",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JThreadedProbesWriter",
+	"type" : "normal"
+}

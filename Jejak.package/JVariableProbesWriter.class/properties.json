@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "JProbesWriter",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JVariableProbesWriter",
+	"type" : "normal"
+}

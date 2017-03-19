@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "JRecordVariable",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value"
+	],
+	"name" : "JRecordAssignment",
+	"type" : "normal"
+}

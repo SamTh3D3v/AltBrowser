@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "JRecordVisiteur",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"type"
+	],
+	"name" : "JTypeFilter",
+	"type" : "normal"
+}

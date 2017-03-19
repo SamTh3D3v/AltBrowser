@@ -1,0 +1,4 @@
+*Jejak
+traceCommand
+	<treeAreaCommand>
+	^ #(#JTraceCommand)

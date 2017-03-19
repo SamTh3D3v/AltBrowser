@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "MorphTreeModel",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"records",
+		"source",
+		"tree",
+		"textMorph"
+	],
+	"name" : "JViewer",
+	"type" : "normal"
+}

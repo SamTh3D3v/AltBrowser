@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "JAbstractRecord",
+	"category" : "Jejak",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selector"
+	],
+	"name" : "JRecordItem",
+	"type" : "normal"
+}

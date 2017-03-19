@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "AltCommand",
+	"category" : "Jejak-Alt-Browser-Integration",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "JTraceCommand",
+	"type" : "normal"
+}

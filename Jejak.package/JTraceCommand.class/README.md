@@ -1,0 +1,1 @@
+A JTraceCommand turns on or off the trace of a method.
