@@ -12,19 +12,22 @@ selection: anItem
 	i := path size.
 	r := path last item.
 	[ i <= 0 or: [ r isMethod ] ]
-		whileFalse: [ 
-			i := i - 1.
+		whileFalse: [ i := i - 1.
 			r := (path at: i) item ].
 	i = 0
 		ifTrue: [ ^ self ].
 	a := r mclass lookupSelector: r selector.
 	a isNil
 		ifTrue: [ ^ self ].
-	m := JInstrumentedMethods at: (Array with: a methodClass with: r selector) ifAbsent: [ a ].
-	s := m getSource.
+	m := JInstrumentedMethods
+		at: (Array with: a methodClass with: r selector)
+		ifAbsent: [ a ].
+	s := m sourceCode.
 	n := JCodeNodeFinder find: node nodeId in: m.
 	s isNil
 		ifTrue: [ ^ self ].
 	source contents: s.
 	textMorph deselect.
-	textMorph selectFrom: n sourceInterval first to: n sourceInterval last
+	textMorph
+		selectFrom: n sourceInterval first
+		to: n sourceInterval last

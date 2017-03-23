@@ -5,7 +5,7 @@ find: aNodeId in: aMethod
 	| c |
 	c := self new.
 	c target: aNodeId.
-	[ c visitNode: (RBParser parseMethod: aMethod getSource) ]
+	[ c visitNode: (RBParser parseMethod: aMethod sourceCode) ]
 		on: JCodeNodeFound
 		do: [ :ex | ^ ex tag ].
 	^ SubscriptOutOfBounds signal

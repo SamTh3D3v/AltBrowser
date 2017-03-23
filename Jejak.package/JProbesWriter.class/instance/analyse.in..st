@@ -10,16 +10,25 @@ analyse: aMethodSelector in: aClass
 	class := method methodClass.
 	class isNil
 		ifTrue: [ ^ self ].
-	(JInstrumentedMethods includesKey: (Array with: class with: aMethodSelector))
-		ifTrue: [ 
-			ExampleBuilderMorph new alert: 'Method already instrumented.'.
+	(JInstrumentedMethods
+		includesKey: (Array with: class with: aMethodSelector))
+		ifTrue: [ ExampleBuilderMorph new alert: 'Method already instrumented.'.
 			^ self ].
 	mclass := class.
-	s := method getSource.
+	s := method sourceCode.
 	n := RBParser parseMethod: s.
 	n := self visitNode: n.
 	SystemAnnouncer uniqueInstance
-		suspendAllWhile: [ 
-			cm := class lookupSelector: (class compile: n formattedCode classified: method category notifying: nil).
-			self changeLiteralRecorder: #JCollecteur to: JCollecteur recorder in: cm.
-			JInstrumentedMethods at: (Array with: class with: aMethodSelector) put: method ]
+		suspendAllWhile: [ cm := class
+				lookupSelector:
+					(class
+						compile: n formattedCode
+						classified: method category
+						notifying: nil).
+			self
+				changeLiteralRecorder: #JCollecteur
+				to: JCollecteur recorder
+				in: cm.
+			JInstrumentedMethods
+				at: (Array with: class with: aMethodSelector)
+				put: method ]
