@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "AltPackageCategoryNode",
+	"super" : "AltCompositeNode",
 	"category" : "Alt-Browser-Nodes",
 	"classinstvars" : [ ],
 	"pools" : [ ],
