@@ -1,3 +1,3 @@
 accessing
 itemClass
-	^ Smalltalk at: self item ifAbsent: [ Object ]
+	^ Smalltalk at: self item key ifAbsent: [ ]

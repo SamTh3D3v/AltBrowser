@@ -1,5 +1,5 @@
 private
 projectRegistration
 	^ MetacelloProjectRegistration registry
-		registrationForExactClassNamed: item
+		registrationForExactClassNamed: item key
 		ifAbsent: [  ]

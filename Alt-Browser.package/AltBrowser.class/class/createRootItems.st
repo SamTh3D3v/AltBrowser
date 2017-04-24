@@ -6,8 +6,7 @@ createRootItems
 	convertBlock := [ :entry | 
 	entry isArray
 		ifFalse: [ entry -> OrderedCollection new ]
-		ifTrue:
-			[ entry first
+		ifTrue: [ entry first
 				->
 					(entry allButFirst collect: [ :e | convertBlock value: e ])
 						asOrderedCollection ] ].
@@ -17,9 +16,15 @@ createRootItems
 				->
 					((self categories collect: [ :e | convertBlock value: e ])
 						, {RPackage defaultPackageName}) asOrderedCollection.
+	self allBaselinesAndConfiguration
+		do: [ :e | 
+			self
+				aMCWorkingCopyCreated:
+					(MCWorkingCopyCreated
+						workingCopy: e
+						package: (MCPackage named: e packageName)) ].
 	MCWorkingCopy allManagers
-		do:
-			[ :e | 
+		do: [ :e | 
 			self
 				aMCWorkingCopyCreated:
 					(MCWorkingCopyCreated
