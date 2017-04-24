@@ -16,7 +16,7 @@ createRootItems
 				->
 					((self categories collect: [ :e | convertBlock value: e ])
 						, {RPackage defaultPackageName}) asOrderedCollection.
-	self allBaselinesAndConfiguration
+	self allBaselinesAndConfigurations
 		do: [ :e | 
 			self
 				aMCWorkingCopyCreated:

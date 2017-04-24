@@ -5,12 +5,9 @@ defaultPackageCategoriesNames
 	"AltBrowser initialize."
 
 	^ #(
-		#(#'6.0' #Deprecated #HudsonBuildTools #RecentSubmissions #ReleaseTests #ScriptLoader #PharoBootstrap)
-		#(#Core #Announcements #Collections #Compiler #EmergencyEvaluator #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Text #Traits #Transcript #Unicode #Random #ReflectionMirrors)
-		#(#Development #AST #Debugger #Generated #Manifest #MessageBrowserRefactoringAddition #NECompletion #UnifiedFFI #Nautilus #NodeNavigation #NonInteractiveTranscript #PragmaCollector #ProfStef #Refactoring #SLICE #SUnit #ShoreLine #Shout #Tests #Tool #Flashback #IssueTracking #QualityAssistant #Renraku #ScriptingExtensions #SortFunctions #WriteBarrierTests #FuzzyMatcher #GeneralRules)
-		#(#GUI #Athens #Balloon #Chroma #EmbeddedFreeType #FontChooser #FontInfrastructure #FreeType #GT #Glamour #Graphics #Growl #Keymapping #MenuRegistration #Morphic #NewValueHolder
-				#(#Help #ContributingToTheCatalogHelp #HowToContributeHelp #'ImportingResource-Help' #'Pharo-Help' #HelpSystem #WorldMenuHelp #PharoDoc)
-		 	#Polymorph #Rubric #Settings #SmartSuggestions #Spec #TxText #UI #BlueInk #Moose #Hiedra)
-		#(#Networking #Compression #Network #Zinc #Zodiac)
-		#(#External #Alien #CommandShell #FileSystem #Files #Jobs #Neo #OSProcess #OSSubprocess #OSWindow #ProcessWrapper #StartupPreferences #System #XML #STON #FFI)
-		#(#Packages #Baseline #CodeImport #Configuration #Fuel #Gofer #Komitter #Metacello #Monticello #RPackage #Ring #UpdateStreamer #Versionner #CodeExport #Epicea #Ombu))
+		#(#PharoBootstrap)
+		#(#Core #Announcements #Collections #Compiler #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Traits #Transcript #Random #UI #Colors)
+		#(#Development #AST #NonInteractiveTranscript #PragmaCollector #SLICE #ScriptingExtensions)
+		#(#Networking #Compression #Network)
+		#(#External #FileSystem #Files #Jobs #System)
+		#(#Packages #BaselineOf #CodeImport #ConfigurationOf #Gofer #Metacello #Monticello #RPackage #Ring #CodeExport #ConfigurationCommandLine))
