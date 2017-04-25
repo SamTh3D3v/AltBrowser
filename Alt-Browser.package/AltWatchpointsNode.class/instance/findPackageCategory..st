@@ -1,0 +1,3 @@
+querying
+findPackageCategory: ignored
+	^ nil
