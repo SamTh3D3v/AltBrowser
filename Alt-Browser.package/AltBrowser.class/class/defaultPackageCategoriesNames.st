@@ -6,8 +6,8 @@ defaultPackageCategoriesNames
 
 	^ #(
 		#(#PharoBootstrap)
-		#(#Core #Announcements #Collections #Compiler #Kernel #Multilingual #Opal #Reflectivity #Regex #Slot #Traits #Transcript #Random #UI #Colors)
-		#(#Development #AST #NonInteractiveTranscript #PragmaCollector #SLICE #ScriptingExtensions)
-		#(#Networking #Compression #Network)
-		#(#External #FileSystem #Files #Jobs #System)
+		#(#Core #Compiler #Reflectivity #Regex)
+		#(#Development #PragmaCollector #SLICE)
+		#(#Network)
+		#(#External #FileSystem #System)
 		#(#Packages #BaselineOf #CodeImport #ConfigurationOf #Gofer #Metacello #Monticello #RPackage #Ring #CodeExport #ConfigurationCommandLine))
