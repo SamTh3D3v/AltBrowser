@@ -1,3 +1,3 @@
 accessing
 label
-	^ 'Metacello Get'
+	^ 'Get ', self getItem projectName

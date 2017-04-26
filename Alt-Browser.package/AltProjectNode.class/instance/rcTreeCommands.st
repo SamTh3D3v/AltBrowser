@@ -3,4 +3,4 @@ rcTreeCommands
 	"Add better suited commands: unload project, for example."
 
 	<treeAreaCommand>
-	^ #(#AltRemovePackageCategoryCommand #AltMetacelloGetProject #AltMetacelloSaveProject)
+	^ #(#AltMetacelloGetProject #AltMetacelloFetchProject #AltMetacelloLockProject #AltMetacelloSaveProject)

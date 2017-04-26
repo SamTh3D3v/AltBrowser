@@ -8,4 +8,4 @@ execute
 	item isConfiguration
 		ifTrue: [ mt configuration: item projectName ].
 	mt repository: item repositories.
-	mt get
+	mt fetch
