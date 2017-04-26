@@ -10,4 +10,6 @@ defaultPackageCategoriesNames
 		#(#Development #PragmaCollector #SLICE)
 		#(#Network)
 		#(#External #FileSystem #System)
-		#(#Packages #BaselineOf #CodeImport #ConfigurationOf #Gofer #Metacello #Monticello #RPackage #Ring #CodeExport #ConfigurationCommandLine))
+		#(#Packages #BaselineOf #CodeImport #ConfigurationOf #Gofer #Metacello #Monticello #RPackage #Ring #CodeExport #ConfigurationCommandLine)
+		#(#WasClassified #AST #Announcements #Collections #Colors #Compression #Files #Jobs #Kernel #Multilingual #NonInteractive #Opal #PharoBootstrap #Random #Scripting #Slot #Traits #Transcript #Travis #UI)
+	)
