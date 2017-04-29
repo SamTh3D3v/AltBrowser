@@ -11,4 +11,7 @@ buildValues
 	^ values := {item key}
 		,
 			(projectPackages asSortedCollection
-				select: [ :p | (MCWorkingCopy hasPackageNamed: p) ~~ false ])
+				select: [ :p | 
+					(p beginsWith: 'BaselineOf') not
+						and: [ (p beginsWith: 'ConfigurationOf') not
+								and: [ (MCWorkingCopy hasPackageNamed: p) ~~ false ] ] ])
