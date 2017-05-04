@@ -1,6 +1,7 @@
 private
 projectPackagesIncludes: aPackageName
-	(Smalltalk at: item key ifAbsent: [ ] ) isNil ifTrue: [ ^ false ].
+	(Smalltalk at: item key ifAbsent: [  ]) isNil
+		ifTrue: [ ^ false ].
 	self projectVersionSpec
 		do: [ :aSpec | 
 			aSpec packages

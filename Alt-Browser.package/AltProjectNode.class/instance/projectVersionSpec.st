@@ -1,6 +1,4 @@
 private
 projectVersionSpec
-	^ (self projectRegistration
-		ifNil: [ self itemClass ifNil: [ #() ] ifNotNil: [:c | c project versions ] ]
-		ifNotNil: [ :pr | Array with: pr projectSpec version ])
+	^ (self itemClass ifNil: [ #() ] ifNotNil: [ :c | c project versions ])
 		collect: [ :e | e spec ]
