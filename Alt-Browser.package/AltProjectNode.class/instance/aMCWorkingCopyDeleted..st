@@ -12,7 +12,7 @@ aMCWorkingCopyDeleted: anEvent
 				ifTrue: [ self removeRPackage: node packageName.
 					(item value isEmpty
 						and: [ (Smalltalk at: item key ifAbsent: [  ]) isNil ])
-						ifTrue: [ parent removeRPackage: self.
+						ifTrue: [ parent removeRPackage: item key.
 							AltBrowser aNodeToRebuilt: parent.
 							^ true ].
 					AltBrowser aNodeToRebuilt: self ].
