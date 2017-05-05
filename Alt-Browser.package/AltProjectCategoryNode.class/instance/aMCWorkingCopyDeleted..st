@@ -2,15 +2,14 @@ updating
 aMCWorkingCopyDeleted: anEvent
 	"If one of our children say yes, rebuilt ourselves! Property we use here: a MCWorkingCopy is unique in a package category. Remember that."
 
-	"Note: we may answer true in two cases: one of our packages has been removed, and if we are to be removed."
+	"Note: we will have to remove from this node items only if the MCWorkingCopy was stored at that level. This is checked by the double call to aMCWorkingCopyDeleted: which will only answer true if node is the AltPackageCategoryNode for the MCWorkingCopy."
 
 	(self contents
 		detect: [ :each | each aMCWorkingCopyDeleted: anEvent ]
 		ifNone: [ nil ])
 		ifNotNil: [ :node | 
 			(node aMCWorkingCopyDeleted: anEvent)
-				ifTrue: [ self removeRPackage: node packageName.
+				ifTrue: [ self removeRPackage: node item.
 					AltBrowser aNodeToRebuilt: self ].
 			^ true ].
-	^ item value isEmpty
-		and: [ (Smalltalk at: item key ifAbsent: [  ]) isNil ]
+	^ false
