@@ -6,12 +6,10 @@ aClassAdded: anEvent
 	(RPackageOrganizer default
 		category: anEvent classCategory
 		matches: self packageName)
-		ifTrue:
-			[ result := self contents
+		ifTrue: [ result := self contents
 				inject: false
 				into: [ :bool :each | (each aClassAdded: anEvent) or: [ bool ] ].
-			anEvent classCategory = self packageName
-				ifTrue: [ AltBrowser aNodeToRebuilt: self.
-					^ true ].
-			^ result ].
+			result
+				ifFalse: [ AltBrowser aNodeToRebuilt: self ].
+			^ true ].
 	^ false
