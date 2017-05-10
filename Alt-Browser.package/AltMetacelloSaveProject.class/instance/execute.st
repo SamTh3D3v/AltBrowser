@@ -4,8 +4,7 @@ execute
 
 	| item versions repositories message |
 	item := self getItem.
-	repositories := item projectRegistration projectSpec repositories
-		list collect: [ :r | r spec createRepository ].
+	repositories := item repositories.
 	versions := (item contents select: [ :e | e mcWorkingCopy modified ])
 		collect: [ :e | 
 			message

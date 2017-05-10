@@ -1,5 +1,5 @@
 accessing
 icon
-	^ (self contents anySatisfy: [ :e | e mcWorkingCopy modified ])
+	^ self isModified
 		ifTrue: [ #dirtyPackageIcon ]
 		ifFalse: [ #packageIcon ]

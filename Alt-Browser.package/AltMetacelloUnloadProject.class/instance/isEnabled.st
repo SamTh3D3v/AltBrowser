@@ -1,3 +1,3 @@
 testing
 isEnabled
-	^ true
+	^ self getItem isModified not

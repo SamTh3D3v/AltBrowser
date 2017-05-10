@@ -1,5 +1,13 @@
 accessing
 repositories
-	^ (self contents first mcWorkingCopy repositoryGroup repositories
-		reject: [ :e | e == MCCacheRepository uniqueInstance ])
-		collect: [ :e | e location ]
+	"Retrieve all repositories from all packages."
+
+	| repositories |
+	repositories := Set new.
+	self contents
+		do: [ :e | 
+			repositories
+				addAll:
+					(e mcWorkingCopy repositoryGroup repositories
+						reject: [ :r | r isCache ]) ].
+	^ repositories asArray
